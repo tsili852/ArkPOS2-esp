@@ -97,7 +97,7 @@ void app_main()
         ESP_LOGE(TAG, "Wifi was not connected. Please reboot the device\n");
     }
 
-    const int wakeup_time_sec = 43200; // 12 Hours
+    const long long wakeup_time_sec = 43200; // 12 Hours
     printf("Wake up timer set to %d seconds.\n", wakeup_time_sec);
     esp_sleep_enable_timer_wakeup(wakeup_time_sec * 1000000);
     
