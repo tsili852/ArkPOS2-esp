@@ -43,6 +43,7 @@ static iap_https_config_t ota_config;
 
 static void init_wifi();
 static void init_led();
+static void check_for_updates();
 static void calibrate_touch_pad(touch_pad_t pad);
 static void init_ota();
 static esp_err_t app_event_handler(void *ctx, system_event_t *event);
@@ -58,8 +59,10 @@ void app_main()
     switch (esp_sleep_get_wakeup_cause())
     {
         case ESP_SLEEP_WAKEUP_TIMER: {
-            printf("Wake up from timer. Time in DS: %dms\n", sleep_time_ms);
-            // TODO Implement the HTTPS OTA
+            printf("Wake up for update check. Time in DS: %dms\n", sleep_time_ms);
+            // Check for updates
+            check_for_updates();
+
         }
         case ESP_SLEEP_WAKEUP_TOUCHPAD: {
             printf("Wake up from touch pad on T%d\n", esp_sleep_get_touchpad_wakeup_status());
@@ -94,14 +97,6 @@ void app_main()
     esp_event_loop_init(&app_event_handler, NULL);
 
     // Initialize everyting and go to Deep Sleep
-
-    init_wifi();
-    
-    if (!wifi_sta_is_connected())
-    {
-        ESP_LOGE(TAG, "Wifi was not connected. Please reboot the device\n");
-        //TODO Add the Blufi example here
-    }
 
     const long long wakeup_time_sec = 43200; // 12 Hours
     printf("Wake up timer set to %lld seconds.\n", wakeup_time_sec);
@@ -170,6 +165,28 @@ void app_main()
     // Should never arrive here.
 }
 
+static void check_for_updates() {
+    init_wifi();
+    
+    if (!wifi_sta_is_connected())
+    {
+        ESP_LOGE(TAG, "Wifi was not connected. Please reboot the device\n");
+        //TODO Add the Blufi example here
+    }
+
+    init_ota();
+
+    if (iap_https_new_firmware_installed())
+    {
+        ESP_LOGI(TAG, "New firmware intalled - rebooting...\n");
+        esp_restart();
+    }
+    else
+    {
+        ESP_LOGI(TAG, "Firmaware is up-to-date");
+    }
+}
+
 static void init_led() {
     ESP_LOGI(TAG, "Initialize LEDs\n")
 
@@ -226,25 +243,25 @@ static void init_wifi()
     wifi_sta_init(&wifi_params);
 }
 
-// static void init_ota()
-// {
-//     ESP_LOGI(TAG, "Initialising OTA firmware updating.");
+static void init_ota()
+{
+    ESP_LOGI(TAG, "Initialising OTA firmware updating.");
     
-//     ota_config.current_software_version = SOFTWARE_VERSION;
-//     ota_config.server_host_name = OTA_SERVER_HOST_NAME;
-//     ota_config.server_port = "8883";
-//     strncpy(ota_config.server_metadata_path, OTA_SERVER_METADATA_PATH, sizeof(ota_config.server_metadata_path) / sizeof(char));
-//     bzero(ota_config.server_firmware_path, sizeof(ota_config.server_firmware_path) / sizeof(char));
-//     ota_config.server_root_ca_public_key_pem = server_root_ca_public_key_pem;
-//     ota_config.peer_public_key_pem = peer_public_key_pem;
-//     ota_config.polling_interval_s = OTA_POLLING_INTERVAL_S;
-//     ota_config.auto_reboot = OTA_AUTO_REBOOT;
+    ota_config.current_software_version = SOFTWARE_VERSION;
+    ota_config.server_host_name = OTA_SERVER_HOST_NAME;
+    ota_config.server_port = "8883";
+    strncpy(ota_config.server_metadata_path, OTA_SERVER_METADATA_PATH, sizeof(ota_config.server_metadata_path) / sizeof(char));
+    bzero(ota_config.server_firmware_path, sizeof(ota_config.server_firmware_path) / sizeof(char));
+    ota_config.server_root_ca_public_key_pem = server_root_ca_public_key_pem;
+    ota_config.peer_public_key_pem = peer_public_key_pem;
+    ota_config.polling_interval_s = OTA_POLLING_INTERVAL_S;
+    ota_config.auto_reboot = OTA_AUTO_REBOOT;
     
-//     iap_https_init(&ota_config);
+    iap_https_init(&ota_config);
     
-//     // Immediately check if there's a new firmware image available.
-//     iap_https_check_now();
-// }
+    // Immediately check if there's a new firmware image available.
+    iap_https_check_now();
+}
 
 static esp_err_t app_event_handler(void *ctx, system_event_t *event)
 {
