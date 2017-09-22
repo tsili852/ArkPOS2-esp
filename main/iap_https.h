@@ -85,5 +85,7 @@ int iap_https_new_firmware_installed();
 // Return 1 if we nedd to update
 int iap_https_has_update();
 
+void iap_https_download_image();
+
 
 #endif // __IAP_HTTPS__

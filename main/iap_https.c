@@ -260,7 +260,7 @@ static void iap_https_check_for_update()
     }
 }
 
-static void iap_https_download_image()
+void iap_https_download_image()
 {
     int tlsResult = wifi_tls_connect(tls_context);
     if (tlsResult) {
