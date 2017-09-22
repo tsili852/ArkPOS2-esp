@@ -82,5 +82,8 @@ int iap_https_update_in_progress();
 // Returns 1 if a new firmware has been installed but not yet booted, 0 otherwise.
 int iap_https_new_firmware_installed();
 
+// Return 1 if we nedd to update
+int iap_https_has_update();
+
 
 #endif // __IAP_HTTPS__
