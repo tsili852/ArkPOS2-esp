@@ -269,7 +269,7 @@ static void calibrate_touch_pad(touch_pad_t pad) {
     for (int i = 0; i < calibration_count; i++)
     {
         uint16_t val;
-        touch_pad_read_filtered(pad, &val);
+        touch_pad_read(pad, &val);
         if (pad == 0)
         {
             printf("%d", val);
