@@ -1,41 +1,36 @@
-//
-//  main.c
-//  esp32-ota-https
-//
-//  Updating the firmware over the air.
-//
-//  Created by Andreas Schweizer on 11.01.2017.
-//  Copyright © 2017 Classy Code GmbH
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
 #include <string.h>
+#include "freertos/task.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/event_groups.h"
+
 #include "esp_log.h"
 #include "esp_event_loop.h"
+#include "esp_system.h"
+#include "esp_sleep.h"
+#include "esp32/ulp.h"
+
+#include "soc/rtc_cntl_reg.h"
+#include "soc/sens_reg.h"
+#include "soc/rtc.h"
+
 #include "nvs_flash.h"
-#include "freertos/event_groups.h"
+#include "nvs.h"
+
 #include "driver/gpio.h"
+#include "driver/touch_pad.h"
+#include "driver/adc.h"
+#include "driver/rtc_io.h"
 
+#include "wifi_sta.h"
+#include "iap_https.h"
 #include "main.h"
-#include "wifi_sta.h"   // WIFI module configuration, connecting to an access point.
-#include "iap_https.h"  // Coordinating firmware updates
-
 
 #define TAG "main"
 
-
 static const char *server_root_ca_public_key_pem = OTA_SERVER_ROOT_CA_PEM;
 static const char *peer_public_key_pem = OTA_PEER_PEM;
+
+static RTC_DATA_ATTR struct timeval sleep_enter_time;
 
 static wifi_sta_init_struct_t wifi_params;
 
@@ -54,7 +49,14 @@ void app_main()
     ESP_LOGI(TAG, "---------- Software version: %2d -----------", SOFTWARE_VERSION);
 
     
-    nvs_flash_init();
+    esp_err_t err_nvs = nvs_flash_init();
+    if (err == ESP_ERR_NVS_NO_FREE_PAGES) {
+        // NVS partition was truncated and needs to be erased        
+        ESP_ERROR_CHECK(nvs_flash_erase);
+        // Retry nvs_flash_init
+        err = nvs_flash_init();
+    }
+    ESP_ERROR_CHECK(err);
     
     
     // Configure the application event handler.
@@ -117,7 +119,7 @@ void app_main()
 
 static void init_wifi()
 {
-    ESP_LOGI(TAG, "Set up WIFI network connection.");
+    ESP_LOGI(TAG, "Initialize WIFI network connection.");
     
     wifi_params.network_ssid = WIFI_NETWORK_SSID;
     wifi_params.network_password = WIFI_NETWORK_PASSWORD;
