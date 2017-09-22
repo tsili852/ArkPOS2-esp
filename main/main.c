@@ -283,7 +283,7 @@ static void calibrate_touch_pad(touch_pad_t pad) {
                 {
                     printf("Touch pad %d is too low: %d \n"
                            "Cannot use it for wake up\n", j, avg);
-                    touch_pad_config(i, 0);
+                    touch_pad_config(j, 0);
                 }
                 else
                 {
