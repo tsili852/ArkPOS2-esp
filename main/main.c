@@ -32,6 +32,11 @@
 #define LED_GPIO_T5 26
 #define LED_GPIO_T8 21
 
+#define TOUCH_1 0 
+#define TOUCH_2 3
+#define TOUCH_3 5
+#define TOUCH_4 7
+
 static const char *server_root_ca_public_key_pem = OTA_SERVER_ROOT_CA_PEM;
 static const char *peer_public_key_pem = OTA_PEER_PEM;
 
@@ -45,6 +50,7 @@ static iap_https_config_t ota_config;
 static void init_wifi();
 static void init_led();
 static void check_for_updates();
+static void touch_pad_events();
 static void calibrate_touch_pad(touch_pad_t pad);
 static void init_ota();
 static esp_err_t app_event_handler(void *ctx, system_event_t *event);
@@ -69,7 +75,7 @@ void app_main()
         case ESP_SLEEP_WAKEUP_TOUCHPAD: {
             printf("Wake up from touch pad on T%d\n", esp_sleep_get_touchpad_wakeup_status());
             vTaskDelay(1000 / portTICK_PERIOD_MS);
-            // TODO Implement the touch events
+            touch_pad_events();
             break;
         }
         case ESP_SLEEP_WAKEUP_UNDEFINED: {
@@ -114,13 +120,13 @@ void app_main()
     touch_pad_set_meas_time(0x1000, 0xffff);
     touch_pad_set_voltage(TOUCH_HVOLT_2V4, TOUCH_LVOLT_0V8, TOUCH_HVOLT_ATTEN_1V5);
 
-    calibrate_touch_pad(0);
-    vTaskDelay(100 / portTICK_PERIOD_MS);
-    calibrate_touch_pad(3);
-    vTaskDelay(100 / portTICK_PERIOD_MS);
-    calibrate_touch_pad(5);
-    vTaskDelay(100 / portTICK_PERIOD_MS);
-    calibrate_touch_pad(7);
+    calibrate_touch_pad(TOUCH_1);
+    // vTaskDelay(100 / portTICK_PERIOD_MS);
+    calibrate_touch_pad(TOUCH_2);
+    // vTaskDelay(100 / portTICK_PERIOD_MS);
+    calibrate_touch_pad(TOUCH_3);
+    // vTaskDelay(100 / portTICK_PERIOD_MS);
+    calibrate_touch_pad(TOUCH_7);
 
     printf("Touch pad wake up configured\n");
     esp_sleep_enable_touchpad_wakeup();
@@ -211,6 +217,20 @@ static void check_for_updates() {
     }
 }
 
+static void touch_pad_events() {
+    uint16_t touch_1_val;
+    uint16_t touch_2_val;
+    uint16_t touch_3_val;
+    uint16_t touch_4_val;
+    
+    touch_pad_read(TOUCH_1, &touch_1_val);
+    touch_pad_read(TOUCH_2, &touch_2_val);
+    touch_pad_read(TOUCH_3, &touch_3_val);
+    touch_pad_read(TOUCH_4, &touch_4_val);
+
+
+}
+
 static void init_led() {
     ESP_LOGI(TAG, "Initialize LEDs\n")
 
@@ -239,7 +259,7 @@ static void calibrate_touch_pad(touch_pad_t pad) {
     for (int i = 0; i < calibration_count; i++)
     {
         uint16_t val;
-        touch_pad_read(pad, &val);
+        touch_pad_read_filtered(pad, &val);
         avg += val;
     }
     avg /= calibration_count;
@@ -251,7 +271,7 @@ static void calibrate_touch_pad(touch_pad_t pad) {
     }
     else
     {
-        int threshold = avg - 100;
+        int threshold = avg - 2000;
         printf("Touch pad %d threshold set to: %d\n", pad, threshold);
         touch_pad_config(pad, threshold);
     }
