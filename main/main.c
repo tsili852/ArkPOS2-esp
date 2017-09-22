@@ -98,7 +98,7 @@ void app_main()
     }
 
     const long long wakeup_time_sec = 43200; // 12 Hours
-    printf("Wake up timer set to %d seconds.\n", wakeup_time_sec);
+    printf("Wake up timer set to %ld seconds.\n", wakeup_time_sec);
     esp_sleep_enable_timer_wakeup(wakeup_time_sec * 1000000);
     
     touch_pad_init();
