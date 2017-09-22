@@ -266,31 +266,31 @@ static void calibrate_touch_pad(touch_pad_t pad) {
     for (size_t j = 0; j < 8; j++)
     {
         if (j == 0 || j == 3 || j == 5 || j == 7)
-        {
-            printf("%d",j);
+        {            
+            touch_pad_init();
             touch_pad_config(j, 1000);
             
-                int avg = 0;
-                const size_t calibration_count = 128;
-                for (int i = 0; i < calibration_count; i++)
-                {
-                    uint16_t val;
-                    touch_pad_read(j, &val);
-                    avg += val;
-                }
-                avg /= calibration_count;
-                if (avg < 300)
-                {
-                    printf("Touch pad %d is too low: %d \n"
-                           "Cannot use it for wake up\n", j, avg);
-                    touch_pad_config(j, 0);
-                }
-                else
-                {
-                    int threshold = avg - 2000;
-                    printf("Touch pad %d threshold set to: %d\n", j, threshold);
-                    touch_pad_config(j, threshold);
-                }
+            int avg = 0;
+            const size_t calibration_count = 128;
+            for (int i = 0; i < calibration_count; i++)
+            {
+                uint16_t val;
+                touch_pad_read(j, &val);
+                avg += val;
+            }
+            avg /= calibration_count;
+            if (avg < 300)
+            {
+                printf("Touch pad %d is too low: %d \n"
+                        "Cannot use it for wake up\n", j, avg);
+                touch_pad_config(j, 0);
+            }
+            else
+            {
+                int threshold = avg - 2000;
+                printf("Touch pad %d threshold set to: %d\n", j, threshold);
+                touch_pad_config(j, threshold);
+            }
         }
     }
 
