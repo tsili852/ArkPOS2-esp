@@ -262,6 +262,7 @@ static void init_led() {
 }
 
 static void calibrate_touch_pad(touch_pad_t pad) {
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
     touch_pad_config(pad, 1000);
 
     int avg = 0;
