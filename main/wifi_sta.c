@@ -89,7 +89,7 @@ esp_err_t wifi_sta_init(wifi_sta_init_struct_t *param)
     // Start WIFI according to the current configuration.
     ESP_LOGD(TAG, "wifi_sta_init: esp_wifi_start");
     esp_err_t start_result = esp_wifi_start();
-    ESP_ERROR_CHECK(start_result);
+    printf("%d", start_result);
     if (ESP_OK != start_result) {
         ESP_LOGE(TAG, "wifi_sta_init: esp_wifi_set_config failed: %d", start_result);
         return start_result;
