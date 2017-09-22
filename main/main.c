@@ -126,7 +126,7 @@ void app_main()
     // vTaskDelay(100 / portTICK_PERIOD_MS);
     calibrate_touch_pad(TOUCH_3);
     // vTaskDelay(100 / portTICK_PERIOD_MS);
-    calibrate_touch_pad(TOUCH_7);
+    calibrate_touch_pad(TOUCH_4);
 
     printf("Touch pad wake up configured\n");
     esp_sleep_enable_touchpad_wakeup();
@@ -222,13 +222,21 @@ static void touch_pad_events() {
     uint16_t touch_2_val;
     uint16_t touch_3_val;
     uint16_t touch_4_val;
+
+    uint16_t touch_1_threshold;
+    uint16_t touch_2_threshold;
+    uint16_t touch_3_threshold;
+    uint16_t touch_4_threshold;
     
     touch_pad_read(TOUCH_1, &touch_1_val);
     touch_pad_read(TOUCH_2, &touch_2_val);
     touch_pad_read(TOUCH_3, &touch_3_val);
     touch_pad_read(TOUCH_4, &touch_4_val);
 
-
+    touch_pad_get_thresh(TOUCH_1, &touch_1_threshold);
+    touch_pad_get_thresh(TOUCH_2, &touch_1_threshold);
+    touch_pad_get_thresh(TOUCH_3, &touch_1_threshold);
+    touch_pad_get_thresh(TOUCH_4, &touch_1_threshold);
 }
 
 static void init_led() {
