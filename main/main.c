@@ -7,6 +7,7 @@
 #include "esp_event_loop.h"
 #include "esp_system.h"
 #include "esp_sleep.h"
+#include "esp_wifi.h"
 #include "esp32/ulp.h"
 
 #include "soc/rtc_cntl_reg.h"
