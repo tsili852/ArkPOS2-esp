@@ -265,7 +265,7 @@ static void calibrate_touch_pad(touch_pad_t pad) {
 
     for (size_t i = 0; i < 8; i++)
     {
-        if (i == 0 || i == 3 || i == 5 || i == 7)
+        if (i == 0)
         {
             printf("%d",i);
             touch_pad_config(i, 1000);
