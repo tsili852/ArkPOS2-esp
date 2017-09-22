@@ -265,9 +265,8 @@ static void calibrate_touch_pad(touch_pad_t pad) {
 
     for (size_t j = 0; j < 8; j++)
     {
-        if (j == 0 || j == 3 || j == 5 || j == 7)
+        if (j == 0 || j == 3)
         {            
-            touch_pad_init();
             touch_pad_config(j, 1000);
             
             int avg = 0;
