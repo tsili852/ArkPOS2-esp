@@ -67,6 +67,7 @@ void app_main()
         }
         case ESP_SLEEP_WAKEUP_TOUCHPAD: {
             printf("Wake up from touch pad on T%d\n", esp_sleep_get_touchpad_wakeup_status());
+            vTaskDelay(1000 / portTICK_PERIOD_MS);
             // TODO Implement the touch events
         }
         case ESP_SLEEP_WAKEUP_UNDEFINED:
