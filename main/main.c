@@ -181,11 +181,15 @@ static void check_for_updates() {
         //TODO Add the Blufi example here
     }
 
-    if (iap_https_new_firmware_installed())
+    if (iap_https_has_update())
     {
-        ESP_LOGI(TAG, "New firmware intalled - rebooting...\n");
-        esp_restart();
+        ESP_LOGI(TAG, "We need to update");
     }
+    // if (iap_https_new_firmware_installed())
+    // {
+    //     ESP_LOGI(TAG, "New firmware intalled - rebooting...\n");
+    //     esp_restart();
+    // }
     else
     {
         ESP_LOGI(TAG, "Firmaware is up-to-date");

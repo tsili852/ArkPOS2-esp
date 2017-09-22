@@ -47,6 +47,7 @@ static TimerHandle_t check_for_updates_timer;
 
 static int has_iap_session;
 static int has_new_firmware;
+static int new_update;
 static int total_nof_bytes_received;
 
 static void iap_https_periodic_check_timer_callback(TimerHandle_t xTimer);
@@ -130,6 +131,10 @@ int iap_https_update_in_progress()
 int iap_https_new_firmware_installed()
 {
     return has_new_firmware;
+}
+
+int iap_https_has_update() {
+    return new_update;
 }
 
 static void iap_https_periodic_check_timer_callback(TimerHandle_t xTimer)
@@ -319,6 +324,7 @@ http_continue_receiving_t iap_https_metadata_body_callback(struct http_request_ 
 
     // --- Request the firmware image ---
 
+    new_update = 1;
     xEventGroupSetBits(event_group, FWUP_DOWNLOAD_IMAGE);
     
     return HTTP_STOP_RECEIVING;
