@@ -76,7 +76,7 @@ void app_main()
     esp_err_t err_nvs = nvs_flash_init();
     if (err_nvs == ESP_ERR_NVS_NO_FREE_PAGES) {
         // NVS partition was truncated and needs to be erased        
-        ESP_ERROR_CHECK(nvs_flash_erase);
+        ESP_ERROR_CHECK(nvs_flash_erase());
         // Retry nvs_flash_init
         err_nvs = nvs_flash_init();
     }
