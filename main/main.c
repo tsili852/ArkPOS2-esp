@@ -120,7 +120,7 @@ void app_main()
     vTaskDelay(100 / portTICK_PERIOD_MS);
     calibrate_touch_pad(5);
     vTaskDelay(100 / portTICK_PERIOD_MS);
-    calibrate_touch_pad(8);
+    calibrate_touch_pad(7);
 
     printf("Touch pad wake up configured\n");
     esp_sleep_enable_touchpad_wakeup();
