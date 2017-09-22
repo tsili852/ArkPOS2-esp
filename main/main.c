@@ -29,7 +29,7 @@
 #define LED_GPIO_T0 22
 #define LED_GPIO_T3 23
 #define LED_GPIO_T5 26
-#define LED_GPIO_T8 35
+#define LED_GPIO_T8 34
 
 static const char *server_root_ca_public_key_pem = OTA_SERVER_ROOT_CA_PEM;
 static const char *peer_public_key_pem = OTA_PEER_PEM;
@@ -91,7 +91,7 @@ void app_main()
     // The handler is centrally implemented in this module.
     // From here, we delegate the event handling to the responsible modules.
     
-    // esp_event_loop_init(&app_event_handler, NULL);
+    esp_event_loop_init(&app_event_handler, NULL);
 
     // Initialize everyting and go to Deep Sleep
 
@@ -246,22 +246,22 @@ static void init_wifi()
 //     iap_https_check_now();
 // }
 
-// static esp_err_t app_event_handler(void *ctx, system_event_t *event)
-// {
-//     esp_err_t result = ESP_OK;
-//     int handled = 0;
+static esp_err_t app_event_handler(void *ctx, system_event_t *event)
+{
+    esp_err_t result = ESP_OK;
+    int handled = 0;
     
-//     ESP_LOGI(TAG, "app_event_handler: event: %d", event->event_id);
+    ESP_LOGI(TAG, "app_event_handler: event: %d", event->event_id);
 
-//     // Let the wifi_sta module handle all WIFI STA events.
+    // Let the wifi_sta module handle all WIFI STA events.
     
-//     result = wifi_sta_handle_event(ctx, event, &handled);
-//     if (ESP_OK != result || handled) {
-//         return result;
-//     }
+    result = wifi_sta_handle_event(ctx, event, &handled);
+    if (ESP_OK != result || handled) {
+        return result;
+    }
     
-//     // TODO - handle other events
+    // TODO - handle other events
     
-//     ESP_LOGW(TAG, "app_event_handler: unhandled event: %d", event->event_id);
-//     return ESP_OK;
-// }
+    ESP_LOGW(TAG, "app_event_handler: unhandled event: %d", event->event_id);
+    return ESP_OK;
+}
