@@ -139,17 +139,20 @@ static void iap_https_periodic_check_timer_callback(TimerHandle_t xTimer)
 
 static void iap_https_trigger_processing()
 {
-    ESP_LOGD(TAG, "iap_https_trigger_processing: checking flag");
-    
-    if (xEventGroupGetBits(event_group) & FWUP_CHECK_FOR_UPDATE) {
-        ESP_LOGD(TAG, "iap_https_trigger_processing: flag is already set");
-        return;
-    }
 
-    ESP_LOGD(TAG, "iap_https_trigger_processing: flag is not set, setting it");
+    iap_https_check_for_update();
+
+    // ESP_LOGD(TAG, "iap_https_trigger_processing: checking flag");
     
-    // Trigger processing in our task.
-    xEventGroupSetBits(event_group, FWUP_CHECK_FOR_UPDATE);
+    // if (xEventGroupGetBits(event_group) & FWUP_CHECK_FOR_UPDATE) {
+    //     ESP_LOGD(TAG, "iap_https_trigger_processing: flag is already set");
+    //     return;
+    // }
+
+    // ESP_LOGD(TAG, "iap_https_trigger_processing: flag is not set, setting it");
+    
+    // // Trigger processing in our task.
+    // xEventGroupSetBits(event_group, FWUP_CHECK_FOR_UPDATE);
 }
 
 static void iap_https_task(void *pvParameter)
