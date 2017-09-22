@@ -167,16 +167,16 @@ static void check_for_updates() {
     // From here, we delegate the event handling to the responsible modules.
     
     esp_event_loop_init(&app_event_handler, NULL);
-    
+
     init_wifi();
-    
+
+    init_ota();
+
     if (!wifi_sta_is_connected())
     {
         ESP_LOGE(TAG, "Wifi was not connected. Please reboot the device\n");
         //TODO Add the Blufi example here
     }
-
-    init_ota();
 
     if (iap_https_new_firmware_installed())
     {
