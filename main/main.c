@@ -67,6 +67,12 @@ void app_main()
         }
         case ESP_SLEEP_WAKEUP_UNDEFINED:
             printf("Not a deep sleep reset\n");
+        case ESP_SLEEP_WAKEUP_EXT0:
+            printf("Wake up from EXT0\n");
+        case ESP_SLEEP_WAKEUP_EXT1:
+            printf("Wake up from EXT1\n");
+        case ESP_SLEEP_WAKEUP_ULP:
+            printf("Wake up from ULP\n");
     }
 
     ESP_LOGI(TAG, "---------- Intialization started ----------");
