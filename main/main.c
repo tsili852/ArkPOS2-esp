@@ -63,24 +63,30 @@ void app_main()
             printf("Wake up for update check. Time in DS: %dms\n", sleep_time_ms);
             // Check for updates
             check_for_updates();
+            break;
 
         }
         case ESP_SLEEP_WAKEUP_TOUCHPAD: {
             printf("Wake up from touch pad on T%d\n", esp_sleep_get_touchpad_wakeup_status());
             vTaskDelay(1000 / portTICK_PERIOD_MS);
             // TODO Implement the touch events
+            break;
         }
         case ESP_SLEEP_WAKEUP_UNDEFINED: {
             printf("Not a deep sleep reset\n");
+            break;
         }
         case ESP_SLEEP_WAKEUP_EXT0: {
             printf("Wake up from EXT0\n");
+            break;
         }
         case ESP_SLEEP_WAKEUP_EXT1: {
             printf("Wake up from EXT1\n");
+            break;
         }
         case ESP_SLEEP_WAKEUP_ULP: {
             printf("Wake up from ULP\n");
+            break;
         }
     }
 
@@ -108,10 +114,10 @@ void app_main()
     touch_pad_set_meas_time(0x1000, 0xffff);
     touch_pad_set_voltage(TOUCH_HVOLT_2V4, TOUCH_LVOLT_0V8, TOUCH_HVOLT_ATTEN_1V5);
 
-    calibrate_touch_pad(TOUCH_PAD_NUM0);
-    calibrate_touch_pad(TOUCH_PAD_NUM3);
-    calibrate_touch_pad(TOUCH_PAD_NUM5);
-    calibrate_touch_pad(TOUCH_PAD_NUM8);
+    calibrate_touch_pad(0);
+    calibrate_touch_pad(3);
+    calibrate_touch_pad(5);
+    calibrate_touch_pad(8);
 
     printf("Touch pad wake up configured\n");
     esp_sleep_enable_touchpad_wakeup();
