@@ -280,7 +280,7 @@ int http_parse_key_value_int(const char *buffer, const char *key, int *value)
     
     *value = atoi(&locKey[strlen(key)]);
     return 0;
-}driver/adc.h
+}
 
 int http_parse_key_value_string(const char *buffer, const char *key, char *str, int strLen)
 {
