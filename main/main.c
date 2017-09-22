@@ -285,7 +285,7 @@ static void calibrate_touch_pad(touch_pad_t pad) {
         printf("Touch pad %d threshold set to: %d\n", pad, threshold);
         touch_pad_config(pad, threshold);
     }
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
+    // vTaskDelay(1000 / portTICK_PERIOD_MS);
 }
 
 static void init_wifi()
