@@ -170,6 +170,8 @@ static void check_for_updates() {
 
     init_wifi();
 
+    esp_wifi_connect();
+
     init_ota();
 
     if (!wifi_sta_is_connected())
