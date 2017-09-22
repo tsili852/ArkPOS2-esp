@@ -262,30 +262,60 @@ static void init_led() {
 }
 
 static void calibrate_touch_pad(touch_pad_t pad) {
-    touch_pad_config(pad, 1000);
 
-    int avg = 0;
-    const size_t calibration_count = 128;
-    for (int i = 0; i < calibration_count; i++)
+    for (size_t i = 0; i < 8; i++)
     {
-        uint16_t val;
-        touch_pad_read(pad, &val);
-        avg += val;
+        if (i == 0 || i == 3 || i == 5 || i == 7)
+        {
+            touch_pad_config(i, 1000);
+            
+                int avg = 0;
+                const size_t calibration_count = 128;
+                for (int i = 0; i < calibration_count; i++)
+                {
+                    uint16_t val;
+                    touch_pad_read(i, &val);
+                    avg += val;
+                }
+                avg /= calibration_count;
+                if (avg < 300)
+                {
+                    printf("Touch pad %d is too low: %d \n"
+                           "Cannot use it for wake up\n", i, avg);
+                    touch_pad_config(i, 0);
+                }
+                else
+                {
+                    int threshold = avg - 2000;
+                    printf("Touch pad %d threshold set to: %d\n", i, threshold);
+                    touch_pad_config(i, threshold);
+                }
+        }
     }
-    avg /= calibration_count;
-    if (avg < 300)
-    {
-        printf("Touch pad %d is too low: %d \n"
-               "Cannot use it for wake up\n", pad, avg);
-        touch_pad_config(pad, 0);
-    }
-    else
-    {
-        int threshold = avg - 2000;
-        printf("Touch pad %d threshold set to: %d\n", pad, threshold);
-        touch_pad_config(pad, threshold);
-    }
-    // vTaskDelay(1000 / portTICK_PERIOD_MS);
+
+    // touch_pad_config(pad, 1000);
+
+    // int avg = 0;
+    // const size_t calibration_count = 128;
+    // for (int i = 0; i < calibration_count; i++)
+    // {
+    //     uint16_t val;
+    //     touch_pad_read(pad, &val);
+    //     avg += val;
+    // }
+    // avg /= calibration_count;
+    // if (avg < 300)
+    // {
+    //     printf("Touch pad %d is too low: %d \n"
+    //            "Cannot use it for wake up\n", pad, avg);
+    //     touch_pad_config(pad, 0);
+    // }
+    // else
+    // {
+    //     int threshold = avg - 2000;
+    //     printf("Touch pad %d threshold set to: %d\n", pad, threshold);
+    //     touch_pad_config(pad, threshold);
+    // }
 }
 
 static void init_wifi()
