@@ -116,8 +116,8 @@ void app_main()
 
     calibrate_touch_pad(0);
     calibrate_touch_pad(3);
-    calibrate_touch_pad(5);
-    calibrate_touch_pad(8);
+    // calibrate_touch_pad(5);
+    // calibrate_touch_pad(8);
 
     printf("Touch pad wake up configured\n");
     esp_sleep_enable_touchpad_wakeup();
