@@ -270,6 +270,10 @@ static void calibrate_touch_pad(touch_pad_t pad) {
     {
         uint16_t val;
         touch_pad_read_filtered(pad, &val);
+        if (pad == 0)
+        {
+            printf("%d", val);
+        }
         avg += val;
     }
     avg /= calibration_count;
