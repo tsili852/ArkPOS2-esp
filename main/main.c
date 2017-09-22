@@ -29,7 +29,7 @@
 #define LED_GPIO_T0 22
 #define LED_GPIO_T3 23
 #define LED_GPIO_T5 26
-#define LED_GPIO_T8 34
+#define LED_GPIO_T8 21
 
 static const char *server_root_ca_public_key_pem = OTA_SERVER_ROOT_CA_PEM;
 static const char *peer_public_key_pem = OTA_PEER_PEM;
