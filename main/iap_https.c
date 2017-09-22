@@ -10,6 +10,7 @@
 
 #include "esp_system.h"
 #include "esp_event_loop.h"
+#define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
 #include "esp_log.h"
 
 #include "freertos/event_groups.h"
