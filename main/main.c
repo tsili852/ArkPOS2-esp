@@ -175,6 +175,8 @@ static void check_for_updates() {
 
     init_ota();
 
+    xEventGroupWaitBits(wifi_sta_get_event_group(), WIFI_STA_EVENT_GROUP_CONNECTED_FLAG, pdFALSE, pdFALSE, portMAX_DELAY);
+
     if (!wifi_sta_is_connected())
     {
         ESP_LOGE(TAG, "Wifi was not connected. Please reboot the device\n");

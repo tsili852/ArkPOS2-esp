@@ -111,8 +111,7 @@ esp_err_t wifi_sta_handle_event(void *ctx, system_event_t *event, int *handled)
             
         case SYSTEM_EVENT_STA_START:
             ESP_LOGD(TAG, "wifi_sta_handle_event: SYSTEM_EVENT_STA_START");
-            ESP_ERROR_CHECK(esp_wifi_connect());
-            // result = esp_wifi_connect();
+            result = esp_wifi_connect();
             break;
             
         case SYSTEM_EVENT_STA_GOT_IP:
