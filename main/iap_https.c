@@ -55,7 +55,6 @@ static void iap_https_task(void *pvParameter);
 static void iap_https_prepare_timer();
 static void iap_https_trigger_processing();
 static void iap_https_check_for_update();
-static void iap_https_download_image();
 
 http_continue_receiving_t iap_https_metadata_headers_callback(struct http_request_ *request, int statusCode, int contentLength);
 http_continue_receiving_t iap_https_metadata_body_callback(struct http_request_ *request, size_t bytesReceived);
