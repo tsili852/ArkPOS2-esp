@@ -237,6 +237,7 @@ static void calibrate_touch_pad(touch_pad_t pad) {
 static void init_wifi()
 {
     ESP_LOGI(TAG, "Initialize WIFI network connection.");
+    ESP_LOGI(TAG, "SSID: %s, Password: %s", WIFI_NETWORK_SSID, WIFI_NETWORK_PASSWORD);
     
     wifi_params.network_ssid = WIFI_NETWORK_SSID;
     wifi_params.network_password = WIFI_NETWORK_PASSWORD;

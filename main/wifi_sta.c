@@ -9,6 +9,7 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/event_groups.h"
 #include "esp_wifi.h"
+#define LOG_LOCAL_LEVEL ESP_LOG_VERBOSE
 #include "esp_log.h"
 
 #include "wifi_sta.h"
@@ -92,6 +93,8 @@ esp_err_t wifi_sta_init(wifi_sta_init_struct_t *param)
         ESP_LOGE(TAG, "wifi_sta_init: esp_wifi_set_config failed: %d", start_result);
         return start_result;
     }
+
+    ESP_LOGI(TAG, "Wifi initialized successfully");
     
     vTaskDelay(200 / portTICK_PERIOD_MS); // WORKAROUND
 
