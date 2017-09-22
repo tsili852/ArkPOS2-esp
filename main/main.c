@@ -74,13 +74,13 @@ void app_main()
     ESP_LOGI(TAG, "---------- Software version: %2d -----------", SOFTWARE_VERSION);
 
     esp_err_t err_nvs = nvs_flash_init();
-    if (err == ESP_ERR_NVS_NO_FREE_PAGES) {
+    if (err_nvs == ESP_ERR_NVS_NO_FREE_PAGES) {
         // NVS partition was truncated and needs to be erased        
         ESP_ERROR_CHECK(nvs_flash_erase);
         // Retry nvs_flash_init
-        err = nvs_flash_init();
+        err_nvs = nvs_flash_init();
     }
-    ESP_ERROR_CHECK(err);
+    ESP_ERROR_CHECK(err_nvs);
 
     // Configure the application event handler.
     // The handler is centrally implemented in this module.
@@ -196,7 +196,7 @@ static void calibrate_touch_pad(touch_pad_t pad) {
         avg += val;
     }
     avg /= calibration_count;
-    if (avg < min_reading)
+    if (avg < 300)
     {
         printf("Touch pad %d is too low: %d \n"
                "Cannot use it for wake up\n", pad, avg);
