@@ -93,8 +93,8 @@ void app_main()
 
     // Initialize everyting and go to Deep Sleep
 
-    // const long long wakeup_time_sec = 43200; // 12 Hours
-    const long long wakeup_time_sec = 10; // 10 seconds ONLY FOR TEST
+    const long long wakeup_time_sec = 43200; // 12 Hours
+    // const long long wakeup_time_sec = 10; // 10 seconds ONLY FOR TEST
     printf("Wake up timer set to %lld seconds.\n", wakeup_time_sec);
     esp_sleep_enable_timer_wakeup(wakeup_time_sec * 1000000);
     
