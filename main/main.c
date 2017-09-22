@@ -171,11 +171,9 @@ static void check_for_updates() {
 
     init_wifi();
 
-    esp_wifi_connect();
+    xEventGroupWaitBits(wifi_sta_get_event_group(), WIFI_STA_EVENT_GROUP_CONNECTED_FLAG, pdFALSE, pdFALSE, portMAX_DELAY);
 
     init_ota();
-
-    xEventGroupWaitBits(wifi_sta_get_event_group(), WIFI_STA_EVENT_GROUP_CONNECTED_FLAG, pdFALSE, pdFALSE, portMAX_DELAY);
 
     if (!wifi_sta_is_connected())
     {
