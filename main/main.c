@@ -90,12 +90,6 @@ void app_main()
     }
     ESP_ERROR_CHECK(err_nvs);
 
-    // Configure the application event handler.
-    // The handler is centrally implemented in this module.
-    // From here, we delegate the event handling to the responsible modules.
-    
-    esp_event_loop_init(&app_event_handler, NULL);
-
     // Initialize everyting and go to Deep Sleep
 
     // const long long wakeup_time_sec = 43200; // 12 Hours
@@ -167,6 +161,13 @@ void app_main()
 }
 
 static void check_for_updates() {
+
+    // Configure the application event handler.
+    // The handler is centrally implemented in this module.
+    // From here, we delegate the event handling to the responsible modules.
+    
+    esp_event_loop_init(&app_event_handler, NULL);
+    
     init_wifi();
     
     if (!wifi_sta_is_connected())
