@@ -122,7 +122,7 @@ void app_main()
 
     calibrate_touch_pad(TOUCH_1);
     // vTaskDelay(100 / portTICK_PERIOD_MS);
-    calibrate_touch_pad(TOUCH_1);
+    calibrate_touch_pad(TOUCH_2);
     // vTaskDelay(100 / portTICK_PERIOD_MS);
     calibrate_touch_pad(TOUCH_3);
     // vTaskDelay(100 / portTICK_PERIOD_MS);
