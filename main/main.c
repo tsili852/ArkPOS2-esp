@@ -184,6 +184,7 @@ static void check_for_updates() {
     if (iap_https_has_update())
     {
         ESP_LOGI(TAG, "We need to update");
+        iap_https_download_image();
     }
     // if (iap_https_new_firmware_installed())
     // {
