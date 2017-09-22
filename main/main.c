@@ -66,7 +66,6 @@ void app_main()
             // TODO Implement the touch events
         }
         case ESP_SLEEP_WAKEUP_UNDEFINED:
-        default:
             printf("Not a deep sleep reset\n");
     }
 
@@ -95,6 +94,7 @@ void app_main()
     if (!wifi_sta_is_connected())
     {
         ESP_LOGE(TAG, "Wifi was not connected. Please reboot the device\n");
+        //TODO Add the Blufi example here
     }
 
     const long long wakeup_time_sec = 43200; // 12 Hours
