@@ -51,7 +51,7 @@ static void init_wifi();
 static void init_led();
 static void check_for_updates();
 static void touch_pad_events();
-static void calibrate_touch_pad(touch_pad_t pad);
+static void calibrate_touch_pads();
 static void init_ota();
 static esp_err_t app_event_handler(void *ctx, system_event_t *event);
 
@@ -74,8 +74,11 @@ void app_main()
         }
         case ESP_SLEEP_WAKEUP_TOUCHPAD: {
             printf("Wake up from touch pad on T%d\n", esp_sleep_get_touchpad_wakeup_status());
-            vTaskDelay(1000 / portTICK_PERIOD_MS);
-            touch_pad_events();
+            // uint16_t touch_1_val;
+            // touch_pad_init();
+            // touch_pad_read(0, &touch_1_val);
+            // printf("T:%d\n", touch_1_val);
+            // touch_pad_events();
             break;
         }
         case ESP_SLEEP_WAKEUP_UNDEFINED: {
@@ -120,13 +123,11 @@ void app_main()
     touch_pad_set_meas_time(0x1000, 0xffff);
     touch_pad_set_voltage(TOUCH_HVOLT_2V4, TOUCH_LVOLT_0V8, TOUCH_HVOLT_ATTEN_1V5);
 
-    calibrate_touch_pad(TOUCH_1);
-    // vTaskDelay(100 / portTICK_PERIOD_MS);
-    // calibrate_touch_pad(TOUCH_2);
-    // // vTaskDelay(100 / portTICK_PERIOD_MS);
-    // calibrate_touch_pad(TOUCH_3);
-    // // vTaskDelay(100 / portTICK_PERIOD_MS);
-    // calibrate_touch_pad(TOUCH_4);
+    uint16_t touch_1_val;
+    touch_pad_read(0, &touch_1_val);
+    printf("T:%d\n", touch_1_val);
+
+    calibrate_touch_pads();
 
     printf("Touch pad wake up configured\n");
     esp_sleep_enable_touchpad_wakeup();
@@ -136,49 +137,6 @@ void app_main()
     printf("Entering Deep Sleep\n");
     gettimeofday(&sleep_enter_time, NULL);
     esp_deep_sleep_start();
-    
-    // Configure the over-the-air update module. This module periodically checks
-    // for firmware updates by polling a web server. If an update is available,
-    // the module downloads and installs it.
-    
-    // init_ota();
-
-
-    // This application doesn't actually do anything useful.
-    // It just lets an LED blink. You may need to adapt this for your own module
-    // (GPIO5 is the blue LED on the "ESP32 Thing" module.)
-
-    // while (1) {
-        
-    //     int nofFlashes = 1;
-    //     if (wifi_sta_is_connected()) {
-    //         nofFlashes += 1;
-    //     }
-    //     if (iap_https_update_in_progress()) {
-    //         nofFlashes += 2; // results in 3 (not connected) or 4 (connected) flashes
-    //     }
-        
-    //     // for (int i = 0; i < nofFlashes; i++) {
-    //     //     gpio_set_level(GPIO_NUM_22, 1);
-    //     //     vTaskDelay(150 / portTICK_PERIOD_MS);
-    //     //     gpio_set_level(GPIO_NUM_22, 0);
-    //     //     vTaskDelay(150 / portTICK_PERIOD_MS);
-    //     // }
-        
-    //     // If the application could only re-boot at certain points, you could
-    //     // manually query iap_https_new_firmware_installed and manually trigger
-    //     // the re-boot. What we do in this example is to let the firmware updater
-    //     // re-boot automatically after installing the update (see init_ota below).
-    //     //
-    //     // if (iap_https_new_firmware_installed()) {
-    //     //     ESP_LOGI(TAG, "New firmware has been installed - rebooting...");
-    //     //     esp_restart();
-    //     // }
-        
-    //     vTaskDelay(500 / portTICK_PERIOD_MS);
-    // }
-    
-    // Should never arrive here.
 }
 
 static void check_for_updates() {
@@ -206,11 +164,6 @@ static void check_for_updates() {
         ESP_LOGI(TAG, "We need to update");
         iap_https_download_image();
     }
-    // if (iap_https_new_firmware_installed())
-    // {
-    //     ESP_LOGI(TAG, "New firmware intalled - rebooting...\n");
-    //     esp_restart();
-    // }
     else
     {
         ESP_LOGI(TAG, "Firmaware is up-to-date");
@@ -218,27 +171,32 @@ static void check_for_updates() {
 }
 
 static void touch_pad_events() {
-    uint16_t touch_1_val;
-    uint16_t touch_2_val;
-    uint16_t touch_3_val;
-    uint16_t touch_4_val;
+    uint16_t touch_1_val = 0;
+    uint16_t touch_2_val = 0;
+    uint16_t touch_3_val = 0;
+    uint16_t touch_4_val = 0;
 
-    uint16_t touch_1_threshold;
-    uint16_t touch_2_threshold;
-    uint16_t touch_3_threshold;
-    uint16_t touch_4_threshold;
+    uint16_t touch_1_threshold = 0;
+    uint16_t touch_2_threshold = 0;
+    uint16_t touch_3_threshold = 0;
+    uint16_t touch_4_threshold = 0;
 
-    // touch_pad_init();
+    touch_pad_init();
     
-    // touch_pad_read(TOUCH_1, &touch_1_val);
-    // touch_pad_read(TOUCH_2, &touch_2_val);
-    // touch_pad_read(TOUCH_3, &touch_3_val);
-    // touch_pad_read(TOUCH_4, &touch_4_val);
+    touch_pad_read(TOUCH_1, &touch_1_val);    
+    touch_pad_read(TOUCH_2, &touch_2_val);
+    touch_pad_read(TOUCH_3, &touch_3_val);
+    touch_pad_read(TOUCH_4, &touch_4_val);
 
-    // touch_pad_get_thresh(TOUCH_1, &touch_1_threshold);
-    // touch_pad_get_thresh(TOUCH_2, &touch_2_threshold);
-    // touch_pad_get_thresh(TOUCH_3, &touch_3_threshold);
-    // touch_pad_get_thresh(TOUCH_4, &touch_4_threshold);
+    touch_pad_get_thresh(TOUCH_1, &touch_1_threshold);
+    touch_pad_get_thresh(TOUCH_2, &touch_2_threshold);
+    touch_pad_get_thresh(TOUCH_3, &touch_3_threshold);
+    touch_pad_get_thresh(TOUCH_4, &touch_4_threshold);
+
+    printf("T0:%d with Trh: %d\n", touch_1_val, touch_1_threshold);
+    printf("T3:%d with Trh: %d\n", touch_2_val, touch_2_threshold);
+    printf("T5:%d with Trh: %d\n", touch_3_val, touch_3_threshold);
+    printf("T7:%d with Trh: %d\n", touch_4_val, touch_4_threshold);
 }
 
 static void init_led() {
@@ -261,13 +219,15 @@ static void init_led() {
     gpio_set_level(LED_GPIO_T8, 0);
 }
 
-static void calibrate_touch_pad(touch_pad_t pad) {
+static void calibrate_touch_pads() {
 
     for (size_t j = 0; j < 8; j++)
     {
         if (j == 0 || j == 3 || j == 5 || j == 7)
         {            
             touch_pad_config(j, 0);
+
+            vTaskDelay(100 / portTICK_PERIOD_MS);
             
             int avg = 0;
             const size_t calibration_count = 128;

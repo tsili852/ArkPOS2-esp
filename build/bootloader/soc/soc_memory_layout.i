@@ -1,0 +1,5 @@
+# 1 "C:/esp/esp-idf/components/soc/esp32/soc_memory_layout.c"
+# 1 "C:\\esp\\ArkPOS2-esp\\build\\bootloader\\soc//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "C:/esp/esp-idf/components/soc/esp32/soc_memory_layout.c"
