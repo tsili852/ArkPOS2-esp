@@ -8,6 +8,11 @@
 #include "esp_system.h"
 #include "esp_sleep.h"
 #include "esp_wifi.h"
+#include "esp_blufi_api.h"
+#include "esp_bt_defs.h"
+#include "esp_gap_ble_api.h"
+#include "esp_bt_main.h"
+#include "esp_bt_device.h"
 #include "esp32/ulp.h"
 
 #include "soc/rtc_cntl_reg.h"
@@ -16,6 +21,8 @@
 
 #include "nvs_flash.h"
 #include "nvs.h"
+
+#include "bt.h"
 
 #include "driver/gpio.h"
 #include "driver/touch_pad.h"
