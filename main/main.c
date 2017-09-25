@@ -328,7 +328,7 @@ static void calibrate_touch_pads() {
                     case ESP_ERR_NVS_INVALID_LENGTH:
                         ESP_LOGE(TAG,"Invalid length!");
                         break;
-                    case ESP_ERR_NVS_KEY_TOO_LONG
+                    case ESP_ERR_NVS_KEY_TOO_LONG:
                         ESP_LOGE(TAG,"Key too long");
                         break;
                     case ESP_ERR_NVS_REMOVE_FAILED: 
