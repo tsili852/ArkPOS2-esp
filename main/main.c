@@ -449,7 +449,7 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
                 printf("incoming:%s\n", incoming_message);
 
                 char substr_inc[256];
-                strncpy(substr_inc, incoming_message[2], 3);
+                strncpy(substr_inc, incoming_message+3, 3);
                 printf("concated:%s\n", substr_inc);
                 // char *incoming_message = param->write.value;
             }
