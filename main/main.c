@@ -343,6 +343,7 @@ static void evaluate_touched_pads(int touch_counter) {
     {
         ESP_LOGI(TAG, "More than two buttons touched");
     }
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
 }
 
 static void check_for_updates() {
