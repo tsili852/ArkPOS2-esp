@@ -55,15 +55,13 @@ static void calibrate_touch_pads();
 static void init_ota();
 static esp_err_t app_event_handler(void *ctx, system_event_t *event);
 
+int32_t touch1_thresh;
+int32_t touch2_thresh;
+int32_t touch3_thresh;
+int32_t touch4_thresh;
 
 void app_main()
 {
-
-    int32_t touch1_thresh;
-    int32_t touch2_thresh;
-    int32_t touch3_thresh;
-    int32_t touch4_thresh;
-
     esp_err_t err_nvs = nvs_flash_init();
     if (err_nvs == ESP_ERR_NVS_NO_FREE_PAGES) {
         // NVS partition was truncated and needs to be erased        
@@ -79,7 +77,7 @@ void app_main()
     err_nvs = nvs_open("storage", NVS_READWRITE, &my_handle);
     if (err_nvs != ESP_OK)
     {
-        ESP_LOGE(TAG, "Error (%d) opening NVS handle!");
+        ESP_LOGE(TAG, "Error (%d) opening NVS handle!", err_nvs);
     }
     else
     {
@@ -190,7 +188,7 @@ void app_main()
 
     printf("Entering Deep Sleep\n");
     gettimeofday(&sleep_enter_time, NULL);
-    
+
     nvs_close(my_handle);
 
     esp_deep_sleep_start();
