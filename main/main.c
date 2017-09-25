@@ -445,7 +445,9 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
             {
                 printf("incoming:%s", param->write.value);
                 char* substr;
-                strncpy(substr, param->write.value, 3);
+                strcpy(substr, param->write.value);
+                printf("%s\n", substr);
+                // strncpy(substr, substr, 3);
                 // char *incoming_message = param->write.value;
                 // save_table_number(incoming_message);    
             }
