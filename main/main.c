@@ -443,7 +443,7 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
             if (param->write.len > 3)
             {
 
-                char test[256];
+                unsigned char test[256];
                 strcpy(test, param->write.value);
 
                 printf("incoming:%s\n", test);
