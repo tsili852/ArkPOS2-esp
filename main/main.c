@@ -313,8 +313,8 @@ static void calibrate_touch_pads() {
             printf((err_nvs_write != ESP_OK) ? "Failed touch 1 update\n" : "Updated touch 1\n");
 
             printf("Committing updates in NVS ... ");
-            err = nvs_commit(my_handle);
-            printf((err != ESP_OK) ? "Failed!\n" : "Done\n");
+            err_nvs_write = nvs_commit(my_handle);
+            printf((err_nvs_writeerr != ESP_OK) ? "Failed to commit NVS!\n" : "Done commiting NVS\n");
         }
     }
 
