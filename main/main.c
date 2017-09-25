@@ -627,7 +627,7 @@ static void calibrate_touch_pads() {
     }
 
     ESP_LOGI(TAG,"Committing updates in NVS ...");
-    err_nvs_write = nvs_commit(my_handle);
+    esp_err_t err_nvs_write = nvs_commit(my_handle);
     printf((err_nvs_write != ESP_OK) ? "Failed to commit NVS!\n" : "Done commiting NVS\n");
 
     // for (size_t j = 0; j < 8; j++)
