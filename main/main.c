@@ -27,10 +27,10 @@
 #include "main.h"
 
 #define TAG "main"
-#define LED_GPIO_T0 22
-#define LED_GPIO_T3 23
-#define LED_GPIO_T5 26
-#define LED_GPIO_T8 21
+#define LED_GPIO_T1 22
+#define LED_GPIO_T2 23
+#define LED_GPIO_T3 26
+#define LED_GPIO_T4 21
 
 #define TOUCH_1 0 
 #define TOUCH_2 3
@@ -156,21 +156,33 @@ void app_main()
             {
                 touch_counter++;
                 ESP_LOGI(TAG,"T1: %d:%d", touch_1_val, touch_1_thresh_activate);
+                gpio_pad_select_gpio(LED_GPIO_T1);
+                gpio_set_direction(LED_GPIO_T1, GPIO_MODE_OUTPUT);
+                gpio_set_level(LED_GPIO_T1, 1);
             }
             if (touch_2_val <= touch_2_thresh_activate)
             {
                 touch_counter++;
                 ESP_LOGI(TAG,"T2: %d:%d", touch_2_val, touch_2_thresh_activate);
+                gpio_pad_select_gpio(LED_GPIO_T2);
+                gpio_set_direction(LED_GPIO_T2, GPIO_MODE_OUTPUT);
+                gpio_set_level(LED_GPIO_T2, 1);
             }
             if (touch_3_val <= touch_3_thresh_activate)
             {
                 touch_counter++;
                 ESP_LOGI(TAG,"T3: %d:%d", touch_3_val, touch_3_thresh_activate);
+                gpio_pad_select_gpio(LED_GPIO_T3);
+                gpio_set_direction(LED_GPIO_T3, GPIO_MODE_OUTPUT);
+                gpio_set_level(LED_GPIO_T3, 1);
             }
             if (touch_4_val <= touch_4_thresh_activate)
             {
                 touch_counter++;
                 ESP_LOGI(TAG,"T4: %d:%d", touch_4_val, touch_4_thresh_activate);
+                gpio_pad_select_gpio(LED_GPIO_T4);
+                gpio_set_direction(LED_GPIO_T4, GPIO_MODE_OUTPUT);
+                gpio_set_level(LED_GPIO_T4, 1);
             }
 
             evaluate_touched_pads(touch_counter);
@@ -396,21 +408,21 @@ static void touch_pad_events() {
 static void init_led() {
     ESP_LOGI(TAG, "Initialize LEDs\n")
 
-    gpio_pad_select_gpio(LED_GPIO_T0);
-    gpio_set_direction(LED_GPIO_T0, GPIO_MODE_OUTPUT);
-    gpio_set_level(LED_GPIO_T0, 0);
+    gpio_pad_select_gpio(LED_GPIO_T1);
+    gpio_set_direction(LED_GPIO_T1, GPIO_MODE_OUTPUT);
+    gpio_set_level(LED_GPIO_T1, 0);
+
+    gpio_pad_select_gpio(LED_GPIO_T2);
+    gpio_set_direction(LED_GPIO_T2, GPIO_MODE_OUTPUT);
+    gpio_set_level(LED_GPIO_T2, 0);
 
     gpio_pad_select_gpio(LED_GPIO_T3);
     gpio_set_direction(LED_GPIO_T3, GPIO_MODE_OUTPUT);
     gpio_set_level(LED_GPIO_T3, 0);
 
-    gpio_pad_select_gpio(LED_GPIO_T5);
-    gpio_set_direction(LED_GPIO_T5, GPIO_MODE_OUTPUT);
-    gpio_set_level(LED_GPIO_T5, 0);
-
-    gpio_pad_select_gpio(LED_GPIO_T8);
-    gpio_set_direction(LED_GPIO_T8, GPIO_MODE_OUTPUT);
-    gpio_set_level(LED_GPIO_T8, 0);
+    gpio_pad_select_gpio(LED_GPIO_T4);
+    gpio_set_direction(LED_GPIO_T4, GPIO_MODE_OUTPUT);
+    gpio_set_level(LED_GPIO_T4, 0);
 }
 
 static void calibrate_touch_pads() {
