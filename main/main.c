@@ -443,14 +443,14 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
             if (param->write.len > 3)
             {
 
-                char test[256];
-                strcpy(test, (char*) param->write.value);
+                char incoming_message[256];
+                strcpy(incoming_message, (char*) param->write.value);
 
-                printf("incoming:%s\n", test);
-                // uint16_t descr_value = param->write.value[1]<<8 | param->write.value[0];
-                // char* substr;
-                // strcpy(substr, param->write.value);
-                // strncpy(substr, substr, 3);
+                printf("incoming:%s\n", incoming_message);
+
+                char* substr_inc;
+                strncpy(substr_inc, incoming_message, 3);
+                printf("concated:%s\n", substr_inc);
                 // char *incoming_message = param->write.value;
             }
 
