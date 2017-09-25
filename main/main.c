@@ -444,9 +444,10 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
             if (param->write.len > 3)
             {
                 printf("incoming:%s", param->write.value);
-                char* substr;
-                strcpy(substr, param->write.value);
-                printf("%s\n", substr);
+                uint16_t descr_value = param->write.value[1]<<8 | param->write.value[0];
+                // char* substr;
+                // strcpy(substr, param->write.value);
+                printf("%s\n", descr_value);
                 // strncpy(substr, substr, 3);
                 // char *incoming_message = param->write.value;
                 // save_table_number(incoming_message);    
