@@ -91,10 +91,10 @@ void app_main()
 
             // Read value from touch_pad 5
 
-            touch_pad_config(5, 1000);
+            touch_pad_config(TOUCH_2, 1000);
             uint16_t touch_2_val = 0;        
             uint16_t touch_2_threshold = 0;
-            touch_pad_read(5, &touch_2_val);
+            touch_pad_read(TOUCH_2, &touch_2_val);
 
             touch_pad_get_thresh(TOUCH_2, &touch_2_threshold);
         
