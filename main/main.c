@@ -125,11 +125,33 @@ static void ble_process();
 static esp_err_t app_event_handler(void *ctx, system_event_t *event);
 static void example_event_handler(esp_blufi_cb_event_t event, esp_blufi_cb_param_t *param);
 
+//Blufi routines
+static void initialise_wifi();
+
 int32_t touch1_thresh;
 int32_t touch2_thresh;
 int32_t touch3_thresh;
 int32_t touch4_thresh;
 nvs_handle my_handle;
+
+static void example_gap_event_handler(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
+{
+    switch (event) {
+    case ESP_GAP_BLE_ADV_DATA_SET_COMPLETE_EVT:
+        esp_ble_gap_start_advertising(&example_adv_params);
+        break;
+    default:
+        break;
+    }
+}
+
+static esp_blufi_callbacks_t example_callbacks = {
+    .event_cb = example_event_callback,
+    .negotiate_data_handler = blufi_dh_negotiate_data_handler,
+    .encrypt_func = blufi_aes_encrypt,
+    .decrypt_func = blufi_aes_decrypt,
+    .checksum_func = blufi_crc_checksum,
+};
 
 void app_main()
 {
@@ -313,8 +335,10 @@ static void ble_process()
 {
     initialise_wifi();
 
+    esp_err_t ret;
+
     esp_bt_controller_config_t bt_cfg = BT_CONTROLLER_INIT_CONFIG_DEFAULT();
-    ret = esp_bt_controller_init(&bt_cfg);
+     ret = esp_bt_controller_init(&bt_cfg);
     if (ret)
     {
         ESP_LOGE(TAG, "Bt controller initialization failed");
@@ -341,7 +365,7 @@ static void ble_process()
         return;
     }
 
-    ESP_LOGI(TAG, "BD Addr: %s", ESP_BD_ADDR_HEX(esp_bt_dev_get_address()) );
+    ESP_LOGI(TAG, "BD Addr: %d", ESP_BD_ADDR_HEX(esp_bt_dev_get_address()) );
     ESP_LOGI(TAG, "Blufi version: %04x", esp_blufi_get_version());
 
     blufi_security_init();
@@ -965,7 +989,7 @@ static esp_err_t example_net_event_handler(void *ctx, system_event_t *event)
     return ESP_OK;
 }
 
-static void initialise_wifi(void)
+static void initialise_wifi()
 {
     tcpip_adapter_init();
     wifi_event_group = xEventGroupCreate();
@@ -977,13 +1001,6 @@ static void initialise_wifi(void)
     ESP_ERROR_CHECK( esp_wifi_start() );
 }
 
-static esp_blufi_callbacks_t example_callbacks = {
-    .event_cb = example_event_callback,
-    .negotiate_data_handler = blufi_dh_negotiate_data_handler,
-    .encrypt_func = blufi_aes_encrypt,
-    .decrypt_func = blufi_aes_decrypt,
-    .checksum_func = blufi_crc_checksum,
-};
 
 static void example_event_callback(esp_blufi_cb_event_t event, esp_blufi_cb_param_t *param)
 {
@@ -1126,13 +1143,3 @@ static void example_event_callback(esp_blufi_cb_event_t event, esp_blufi_cb_para
     }
 }
 
-static void example_gap_event_handler(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
-{
-    switch (event) {
-    case ESP_GAP_BLE_ADV_DATA_SET_COMPLETE_EVT:
-        esp_ble_gap_start_advertising(&example_adv_params);
-        break;
-    default:
-        break;
-    }
-}
