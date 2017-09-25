@@ -74,11 +74,25 @@ void app_main()
         }
         case ESP_SLEEP_WAKEUP_TOUCHPAD: {
             printf("Wake up from touch pad on T%d\n", esp_sleep_get_touchpad_wakeup_status());
-            // uint16_t touch_1_val;
-            // touch_pad_init();
-            // touch_pad_read(0, &touch_1_val);
-            // printf("T:%d\n", touch_1_val);
-            // touch_pad_events();
+            
+            touch_pad_init();
+            
+            // Read value from touch_pad 5
+
+            touch_pad_config(0, 1000);
+            uint16_t value = 0;
+            touch_pad_read(0, &value);
+
+            printf("T%d: %d\n", 0, value);
+
+            // Read value from touch_pad 5
+
+            touch_pad_config(5, 1000);
+            value = 0;
+            touch_pad_read(5, &value);
+
+            printf("T%d: %d\n", 5, value);
+
             break;
         }
         case ESP_SLEEP_WAKEUP_UNDEFINED: {
@@ -227,8 +241,9 @@ static void calibrate_touch_pads() {
         {            
             touch_pad_config(j, 0);
 
+            // Initializes all touch pads properly
             vTaskDelay(100 / portTICK_PERIOD_MS);
-            //
+
             int avg = 0;
             const size_t calibration_count = 128;
             for (int i = 0; i < calibration_count; i++)
