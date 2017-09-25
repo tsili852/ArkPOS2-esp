@@ -228,7 +228,7 @@ static void calibrate_touch_pads() {
             touch_pad_config(j, 0);
 
             vTaskDelay(100 / portTICK_PERIOD_MS);
-            
+            //
             int avg = 0;
             const size_t calibration_count = 128;
             for (int i = 0; i < calibration_count; i++)
