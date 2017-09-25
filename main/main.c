@@ -177,7 +177,12 @@ void app_main()
         read_thresh_from_nvs();        
     }
 
-    ble_process();
+    while (1)
+    {
+        ble_process();
+    }
+
+    // ble_process();
 
     struct timeval now;
     gettimeofday(&now, NULL);
