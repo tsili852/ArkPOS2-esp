@@ -77,21 +77,28 @@ void app_main()
             
             touch_pad_init();
             
-            // Read value from touch_pad 5
+            // Read value from touch_pad 0
 
             touch_pad_config(0, 1000);
-            uint16_t value = 0;
-            touch_pad_read(0, &value);
+            uint16_t touch_1_val = 0;
+            uint16_t touch_1_threshold = 0;
+            
+            touch_pad_read(0, &touch_1_val);
 
-            printf("T%d: %d\n", 0, value);
+            touch_pad_get_thresh(TOUCH_1, &touch_1_threshold);
+        
+            printf("T0:%d with Trh: %d\n", touch_1_val, touch_1_threshold);
 
             // Read value from touch_pad 5
 
             touch_pad_config(5, 1000);
-            value = 0;
-            touch_pad_read(5, &value);
+            uint16_t touch_2_val = 0;        
+            uint16_t touch_2_threshold = 0;
+            touch_pad_read(5, &touch_2_val);
 
-            printf("T%d: %d\n", 5, value);
+            touch_pad_get_thresh(TOUCH_2, &touch_2_threshold);
+        
+            printf("T3:%d with Trh: %d\n", touch_2_val, touch_2_threshold);
 
             break;
         }
