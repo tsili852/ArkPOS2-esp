@@ -59,6 +59,7 @@ int32_t touch1_thresh;
 int32_t touch2_thresh;
 int32_t touch3_thresh;
 int32_t touch4_thresh;
+nvs_handle my_handle;
 
 void app_main()
 {
@@ -72,7 +73,6 @@ void app_main()
     ESP_ERROR_CHECK(err_nvs);
 
     printf("Opening NVS...");
-    nvs_handle my_handle;
 
     err_nvs = nvs_open("storage", NVS_READWRITE, &my_handle);
     if (err_nvs != ESP_OK)
