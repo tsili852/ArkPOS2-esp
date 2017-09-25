@@ -72,7 +72,7 @@ void app_main()
     }
     ESP_ERROR_CHECK(err_nvs);
 
-    printf("Opening NVS...");
+    ESP_LOGI(TAG,"Opening NVS...");
 
     err_nvs = nvs_open("storage", NVS_READWRITE, &my_handle);
     if (err_nvs != ESP_OK)
@@ -310,7 +310,7 @@ static void calibrate_touch_pads() {
 
             touch1_thresh = threshold;
             esp_err_t err_nvs_write = nvs_set_i32(my_handle, "touch1_threshold", touch1_thresh);
-            printf((err_nvs_write != ESP_OK) ? "Failed touch 1 update\n" : "Updated touch 1\n");
+            printf((err_nvs_write != ESP_OK) ? "Failed (%d) touch 1 update\n", err_nvs_write : "Updated touch 1\n");
 
             printf("Committing updates in NVS ... ");
             err_nvs_write = nvs_commit(my_handle);
