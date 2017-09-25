@@ -113,7 +113,7 @@ void app_main()
 
             touch_pad_get_thresh(TOUCH_1, &touch_1_threshold);
         
-            printf("T0:%d with Trh: %d\n", touch_1_val, touch_1_threshold);
+            printf("T1:%d with Trh: %d\n", touch_1_val, touch_1_threshold);
 
             // Read value from touch_pad 2
 
@@ -123,7 +123,7 @@ void app_main()
 
             touch_pad_get_thresh(TOUCH_2, &touch_2_threshold);
         
-            printf("T3:%d with Trh: %d\n", touch_2_val, touch_2_threshold);
+            printf("T2:%d with Trh: %d\n", touch_2_val, touch_2_threshold);
 
             // Read value from touch_pad 3
 
@@ -143,7 +143,7 @@ void app_main()
 
             touch_pad_get_thresh(TOUCH_4, &touch_4_threshold);
         
-            printf("T3:%d with Trh: %d\n", touch_4_val, touch_4_threshold);
+            printf("T4:%d with Trh: %d\n", touch_4_val, touch_4_threshold);
 
             vTaskDelay(500 / portTICK_PERIOD_MS);
 
