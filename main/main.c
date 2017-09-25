@@ -177,12 +177,7 @@ void app_main()
         read_thresh_from_nvs();        
     }
 
-    while (1)
-    {
-        ble_process();
-    }
-
-    // ble_process();
+    ble_process();
 
     struct timeval now;
     gettimeofday(&now, NULL);
@@ -333,7 +328,7 @@ void app_main()
 
     nvs_close(my_handle);
 
-    esp_deep_sleep_start();
+    // esp_deep_sleep_start();
 }
 
 static void ble_process()
