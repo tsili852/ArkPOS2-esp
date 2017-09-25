@@ -448,9 +448,17 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
 
                 printf("incoming:%s\n", incoming_message);
 
+                char msg_tag[256];
+                strncpy(msg_tag, incoming_message, 3);
+
                 char substr_inc[256];
                 strncpy(substr_inc, incoming_message+3, param->write.len);
                 printf("concated:%s\n", substr_inc);
+
+                if (strcmp(msg_tag,"tn:") == 0)
+                {
+                    printf("Table number tag\n");
+                }
                 // char *incoming_message = param->write.value;
             }
 
