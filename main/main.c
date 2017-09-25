@@ -155,18 +155,22 @@ void app_main()
             if (touch_1_val <= touch_1_thresh_activate)
             {
                 touch_counter++;
+                ESP_LOGI(TAG,"T1: %d:%d", touch_1_val, touch_1_thresh_activate);
             }
             if (touch_2_val <= touch_2_thresh_activate)
             {
                 touch_counter++;
+                ESP_LOGI(TAG,"T2: %d:%d", touch_2_val, touch_2_thresh_activate);
             }
             if (touch_3_val <= touch_3_thresh_activate)
             {
                 touch_counter++;
+                ESP_LOGI(TAG,"T3: %d:%d", touch_3_val, touch_3_thresh_activate);
             }
             if (touch_4_val <= touch_4_thresh_activate)
             {
                 touch_counter++;
+                ESP_LOGI(TAG,"T4: %d:%d", touch_4_val, touch_4_thresh_activate);
             }
 
             evaluate_touched_pads(touch_counter);
