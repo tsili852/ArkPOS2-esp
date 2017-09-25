@@ -59,6 +59,53 @@ static esp_err_t app_event_handler(void *ctx, system_event_t *event);
 void app_main()
 {
 
+    int32_t touch1_thresh;
+    int32_t touch2_thresh;
+    int32_t touch3_thresh;
+    int32_t touch4_thresh;
+
+    esp_err_t err_nvs = nvs_flash_init();
+    if (err_nvs == ESP_ERR_NVS_NO_FREE_PAGES) {
+        // NVS partition was truncated and needs to be erased        
+        ESP_ERROR_CHECK(nvs_flash_erase());
+        // Retry nvs_flash_init
+        err_nvs = nvs_flash_init();
+    }
+    ESP_ERROR_CHECK(err_nvs);
+
+    printf("Opening NVS...");
+    nvs_handle my_handle;
+
+    err_nvs = nvs_open("storage", NVS_READWRITE, &my_handle);
+    if (err_nvs != ESP_OK)
+    {
+        ESP_LOGE(TAG, "Error (%d) opening NVS handle!");
+    }
+    else
+    {
+        ESP_LOGI(TAG, "NVS Opened");
+        err_nvs = nvs_get_i32(my_handle, "touch1_threshold", &touch1_thresh);
+        switch (err_nvs) {
+            case ESP_OK:
+                ESP_LOGI(TAG, "Threshold for 0: %d", touch1_thresh);
+                break;
+            case ESP_ERR_NVS_NOT_FOUND:
+                ESP_LOGW(TAG, "The value is not initialized yet!");
+                break;
+            case ESP_ERR_NVS_INVALID_HANDLE:
+                ESP_LOGW(TAG,"Invalid handle!");
+                break;
+            case ESP_ERR_NVS_INVALID_NAME:
+                ESP_LOGW(TAG,"Invalid name!");
+                break;
+            case ESP_ERR_NVS_INVALID_LENGTH:
+                ESP_LOGW(TAG,"Invalid length!");
+                break;
+            default :
+                ESP_LOGE(TAG,"Error (%d) reading!", err_nvs);
+        }
+    }
+
     struct timeval now;
     gettimeofday(&now, NULL);
     int sleep_time_ms = (now.tv_sec - sleep_enter_time.tv_sec) * 1000 + (now.tv_usec - sleep_enter_time.tv_usec) / 1000;
@@ -91,7 +138,6 @@ void app_main()
 
             // Read value from touch_pad 5
 
-            // touch_pad_config(TOUCH_2, 1000);
             uint16_t touch_2_val = 0;        
             uint16_t touch_2_threshold = 0;
             touch_pad_read(TOUCH_2, &touch_2_val);
@@ -123,15 +169,6 @@ void app_main()
     ESP_LOGI(TAG, "---------- Intialization started ----------");
     ESP_LOGI(TAG, "---------- Software version: %2d -----------", SOFTWARE_VERSION);
 
-    esp_err_t err_nvs = nvs_flash_init();
-    if (err_nvs == ESP_ERR_NVS_NO_FREE_PAGES) {
-        // NVS partition was truncated and needs to be erased        
-        ESP_ERROR_CHECK(nvs_flash_erase());
-        // Retry nvs_flash_init
-        err_nvs = nvs_flash_init();
-    }
-    ESP_ERROR_CHECK(err_nvs);
-
     // Initialize everyting and go to Deep Sleep
 
     const long long wakeup_time_sec = 43200; // 12 Hours
@@ -144,10 +181,6 @@ void app_main()
     touch_pad_set_meas_time(0x1000, 0xffff);
     touch_pad_set_voltage(TOUCH_HVOLT_2V4, TOUCH_LVOLT_0V8, TOUCH_HVOLT_ATTEN_1V5);
 
-    uint16_t touch_1_val;
-    touch_pad_read(0, &touch_1_val);
-    printf("T:%d\n", touch_1_val);
-
     calibrate_touch_pads();
 
     printf("Touch pad wake up configured\n");
@@ -157,6 +190,9 @@ void app_main()
 
     printf("Entering Deep Sleep\n");
     gettimeofday(&sleep_enter_time, NULL);
+    
+    nvs_close(my_handle);
+
     esp_deep_sleep_start();
 }
 
@@ -242,10 +278,52 @@ static void init_led() {
 
 static void calibrate_touch_pads() {
 
+    if (touch1_thresh > 0)
+    {
+        touch_pad_config(TOUCH_1, touch1_thresh);
+    }
+    else
+    {
+        touch_pad_config(TOUCH_1, 0);
+
+        // Initializes all touch pads properly
+        vTaskDelay(100 / portTICK_PERIOD_MS);
+
+        int avg = 0;
+        const size_t calibration_count = 128;
+        for (int i = 0; i < calibration_count; i++)
+        {
+            uint16_t val;
+            touch_pad_read(TOUCH_1, &val);
+            avg += val;
+        }
+        avg /= calibration_count;
+        if (avg < 300)
+        {
+            printf("Touch pad %d is too low: %d \n"
+                    "Cannot use it for wake up\n", TOUCH_1, avg);
+            touch_pad_config(TOUCH_1, 0);
+        }
+        else
+        {
+            int threshold = avg - 1000;
+            printf("Touch pad %d threshold set to: %d\n", TOUCH_1, threshold);
+            touch_pad_config(TOUCH_1, threshold);
+
+            touch1_thresh = threshold;
+            esp_err_t err_nvs_write = nvs_set_i32(my_handle, "touch1_threshold", touch1_thresh);
+            printf((err_nvs_write != ESP_OK) ? "Failed touch 1 update\n" : "Updated touch 1\n");
+
+            printf("Committing updates in NVS ... ");
+            err = nvs_commit(my_handle);
+            printf((err != ESP_OK) ? "Failed!\n" : "Done\n");
+        }
+    }
+
     for (size_t j = 0; j < 8; j++)
     {
         if (j == 0 || j == 3 || j == 5 || j == 7)
-        {            
+        {
             touch_pad_config(j, 0);
 
             // Initializes all touch pads properly
