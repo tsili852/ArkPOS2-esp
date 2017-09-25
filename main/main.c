@@ -126,6 +126,8 @@ void app_main()
         
             printf("T3:%d with Trh: %d\n", touch_2_val, touch_2_threshold);
 
+            vTaskDelay(500 / portTICK_PERIOD_MS);
+
             break;
         }
         case ESP_SLEEP_WAKEUP_UNDEFINED: {
