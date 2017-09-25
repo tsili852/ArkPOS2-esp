@@ -53,6 +53,7 @@ static void check_for_updates();
 static void touch_pad_events();
 static void calibrate_touch_pads();
 static void read_thresh_from_nvs();
+static void evaluate_touched_pads(int touch_counter);
 static void init_ota();
 static esp_err_t app_event_handler(void *ctx, system_event_t *event);
 
@@ -144,6 +145,31 @@ void app_main()
             touch_pad_get_thresh(TOUCH_4, &touch_4_threshold);
         
             printf("T4:%d with Trh: %d\n", touch_4_val, touch_4_threshold);
+
+            uin16_t touch_1_thresh_activate = touch_1_threshold - 2000;
+            uin16_t touch_2_thresh_activate = touch_2_threshold - 2000;
+            uin16_t touch_3_thresh_activate = touch_3_threshold - 2000;
+            uin16_t touch_4_thresh_activate = touch_4_threshold - 2000;
+
+            int touch_counter = 0;
+            if (touch_1_val <= touch_1_thresh_activate)
+            {
+                touch_counter++;
+            }
+            if (touch_2_val <= touch_2_thresh_activate)
+            {
+                touch_counter++;
+            }
+            if (touch_3_val <= touch_3_thresh_activate)
+            {
+                touch_counter++;
+            }
+            if (touch_4_val <= touch_4_thresh_activate)
+            {
+                touch_counter++;
+            }
+
+            evaluate_touched_pads(touch_counter);
 
             vTaskDelay(500 / portTICK_PERIOD_MS);
 
@@ -281,6 +307,21 @@ static void read_thresh_from_nvs()
             break;
         default :
             ESP_LOGE(TAG,"Error (%d) reading!", err_nvs);
+    }
+}
+
+static void evaluate_touched_pads(int touch_counter) {
+    if (touch_counter == 1)
+    {
+        ESP_LOGI(TAG, "One button touched");
+    }
+    else if (touch_counter == 1)
+    {
+        ESP_LOGI(TAG, "Two buttons touched");
+    }
+    else
+    {
+        ESP_LOGI(TAG, "More than two buttons touched");
     }
 }
 
