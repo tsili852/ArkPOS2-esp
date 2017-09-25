@@ -123,7 +123,6 @@ static void evaluate_touched_pads(int touch_counter);
 static void init_ota();
 static void ble_process();
 static esp_err_t app_event_handler(void *ctx, system_event_t *event);
-static void example_net_event_handler(esp_blufi_cb_event_t event, esp_blufi_cb_param_t *param);
 static void example_event_callback(esp_blufi_cb_event_t event, esp_blufi_cb_param_t *param);
 
 //Blufi routines
