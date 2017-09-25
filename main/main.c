@@ -443,8 +443,9 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
 
             if (param->write.len > 3)
             {
-                char *incoming_message = param->write.value;
-                save_table_number(&incoming_message);    
+                printf("incoming:%s", param->write.value);
+                // char *incoming_message = param->write.value;
+                // save_table_number(incoming_message);    
             }
 
             if (gl_profile_tab[PROFILE_A_APP_ID].descr_handle == param->write.handle && param->write.len == 2){
@@ -1230,10 +1231,10 @@ static void touch_pad_events() {
     printf("T7:%d with Trh: %d\n", touch_4_val, touch_4_threshold);
 }
 
-static void save_table_number(char *table_number)
-{
-    printf("table_number:%s", table_number);
-}
+// static void save_table_number(char *table_number)
+// {
+//     printf("table_number:%s", table_number);
+// }
 
 static void init_led() {
     ESP_LOGI(TAG, "Initialize LEDs\n")
