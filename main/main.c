@@ -45,7 +45,7 @@
 #define TOUCH_3 5
 #define TOUCH_4 7
 
-#define BLUFI_DEVICE_NAME "ESP_ARKPOS"
+#define BLUFI_DEVICE_NAME "BLUFI_DEVICE"
 #define WIFI_LIST_NUM 10
 
 static const char *server_root_ca_public_key_pem = OTA_SERVER_ROOT_CA_PEM;
