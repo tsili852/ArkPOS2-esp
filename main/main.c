@@ -312,7 +312,22 @@ static void calibrate_touch_pads() {
             esp_err_t err_nvs_write = nvs_set_i32(my_handle, "touch1_threshold", touch1_thresh);
             if (err_nvs_write != ESP_OK)
             {
-                ESP_LOGE(TAG,"Failed (%d) touch 1 update\n", err_nvs_write);
+                switch (err_nvs_write) {
+                    case ESP_ERR_NVS_NOT_FOUND:
+                        ESP_LOGW(TAG, "The value is not initialized yet!");
+                        break;
+                    case ESP_ERR_NVS_INVALID_HANDLE:
+                        ESP_LOGW(TAG,"Invalid handle!");
+                        break;
+                    case ESP_ERR_NVS_INVALID_NAME:
+                        ESP_LOGW(TAG,"Invalid name!");
+                        break;
+                    case ESP_ERR_NVS_INVALID_LENGTH:
+                        ESP_LOGW(TAG,"Invalid length!");
+                        break;
+                    default :
+                        ESP_LOGE(TAG,"Error (%d) reading!", err_nvs_write);
+                }
             }
             else
             {
