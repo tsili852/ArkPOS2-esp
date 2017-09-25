@@ -223,7 +223,7 @@ static void read_thresh_from_nvs()
     err_nvs = nvs_get_i32(my_handle, "t3_thresh", &touch3_thresh);
     switch (err_nvs) {
         case ESP_OK:
-            ESP_LOGI(TAG, "Threshold for T3: %d", touch2_thresh);
+            ESP_LOGI(TAG, "Threshold for T3: %d", touch3_thresh);
             break;
         case ESP_ERR_NVS_NOT_FOUND:
             ESP_LOGW(TAG, "The value for T3 is not initialized yet!");
@@ -244,7 +244,7 @@ static void read_thresh_from_nvs()
     err_nvs = nvs_get_i32(my_handle, "t4_thresh", &touch4_thresh);
     switch (err_nvs) {
         case ESP_OK:
-            ESP_LOGI(TAG, "Threshold for T4: %d", touch2_thresh);
+            ESP_LOGI(TAG, "Threshold for T4: %d", touch4_thresh);
             break;
         case ESP_ERR_NVS_NOT_FOUND:
             ESP_LOGW(TAG, "The value for T4 is not initialized yet!");
@@ -519,7 +519,7 @@ static void calibrate_touch_pads() {
             printf("Touch pad %d threshold set to: %d\n", TOUCH_3, threshold);
             touch_pad_config(TOUCH_3, threshold);
 
-            touch2_thresh = threshold;
+            touch3_thresh = threshold;
             esp_err_t err_nvs_write = nvs_set_i32(my_handle, "t3_thresh", touch3_thresh);
             if (err_nvs_write != ESP_OK)
             {
@@ -589,7 +589,7 @@ static void calibrate_touch_pads() {
             printf("Touch pad %d threshold set to: %d\n", TOUCH_4, threshold);
             touch_pad_config(TOUCH_4, threshold);
 
-            touch2_thresh = threshold;
+            touch4_thresh = threshold;
             esp_err_t err_nvs_write = nvs_set_i32(my_handle, "t4_thresh", touch4_thresh);
             if (err_nvs_write != ESP_OK)
             {
