@@ -319,7 +319,7 @@ static void evaluate_touched_pads(int touch_counter) {
     {
         ESP_LOGI(TAG, "One button touched");
     }
-    else if (touch_counter == 1)
+    else if (touch_counter == 2)
     {
         ESP_LOGI(TAG, "Two buttons touched");
     }
