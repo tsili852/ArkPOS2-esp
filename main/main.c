@@ -310,7 +310,14 @@ static void calibrate_touch_pads() {
 
             touch1_thresh = threshold;
             esp_err_t err_nvs_write = nvs_set_i32(my_handle, "touch1_threshold", touch1_thresh);
-            printf((err_nvs_write != ESP_OK) ? "Failed (%d) touch 1 update\n", err_nvs_write : "Updated touch 1\n");
+            if (err_nvs_write != ESP_OK)
+            {
+                ESP_LOGE(TAG,"Failed (%d) touch 1 update\n", err_nvs_write);
+            }
+            else
+            {
+                ESP_LOGI(TAG, "Updated touch 1 threshold in NVS");
+            }
 
             printf("Committing updates in NVS ... ");
             err_nvs_write = nvs_commit(my_handle);
