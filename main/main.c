@@ -32,6 +32,7 @@
 #include "wifi_sta.h"
 #include "iap_https.h"
 #include "main.h"
+#include "blufi_example.h"
 
 #define TAG "main"
 #define LED_GPIO_T1 22
