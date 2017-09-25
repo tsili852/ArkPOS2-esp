@@ -82,7 +82,7 @@ void app_main()
     else
     {
         ESP_LOGI(TAG, "NVS Opened");
-        err_nvs = nvs_get_i32(my_handle, "touch1_threshold", &touch1_thresh);
+        err_nvs = nvs_get_i32(my_handle, "t1_thresh", &touch1_thresh);
         switch (err_nvs) {
             case ESP_OK:
                 ESP_LOGI(TAG, "Threshold for 0: %d", touch1_thresh);
@@ -309,7 +309,7 @@ static void calibrate_touch_pads() {
             touch_pad_config(TOUCH_1, threshold);
 
             touch1_thresh = threshold;
-            esp_err_t err_nvs_write = nvs_set_i32(my_handle, "touch1_threshold", touch1_thresh);
+            esp_err_t err_nvs_write = nvs_set_i32(my_handle, "t1_thresh", touch1_thresh);
             if (err_nvs_write != ESP_OK)
             {
                 switch (err_nvs_write) {
