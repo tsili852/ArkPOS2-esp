@@ -313,20 +313,25 @@ static void calibrate_touch_pads() {
             if (err_nvs_write != ESP_OK)
             {
                 switch (err_nvs_write) {
-                    case ESP_ERR_NVS_NOT_FOUND:
-                        ESP_LOGW(TAG, "The value is not initialized yet!");
-                        break;
                     case ESP_ERR_NVS_INVALID_HANDLE:
-                        ESP_LOGW(TAG,"Invalid handle!");
+                        ESP_LOGE(TAG,"Invalid handle!");
+                        break;
+                    case ESP_ERR_NVS_READ_ONLY:
+                        ESP_LOGE(TAG,"Read only!");
                         break;
                     case ESP_ERR_NVS_INVALID_NAME:
-                        ESP_LOGW(TAG,"Invalid name!");
+                        ESP_LOGE(TAG,"Invalid name!");
+                        break;
+                    case ESP_ERR_NVS_NOT_ENOUGH_SPACE:
+                        ESP_LOGE(TAG,"Not enough space!");
                         break;
                     case ESP_ERR_NVS_INVALID_LENGTH:
-                        ESP_LOGW(TAG,"Invalid length!");
+                        ESP_LOGE(TAG,"Invalid length!");
                         break;
+                    case ESP_ERR_NVS_REMOVE_FAILED: 
+                        ESP_LOGE(TAG, "Flash write failed");
                     default :
-                        ESP_LOGE(TAG,"Error (%d) reading!", err_nvs_write);
+                        ESP_LOGE(TAG,"Error (%d) writing!", err_nvs_write);
                 }
             }
             else
