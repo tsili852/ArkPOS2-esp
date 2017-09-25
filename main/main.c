@@ -449,7 +449,7 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
                 // strcpy(substr, param->write.value);
                 // strncpy(substr, substr, 3);
                 // char *incoming_message = param->write.value;
-                save_table_number(param->write.value, param->write.len);    
+                save_table_number(&param->write.value, param->write.len);    
             }
 
             if (gl_profile_tab[PROFILE_A_APP_ID].descr_handle == param->write.handle && param->write.len == 2){
