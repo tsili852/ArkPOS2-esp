@@ -315,7 +315,11 @@ static void read_thresh_from_nvs()
 }
 
 static void evaluate_touched_pads(int touch_counter) {
-    if (touch_counter == 1)
+    if (touch_counter == 0)
+    {
+        ESP_LOGI(TAG, "No buttons touched");
+    }
+    else if (touch_counter == 1)
     {
         ESP_LOGI(TAG, "One button touched");
     }
