@@ -85,7 +85,7 @@ static void calibrate_touch_pads();
 static void read_thresh_from_nvs();
 static void read_table_number_from_nvs();
 static void evaluate_touched_pads(int touch_counter);
-static void save_table_number(char *table_number);
+static void save_table_number(char table_number[256], int char_len);
 static void init_ota();
 static void ble_process();
 static esp_err_t app_event_handler(void *ctx, system_event_t *event);
@@ -443,14 +443,13 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
 
             if (param->write.len > 3)
             {
-                printf("incoming:%s", param->write.value);
-                uint16_t descr_value = param->write.value[1]<<8 | param->write.value[0];
+                // printf("incoming:%s", param->write.value);
+                // uint16_t descr_value = param->write.value[1]<<8 | param->write.value[0];
                 // char* substr;
                 // strcpy(substr, param->write.value);
-                printf("%s\n", param->write.value);
                 // strncpy(substr, substr, 3);
                 // char *incoming_message = param->write.value;
-                // save_table_number(incoming_message);    
+                save_table_number(param->write.value, param->write.len);    
             }
 
             if (gl_profile_tab[PROFILE_A_APP_ID].descr_handle == param->write.handle && param->write.len == 2){
@@ -1236,10 +1235,10 @@ static void touch_pad_events() {
     printf("T7:%d with Trh: %d\n", touch_4_val, touch_4_threshold);
 }
 
-// static void save_table_number(char *table_number)
-// {
-//     printf("table_number:%s", table_number);
-// }
+static void save_table_number(char table_number[256], int char_len)
+{
+    printf("table_number:%s", table_number);
+}
 
 static void init_led() {
     ESP_LOGI(TAG, "Initialize LEDs\n")
