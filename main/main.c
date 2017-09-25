@@ -444,9 +444,9 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
             {
 
                 char test[256];
-                strcpy(test, "Jane");
+                strcpy(test, param->write.value);
 
-                printf("incoming:%s", test);
+                printf("incoming:%s\n", test);
                 // uint16_t descr_value = param->write.value[1]<<8 | param->write.value[0];
                 // char* substr;
                 // strcpy(substr, param->write.value);
