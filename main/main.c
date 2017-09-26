@@ -244,6 +244,7 @@ void app_main()
     {
         ESP_LOGI(TAG, "NVS Opened");
         read_thresh_from_nvs();        
+        read_table_number_from_nvs();
     }
 
     if (table_number == 0)
@@ -478,7 +479,7 @@ static void read_table_number_from_nvs()
             ESP_LOGI(TAG, "Table No: %d", table_number);
             break;
         case ESP_ERR_NVS_NOT_FOUND:
-            ESP_LOGW(TAG, "The value for T1 is not initialized yet!");
+            ESP_LOGW(TAG, "Table number not yet specified");
             break;
         case ESP_ERR_NVS_INVALID_HANDLE:
             ESP_LOGW(TAG,"Invalid handle!");
