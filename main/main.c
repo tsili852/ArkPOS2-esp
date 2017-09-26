@@ -268,6 +268,17 @@ int table_number = 0;
 //     .checksum_func = blufi_crc_checksum,
 // };
 
+bool str2int (int &i, char const *s)
+{
+    char              c;
+    std::stringstream ss(s);
+    ss >> i;
+    if (ss.fail() || ss.get(c)) {
+        // not an integer
+        return false;
+    }
+    return true;
+}
 
 
 void app_main()
@@ -1297,7 +1308,50 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
                 if (strcmp(msg_tag,"tn:") == 0)
                 {
                     printf("Table number tag\n");
-                }                
+                }
+
+                bool converted = str2int(table_number, substr_inc);
+                if (!converted)
+                {
+                    printf("Not a number!!\n");
+                }
+                else
+                {
+                    esp_err_t err_nvs_write = nvs_set_i32(my_handle, "table_number", converted);
+                    if (err_nvs_write != ESP_OK)
+                    {
+                        switch (err_nvs_write) {
+                            case ESP_ERR_NVS_INVALID_HANDLE:
+                                ESP_LOGE(TAG,"Invalid handle!");
+                                break;
+                            case ESP_ERR_NVS_READ_ONLY:
+                                ESP_LOGE(TAG,"Read only!");
+                                break;
+                            case ESP_ERR_NVS_INVALID_NAME:
+                                ESP_LOGE(TAG,"Invalid name!");
+                                break;
+                            case ESP_ERR_NVS_NOT_ENOUGH_SPACE:
+                                ESP_LOGE(TAG,"Not enough space!");
+                                break;
+                            case ESP_ERR_NVS_INVALID_LENGTH:
+                                ESP_LOGE(TAG,"Invalid length!");
+                                break;
+                            case ESP_ERR_NVS_KEY_TOO_LONG:
+                                ESP_LOGE(TAG,"Key too long");
+                                break;
+                            case ESP_ERR_NVS_REMOVE_FAILED: 
+                                ESP_LOGE(TAG, "Flash write failed");
+                                break;
+                            default :
+                                ESP_LOGE(TAG,"Error (%d) writing!", err_nvs_write);
+                        }
+                    }
+                    else
+                    {
+                        ESP_LOGI(TAG, "Updated table number in NVS");
+                        esp_restart();
+                    }
+                }
             }
 
             if (gl_profile_tab[PROFILE_A_APP_ID].descr_handle == param->write.handle && param->write.len == 2){
