@@ -398,6 +398,7 @@ void app_main()
     
     gettimeofday(&sleep_enter_time, NULL);
 
+    printf("Closing the NVS handle\n");
     nvs_close(my_handle);    
 
     if (table_number > 0)
