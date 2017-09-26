@@ -1220,8 +1220,8 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
                     printf("Not a number!!\n");
                 }
                 else
-                {
-                    err_nvs = nvs_open("storage", NVS_READWRITE, &my_handle);
+                { 
+                    esp_err_t err_nvs = nvs_open("storage", NVS_READWRITE, &my_handle);
                     if (err_nvs != ESP_OK)
                     {
                         ESP_LOGE(TAG, "Error (%d) opening NVS handle!", err_nvs);
