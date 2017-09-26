@@ -66,7 +66,7 @@ static void read_table_number_from_nvs();
 static void evaluate_touched_pads(int touch_counter);
 static void init_ota();
 static void ble_process();
-static bool str2int (int &i, char const *s);
+static bool str2int (int i, char const *s);
 static esp_err_t app_event_handler(void *ctx, system_event_t *event);
 static void gatts_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param);
 static void gap_event_handler(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param);
@@ -1563,7 +1563,7 @@ static void gatts_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_
     } while (0);
 }
 
-static bool str2int (int &i, char const *s)
+static bool str2int (int i, char const *s)
 {
     char              c;
     std::stringstream ss(s);
