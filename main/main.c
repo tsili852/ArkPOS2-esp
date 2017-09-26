@@ -248,6 +248,7 @@ void app_main()
 
     if (table_number == 0)
     {
+        ESP_LOGI(TAG, "Waiting for table number");
         ble_process();
     }    
 
@@ -394,16 +395,15 @@ void app_main()
     esp_sleep_enable_touchpad_wakeup();
     
     init_led();
-
-    printf("Entering Deep Sleep\n");
+    
     gettimeofday(&sleep_enter_time, NULL);
 
-    nvs_close(my_handle);
-
-    ESP_LOGI(TAG, "Table number: %d", table_number);
+    nvs_close(my_handle);    
 
     if (table_number > 0)
     {
+        ESP_LOGI(TAG, "Table number: %d", table_number);
+        ESP_LOGI(TAG, "Entering Deep Sleep");
         esp_deep_sleep_start();
     }
 }
