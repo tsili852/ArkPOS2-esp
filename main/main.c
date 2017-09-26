@@ -400,6 +400,8 @@ void app_main()
 
     nvs_close(my_handle);
 
+    ESP_LOGI(TAG, "Table number: %d", table_number);
+
     if (table_number > 0)
     {
         esp_deep_sleep_start();
