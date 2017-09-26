@@ -398,7 +398,7 @@ void app_main()
     
     gettimeofday(&sleep_enter_time, NULL);
 
-    printf("Closing the NVS handle\n");
+    printf("Closing the NVS handle for the thresholds\n");
     nvs_close(my_handle);    
 
     if (table_number > 0)
@@ -1221,6 +1221,15 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
                 }
                 else
                 {
+                    err_nvs = nvs_open("storage", NVS_READWRITE, &my_handle);
+                    if (err_nvs != ESP_OK)
+                    {
+                        ESP_LOGE(TAG, "Error (%d) opening NVS handle!", err_nvs);
+                    }
+                    else
+                    {
+                        ESP_LOGI(TAG, "NVS Opened for table number");                                
+                    }
                     esp_err_t err_nvs_write = nvs_set_i32(my_handle, "table_number", table_number);
                     if (err_nvs_write != ESP_OK)
                     {
@@ -1253,8 +1262,11 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
                     else
                     {
                         ESP_LOGI(TAG, "Updated table number in NVS");
+                        
                         esp_restart();
                     }
+                    printf("Closing the NVS handle for the thresholds\n");
+                    nvs_close(my_handle);
                 }
             }
 
