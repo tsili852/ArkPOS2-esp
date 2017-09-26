@@ -56,27 +56,6 @@ static wifi_sta_init_struct_t wifi_params;
 // Static because the scope of this object is the usage of the iap_https module.
 static iap_https_config_t ota_config;
 
-// static wifi_config_t sta_config;
-// static wifi_config_t ap_config;
-
-/* FreeRTOS event group to signal when we are connected & ready to make a request */
-// static EventGroupHandle_t wifi_event_group;
-
-/* The event group allows multiple bits for each event,
-   but we only care about one event - are we connected
-   to the AP with an IP? */
-// const int CONNECTED_BIT = BIT0;
-
-/* store the station info for send back to phone */
-// static bool gl_sta_connected = false;
-// static uint8_t gl_sta_bssid[6];
-// static uint8_t gl_sta_ssid[32];
-// static int gl_sta_ssid_len;
-
-/* connect infor*/
-// static uint8_t server_if;
-// static uint16_t conn_id;
-
 static void init_wifi();
 static void init_led();
 static void check_for_updates();
@@ -87,16 +66,13 @@ static void read_table_number_from_nvs();
 static void evaluate_touched_pads(int touch_counter);
 static void init_ota();
 static void ble_process();
+static bool str2int (int &i, char const *s);
 static esp_err_t app_event_handler(void *ctx, system_event_t *event);
 static void gatts_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param);
 static void gap_event_handler(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param);
 
 static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param);
 static void gatts_profile_b_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param);
-// static void example_event_callback(esp_blufi_cb_event_t event, esp_blufi_cb_param_t *param);
-
-//Blufi routines
-// static void initialise_wifi();
 
 #define GATTS_TAG "ArkPos2_GATTS"
 #define GATTS_SERVICE_UUID_TEST_A   0x00FF
@@ -193,8 +169,6 @@ static esp_ble_adv_params_t adv_params = {
     .adv_int_max        = 0x40,
     .adv_type           = ADV_TYPE_IND,
     .own_addr_type      = BLE_ADDR_TYPE_PUBLIC,
-    //.peer_addr            =
-    //.peer_addr_type       =
     .channel_map        = ADV_CHNL_ALL,
     .adv_filter_policy = ADV_FILTER_ALLOW_SCAN_ANY_CON_ANY,
 };
@@ -249,38 +223,6 @@ nvs_handle my_handle;
 
 int table_number = 0;
 
-// static void example_gap_event_handler(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
-// {
-//     switch (event) {
-//     case ESP_GAP_BLE_ADV_DATA_SET_COMPLETE_EVT:
-//         esp_ble_gap_start_advertising(&example_adv_params);
-//         break;
-//     default:
-//         break;
-//     }
-// }
-
-// static esp_blufi_callbacks_t example_callbacks = {
-//     .event_cb = example_event_callback,
-//     .negotiate_data_handler = blufi_dh_negotiate_data_handler,
-//     .encrypt_func = blufi_aes_encrypt,
-//     .decrypt_func = blufi_aes_decrypt,
-//     .checksum_func = blufi_crc_checksum,
-// };
-
-bool str2int (int &i, char const *s)
-{
-    char              c;
-    std::stringstream ss(s);
-    ss >> i;
-    if (ss.fail() || ss.get(c)) {
-        // not an integer
-        return false;
-    }
-    return true;
-}
-
-
 void app_main()
 {
     esp_err_t err_nvs = nvs_flash_init();
@@ -305,7 +247,10 @@ void app_main()
         read_thresh_from_nvs();        
     }
 
-    ble_process();
+    if (table_number == 0)
+    {
+        ble_process();
+    }    
 
     struct timeval now;
     gettimeofday(&now, NULL);
@@ -456,7 +401,10 @@ void app_main()
 
     nvs_close(my_handle);
 
-    // esp_deep_sleep_start();
+    if (table_number > 0)
+    {
+        esp_deep_sleep_start();
+    }
 }
 
 static void ble_process()
@@ -519,52 +467,6 @@ static void ble_process()
             ESP_LOGE(GATTS_TAG, "set local  MTU failed, error code = %x", local_mtu_ret);
         }
 }
-
-// static void ble_process()
-// {
-//     initialise_wifi();
-
-//     esp_err_t ret;
-
-//     esp_bt_controller_config_t bt_cfg = BT_CONTROLLER_INIT_CONFIG_DEFAULT();
-//      ret = esp_bt_controller_init(&bt_cfg);
-//     if (ret)
-//     {
-//         ESP_LOGE(TAG, "Bt controller initialization failed");
-//     }
-
-//     ret = esp_bt_controller_enable(ESP_BT_MODE_BTDM);
-//     if (ret)
-//     {
-//         ESP_LOGE(TAG, "Bt controller enable failed");
-//         return;
-//     }
-
-//     ret = esp_bluedroid_init();
-//     if (ret)
-//     {
-//         ESP_LOGE(TAG, "Bluedroid initialization failed");
-//         return;
-//     }
-
-//     ret = esp_bluedroid_enable();
-//     if (ret)
-//     {
-//         ESP_LOGE(TAG, "Bluedroid enable failed");
-//         return;
-//     }
-
-//     int bt_dev_addr = esp_bt_dev_get_address();
-
-//     ESP_LOGI(TAG, "BD Addr: %d", bt_dev_addr);
-//     ESP_LOGI(TAG, "Blufi version: %04x", esp_blufi_get_version());
-
-//     blufi_security_init();
-//     esp_ble_gap_register_callback(example_gap_event_handler);
-
-//     esp_blufi_register_callbacks(&example_callbacks);
-//     esp_blufi_profile_init();
-// }
 
 static void read_table_number_from_nvs()
 {
@@ -1659,4 +1561,16 @@ static void gatts_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_
             }
         }
     } while (0);
+}
+
+static bool str2int (int &i, char const *s)
+{
+    char              c;
+    std::stringstream ss(s);
+    ss >> i;
+    if (ss.fail() || ss.get(c)) {
+        // not an integer
+        return false;
+    }
+    return true;
 }
