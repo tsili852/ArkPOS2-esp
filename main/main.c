@@ -1511,46 +1511,13 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
                             ESP_LOGE(TAG,"Error (%d) writing!", err_nvs_write);
                     }
 
-                    ESP_LOGW(TAG,"Entering normal mode");
-                    mode = 1;
-
-                    err_nvs_write = nvs_set_i32(my_handle, "mode", mode);
-                    switch (err_nvs_write) {
-                        case ESP_OK:
-                            ESP_LOGI(TAG,"Mode written");
-                            break;
-                        case ESP_ERR_NVS_INVALID_HANDLE:
-                            ESP_LOGE(TAG,"Invalid handle!");
-                            break;
-                        case ESP_ERR_NVS_READ_ONLY:
-                            ESP_LOGE(TAG,"Read only!");
-                            break;
-                        case ESP_ERR_NVS_INVALID_NAME:
-                            ESP_LOGE(TAG,"Invalid name!");
-                            break;
-                        case ESP_ERR_NVS_NOT_ENOUGH_SPACE:
-                            ESP_LOGE(TAG,"Not enough space!");
-                            break;
-                        case ESP_ERR_NVS_INVALID_LENGTH:
-                            ESP_LOGE(TAG,"Invalid length!");
-                            break;
-                        case ESP_ERR_NVS_KEY_TOO_LONG:
-                            ESP_LOGE(TAG,"Key too long");
-                            break;
-                        case ESP_ERR_NVS_REMOVE_FAILED:
-                            ESP_LOGE(TAG, "Flash write failed");
-                            break;
-                        default :
-                            ESP_LOGE(TAG,"Error (%d) writing mode!", err_nvs_write);
-                    }
-
                     ESP_LOGI(TAG,"Committing updates in NVS for table number ...");
                     err_nvs_write = nvs_commit(my_handle);
                     printf((err_nvs_write != ESP_OK) ? "Failed to commit NVS for table number!\n" : "Updated table number in NVS\n");
 
                     ESP_LOGI(TAG, "Closing the NVS handle for configuration");
                     nvs_close(my_handle);
-                    esp_restart();
+                    ESP_LOGWI(TAG, "Send 'change_mode' to go to normal mode");
 
                 }
             }
