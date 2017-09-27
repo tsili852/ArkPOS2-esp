@@ -256,7 +256,7 @@ void app_main()
         read_table_number_from_nvs();
     }
 
-    if (table_number == 0 || mode == 2)
+    if (mode == 2)
     {
         ESP_LOGW(TAG, "Entering Configuration State");
         ESP_LOGW(TAG, "Please connect to the module");
@@ -412,7 +412,7 @@ void app_main()
     printf("Closing the NVS handle for the thresholds\n");
     nvs_close(my_handle);
 
-    if (table_number > 0 || mode == 1)
+    if (mode == 1)
     {
         ESP_LOGI(TAG, "Table number: %d", table_number);
         ESP_LOGI(TAG, "Entering Deep Sleep");
@@ -1315,6 +1315,61 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
                 strncpy(substr_inc, incoming_message+3, param->write.len);
                 printf("table number: %s\n", substr_inc);
 
+                if (strcmp(msg_tag,"change_mode") == 0) {
+
+                  esp_err_t err_nvs = nvs_open("storage", NVS_READWRITE, &my_handle);
+                  if (err_nvs != ESP_OK)
+                  {
+                      ESP_LOGE(TAG, "Error (%d) opening NVS handle!", err_nvs);
+                  }
+                  else
+                  {
+                      ESP_LOGI(TAG, "NVS Opened for table number");
+                  }
+
+                  ESP_LOGW(TAG,"Entering normal mode");
+                  mode = 1;
+
+                  esp_err_t err_nvs_write = nvs_set_i32(my_handle, "mode", mode);
+                  switch (err_nvs_write) {
+                      case ESP_OK:
+                          ESP_LOGI(TAG,"Mode written");
+                          break;
+                      case ESP_ERR_NVS_INVALID_HANDLE:
+                          ESP_LOGE(TAG,"Invalid handle!");
+                          break;
+                      case ESP_ERR_NVS_READ_ONLY:
+                          ESP_LOGE(TAG,"Read only!");
+                          break;
+                      case ESP_ERR_NVS_INVALID_NAME:
+                          ESP_LOGE(TAG,"Invalid name!");
+                          break;
+                      case ESP_ERR_NVS_NOT_ENOUGH_SPACE:
+                          ESP_LOGE(TAG,"Not enough space!");
+                          break;
+                      case ESP_ERR_NVS_INVALID_LENGTH:
+                          ESP_LOGE(TAG,"Invalid length!");
+                          break;
+                      case ESP_ERR_NVS_KEY_TOO_LONG:
+                          ESP_LOGE(TAG,"Key too long");
+                          break;
+                      case ESP_ERR_NVS_REMOVE_FAILED:
+                          ESP_LOGE(TAG, "Flash write failed");
+                          break;
+                      default :
+                          ESP_LOGE(TAG,"Error (%d) writing mode!", err_nvs_write);
+                  }
+
+                  ESP_LOGW(TAG,"Changing mode");
+                  err_nvs_write = nvs_commit(my_handle);
+                  printf((err_nvs_write != ESP_OK) ? "Failed to commit NVS for mode!\n" : "Updated mode in NVS\n");
+
+                  ESP_LOGI(TAG, "Closing the NVS handle the mode");
+                  nvs_close(my_handle);
+                  esp_restart();
+
+                }
+
                 if (strcmp(msg_tag,"tn:") == 0)
                 {
                     printf("Table number tag\n");
@@ -1405,7 +1460,7 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
                     err_nvs_write = nvs_commit(my_handle);
                     printf((err_nvs_write != ESP_OK) ? "Failed to commit NVS for table number!\n" : "Updated table number in NVS\n");
 
-                    ESP_LOGI(TAG, "Closing the NVS handle for the thresholds");
+                    ESP_LOGI(TAG, "Closing the NVS handle for configuration");
                     nvs_close(my_handle);
                     esp_restart();
 
