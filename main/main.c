@@ -497,7 +497,7 @@ static void ble_process()
 }
 
 static void read_ota_update_remaining_time() {
-  esp_err_t err_tn_nvs = nvs_get_i32(myhandle, "update_time", &ota_update_remaining_time);
+  esp_err_t err_tn_nvs = nvs_get_i32(my_handle, "update_time", &ota_update_remaining_time);
   switch (err_tn_nvs) {
     case ESP_OK:
       ESP_LOGI(TAG, "Remaining time until OTA check: %d", ota_update_remaining_time);
