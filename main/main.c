@@ -279,7 +279,7 @@ void app_main()
         case ESP_SLEEP_WAKEUP_TOUCHPAD: {
             printf("Wake up from touch pad on T%d\n", esp_sleep_get_touchpad_wakeup_status());
             printf("Time sleeping: %dms\n", sleep_time_ms);
-            int remaining = 43200 - sleep_time_ms;
+            int remaining = 43200000000 - sleep_time_ms;
             printf("Time until update check: %dms\n", remaining);
 
             touch_pad_init();
