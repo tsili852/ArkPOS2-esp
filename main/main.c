@@ -636,7 +636,7 @@ static void evaluate_touched_pads(int touch_counter) {
 
         ESP_LOGW(TAG, "Restarting in Configuration mode");
 
-        for (size_t i = 0; i < 10; i++) {
+        for (size_t i = 0; i < 1000; i++) {
           gpio_pad_select_gpio(LED_GPIO_T1);
           gpio_set_direction(LED_GPIO_T1, GPIO_MODE_OUTPUT);
           gpio_set_level(LED_GPIO_T1, 0);
@@ -645,7 +645,7 @@ static void evaluate_touched_pads(int touch_counter) {
           gpio_set_direction(LED_GPIO_T2, GPIO_MODE_OUTPUT);
           gpio_set_level(LED_GPIO_T2, 0);
 
-          vTaskDelay(1000 / portTICK_PERIOD_MS);
+          vTaskDelay(200 / portTICK_PERIOD_MS);
 
           gpio_pad_select_gpio(LED_GPIO_T1);
           gpio_set_direction(LED_GPIO_T1, GPIO_MODE_OUTPUT);
