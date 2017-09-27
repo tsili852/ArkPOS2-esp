@@ -1315,7 +1315,7 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
                 strncpy(substr_inc, incoming_message+3, param->write.len);
                 printf("table number: %s\n", substr_inc);
 
-                if (strcmp(msg_tag,"change_mode") == 0) {
+                if (strcmp(incoming_message,"change_mode") == 0) {
 
                   esp_err_t err_nvs = nvs_open("storage", NVS_READWRITE, &my_handle);
                   if (err_nvs != ESP_OK)
