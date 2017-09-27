@@ -1402,7 +1402,7 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
                     }
 
                     ESP_LOGI(TAG,"Committing updates in NVS for table number ...");
-                    esp_err_t err_nvs_write = nvs_commit(my_handle);
+                    err_nvs_write = nvs_commit(my_handle);
                     printf((err_nvs_write != ESP_OK) ? "Failed to commit NVS for table number!\n" : "Updated table number in NVS\n");
 
                     ESP_LOGI(TAG, "Closing the NVS handle for the thresholds");
