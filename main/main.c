@@ -64,6 +64,8 @@ static void calibrate_touch_pads();
 static void read_thresh_from_nvs();
 static void read_mode_from_nvs();
 static void read_table_number_from_nvs();
+static void read_ota_update_remaining_time();
+static void update_ota_update_time(int update_time);
 static void evaluate_touched_pads(int touch_counter);
 static void init_ota();
 static void ble_process();
@@ -230,6 +232,13 @@ int table_number = 0;
 */
 int mode = 1;
 
+/*
+----- Remaining Time --
+The time until the next OTA update check wake up
+Initially set to 43200 seconds = 12 Hours
+*/
+int ota_update_remaining_time = 43200;
+
 void app_main()
 {
     esp_err_t err_nvs = nvs_flash_init();
@@ -254,6 +263,7 @@ void app_main()
         read_thresh_from_nvs();
         read_mode_from_nvs();
         read_table_number_from_nvs();
+        read_ota_update_remaining_time();
     }
 
     if (mode == 2)
@@ -273,14 +283,16 @@ void app_main()
             printf("Wake up for update check. Time in DS: %dms\n", sleep_time_ms);
             // Check for updates
             check_for_updates();
+            update_ota_update_time(ota_update_remaining_time);
             break;
 
         }
         case ESP_SLEEP_WAKEUP_TOUCHPAD: {
             printf("Wake up from touch pad on T%d\n", esp_sleep_get_touchpad_wakeup_status());
             printf("Time sleeping: %dms\n", sleep_time_ms);
-            int remaining = 43200 - (sleep_time_ms / 1000);
-            printf("Time until update check: %dms\n", remaining);
+            ota_update_remaining_time = 43200 - (sleep_time_ms / 1000);
+            printf("Time until update check: %ds\n", ota_update_remaining_time);
+            update_ota_update_time(ota_update_remaining_time);
 
             touch_pad_init();
 
@@ -393,7 +405,7 @@ void app_main()
 
     // Initialize everyting and go to Deep Sleep
 
-    const long long wakeup_time_sec = 43200; // 12 Hours
+    const long long wakeup_time_sec = ota_update_remaining_time;
     // const long long wakeup_time_sec = 10; // 10 seconds ONLY FOR TEST
     printf("Wake up timer set to %lld seconds.\n", wakeup_time_sec);
     esp_sleep_enable_timer_wakeup(wakeup_time_sec * 1000000);
@@ -482,6 +494,80 @@ static void ble_process()
         if (local_mtu_ret){
             ESP_LOGE(GATTS_TAG, "set local  MTU failed, error code = %x", local_mtu_ret);
         }
+}
+
+static void read_ota_update_remaining_time() {
+  esp_err_t err_tn_nvs = nvs_get_i32(myhandle, "update_time", &ota_update_remaining_time);
+  switch (err_tn_nvs) {
+    case ESP_OK:
+      ESP_LOGI(TAG, "Remaining time until OTA check: %d", ota_update_remaining_time);
+      break;
+    case ESP_ERR_NVS_NOT_FOUND:
+          ESP_LOGW(TAG, "Update time not yet specified");
+          break;
+    case ESP_ERR_NVS_INVALID_HANDLE:
+        ESP_LOGW(TAG,"Invalid handle!");
+        break;
+    case ESP_ERR_NVS_INVALID_NAME:
+        ESP_LOGW(TAG,"Invalid name!");
+        break;
+    case ESP_ERR_NVS_INVALID_LENGTH:
+        ESP_LOGW(TAG,"Invalid length!");
+        break;
+    default :
+        ESP_LOGE(TAG,"Error (%d) reading update time!", err_tn_nvs);
+  }
+}
+
+static void update_ota_update_time(int update_time)
+{
+    esp_err_t err_nvs = nvs_open("storage", NVS_READWRITE, &my_handle);
+    if (err_nvs != ESP_OK)
+    {
+        ESP_LOGE(TAG, "Error (%d) opening NVS handle!", err_nvs);
+    }
+    else
+    {
+        ESP_LOGI(TAG, "NVS Opened for update time");
+    }
+
+    ESP_LOGW(TAG,"Setting update time to: %d", update_time);
+
+    esp_err_t err_nvs_write = nvs_set_i32(my_handle, "update_time", update_time);
+    switch (err_nvs_write) {
+        case ESP_OK:
+            ESP_LOGI(TAG,"Time to wake up updated");
+            break;
+        case ESP_ERR_NVS_INVALID_HANDLE:
+            ESP_LOGE(TAG,"Invalid handle!");
+            break;
+        case ESP_ERR_NVS_READ_ONLY:
+            ESP_LOGE(TAG,"Read only!");
+            break;
+        case ESP_ERR_NVS_INVALID_NAME:
+            ESP_LOGE(TAG,"Invalid name!");
+            break;
+        case ESP_ERR_NVS_NOT_ENOUGH_SPACE:
+            ESP_LOGE(TAG,"Not enough space!");
+            break;
+        case ESP_ERR_NVS_INVALID_LENGTH:
+            ESP_LOGE(TAG,"Invalid length!");
+            break;
+        case ESP_ERR_NVS_KEY_TOO_LONG:
+            ESP_LOGE(TAG,"Key too long");
+            break;
+        case ESP_ERR_NVS_REMOVE_FAILED:
+            ESP_LOGE(TAG, "Flash write failed");
+            break;
+        default :
+            ESP_LOGE(TAG,"Error (%d) writing update time!", err_nvs_write);
+    }
+
+    err_nvs_write = nvs_commit(my_handle);
+    printf((err_nvs_write != ESP_OK) ? "Failed to commit NVS for update time!\n" : "Updated wake up time in NVS\n");
+
+    ESP_LOGI(TAG, "Closing the NVS handle the mode");
+    nvs_close(my_handle);
 }
 
 static void read_mode_from_nvs()
