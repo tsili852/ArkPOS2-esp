@@ -639,21 +639,21 @@ static void evaluate_touched_pads(int touch_counter) {
         for (size_t i = 0; i < 10; i++) {
           gpio_pad_select_gpio(LED_GPIO_T1);
           gpio_set_direction(LED_GPIO_T1, GPIO_MODE_OUTPUT);
-          gpio_set_level(LED_GPIO_T1, 1);
-
-          gpio_pad_select_gpio(LED_GPIO_T2);
-          gpio_set_direction(LED_GPIO_T2, GPIO_MODE_OUTPUT);
-          gpio_set_level(LED_GPIO_T2, 1);
-
-          vTaskDelay(500 / portTICK_PERIOD_MS);
-
-          gpio_pad_select_gpio(LED_GPIO_T1);
-          gpio_set_direction(LED_GPIO_T1, GPIO_MODE_OUTPUT);
           gpio_set_level(LED_GPIO_T1, 0);
 
           gpio_pad_select_gpio(LED_GPIO_T2);
           gpio_set_direction(LED_GPIO_T2, GPIO_MODE_OUTPUT);
           gpio_set_level(LED_GPIO_T2, 0);
+
+          vTaskDelay(1000 / portTICK_PERIOD_MS);
+
+          gpio_pad_select_gpio(LED_GPIO_T1);
+          gpio_set_direction(LED_GPIO_T1, GPIO_MODE_OUTPUT);
+          gpio_set_level(LED_GPIO_T1, 1);
+
+          gpio_pad_select_gpio(LED_GPIO_T2);
+          gpio_set_direction(LED_GPIO_T2, GPIO_MODE_OUTPUT);
+          gpio_set_level(LED_GPIO_T2, 1);
 
         }
 
