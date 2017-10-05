@@ -2225,8 +2225,6 @@ crypto_secretbox_open_easy:
 	.string	"crypto_secretbox_detached"
 .LASF31:
 	.string	"crypto_onetimeauth_poly1305_final"
-.LASF36:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF17:
 	.string	"subkey"
 .LASF23:
@@ -2257,10 +2255,12 @@ crypto_secretbox_open_easy:
 	.string	"short int"
 .LASF18:
 	.string	"mlen0"
+.LASF36:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF7:
 	.string	"long int"
 .LASF3:
 	.string	"signed char"
 .LASF35:
 	.string	"C:/esp/esp-idf/components/libsodium/libsodium/src/libsodium/crypto_secretbox/crypto_secretbox_easy.c"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

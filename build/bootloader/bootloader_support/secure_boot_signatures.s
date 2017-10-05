@@ -1332,6 +1332,8 @@ esp_secure_boot_verify_signature:
 	.string	"GNU C99 5.2.0 -mlongcalls -ggdb -ggdb -Og -Og -std=gnu99 -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields"
 .LASF37:
 	.string	"keylen"
+.LASF25:
+	.string	"ESP_LOG_VERBOSE"
 .LASF45:
 	.string	"sigblock"
 .LASF9:
@@ -1406,8 +1408,8 @@ esp_secure_boot_verify_signature:
 	.string	"long unsigned int"
 .LASF39:
 	.string	"esp_secure_boot_verify_signature_block"
-.LASF25:
-	.string	"ESP_LOG_VERBOSE"
+.LASF62:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\bootloader_support"
 .LASF47:
 	.string	"signature_verification_key_start"
 .LASF7:
@@ -1424,8 +1426,6 @@ esp_secure_boot_verify_signature:
 	.string	"C:/esp/esp-idf/components/bootloader_support/src/secure_boot_signatures.c"
 .LASF49:
 	.string	"_binary_signature_verification_key_bin_start"
-.LASF62:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\bootloader_support"
 .LASF3:
 	.string	"ptrdiff_t"
 .LASF38:
@@ -1440,4 +1440,4 @@ esp_secure_boot_verify_signature:
 	.string	"bootloader_sha256_finish"
 .LASF55:
 	.string	"bootloader_mmap"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

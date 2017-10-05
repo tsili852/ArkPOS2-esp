@@ -1019,8 +1019,6 @@ phy_mii_get_partner_pause_enable:
 	.string	"ESP_LOG_ERROR"
 .LASF23:
 	.string	"ESP_LOG_WARN"
-.LASF43:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\ethernet"
 .LASF17:
 	.string	"GPIO_MODE_OUTPUT"
 .LASF38:
@@ -1077,6 +1075,8 @@ phy_mii_get_partner_pause_enable:
 	.string	"char"
 .LASF16:
 	.string	"GPIO_MODE_INPUT"
+.LASF43:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\ethernet"
 .LASF2:
 	.string	"short int"
 .LASF21:
@@ -1097,4 +1097,4 @@ phy_mii_get_partner_pause_enable:
 	.string	"esp_eth_smi_write"
 .LASF26:
 	.string	"ESP_LOG_VERBOSE"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

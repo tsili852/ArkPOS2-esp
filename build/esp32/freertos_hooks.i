@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/esp32/freertos_hooks.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\esp32//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\esp32//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/esp32/freertos_hooks.c"
@@ -1335,7 +1335,7 @@ FILE *_fopencookie_r (struct _reent *, void *__cookie, const char *__mode, cooki
 # 1 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 1
 # 19 "C:/esp/esp-idf/components/newlib/platform_include/assert.h"
        
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 2
 
 

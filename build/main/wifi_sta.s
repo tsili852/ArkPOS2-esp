@@ -63,8 +63,8 @@
 	.literal .LC20, .LC19
 	.literal .LC22, .LC21
 	.literal .LC24, .LC23
-	.literal .LC25, wifi_sta_config_struct$6207
-	.literal .LC26, wifi_sta_config_struct$6207+32
+	.literal .LC25, wifi_sta_config_struct$6329
+	.literal .LC26, wifi_sta_config_struct$6329+32
 	.literal .LC28, .LC27
 	.literal .LC29, wifi_sta_event_group
 	.literal .LC31, .LC30
@@ -74,8 +74,8 @@
 	.global	wifi_sta_init
 	.type	wifi_sta_init, @function
 wifi_sta_init:
-.LFB9:
-	.file 1 "C:/esp/ArkPOS2-esp/main/wifi_sta.c"
+.LFB13:
+	.file 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/wifi_sta.c"
 	.loc 1 26 0
 .LVL0:
 	entry	sp, 96
@@ -387,7 +387,7 @@ wifi_sta_init:
 .LVL61:
 	.loc 1 103 0 discriminator 1
 	retw.n
-.LFE9:
+.LFE13:
 	.size	wifi_sta_init, .-wifi_sta_init
 	.section	.text.wifi_sta_get_event_group,"ax",@progbits
 	.literal_position
@@ -396,7 +396,7 @@ wifi_sta_init:
 	.global	wifi_sta_get_event_group
 	.type	wifi_sta_get_event_group, @function
 wifi_sta_get_event_group:
-.LFB11:
+.LFB15:
 	.loc 1 143 0
 	entry	sp, 32
 .LCFI1:
@@ -404,7 +404,7 @@ wifi_sta_get_event_group:
 	l32r	a8, .LC36
 	l32i.n	a2, a8, 0
 	retw.n
-.LFE11:
+.LFE15:
 	.size	wifi_sta_get_event_group, .-wifi_sta_get_event_group
 	.section	.text.wifi_sta_is_connected,"ax",@progbits
 	.literal_position
@@ -413,7 +413,7 @@ wifi_sta_get_event_group:
 	.global	wifi_sta_is_connected
 	.type	wifi_sta_is_connected, @function
 wifi_sta_is_connected:
-.LFB12:
+.LFB16:
 	.loc 1 148 0
 	entry	sp, 32
 .LCFI2:
@@ -426,7 +426,7 @@ wifi_sta_is_connected:
 	.loc 1 150 0
 	extui	a2, a10, 0, 1
 	retw.n
-.LFE12:
+.LFE16:
 	.size	wifi_sta_is_connected, .-wifi_sta_is_connected
 	.section	.rodata.str1.4
 	.align	4
@@ -448,7 +448,7 @@ wifi_sta_is_connected:
 	.align	4
 	.type	wifi_sta_set_connected, @function
 wifi_sta_set_connected:
-.LFB13:
+.LFB17:
 	.loc 1 154 0
 .LVL63:
 	entry	sp, 32
@@ -494,7 +494,7 @@ wifi_sta_set_connected:
 .LVL68:
 .L12:
 	retw.n
-.LFE13:
+.LFE17:
 	.size	wifi_sta_set_connected, .-wifi_sta_set_connected
 	.section	.rodata.str1.4
 	.align	4
@@ -524,7 +524,7 @@ wifi_sta_set_connected:
 	.global	wifi_sta_handle_event
 	.type	wifi_sta_handle_event, @function
 wifi_sta_handle_event:
-.LFB10:
+.LFB14:
 	.loc 1 106 0 is_stmt 1
 .LVL69:
 	entry	sp, 32
@@ -638,13 +638,13 @@ wifi_sta_handle_event:
 .LVL90:
 	.loc 1 140 0 discriminator 1
 	retw.n
-.LFE10:
+.LFE14:
 	.size	wifi_sta_handle_event, .-wifi_sta_handle_event
-	.section	.bss.wifi_sta_config_struct$6207,"aw",@nobits
+	.section	.bss.wifi_sta_config_struct$6329,"aw",@nobits
 	.align	4
-	.type	wifi_sta_config_struct$6207, @object
-	.size	wifi_sta_config_struct$6207, 112
-wifi_sta_config_struct$6207:
+	.type	wifi_sta_config_struct$6329, @object
+	.size	wifi_sta_config_struct$6329, 112
+wifi_sta_config_struct$6329:
 	.zero	112
 	.section	.bss.wifi_sta_event_group,"aw",@nobits
 	.align	4
@@ -671,10 +671,10 @@ wifi_sta_event_group:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x4
-	.4byte	.LCFI0-.LFB9
+	.4byte	.LCFI0-.LFB13
 	.byte	0xe
 	.uleb128 0x60
 	.align	4
@@ -683,10 +683,10 @@ wifi_sta_event_group:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI1-.LFB11
+	.4byte	.LCFI1-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -695,10 +695,10 @@ wifi_sta_event_group:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI2-.LFB12
+	.4byte	.LCFI2-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -707,10 +707,10 @@ wifi_sta_event_group:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI3-.LFB13
+	.4byte	.LCFI3-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -719,10 +719,10 @@ wifi_sta_event_group:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI4-.LFB10
+	.4byte	.LCFI4-.LFB14
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -744,7 +744,7 @@ wifi_sta_event_group:
 	.file 14 "C:/esp/esp-idf/components/esp32/include/esp_event.h"
 	.file 15 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 	.file 16 "C:/esp/esp-idf/components/log/include/esp_log.h"
-	.file 17 "C:/esp/ArkPOS2-esp/main/wifi_sta.h"
+	.file 17 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/wifi_sta.h"
 	.file 18 "C:/esp/esp-idf/components/newlib/include/string.h"
 	.file 19 "C:/esp/esp-idf/components/freertos/include/freertos/task.h"
 	.file 20 "C:/esp/esp-idf/components/newlib/include/stdio.h"
@@ -860,20 +860,20 @@ wifi_sta_event_group:
 	.byte	0x3
 	.byte	0x2d
 	.4byte	0x70
-	.uleb128 0x4
-	.4byte	.LASF19
-	.byte	0x4
-	.byte	0x73
-	.4byte	0xd9
-	.uleb128 0x4
-	.4byte	.LASF20
-	.byte	0x5
-	.byte	0x18
-	.4byte	0xce
 	.uleb128 0x3
 	.byte	0x1
 	.byte	0x2
+	.4byte	.LASF19
+	.uleb128 0x4
+	.4byte	.LASF20
+	.byte	0x4
+	.byte	0x76
+	.4byte	0xd9
+	.uleb128 0x4
 	.4byte	.LASF21
+	.byte	0x5
+	.byte	0x18
+	.4byte	0xce
 	.uleb128 0x4
 	.4byte	.LASF22
 	.byte	0x6
@@ -924,7 +924,7 @@ wifi_sta_event_group:
 	.byte	0x4
 	.4byte	0x2c
 	.byte	0x8
-	.byte	0x32
+	.byte	0x36
 	.4byte	0x193
 	.uleb128 0x9
 	.4byte	.LASF32
@@ -951,7 +951,7 @@ wifi_sta_event_group:
 	.uleb128 0x4
 	.4byte	.LASF39
 	.byte	0x8
-	.byte	0x3a
+	.byte	0x3e
 	.4byte	0x15c
 	.uleb128 0xa
 	.4byte	0xb8
@@ -964,7 +964,7 @@ wifi_sta_event_group:
 	.byte	0x4
 	.4byte	0x2c
 	.byte	0x8
-	.byte	0x87
+	.byte	0x9b
 	.4byte	0x1c7
 	.uleb128 0x9
 	.4byte	.LASF40
@@ -976,13 +976,13 @@ wifi_sta_event_group:
 	.uleb128 0x4
 	.4byte	.LASF42
 	.byte	0x8
-	.byte	0x8a
+	.byte	0x9e
 	.4byte	0x1ae
 	.uleb128 0x8
 	.byte	0x4
 	.4byte	0x2c
 	.byte	0x8
-	.byte	0x8c
+	.byte	0xa0
 	.4byte	0x1eb
 	.uleb128 0x9
 	.4byte	.LASF43
@@ -994,59 +994,59 @@ wifi_sta_event_group:
 	.uleb128 0x4
 	.4byte	.LASF45
 	.byte	0x8
-	.byte	0x8f
+	.byte	0xa3
 	.4byte	0x1d2
 	.uleb128 0xc
 	.byte	0x6c
 	.byte	0x8
-	.byte	0xa0
+	.byte	0xb4
 	.4byte	0x25f
 	.uleb128 0xd
 	.4byte	.LASF46
 	.byte	0x8
-	.byte	0xa1
+	.byte	0xb5
 	.4byte	0x25f
 	.byte	0
 	.uleb128 0xd
 	.4byte	.LASF47
 	.byte	0x8
-	.byte	0xa2
+	.byte	0xb6
 	.4byte	0x26f
 	.byte	0x20
 	.uleb128 0xd
 	.4byte	.LASF48
 	.byte	0x8
-	.byte	0xa3
+	.byte	0xb7
 	.4byte	0xb8
 	.byte	0x60
 	.uleb128 0xd
 	.4byte	.LASF49
 	.byte	0x8
-	.byte	0xa4
+	.byte	0xb8
 	.4byte	0xb8
 	.byte	0x61
 	.uleb128 0xd
 	.4byte	.LASF50
 	.byte	0x8
-	.byte	0xa5
+	.byte	0xb9
 	.4byte	0x193
 	.byte	0x64
 	.uleb128 0xd
 	.4byte	.LASF51
 	.byte	0x8
-	.byte	0xa6
+	.byte	0xba
 	.4byte	0xb8
 	.byte	0x68
 	.uleb128 0xd
 	.4byte	.LASF52
 	.byte	0x8
-	.byte	0xa7
+	.byte	0xbb
 	.4byte	0xb8
 	.byte	0x69
 	.uleb128 0xd
 	.4byte	.LASF53
 	.byte	0x8
-	.byte	0xa8
+	.byte	0xbc
 	.4byte	0xc3
 	.byte	0x6a
 	.byte	0
@@ -1067,87 +1067,87 @@ wifi_sta_event_group:
 	.uleb128 0x4
 	.4byte	.LASF54
 	.byte	0x8
-	.byte	0xa9
+	.byte	0xbd
 	.4byte	0x1f6
 	.uleb128 0xc
 	.byte	0x70
 	.byte	0x8
-	.byte	0xab
+	.byte	0xbf
 	.4byte	0x2e7
 	.uleb128 0xd
 	.4byte	.LASF46
 	.byte	0x8
-	.byte	0xac
+	.byte	0xc0
 	.4byte	0x25f
 	.byte	0
 	.uleb128 0xd
 	.4byte	.LASF47
 	.byte	0x8
-	.byte	0xad
+	.byte	0xc1
 	.4byte	0x26f
 	.byte	0x20
 	.uleb128 0xd
 	.4byte	.LASF55
 	.byte	0x8
-	.byte	0xae
+	.byte	0xc2
 	.4byte	0x1c7
 	.byte	0x60
 	.uleb128 0xd
 	.4byte	.LASF56
 	.byte	0x8
-	.byte	0xaf
-	.4byte	0xfa
+	.byte	0xc3
+	.4byte	0xe4
 	.byte	0x64
 	.uleb128 0xd
 	.4byte	.LASF57
 	.byte	0x8
-	.byte	0xb0
+	.byte	0xc4
 	.4byte	0x19e
 	.byte	0x65
 	.uleb128 0xd
 	.4byte	.LASF49
 	.byte	0x8
-	.byte	0xb1
+	.byte	0xc5
 	.4byte	0xb8
 	.byte	0x6b
 	.uleb128 0xd
 	.4byte	.LASF58
 	.byte	0x8
-	.byte	0xb2
+	.byte	0xc6
 	.4byte	0x1eb
 	.byte	0x6c
 	.byte	0
 	.uleb128 0x4
 	.4byte	.LASF59
 	.byte	0x8
-	.byte	0xb3
+	.byte	0xc7
 	.4byte	0x28a
 	.uleb128 0xe
 	.byte	0x70
 	.byte	0x8
-	.byte	0xb5
+	.byte	0xc9
 	.4byte	0x310
 	.uleb128 0xf
 	.string	"ap"
 	.byte	0x8
-	.byte	0xb6
+	.byte	0xca
 	.4byte	0x27f
 	.uleb128 0xf
 	.string	"sta"
 	.byte	0x8
-	.byte	0xb7
+	.byte	0xcb
 	.4byte	0x2e7
 	.byte	0
 	.uleb128 0x4
 	.4byte	.LASF60
 	.byte	0x8
-	.byte	0xb8
+	.byte	0xcc
 	.4byte	0x2f2
 	.uleb128 0x8
 	.byte	0x4
 	.4byte	0x2c
 	.byte	0x8
-	.byte	0xc5
+	.byte	0xd9
 	.4byte	0x334
 	.uleb128 0x9
 	.4byte	.LASF61
@@ -1627,7 +1627,7 @@ wifi_sta_event_group:
 	.4byte	.LASF122
 	.byte	0xe
 	.byte	0x5a
-	.4byte	0xfa
+	.4byte	0xe4
 	.byte	0xc
 	.byte	0
 	.uleb128 0x4
@@ -1843,7 +1843,7 @@ wifi_sta_event_group:
 	.byte	0x4
 	.4byte	0x8a3
 	.uleb128 0x10
-	.4byte	0xef
+	.4byte	0xf6
 	.4byte	0x8b2
 	.uleb128 0x11
 	.4byte	0x8b2
@@ -1993,9 +1993,9 @@ wifi_sta_event_group:
 	.4byte	.LASF180
 	.byte	0x1
 	.byte	0x19
-	.4byte	0xef
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	0xf6
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xe5c
@@ -2012,7 +2012,7 @@ wifi_sta_event_group:
 	.4byte	0x310
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	wifi_sta_config_struct$6207
+	.4byte	wifi_sta_config_struct$6329
 	.uleb128 0x1a
 	.4byte	.LASF173
 	.byte	0x1
@@ -2025,31 +2025,31 @@ wifi_sta_event_group:
 	.4byte	.LASF174
 	.byte	0x1
 	.byte	0x32
-	.4byte	0xef
+	.4byte	0xf6
 	.4byte	.LLST1
 	.uleb128 0x1b
 	.4byte	.LASF175
 	.byte	0x1
 	.byte	0x3b
-	.4byte	0xef
+	.4byte	0xf6
 	.4byte	.LLST2
 	.uleb128 0x1b
 	.4byte	.LASF176
 	.byte	0x1
 	.byte	0x44
-	.4byte	0xef
+	.4byte	0xf6
 	.4byte	.LLST3
 	.uleb128 0x1b
 	.4byte	.LASF177
 	.byte	0x1
 	.byte	0x50
-	.4byte	0xef
+	.4byte	0xf6
 	.4byte	.LLST4
 	.uleb128 0x1b
 	.4byte	.LASF178
 	.byte	0x1
 	.byte	0x5b
-	.4byte	0xef
+	.4byte	0xf6
 	.4byte	.LLST5
 	.uleb128 0x1c
 	.4byte	.LVL1
@@ -2439,7 +2439,7 @@ wifi_sta_event_group:
 	.byte	0x5a
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	wifi_sta_config_struct$6207+32
+	.4byte	wifi_sta_config_struct$6329+32
 	.byte	0
 	.uleb128 0x1d
 	.4byte	.LVL44
@@ -2644,8 +2644,8 @@ wifi_sta_event_group:
 	.byte	0x1
 	.byte	0x8e
 	.4byte	0x101
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x21
@@ -2653,8 +2653,8 @@ wifi_sta_event_group:
 	.byte	0x1
 	.byte	0x93
 	.4byte	0x25
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xea0
@@ -2672,8 +2672,8 @@ wifi_sta_event_group:
 	.4byte	.LASF207
 	.byte	0x1
 	.byte	0x99
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xf23
@@ -2681,7 +2681,7 @@ wifi_sta_event_group:
 	.string	"c"
 	.byte	0x1
 	.byte	0x99
-	.4byte	0xfa
+	.4byte	0xe4
 	.uleb128 0x1
 	.byte	0x52
 	.uleb128 0x1c
@@ -2742,9 +2742,9 @@ wifi_sta_event_group:
 	.4byte	.LASF181
 	.byte	0x1
 	.byte	0x69
-	.4byte	0xef
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	0xf6
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x10bd
@@ -2772,7 +2772,7 @@ wifi_sta_event_group:
 	.4byte	.LASF184
 	.byte	0x1
 	.byte	0x6b
-	.4byte	0xef
+	.4byte	0xf6
 	.4byte	.LLST7
 	.uleb128 0x1c
 	.4byte	.LVL72
@@ -3000,7 +3000,7 @@ wifi_sta_event_group:
 	.4byte	.LASF191
 	.4byte	.LASF191
 	.byte	0xf
-	.2byte	0x2ce
+	.2byte	0x2da
 	.uleb128 0x27
 	.4byte	.LASF192
 	.4byte	.LASF192
@@ -3015,7 +3015,7 @@ wifi_sta_event_group:
 	.4byte	.LASF194
 	.4byte	.LASF194
 	.byte	0xf
-	.2byte	0x2a1
+	.2byte	0x2ad
 	.uleb128 0x28
 	.4byte	.LASF195
 	.4byte	.LASF195
@@ -3670,7 +3670,7 @@ wifi_sta_event_group:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL43
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3719,7 +3719,7 @@ wifi_sta_event_group:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL71
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3752,7 +3752,7 @@ wifi_sta_event_group:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL90
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -3765,30 +3765,30 @@ wifi_sta_event_group:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
 	.4byte	.LFB13
 	.4byte	.LFE13-.LFB13
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB9
-	.4byte	.LFE9
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB12
-	.4byte	.LFE12
 	.4byte	.LFB13
 	.4byte	.LFE13
-	.4byte	.LFB10
-	.4byte	.LFE10
+	.4byte	.LFB15
+	.4byte	.LFE15
+	.4byte	.LFB16
+	.4byte	.LFE16
+	.4byte	.LFB17
+	.4byte	.LFE17
+	.4byte	.LFB14
+	.4byte	.LFE14
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -3870,8 +3870,8 @@ wifi_sta_event_group:
 	.string	"bssid_set"
 .LASF153:
 	.string	"static_tx_buf_num"
-.LASF136:
-	.string	"got_ip"
+.LASF204:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\main"
 .LASF144:
 	.string	"event_id"
 .LASF11:
@@ -3894,8 +3894,6 @@ wifi_sta_event_group:
 	.string	"SYSTEM_EVENT_STA_STOP"
 .LASF22:
 	.string	"EventGroupHandle_t"
-.LASF4:
-	.string	"short int"
 .LASF127:
 	.string	"system_event_ap_sta_got_ip6_t"
 .LASF16:
@@ -3956,6 +3954,8 @@ wifi_sta_event_group:
 	.string	"sta_er_fail_reason"
 .LASF208:
 	.string	"g_wifi_default_wpa_crypto_funcs"
+.LASF74:
+	.string	"ip4_addr_t"
 .LASF141:
 	.string	"ap_probereqrecved"
 .LASF79:
@@ -3970,8 +3970,6 @@ wifi_sta_event_group:
 	.string	"wifi_sta_handle_event"
 .LASF193:
 	.string	"strcpy"
-.LASF203:
-	.string	"C:/esp/ArkPOS2-esp/main/wifi_sta.c"
 .LASF183:
 	.string	"handled"
 .LASF7:
@@ -4000,7 +3998,7 @@ wifi_sta_event_group:
 	.string	"disconnected"
 .LASF31:
 	.string	"WIFI_MODE_MAX"
-.LASF19:
+.LASF20:
 	.string	"TickType_t"
 .LASF102:
 	.string	"SYSTEM_EVENT_ETH_CONNECTED"
@@ -4026,6 +4024,8 @@ wifi_sta_event_group:
 	.string	"esp_wifi_set_storage"
 .LASF161:
 	.string	"wifi_init_config_t"
+.LASF203:
+	.string	"C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/wifi_sta.c"
 .LASF60:
 	.string	"wifi_config_t"
 .LASF98:
@@ -4048,7 +4048,7 @@ wifi_sta_event_group:
 	.string	"static_rx_buf_num"
 .LASF106:
 	.string	"system_event_id_t"
-.LASF21:
+.LASF19:
 	.string	"_Bool"
 .LASF17:
 	.string	"int32_t"
@@ -4064,8 +4064,8 @@ wifi_sta_event_group:
 	.string	"GNU C99 5.2.0 -mlongcalls -ggdb -Og -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields"
 .LASF66:
 	.string	"esp_sha256_prf_t"
-.LASF204:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\main"
+.LASF4:
+	.string	"short int"
 .LASF48:
 	.string	"ssid_len"
 .LASF187:
@@ -4146,8 +4146,8 @@ wifi_sta_event_group:
 	.string	"esp_wifi_set_mode"
 .LASF129:
 	.string	"system_event_ap_stadisconnected_t"
-.LASF74:
-	.string	"ip4_addr_t"
+.LASF136:
+	.string	"got_ip"
 .LASF132:
 	.string	"connected"
 .LASF147:
@@ -4168,7 +4168,7 @@ wifi_sta_event_group:
 	.string	"wifi_sta_get_event_group"
 .LASF111:
 	.string	"status"
-.LASF20:
+.LASF21:
 	.string	"esp_err_t"
 .LASF29:
 	.string	"WIFI_MODE_AP"
@@ -4212,4 +4212,4 @@ wifi_sta_event_group:
 	.string	"WIFI_AUTH_WEP"
 .LASF206:
 	.string	"wifi_sta_is_connected"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

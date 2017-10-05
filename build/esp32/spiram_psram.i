@@ -1,10 +1,10 @@
 # 1 "C:/esp/esp-idf/components/esp32/spiram_psram.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\esp32//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\esp32//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/esp32/spiram_psram.c"
 # 20 "C:/esp/esp-idf/components/esp32/spiram_psram.c"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/esp32/spiram_psram.c" 2
 # 1 "C:/esp/esp-idf/components/newlib/include/string.h" 1
 # 10 "C:/esp/esp-idf/components/newlib/include/string.h"
@@ -1206,7 +1206,7 @@ FILE *_fopencookie_r (struct _reent *, void *__cookie, const char *__mode, cooki
 # 1 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 1
 # 19 "C:/esp/esp-idf/components/newlib/platform_include/assert.h"
        
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 2
 # 1 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 1
 # 10 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
@@ -1499,7 +1499,7 @@ void _esp_error_check_failed(esp_err_t rc, const char *file, int line, const cha
 # 19 "C:/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h" 2
 # 19 "C:/esp/esp-idf/components/esp32/spiram_psram.h" 2
 
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/esp32/spiram_psram.h" 2
 
 typedef enum {
@@ -1833,7 +1833,7 @@ void gpio_pad_hold(uint8_t gpio_num);
 # 20 "C:/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h"
 # 1 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h" 1
 # 15 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 16 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h" 2
 # 24 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h"
 void esp_dport_access_stall_other_cpu_start(void);

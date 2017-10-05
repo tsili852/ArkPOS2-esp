@@ -6,7 +6,7 @@
 	.global	system_restore
 	.type	system_restore, @function
 system_restore:
-.LFB9:
+.LFB13:
 	.file 1 "C:/esp/esp-idf/components/esp32/restore.c"
 	.loc 1 22 0
 	entry	sp, 32
@@ -15,7 +15,7 @@ system_restore:
 	call8	esp_wifi_restore
 .LVL0:
 	retw.n
-.LFE9:
+.LFE13:
 	.size	system_restore, .-system_restore
 	.section	.debug_frame,"",@progbits
 .Lframe0:
@@ -36,10 +36,10 @@ system_restore:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x4
-	.4byte	.LCFI0-.LFB9
+	.4byte	.LCFI0-.LFB13
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -117,8 +117,8 @@ system_restore:
 	.4byte	.LASF15
 	.byte	0x1
 	.byte	0x15
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x9f
@@ -235,14 +235,14 @@ system_restore:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB9
-	.4byte	.LFE9
+	.4byte	.LFB13
+	.4byte	.LFE13
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -254,8 +254,6 @@ system_restore:
 	.string	"esp_wifi_restore"
 .LASF12:
 	.string	"GNU C99 5.2.0 -mlongcalls -ggdb -Og -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields"
-.LASF14:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF9:
 	.string	"long unsigned int"
 .LASF6:
@@ -278,8 +276,10 @@ system_restore:
 	.string	"signed char"
 .LASF15:
 	.string	"system_restore"
+.LASF14:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF4:
 	.string	"unsigned int"
 .LASF8:
 	.string	"sizetype"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

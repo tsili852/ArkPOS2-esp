@@ -3857,4 +3857,4 @@ crypto_core_hchacha20_constbytes:
 	.string	"crypto_core_hchacha20"
 .LASF19:
 	.string	"crypto_core_hchacha20_inputbytes"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

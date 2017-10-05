@@ -12,7 +12,7 @@
 	.global	coap_new_string
 	.type	coap_new_string, @function
 coap_new_string:
-.LFB11:
+.LFB15:
 	.file 1 "C:/esp/esp-idf/components/coap/libcoap/src/str.c"
 	.loc 1 17 0
 .LVL0:
@@ -57,14 +57,14 @@ coap_new_string:
 	mov.n	a2, a10
 	.loc 1 29 0
 	retw.n
-.LFE11:
+.LFE15:
 	.size	coap_new_string, .-coap_new_string
 	.section	.text.coap_delete_string,"ax",@progbits
 	.align	4
 	.global	coap_delete_string
 	.type	coap_delete_string, @function
 coap_delete_string:
-.LFB12:
+.LFB16:
 	.loc 1 31 0
 .LVL8:
 	entry	sp, 32
@@ -80,7 +80,7 @@ coap_delete_string:
 	retw.n
 .LBE9:
 .LBE8:
-.LFE12:
+.LFE16:
 	.size	coap_delete_string, .-coap_delete_string
 	.section	.debug_frame,"",@progbits
 .Lframe0:
@@ -101,10 +101,10 @@ coap_delete_string:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI0-.LFB11
+	.4byte	.LCFI0-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -113,10 +113,10 @@ coap_delete_string:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI1-.LFB12
+	.4byte	.LCFI1-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -326,8 +326,8 @@ coap_delete_string:
 	.byte	0x1
 	.byte	0x11
 	.4byte	0x1f9
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1f9
@@ -391,8 +391,8 @@ coap_delete_string:
 	.4byte	.LASF44
 	.byte	0x1
 	.byte	0x1f
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x24c
@@ -847,7 +847,7 @@ coap_delete_string:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL7
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -888,7 +888,7 @@ coap_delete_string:
 	.sleb128 9
 	.byte	0x9f
 	.4byte	.LVL7
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x6
 	.byte	0xf3
 	.uleb128 0x1
@@ -906,18 +906,18 @@ coap_delete_string:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB12
-	.4byte	.LFE12
+	.4byte	.LFB15
+	.4byte	.LFE15
+	.4byte	.LFB16
+	.4byte	.LFE16
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -936,7 +936,7 @@ coap_delete_string:
 .LASF19:
 	.string	"LOG_DEBUG"
 .LASF40:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\coap"
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\coap"
 .LASF38:
 	.string	"GNU C99 5.2.0 -mlongcalls -ggdb -Og -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields"
 .LASF22:
@@ -1013,4 +1013,4 @@ coap_delete_string:
 	.string	"long long unsigned int"
 .LASF32:
 	.string	"COAP_RESOURCEATTR"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

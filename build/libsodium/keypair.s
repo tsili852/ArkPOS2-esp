@@ -1464,4 +1464,4 @@ crypto_sign_ed25519_sk_to_curve25519:
 	.string	"sodium_memzero"
 .LASF39:
 	.string	"C:/esp/esp-idf/components/libsodium/libsodium/src/libsodium/crypto_sign/ed25519/ref10/keypair.c"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

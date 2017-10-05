@@ -29,7 +29,7 @@ commands.o: C:/esp/esp-idf/components/console/commands.c \
  C:/esp/esp-idf/components/log/include/esp_log.h \
  C:/esp/esp-idf/components/newlib/include/stdint.h \
  C:/esp/esp-idf/components/newlib/include/sys/_intsup.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  C:/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  C:/esp/esp-idf/components/esp32/include/esp_assert.h \
@@ -104,7 +104,7 @@ C:/esp/esp-idf/components/newlib/include/stdint.h:
 
 C:/esp/esp-idf/components/newlib/include/sys/_intsup.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
 

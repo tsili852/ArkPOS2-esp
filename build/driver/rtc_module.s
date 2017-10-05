@@ -7,7 +7,7 @@
 	.align	4
 	.type	touch_pad_get_io_num, @function
 touch_pad_get_io_num:
-.LFB31:
+.LFB35:
 	.file 1 "C:/esp/esp-idf/components/driver/rtc_module.c"
 	.loc 1 377 0
 .LVL0:
@@ -121,13 +121,13 @@ touch_pad_get_io_num:
 .LVL3:
 	.loc 1 413 0
 	retw.n
-.LFE31:
+.LFE35:
 	.size	touch_pad_get_io_num, .-touch_pad_get_io_num
 	.section	.text._touch_filter_iir,"ax",@progbits
 	.align	4
 	.type	_touch_filter_iir, @function
 _touch_filter_iir:
-.LFB32:
+.LFB36:
 	.loc 1 418 0
 .LVL4:
 	entry	sp, 32
@@ -146,7 +146,7 @@ _touch_filter_iir:
 .LBE20:
 	.loc 1 425 0
 	retw.n
-.LFE32:
+.LFE36:
 	.size	_touch_filter_iir, .-_touch_filter_iir
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -168,13 +168,13 @@ _touch_filter_iir:
 	.literal .LC5, .LC4
 	.literal .LC7, .LC6
 	.literal .LC9, .LC8
-	.literal .LC10, __FUNCTION__$6335
+	.literal .LC10, __FUNCTION__$6439
 	.literal .LC11, 1072989200
 	.literal .LC12, 1072989204
 	.align	4
 	.type	rtc_gpio_output_enable, @function
 rtc_gpio_output_enable:
-.LFB12:
+.LFB16:
 	.loc 1 147 0
 .LVL7:
 	entry	sp, 48
@@ -238,7 +238,7 @@ rtc_gpio_output_enable:
 	movi.n	a2, 0
 	.loc 1 154 0
 	retw.n
-.LFE12:
+.LFE16:
 	.size	rtc_gpio_output_enable, .-rtc_gpio_output_enable
 	.section	.text.rtc_gpio_output_disable,"ax",@progbits
 	.literal_position
@@ -247,13 +247,13 @@ rtc_gpio_output_enable:
 	.literal .LC15, .LC4
 	.literal .LC16, .LC6
 	.literal .LC17, .LC8
-	.literal .LC18, __FUNCTION__$6340
+	.literal .LC18, __FUNCTION__$6444
 	.literal .LC19, 1072989200
 	.literal .LC20, 1072989204
 	.align	4
 	.type	rtc_gpio_output_disable, @function
 rtc_gpio_output_disable:
-.LFB13:
+.LFB17:
 	.loc 1 157 0
 .LVL16:
 	entry	sp, 48
@@ -318,7 +318,7 @@ rtc_gpio_output_disable:
 	movi.n	a2, 0
 	.loc 1 164 0
 	retw.n
-.LFE13:
+.LFE17:
 	.size	rtc_gpio_output_disable, .-rtc_gpio_output_disable
 	.section	.rodata.str1.4
 	.align	4
@@ -330,12 +330,12 @@ rtc_gpio_output_disable:
 	.literal .LC22, .LC4
 	.literal .LC23, .LC6
 	.literal .LC25, .LC24
-	.literal .LC26, __FUNCTION__$6595
+	.literal .LC26, __FUNCTION__$6699
 	.literal .LC27, .L28
 	.align	4
 	.type	adc1_pad_get_io_num, @function
 adc1_pad_get_io_num:
-.LFB67:
+.LFB71:
 	.loc 1 877 0
 .LVL26:
 	entry	sp, 48
@@ -455,7 +455,7 @@ adc1_pad_get_io_num:
 .LVL33:
 	.loc 1 910 0
 	retw.n
-.LFE67:
+.LFE71:
 	.size	adc1_pad_get_io_num, .-adc1_pad_get_io_num
 	.section	.rodata.str1.4
 	.align	4
@@ -470,12 +470,12 @@ adc1_pad_get_io_num:
 	.literal .LC29, .LC4
 	.literal .LC30, .LC6
 	.literal .LC32, .LC31
-	.literal .LC33, __FUNCTION__$6644
+	.literal .LC33, __FUNCTION__$6748
 	.literal .LC35, .LC34
 	.align	4
 	.type	dac_pad_get_io_num, @function
 dac_pad_get_io_num:
-.LFB75:
+.LFB79:
 	.loc 1 1038 0
 .LVL34:
 	entry	sp, 48
@@ -559,7 +559,7 @@ dac_pad_get_io_num:
 .LVL47:
 	.loc 1 1054 0
 	retw.n
-.LFE75:
+.LFE79:
 	.size	dac_pad_get_io_num, .-dac_pad_get_io_num
 	.section	.text.rtc_gpio_input_enable,"ax",@progbits
 	.literal_position
@@ -568,12 +568,12 @@ dac_pad_get_io_num:
 	.literal .LC38, .LC4
 	.literal .LC39, .LC6
 	.literal .LC40, .LC8
-	.literal .LC41, __FUNCTION__$6344
+	.literal .LC41, __FUNCTION__$6448
 	.literal .LC42, rtc_spinlock
 	.align	4
 	.type	rtc_gpio_input_enable, @function
 rtc_gpio_input_enable:
-.LFB14:
+.LFB18:
 	.loc 1 167 0
 .LVL48:
 	entry	sp, 48
@@ -656,7 +656,7 @@ rtc_gpio_input_enable:
 	movi.n	a2, 0
 	.loc 1 174 0
 	retw.n
-.LFE14:
+.LFE18:
 	.size	rtc_gpio_input_enable, .-rtc_gpio_input_enable
 	.section	.text.rtc_gpio_input_disable,"ax",@progbits
 	.literal_position
@@ -665,12 +665,12 @@ rtc_gpio_input_enable:
 	.literal .LC45, .LC4
 	.literal .LC46, .LC6
 	.literal .LC47, .LC8
-	.literal .LC48, __FUNCTION__$6348
+	.literal .LC48, __FUNCTION__$6452
 	.literal .LC49, rtc_spinlock
 	.align	4
 	.type	rtc_gpio_input_disable, @function
 rtc_gpio_input_disable:
-.LFB15:
+.LFB19:
 	.loc 1 177 0
 .LVL57:
 	entry	sp, 48
@@ -754,7 +754,7 @@ rtc_gpio_input_disable:
 	movi.n	a2, 0
 	.loc 1 184 0
 	retw.n
-.LFE15:
+.LFE19:
 	.size	rtc_gpio_input_disable, .-rtc_gpio_input_disable
 	.section	.text.rtc_isr,"ax",@progbits
 	.literal_position
@@ -765,7 +765,7 @@ rtc_gpio_input_disable:
 	.align	4
 	.type	rtc_isr, @function
 rtc_isr:
-.LFB85:
+.LFB89:
 	.loc 1 1227 0
 .LVL66:
 	entry	sp, 32
@@ -820,7 +820,7 @@ rtc_isr:
 	memw
 	s32i.n	a3, a2, 0
 	retw.n
-.LFE85:
+.LFE89:
 	.size	rtc_isr, .-rtc_isr
 	.section	.text.rtc_isr_ensure_installed,"ax",@progbits
 	.literal_position
@@ -832,7 +832,7 @@ rtc_isr:
 	.align	4
 	.type	rtc_isr_ensure_installed, @function
 rtc_isr_ensure_installed:
-.LFB86:
+.LFB90:
 	.loc 1 1243 0
 	entry	sp, 32
 .LCFI9:
@@ -877,7 +877,7 @@ rtc_isr_ensure_installed:
 .LVL83:
 	.loc 1 1260 0
 	retw.n
-.LFE86:
+.LFE90:
 	.size	rtc_isr_ensure_installed, .-rtc_isr_ensure_installed
 	.section	.text.rtc_gpio_init,"ax",@progbits
 	.literal_position
@@ -886,13 +886,13 @@ rtc_isr_ensure_installed:
 	.literal .LC61, .LC4
 	.literal .LC62, .LC6
 	.literal .LC63, .LC8
-	.literal .LC64, __FUNCTION__$6326
+	.literal .LC64, __FUNCTION__$6430
 	.literal .LC65, rtc_spinlock
 	.align	4
 	.global	rtc_gpio_init
 	.type	rtc_gpio_init, @function
 rtc_gpio_init:
-.LFB10:
+.LFB14:
 	.loc 1 123 0
 .LVL84:
 	entry	sp, 48
@@ -987,7 +987,7 @@ rtc_gpio_init:
 	movi.n	a2, 0
 	.loc 1 133 0
 	retw.n
-.LFE10:
+.LFE14:
 	.size	rtc_gpio_init, .-rtc_gpio_init
 	.section	.rodata.str1.4
 	.align	4
@@ -995,13 +995,13 @@ rtc_gpio_init:
 	.string	"\033[0;31mE (%d) %s: %s:%d\n\033[0m\n"
 	.section	.text.adc1_pad_init,"ax",@progbits
 	.literal_position
-	.literal .LC66, __FUNCTION__$6610
+	.literal .LC66, __FUNCTION__$6714
 	.literal .LC67, .LC4
 	.literal .LC69, .LC68
 	.align	4
 	.type	adc1_pad_init, @function
 adc1_pad_init:
-.LFB68:
+.LFB72:
 	.loc 1 913 0
 .LVL93:
 	entry	sp, 64
@@ -1127,7 +1127,7 @@ adc1_pad_init:
 .L72:
 	.loc 1 921 0 is_stmt 1
 	retw.n
-.LFE68:
+.LFE72:
 	.size	adc1_pad_init, .-adc1_pad_init
 	.section	.text.rtc_gpio_deinit,"ax",@progbits
 	.literal_position
@@ -1136,13 +1136,13 @@ adc1_pad_init:
 	.literal .LC72, .LC4
 	.literal .LC73, .LC6
 	.literal .LC74, .LC8
-	.literal .LC75, __FUNCTION__$6330
+	.literal .LC75, __FUNCTION__$6434
 	.literal .LC76, rtc_spinlock
 	.align	4
 	.global	rtc_gpio_deinit
 	.type	rtc_gpio_deinit, @function
 rtc_gpio_deinit:
-.LFB11:
+.LFB15:
 	.loc 1 136 0
 .LVL118:
 	entry	sp, 48
@@ -1226,7 +1226,7 @@ rtc_gpio_deinit:
 	movi.n	a2, 0
 	.loc 1 144 0
 	retw.n
-.LFE11:
+.LFE15:
 	.size	rtc_gpio_deinit, .-rtc_gpio_deinit
 	.section	.text.rtc_gpio_set_level,"ax",@progbits
 	.literal_position
@@ -1235,14 +1235,14 @@ rtc_gpio_deinit:
 	.literal .LC79, .LC4
 	.literal .LC80, .LC6
 	.literal .LC81, .LC8
-	.literal .LC82, __FUNCTION__$6354
+	.literal .LC82, __FUNCTION__$6458
 	.literal .LC83, 1072989188
 	.literal .LC84, 1072989192
 	.align	4
 	.global	rtc_gpio_set_level
 	.type	rtc_gpio_set_level, @function
 rtc_gpio_set_level:
-.LFB16:
+.LFB20:
 	.loc 1 187 0
 .LVL127:
 	entry	sp, 48
@@ -1333,7 +1333,7 @@ rtc_gpio_set_level:
 	movi.n	a2, 0
 	.loc 1 198 0
 	retw.n
-.LFE16:
+.LFE20:
 	.size	rtc_gpio_set_level, .-rtc_gpio_set_level
 	.section	.text.rtc_gpio_get_level,"ax",@progbits
 	.literal_position
@@ -1342,14 +1342,14 @@ rtc_gpio_set_level:
 	.literal .LC87, .LC4
 	.literal .LC88, .LC6
 	.literal .LC89, .LC8
-	.literal .LC90, __FUNCTION__$6360
+	.literal .LC90, __FUNCTION__$6464
 	.literal .LC91, rtc_spinlock
 	.literal .LC92, 1072989220
 	.align	4
 	.global	rtc_gpio_get_level
 	.type	rtc_gpio_get_level, @function
 rtc_gpio_get_level:
-.LFB17:
+.LFB21:
 	.loc 1 201 0
 .LVL140:
 	entry	sp, 48
@@ -1430,7 +1430,7 @@ rtc_gpio_get_level:
 	extui	a2, a2, 0, 1
 	.loc 1 210 0
 	retw.n
-.LFE17:
+.LFE21:
 	.size	rtc_gpio_get_level, .-rtc_gpio_get_level
 	.section	.rodata.str1.4
 	.align	4
@@ -1446,7 +1446,7 @@ rtc_gpio_get_level:
 	.literal .LC95, .LC4
 	.literal .LC96, .LC6
 	.literal .LC97, .LC8
-	.literal .LC98, __FUNCTION__$6365
+	.literal .LC98, __FUNCTION__$6469
 	.literal .LC99, GPIO_PIN_MUX_REG
 	.literal .LC101, .LC100
 	.literal .LC103, .LC102
@@ -1455,7 +1455,7 @@ rtc_gpio_get_level:
 	.global	rtc_gpio_set_drive_capability
 	.type	rtc_gpio_set_drive_capability, @function
 rtc_gpio_set_drive_capability:
-.LFB18:
+.LFB22:
 	.loc 1 213 0
 .LVL153:
 	entry	sp, 48
@@ -1604,7 +1604,7 @@ rtc_gpio_set_drive_capability:
 	movi.n	a2, 0
 	.loc 1 222 0
 	retw.n
-.LFE18:
+.LFE22:
 	.size	rtc_gpio_set_drive_capability, .-rtc_gpio_set_drive_capability
 	.section	.rodata.str1.4
 	.align	4
@@ -1617,7 +1617,7 @@ rtc_gpio_set_drive_capability:
 	.literal .LC107, .LC4
 	.literal .LC108, .LC6
 	.literal .LC109, .LC8
-	.literal .LC110, __FUNCTION__$6370
+	.literal .LC110, __FUNCTION__$6474
 	.literal .LC111, GPIO_PIN_MUX_REG
 	.literal .LC112, .LC100
 	.literal .LC114, .LC113
@@ -1625,7 +1625,7 @@ rtc_gpio_set_drive_capability:
 	.global	rtc_gpio_get_drive_capability
 	.type	rtc_gpio_get_drive_capability, @function
 rtc_gpio_get_drive_capability:
-.LFB19:
+.LFB23:
 	.loc 1 225 0
 .LVL171:
 	entry	sp, 48
@@ -1758,7 +1758,7 @@ rtc_gpio_get_drive_capability:
 	movi.n	a2, 0
 	.loc 1 232 0
 	retw.n
-.LFE19:
+.LFE23:
 	.size	rtc_gpio_get_drive_capability, .-rtc_gpio_get_drive_capability
 	.section	.text.rtc_gpio_set_direction,"ax",@progbits
 	.literal_position
@@ -1767,12 +1767,12 @@ rtc_gpio_get_drive_capability:
 	.literal .LC117, .LC4
 	.literal .LC118, .LC6
 	.literal .LC119, .LC8
-	.literal .LC120, __FUNCTION__$6375
+	.literal .LC120, __FUNCTION__$6479
 	.align	4
 	.global	rtc_gpio_set_direction
 	.type	rtc_gpio_set_direction, @function
 rtc_gpio_set_direction:
-.LFB20:
+.LFB24:
 	.loc 1 235 0
 .LVL186:
 	entry	sp, 48
@@ -1895,7 +1895,7 @@ rtc_gpio_set_direction:
 .LVL208:
 	.loc 1 258 0
 	retw.n
-.LFE20:
+.LFE24:
 	.size	rtc_gpio_set_direction, .-rtc_gpio_set_direction
 	.section	.text.rtc_gpio_pullup_en,"ax",@progbits
 	.literal_position
@@ -1905,7 +1905,7 @@ rtc_gpio_set_direction:
 	.global	rtc_gpio_pullup_en
 	.type	rtc_gpio_pullup_en, @function
 rtc_gpio_pullup_en:
-.LFB21:
+.LFB25:
 	.loc 1 261 0
 .LVL209:
 	entry	sp, 32
@@ -1950,7 +1950,7 @@ rtc_gpio_pullup_en:
 .LVL214:
 	.loc 1 273 0
 	retw.n
-.LFE21:
+.LFE25:
 	.size	rtc_gpio_pullup_en, .-rtc_gpio_pullup_en
 	.section	.text.rtc_gpio_pulldown_en,"ax",@progbits
 	.literal_position
@@ -1960,7 +1960,7 @@ rtc_gpio_pullup_en:
 	.global	rtc_gpio_pulldown_en
 	.type	rtc_gpio_pulldown_en, @function
 rtc_gpio_pulldown_en:
-.LFB22:
+.LFB26:
 	.loc 1 276 0
 .LVL215:
 	entry	sp, 32
@@ -2005,7 +2005,7 @@ rtc_gpio_pulldown_en:
 .LVL220:
 	.loc 1 288 0
 	retw.n
-.LFE22:
+.LFE26:
 	.size	rtc_gpio_pulldown_en, .-rtc_gpio_pulldown_en
 	.section	.text.rtc_gpio_pullup_dis,"ax",@progbits
 	.literal_position
@@ -2015,7 +2015,7 @@ rtc_gpio_pulldown_en:
 	.global	rtc_gpio_pullup_dis
 	.type	rtc_gpio_pullup_dis, @function
 rtc_gpio_pullup_dis:
-.LFB23:
+.LFB27:
 	.loc 1 291 0
 .LVL221:
 	entry	sp, 32
@@ -2062,7 +2062,7 @@ rtc_gpio_pullup_dis:
 .LVL226:
 	.loc 1 303 0
 	retw.n
-.LFE23:
+.LFE27:
 	.size	rtc_gpio_pullup_dis, .-rtc_gpio_pullup_dis
 	.section	.text.rtc_gpio_pulldown_dis,"ax",@progbits
 	.literal_position
@@ -2072,7 +2072,7 @@ rtc_gpio_pullup_dis:
 	.global	rtc_gpio_pulldown_dis
 	.type	rtc_gpio_pulldown_dis, @function
 rtc_gpio_pulldown_dis:
-.LFB24:
+.LFB28:
 	.loc 1 306 0
 .LVL227:
 	entry	sp, 32
@@ -2119,7 +2119,7 @@ rtc_gpio_pulldown_dis:
 .LVL232:
 	.loc 1 318 0
 	retw.n
-.LFE24:
+.LFE28:
 	.size	rtc_gpio_pulldown_dis, .-rtc_gpio_pulldown_dis
 	.section	.text.dac_rtc_pad_init,"ax",@progbits
 	.literal_position
@@ -2127,11 +2127,11 @@ rtc_gpio_pulldown_dis:
 	.literal .LC130, .LC4
 	.literal .LC131, .LC6
 	.literal .LC132, .LC31
-	.literal .LC133, __FUNCTION__$6652
+	.literal .LC133, __FUNCTION__$6756
 	.align	4
 	.type	dac_rtc_pad_init, @function
 dac_rtc_pad_init:
-.LFB76:
+.LFB80:
 	.loc 1 1057 0
 .LVL233:
 	entry	sp, 64
@@ -2194,7 +2194,7 @@ dac_rtc_pad_init:
 .LVL244:
 	.loc 1 1068 0
 	retw.n
-.LFE76:
+.LFE80:
 	.size	dac_rtc_pad_init, .-dac_rtc_pad_init
 	.section	.text.rtc_gpio_hold_en,"ax",@progbits
 	.literal_position
@@ -2204,7 +2204,7 @@ dac_rtc_pad_init:
 	.global	rtc_gpio_hold_en
 	.type	rtc_gpio_hold_en, @function
 rtc_gpio_hold_en:
-.LFB25:
+.LFB29:
 	.loc 1 321 0
 .LVL245:
 	entry	sp, 32
@@ -2253,7 +2253,7 @@ rtc_gpio_hold_en:
 .LVL250:
 	.loc 1 330 0
 	retw.n
-.LFE25:
+.LFE29:
 	.size	rtc_gpio_hold_en, .-rtc_gpio_hold_en
 	.section	.text.rtc_gpio_hold_dis,"ax",@progbits
 	.literal_position
@@ -2263,7 +2263,7 @@ rtc_gpio_hold_en:
 	.global	rtc_gpio_hold_dis
 	.type	rtc_gpio_hold_dis, @function
 rtc_gpio_hold_dis:
-.LFB26:
+.LFB30:
 	.loc 1 333 0
 .LVL251:
 	entry	sp, 32
@@ -2314,7 +2314,7 @@ rtc_gpio_hold_dis:
 .LVL256:
 	.loc 1 342 0
 	retw.n
-.LFE26:
+.LFE30:
 	.size	rtc_gpio_hold_dis, .-rtc_gpio_hold_dis
 	.section	.text.rtc_gpio_force_hold_dis_all,"ax",@progbits
 	.literal_position
@@ -2324,7 +2324,7 @@ rtc_gpio_hold_dis:
 	.global	rtc_gpio_force_hold_dis_all
 	.type	rtc_gpio_force_hold_dis_all, @function
 rtc_gpio_force_hold_dis_all:
-.LFB27:
+.LFB31:
 	.loc 1 346 0
 	entry	sp, 32
 .LCFI25:
@@ -2365,7 +2365,7 @@ rtc_gpio_force_hold_dis_all:
 .LBE39:
 	.loc 1 353 0 is_stmt 1
 	retw.n
-.LFE27:
+.LFE31:
 	.size	rtc_gpio_force_hold_dis_all, .-rtc_gpio_force_hold_dis_all
 	.section	.text.touch_pad_set_meas_time,"ax",@progbits
 	.literal_position
@@ -2378,7 +2378,7 @@ rtc_gpio_force_hold_dis_all:
 	.global	touch_pad_set_meas_time
 	.type	touch_pad_set_meas_time, @function
 touch_pad_set_meas_time:
-.LFB34:
+.LFB38:
 	.loc 1 442 0
 .LVL260:
 	entry	sp, 32
@@ -2432,7 +2432,7 @@ touch_pad_set_meas_time:
 	.loc 1 452 0
 	movi.n	a2, 0
 	retw.n
-.LFE34:
+.LFE38:
 	.size	touch_pad_set_meas_time, .-touch_pad_set_meas_time
 	.section	.text.touch_pad_get_meas_time,"ax",@progbits
 	.literal_position
@@ -2442,7 +2442,7 @@ touch_pad_set_meas_time:
 	.global	touch_pad_get_meas_time
 	.type	touch_pad_get_meas_time, @function
 touch_pad_get_meas_time:
-.LFB35:
+.LFB39:
 	.loc 1 455 0
 .LVL267:
 	entry	sp, 32
@@ -2476,7 +2476,7 @@ touch_pad_get_meas_time:
 	.loc 1 465 0
 	movi.n	a2, 0
 	retw.n
-.LFE35:
+.LFE39:
 	.size	touch_pad_get_meas_time, .-touch_pad_get_meas_time
 	.section	.rodata.str1.4
 	.align	4
@@ -2494,7 +2494,7 @@ touch_pad_get_meas_time:
 	.literal .LC148, .LC4
 	.literal .LC149, .LC6
 	.literal .LC151, .LC150
-	.literal .LC152, __FUNCTION__$6466
+	.literal .LC152, __FUNCTION__$6570
 	.literal .LC154, .LC153
 	.literal .LC156, .LC155
 	.literal .LC157, rtc_spinlock
@@ -2506,7 +2506,7 @@ touch_pad_get_meas_time:
 	.global	touch_pad_set_voltage
 	.type	touch_pad_set_voltage, @function
 touch_pad_set_voltage:
-.LFB36:
+.LFB40:
 	.loc 1 468 0
 .LVL271:
 	entry	sp, 48
@@ -2661,7 +2661,7 @@ touch_pad_set_voltage:
 	movi.n	a2, 0
 	.loc 1 488 0
 	retw.n
-.LFE36:
+.LFE40:
 	.size	touch_pad_set_voltage, .-touch_pad_set_voltage
 	.section	.text.touch_pad_get_voltage,"ax",@progbits
 	.literal_position
@@ -2671,7 +2671,7 @@ touch_pad_set_voltage:
 	.global	touch_pad_get_voltage
 	.type	touch_pad_get_voltage, @function
 touch_pad_get_voltage:
-.LFB37:
+.LFB41:
 	.loc 1 491 0
 .LVL289:
 	entry	sp, 32
@@ -2715,7 +2715,7 @@ touch_pad_get_voltage:
 	.loc 1 504 0
 	movi.n	a2, 0
 	retw.n
-.LFE37:
+.LFE41:
 	.size	touch_pad_get_voltage, .-touch_pad_get_voltage
 	.section	.rodata.str1.4
 	.align	4
@@ -2730,7 +2730,7 @@ touch_pad_get_voltage:
 	.literal .LC165, .LC4
 	.literal .LC166, .LC6
 	.literal .LC168, .LC167
-	.literal .LC169, __FUNCTION__$6477
+	.literal .LC169, __FUNCTION__$6581
 	.literal .LC171, .LC170
 	.literal .LC172, rtc_spinlock
 	.literal .LC173, RTCIO
@@ -2740,7 +2740,7 @@ touch_pad_get_voltage:
 	.global	touch_pad_set_cnt_mode
 	.type	touch_pad_set_cnt_mode, @function
 touch_pad_set_cnt_mode:
-.LFB38:
+.LFB42:
 	.loc 1 507 0
 .LVL293:
 	entry	sp, 48
@@ -2834,7 +2834,7 @@ touch_pad_set_cnt_mode:
 	movi.n	a2, 0
 	.loc 1 517 0
 	retw.n
-.LFE38:
+.LFE42:
 	.size	touch_pad_set_cnt_mode, .-touch_pad_set_cnt_mode
 	.section	.rodata.str1.4
 	.align	4
@@ -2846,14 +2846,14 @@ touch_pad_set_cnt_mode:
 	.literal .LC177, .LC4
 	.literal .LC178, .LC6
 	.literal .LC180, .LC179
-	.literal .LC181, __FUNCTION__$6483
+	.literal .LC181, __FUNCTION__$6587
 	.literal .LC182, rtc_spinlock
 	.literal .LC183, RTCIO
 	.align	4
 	.global	touch_pad_get_cnt_mode
 	.type	touch_pad_get_cnt_mode, @function
 touch_pad_get_cnt_mode:
-.LFB39:
+.LFB43:
 	.loc 1 520 0
 .LVL308:
 	entry	sp, 48
@@ -2920,7 +2920,7 @@ touch_pad_get_cnt_mode:
 	movi.n	a2, 0
 	.loc 1 531 0
 	retw.n
-.LFE39:
+.LFE43:
 	.size	touch_pad_get_cnt_mode, .-touch_pad_get_cnt_mode
 	.section	.text.touch_pad_io_init,"ax",@progbits
 	.literal_position
@@ -2928,12 +2928,12 @@ touch_pad_get_cnt_mode:
 	.literal .LC185, .LC4
 	.literal .LC186, .LC6
 	.literal .LC187, .LC179
-	.literal .LC188, __FUNCTION__$6487
+	.literal .LC188, __FUNCTION__$6591
 	.align	4
 	.global	touch_pad_io_init
 	.type	touch_pad_io_init, @function
 touch_pad_io_init:
-.LFB40:
+.LFB44:
 	.loc 1 534 0
 .LVL318:
 	entry	sp, 64
@@ -2993,7 +2993,7 @@ touch_pad_io_init:
 .LVL328:
 	.loc 1 543 0
 	retw.n
-.LFE40:
+.LFE44:
 	.size	touch_pad_io_init, .-touch_pad_io_init
 	.section	.rodata.str1.4
 	.align	4
@@ -3005,7 +3005,7 @@ touch_pad_io_init:
 	.literal .LC190, .LC4
 	.literal .LC191, .LC6
 	.literal .LC193, .LC192
-	.literal .LC194, __FUNCTION__$6492
+	.literal .LC194, __FUNCTION__$6596
 	.literal .LC195, rtc_spinlock
 	.literal .LC196, SENS
 	.literal .LC197, -4097
@@ -3016,7 +3016,7 @@ touch_pad_io_init:
 	.global	touch_pad_set_fsm_mode
 	.type	touch_pad_set_fsm_mode, @function
 touch_pad_set_fsm_mode:
-.LFB41:
+.LFB45:
 	.loc 1 546 0
 .LVL329:
 	entry	sp, 48
@@ -3090,7 +3090,7 @@ touch_pad_set_fsm_mode:
 	mov.n	a2, a3
 	.loc 1 554 0
 	retw.n
-.LFE41:
+.LFE45:
 	.size	touch_pad_set_fsm_mode, .-touch_pad_set_fsm_mode
 	.section	.text.touch_pad_get_fsm_mode,"ax",@progbits
 	.literal_position
@@ -3099,7 +3099,7 @@ touch_pad_set_fsm_mode:
 	.global	touch_pad_get_fsm_mode
 	.type	touch_pad_get_fsm_mode, @function
 touch_pad_get_fsm_mode:
-.LFB42:
+.LFB46:
 	.loc 1 557 0
 .LVL337:
 	entry	sp, 32
@@ -3117,7 +3117,7 @@ touch_pad_get_fsm_mode:
 	movi.n	a2, 0
 .LVL338:
 	retw.n
-.LFE42:
+.LFE46:
 	.size	touch_pad_get_fsm_mode, .-touch_pad_get_fsm_mode
 	.section	.text.touch_pad_sw_start,"ax",@progbits
 	.literal_position
@@ -3129,7 +3129,7 @@ touch_pad_get_fsm_mode:
 	.global	touch_pad_sw_start
 	.type	touch_pad_sw_start, @function
 touch_pad_sw_start:
-.LFB43:
+.LFB47:
 	.loc 1 565 0
 	entry	sp, 32
 .LCFI35:
@@ -3160,7 +3160,7 @@ touch_pad_sw_start:
 	.loc 1 571 0
 	movi.n	a2, 0
 	retw.n
-.LFE43:
+.LFE47:
 	.size	touch_pad_sw_start, .-touch_pad_sw_start
 	.section	.text.touch_pad_set_thresh,"ax",@progbits
 	.literal_position
@@ -3168,7 +3168,7 @@ touch_pad_sw_start:
 	.literal .LC207, .LC4
 	.literal .LC208, .LC6
 	.literal .LC209, .LC179
-	.literal .LC210, __FUNCTION__$6502
+	.literal .LC210, __FUNCTION__$6606
 	.literal .LC211, rtc_spinlock
 	.literal .LC212, SENS
 	.literal .LC213, -65536
@@ -3176,7 +3176,7 @@ touch_pad_sw_start:
 	.global	touch_pad_set_thresh
 	.type	touch_pad_set_thresh, @function
 touch_pad_set_thresh:
-.LFB44:
+.LFB48:
 	.loc 1 574 0
 .LVL341:
 	entry	sp, 48
@@ -3252,7 +3252,7 @@ touch_pad_set_thresh:
 	movi.n	a2, 0
 	.loc 1 585 0
 	retw.n
-.LFE44:
+.LFE48:
 	.size	touch_pad_set_thresh, .-touch_pad_set_thresh
 	.section	.text.touch_pad_get_thresh,"ax",@progbits
 	.literal_position
@@ -3260,13 +3260,13 @@ touch_pad_set_thresh:
 	.literal .LC215, .LC4
 	.literal .LC216, .LC6
 	.literal .LC217, .LC179
-	.literal .LC218, __FUNCTION__$6507
+	.literal .LC218, __FUNCTION__$6611
 	.literal .LC219, SENS
 	.align	4
 	.global	touch_pad_get_thresh
 	.type	touch_pad_get_thresh, @function
 touch_pad_get_thresh:
-.LFB45:
+.LFB49:
 	.loc 1 588 0
 .LVL352:
 	entry	sp, 48
@@ -3336,7 +3336,7 @@ touch_pad_get_thresh:
 .LVL361:
 	.loc 1 596 0 is_stmt 1
 	retw.n
-.LFE45:
+.LFE49:
 	.size	touch_pad_get_thresh, .-touch_pad_get_thresh
 	.section	.rodata.str1.4
 	.align	4
@@ -3348,7 +3348,7 @@ touch_pad_get_thresh:
 	.literal .LC221, .LC4
 	.literal .LC222, .LC6
 	.literal .LC224, .LC223
-	.literal .LC225, __FUNCTION__$6511
+	.literal .LC225, __FUNCTION__$6615
 	.literal .LC226, rtc_spinlock
 	.literal .LC227, SENS
 	.literal .LC228, -16777217
@@ -3356,7 +3356,7 @@ touch_pad_get_thresh:
 	.global	touch_pad_set_trigger_mode
 	.type	touch_pad_set_trigger_mode, @function
 touch_pad_set_trigger_mode:
-.LFB46:
+.LFB50:
 	.loc 1 599 0
 .LVL362:
 	entry	sp, 48
@@ -3410,7 +3410,7 @@ touch_pad_set_trigger_mode:
 	movi.n	a2, 0
 	.loc 1 605 0
 	retw.n
-.LFE46:
+.LFE50:
 	.size	touch_pad_set_trigger_mode, .-touch_pad_set_trigger_mode
 	.section	.text.touch_pad_get_trigger_mode,"ax",@progbits
 	.literal_position
@@ -3419,7 +3419,7 @@ touch_pad_set_trigger_mode:
 	.global	touch_pad_get_trigger_mode
 	.type	touch_pad_get_trigger_mode, @function
 touch_pad_get_trigger_mode:
-.LFB47:
+.LFB51:
 	.loc 1 608 0
 .LVL370:
 	entry	sp, 32
@@ -3437,7 +3437,7 @@ touch_pad_get_trigger_mode:
 	movi.n	a2, 0
 .LVL371:
 	retw.n
-.LFE47:
+.LFE51:
 	.size	touch_pad_get_trigger_mode, .-touch_pad_get_trigger_mode
 	.section	.rodata.str1.4
 	.align	4
@@ -3449,7 +3449,7 @@ touch_pad_get_trigger_mode:
 	.literal .LC231, .LC4
 	.literal .LC232, .LC6
 	.literal .LC234, .LC233
-	.literal .LC235, __FUNCTION__$6518
+	.literal .LC235, __FUNCTION__$6622
 	.literal .LC236, rtc_spinlock
 	.literal .LC237, SENS
 	.literal .LC238, -33554433
@@ -3457,7 +3457,7 @@ touch_pad_get_trigger_mode:
 	.global	touch_pad_set_trigger_source
 	.type	touch_pad_set_trigger_source, @function
 touch_pad_set_trigger_source:
-.LFB48:
+.LFB52:
 	.loc 1 616 0
 .LVL372:
 	entry	sp, 48
@@ -3511,7 +3511,7 @@ touch_pad_set_trigger_source:
 	movi.n	a2, 0
 	.loc 1 622 0
 	retw.n
-.LFE48:
+.LFE52:
 	.size	touch_pad_set_trigger_source, .-touch_pad_set_trigger_source
 	.section	.text.touch_pad_get_trigger_source,"ax",@progbits
 	.literal_position
@@ -3520,7 +3520,7 @@ touch_pad_set_trigger_source:
 	.global	touch_pad_get_trigger_source
 	.type	touch_pad_get_trigger_source, @function
 touch_pad_get_trigger_source:
-.LFB49:
+.LFB53:
 	.loc 1 625 0
 .LVL380:
 	entry	sp, 32
@@ -3538,7 +3538,7 @@ touch_pad_get_trigger_source:
 	movi.n	a2, 0
 .LVL381:
 	retw.n
-.LFE49:
+.LFE53:
 	.size	touch_pad_get_trigger_source, .-touch_pad_get_trigger_source
 	.section	.rodata.str1.4
 	.align	4
@@ -3556,7 +3556,7 @@ touch_pad_get_trigger_source:
 	.literal .LC241, .LC4
 	.literal .LC242, .LC6
 	.literal .LC244, .LC243
-	.literal .LC245, __FUNCTION__$6527
+	.literal .LC245, __FUNCTION__$6631
 	.literal .LC247, .LC246
 	.literal .LC249, .LC248
 	.literal .LC250, rtc_spinlock
@@ -3567,7 +3567,7 @@ touch_pad_get_trigger_source:
 	.global	touch_pad_set_group_mask
 	.type	touch_pad_set_group_mask, @function
 touch_pad_set_group_mask:
-.LFB50:
+.LFB54:
 	.loc 1 633 0
 .LVL382:
 	entry	sp, 48
@@ -3702,7 +3702,7 @@ touch_pad_set_group_mask:
 	movi.n	a2, 0
 	.loc 1 644 0
 	retw.n
-.LFE50:
+.LFE54:
 	.size	touch_pad_set_group_mask, .-touch_pad_set_group_mask
 	.section	.text.touch_pad_get_group_mask,"ax",@progbits
 	.literal_position
@@ -3712,7 +3712,7 @@ touch_pad_set_group_mask:
 	.global	touch_pad_get_group_mask
 	.type	touch_pad_get_group_mask, @function
 touch_pad_get_group_mask:
-.LFB51:
+.LFB55:
 	.loc 1 647 0
 .LVL394:
 	entry	sp, 32
@@ -3756,7 +3756,7 @@ touch_pad_get_group_mask:
 	.loc 1 660 0
 	movi.n	a2, 0
 	retw.n
-.LFE51:
+.LFE55:
 	.size	touch_pad_get_group_mask, .-touch_pad_get_group_mask
 	.section	.text.touch_pad_clear_group_mask,"ax",@progbits
 	.literal_position
@@ -3764,7 +3764,7 @@ touch_pad_get_group_mask:
 	.literal .LC257, .LC4
 	.literal .LC258, .LC6
 	.literal .LC259, .LC243
-	.literal .LC260, __FUNCTION__$6538
+	.literal .LC260, __FUNCTION__$6642
 	.literal .LC261, .LC246
 	.literal .LC262, .LC248
 	.literal .LC263, rtc_spinlock
@@ -3775,7 +3775,7 @@ touch_pad_get_group_mask:
 	.global	touch_pad_clear_group_mask
 	.type	touch_pad_clear_group_mask, @function
 touch_pad_clear_group_mask:
-.LFB52:
+.LFB56:
 	.loc 1 663 0
 .LVL398:
 	entry	sp, 48
@@ -3914,7 +3914,7 @@ touch_pad_clear_group_mask:
 	movi.n	a2, 0
 	.loc 1 674 0
 	retw.n
-.LFE52:
+.LFE56:
 	.size	touch_pad_clear_group_mask, .-touch_pad_clear_group_mask
 	.section	.iram1,"ax",@progbits
 	.literal_position
@@ -3923,7 +3923,7 @@ touch_pad_clear_group_mask:
 	.global	touch_pad_get_status
 	.type	touch_pad_get_status, @function
 touch_pad_get_status:
-.LFB53:
+.LFB57:
 	.loc 1 677 0
 	entry	sp, 32
 .LCFI45:
@@ -3934,7 +3934,7 @@ touch_pad_get_status:
 	.loc 1 679 0
 	extui	a2, a2, 0, 10
 	retw.n
-.LFE53:
+.LFE57:
 	.size	touch_pad_get_status, .-touch_pad_get_status
 	.literal_position
 	.literal .LC268, rtc_spinlock
@@ -3944,7 +3944,7 @@ touch_pad_get_status:
 	.global	touch_pad_clear_status
 	.type	touch_pad_clear_status, @function
 touch_pad_clear_status:
-.LFB54:
+.LFB58:
 	.loc 1 682 0
 	entry	sp, 32
 .LCFI46:
@@ -3968,7 +3968,7 @@ touch_pad_clear_status:
 	.loc 1 687 0
 	movi.n	a2, 0
 	retw.n
-.LFE54:
+.LFE58:
 	.size	touch_pad_clear_status, .-touch_pad_clear_status
 	.section	.text.touch_pad_intr_enable,"ax",@progbits
 	.literal_position
@@ -3978,7 +3978,7 @@ touch_pad_clear_status:
 	.global	touch_pad_intr_enable
 	.type	touch_pad_intr_enable, @function
 touch_pad_intr_enable:
-.LFB55:
+.LFB59:
 	.loc 1 690 0
 	entry	sp, 32
 .LCFI47:
@@ -4002,7 +4002,7 @@ touch_pad_intr_enable:
 	.loc 1 695 0
 	movi.n	a2, 0
 	retw.n
-.LFE55:
+.LFE59:
 	.size	touch_pad_intr_enable, .-touch_pad_intr_enable
 	.section	.text.touch_pad_intr_disable,"ax",@progbits
 	.literal_position
@@ -4012,7 +4012,7 @@ touch_pad_intr_enable:
 	.global	touch_pad_intr_disable
 	.type	touch_pad_intr_disable, @function
 touch_pad_intr_disable:
-.LFB56:
+.LFB60:
 	.loc 1 698 0
 	entry	sp, 32
 .LCFI48:
@@ -4036,7 +4036,7 @@ touch_pad_intr_disable:
 	.loc 1 703 0
 	movi.n	a2, 0
 	retw.n
-.LFE56:
+.LFE60:
 	.size	touch_pad_intr_disable, .-touch_pad_intr_disable
 	.section	.rodata.str1.4
 	.align	4
@@ -4052,13 +4052,13 @@ touch_pad_intr_disable:
 	.literal .LC277, .LC4
 	.literal .LC278, .LC6
 	.literal .LC280, .LC279
-	.literal .LC281, __FUNCTION__$6551
+	.literal .LC281, __FUNCTION__$6655
 	.literal .LC283, .LC282
 	.align	4
 	.global	touch_pad_config
 	.type	touch_pad_config, @function
 touch_pad_config:
-.LFB57:
+.LFB61:
 	.loc 1 706 0
 .LVL416:
 	entry	sp, 48
@@ -4143,7 +4143,7 @@ touch_pad_config:
 	movi.n	a2, 0
 	.loc 1 714 0
 	retw.n
-.LFE57:
+.LFE61:
 	.size	touch_pad_config, .-touch_pad_config
 	.section	.text.touch_pad_init,"ax",@progbits
 	.literal_position
@@ -4154,7 +4154,7 @@ touch_pad_config:
 	.global	touch_pad_init
 	.type	touch_pad_init, @function
 touch_pad_init:
-.LFB58:
+.LFB62:
 	.loc 1 717 0
 	entry	sp, 32
 .LCFI50:
@@ -4204,7 +4204,7 @@ touch_pad_init:
 	movi.n	a2, -1
 	.loc 1 731 0
 	retw.n
-.LFE58:
+.LFE62:
 	.size	touch_pad_init, .-touch_pad_init
 	.section	.rodata.str1.4
 	.align	4
@@ -4216,7 +4216,7 @@ touch_pad_init:
 	.literal .LC288, .LC4
 	.literal .LC289, .LC6
 	.literal .LC290, .LC282
-	.literal .LC291, __FUNCTION__$6560
+	.literal .LC291, __FUNCTION__$6664
 	.literal .LC293, .LC292
 	.literal .LC294, rtc_touch_mux
 	.literal .LC295, .LC279
@@ -4225,7 +4225,7 @@ touch_pad_init:
 	.global	touch_pad_read
 	.type	touch_pad_read, @function
 touch_pad_read:
-.LFB60:
+.LFB64:
 	.loc 1 748 0
 .LVL437:
 	entry	sp, 48
@@ -4357,7 +4357,7 @@ touch_pad_read:
 	movi.n	a2, 0
 	.loc 1 759 0 discriminator 4
 	retw.n
-.LFE60:
+.LFE64:
 	.size	touch_pad_read, .-touch_pad_read
 	.section	.text.touch_pad_filter_cb,"ax",@progbits
 	.literal_position
@@ -4365,7 +4365,7 @@ touch_pad_read:
 	.align	4
 	.type	touch_pad_filter_cb, @function
 touch_pad_filter_cb:
-.LFB33:
+.LFB37:
 	.loc 1 428 0
 .LVL455:
 	entry	sp, 48
@@ -4416,7 +4416,7 @@ touch_pad_filter_cb:
 .L242:
 	retw.n
 .LBE41:
-.LFE33:
+.LFE37:
 	.size	touch_pad_filter_cb, .-touch_pad_filter_cb
 	.section	.rodata.str1.4
 	.align	4
@@ -4429,7 +4429,7 @@ touch_pad_filter_cb:
 	.literal .LC300, .LC4
 	.literal .LC301, .LC6
 	.literal .LC302, .LC279
-	.literal .LC303, __FUNCTION__$6568
+	.literal .LC303, __FUNCTION__$6672
 	.literal .LC304, .LC282
 	.literal .LC305, .LC292
 	.literal .LC306, s_touch_pad_filter
@@ -4438,7 +4438,7 @@ touch_pad_filter_cb:
 	.global	touch_pad_read_filtered
 	.type	touch_pad_read_filtered, @function
 touch_pad_read_filtered:
-.LFB61:
+.LFB65:
 	.loc 1 762 0 is_stmt 1
 .LVL462:
 	entry	sp, 48
@@ -4554,7 +4554,7 @@ touch_pad_read_filtered:
 	movi.n	a2, 0
 	.loc 1 770 0
 	retw.n
-.LFE61:
+.LFE65:
 	.size	touch_pad_read_filtered, .-touch_pad_read_filtered
 	.section	.rodata.str1.4
 	.align	4
@@ -4570,7 +4570,7 @@ touch_pad_read_filtered:
 	.literal .LC311, .LC4
 	.literal .LC312, .LC6
 	.literal .LC313, .LC307
-	.literal .LC314, __FUNCTION__$6572
+	.literal .LC314, __FUNCTION__$6676
 	.literal .LC316, .LC315
 	.literal .LC317, rtc_touch_mux
 	.literal .LC318, .LC279
@@ -4580,7 +4580,7 @@ touch_pad_read_filtered:
 	.global	touch_pad_set_filter_period
 	.type	touch_pad_set_filter_period, @function
 touch_pad_set_filter_period:
-.LFB62:
+.LFB66:
 	.loc 1 773 0
 .LVL480:
 	entry	sp, 48
@@ -4715,7 +4715,7 @@ touch_pad_set_filter_period:
 .LVL500:
 	.loc 1 789 0
 	retw.n
-.LFE62:
+.LFE66:
 	.size	touch_pad_set_filter_period, .-touch_pad_set_filter_period
 	.section	.rodata.str1.4
 	.align	4
@@ -4728,7 +4728,7 @@ touch_pad_set_filter_period:
 	.literal .LC324, .LC4
 	.literal .LC325, .LC6
 	.literal .LC326, .LC307
-	.literal .LC327, __FUNCTION__$6577
+	.literal .LC327, __FUNCTION__$6681
 	.literal .LC329, .LC328
 	.literal .LC330, rtc_touch_mux
 	.literal .LC331, .LC279
@@ -4737,7 +4737,7 @@ touch_pad_set_filter_period:
 	.global	touch_pad_get_filter_period
 	.type	touch_pad_get_filter_period, @function
 touch_pad_get_filter_period:
-.LFB63:
+.LFB67:
 	.loc 1 792 0
 .LVL501:
 	entry	sp, 48
@@ -4861,7 +4861,7 @@ touch_pad_get_filter_period:
 .LVL520:
 	.loc 1 807 0
 	retw.n
-.LFE63:
+.LFE67:
 	.size	touch_pad_get_filter_period, .-touch_pad_get_filter_period
 	.section	.rodata.str1.4
 	.align	4
@@ -4873,7 +4873,7 @@ touch_pad_get_filter_period:
 	.literal .LC334, .LC4
 	.literal .LC335, .LC6
 	.literal .LC336, .LC315
-	.literal .LC337, __FUNCTION__$6582
+	.literal .LC337, __FUNCTION__$6686
 	.literal .LC338, rtc_touch_mux
 	.literal .LC339, .LC279
 	.literal .LC340, s_touch_pad_filter
@@ -4884,7 +4884,7 @@ touch_pad_get_filter_period:
 	.global	touch_pad_filter_start
 	.type	touch_pad_filter_start, @function
 touch_pad_filter_start:
-.LFB64:
+.LFB68:
 	.loc 1 810 0
 .LVL521:
 	entry	sp, 48
@@ -5052,7 +5052,7 @@ touch_pad_filter_start:
 	mov.n	a2, a3
 	.loc 1 837 0
 	retw.n
-.LFE64:
+.LFE68:
 	.size	touch_pad_filter_start, .-touch_pad_filter_start
 	.section	.text.touch_pad_filter_stop,"ax",@progbits
 	.literal_position
@@ -5061,14 +5061,14 @@ touch_pad_filter_start:
 	.literal .LC347, .LC4
 	.literal .LC348, .LC6
 	.literal .LC349, .LC307
-	.literal .LC350, __FUNCTION__$6586
+	.literal .LC350, __FUNCTION__$6690
 	.literal .LC351, rtc_touch_mux
 	.literal .LC352, .LC320
 	.align	4
 	.global	touch_pad_filter_stop
 	.type	touch_pad_filter_stop, @function
 touch_pad_filter_stop:
-.LFB65:
+.LFB69:
 	.loc 1 840 0
 	entry	sp, 48
 .LCFI57:
@@ -5150,7 +5150,7 @@ touch_pad_filter_stop:
 .LVL552:
 	.loc 1 854 0
 	retw.n
-.LFE65:
+.LFE69:
 	.size	touch_pad_filter_stop, .-touch_pad_filter_stop
 	.section	.text.touch_pad_filter_delete,"ax",@progbits
 	.literal_position
@@ -5159,13 +5159,13 @@ touch_pad_filter_stop:
 	.literal .LC355, .LC4
 	.literal .LC356, .LC6
 	.literal .LC357, .LC307
-	.literal .LC358, __FUNCTION__$6590
+	.literal .LC358, __FUNCTION__$6694
 	.literal .LC359, rtc_touch_mux
 	.align	4
 	.global	touch_pad_filter_delete
 	.type	touch_pad_filter_delete, @function
 touch_pad_filter_delete:
-.LFB66:
+.LFB70:
 	.loc 1 857 0
 	entry	sp, 48
 .LCFI58:
@@ -5251,7 +5251,7 @@ touch_pad_filter_delete:
 	movi.n	a2, 0
 	.loc 1 871 0
 	retw.n
-.LFE66:
+.LFE70:
 	.size	touch_pad_filter_delete, .-touch_pad_filter_delete
 	.section	.text.touch_pad_deinit,"ax",@progbits
 	.literal_position
@@ -5260,7 +5260,7 @@ touch_pad_filter_delete:
 	.global	touch_pad_deinit
 	.type	touch_pad_deinit, @function
 touch_pad_deinit:
-.LFB59:
+.LFB63:
 	.loc 1 734 0
 	entry	sp, 32
 .LCFI59:
@@ -5296,7 +5296,7 @@ touch_pad_deinit:
 	movi.n	a2, -1
 	.loc 1 745 0
 	retw.n
-.LFE59:
+.LFE63:
 	.size	touch_pad_deinit, .-touch_pad_deinit
 	.section	.rodata.str1.4
 	.align	4
@@ -5308,7 +5308,7 @@ touch_pad_deinit:
 	.literal .LC362, .LC4
 	.literal .LC363, .LC6
 	.literal .LC364, .LC24
-	.literal .LC365, __FUNCTION__$6615
+	.literal .LC365, __FUNCTION__$6719
 	.literal .LC367, .LC366
 	.literal .LC368, rtc_spinlock
 	.literal .LC369, 1072990260
@@ -5316,7 +5316,7 @@ touch_pad_deinit:
 	.global	adc1_config_channel_atten
 	.type	adc1_config_channel_atten, @function
 adc1_config_channel_atten:
-.LFB69:
+.LFB73:
 	.loc 1 924 0
 .LVL565:
 	entry	sp, 48
@@ -5405,7 +5405,7 @@ adc1_config_channel_atten:
 	movi.n	a2, 0
 	.loc 1 933 0
 	retw.n
-.LFE69:
+.LFE73:
 	.size	adc1_config_channel_atten, .-adc1_config_channel_atten
 	.section	.text.adc1_config_width,"ax",@progbits
 	.literal_position
@@ -5418,7 +5418,7 @@ adc1_config_channel_atten:
 	.global	adc1_config_width
 	.type	adc1_config_width, @function
 adc1_config_width:
-.LFB70:
+.LFB74:
 	.loc 1 936 0
 .LVL579:
 	entry	sp, 32
@@ -5463,7 +5463,7 @@ adc1_config_width:
 	.loc 1 946 0
 	movi.n	a2, 0
 	retw.n
-.LFE70:
+.LFE74:
 	.size	adc1_config_width, .-adc1_config_width
 	.section	.text.adc1_get_raw,"ax",@progbits
 	.literal_position
@@ -5471,7 +5471,7 @@ adc1_config_width:
 	.literal .LC376, .LC4
 	.literal .LC377, .LC6
 	.literal .LC378, .LC24
-	.literal .LC379, __FUNCTION__$6623
+	.literal .LC379, __FUNCTION__$6727
 	.literal .LC380, rtc_spinlock
 	.literal .LC381, 1072990292
 	.literal .LC382, 262144
@@ -5492,7 +5492,7 @@ adc1_config_width:
 	.global	adc1_get_raw
 	.type	adc1_get_raw, @function
 adc1_get_raw:
-.LFB71:
+.LFB75:
 	.loc 1 949 0
 .LVL583:
 	entry	sp, 48
@@ -5645,7 +5645,7 @@ adc1_get_raw:
 .LVL592:
 	.loc 1 976 0
 	retw.n
-.LFE71:
+.LFE75:
 	.size	adc1_get_raw, .-adc1_get_raw
 	.section	.text.hall_sensor_get_value,"ax",@progbits
 	.literal_position
@@ -5664,7 +5664,7 @@ adc1_get_raw:
 	.align	4
 	.type	hall_sensor_get_value, @function
 hall_sensor_get_value:
-.LFB83:
+.LFB87:
 	.loc 1 1174 0
 	entry	sp, 32
 .LCFI63:
@@ -5769,14 +5769,14 @@ hall_sensor_get_value:
 	add.n	a2, a2, a5
 .LVL605:
 	retw.n
-.LFE83:
+.LFE87:
 	.size	hall_sensor_get_value, .-hall_sensor_get_value
 	.section	.text.adc1_get_voltage,"ax",@progbits
 	.align	4
 	.global	adc1_get_voltage
 	.type	adc1_get_voltage, @function
 adc1_get_voltage:
-.LFB72:
+.LFB76:
 	.loc 1 979 0
 .LVL606:
 	entry	sp, 32
@@ -5789,7 +5789,7 @@ adc1_get_voltage:
 	mov.n	a2, a10
 .LVL608:
 	retw.n
-.LFE72:
+.LFE76:
 	.size	adc1_get_voltage, .-adc1_get_voltage
 	.section	.text.adc1_ulp_enable,"ax",@progbits
 	.literal_position
@@ -5810,7 +5810,7 @@ adc1_get_voltage:
 	.global	adc1_ulp_enable
 	.type	adc1_ulp_enable, @function
 adc1_ulp_enable:
-.LFB73:
+.LFB77:
 	.loc 1 984 0
 	entry	sp, 32
 .LCFI65:
@@ -5889,7 +5889,7 @@ adc1_ulp_enable:
 	call8	vTaskExitCritical
 .LVL610:
 	retw.n
-.LFE73:
+.LFE77:
 	.size	adc1_ulp_enable, .-adc1_ulp_enable
 	.section	.text.adc2_vref_to_gpio,"ax",@progbits
 	.literal_position
@@ -5909,7 +5909,7 @@ adc1_ulp_enable:
 	.global	adc2_vref_to_gpio
 	.type	adc2_vref_to_gpio, @function
 adc2_vref_to_gpio:
-.LFB74:
+.LFB78:
 	.loc 1 998 0
 .LVL611:
 	entry	sp, 32
@@ -6028,7 +6028,7 @@ adc2_vref_to_gpio:
 .LVL620:
 	.loc 1 1032 0
 	retw.n
-.LFE74:
+.LFE78:
 	.size	adc2_vref_to_gpio, .-adc2_vref_to_gpio
 	.section	.text.dac_output_enable,"ax",@progbits
 	.literal_position
@@ -6036,7 +6036,7 @@ adc2_vref_to_gpio:
 	.literal .LC434, .LC4
 	.literal .LC435, .LC6
 	.literal .LC436, .LC31
-	.literal .LC437, __FUNCTION__$6657
+	.literal .LC437, __FUNCTION__$6761
 	.literal .LC438, rtc_spinlock
 	.literal .LC439, 1072989316
 	.literal .LC440, 263168
@@ -6045,7 +6045,7 @@ adc2_vref_to_gpio:
 	.global	dac_output_enable
 	.type	dac_output_enable, @function
 dac_output_enable:
-.LFB77:
+.LFB81:
 	.loc 1 1071 0
 .LVL621:
 	entry	sp, 48
@@ -6117,7 +6117,7 @@ dac_output_enable:
 	movi.n	a2, 0
 	.loc 1 1083 0
 	retw.n
-.LFE77:
+.LFE81:
 	.size	dac_output_enable, .-dac_output_enable
 	.section	.text.dac_output_disable,"ax",@progbits
 	.literal_position
@@ -6125,7 +6125,7 @@ dac_output_enable:
 	.literal .LC443, .LC4
 	.literal .LC444, .LC6
 	.literal .LC445, .LC31
-	.literal .LC446, __FUNCTION__$6661
+	.literal .LC446, __FUNCTION__$6765
 	.literal .LC447, rtc_spinlock
 	.literal .LC448, 1072989316
 	.literal .LC449, -263169
@@ -6134,7 +6134,7 @@ dac_output_enable:
 	.global	dac_output_disable
 	.type	dac_output_disable, @function
 dac_output_disable:
-.LFB78:
+.LFB82:
 	.loc 1 1086 0
 .LVL632:
 	entry	sp, 48
@@ -6202,7 +6202,7 @@ dac_output_disable:
 	movi.n	a2, 0
 	.loc 1 1097 0
 	retw.n
-.LFE78:
+.LFE82:
 	.size	dac_output_disable, .-dac_output_disable
 	.section	.text.dac_output_voltage,"ax",@progbits
 	.literal_position
@@ -6210,7 +6210,7 @@ dac_output_disable:
 	.literal .LC452, .LC4
 	.literal .LC453, .LC6
 	.literal .LC454, .LC31
-	.literal .LC455, __FUNCTION__$6666
+	.literal .LC455, __FUNCTION__$6770
 	.literal .LC456, rtc_spinlock
 	.literal .LC457, 1072990360
 	.literal .LC458, -65537
@@ -6224,7 +6224,7 @@ dac_output_disable:
 	.global	dac_output_voltage
 	.type	dac_output_voltage, @function
 dac_output_voltage:
-.LFB79:
+.LFB83:
 	.loc 1 1100 0
 .LVL642:
 	entry	sp, 48
@@ -6329,7 +6329,7 @@ dac_output_voltage:
 	movi.n	a2, 0
 	.loc 1 1123 0
 	retw.n
-.LFE79:
+.LFE83:
 	.size	dac_output_voltage, .-dac_output_voltage
 	.section	.text.dac_out_voltage,"ax",@progbits
 	.literal_position
@@ -6337,7 +6337,7 @@ dac_output_voltage:
 	.literal .LC466, .LC4
 	.literal .LC467, .LC6
 	.literal .LC468, .LC31
-	.literal .LC469, __FUNCTION__$6671
+	.literal .LC469, __FUNCTION__$6775
 	.literal .LC470, rtc_spinlock
 	.literal .LC471, 1072990360
 	.literal .LC472, -65537
@@ -6351,7 +6351,7 @@ dac_output_voltage:
 	.global	dac_out_voltage
 	.type	dac_out_voltage, @function
 dac_out_voltage:
-.LFB80:
+.LFB84:
 	.loc 1 1126 0
 .LVL653:
 	entry	sp, 48
@@ -6462,7 +6462,7 @@ dac_out_voltage:
 .LVL663:
 	.loc 1 1152 0
 	retw.n
-.LFE80:
+.LFE84:
 	.size	dac_out_voltage, .-dac_out_voltage
 	.section	.text.dac_i2s_enable,"ax",@progbits
 	.literal_position
@@ -6473,7 +6473,7 @@ dac_out_voltage:
 	.global	dac_i2s_enable
 	.type	dac_i2s_enable, @function
 dac_i2s_enable:
-.LFB81:
+.LFB85:
 	.loc 1 1155 0
 	entry	sp, 32
 .LCFI71:
@@ -6497,7 +6497,7 @@ dac_i2s_enable:
 	.loc 1 1160 0
 	movi.n	a2, 0
 	retw.n
-.LFE81:
+.LFE85:
 	.size	dac_i2s_enable, .-dac_i2s_enable
 	.section	.text.dac_i2s_disable,"ax",@progbits
 	.literal_position
@@ -6508,7 +6508,7 @@ dac_i2s_enable:
 	.global	dac_i2s_disable
 	.type	dac_i2s_disable, @function
 dac_i2s_disable:
-.LFB82:
+.LFB86:
 	.loc 1 1163 0
 	entry	sp, 32
 .LCFI72:
@@ -6532,14 +6532,14 @@ dac_i2s_disable:
 	.loc 1 1168 0
 	movi.n	a2, 0
 	retw.n
-.LFE82:
+.LFE86:
 	.size	dac_i2s_disable, .-dac_i2s_disable
 	.section	.text.hall_sensor_read,"ax",@progbits
 	.align	4
 	.global	hall_sensor_read
 	.type	hall_sensor_read, @function
 hall_sensor_read:
-.LFB84:
+.LFB88:
 	.loc 1 1201 0
 	entry	sp, 32
 .LCFI73:
@@ -6567,7 +6567,7 @@ hall_sensor_read:
 	.loc 1 1207 0
 	mov.n	a2, a10
 	retw.n
-.LFE84:
+.LFE88:
 	.size	hall_sensor_read, .-hall_sensor_read
 	.section	.text.rtc_isr_register,"ax",@progbits
 	.literal_position
@@ -6577,7 +6577,7 @@ hall_sensor_read:
 	.global	rtc_isr_register
 	.type	rtc_isr_register, @function
 rtc_isr_register:
-.LFB87:
+.LFB91:
 	.loc 1 1264 0
 .LVL673:
 	entry	sp, 32
@@ -6635,7 +6635,7 @@ rtc_isr_register:
 .LVL686:
 	.loc 1 1281 0
 	retw.n
-.LFE87:
+.LFE91:
 	.size	rtc_isr_register, .-rtc_isr_register
 	.section	.rodata.str1.4
 	.align	4
@@ -6647,12 +6647,12 @@ rtc_isr_register:
 	.literal .LC488, .LC4
 	.literal .LC489, .LC6
 	.literal .LC491, .LC490
-	.literal .LC492, __FUNCTION__$6413
+	.literal .LC492, __FUNCTION__$6517
 	.align	4
 	.global	touch_pad_isr_handler_register
 	.type	touch_pad_isr_handler_register, @function
 touch_pad_isr_handler_register:
-.LFB28:
+.LFB32:
 	.loc 1 360 0
 .LVL687:
 	entry	sp, 48
@@ -6691,7 +6691,7 @@ touch_pad_isr_handler_register:
 .LVL693:
 	.loc 1 363 0
 	retw.n
-.LFE28:
+.LFE32:
 	.size	touch_pad_isr_handler_register, .-touch_pad_isr_handler_register
 	.section	.text.touch_pad_isr_register,"ax",@progbits
 	.literal_position
@@ -6699,12 +6699,12 @@ touch_pad_isr_handler_register:
 	.literal .LC494, .LC4
 	.literal .LC495, .LC6
 	.literal .LC496, .LC490
-	.literal .LC497, __FUNCTION__$6418
+	.literal .LC497, __FUNCTION__$6522
 	.align	4
 	.global	touch_pad_isr_register
 	.type	touch_pad_isr_register, @function
 touch_pad_isr_register:
-.LFB29:
+.LFB33:
 	.loc 1 366 0
 .LVL694:
 	entry	sp, 48
@@ -6743,7 +6743,7 @@ touch_pad_isr_register:
 .LVL700:
 	.loc 1 369 0
 	retw.n
-.LFE29:
+.LFE33:
 	.size	touch_pad_isr_register, .-touch_pad_isr_register
 	.section	.text.rtc_isr_deregister,"ax",@progbits
 	.literal_position
@@ -6753,7 +6753,7 @@ touch_pad_isr_register:
 	.global	rtc_isr_deregister
 	.type	rtc_isr_deregister, @function
 rtc_isr_deregister:
-.LFB88:
+.LFB92:
 	.loc 1 1284 0
 .LVL701:
 	entry	sp, 32
@@ -6831,14 +6831,14 @@ rtc_isr_deregister:
 .LVL717:
 	.loc 1 1303 0
 	retw.n
-.LFE88:
+.LFE92:
 	.size	rtc_isr_deregister, .-rtc_isr_deregister
 	.section	.text.touch_pad_isr_deregister,"ax",@progbits
 	.align	4
 	.global	touch_pad_isr_deregister
 	.type	touch_pad_isr_deregister, @function
 touch_pad_isr_deregister:
-.LFB30:
+.LFB34:
 	.loc 1 372 0
 .LVL718:
 	entry	sp, 32
@@ -6852,259 +6852,259 @@ touch_pad_isr_deregister:
 	mov.n	a2, a10
 .LVL720:
 	retw.n
-.LFE30:
+.LFE34:
 	.size	touch_pad_isr_deregister, .-touch_pad_isr_deregister
-	.section	.rodata.__FUNCTION__$6671,"a",@progbits
+	.section	.rodata.__FUNCTION__$6775,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6671, @object
-	.size	__FUNCTION__$6671, 16
-__FUNCTION__$6671:
+	.type	__FUNCTION__$6775, @object
+	.size	__FUNCTION__$6775, 16
+__FUNCTION__$6775:
 	.string	"dac_out_voltage"
-	.section	.rodata.__FUNCTION__$6666,"a",@progbits
+	.section	.rodata.__FUNCTION__$6770,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6666, @object
-	.size	__FUNCTION__$6666, 19
-__FUNCTION__$6666:
+	.type	__FUNCTION__$6770, @object
+	.size	__FUNCTION__$6770, 19
+__FUNCTION__$6770:
 	.string	"dac_output_voltage"
-	.section	.rodata.__FUNCTION__$6661,"a",@progbits
+	.section	.rodata.__FUNCTION__$6765,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6661, @object
-	.size	__FUNCTION__$6661, 19
-__FUNCTION__$6661:
+	.type	__FUNCTION__$6765, @object
+	.size	__FUNCTION__$6765, 19
+__FUNCTION__$6765:
 	.string	"dac_output_disable"
-	.section	.rodata.__FUNCTION__$6644,"a",@progbits
+	.section	.rodata.__FUNCTION__$6748,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6644, @object
-	.size	__FUNCTION__$6644, 19
-__FUNCTION__$6644:
+	.type	__FUNCTION__$6748, @object
+	.size	__FUNCTION__$6748, 19
+__FUNCTION__$6748:
 	.string	"dac_pad_get_io_num"
-	.section	.rodata.__FUNCTION__$6652,"a",@progbits
+	.section	.rodata.__FUNCTION__$6756,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6652, @object
-	.size	__FUNCTION__$6652, 17
-__FUNCTION__$6652:
+	.type	__FUNCTION__$6756, @object
+	.size	__FUNCTION__$6756, 17
+__FUNCTION__$6756:
 	.string	"dac_rtc_pad_init"
-	.section	.rodata.__FUNCTION__$6657,"a",@progbits
+	.section	.rodata.__FUNCTION__$6761,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6657, @object
-	.size	__FUNCTION__$6657, 18
-__FUNCTION__$6657:
+	.type	__FUNCTION__$6761, @object
+	.size	__FUNCTION__$6761, 18
+__FUNCTION__$6761:
 	.string	"dac_output_enable"
-	.section	.rodata.__FUNCTION__$6623,"a",@progbits
+	.section	.rodata.__FUNCTION__$6727,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6623, @object
-	.size	__FUNCTION__$6623, 13
-__FUNCTION__$6623:
+	.type	__FUNCTION__$6727, @object
+	.size	__FUNCTION__$6727, 13
+__FUNCTION__$6727:
 	.string	"adc1_get_raw"
-	.section	.rodata.__FUNCTION__$6595,"a",@progbits
+	.section	.rodata.__FUNCTION__$6699,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6595, @object
-	.size	__FUNCTION__$6595, 20
-__FUNCTION__$6595:
+	.type	__FUNCTION__$6699, @object
+	.size	__FUNCTION__$6699, 20
+__FUNCTION__$6699:
 	.string	"adc1_pad_get_io_num"
-	.section	.rodata.__FUNCTION__$6610,"a",@progbits
+	.section	.rodata.__FUNCTION__$6714,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6610, @object
-	.size	__FUNCTION__$6610, 14
-__FUNCTION__$6610:
+	.type	__FUNCTION__$6714, @object
+	.size	__FUNCTION__$6714, 14
+__FUNCTION__$6714:
 	.string	"adc1_pad_init"
+	.section	.rodata.__FUNCTION__$6719,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6719, @object
+	.size	__FUNCTION__$6719, 26
+__FUNCTION__$6719:
+	.string	"adc1_config_channel_atten"
+	.section	.rodata.__FUNCTION__$6694,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6694, @object
+	.size	__FUNCTION__$6694, 24
+__FUNCTION__$6694:
+	.string	"touch_pad_filter_delete"
+	.section	.rodata.__FUNCTION__$6690,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6690, @object
+	.size	__FUNCTION__$6690, 22
+__FUNCTION__$6690:
+	.string	"touch_pad_filter_stop"
+	.section	.rodata.__FUNCTION__$6686,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6686, @object
+	.size	__FUNCTION__$6686, 23
+__FUNCTION__$6686:
+	.string	"touch_pad_filter_start"
+	.section	.rodata.__FUNCTION__$6681,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6681, @object
+	.size	__FUNCTION__$6681, 28
+__FUNCTION__$6681:
+	.string	"touch_pad_get_filter_period"
+	.section	.rodata.__FUNCTION__$6676,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6676, @object
+	.size	__FUNCTION__$6676, 28
+__FUNCTION__$6676:
+	.string	"touch_pad_set_filter_period"
+	.section	.rodata.__FUNCTION__$6672,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6672, @object
+	.size	__FUNCTION__$6672, 24
+__FUNCTION__$6672:
+	.string	"touch_pad_read_filtered"
+	.section	.rodata.__FUNCTION__$6664,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6664, @object
+	.size	__FUNCTION__$6664, 15
+__FUNCTION__$6664:
+	.string	"touch_pad_read"
+	.section	.rodata.__FUNCTION__$6655,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6655, @object
+	.size	__FUNCTION__$6655, 17
+__FUNCTION__$6655:
+	.string	"touch_pad_config"
+	.section	.rodata.__FUNCTION__$6642,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6642, @object
+	.size	__FUNCTION__$6642, 27
+__FUNCTION__$6642:
+	.string	"touch_pad_clear_group_mask"
+	.section	.rodata.__FUNCTION__$6631,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6631, @object
+	.size	__FUNCTION__$6631, 25
+__FUNCTION__$6631:
+	.string	"touch_pad_set_group_mask"
+	.section	.rodata.__FUNCTION__$6622,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6622, @object
+	.size	__FUNCTION__$6622, 29
+__FUNCTION__$6622:
+	.string	"touch_pad_set_trigger_source"
 	.section	.rodata.__FUNCTION__$6615,"a",@progbits
 	.align	4
 	.type	__FUNCTION__$6615, @object
-	.size	__FUNCTION__$6615, 26
+	.size	__FUNCTION__$6615, 27
 __FUNCTION__$6615:
-	.string	"adc1_config_channel_atten"
-	.section	.rodata.__FUNCTION__$6590,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$6590, @object
-	.size	__FUNCTION__$6590, 24
-__FUNCTION__$6590:
-	.string	"touch_pad_filter_delete"
-	.section	.rodata.__FUNCTION__$6586,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$6586, @object
-	.size	__FUNCTION__$6586, 22
-__FUNCTION__$6586:
-	.string	"touch_pad_filter_stop"
-	.section	.rodata.__FUNCTION__$6582,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$6582, @object
-	.size	__FUNCTION__$6582, 23
-__FUNCTION__$6582:
-	.string	"touch_pad_filter_start"
-	.section	.rodata.__FUNCTION__$6577,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$6577, @object
-	.size	__FUNCTION__$6577, 28
-__FUNCTION__$6577:
-	.string	"touch_pad_get_filter_period"
-	.section	.rodata.__FUNCTION__$6572,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$6572, @object
-	.size	__FUNCTION__$6572, 28
-__FUNCTION__$6572:
-	.string	"touch_pad_set_filter_period"
-	.section	.rodata.__FUNCTION__$6568,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$6568, @object
-	.size	__FUNCTION__$6568, 24
-__FUNCTION__$6568:
-	.string	"touch_pad_read_filtered"
-	.section	.rodata.__FUNCTION__$6560,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$6560, @object
-	.size	__FUNCTION__$6560, 15
-__FUNCTION__$6560:
-	.string	"touch_pad_read"
-	.section	.rodata.__FUNCTION__$6551,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$6551, @object
-	.size	__FUNCTION__$6551, 17
-__FUNCTION__$6551:
-	.string	"touch_pad_config"
-	.section	.rodata.__FUNCTION__$6538,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$6538, @object
-	.size	__FUNCTION__$6538, 27
-__FUNCTION__$6538:
-	.string	"touch_pad_clear_group_mask"
-	.section	.rodata.__FUNCTION__$6527,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$6527, @object
-	.size	__FUNCTION__$6527, 25
-__FUNCTION__$6527:
-	.string	"touch_pad_set_group_mask"
-	.section	.rodata.__FUNCTION__$6518,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$6518, @object
-	.size	__FUNCTION__$6518, 29
-__FUNCTION__$6518:
-	.string	"touch_pad_set_trigger_source"
-	.section	.rodata.__FUNCTION__$6511,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$6511, @object
-	.size	__FUNCTION__$6511, 27
-__FUNCTION__$6511:
 	.string	"touch_pad_set_trigger_mode"
-	.section	.rodata.__FUNCTION__$6507,"a",@progbits
+	.section	.rodata.__FUNCTION__$6611,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6507, @object
-	.size	__FUNCTION__$6507, 21
-__FUNCTION__$6507:
+	.type	__FUNCTION__$6611, @object
+	.size	__FUNCTION__$6611, 21
+__FUNCTION__$6611:
 	.string	"touch_pad_get_thresh"
-	.section	.rodata.__FUNCTION__$6502,"a",@progbits
+	.section	.rodata.__FUNCTION__$6606,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6502, @object
-	.size	__FUNCTION__$6502, 21
-__FUNCTION__$6502:
+	.type	__FUNCTION__$6606, @object
+	.size	__FUNCTION__$6606, 21
+__FUNCTION__$6606:
 	.string	"touch_pad_set_thresh"
-	.section	.rodata.__FUNCTION__$6492,"a",@progbits
+	.section	.rodata.__FUNCTION__$6596,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6492, @object
-	.size	__FUNCTION__$6492, 23
-__FUNCTION__$6492:
+	.type	__FUNCTION__$6596, @object
+	.size	__FUNCTION__$6596, 23
+__FUNCTION__$6596:
 	.string	"touch_pad_set_fsm_mode"
-	.section	.rodata.__FUNCTION__$6487,"a",@progbits
+	.section	.rodata.__FUNCTION__$6591,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6487, @object
-	.size	__FUNCTION__$6487, 18
-__FUNCTION__$6487:
+	.type	__FUNCTION__$6591, @object
+	.size	__FUNCTION__$6591, 18
+__FUNCTION__$6591:
 	.string	"touch_pad_io_init"
-	.section	.rodata.__FUNCTION__$6483,"a",@progbits
+	.section	.rodata.__FUNCTION__$6587,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6483, @object
-	.size	__FUNCTION__$6483, 23
-__FUNCTION__$6483:
+	.type	__FUNCTION__$6587, @object
+	.size	__FUNCTION__$6587, 23
+__FUNCTION__$6587:
 	.string	"touch_pad_get_cnt_mode"
-	.section	.rodata.__FUNCTION__$6477,"a",@progbits
+	.section	.rodata.__FUNCTION__$6581,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6477, @object
-	.size	__FUNCTION__$6477, 23
-__FUNCTION__$6477:
+	.type	__FUNCTION__$6581, @object
+	.size	__FUNCTION__$6581, 23
+__FUNCTION__$6581:
 	.string	"touch_pad_set_cnt_mode"
-	.section	.rodata.__FUNCTION__$6466,"a",@progbits
+	.section	.rodata.__FUNCTION__$6570,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6466, @object
-	.size	__FUNCTION__$6466, 22
-__FUNCTION__$6466:
+	.type	__FUNCTION__$6570, @object
+	.size	__FUNCTION__$6570, 22
+__FUNCTION__$6570:
 	.string	"touch_pad_set_voltage"
-	.section	.rodata.__FUNCTION__$6418,"a",@progbits
+	.section	.rodata.__FUNCTION__$6522,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6418, @object
-	.size	__FUNCTION__$6418, 23
-__FUNCTION__$6418:
+	.type	__FUNCTION__$6522, @object
+	.size	__FUNCTION__$6522, 23
+__FUNCTION__$6522:
 	.string	"touch_pad_isr_register"
-	.section	.rodata.__FUNCTION__$6413,"a",@progbits
+	.section	.rodata.__FUNCTION__$6517,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6413, @object
-	.size	__FUNCTION__$6413, 31
-__FUNCTION__$6413:
+	.type	__FUNCTION__$6517, @object
+	.size	__FUNCTION__$6517, 31
+__FUNCTION__$6517:
 	.string	"touch_pad_isr_handler_register"
-	.section	.rodata.__FUNCTION__$6348,"a",@progbits
+	.section	.rodata.__FUNCTION__$6452,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6348, @object
-	.size	__FUNCTION__$6348, 23
-__FUNCTION__$6348:
+	.type	__FUNCTION__$6452, @object
+	.size	__FUNCTION__$6452, 23
+__FUNCTION__$6452:
 	.string	"rtc_gpio_input_disable"
-	.section	.rodata.__FUNCTION__$6340,"a",@progbits
+	.section	.rodata.__FUNCTION__$6444,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6340, @object
-	.size	__FUNCTION__$6340, 24
-__FUNCTION__$6340:
+	.type	__FUNCTION__$6444, @object
+	.size	__FUNCTION__$6444, 24
+__FUNCTION__$6444:
 	.string	"rtc_gpio_output_disable"
-	.section	.rodata.__FUNCTION__$6344,"a",@progbits
+	.section	.rodata.__FUNCTION__$6448,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6344, @object
-	.size	__FUNCTION__$6344, 22
-__FUNCTION__$6344:
+	.type	__FUNCTION__$6448, @object
+	.size	__FUNCTION__$6448, 22
+__FUNCTION__$6448:
 	.string	"rtc_gpio_input_enable"
-	.section	.rodata.__FUNCTION__$6335,"a",@progbits
+	.section	.rodata.__FUNCTION__$6439,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6335, @object
-	.size	__FUNCTION__$6335, 23
-__FUNCTION__$6335:
+	.type	__FUNCTION__$6439, @object
+	.size	__FUNCTION__$6439, 23
+__FUNCTION__$6439:
 	.string	"rtc_gpio_output_enable"
-	.section	.rodata.__FUNCTION__$6375,"a",@progbits
+	.section	.rodata.__FUNCTION__$6479,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6375, @object
-	.size	__FUNCTION__$6375, 23
-__FUNCTION__$6375:
+	.type	__FUNCTION__$6479, @object
+	.size	__FUNCTION__$6479, 23
+__FUNCTION__$6479:
 	.string	"rtc_gpio_set_direction"
-	.section	.rodata.__FUNCTION__$6370,"a",@progbits
+	.section	.rodata.__FUNCTION__$6474,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6370, @object
-	.size	__FUNCTION__$6370, 30
-__FUNCTION__$6370:
+	.type	__FUNCTION__$6474, @object
+	.size	__FUNCTION__$6474, 30
+__FUNCTION__$6474:
 	.string	"rtc_gpio_get_drive_capability"
-	.section	.rodata.__FUNCTION__$6365,"a",@progbits
+	.section	.rodata.__FUNCTION__$6469,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6365, @object
-	.size	__FUNCTION__$6365, 30
-__FUNCTION__$6365:
+	.type	__FUNCTION__$6469, @object
+	.size	__FUNCTION__$6469, 30
+__FUNCTION__$6469:
 	.string	"rtc_gpio_set_drive_capability"
-	.section	.rodata.__FUNCTION__$6360,"a",@progbits
+	.section	.rodata.__FUNCTION__$6464,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6360, @object
-	.size	__FUNCTION__$6360, 19
-__FUNCTION__$6360:
+	.type	__FUNCTION__$6464, @object
+	.size	__FUNCTION__$6464, 19
+__FUNCTION__$6464:
 	.string	"rtc_gpio_get_level"
-	.section	.rodata.__FUNCTION__$6354,"a",@progbits
+	.section	.rodata.__FUNCTION__$6458,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6354, @object
-	.size	__FUNCTION__$6354, 19
-__FUNCTION__$6354:
+	.type	__FUNCTION__$6458, @object
+	.size	__FUNCTION__$6458, 19
+__FUNCTION__$6458:
 	.string	"rtc_gpio_set_level"
-	.section	.rodata.__FUNCTION__$6330,"a",@progbits
+	.section	.rodata.__FUNCTION__$6434,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6330, @object
-	.size	__FUNCTION__$6330, 16
-__FUNCTION__$6330:
+	.type	__FUNCTION__$6434, @object
+	.size	__FUNCTION__$6434, 16
+__FUNCTION__$6434:
 	.string	"rtc_gpio_deinit"
-	.section	.rodata.__FUNCTION__$6326,"a",@progbits
+	.section	.rodata.__FUNCTION__$6430,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6326, @object
-	.size	__FUNCTION__$6326, 14
-__FUNCTION__$6326:
+	.type	__FUNCTION__$6430, @object
+	.size	__FUNCTION__$6430, 14
+__FUNCTION__$6430:
 	.string	"rtc_gpio_init"
 	.section	.bss.s_rtc_isr_handle,"aw",@nobits
 	.align	4
@@ -7691,10 +7691,10 @@ rtc_spinlock:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.byte	0x4
-	.4byte	.LCFI0-.LFB31
+	.4byte	.LCFI0-.LFB35
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -7703,10 +7703,10 @@ rtc_spinlock:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.byte	0x4
-	.4byte	.LCFI1-.LFB32
+	.4byte	.LCFI1-.LFB36
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -7715,10 +7715,10 @@ rtc_spinlock:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI2-.LFB12
+	.4byte	.LCFI2-.LFB16
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -7727,10 +7727,10 @@ rtc_spinlock:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI3-.LFB13
+	.4byte	.LCFI3-.LFB17
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -7739,10 +7739,10 @@ rtc_spinlock:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB67
-	.4byte	.LFE67-.LFB67
+	.4byte	.LFB71
+	.4byte	.LFE71-.LFB71
 	.byte	0x4
-	.4byte	.LCFI4-.LFB67
+	.4byte	.LCFI4-.LFB71
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -7751,10 +7751,10 @@ rtc_spinlock:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB75
-	.4byte	.LFE75-.LFB75
+	.4byte	.LFB79
+	.4byte	.LFE79-.LFB79
 	.byte	0x4
-	.4byte	.LCFI5-.LFB75
+	.4byte	.LCFI5-.LFB79
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -7763,10 +7763,10 @@ rtc_spinlock:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI6-.LFB14
+	.4byte	.LCFI6-.LFB18
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -7775,10 +7775,10 @@ rtc_spinlock:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI7-.LFB15
+	.4byte	.LCFI7-.LFB19
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -7787,10 +7787,10 @@ rtc_spinlock:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB85
-	.4byte	.LFE85-.LFB85
+	.4byte	.LFB89
+	.4byte	.LFE89-.LFB89
 	.byte	0x4
-	.4byte	.LCFI8-.LFB85
+	.4byte	.LCFI8-.LFB89
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -7799,10 +7799,10 @@ rtc_spinlock:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB86
-	.4byte	.LFE86-.LFB86
+	.4byte	.LFB90
+	.4byte	.LFE90-.LFB90
 	.byte	0x4
-	.4byte	.LCFI9-.LFB86
+	.4byte	.LCFI9-.LFB90
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -7811,10 +7811,10 @@ rtc_spinlock:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI10-.LFB10
+	.4byte	.LCFI10-.LFB14
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -7823,10 +7823,10 @@ rtc_spinlock:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB68
-	.4byte	.LFE68-.LFB68
+	.4byte	.LFB72
+	.4byte	.LFE72-.LFB72
 	.byte	0x4
-	.4byte	.LCFI11-.LFB68
+	.4byte	.LCFI11-.LFB72
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -7835,10 +7835,10 @@ rtc_spinlock:
 	.4byte	.LEFDE24-.LASFDE24
 .LASFDE24:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI12-.LFB11
+	.4byte	.LCFI12-.LFB15
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -7847,10 +7847,10 @@ rtc_spinlock:
 	.4byte	.LEFDE26-.LASFDE26
 .LASFDE26:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI13-.LFB16
+	.4byte	.LCFI13-.LFB20
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -7859,10 +7859,10 @@ rtc_spinlock:
 	.4byte	.LEFDE28-.LASFDE28
 .LASFDE28:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI14-.LFB17
+	.4byte	.LCFI14-.LFB21
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -7871,10 +7871,10 @@ rtc_spinlock:
 	.4byte	.LEFDE30-.LASFDE30
 .LASFDE30:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI15-.LFB18
+	.4byte	.LCFI15-.LFB22
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -7883,10 +7883,10 @@ rtc_spinlock:
 	.4byte	.LEFDE32-.LASFDE32
 .LASFDE32:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI16-.LFB19
+	.4byte	.LCFI16-.LFB23
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -7895,10 +7895,10 @@ rtc_spinlock:
 	.4byte	.LEFDE34-.LASFDE34
 .LASFDE34:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.byte	0x4
-	.4byte	.LCFI17-.LFB20
+	.4byte	.LCFI17-.LFB24
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -7907,10 +7907,10 @@ rtc_spinlock:
 	.4byte	.LEFDE36-.LASFDE36
 .LASFDE36:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.byte	0x4
-	.4byte	.LCFI18-.LFB21
+	.4byte	.LCFI18-.LFB25
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -7919,10 +7919,10 @@ rtc_spinlock:
 	.4byte	.LEFDE38-.LASFDE38
 .LASFDE38:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI19-.LFB22
+	.4byte	.LCFI19-.LFB26
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -7931,10 +7931,10 @@ rtc_spinlock:
 	.4byte	.LEFDE40-.LASFDE40
 .LASFDE40:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI20-.LFB23
+	.4byte	.LCFI20-.LFB27
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -7943,10 +7943,10 @@ rtc_spinlock:
 	.4byte	.LEFDE42-.LASFDE42
 .LASFDE42:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI21-.LFB24
+	.4byte	.LCFI21-.LFB28
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -7955,10 +7955,10 @@ rtc_spinlock:
 	.4byte	.LEFDE44-.LASFDE44
 .LASFDE44:
 	.4byte	.Lframe0
-	.4byte	.LFB76
-	.4byte	.LFE76-.LFB76
+	.4byte	.LFB80
+	.4byte	.LFE80-.LFB80
 	.byte	0x4
-	.4byte	.LCFI22-.LFB76
+	.4byte	.LCFI22-.LFB80
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -7967,10 +7967,10 @@ rtc_spinlock:
 	.4byte	.LEFDE46-.LASFDE46
 .LASFDE46:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI23-.LFB25
+	.4byte	.LCFI23-.LFB29
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -7979,10 +7979,10 @@ rtc_spinlock:
 	.4byte	.LEFDE48-.LASFDE48
 .LASFDE48:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI24-.LFB26
+	.4byte	.LCFI24-.LFB30
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -7991,10 +7991,10 @@ rtc_spinlock:
 	.4byte	.LEFDE50-.LASFDE50
 .LASFDE50:
 	.4byte	.Lframe0
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.byte	0x4
-	.4byte	.LCFI25-.LFB27
+	.4byte	.LCFI25-.LFB31
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8003,10 +8003,10 @@ rtc_spinlock:
 	.4byte	.LEFDE52-.LASFDE52
 .LASFDE52:
 	.4byte	.Lframe0
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.byte	0x4
-	.4byte	.LCFI26-.LFB34
+	.4byte	.LCFI26-.LFB38
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8015,10 +8015,10 @@ rtc_spinlock:
 	.4byte	.LEFDE54-.LASFDE54
 .LASFDE54:
 	.4byte	.Lframe0
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.byte	0x4
-	.4byte	.LCFI27-.LFB35
+	.4byte	.LCFI27-.LFB39
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8027,10 +8027,10 @@ rtc_spinlock:
 	.4byte	.LEFDE56-.LASFDE56
 .LASFDE56:
 	.4byte	.Lframe0
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
 	.byte	0x4
-	.4byte	.LCFI28-.LFB36
+	.4byte	.LCFI28-.LFB40
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8039,10 +8039,10 @@ rtc_spinlock:
 	.4byte	.LEFDE58-.LASFDE58
 .LASFDE58:
 	.4byte	.Lframe0
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
 	.byte	0x4
-	.4byte	.LCFI29-.LFB37
+	.4byte	.LCFI29-.LFB41
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8051,10 +8051,10 @@ rtc_spinlock:
 	.4byte	.LEFDE60-.LASFDE60
 .LASFDE60:
 	.4byte	.Lframe0
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
 	.byte	0x4
-	.4byte	.LCFI30-.LFB38
+	.4byte	.LCFI30-.LFB42
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8063,10 +8063,10 @@ rtc_spinlock:
 	.4byte	.LEFDE62-.LASFDE62
 .LASFDE62:
 	.4byte	.Lframe0
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.byte	0x4
-	.4byte	.LCFI31-.LFB39
+	.4byte	.LCFI31-.LFB43
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8075,10 +8075,10 @@ rtc_spinlock:
 	.4byte	.LEFDE64-.LASFDE64
 .LASFDE64:
 	.4byte	.Lframe0
-	.4byte	.LFB40
-	.4byte	.LFE40-.LFB40
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
 	.byte	0x4
-	.4byte	.LCFI32-.LFB40
+	.4byte	.LCFI32-.LFB44
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -8087,10 +8087,10 @@ rtc_spinlock:
 	.4byte	.LEFDE66-.LASFDE66
 .LASFDE66:
 	.4byte	.Lframe0
-	.4byte	.LFB41
-	.4byte	.LFE41-.LFB41
+	.4byte	.LFB45
+	.4byte	.LFE45-.LFB45
 	.byte	0x4
-	.4byte	.LCFI33-.LFB41
+	.4byte	.LCFI33-.LFB45
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8099,10 +8099,10 @@ rtc_spinlock:
 	.4byte	.LEFDE68-.LASFDE68
 .LASFDE68:
 	.4byte	.Lframe0
-	.4byte	.LFB42
-	.4byte	.LFE42-.LFB42
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
 	.byte	0x4
-	.4byte	.LCFI34-.LFB42
+	.4byte	.LCFI34-.LFB46
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8111,10 +8111,10 @@ rtc_spinlock:
 	.4byte	.LEFDE70-.LASFDE70
 .LASFDE70:
 	.4byte	.Lframe0
-	.4byte	.LFB43
-	.4byte	.LFE43-.LFB43
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
 	.byte	0x4
-	.4byte	.LCFI35-.LFB43
+	.4byte	.LCFI35-.LFB47
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8123,10 +8123,10 @@ rtc_spinlock:
 	.4byte	.LEFDE72-.LASFDE72
 .LASFDE72:
 	.4byte	.Lframe0
-	.4byte	.LFB44
-	.4byte	.LFE44-.LFB44
+	.4byte	.LFB48
+	.4byte	.LFE48-.LFB48
 	.byte	0x4
-	.4byte	.LCFI36-.LFB44
+	.4byte	.LCFI36-.LFB48
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8135,10 +8135,10 @@ rtc_spinlock:
 	.4byte	.LEFDE74-.LASFDE74
 .LASFDE74:
 	.4byte	.Lframe0
-	.4byte	.LFB45
-	.4byte	.LFE45-.LFB45
+	.4byte	.LFB49
+	.4byte	.LFE49-.LFB49
 	.byte	0x4
-	.4byte	.LCFI37-.LFB45
+	.4byte	.LCFI37-.LFB49
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8147,10 +8147,10 @@ rtc_spinlock:
 	.4byte	.LEFDE76-.LASFDE76
 .LASFDE76:
 	.4byte	.Lframe0
-	.4byte	.LFB46
-	.4byte	.LFE46-.LFB46
+	.4byte	.LFB50
+	.4byte	.LFE50-.LFB50
 	.byte	0x4
-	.4byte	.LCFI38-.LFB46
+	.4byte	.LCFI38-.LFB50
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8159,10 +8159,10 @@ rtc_spinlock:
 	.4byte	.LEFDE78-.LASFDE78
 .LASFDE78:
 	.4byte	.Lframe0
-	.4byte	.LFB47
-	.4byte	.LFE47-.LFB47
+	.4byte	.LFB51
+	.4byte	.LFE51-.LFB51
 	.byte	0x4
-	.4byte	.LCFI39-.LFB47
+	.4byte	.LCFI39-.LFB51
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8171,10 +8171,10 @@ rtc_spinlock:
 	.4byte	.LEFDE80-.LASFDE80
 .LASFDE80:
 	.4byte	.Lframe0
-	.4byte	.LFB48
-	.4byte	.LFE48-.LFB48
+	.4byte	.LFB52
+	.4byte	.LFE52-.LFB52
 	.byte	0x4
-	.4byte	.LCFI40-.LFB48
+	.4byte	.LCFI40-.LFB52
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8183,10 +8183,10 @@ rtc_spinlock:
 	.4byte	.LEFDE82-.LASFDE82
 .LASFDE82:
 	.4byte	.Lframe0
-	.4byte	.LFB49
-	.4byte	.LFE49-.LFB49
+	.4byte	.LFB53
+	.4byte	.LFE53-.LFB53
 	.byte	0x4
-	.4byte	.LCFI41-.LFB49
+	.4byte	.LCFI41-.LFB53
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8195,10 +8195,10 @@ rtc_spinlock:
 	.4byte	.LEFDE84-.LASFDE84
 .LASFDE84:
 	.4byte	.Lframe0
-	.4byte	.LFB50
-	.4byte	.LFE50-.LFB50
+	.4byte	.LFB54
+	.4byte	.LFE54-.LFB54
 	.byte	0x4
-	.4byte	.LCFI42-.LFB50
+	.4byte	.LCFI42-.LFB54
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8207,10 +8207,10 @@ rtc_spinlock:
 	.4byte	.LEFDE86-.LASFDE86
 .LASFDE86:
 	.4byte	.Lframe0
-	.4byte	.LFB51
-	.4byte	.LFE51-.LFB51
+	.4byte	.LFB55
+	.4byte	.LFE55-.LFB55
 	.byte	0x4
-	.4byte	.LCFI43-.LFB51
+	.4byte	.LCFI43-.LFB55
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8219,10 +8219,10 @@ rtc_spinlock:
 	.4byte	.LEFDE88-.LASFDE88
 .LASFDE88:
 	.4byte	.Lframe0
-	.4byte	.LFB52
-	.4byte	.LFE52-.LFB52
+	.4byte	.LFB56
+	.4byte	.LFE56-.LFB56
 	.byte	0x4
-	.4byte	.LCFI44-.LFB52
+	.4byte	.LCFI44-.LFB56
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8231,10 +8231,10 @@ rtc_spinlock:
 	.4byte	.LEFDE90-.LASFDE90
 .LASFDE90:
 	.4byte	.Lframe0
-	.4byte	.LFB53
-	.4byte	.LFE53-.LFB53
+	.4byte	.LFB57
+	.4byte	.LFE57-.LFB57
 	.byte	0x4
-	.4byte	.LCFI45-.LFB53
+	.4byte	.LCFI45-.LFB57
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8243,10 +8243,10 @@ rtc_spinlock:
 	.4byte	.LEFDE92-.LASFDE92
 .LASFDE92:
 	.4byte	.Lframe0
-	.4byte	.LFB54
-	.4byte	.LFE54-.LFB54
+	.4byte	.LFB58
+	.4byte	.LFE58-.LFB58
 	.byte	0x4
-	.4byte	.LCFI46-.LFB54
+	.4byte	.LCFI46-.LFB58
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8255,10 +8255,10 @@ rtc_spinlock:
 	.4byte	.LEFDE94-.LASFDE94
 .LASFDE94:
 	.4byte	.Lframe0
-	.4byte	.LFB55
-	.4byte	.LFE55-.LFB55
+	.4byte	.LFB59
+	.4byte	.LFE59-.LFB59
 	.byte	0x4
-	.4byte	.LCFI47-.LFB55
+	.4byte	.LCFI47-.LFB59
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8267,10 +8267,10 @@ rtc_spinlock:
 	.4byte	.LEFDE96-.LASFDE96
 .LASFDE96:
 	.4byte	.Lframe0
-	.4byte	.LFB56
-	.4byte	.LFE56-.LFB56
+	.4byte	.LFB60
+	.4byte	.LFE60-.LFB60
 	.byte	0x4
-	.4byte	.LCFI48-.LFB56
+	.4byte	.LCFI48-.LFB60
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8279,10 +8279,10 @@ rtc_spinlock:
 	.4byte	.LEFDE98-.LASFDE98
 .LASFDE98:
 	.4byte	.Lframe0
-	.4byte	.LFB57
-	.4byte	.LFE57-.LFB57
+	.4byte	.LFB61
+	.4byte	.LFE61-.LFB61
 	.byte	0x4
-	.4byte	.LCFI49-.LFB57
+	.4byte	.LCFI49-.LFB61
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8291,10 +8291,10 @@ rtc_spinlock:
 	.4byte	.LEFDE100-.LASFDE100
 .LASFDE100:
 	.4byte	.Lframe0
-	.4byte	.LFB58
-	.4byte	.LFE58-.LFB58
+	.4byte	.LFB62
+	.4byte	.LFE62-.LFB62
 	.byte	0x4
-	.4byte	.LCFI50-.LFB58
+	.4byte	.LCFI50-.LFB62
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8303,10 +8303,10 @@ rtc_spinlock:
 	.4byte	.LEFDE102-.LASFDE102
 .LASFDE102:
 	.4byte	.Lframe0
-	.4byte	.LFB60
-	.4byte	.LFE60-.LFB60
+	.4byte	.LFB64
+	.4byte	.LFE64-.LFB64
 	.byte	0x4
-	.4byte	.LCFI51-.LFB60
+	.4byte	.LCFI51-.LFB64
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8315,10 +8315,10 @@ rtc_spinlock:
 	.4byte	.LEFDE104-.LASFDE104
 .LASFDE104:
 	.4byte	.Lframe0
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.byte	0x4
-	.4byte	.LCFI52-.LFB33
+	.4byte	.LCFI52-.LFB37
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8327,10 +8327,10 @@ rtc_spinlock:
 	.4byte	.LEFDE106-.LASFDE106
 .LASFDE106:
 	.4byte	.Lframe0
-	.4byte	.LFB61
-	.4byte	.LFE61-.LFB61
+	.4byte	.LFB65
+	.4byte	.LFE65-.LFB65
 	.byte	0x4
-	.4byte	.LCFI53-.LFB61
+	.4byte	.LCFI53-.LFB65
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8339,10 +8339,10 @@ rtc_spinlock:
 	.4byte	.LEFDE108-.LASFDE108
 .LASFDE108:
 	.4byte	.Lframe0
-	.4byte	.LFB62
-	.4byte	.LFE62-.LFB62
+	.4byte	.LFB66
+	.4byte	.LFE66-.LFB66
 	.byte	0x4
-	.4byte	.LCFI54-.LFB62
+	.4byte	.LCFI54-.LFB66
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8351,10 +8351,10 @@ rtc_spinlock:
 	.4byte	.LEFDE110-.LASFDE110
 .LASFDE110:
 	.4byte	.Lframe0
-	.4byte	.LFB63
-	.4byte	.LFE63-.LFB63
+	.4byte	.LFB67
+	.4byte	.LFE67-.LFB67
 	.byte	0x4
-	.4byte	.LCFI55-.LFB63
+	.4byte	.LCFI55-.LFB67
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8363,10 +8363,10 @@ rtc_spinlock:
 	.4byte	.LEFDE112-.LASFDE112
 .LASFDE112:
 	.4byte	.Lframe0
-	.4byte	.LFB64
-	.4byte	.LFE64-.LFB64
+	.4byte	.LFB68
+	.4byte	.LFE68-.LFB68
 	.byte	0x4
-	.4byte	.LCFI56-.LFB64
+	.4byte	.LCFI56-.LFB68
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8375,10 +8375,10 @@ rtc_spinlock:
 	.4byte	.LEFDE114-.LASFDE114
 .LASFDE114:
 	.4byte	.Lframe0
-	.4byte	.LFB65
-	.4byte	.LFE65-.LFB65
+	.4byte	.LFB69
+	.4byte	.LFE69-.LFB69
 	.byte	0x4
-	.4byte	.LCFI57-.LFB65
+	.4byte	.LCFI57-.LFB69
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8387,10 +8387,10 @@ rtc_spinlock:
 	.4byte	.LEFDE116-.LASFDE116
 .LASFDE116:
 	.4byte	.Lframe0
-	.4byte	.LFB66
-	.4byte	.LFE66-.LFB66
+	.4byte	.LFB70
+	.4byte	.LFE70-.LFB70
 	.byte	0x4
-	.4byte	.LCFI58-.LFB66
+	.4byte	.LCFI58-.LFB70
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8399,10 +8399,10 @@ rtc_spinlock:
 	.4byte	.LEFDE118-.LASFDE118
 .LASFDE118:
 	.4byte	.Lframe0
-	.4byte	.LFB59
-	.4byte	.LFE59-.LFB59
+	.4byte	.LFB63
+	.4byte	.LFE63-.LFB63
 	.byte	0x4
-	.4byte	.LCFI59-.LFB59
+	.4byte	.LCFI59-.LFB63
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8411,10 +8411,10 @@ rtc_spinlock:
 	.4byte	.LEFDE120-.LASFDE120
 .LASFDE120:
 	.4byte	.Lframe0
-	.4byte	.LFB69
-	.4byte	.LFE69-.LFB69
+	.4byte	.LFB73
+	.4byte	.LFE73-.LFB73
 	.byte	0x4
-	.4byte	.LCFI60-.LFB69
+	.4byte	.LCFI60-.LFB73
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8423,10 +8423,10 @@ rtc_spinlock:
 	.4byte	.LEFDE122-.LASFDE122
 .LASFDE122:
 	.4byte	.Lframe0
-	.4byte	.LFB70
-	.4byte	.LFE70-.LFB70
+	.4byte	.LFB74
+	.4byte	.LFE74-.LFB74
 	.byte	0x4
-	.4byte	.LCFI61-.LFB70
+	.4byte	.LCFI61-.LFB74
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8435,10 +8435,10 @@ rtc_spinlock:
 	.4byte	.LEFDE124-.LASFDE124
 .LASFDE124:
 	.4byte	.Lframe0
-	.4byte	.LFB71
-	.4byte	.LFE71-.LFB71
+	.4byte	.LFB75
+	.4byte	.LFE75-.LFB75
 	.byte	0x4
-	.4byte	.LCFI62-.LFB71
+	.4byte	.LCFI62-.LFB75
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8447,10 +8447,10 @@ rtc_spinlock:
 	.4byte	.LEFDE126-.LASFDE126
 .LASFDE126:
 	.4byte	.Lframe0
-	.4byte	.LFB83
-	.4byte	.LFE83-.LFB83
+	.4byte	.LFB87
+	.4byte	.LFE87-.LFB87
 	.byte	0x4
-	.4byte	.LCFI63-.LFB83
+	.4byte	.LCFI63-.LFB87
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8459,10 +8459,10 @@ rtc_spinlock:
 	.4byte	.LEFDE128-.LASFDE128
 .LASFDE128:
 	.4byte	.Lframe0
-	.4byte	.LFB72
-	.4byte	.LFE72-.LFB72
+	.4byte	.LFB76
+	.4byte	.LFE76-.LFB76
 	.byte	0x4
-	.4byte	.LCFI64-.LFB72
+	.4byte	.LCFI64-.LFB76
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8471,10 +8471,10 @@ rtc_spinlock:
 	.4byte	.LEFDE130-.LASFDE130
 .LASFDE130:
 	.4byte	.Lframe0
-	.4byte	.LFB73
-	.4byte	.LFE73-.LFB73
+	.4byte	.LFB77
+	.4byte	.LFE77-.LFB77
 	.byte	0x4
-	.4byte	.LCFI65-.LFB73
+	.4byte	.LCFI65-.LFB77
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8483,10 +8483,10 @@ rtc_spinlock:
 	.4byte	.LEFDE132-.LASFDE132
 .LASFDE132:
 	.4byte	.Lframe0
-	.4byte	.LFB74
-	.4byte	.LFE74-.LFB74
+	.4byte	.LFB78
+	.4byte	.LFE78-.LFB78
 	.byte	0x4
-	.4byte	.LCFI66-.LFB74
+	.4byte	.LCFI66-.LFB78
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8495,10 +8495,10 @@ rtc_spinlock:
 	.4byte	.LEFDE134-.LASFDE134
 .LASFDE134:
 	.4byte	.Lframe0
-	.4byte	.LFB77
-	.4byte	.LFE77-.LFB77
+	.4byte	.LFB81
+	.4byte	.LFE81-.LFB81
 	.byte	0x4
-	.4byte	.LCFI67-.LFB77
+	.4byte	.LCFI67-.LFB81
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8507,10 +8507,10 @@ rtc_spinlock:
 	.4byte	.LEFDE136-.LASFDE136
 .LASFDE136:
 	.4byte	.Lframe0
-	.4byte	.LFB78
-	.4byte	.LFE78-.LFB78
+	.4byte	.LFB82
+	.4byte	.LFE82-.LFB82
 	.byte	0x4
-	.4byte	.LCFI68-.LFB78
+	.4byte	.LCFI68-.LFB82
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8519,10 +8519,10 @@ rtc_spinlock:
 	.4byte	.LEFDE138-.LASFDE138
 .LASFDE138:
 	.4byte	.Lframe0
-	.4byte	.LFB79
-	.4byte	.LFE79-.LFB79
+	.4byte	.LFB83
+	.4byte	.LFE83-.LFB83
 	.byte	0x4
-	.4byte	.LCFI69-.LFB79
+	.4byte	.LCFI69-.LFB83
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8531,10 +8531,10 @@ rtc_spinlock:
 	.4byte	.LEFDE140-.LASFDE140
 .LASFDE140:
 	.4byte	.Lframe0
-	.4byte	.LFB80
-	.4byte	.LFE80-.LFB80
+	.4byte	.LFB84
+	.4byte	.LFE84-.LFB84
 	.byte	0x4
-	.4byte	.LCFI70-.LFB80
+	.4byte	.LCFI70-.LFB84
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8543,10 +8543,10 @@ rtc_spinlock:
 	.4byte	.LEFDE142-.LASFDE142
 .LASFDE142:
 	.4byte	.Lframe0
-	.4byte	.LFB81
-	.4byte	.LFE81-.LFB81
+	.4byte	.LFB85
+	.4byte	.LFE85-.LFB85
 	.byte	0x4
-	.4byte	.LCFI71-.LFB81
+	.4byte	.LCFI71-.LFB85
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8555,10 +8555,10 @@ rtc_spinlock:
 	.4byte	.LEFDE144-.LASFDE144
 .LASFDE144:
 	.4byte	.Lframe0
-	.4byte	.LFB82
-	.4byte	.LFE82-.LFB82
+	.4byte	.LFB86
+	.4byte	.LFE86-.LFB86
 	.byte	0x4
-	.4byte	.LCFI72-.LFB82
+	.4byte	.LCFI72-.LFB86
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8567,10 +8567,10 @@ rtc_spinlock:
 	.4byte	.LEFDE146-.LASFDE146
 .LASFDE146:
 	.4byte	.Lframe0
-	.4byte	.LFB84
-	.4byte	.LFE84-.LFB84
+	.4byte	.LFB88
+	.4byte	.LFE88-.LFB88
 	.byte	0x4
-	.4byte	.LCFI73-.LFB84
+	.4byte	.LCFI73-.LFB88
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8579,10 +8579,10 @@ rtc_spinlock:
 	.4byte	.LEFDE148-.LASFDE148
 .LASFDE148:
 	.4byte	.Lframe0
-	.4byte	.LFB87
-	.4byte	.LFE87-.LFB87
+	.4byte	.LFB91
+	.4byte	.LFE91-.LFB91
 	.byte	0x4
-	.4byte	.LCFI74-.LFB87
+	.4byte	.LCFI74-.LFB91
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8591,10 +8591,10 @@ rtc_spinlock:
 	.4byte	.LEFDE150-.LASFDE150
 .LASFDE150:
 	.4byte	.Lframe0
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.byte	0x4
-	.4byte	.LCFI75-.LFB28
+	.4byte	.LCFI75-.LFB32
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8603,10 +8603,10 @@ rtc_spinlock:
 	.4byte	.LEFDE152-.LASFDE152
 .LASFDE152:
 	.4byte	.Lframe0
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.byte	0x4
-	.4byte	.LCFI76-.LFB29
+	.4byte	.LCFI76-.LFB33
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -8615,10 +8615,10 @@ rtc_spinlock:
 	.4byte	.LEFDE154-.LASFDE154
 .LASFDE154:
 	.4byte	.Lframe0
-	.4byte	.LFB88
-	.4byte	.LFE88-.LFB88
+	.4byte	.LFB92
+	.4byte	.LFE92-.LFB92
 	.byte	0x4
-	.4byte	.LCFI77-.LFB88
+	.4byte	.LCFI77-.LFB92
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -8627,10 +8627,10 @@ rtc_spinlock:
 	.4byte	.LEFDE156-.LASFDE156
 .LASFDE156:
 	.4byte	.Lframe0
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.byte	0x4
-	.4byte	.LCFI78-.LFB30
+	.4byte	.LCFI78-.LFB34
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -17531,35 +17531,35 @@ rtc_spinlock:
 	.uleb128 0x3
 	.4byte	.LASF806
 	.byte	0xf
-	.byte	0x6c
+	.byte	0x6f
 	.4byte	0x70
 	.uleb128 0x3
 	.4byte	.LASF807
 	.byte	0xf
-	.byte	0x73
+	.byte	0x76
 	.4byte	0xaa
 	.uleb128 0xc
 	.byte	0x8
 	.byte	0xf
-	.byte	0x81
+	.byte	0x84
 	.4byte	0x3e82
 	.uleb128 0x18
 	.4byte	.LASF808
 	.byte	0xf
-	.byte	0x82
+	.byte	0x85
 	.4byte	0xaa
 	.byte	0
 	.uleb128 0x18
 	.4byte	.LASF809
 	.byte	0xf
-	.byte	0x83
+	.byte	0x86
 	.4byte	0xaa
 	.byte	0x4
 	.byte	0
 	.uleb128 0x3
 	.4byte	.LASF810
 	.byte	0xf
-	.byte	0x88
+	.byte	0x8b
 	.4byte	0x3e61
 	.uleb128 0x3
 	.4byte	.LASF811
@@ -17708,8 +17708,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x178
 	.4byte	0x3907
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3fee
@@ -17735,8 +17735,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x1a1
 	.4byte	0xaa
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4051
@@ -17774,8 +17774,8 @@ rtc_spinlock:
 	.byte	0x1
 	.byte	0x92
 	.4byte	0x3907
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x40ef
@@ -17796,7 +17796,7 @@ rtc_spinlock:
 	.4byte	0x40ff
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6335
+	.4byte	__FUNCTION__$6439
 	.uleb128 0x2f
 	.4byte	.LVL10
 	.4byte	0x7ea2
@@ -17845,7 +17845,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6335
+	.4byte	__FUNCTION__$6439
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -17869,8 +17869,8 @@ rtc_spinlock:
 	.byte	0x1
 	.byte	0x9c
 	.4byte	0x3907
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x41a2
@@ -17891,7 +17891,7 @@ rtc_spinlock:
 	.4byte	0x41b2
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6340
+	.4byte	__FUNCTION__$6444
 	.uleb128 0x2f
 	.4byte	.LVL19
 	.4byte	0x7ea2
@@ -17940,7 +17940,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6340
+	.4byte	__FUNCTION__$6444
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -17964,8 +17964,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x36c
 	.4byte	0x3907
-	.4byte	.LFB67
-	.4byte	.LFE67-.LFB67
+	.4byte	.LFB71
+	.4byte	.LFE71-.LFB71
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4256
@@ -17987,7 +17987,7 @@ rtc_spinlock:
 	.4byte	0x4266
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6595
+	.4byte	__FUNCTION__$6699
 	.uleb128 0x2f
 	.4byte	.LVL27
 	.4byte	0x7ea2
@@ -18036,7 +18036,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6595
+	.4byte	__FUNCTION__$6699
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -18060,8 +18060,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x40d
 	.4byte	0x3907
-	.4byte	.LFB75
-	.4byte	.LFE75-.LFB75
+	.4byte	.LFB79
+	.4byte	.LFE79-.LFB79
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4365
@@ -18083,7 +18083,7 @@ rtc_spinlock:
 	.4byte	0x4375
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6644
+	.4byte	__FUNCTION__$6748
 	.uleb128 0x2f
 	.4byte	.LVL35
 	.4byte	0x7ea2
@@ -18133,7 +18133,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6644
+	.4byte	__FUNCTION__$6748
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -18190,7 +18190,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6644
+	.4byte	__FUNCTION__$6748
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -18214,8 +18214,8 @@ rtc_spinlock:
 	.byte	0x1
 	.byte	0xa6
 	.4byte	0x3907
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x444e
@@ -18230,7 +18230,7 @@ rtc_spinlock:
 	.4byte	0x445e
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6344
+	.4byte	__FUNCTION__$6448
 	.uleb128 0x33
 	.4byte	0x3f99
 	.4byte	.LBB21
@@ -18291,7 +18291,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6344
+	.4byte	__FUNCTION__$6448
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -18336,8 +18336,8 @@ rtc_spinlock:
 	.byte	0x1
 	.byte	0xb0
 	.4byte	0x3907
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4537
@@ -18352,7 +18352,7 @@ rtc_spinlock:
 	.4byte	0x4537
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6348
+	.4byte	__FUNCTION__$6452
 	.uleb128 0x33
 	.4byte	0x3f99
 	.4byte	.LBB23
@@ -18413,7 +18413,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6348
+	.4byte	__FUNCTION__$6452
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -18450,8 +18450,8 @@ rtc_spinlock:
 	.4byte	.LASF844
 	.byte	0x1
 	.2byte	0x4ca
-	.4byte	.LFB85
-	.4byte	.LFE85-.LFB85
+	.4byte	.LFB89
+	.4byte	.LFE89-.LFB89
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x45d2
@@ -18526,8 +18526,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x4da
 	.4byte	0x3907
-	.4byte	.LFB86
-	.4byte	.LFE86-.LFB86
+	.4byte	.LFB90
+	.4byte	.LFE90-.LFB90
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4669
@@ -18602,8 +18602,8 @@ rtc_spinlock:
 	.byte	0x1
 	.byte	0x7a
 	.4byte	0x3907
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x473d
@@ -18618,7 +18618,7 @@ rtc_spinlock:
 	.4byte	0x474d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6326
+	.4byte	__FUNCTION__$6430
 	.uleb128 0x33
 	.4byte	0x3f99
 	.4byte	.LBB25
@@ -18679,7 +18679,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6326
+	.4byte	__FUNCTION__$6430
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -18724,8 +18724,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x390
 	.4byte	0x3907
-	.4byte	.LFB68
-	.4byte	.LFE68-.LFB68
+	.4byte	.LFB72
+	.4byte	.LFE72-.LFB72
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4942
@@ -18748,7 +18748,7 @@ rtc_spinlock:
 	.4byte	0x4942
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6610
+	.4byte	__FUNCTION__$6714
 	.uleb128 0x32
 	.4byte	.LVL94
 	.4byte	0x41b7
@@ -18801,7 +18801,7 @@ rtc_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6610
+	.4byte	__FUNCTION__$6714
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -18848,7 +18848,7 @@ rtc_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6610
+	.4byte	__FUNCTION__$6714
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -18895,7 +18895,7 @@ rtc_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6610
+	.4byte	__FUNCTION__$6714
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -18942,7 +18942,7 @@ rtc_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6610
+	.4byte	__FUNCTION__$6714
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -18995,7 +18995,7 @@ rtc_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6610
+	.4byte	__FUNCTION__$6714
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -19012,8 +19012,8 @@ rtc_spinlock:
 	.byte	0x1
 	.byte	0x87
 	.4byte	0x3907
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4a1b
@@ -19028,7 +19028,7 @@ rtc_spinlock:
 	.4byte	0x4a2b
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6330
+	.4byte	__FUNCTION__$6434
 	.uleb128 0x33
 	.4byte	0x3f99
 	.4byte	.LBB27
@@ -19089,7 +19089,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6330
+	.4byte	__FUNCTION__$6434
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -19134,8 +19134,8 @@ rtc_spinlock:
 	.byte	0x1
 	.byte	0xba
 	.4byte	0x3907
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4af8
@@ -19163,7 +19163,7 @@ rtc_spinlock:
 	.4byte	0x4af8
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6354
+	.4byte	__FUNCTION__$6458
 	.uleb128 0x33
 	.4byte	0x3f99
 	.4byte	.LBB29
@@ -19223,7 +19223,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6354
+	.4byte	__FUNCTION__$6458
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -19240,8 +19240,8 @@ rtc_spinlock:
 	.byte	0x1
 	.byte	0xc8
 	.4byte	0xaa
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4bef
@@ -19268,7 +19268,7 @@ rtc_spinlock:
 	.4byte	0x4bef
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6360
+	.4byte	__FUNCTION__$6464
 	.uleb128 0x33
 	.4byte	0x3f99
 	.4byte	.LBB31
@@ -19329,7 +19329,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6360
+	.4byte	__FUNCTION__$6464
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -19367,8 +19367,8 @@ rtc_spinlock:
 	.byte	0x1
 	.byte	0xd4
 	.4byte	0x3907
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4d8d
@@ -19389,7 +19389,7 @@ rtc_spinlock:
 	.4byte	0x4d9d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6365
+	.4byte	__FUNCTION__$6469
 	.uleb128 0x33
 	.4byte	0x3f99
 	.4byte	.LBB33
@@ -19450,7 +19450,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6365
+	.4byte	__FUNCTION__$6469
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -19508,7 +19508,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6365
+	.4byte	__FUNCTION__$6469
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -19566,7 +19566,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6365
+	.4byte	__FUNCTION__$6469
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -19611,8 +19611,8 @@ rtc_spinlock:
 	.byte	0x1
 	.byte	0xe0
 	.4byte	0x3907
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4f11
@@ -19634,7 +19634,7 @@ rtc_spinlock:
 	.4byte	0x4f17
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6370
+	.4byte	__FUNCTION__$6474
 	.uleb128 0x33
 	.4byte	0x3f99
 	.4byte	.LBB35
@@ -19695,7 +19695,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6370
+	.4byte	__FUNCTION__$6474
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -19753,7 +19753,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6370
+	.4byte	__FUNCTION__$6474
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -19810,7 +19810,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6370
+	.4byte	__FUNCTION__$6474
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -19830,8 +19830,8 @@ rtc_spinlock:
 	.byte	0x1
 	.byte	0xea
 	.4byte	0x3907
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5075
@@ -19853,7 +19853,7 @@ rtc_spinlock:
 	.4byte	0x5075
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6375
+	.4byte	__FUNCTION__$6479
 	.uleb128 0x33
 	.4byte	0x3f99
 	.4byte	.LBB37
@@ -19914,7 +19914,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6375
+	.4byte	__FUNCTION__$6479
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -20018,8 +20018,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x104
 	.4byte	0x3907
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x50c9
@@ -20056,8 +20056,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x113
 	.4byte	0x3907
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5118
@@ -20094,8 +20094,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x122
 	.4byte	0x3907
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5167
@@ -20132,8 +20132,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x131
 	.4byte	0x3907
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x51b6
@@ -20170,8 +20170,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x420
 	.4byte	0x3907
-	.4byte	.LFB76
-	.4byte	.LFE76-.LFB76
+	.4byte	.LFB80
+	.4byte	.LFE80-.LFB80
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x52a1
@@ -20186,7 +20186,7 @@ rtc_spinlock:
 	.4byte	0x52b1
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6652
+	.4byte	__FUNCTION__$6756
 	.uleb128 0x37
 	.4byte	.LASF829
 	.byte	0x1
@@ -20244,7 +20244,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6652
+	.4byte	__FUNCTION__$6756
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -20300,8 +20300,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x140
 	.4byte	0x3907
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5305
@@ -20338,8 +20338,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x14c
 	.4byte	0x3907
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5354
@@ -20375,8 +20375,8 @@ rtc_spinlock:
 	.4byte	.LASF978
 	.byte	0x1
 	.2byte	0x159
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x539f
@@ -20411,8 +20411,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x1b9
 	.4byte	0x3907
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5444
@@ -20496,8 +20496,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x1c6
 	.4byte	0x3907
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x54a7
@@ -20544,8 +20544,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x1d3
 	.4byte	0x3907
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5642
@@ -20572,7 +20572,7 @@ rtc_spinlock:
 	.4byte	0x5642
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6466
+	.4byte	__FUNCTION__$6570
 	.uleb128 0x2f
 	.4byte	.LVL272
 	.4byte	0x7ea2
@@ -20622,7 +20622,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6466
+	.4byte	__FUNCTION__$6570
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -20680,7 +20680,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6466
+	.4byte	__FUNCTION__$6570
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -20738,7 +20738,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6466
+	.4byte	__FUNCTION__$6570
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -20776,8 +20776,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x1ea
 	.4byte	0x3907
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x56b8
@@ -20837,8 +20837,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x1fa
 	.4byte	0x3907
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x57fe
@@ -20865,7 +20865,7 @@ rtc_spinlock:
 	.4byte	0x57fe
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6477
+	.4byte	__FUNCTION__$6581
 	.uleb128 0x2f
 	.4byte	.LVL294
 	.4byte	0x7ea2
@@ -20915,7 +20915,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6477
+	.4byte	__FUNCTION__$6581
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -20973,7 +20973,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6477
+	.4byte	__FUNCTION__$6581
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -21011,8 +21011,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x207
 	.4byte	0x3907
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x58e0
@@ -21040,7 +21040,7 @@ rtc_spinlock:
 	.4byte	0x58ec
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6483
+	.4byte	__FUNCTION__$6587
 	.uleb128 0x2f
 	.4byte	.LVL309
 	.4byte	0x7ea2
@@ -21090,7 +21090,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6483
+	.4byte	__FUNCTION__$6587
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -21134,8 +21134,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x215
 	.4byte	0x3907
-	.4byte	.LFB40
-	.4byte	.LFE40-.LFB40
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x59dd
@@ -21150,7 +21150,7 @@ rtc_spinlock:
 	.4byte	0x59ed
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6487
+	.4byte	__FUNCTION__$6591
 	.uleb128 0x37
 	.4byte	.LASF829
 	.byte	0x1
@@ -21208,7 +21208,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6487
+	.4byte	__FUNCTION__$6591
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -21268,8 +21268,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x221
 	.4byte	0x3907
-	.4byte	.LFB41
-	.4byte	.LFE41-.LFB41
+	.4byte	.LFB45
+	.4byte	.LFE45-.LFB45
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5aab
@@ -21284,7 +21284,7 @@ rtc_spinlock:
 	.4byte	0x5aab
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6492
+	.4byte	__FUNCTION__$6596
 	.uleb128 0x2f
 	.4byte	.LVL330
 	.4byte	0x7ea2
@@ -21334,7 +21334,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6492
+	.4byte	__FUNCTION__$6596
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -21372,8 +21372,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x22c
 	.4byte	0x3907
-	.4byte	.LFB42
-	.4byte	.LFE42-.LFB42
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5adb
@@ -21392,8 +21392,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x234
 	.4byte	0x3907
-	.4byte	.LFB43
-	.4byte	.LFE43-.LFB43
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5b20
@@ -21424,8 +21424,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x23d
 	.4byte	0x3907
-	.4byte	.LFB44
-	.4byte	.LFE44-.LFB44
+	.4byte	.LFB48
+	.4byte	.LFE48-.LFB48
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5bef
@@ -21446,7 +21446,7 @@ rtc_spinlock:
 	.4byte	0x5bff
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6502
+	.4byte	__FUNCTION__$6606
 	.uleb128 0x2f
 	.4byte	.LVL342
 	.4byte	0x7ea2
@@ -21496,7 +21496,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6502
+	.4byte	__FUNCTION__$6606
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -21541,8 +21541,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x24b
 	.4byte	0x3907
-	.4byte	.LFB45
-	.4byte	.LFE45-.LFB45
+	.4byte	.LFB49
+	.4byte	.LFE49-.LFB49
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5ca3
@@ -21564,7 +21564,7 @@ rtc_spinlock:
 	.4byte	0x5ca3
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6507
+	.4byte	__FUNCTION__$6611
 	.uleb128 0x2f
 	.4byte	.LVL353
 	.4byte	0x7ea2
@@ -21613,7 +21613,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6507
+	.4byte	__FUNCTION__$6611
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -21630,8 +21630,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x256
 	.4byte	0x3907
-	.4byte	.LFB46
-	.4byte	.LFE46-.LFB46
+	.4byte	.LFB50
+	.4byte	.LFE50-.LFB50
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5d61
@@ -21646,7 +21646,7 @@ rtc_spinlock:
 	.4byte	0x5d71
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6511
+	.4byte	__FUNCTION__$6615
 	.uleb128 0x2f
 	.4byte	.LVL363
 	.4byte	0x7ea2
@@ -21696,7 +21696,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6511
+	.4byte	__FUNCTION__$6615
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -21741,8 +21741,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x25f
 	.4byte	0x3907
-	.4byte	.LFB47
-	.4byte	.LFE47-.LFB47
+	.4byte	.LFB51
+	.4byte	.LFE51-.LFB51
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5da1
@@ -21761,8 +21761,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x267
 	.4byte	0x3907
-	.4byte	.LFB48
-	.4byte	.LFE48-.LFB48
+	.4byte	.LFB52
+	.4byte	.LFE52-.LFB52
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5e60
@@ -21777,7 +21777,7 @@ rtc_spinlock:
 	.4byte	0x5e70
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6518
+	.4byte	__FUNCTION__$6622
 	.uleb128 0x2f
 	.4byte	.LVL373
 	.4byte	0x7ea2
@@ -21827,7 +21827,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6518
+	.4byte	__FUNCTION__$6622
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -21872,8 +21872,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x270
 	.4byte	0x3907
-	.4byte	.LFB49
-	.4byte	.LFE49-.LFB49
+	.4byte	.LFB53
+	.4byte	.LFE53-.LFB53
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5ea0
@@ -21892,8 +21892,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x278
 	.4byte	0x3907
-	.4byte	.LFB50
-	.4byte	.LFE50-.LFB50
+	.4byte	.LFB54
+	.4byte	.LFE54-.LFB54
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x6035
@@ -21920,7 +21920,7 @@ rtc_spinlock:
 	.4byte	0x6045
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6527
+	.4byte	__FUNCTION__$6631
 	.uleb128 0x2f
 	.4byte	.LVL383
 	.4byte	0x7ea2
@@ -21970,7 +21970,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6527
+	.4byte	__FUNCTION__$6631
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -22028,7 +22028,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6527
+	.4byte	__FUNCTION__$6631
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -22086,7 +22086,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6527
+	.4byte	__FUNCTION__$6631
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -22131,8 +22131,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x286
 	.4byte	0x3907
-	.4byte	.LFB51
-	.4byte	.LFE51-.LFB51
+	.4byte	.LFB55
+	.4byte	.LFE55-.LFB55
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x60bb
@@ -22183,8 +22183,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x296
 	.4byte	0x3907
-	.4byte	.LFB52
-	.4byte	.LFE52-.LFB52
+	.4byte	.LFB56
+	.4byte	.LFE56-.LFB56
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x624a
@@ -22211,7 +22211,7 @@ rtc_spinlock:
 	.4byte	0x624a
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6538
+	.4byte	__FUNCTION__$6642
 	.uleb128 0x2f
 	.4byte	.LVL399
 	.4byte	0x7ea2
@@ -22261,7 +22261,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6538
+	.4byte	__FUNCTION__$6642
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -22319,7 +22319,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6538
+	.4byte	__FUNCTION__$6642
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -22377,7 +22377,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6538
+	.4byte	__FUNCTION__$6642
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -22415,8 +22415,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x2a4
 	.4byte	0xaa
-	.4byte	.LFB53
-	.4byte	.LFE53-.LFB53
+	.4byte	.LFB57
+	.4byte	.LFE57-.LFB57
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x40
@@ -22424,8 +22424,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x2a9
 	.4byte	0x3907
-	.4byte	.LFB54
-	.4byte	.LFE54-.LFB54
+	.4byte	.LFB58
+	.4byte	.LFE58-.LFB58
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x62a4
@@ -22456,8 +22456,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x2b1
 	.4byte	0x3907
-	.4byte	.LFB55
-	.4byte	.LFE55-.LFB55
+	.4byte	.LFB59
+	.4byte	.LFE59-.LFB59
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x62e3
@@ -22488,8 +22488,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x2b9
 	.4byte	0x3907
-	.4byte	.LFB56
-	.4byte	.LFE56-.LFB56
+	.4byte	.LFB60
+	.4byte	.LFE60-.LFB60
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x6322
@@ -22520,8 +22520,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x2c1
 	.4byte	0x3907
-	.4byte	.LFB57
-	.4byte	.LFE57-.LFB57
+	.4byte	.LFB61
+	.4byte	.LFE61-.LFB61
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x648e
@@ -22543,7 +22543,7 @@ rtc_spinlock:
 	.4byte	0x648e
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6551
+	.4byte	__FUNCTION__$6655
 	.uleb128 0x2f
 	.4byte	.LVL417
 	.4byte	0x7ea2
@@ -22593,7 +22593,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6551
+	.4byte	__FUNCTION__$6655
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -22651,7 +22651,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6551
+	.4byte	__FUNCTION__$6655
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -22742,8 +22742,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x2cc
 	.4byte	0x3907
-	.4byte	.LFB58
-	.4byte	.LFE58-.LFB58
+	.4byte	.LFB62
+	.4byte	.LFE62-.LFB62
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x6524
@@ -22815,8 +22815,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x2eb
 	.4byte	0x3907
-	.4byte	.LFB60
-	.4byte	.LFE60-.LFB60
+	.4byte	.LFB64
+	.4byte	.LFE64-.LFB64
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x66b4
@@ -22838,7 +22838,7 @@ rtc_spinlock:
 	.4byte	0x66c4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6560
+	.4byte	__FUNCTION__$6664
 	.uleb128 0x2f
 	.4byte	.LVL438
 	.4byte	0x7ea2
@@ -22888,7 +22888,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6560
+	.4byte	__FUNCTION__$6664
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -22946,7 +22946,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6560
+	.4byte	__FUNCTION__$6664
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -23004,7 +23004,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6560
+	.4byte	__FUNCTION__$6664
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -23067,8 +23067,8 @@ rtc_spinlock:
 	.4byte	.LASF902
 	.byte	0x1
 	.2byte	0x1ab
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x6740
@@ -23128,8 +23128,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x2f9
 	.4byte	0x3907
-	.4byte	.LFB61
-	.4byte	.LFE61-.LFB61
+	.4byte	.LFB65
+	.4byte	.LFE65-.LFB65
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x68f0
@@ -23151,7 +23151,7 @@ rtc_spinlock:
 	.4byte	0x68f0
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6568
+	.4byte	__FUNCTION__$6672
 	.uleb128 0x2f
 	.4byte	.LVL463
 	.4byte	0x7ea2
@@ -23201,7 +23201,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6568
+	.4byte	__FUNCTION__$6672
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -23259,7 +23259,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6568
+	.4byte	__FUNCTION__$6672
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -23317,7 +23317,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6568
+	.4byte	__FUNCTION__$6672
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -23374,7 +23374,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6568
+	.4byte	__FUNCTION__$6672
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -23391,8 +23391,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x304
 	.4byte	0x3907
-	.4byte	.LFB62
-	.4byte	.LFE62-.LFB62
+	.4byte	.LFB66
+	.4byte	.LFE66-.LFB66
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x6afb
@@ -23407,7 +23407,7 @@ rtc_spinlock:
 	.4byte	0x6b0b
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6572
+	.4byte	__FUNCTION__$6676
 	.uleb128 0x38
 	.string	"ret"
 	.byte	0x1
@@ -23463,7 +23463,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6572
+	.4byte	__FUNCTION__$6676
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -23521,7 +23521,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6572
+	.4byte	__FUNCTION__$6676
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -23579,7 +23579,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6572
+	.4byte	__FUNCTION__$6676
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -23719,8 +23719,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x317
 	.4byte	0x3907
-	.4byte	.LFB63
-	.4byte	.LFE63-.LFB63
+	.4byte	.LFB67
+	.4byte	.LFE67-.LFB67
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x6cd9
@@ -23735,7 +23735,7 @@ rtc_spinlock:
 	.4byte	0x6cdf
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6577
+	.4byte	__FUNCTION__$6681
 	.uleb128 0x38
 	.string	"ret"
 	.byte	0x1
@@ -23791,7 +23791,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6577
+	.4byte	__FUNCTION__$6681
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -23849,7 +23849,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6577
+	.4byte	__FUNCTION__$6681
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -23907,7 +23907,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6577
+	.4byte	__FUNCTION__$6681
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -23998,8 +23998,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x329
 	.4byte	0x3907
-	.4byte	.LFB64
-	.4byte	.LFE64-.LFB64
+	.4byte	.LFB68
+	.4byte	.LFE68-.LFB68
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x6f14
@@ -24014,7 +24014,7 @@ rtc_spinlock:
 	.4byte	0x6f14
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6582
+	.4byte	__FUNCTION__$6686
 	.uleb128 0x38
 	.string	"ret"
 	.byte	0x1
@@ -24070,7 +24070,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6582
+	.4byte	__FUNCTION__$6686
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -24128,7 +24128,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6582
+	.4byte	__FUNCTION__$6686
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -24357,8 +24357,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x347
 	.4byte	0x3907
-	.4byte	.LFB65
-	.4byte	.LFE65-.LFB65
+	.4byte	.LFB69
+	.4byte	.LFE69-.LFB69
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x703f
@@ -24367,7 +24367,7 @@ rtc_spinlock:
 	.4byte	0x703f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6586
+	.4byte	__FUNCTION__$6690
 	.uleb128 0x38
 	.string	"ret"
 	.byte	0x1
@@ -24423,7 +24423,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6586
+	.4byte	__FUNCTION__$6690
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -24537,8 +24537,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x358
 	.4byte	0x3907
-	.4byte	.LFB66
-	.4byte	.LFE66-.LFB66
+	.4byte	.LFB70
+	.4byte	.LFE70-.LFB70
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x714f
@@ -24547,7 +24547,7 @@ rtc_spinlock:
 	.4byte	0x714f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6590
+	.4byte	__FUNCTION__$6694
 	.uleb128 0x2f
 	.4byte	.LVL553
 	.4byte	0x7ea2
@@ -24597,7 +24597,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6590
+	.4byte	__FUNCTION__$6694
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -24709,8 +24709,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x2dd
 	.4byte	0x3907
-	.4byte	.LFB59
-	.4byte	.LFE59-.LFB59
+	.4byte	.LFB63
+	.4byte	.LFE63-.LFB63
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x71a6
@@ -24742,8 +24742,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x39b
 	.4byte	0x3907
-	.4byte	.LFB69
-	.4byte	.LFE69-.LFB69
+	.4byte	.LFB73
+	.4byte	.LFE73-.LFB73
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x72de
@@ -24764,7 +24764,7 @@ rtc_spinlock:
 	.4byte	0x72ee
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6615
+	.4byte	__FUNCTION__$6719
 	.uleb128 0x2f
 	.4byte	.LVL566
 	.4byte	0x7ea2
@@ -24814,7 +24814,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6615
+	.4byte	__FUNCTION__$6719
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -24872,7 +24872,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6615
+	.4byte	__FUNCTION__$6719
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -24928,8 +24928,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x3a7
 	.4byte	0x3907
-	.4byte	.LFB70
-	.4byte	.LFE70-.LFB70
+	.4byte	.LFB74
+	.4byte	.LFE74-.LFB74
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7342
@@ -24966,8 +24966,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x3b4
 	.4byte	0x70
-	.4byte	.LFB71
-	.4byte	.LFE71-.LFB71
+	.4byte	.LFB75
+	.4byte	.LFE75-.LFB75
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7411
@@ -24988,7 +24988,7 @@ rtc_spinlock:
 	.4byte	0x7421
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6623
+	.4byte	__FUNCTION__$6727
 	.uleb128 0x2f
 	.4byte	.LVL584
 	.4byte	0x7ea2
@@ -25038,7 +25038,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6623
+	.4byte	__FUNCTION__$6727
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -25083,8 +25083,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x495
 	.4byte	0x70
-	.4byte	.LFB83
-	.4byte	.LFE83-.LFB83
+	.4byte	.LFB87
+	.4byte	.LFE87-.LFB87
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x74fd
@@ -25187,8 +25187,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x3d2
 	.4byte	0x70
-	.4byte	.LFB72
-	.4byte	.LFE72-.LFB72
+	.4byte	.LFB76
+	.4byte	.LFE76-.LFB76
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7538
@@ -25213,8 +25213,8 @@ rtc_spinlock:
 	.4byte	.LASF925
 	.byte	0x1
 	.2byte	0x3d7
-	.4byte	.LFB73
-	.4byte	.LFE73-.LFB73
+	.4byte	.LFB77
+	.4byte	.LFE77-.LFB77
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7573
@@ -25245,8 +25245,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x3e5
 	.4byte	0x3907
-	.4byte	.LFB74
-	.4byte	.LFE74-.LFB74
+	.4byte	.LFB78
+	.4byte	.LFE78-.LFB78
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x760e
@@ -25322,8 +25322,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x42e
 	.4byte	0x3907
-	.4byte	.LFB77
-	.4byte	.LFE77-.LFB77
+	.4byte	.LFB81
+	.4byte	.LFE81-.LFB81
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x76e1
@@ -25338,7 +25338,7 @@ rtc_spinlock:
 	.4byte	0x76e1
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6657
+	.4byte	__FUNCTION__$6761
 	.uleb128 0x2f
 	.4byte	.LVL622
 	.4byte	0x7ea2
@@ -25388,7 +25388,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6657
+	.4byte	__FUNCTION__$6761
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -25437,8 +25437,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x43d
 	.4byte	0x3907
-	.4byte	.LFB78
-	.4byte	.LFE78-.LFB78
+	.4byte	.LFB82
+	.4byte	.LFE82-.LFB82
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x77a5
@@ -25453,7 +25453,7 @@ rtc_spinlock:
 	.4byte	0x77a5
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6661
+	.4byte	__FUNCTION__$6765
 	.uleb128 0x2f
 	.4byte	.LVL633
 	.4byte	0x7ea2
@@ -25503,7 +25503,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6661
+	.4byte	__FUNCTION__$6765
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -25541,8 +25541,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x44b
 	.4byte	0x3907
-	.4byte	.LFB79
-	.4byte	.LFE79-.LFB79
+	.4byte	.LFB83
+	.4byte	.LFE83-.LFB83
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7879
@@ -25563,7 +25563,7 @@ rtc_spinlock:
 	.4byte	0x7879
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6666
+	.4byte	__FUNCTION__$6770
 	.uleb128 0x2f
 	.4byte	.LVL643
 	.4byte	0x7ea2
@@ -25613,7 +25613,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6666
+	.4byte	__FUNCTION__$6770
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -25651,8 +25651,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x465
 	.4byte	0x3907
-	.4byte	.LFB80
-	.4byte	.LFE80-.LFB80
+	.4byte	.LFB84
+	.4byte	.LFE84-.LFB84
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7975
@@ -25673,7 +25673,7 @@ rtc_spinlock:
 	.4byte	0x7975
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6671
+	.4byte	__FUNCTION__$6775
 	.uleb128 0x2f
 	.4byte	.LVL654
 	.4byte	0x7ea2
@@ -25723,7 +25723,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6671
+	.4byte	__FUNCTION__$6775
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -25783,8 +25783,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x482
 	.4byte	0x3907
-	.4byte	.LFB81
-	.4byte	.LFE81-.LFB81
+	.4byte	.LFB85
+	.4byte	.LFE85-.LFB85
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x79b9
@@ -25815,8 +25815,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x48a
 	.4byte	0x3907
-	.4byte	.LFB82
-	.4byte	.LFE82-.LFB82
+	.4byte	.LFB86
+	.4byte	.LFE86-.LFB86
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x79f8
@@ -25847,8 +25847,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x4b0
 	.4byte	0x70
-	.4byte	.LFB84
-	.4byte	.LFE84-.LFB84
+	.4byte	.LFB88
+	.4byte	.LFE88-.LFB88
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7a72
@@ -25911,8 +25911,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x4ef
 	.4byte	0x3907
-	.4byte	.LFB87
-	.4byte	.LFE87-.LFB87
+	.4byte	.LFB91
+	.4byte	.LFE91-.LFB91
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7b1d
@@ -25986,8 +25986,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x167
 	.4byte	0x3907
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7bf7
@@ -26023,7 +26023,7 @@ rtc_spinlock:
 	.4byte	0x7c0d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6413
+	.4byte	__FUNCTION__$6517
 	.uleb128 0x2f
 	.4byte	.LVL688
 	.4byte	0x7ea2
@@ -26073,7 +26073,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6413
+	.4byte	__FUNCTION__$6517
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -26122,8 +26122,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x16d
 	.4byte	0x3907
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7cd0
@@ -26145,7 +26145,7 @@ rtc_spinlock:
 	.4byte	0x7cd0
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6418
+	.4byte	__FUNCTION__$6522
 	.uleb128 0x2f
 	.4byte	.LVL695
 	.4byte	0x7ea2
@@ -26195,7 +26195,7 @@ rtc_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6418
+	.4byte	__FUNCTION__$6522
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -26234,8 +26234,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x503
 	.4byte	0x3907
-	.4byte	.LFB88
-	.4byte	.LFE88-.LFB88
+	.4byte	.LFB92
+	.4byte	.LFE92-.LFB92
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7d69
@@ -26296,8 +26296,8 @@ rtc_spinlock:
 	.byte	0x1
 	.2byte	0x173
 	.4byte	0x3907
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7db7
@@ -26451,12 +26451,12 @@ rtc_spinlock:
 	.4byte	.LASF960
 	.4byte	.LASF960
 	.byte	0xf
-	.byte	0xd9
+	.byte	0xdc
 	.uleb128 0x4a
 	.4byte	.LASF961
 	.4byte	.LASF961
 	.byte	0xf
-	.byte	0xd8
+	.byte	0xdb
 	.uleb128 0x4a
 	.4byte	.LASF962
 	.4byte	.LASF962
@@ -27665,7 +27665,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL3
-	.4byte	.LFE31
+	.4byte	.LFE35
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -27679,7 +27679,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL6
-	.4byte	.LFE32
+	.4byte	.LFE36
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -27693,7 +27693,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL5
-	.4byte	.LFE32
+	.4byte	.LFE36
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -27707,7 +27707,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL8
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -27779,7 +27779,7 @@ rtc_spinlock:
 	.sleb128 -14
 	.byte	0x9f
 	.4byte	.LVL15
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x17
 	.byte	0xf3
 	.uleb128 0x1
@@ -27809,7 +27809,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL17
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -27861,7 +27861,7 @@ rtc_spinlock:
 	.sleb128 -14
 	.byte	0x9f
 	.4byte	.LVL25
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x17
 	.byte	0xf3
 	.uleb128 0x1
@@ -27913,7 +27913,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL33
-	.4byte	.LFE67
+	.4byte	.LFE71
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -27969,7 +27969,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL47
-	.4byte	.LFE75
+	.4byte	.LFE79
 	.2byte	0x3
 	.byte	0x78
 	.sleb128 1
@@ -27993,7 +27993,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL55
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28018,7 +28018,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL55
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28043,7 +28043,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL64
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28068,7 +28068,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL64
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28082,7 +28082,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL67
-	.4byte	.LFE85
+	.4byte	.LFE89
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28113,7 +28113,7 @@ rtc_spinlock:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL82
-	.4byte	.LFE86
+	.4byte	.LFE90
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -28135,7 +28135,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL91
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28160,7 +28160,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL91
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28218,7 +28218,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL115
-	.4byte	.LFE68
+	.4byte	.LFE72
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28243,7 +28243,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL125
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28268,7 +28268,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL125
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28293,7 +28293,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL131
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28373,7 +28373,7 @@ rtc_spinlock:
 	.sleb128 -14
 	.byte	0x9f
 	.4byte	.LVL139
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x17
 	.byte	0xf3
 	.uleb128 0x1
@@ -28414,7 +28414,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL131
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28439,7 +28439,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL145
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28465,7 +28465,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL151
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x3
 	.byte	0x73
 	.sleb128 -14
@@ -28489,7 +28489,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL145
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28536,7 +28536,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL168
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28550,7 +28550,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL169
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28597,7 +28597,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL168
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28644,7 +28644,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL185
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28691,7 +28691,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL185
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28760,7 +28760,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL208
-	.4byte	.LFE20
+	.4byte	.LFE24
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28829,7 +28829,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL208
-	.4byte	.LFE20
+	.4byte	.LFE24
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28854,7 +28854,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL214
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28879,7 +28879,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL220
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28904,7 +28904,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL226
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28929,7 +28929,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL232
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28953,7 +28953,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL244
-	.4byte	.LFE76
+	.4byte	.LFE80
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -28978,7 +28978,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL250
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29003,7 +29003,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL256
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29018,7 +29018,7 @@ rtc_spinlock:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL258
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x1
 	.byte	0x58
 	.4byte	0
@@ -29044,7 +29044,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL263
-	.4byte	.LFE34
+	.4byte	.LFE38
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29058,7 +29058,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL264
-	.4byte	.LFE34
+	.4byte	.LFE38
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29072,7 +29072,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL269
-	.4byte	.LFE35
+	.4byte	.LFE39
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29119,7 +29119,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL285
-	.4byte	.LFE36
+	.4byte	.LFE40
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29133,7 +29133,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL286
-	.4byte	.LFE36
+	.4byte	.LFE40
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29147,7 +29147,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL287
-	.4byte	.LFE36
+	.4byte	.LFE40
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29161,7 +29161,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL291
-	.4byte	.LFE37
+	.4byte	.LFE41
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29203,7 +29203,7 @@ rtc_spinlock:
 	.sleb128 -36
 	.byte	0x9f
 	.4byte	.LVL304
-	.4byte	.LFE38
+	.4byte	.LFE42
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29217,7 +29217,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL306
-	.4byte	.LFE38
+	.4byte	.LFE42
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29231,7 +29231,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL305
-	.4byte	.LFE38
+	.4byte	.LFE42
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29262,7 +29262,7 @@ rtc_spinlock:
 	.sleb128 -36
 	.byte	0x9f
 	.4byte	.LVL316
-	.4byte	.LFE39
+	.4byte	.LFE43
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29276,7 +29276,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL315
-	.4byte	.LFE39
+	.4byte	.LFE43
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29301,7 +29301,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL328
-	.4byte	.LFE40
+	.4byte	.LFE44
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29326,7 +29326,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL335
-	.4byte	.LFE41
+	.4byte	.LFE45
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29340,7 +29340,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL338
-	.4byte	.LFE42
+	.4byte	.LFE46
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29376,7 +29376,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL350
-	.4byte	.LFE44
+	.4byte	.LFE48
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29390,7 +29390,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL348
-	.4byte	.LFE44
+	.4byte	.LFE48
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29437,7 +29437,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL361
-	.4byte	.LFE45
+	.4byte	.LFE49
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29462,7 +29462,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL368
-	.4byte	.LFE46
+	.4byte	.LFE50
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29476,7 +29476,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL371
-	.4byte	.LFE47
+	.4byte	.LFE51
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29501,7 +29501,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL378
-	.4byte	.LFE48
+	.4byte	.LFE52
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29515,7 +29515,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL381
-	.4byte	.LFE49
+	.4byte	.LFE53
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29529,7 +29529,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL384
-	.4byte	.LFE50
+	.4byte	.LFE54
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29543,7 +29543,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL391
-	.4byte	.LFE50
+	.4byte	.LFE54
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29557,7 +29557,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL392
-	.4byte	.LFE50
+	.4byte	.LFE54
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29571,7 +29571,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL396
-	.4byte	.LFE51
+	.4byte	.LFE55
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29585,7 +29585,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL400
-	.4byte	.LFE52
+	.4byte	.LFE56
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29599,7 +29599,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL407
-	.4byte	.LFE52
+	.4byte	.LFE56
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29613,7 +29613,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL408
-	.4byte	.LFE52
+	.4byte	.LFE56
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29649,7 +29649,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL428
-	.4byte	.LFE57
+	.4byte	.LFE61
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29707,7 +29707,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL453
-	.4byte	.LFE60
+	.4byte	.LFE64
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29721,7 +29721,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL456
-	.4byte	.LFE33
+	.4byte	.LFE37
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29786,7 +29786,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL479
-	.4byte	.LFE61
+	.4byte	.LFE65
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29842,7 +29842,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL499
-	.4byte	.LFE62
+	.4byte	.LFE66
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29863,7 +29863,7 @@ rtc_spinlock:
 	.2byte	0x103
 	.byte	0x9f
 	.4byte	.LVL499
-	.4byte	.LFE62
+	.4byte	.LFE66
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -29918,7 +29918,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL519
-	.4byte	.LFE63
+	.4byte	.LFE67
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -29939,7 +29939,7 @@ rtc_spinlock:
 	.2byte	0x103
 	.byte	0x9f
 	.4byte	.LVL519
-	.4byte	.LFE63
+	.4byte	.LFE67
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -29988,7 +29988,7 @@ rtc_spinlock:
 	.byte	0x78
 	.sleb128 48
 	.4byte	.LVL541-1
-	.4byte	.LFE64
+	.4byte	.LFE68
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30003,7 +30003,7 @@ rtc_spinlock:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL532
-	.4byte	.LFE64
+	.4byte	.LFE68
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -30021,7 +30021,7 @@ rtc_spinlock:
 	.2byte	0x103
 	.byte	0x9f
 	.4byte	.LVL551
-	.4byte	.LFE65
+	.4byte	.LFE69
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -30054,7 +30054,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL576
-	.4byte	.LFE69
+	.4byte	.LFE73
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30068,7 +30068,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL577
-	.4byte	.LFE69
+	.4byte	.LFE73
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30082,7 +30082,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL581
-	.4byte	.LFE70
+	.4byte	.LFE74
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30107,7 +30107,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL589
-	.4byte	.LFE71
+	.4byte	.LFE75
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30147,7 +30147,7 @@ rtc_spinlock:
 	.byte	0x22
 	.byte	0x9f
 	.4byte	.LVL605
-	.4byte	.LFE83
+	.4byte	.LFE87
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -30158,7 +30158,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL608
-	.4byte	.LFE72
+	.4byte	.LFE76
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30183,7 +30183,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL620
-	.4byte	.LFE74
+	.4byte	.LFE78
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30226,7 +30226,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL630
-	.4byte	.LFE77
+	.4byte	.LFE81
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30262,7 +30262,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL640
-	.4byte	.LFE78
+	.4byte	.LFE82
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30298,7 +30298,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL651
-	.4byte	.LFE79
+	.4byte	.LFE83
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30312,7 +30312,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL649
-	.4byte	.LFE79
+	.4byte	.LFE83
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30337,7 +30337,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL663
-	.4byte	.LFE80
+	.4byte	.LFE84
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30351,7 +30351,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL659
-	.4byte	.LFE80
+	.4byte	.LFE84
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30392,7 +30392,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL686
-	.4byte	.LFE87
+	.4byte	.LFE91
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30413,7 +30413,7 @@ rtc_spinlock:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL683
-	.4byte	.LFE87
+	.4byte	.LFE91
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -30431,7 +30431,7 @@ rtc_spinlock:
 	.byte	0x54
 	.byte	0x9f
 	.4byte	.LVL683
-	.4byte	.LFE87
+	.4byte	.LFE91
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -30453,7 +30453,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x55
 	.4byte	.LVL685
-	.4byte	.LFE87
+	.4byte	.LFE91
 	.2byte	0x1
 	.byte	0x55
 	.4byte	0
@@ -30475,7 +30475,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL693
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30500,7 +30500,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL700
-	.4byte	.LFE29
+	.4byte	.LFE33
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30536,7 +30536,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL712
-	.4byte	.LFE88
+	.4byte	.LFE92
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30561,7 +30561,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL712
-	.4byte	.LFE88
+	.4byte	.LFE92
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30631,7 +30631,7 @@ rtc_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL720
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -30647,40 +30647,32 @@ rtc_spinlock:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
-	.4byte	.LFB67
-	.4byte	.LFE67-.LFB67
-	.4byte	.LFB75
-	.4byte	.LFE75-.LFB75
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
-	.4byte	.LFB85
-	.4byte	.LFE85-.LFB85
-	.4byte	.LFB86
-	.4byte	.LFE86-.LFB86
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
-	.4byte	.LFB68
-	.4byte	.LFE68-.LFB68
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.4byte	.LFB16
 	.4byte	.LFE16-.LFB16
 	.4byte	.LFB17
 	.4byte	.LFE17-.LFB17
+	.4byte	.LFB71
+	.4byte	.LFE71-.LFB71
+	.4byte	.LFB79
+	.4byte	.LFE79-.LFB79
 	.4byte	.LFB18
 	.4byte	.LFE18-.LFB18
 	.4byte	.LFB19
 	.4byte	.LFE19-.LFB19
+	.4byte	.LFB89
+	.4byte	.LFE89-.LFB89
+	.4byte	.LFB90
+	.4byte	.LFE90-.LFB90
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
+	.4byte	.LFB72
+	.4byte	.LFE72-.LFB72
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.4byte	.LFB20
 	.4byte	.LFE20-.LFB20
 	.4byte	.LFB21
@@ -30691,22 +30683,22 @@ rtc_spinlock:
 	.4byte	.LFE23-.LFB23
 	.4byte	.LFB24
 	.4byte	.LFE24-.LFB24
-	.4byte	.LFB76
-	.4byte	.LFE76-.LFB76
 	.4byte	.LFB25
 	.4byte	.LFE25-.LFB25
 	.4byte	.LFB26
 	.4byte	.LFE26-.LFB26
 	.4byte	.LFB27
 	.4byte	.LFE27-.LFB27
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
+	.4byte	.LFB80
+	.4byte	.LFE80-.LFB80
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.4byte	.LFB38
 	.4byte	.LFE38-.LFB38
 	.4byte	.LFB39
@@ -30749,100 +30741,100 @@ rtc_spinlock:
 	.4byte	.LFE57-.LFB57
 	.4byte	.LFB58
 	.4byte	.LFE58-.LFB58
+	.4byte	.LFB59
+	.4byte	.LFE59-.LFB59
 	.4byte	.LFB60
 	.4byte	.LFE60-.LFB60
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
 	.4byte	.LFB61
 	.4byte	.LFE61-.LFB61
 	.4byte	.LFB62
 	.4byte	.LFE62-.LFB62
-	.4byte	.LFB63
-	.4byte	.LFE63-.LFB63
 	.4byte	.LFB64
 	.4byte	.LFE64-.LFB64
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.4byte	.LFB65
 	.4byte	.LFE65-.LFB65
 	.4byte	.LFB66
 	.4byte	.LFE66-.LFB66
-	.4byte	.LFB59
-	.4byte	.LFE59-.LFB59
+	.4byte	.LFB67
+	.4byte	.LFE67-.LFB67
+	.4byte	.LFB68
+	.4byte	.LFE68-.LFB68
 	.4byte	.LFB69
 	.4byte	.LFE69-.LFB69
 	.4byte	.LFB70
 	.4byte	.LFE70-.LFB70
-	.4byte	.LFB71
-	.4byte	.LFE71-.LFB71
-	.4byte	.LFB83
-	.4byte	.LFE83-.LFB83
-	.4byte	.LFB72
-	.4byte	.LFE72-.LFB72
+	.4byte	.LFB63
+	.4byte	.LFE63-.LFB63
 	.4byte	.LFB73
 	.4byte	.LFE73-.LFB73
 	.4byte	.LFB74
 	.4byte	.LFE74-.LFB74
+	.4byte	.LFB75
+	.4byte	.LFE75-.LFB75
+	.4byte	.LFB87
+	.4byte	.LFE87-.LFB87
+	.4byte	.LFB76
+	.4byte	.LFE76-.LFB76
 	.4byte	.LFB77
 	.4byte	.LFE77-.LFB77
 	.4byte	.LFB78
 	.4byte	.LFE78-.LFB78
-	.4byte	.LFB79
-	.4byte	.LFE79-.LFB79
-	.4byte	.LFB80
-	.4byte	.LFE80-.LFB80
 	.4byte	.LFB81
 	.4byte	.LFE81-.LFB81
 	.4byte	.LFB82
 	.4byte	.LFE82-.LFB82
+	.4byte	.LFB83
+	.4byte	.LFE83-.LFB83
 	.4byte	.LFB84
 	.4byte	.LFE84-.LFB84
-	.4byte	.LFB87
-	.4byte	.LFE87-.LFB87
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB85
+	.4byte	.LFE85-.LFB85
+	.4byte	.LFB86
+	.4byte	.LFE86-.LFB86
 	.4byte	.LFB88
 	.4byte	.LFE88-.LFB88
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB91
+	.4byte	.LFE91-.LFB91
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
+	.4byte	.LFB92
+	.4byte	.LFE92-.LFB92
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB31
-	.4byte	.LFE31
-	.4byte	.LFB32
-	.4byte	.LFE32
-	.4byte	.LFB12
-	.4byte	.LFE12
-	.4byte	.LFB13
-	.4byte	.LFE13
-	.4byte	.LFB67
-	.4byte	.LFE67
-	.4byte	.LFB75
-	.4byte	.LFE75
-	.4byte	.LFB14
-	.4byte	.LFE14
-	.4byte	.LFB15
-	.4byte	.LFE15
-	.4byte	.LFB85
-	.4byte	.LFE85
-	.4byte	.LFB86
-	.4byte	.LFE86
-	.4byte	.LFB10
-	.4byte	.LFE10
-	.4byte	.LFB68
-	.4byte	.LFE68
-	.4byte	.LFB11
-	.4byte	.LFE11
+	.4byte	.LFB35
+	.4byte	.LFE35
+	.4byte	.LFB36
+	.4byte	.LFE36
 	.4byte	.LFB16
 	.4byte	.LFE16
 	.4byte	.LFB17
 	.4byte	.LFE17
+	.4byte	.LFB71
+	.4byte	.LFE71
+	.4byte	.LFB79
+	.4byte	.LFE79
 	.4byte	.LFB18
 	.4byte	.LFE18
 	.4byte	.LFB19
 	.4byte	.LFE19
+	.4byte	.LFB89
+	.4byte	.LFE89
+	.4byte	.LFB90
+	.4byte	.LFE90
+	.4byte	.LFB14
+	.4byte	.LFE14
+	.4byte	.LFB72
+	.4byte	.LFE72
+	.4byte	.LFB15
+	.4byte	.LFE15
 	.4byte	.LFB20
 	.4byte	.LFE20
 	.4byte	.LFB21
@@ -30853,22 +30845,22 @@ rtc_spinlock:
 	.4byte	.LFE23
 	.4byte	.LFB24
 	.4byte	.LFE24
-	.4byte	.LFB76
-	.4byte	.LFE76
 	.4byte	.LFB25
 	.4byte	.LFE25
 	.4byte	.LFB26
 	.4byte	.LFE26
 	.4byte	.LFB27
 	.4byte	.LFE27
-	.4byte	.LFB34
-	.4byte	.LFE34
-	.4byte	.LFB35
-	.4byte	.LFE35
-	.4byte	.LFB36
-	.4byte	.LFE36
-	.4byte	.LFB37
-	.4byte	.LFE37
+	.4byte	.LFB28
+	.4byte	.LFE28
+	.4byte	.LFB80
+	.4byte	.LFE80
+	.4byte	.LFB29
+	.4byte	.LFE29
+	.4byte	.LFB30
+	.4byte	.LFE30
+	.4byte	.LFB31
+	.4byte	.LFE31
 	.4byte	.LFB38
 	.4byte	.LFE38
 	.4byte	.LFB39
@@ -30911,62 +30903,70 @@ rtc_spinlock:
 	.4byte	.LFE57
 	.4byte	.LFB58
 	.4byte	.LFE58
+	.4byte	.LFB59
+	.4byte	.LFE59
 	.4byte	.LFB60
 	.4byte	.LFE60
-	.4byte	.LFB33
-	.4byte	.LFE33
 	.4byte	.LFB61
 	.4byte	.LFE61
 	.4byte	.LFB62
 	.4byte	.LFE62
-	.4byte	.LFB63
-	.4byte	.LFE63
 	.4byte	.LFB64
 	.4byte	.LFE64
+	.4byte	.LFB37
+	.4byte	.LFE37
 	.4byte	.LFB65
 	.4byte	.LFE65
 	.4byte	.LFB66
 	.4byte	.LFE66
-	.4byte	.LFB59
-	.4byte	.LFE59
+	.4byte	.LFB67
+	.4byte	.LFE67
+	.4byte	.LFB68
+	.4byte	.LFE68
 	.4byte	.LFB69
 	.4byte	.LFE69
 	.4byte	.LFB70
 	.4byte	.LFE70
-	.4byte	.LFB71
-	.4byte	.LFE71
-	.4byte	.LFB83
-	.4byte	.LFE83
-	.4byte	.LFB72
-	.4byte	.LFE72
+	.4byte	.LFB63
+	.4byte	.LFE63
 	.4byte	.LFB73
 	.4byte	.LFE73
 	.4byte	.LFB74
 	.4byte	.LFE74
+	.4byte	.LFB75
+	.4byte	.LFE75
+	.4byte	.LFB87
+	.4byte	.LFE87
+	.4byte	.LFB76
+	.4byte	.LFE76
 	.4byte	.LFB77
 	.4byte	.LFE77
 	.4byte	.LFB78
 	.4byte	.LFE78
-	.4byte	.LFB79
-	.4byte	.LFE79
-	.4byte	.LFB80
-	.4byte	.LFE80
 	.4byte	.LFB81
 	.4byte	.LFE81
 	.4byte	.LFB82
 	.4byte	.LFE82
+	.4byte	.LFB83
+	.4byte	.LFE83
 	.4byte	.LFB84
 	.4byte	.LFE84
-	.4byte	.LFB87
-	.4byte	.LFE87
-	.4byte	.LFB28
-	.4byte	.LFE28
-	.4byte	.LFB29
-	.4byte	.LFE29
+	.4byte	.LFB85
+	.4byte	.LFE85
+	.4byte	.LFB86
+	.4byte	.LFE86
 	.4byte	.LFB88
 	.4byte	.LFE88
-	.4byte	.LFB30
-	.4byte	.LFE30
+	.4byte	.LFB91
+	.4byte	.LFE91
+	.4byte	.LFB32
+	.4byte	.LFE32
+	.4byte	.LFB33
+	.4byte	.LFE33
+	.4byte	.LFB92
+	.4byte	.LFE92
+	.4byte	.LFB34
+	.4byte	.LFE34
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -31894,8 +31894,6 @@ rtc_spinlock:
 	.string	"width_bit"
 .LASF767:
 	.string	"TOUCH_TRIGGER_ABOVE"
-.LASF976:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF214:
 	.string	"meas1_data_sar"
 .LASF277:
@@ -32290,6 +32288,8 @@ rtc_spinlock:
 	.string	"long unsigned int"
 .LASF155:
 	.string	"reserved29"
+.LASF976:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF255:
 	.string	"sw_tone_en"
 .LASF455:
@@ -32932,4 +32932,4 @@ rtc_spinlock:
 	.string	"sense1_slp_ie"
 .LASF857:
 	.string	"rtc_gpio_pullup_en"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

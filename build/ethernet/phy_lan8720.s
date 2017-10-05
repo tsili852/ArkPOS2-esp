@@ -1753,8 +1753,8 @@ phy_lan8720_default_ethernet_config:
 	.string	"esp_eth_smi_wait_value"
 .LASF109:
 	.string	"enable"
-.LASF107:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\ethernet"
+.LASF75:
+	.string	"eth_phy_get_partner_pause_enable_func"
 .LASF29:
 	.string	"ETH_SPEED_MODE_100M"
 .LASF67:
@@ -1791,8 +1791,8 @@ phy_lan8720_default_ethernet_config:
 	.string	"unsigned char"
 .LASF80:
 	.string	"phy_init"
-.LASF27:
-	.string	"eth_mode_t"
+.LASF107:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\ethernet"
 .LASF32:
 	.string	"ETH_MODE_FULLDUPLEX"
 .LASF45:
@@ -1821,8 +1821,6 @@ phy_lan8720_default_ethernet_config:
 	.string	"PHY30"
 .LASF83:
 	.string	"phy_get_speed_mode"
-.LASF99:
-	.string	"res2"
 .LASF33:
 	.string	"eth_duplex_mode_t"
 .LASF89:
@@ -1897,8 +1895,8 @@ phy_lan8720_default_ethernet_config:
 	.string	"ETH_MODE_RMII"
 .LASF98:
 	.string	"res1"
-.LASF75:
-	.string	"eth_phy_get_partner_pause_enable_func"
+.LASF99:
+	.string	"res2"
 .LASF97:
 	.string	"phy_lan8720_init"
 .LASF105:
@@ -1909,8 +1907,10 @@ phy_lan8720_default_ethernet_config:
 	.string	"phy_mii_enable_flow_ctrl"
 .LASF82:
 	.string	"phy_check_init"
+.LASF27:
+	.string	"eth_mode_t"
 .LASF24:
 	.string	"esp_err_t"
 .LASF79:
 	.string	"tcpip_input"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

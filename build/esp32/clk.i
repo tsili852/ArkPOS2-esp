@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/esp32/clk.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\esp32//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\esp32//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/esp32/clk.c"
@@ -471,7 +471,7 @@ int getitimer (int __which, struct itimerval *__value);
 int setitimer (int __which, const struct itimerval *restrict __value, struct itimerval *restrict __ovalue)
                                             ;
 # 18 "C:/esp/esp-idf/components/esp32/clk.c" 2
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 19 "C:/esp/esp-idf/components/esp32/clk.c" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/esp_attr.h" 1
 # 20 "C:/esp/esp-idf/components/esp32/clk.c" 2
@@ -485,7 +485,7 @@ typedef __builtin_va_list __gnuc_va_list;
 # 98 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 3 4
 typedef __gnuc_va_list va_list;
 # 20 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h" 1
 # 19 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h"
@@ -499,7 +499,7 @@ typedef __gnuc_va_list va_list;
 # 1 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 1
 # 19 "C:/esp/esp-idf/components/newlib/platform_include/assert.h"
        
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 2
 # 1 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 1
 # 10 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
@@ -1697,7 +1697,7 @@ void rtc_init(rtc_config_t cfg);
 # 20 "C:/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h"
 # 1 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h" 1
 # 15 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 16 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h" 2
 # 24 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h"
 void esp_dport_access_stall_other_cpu_start(void);
@@ -1736,7 +1736,550 @@ static inline uint32_t __attribute__((section(".iram1"))) DPORT_READ_PERI_REG(ui
 # 29 "C:/esp/esp-idf/components/esp32/clk.c" 2
 # 1 "C:/esp/esp-idf/components/soc/esp32/include/soc/i2s_reg.h" 1
 # 30 "C:/esp/esp-idf/components/esp32/clk.c" 2
-# 38 "C:/esp/esp-idf/components/esp32/clk.c"
+# 1 "C:/esp/esp-idf/components/esp32/include/xtensa/core-macros.h" 1
+# 32 "C:/esp/esp-idf/components/esp32/include/xtensa/core-macros.h"
+# 1 "C:/esp/esp-idf/components/esp32/include/xtensa/config/core.h" 1
+# 41 "C:/esp/esp-idf/components/esp32/include/xtensa/config/core.h"
+# 1 "C:/esp/esp-idf/components/esp32/include/xtensa/hal.h" 1
+# 148 "C:/esp/esp-idf/components/esp32/include/xtensa/hal.h"
+extern const unsigned int Xthal_rev_no;
+
+
+
+
+
+
+
+extern void xthal_save_extra(void *base);
+extern void xthal_restore_extra(void *base);
+
+extern void xthal_save_cpregs(void *base, int);
+extern void xthal_restore_cpregs(void *base, int);
+
+extern void xthal_save_cp0(void *base);
+extern void xthal_save_cp1(void *base);
+extern void xthal_save_cp2(void *base);
+extern void xthal_save_cp3(void *base);
+extern void xthal_save_cp4(void *base);
+extern void xthal_save_cp5(void *base);
+extern void xthal_save_cp6(void *base);
+extern void xthal_save_cp7(void *base);
+extern void xthal_restore_cp0(void *base);
+extern void xthal_restore_cp1(void *base);
+extern void xthal_restore_cp2(void *base);
+extern void xthal_restore_cp3(void *base);
+extern void xthal_restore_cp4(void *base);
+extern void xthal_restore_cp5(void *base);
+extern void xthal_restore_cp6(void *base);
+extern void xthal_restore_cp7(void *base);
+
+extern void* Xthal_cpregs_save_fn[8];
+extern void* Xthal_cpregs_restore_fn[8];
+
+extern void* Xthal_cpregs_save_nw_fn[8];
+extern void* Xthal_cpregs_restore_nw_fn[8];
+
+
+
+
+
+extern const unsigned int Xthal_extra_size;
+extern const unsigned int Xthal_extra_align;
+extern const unsigned int Xthal_cpregs_size[8];
+extern const unsigned int Xthal_cpregs_align[8];
+extern const unsigned int Xthal_all_extra_size;
+extern const unsigned int Xthal_all_extra_align;
+
+extern const char * const Xthal_cp_names[8];
+
+
+
+
+
+
+
+extern void xthal_init_mem_extra(void *);
+
+extern void xthal_init_mem_cp(void *, int);
+
+
+extern const unsigned int Xthal_num_coprocessors;
+
+
+extern const unsigned char Xthal_cp_num;
+
+extern const unsigned char Xthal_cp_max;
+
+
+
+extern const unsigned int Xthal_cp_mask;
+# 237 "C:/esp/esp-idf/components/esp32/include/xtensa/hal.h"
+extern const unsigned int Xthal_num_aregs;
+extern const unsigned char Xthal_num_aregs_log2;
+
+
+
+
+
+
+
+extern const unsigned char Xthal_icache_linewidth;
+extern const unsigned char Xthal_dcache_linewidth;
+
+extern const unsigned short Xthal_icache_linesize;
+extern const unsigned short Xthal_dcache_linesize;
+
+
+extern const unsigned int Xthal_icache_size;
+extern const unsigned int Xthal_dcache_size;
+
+extern const unsigned char Xthal_dcache_is_writeback;
+
+
+
+extern void xthal_icache_region_invalidate( void *addr, unsigned size );
+extern void xthal_dcache_region_invalidate( void *addr, unsigned size );
+
+extern void xthal_icache_line_invalidate(void *addr);
+extern void xthal_dcache_line_invalidate(void *addr);
+
+
+extern void xthal_dcache_region_writeback( void *addr, unsigned size );
+
+extern void xthal_dcache_line_writeback(void *addr);
+
+
+extern void xthal_dcache_region_writeback_inv( void *addr, unsigned size );
+
+extern void xthal_dcache_line_writeback_inv(void *addr);
+
+extern void xthal_icache_sync( void );
+
+extern void xthal_dcache_sync( void );
+
+
+
+extern unsigned int xthal_icache_get_ways(void);
+
+extern void xthal_icache_set_ways(unsigned int ways);
+
+extern unsigned int xthal_dcache_get_ways(void);
+
+extern void xthal_dcache_set_ways(unsigned int ways);
+
+
+extern void xthal_cache_coherence_on( void );
+extern void xthal_cache_coherence_off( void );
+
+extern void xthal_cache_coherence_optin( void );
+extern void xthal_cache_coherence_optout( void );
+# 339 "C:/esp/esp-idf/components/esp32/include/xtensa/hal.h"
+extern int xthal_get_cache_prefetch( void );
+extern int xthal_set_cache_prefetch( int );
+extern int xthal_set_cache_prefetch_long( unsigned long long );
+# 352 "C:/esp/esp-idf/components/esp32/include/xtensa/hal.h"
+extern const int Xthal_debug_configured;
+
+
+extern unsigned int xthal_set_soft_break(void *addr);
+extern void xthal_remove_soft_break(void *addr, unsigned int);
+# 374 "C:/esp/esp-idf/components/esp32/include/xtensa/hal.h"
+extern int xthal_disassemble( unsigned char *instr_buf, void *tgt_addr,
+         char *buffer, unsigned buflen, unsigned options );
+
+
+
+extern int xthal_disassemble_size( unsigned char *instr_buf );
+
+
+
+
+
+
+extern void* xthal_memcpy(void *dst, const void *src, unsigned len);
+extern void* xthal_bcopy(const void *src, void *dst, unsigned len);
+
+
+
+
+
+
+extern int xthal_compare_and_set( int *addr, int test_val, int compare_val );
+# 403 "C:/esp/esp-idf/components/esp32/include/xtensa/hal.h"
+extern const unsigned int Xthal_release_major;
+extern const unsigned int Xthal_release_minor;
+extern const char * const Xthal_release_name;
+extern const char * const Xthal_release_internal;
+
+extern const unsigned char Xthal_memory_order;
+extern const unsigned char Xthal_have_windowed;
+extern const unsigned char Xthal_have_density;
+extern const unsigned char Xthal_have_booleans;
+extern const unsigned char Xthal_have_loops;
+extern const unsigned char Xthal_have_nsa;
+extern const unsigned char Xthal_have_minmax;
+extern const unsigned char Xthal_have_sext;
+extern const unsigned char Xthal_have_clamps;
+extern const unsigned char Xthal_have_mac16;
+extern const unsigned char Xthal_have_mul16;
+extern const unsigned char Xthal_have_fp;
+extern const unsigned char Xthal_have_speculation;
+extern const unsigned char Xthal_have_threadptr;
+
+extern const unsigned char Xthal_have_pif;
+extern const unsigned short Xthal_num_writebuffer_entries;
+
+extern const unsigned int Xthal_build_unique_id;
+
+extern const unsigned int Xthal_hw_configid0;
+extern const unsigned int Xthal_hw_configid1;
+extern const unsigned int Xthal_hw_release_major;
+extern const unsigned int Xthal_hw_release_minor;
+extern const char * const Xthal_hw_release_name;
+extern const char * const Xthal_hw_release_internal;
+
+
+extern void xthal_clear_regcached_code( void );
+# 653 "C:/esp/esp-idf/components/esp32/include/xtensa/hal.h"
+extern void xthal_window_spill( void );
+
+
+
+
+
+
+
+extern void xthal_validate_cp(int);
+extern void xthal_invalidate_cp(int);
+
+
+extern void xthal_set_cpenable(unsigned);
+extern unsigned xthal_get_cpenable(void);
+
+
+
+
+
+
+
+extern const unsigned char Xthal_num_intlevels;
+
+extern const unsigned char Xthal_num_interrupts;
+
+extern const unsigned char Xthal_excm_level;
+
+
+extern const unsigned int Xthal_intlevel_mask[16];
+
+extern const unsigned int Xthal_intlevel_andbelow_mask[16];
+
+
+extern const unsigned char Xthal_intlevel[32];
+
+
+extern const unsigned char Xthal_inttype[32];
+
+
+extern const unsigned int Xthal_inttype_mask[8];
+
+
+extern const int Xthal_timer_interrupt[4];
+
+
+extern unsigned xthal_get_intenable( void );
+extern void xthal_set_intenable( unsigned );
+extern unsigned xthal_get_interrupt( void );
+
+extern void xthal_set_intset( unsigned );
+extern void xthal_set_intclear( unsigned );
+
+
+
+
+
+
+
+extern const int Xthal_num_ibreak;
+extern const int Xthal_num_dbreak;
+
+
+
+
+
+
+
+extern const unsigned char Xthal_have_ccount;
+extern const unsigned char Xthal_num_ccompare;
+
+
+extern unsigned xthal_get_ccount(void);
+
+
+extern void xthal_set_ccompare(int, unsigned);
+extern unsigned xthal_get_ccompare(int);
+
+
+
+
+
+
+extern const unsigned char Xthal_have_prid;
+extern const unsigned char Xthal_have_exceptions;
+extern const unsigned char Xthal_xea_version;
+extern const unsigned char Xthal_have_interrupts;
+extern const unsigned char Xthal_have_highlevel_interrupts;
+extern const unsigned char Xthal_have_nmi;
+
+extern unsigned xthal_get_prid( void );
+
+
+
+
+
+
+
+extern unsigned xthal_vpri_to_intlevel(unsigned vpri);
+extern unsigned xthal_intlevel_to_vpri(unsigned intlevel);
+
+
+extern unsigned xthal_int_enable(unsigned);
+extern unsigned xthal_int_disable(unsigned);
+
+
+extern int xthal_set_int_vpri(int intnum, int vpri);
+extern int xthal_get_int_vpri(int intnum);
+
+
+extern void xthal_set_vpri_locklevel(unsigned intlevel);
+extern unsigned xthal_get_vpri_locklevel(void);
+
+
+extern unsigned xthal_set_vpri(unsigned vpri);
+extern unsigned xthal_get_vpri(void);
+extern unsigned xthal_set_vpri_intlevel(unsigned intlevel);
+extern unsigned xthal_set_vpri_lock(void);
+
+
+
+
+
+
+typedef void (XtHalVoidFunc)(void);
+
+
+extern unsigned Xthal_tram_pending;
+# 789 "C:/esp/esp-idf/components/esp32/include/xtensa/hal.h"
+extern unsigned Xthal_tram_enabled;
+
+
+extern unsigned Xthal_tram_sync;
+
+
+extern unsigned xthal_tram_pending_to_service( void );
+extern void xthal_tram_done( unsigned serviced_mask );
+extern int xthal_tram_set_sync( int intnum, int sync );
+extern XtHalVoidFunc* xthal_set_tram_trigger_func( XtHalVoidFunc *trigger_fn );
+
+
+
+
+
+
+extern const unsigned char Xthal_num_instrom;
+extern const unsigned char Xthal_num_instram;
+extern const unsigned char Xthal_num_datarom;
+extern const unsigned char Xthal_num_dataram;
+extern const unsigned char Xthal_num_xlmi;
+
+
+
+extern const unsigned int Xthal_instrom_vaddr[];
+extern const unsigned int Xthal_instrom_paddr[];
+extern const unsigned int Xthal_instrom_size [];
+extern const unsigned int Xthal_instram_vaddr[];
+extern const unsigned int Xthal_instram_paddr[];
+extern const unsigned int Xthal_instram_size [];
+extern const unsigned int Xthal_datarom_vaddr[];
+extern const unsigned int Xthal_datarom_paddr[];
+extern const unsigned int Xthal_datarom_size [];
+extern const unsigned int Xthal_dataram_vaddr[];
+extern const unsigned int Xthal_dataram_paddr[];
+extern const unsigned int Xthal_dataram_size [];
+extern const unsigned int Xthal_xlmi_vaddr[];
+extern const unsigned int Xthal_xlmi_paddr[];
+extern const unsigned int Xthal_xlmi_size [];
+
+
+
+
+
+
+
+extern const unsigned char Xthal_icache_setwidth;
+extern const unsigned char Xthal_dcache_setwidth;
+
+extern const unsigned int Xthal_icache_ways;
+extern const unsigned int Xthal_dcache_ways;
+
+extern const unsigned char Xthal_icache_line_lockable;
+extern const unsigned char Xthal_dcache_line_lockable;
+
+
+extern unsigned xthal_get_cacheattr( void );
+extern unsigned xthal_get_icacheattr( void );
+extern unsigned xthal_get_dcacheattr( void );
+extern void xthal_set_cacheattr( unsigned );
+extern void xthal_set_icacheattr( unsigned );
+extern void xthal_set_dcacheattr( unsigned );
+
+extern int xthal_set_region_attribute( void *addr, unsigned size,
+         unsigned cattr, unsigned flags );
+# 862 "C:/esp/esp-idf/components/esp32/include/xtensa/hal.h"
+extern void xthal_icache_enable( void );
+extern void xthal_dcache_enable( void );
+
+extern void xthal_icache_disable( void );
+extern void xthal_dcache_disable( void );
+
+
+extern void xthal_icache_all_invalidate( void );
+extern void xthal_dcache_all_invalidate( void );
+
+extern void xthal_dcache_all_writeback( void );
+
+extern void xthal_dcache_all_writeback_inv( void );
+
+extern void xthal_icache_region_lock( void *addr, unsigned size );
+extern void xthal_dcache_region_lock( void *addr, unsigned size );
+
+extern void xthal_icache_line_lock(void *addr);
+extern void xthal_dcache_line_lock(void *addr);
+
+
+extern void xthal_icache_all_unlock( void );
+extern void xthal_dcache_all_unlock( void );
+extern void xthal_icache_region_unlock( void *addr, unsigned size );
+extern void xthal_dcache_region_unlock( void *addr, unsigned size );
+
+extern void xthal_icache_line_unlock(void *addr);
+extern void xthal_dcache_line_unlock(void *addr);
+# 899 "C:/esp/esp-idf/components/esp32/include/xtensa/hal.h"
+extern void xthal_memep_inject_error(void *addr, int size, int flags);
+
+
+
+
+
+
+
+extern const unsigned char Xthal_have_spanning_way;
+extern const unsigned char Xthal_have_identity_map;
+extern const unsigned char Xthal_have_mimic_cacheattr;
+extern const unsigned char Xthal_have_xlt_cacheattr;
+extern const unsigned char Xthal_have_cacheattr;
+extern const unsigned char Xthal_have_tlbs;
+
+extern const unsigned char Xthal_mmu_asid_bits;
+extern const unsigned char Xthal_mmu_asid_kernel;
+extern const unsigned char Xthal_mmu_rings;
+extern const unsigned char Xthal_mmu_ring_bits;
+extern const unsigned char Xthal_mmu_sr_bits;
+extern const unsigned char Xthal_mmu_ca_bits;
+extern const unsigned int Xthal_mmu_max_pte_page_size;
+extern const unsigned int Xthal_mmu_min_pte_page_size;
+
+extern const unsigned char Xthal_itlb_way_bits;
+extern const unsigned char Xthal_itlb_ways;
+extern const unsigned char Xthal_itlb_arf_ways;
+extern const unsigned char Xthal_dtlb_way_bits;
+extern const unsigned char Xthal_dtlb_ways;
+extern const unsigned char Xthal_dtlb_arf_ways;
+
+
+
+extern int xthal_static_v2p( unsigned vaddr, unsigned *paddrp );
+extern int xthal_static_p2v( unsigned paddr, unsigned *vaddrp, unsigned cached );
+# 948 "C:/esp/esp-idf/components/esp32/include/xtensa/hal.h"
+extern int xthal_set_region_translation(void* vaddr, void* paddr, unsigned size, unsigned cache_atr, unsigned flags);
+extern int xthal_v2p(void*, void**, unsigned*, unsigned*);
+extern int xthal_invalidate_region(void* addr);
+extern int xthal_set_region_translation_raw(void *vaddr, void *paddr, unsigned cattr);
+# 42 "C:/esp/esp-idf/components/esp32/include/xtensa/config/core.h" 2
+# 1 "C:/esp/esp-idf/components/esp32/include/xtensa/xtensa-versions.h" 1
+# 43 "C:/esp/esp-idf/components/esp32/include/xtensa/config/core.h" 2
+# 51 "C:/esp/esp-idf/components/esp32/include/xtensa/config/core.h"
+# 1 "C:/esp/esp-idf/components/esp32/include/xtensa/config/core-matmap.h" 1
+# 52 "C:/esp/esp-idf/components/esp32/include/xtensa/config/core.h" 2
+# 1 "C:/esp/esp-idf/components/esp32/include/xtensa/config/tie.h" 1
+# 53 "C:/esp/esp-idf/components/esp32/include/xtensa/config/core.h" 2
+# 1279 "C:/esp/esp-idf/components/esp32/include/xtensa/config/core.h"
+extern const unsigned char Xthal_cp_id_FPU;
+extern const unsigned int Xthal_cp_mask_FPU;
+
+
+extern const unsigned char Xthal_cp_id_XCHAL_CP1_IDENT;
+extern const unsigned int Xthal_cp_mask_XCHAL_CP1_IDENT;
+
+
+extern const unsigned char Xthal_cp_id_XCHAL_CP2_IDENT;
+extern const unsigned int Xthal_cp_mask_XCHAL_CP2_IDENT;
+
+
+extern const unsigned char Xthal_cp_id_XCHAL_CP3_IDENT;
+extern const unsigned int Xthal_cp_mask_XCHAL_CP3_IDENT;
+
+
+extern const unsigned char Xthal_cp_id_XCHAL_CP4_IDENT;
+extern const unsigned int Xthal_cp_mask_XCHAL_CP4_IDENT;
+
+
+extern const unsigned char Xthal_cp_id_XCHAL_CP5_IDENT;
+extern const unsigned int Xthal_cp_mask_XCHAL_CP5_IDENT;
+
+
+extern const unsigned char Xthal_cp_id_XCHAL_CP6_IDENT;
+extern const unsigned int Xthal_cp_mask_XCHAL_CP6_IDENT;
+
+
+extern const unsigned char Xthal_cp_id_XCHAL_CP7_IDENT;
+extern const unsigned int Xthal_cp_mask_XCHAL_CP7_IDENT;
+# 33 "C:/esp/esp-idf/components/esp32/include/xtensa/core-macros.h" 2
+# 398 "C:/esp/esp-idf/components/esp32/include/xtensa/core-macros.h"
+static inline unsigned XTHAL_COMPARE_AND_SET( int *addr, int testval, int setval )
+{
+    int result;
+
+
+    __asm__ __volatile__ (
+ "   wsr.scompare1 %2 \n"
+ "   s32c1i %0, %3, 0 \n"
+     : "=a"(result) : "0" (setval), "a" (testval), "a" (addr)
+     : "memory");
+# 428 "C:/esp/esp-idf/components/esp32/include/xtensa/core-macros.h"
+    return result;
+}
+
+
+
+static inline unsigned XTHAL_RER (unsigned int reg)
+{
+  unsigned result;
+
+  __asm__ __volatile__ (
+ "   rer     %0, %1"
+ : "=a" (result) : "a" (reg) : "memory");
+
+  return result;
+}
+
+static inline void XTHAL_WER (unsigned reg, unsigned value)
+{
+  __asm__ __volatile__ (
+ "   wer     %0, %1"
+ : : "a" (value), "a" (reg) : "memory");
+}
+# 31 "C:/esp/esp-idf/components/esp32/clk.c" 2
+# 41 "C:/esp/esp-idf/components/esp32/clk.c"
 static void select_rtc_slow_clk(rtc_slow_freq_t slow_clk);
 
 static const char* TAG = "clk";
@@ -1779,7 +2322,14 @@ void esp_clk_init(void)
 
 
     uart_tx_wait_idle(0);
+
+    uint32_t freq_before = rtc_clk_cpu_freq_value(rtc_clk_cpu_freq_get()) / (1000000) ;
+
     rtc_clk_cpu_freq_set(freq);
+
+
+    uint32_t freq_after = 240;
+    do { int __ccount = (int)(({ int __ccount; __asm__("rsr.ccount %0" : "=a"(__ccount)); __ccount; }) * freq_after / freq_before); __asm__ __volatile__("wsr.ccount %0" :: "a"(__ccount):"memory"); } while(0);
 }
 
 void __attribute__((section(".iram1"))) ets_update_cpu_frequency(uint32_t ticks_per_us)
@@ -1801,9 +2351,9 @@ static void select_rtc_slow_clk(rtc_slow_freq_t slow_clk)
 
 
         rtc_clk_32k_enable(
-# 101 "C:/esp/esp-idf/components/esp32/clk.c" 3 4
+# 111 "C:/esp/esp-idf/components/esp32/clk.c" 3 4
                           1
-# 101 "C:/esp/esp-idf/components/esp32/clk.c"
+# 111 "C:/esp/esp-idf/components/esp32/clk.c"
                               );
         uint32_t cal_val = 0;
         uint32_t wait = 0;
@@ -1851,7 +2401,7 @@ void esp_perip_clk_init(void)
 
 
     rst_reas[0] = rtc_get_reset_reason(0);
-# 156 "C:/esp/esp-idf/components/esp32/clk.c"
+# 166 "C:/esp/esp-idf/components/esp32/clk.c"
     if ((rst_reas[0] >= TGWDT_CPU_RESET && rst_reas[0] <= RTCWDT_CPU_RESET)
 
 

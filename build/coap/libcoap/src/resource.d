@@ -32,7 +32,7 @@ libcoap/src/resource.o: \
  C:/esp/esp-idf/components/newlib/include/sys/_default_fcntl.h \
  C:/esp/esp-idf/components/newlib/include/sys/stat.h \
  C:/esp/esp-idf/components/esp32/include/esp_task.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/esp32/include/esp_system.h \
  C:/esp/esp-idf/components/newlib/include/stdint.h \
  C:/esp/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -88,6 +88,9 @@ libcoap/src/resource.o: \
  C:/esp/esp-idf/components/esp32/include/xtensa/config/specreg.h \
  C:/esp/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h \
  C:/esp/esp-idf/components/esp32/include/esp_crosscore_int.h \
+ C:/esp/esp-idf/components/heap/include/esp_heap_caps.h \
+ C:/esp/esp-idf/components/heap/include/multi_heap.h \
+ C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h \
  C:/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h \
  C:/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  C:/esp/esp-idf/components/freertos/include/freertos/task.h \
@@ -208,7 +211,7 @@ C:/esp/esp-idf/components/newlib/include/sys/stat.h:
 
 C:/esp/esp-idf/components/esp32/include/esp_task.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/esp32/include/esp_system.h:
 
@@ -319,6 +322,12 @@ C:/esp/esp-idf/components/esp32/include/xtensa/config/specreg.h:
 C:/esp/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h:
 
 C:/esp/esp-idf/components/esp32/include/esp_crosscore_int.h:
+
+C:/esp/esp-idf/components/heap/include/esp_heap_caps.h:
+
+C:/esp/esp-idf/components/heap/include/multi_heap.h:
+
+C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h:
 
 C:/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h:
 

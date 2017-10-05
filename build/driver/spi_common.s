@@ -8,7 +8,7 @@
 	.align	4
 	.type	reset_func_to_gpio, @function
 reset_func_to_gpio:
-.LFB20:
+.LFB24:
 	.file 1 "C:/esp/esp-idf/components/driver/spi_common.c"
 	.loc 1 301 0
 .LVL0:
@@ -55,7 +55,7 @@ reset_func_to_gpio:
 .LBE12:
 	.loc 1 307 0 is_stmt 1
 	retw.n
-.LFE20:
+.LFE24:
 	.size	reset_func_to_gpio, .-reset_func_to_gpio
 	.section	.text.spicommon_periph_claim,"ax",@progbits
 	.literal_position
@@ -65,7 +65,7 @@ reset_func_to_gpio:
 	.global	spicommon_periph_claim
 	.type	spicommon_periph_claim, @function
 spicommon_periph_claim:
-.LFB13:
+.LFB17:
 	.loc 1 163 0
 .LVL5:
 	entry	sp, 32
@@ -121,7 +121,7 @@ spicommon_periph_claim:
 .L8:
 	.loc 1 167 0 is_stmt 1
 	retw.n
-.LFE13:
+.LFE17:
 	.size	spicommon_periph_claim, .-spicommon_periph_claim
 	.section	.text.spicommon_periph_free,"ax",@progbits
 	.literal_position
@@ -131,7 +131,7 @@ spicommon_periph_claim:
 	.global	spicommon_periph_free
 	.type	spicommon_periph_free, @function
 spicommon_periph_free:
-.LFB14:
+.LFB18:
 	.loc 1 171 0
 .LVL10:
 	entry	sp, 32
@@ -188,7 +188,7 @@ spicommon_periph_free:
 .L12:
 	.loc 1 175 0 is_stmt 1
 	retw.n
-.LFE14:
+.LFE18:
 	.size	spicommon_periph_free, .-spicommon_periph_free
 	.section	.text.spicommon_irqsource_for_host,"ax",@progbits
 	.literal_position
@@ -197,7 +197,7 @@ spicommon_periph_free:
 	.global	spicommon_irqsource_for_host
 	.type	spicommon_irqsource_for_host, @function
 spicommon_irqsource_for_host:
-.LFB15:
+.LFB19:
 	.loc 1 179 0
 .LVL15:
 	entry	sp, 32
@@ -210,7 +210,7 @@ spicommon_irqsource_for_host:
 	.loc 1 181 0
 	l8ui	a2, a2, 20
 	retw.n
-.LFE15:
+.LFE19:
 	.size	spicommon_irqsource_for_host, .-spicommon_irqsource_for_host
 	.section	.text.spicommon_hw_for_host,"ax",@progbits
 	.literal_position
@@ -219,7 +219,7 @@ spicommon_irqsource_for_host:
 	.global	spicommon_hw_for_host
 	.type	spicommon_hw_for_host, @function
 spicommon_hw_for_host:
-.LFB16:
+.LFB20:
 	.loc 1 184 0
 .LVL17:
 	entry	sp, 32
@@ -232,7 +232,7 @@ spicommon_hw_for_host:
 	.loc 1 186 0
 	l32i.n	a2, a2, 28
 	retw.n
-.LFE16:
+.LFE20:
 	.size	spicommon_hw_for_host, .-spicommon_hw_for_host
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -244,7 +244,7 @@ spicommon_hw_for_host:
 	.section	.text.spicommon_dma_chan_claim,"ax",@progbits
 	.literal_position
 	.literal .LC9, .LC8
-	.literal .LC10, __func__$5877
+	.literal .LC10, __func__$5916
 	.literal .LC12, .LC11
 	.literal .LC13, spi_dma_spinlock
 	.literal .LC14, spi_dma_chan_enabled
@@ -252,7 +252,7 @@ spicommon_hw_for_host:
 	.global	spicommon_dma_chan_claim
 	.type	spicommon_dma_chan_claim, @function
 spicommon_dma_chan_claim:
-.LFB17:
+.LFB21:
 	.loc 1 189 0
 .LVL19:
 	entry	sp, 32
@@ -305,7 +305,7 @@ spicommon_dma_chan_claim:
 .LVL29:
 	.loc 1 203 0
 	retw.n
-.LFE17:
+.LFE21:
 	.size	spicommon_dma_chan_claim, .-spicommon_dma_chan_claim
 	.section	.rodata.str1.4
 	.align	4
@@ -314,7 +314,7 @@ spicommon_dma_chan_claim:
 	.section	.text.spicommon_dma_chan_free,"ax",@progbits
 	.literal_position
 	.literal .LC15, .LC8
-	.literal .LC16, __func__$5881
+	.literal .LC16, __func__$5920
 	.literal .LC17, .LC11
 	.literal .LC18, spi_dma_chan_enabled
 	.literal .LC20, .LC19
@@ -323,7 +323,7 @@ spicommon_dma_chan_claim:
 	.global	spicommon_dma_chan_free
 	.type	spicommon_dma_chan_free, @function
 spicommon_dma_chan_free:
-.LFB18:
+.LFB22:
 	.loc 1 206 0
 .LVL30:
 	entry	sp, 32
@@ -383,7 +383,7 @@ spicommon_dma_chan_free:
 	.loc 1 219 0
 	movi.n	a2, 1
 	retw.n
-.LFE18:
+.LFE22:
 	.size	spicommon_dma_chan_free, .-spicommon_dma_chan_free
 	.section	.rodata.str1.4
 	.align	4
@@ -410,7 +410,7 @@ spicommon_dma_chan_free:
 	.section	.text.spicommon_bus_initialize_io,"ax",@progbits
 	.literal_position
 	.literal .LC22, GPIO_PIN_MUX_REG
-	.literal .LC23, __FUNCTION__$5891
+	.literal .LC23, __FUNCTION__$5930
 	.literal .LC25, .LC24
 	.literal .LC27, .LC26
 	.literal .LC29, .LC28
@@ -427,7 +427,7 @@ spicommon_dma_chan_free:
 	.global	spicommon_bus_initialize_io
 	.type	spicommon_bus_initialize_io, @function
 spicommon_bus_initialize_io:
-.LFB19:
+.LFB23:
 	.loc 1 227 0
 .LVL38:
 	entry	sp, 48
@@ -998,7 +998,7 @@ spicommon_bus_initialize_io:
 	movi.n	a2, 0
 	.loc 1 296 0
 	retw.n
-.LFE19:
+.LFE23:
 	.size	spicommon_bus_initialize_io, .-spicommon_bus_initialize_io
 	.section	.text.spicommon_bus_free_io,"ax",@progbits
 	.literal_position
@@ -1010,7 +1010,7 @@ spicommon_bus_initialize_io:
 	.global	spicommon_bus_free_io
 	.type	spicommon_bus_free_io, @function
 spicommon_bus_free_io:
-.LFB21:
+.LFB25:
 	.loc 1 311 0
 .LVL92:
 	entry	sp, 32
@@ -1152,7 +1152,7 @@ spicommon_bus_free_io:
 	.loc 1 323 0
 	movi.n	a2, 0
 	retw.n
-.LFE21:
+.LFE25:
 	.size	spicommon_bus_free_io, .-spicommon_bus_free_io
 	.section	.text.spicommon_cs_initialize,"ax",@progbits
 	.literal_position
@@ -1165,7 +1165,7 @@ spicommon_bus_free_io:
 	.global	spicommon_cs_initialize
 	.type	spicommon_cs_initialize, @function
 spicommon_cs_initialize:
-.LFB22:
+.LFB26:
 	.loc 1 326 0
 .LVL99:
 	entry	sp, 32
@@ -1236,7 +1236,7 @@ spicommon_cs_initialize:
 .LVL107:
 .L62:
 	retw.n
-.LFE22:
+.LFE26:
 	.size	spicommon_cs_initialize, .-spicommon_cs_initialize
 	.section	.text.spicommon_cs_free,"ax",@progbits
 	.literal_position
@@ -1248,7 +1248,7 @@ spicommon_cs_initialize:
 	.global	spicommon_cs_free
 	.type	spicommon_cs_free, @function
 spicommon_cs_free:
-.LFB23:
+.LFB27:
 	.loc 1 339 0 is_stmt 1
 .LVL108:
 	entry	sp, 32
@@ -1287,7 +1287,7 @@ spicommon_cs_free:
 	call8	reset_func_to_gpio
 .LVL110:
 	retw.n
-.LFE23:
+.LFE27:
 	.size	spicommon_cs_free, .-spicommon_cs_free
 	.section	.text.spicommon_setup_dma_desc_links,"ax",@progbits
 	.literal_position
@@ -1302,7 +1302,7 @@ spicommon_cs_free:
 	.global	spicommon_setup_dma_desc_links
 	.type	spicommon_setup_dma_desc_links, @function
 spicommon_setup_dma_desc_links:
-.LFB24:
+.LFB28:
 	.loc 1 348 0
 .LVL111:
 	entry	sp, 32
@@ -1441,7 +1441,7 @@ spicommon_setup_dma_desc_links:
 	movi.n	a3, 0
 	s32i.n	a3, a2, 8
 	retw.n
-.LFE24:
+.LFE28:
 	.size	spicommon_setup_dma_desc_links, .-spicommon_setup_dma_desc_links
 	.section	.iram1,"ax",@progbits
 	.literal_position
@@ -1457,7 +1457,7 @@ spicommon_setup_dma_desc_links:
 	.global	spicommon_dmaworkaround_req_reset
 	.type	spicommon_dmaworkaround_req_reset, @function
 spicommon_dmaworkaround_req_reset:
-.LFB25:
+.LFB29:
 	.loc 1 387 0
 .LVL122:
 	entry	sp, 32
@@ -1539,7 +1539,7 @@ spicommon_dmaworkaround_req_reset:
 .LVL136:
 	.loc 1 405 0
 	retw.n
-.LFE25:
+.LFE29:
 	.size	spicommon_dmaworkaround_req_reset, .-spicommon_dmaworkaround_req_reset
 	.literal_position
 	.literal .LC71, dmaworkaround_waiting_for_chan
@@ -1547,7 +1547,7 @@ spicommon_dmaworkaround_req_reset:
 	.global	spicommon_dmaworkaround_reset_in_progress
 	.type	spicommon_dmaworkaround_reset_in_progress, @function
 spicommon_dmaworkaround_reset_in_progress:
-.LFB26:
+.LFB30:
 	.loc 1 408 0
 	entry	sp, 32
 .LCFI13:
@@ -1559,7 +1559,7 @@ spicommon_dmaworkaround_reset_in_progress:
 	movnez	a2, a9, a8
 	.loc 1 410 0
 	retw.n
-.LFE26:
+.LFE30:
 	.size	spicommon_dmaworkaround_reset_in_progress, .-spicommon_dmaworkaround_reset_in_progress
 	.literal_position
 	.literal .LC72, dmaworkaround_mux
@@ -1574,7 +1574,7 @@ spicommon_dmaworkaround_reset_in_progress:
 	.global	spicommon_dmaworkaround_idle
 	.type	spicommon_dmaworkaround_idle, @function
 spicommon_dmaworkaround_idle:
-.LFB27:
+.LFB31:
 	.loc 1 413 0
 .LVL137:
 	entry	sp, 32
@@ -1641,7 +1641,7 @@ spicommon_dmaworkaround_idle:
 	call8	vTaskExitCritical
 .LVL145:
 	retw.n
-.LFE27:
+.LFE31:
 	.size	spicommon_dmaworkaround_idle, .-spicommon_dmaworkaround_idle
 	.literal_position
 	.literal .LC80, dmaworkaround_mux
@@ -1650,7 +1650,7 @@ spicommon_dmaworkaround_idle:
 	.global	spicommon_dmaworkaround_transfer_active
 	.type	spicommon_dmaworkaround_transfer_active, @function
 spicommon_dmaworkaround_transfer_active:
-.LFB28:
+.LFB32:
 	.loc 1 429 0
 .LVL146:
 	entry	sp, 32
@@ -1674,25 +1674,25 @@ spicommon_dmaworkaround_transfer_active:
 	call8	vTaskExitCritical
 .LVL150:
 	retw.n
-.LFE28:
+.LFE32:
 	.size	spicommon_dmaworkaround_transfer_active, .-spicommon_dmaworkaround_transfer_active
-	.section	.rodata.__FUNCTION__$5891,"a",@progbits
+	.section	.rodata.__FUNCTION__$5930,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5891, @object
-	.size	__FUNCTION__$5891, 28
-__FUNCTION__$5891:
+	.type	__FUNCTION__$5930, @object
+	.size	__FUNCTION__$5930, 28
+__FUNCTION__$5930:
 	.string	"spicommon_bus_initialize_io"
-	.section	.rodata.__func__$5881,"a",@progbits
+	.section	.rodata.__func__$5920,"a",@progbits
 	.align	4
-	.type	__func__$5881, @object
-	.size	__func__$5881, 24
-__func__$5881:
+	.type	__func__$5920, @object
+	.size	__func__$5920, 24
+__func__$5920:
 	.string	"spicommon_dma_chan_free"
-	.section	.rodata.__func__$5877,"a",@progbits
+	.section	.rodata.__func__$5916,"a",@progbits
 	.align	4
-	.type	__func__$5877, @object
-	.size	__func__$5877, 25
-__func__$5877:
+	.type	__func__$5916, @object
+	.size	__func__$5916, 25
+__func__$5916:
 	.string	"spicommon_dma_chan_claim"
 	.section	.bss.dmaworkaround_waiting_for_chan,"aw",@nobits
 	.align	4
@@ -1844,10 +1844,10 @@ io_signal:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.byte	0x4
-	.4byte	.LCFI0-.LFB20
+	.4byte	.LCFI0-.LFB24
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1856,10 +1856,10 @@ io_signal:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI1-.LFB13
+	.4byte	.LCFI1-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1868,10 +1868,10 @@ io_signal:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI2-.LFB14
+	.4byte	.LCFI2-.LFB18
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1880,10 +1880,10 @@ io_signal:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI3-.LFB15
+	.4byte	.LCFI3-.LFB19
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1892,10 +1892,10 @@ io_signal:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI4-.LFB16
+	.4byte	.LCFI4-.LFB20
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1904,10 +1904,10 @@ io_signal:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI5-.LFB17
+	.4byte	.LCFI5-.LFB21
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1916,10 +1916,10 @@ io_signal:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI6-.LFB18
+	.4byte	.LCFI6-.LFB22
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1928,10 +1928,10 @@ io_signal:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI7-.LFB19
+	.4byte	.LCFI7-.LFB23
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1940,10 +1940,10 @@ io_signal:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.byte	0x4
-	.4byte	.LCFI8-.LFB21
+	.4byte	.LCFI8-.LFB25
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1952,10 +1952,10 @@ io_signal:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI9-.LFB22
+	.4byte	.LCFI9-.LFB26
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1964,10 +1964,10 @@ io_signal:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI10-.LFB23
+	.4byte	.LCFI10-.LFB27
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1976,10 +1976,10 @@ io_signal:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI11-.LFB24
+	.4byte	.LCFI11-.LFB28
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1988,10 +1988,10 @@ io_signal:
 	.4byte	.LEFDE24-.LASFDE24
 .LASFDE24:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI12-.LFB25
+	.4byte	.LCFI12-.LFB29
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -2000,10 +2000,10 @@ io_signal:
 	.4byte	.LEFDE26-.LASFDE26
 .LASFDE26:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI13-.LFB26
+	.4byte	.LCFI13-.LFB30
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -2012,10 +2012,10 @@ io_signal:
 	.4byte	.LEFDE28-.LASFDE28
 .LASFDE28:
 	.4byte	.Lframe0
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.byte	0x4
-	.4byte	.LCFI14-.LFB27
+	.4byte	.LCFI14-.LFB31
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -2024,10 +2024,10 @@ io_signal:
 	.4byte	.LEFDE30-.LASFDE30
 .LASFDE30:
 	.4byte	.Lframe0
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.byte	0x4
-	.4byte	.LCFI15-.LFB28
+	.4byte	.LCFI15-.LFB32
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -2158,33 +2158,33 @@ io_signal:
 	.uleb128 0x9
 	.4byte	0x8c
 	.byte	0
+	.uleb128 0x3
+	.byte	0x1
+	.byte	0x2
+	.4byte	.LASF18
 	.uleb128 0xa
 	.byte	0x8
 	.byte	0x6
-	.byte	0x81
-	.4byte	0x105
-	.uleb128 0xb
-	.4byte	.LASF18
-	.byte	0x6
-	.byte	0x82
-	.4byte	0xbd
-	.byte	0
+	.byte	0x84
+	.4byte	0x10c
 	.uleb128 0xb
 	.4byte	.LASF19
 	.byte	0x6
-	.byte	0x83
+	.byte	0x85
+	.4byte	0xbd
+	.byte	0
+	.uleb128 0xb
+	.4byte	.LASF20
+	.byte	0x6
+	.byte	0x86
 	.4byte	0xbd
 	.byte	0x4
 	.byte	0
 	.uleb128 0x4
-	.4byte	.LASF20
-	.byte	0x6
-	.byte	0x88
-	.4byte	0xe4
-	.uleb128 0x3
-	.byte	0x1
-	.byte	0x2
 	.4byte	.LASF21
+	.byte	0x6
+	.byte	0x8b
+	.4byte	0xeb
 	.uleb128 0xc
 	.byte	0x4
 	.4byte	0x2c
@@ -6827,7 +6827,7 @@ io_signal:
 	.byte	0x1
 	.byte	0
 	.uleb128 0xf
-	.4byte	.LASF18
+	.4byte	.LASF19
 	.byte	0x8
 	.byte	0x49
 	.4byte	0x142
@@ -7251,8 +7251,8 @@ io_signal:
 	.4byte	.LASF602
 	.byte	0x1
 	.2byte	0x12c
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2791
@@ -7304,9 +7304,9 @@ io_signal:
 	.4byte	.LASF542
 	.byte	0x1
 	.byte	0xa2
-	.4byte	0x110
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	0xe4
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x27e1
@@ -7320,7 +7320,7 @@ io_signal:
 	.string	"ret"
 	.byte	0x1
 	.byte	0xa4
-	.4byte	0x110
+	.4byte	0xe4
 	.uleb128 0x1
 	.byte	0x52
 	.uleb128 0x2a
@@ -7345,9 +7345,9 @@ io_signal:
 	.4byte	.LASF543
 	.byte	0x1
 	.byte	0xaa
-	.4byte	0x110
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	0xe4
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2831
@@ -7361,7 +7361,7 @@ io_signal:
 	.string	"ret"
 	.byte	0x1
 	.byte	0xac
-	.4byte	0x110
+	.4byte	0xe4
 	.uleb128 0x1
 	.byte	0x52
 	.uleb128 0x2a
@@ -7387,8 +7387,8 @@ io_signal:
 	.byte	0x1
 	.byte	0xb2
 	.4byte	0x25
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x285a
@@ -7404,8 +7404,8 @@ io_signal:
 	.byte	0x1
 	.byte	0xb7
 	.4byte	0x26fb
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2883
@@ -7420,9 +7420,9 @@ io_signal:
 	.4byte	.LASF546
 	.byte	0x1
 	.byte	0xbc
-	.4byte	0x110
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	0xe4
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2936
@@ -7436,14 +7436,14 @@ io_signal:
 	.string	"ret"
 	.byte	0x1
 	.byte	0xbe
-	.4byte	0x110
+	.4byte	0xe4
 	.4byte	.LLST6
 	.uleb128 0x30
 	.4byte	.LASF548
 	.4byte	0x2946
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5877
+	.4byte	__func__$5916
 	.uleb128 0x31
 	.4byte	.LVL21
 	.4byte	0x33cd
@@ -7465,7 +7465,7 @@ io_signal:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5877
+	.4byte	__func__$5916
 	.uleb128 0x2b
 	.uleb128 0x1
 	.byte	0x5d
@@ -7518,9 +7518,9 @@ io_signal:
 	.4byte	.LASF549
 	.byte	0x1
 	.byte	0xcd
-	.4byte	0x110
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	0xe4
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2a1e
@@ -7535,7 +7535,7 @@ io_signal:
 	.4byte	0x2a2e
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5881
+	.4byte	__func__$5920
 	.uleb128 0x31
 	.4byte	.LVL31
 	.4byte	0x33cd
@@ -7557,7 +7557,7 @@ io_signal:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5881
+	.4byte	__func__$5920
 	.uleb128 0x2b
 	.uleb128 0x1
 	.byte	0x5d
@@ -7586,7 +7586,7 @@ io_signal:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5881
+	.4byte	__func__$5920
 	.uleb128 0x2b
 	.uleb128 0x1
 	.byte	0x5d
@@ -7640,8 +7640,8 @@ io_signal:
 	.byte	0x1
 	.byte	0xe2
 	.4byte	0xc8
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2e29
@@ -7679,20 +7679,20 @@ io_signal:
 	.4byte	.LASF554
 	.byte	0x1
 	.byte	0xe4
-	.4byte	0x110
+	.4byte	0xe4
 	.4byte	.LLST13
 	.uleb128 0x32
 	.4byte	.LASF555
 	.byte	0x1
 	.byte	0xe5
-	.4byte	0x110
+	.4byte	0xe4
 	.4byte	.LLST14
 	.uleb128 0x30
 	.4byte	.LASF556
 	.4byte	0x2e4a
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5891
+	.4byte	__FUNCTION__$5930
 	.uleb128 0x33
 	.4byte	0x270c
 	.4byte	.LBB13
@@ -7747,7 +7747,7 @@ io_signal:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5891
+	.4byte	__FUNCTION__$5930
 	.uleb128 0x2b
 	.uleb128 0x2
 	.byte	0x71
@@ -7798,7 +7798,7 @@ io_signal:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5891
+	.4byte	__FUNCTION__$5930
 	.uleb128 0x2b
 	.uleb128 0x2
 	.byte	0x71
@@ -7849,7 +7849,7 @@ io_signal:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5891
+	.4byte	__FUNCTION__$5930
 	.uleb128 0x2b
 	.uleb128 0x2
 	.byte	0x71
@@ -7900,7 +7900,7 @@ io_signal:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5891
+	.4byte	__FUNCTION__$5930
 	.uleb128 0x2b
 	.uleb128 0x2
 	.byte	0x71
@@ -7951,7 +7951,7 @@ io_signal:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5891
+	.4byte	__FUNCTION__$5930
 	.uleb128 0x2b
 	.uleb128 0x2
 	.byte	0x71
@@ -8259,7 +8259,7 @@ io_signal:
 	.4byte	0x24c6
 	.uleb128 0x6
 	.byte	0x4
-	.4byte	0x110
+	.4byte	0xe4
 	.uleb128 0x1d
 	.4byte	0x95
 	.4byte	0x2e4a
@@ -8274,8 +8274,8 @@ io_signal:
 	.byte	0x1
 	.2byte	0x136
 	.4byte	0xc8
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2ef3
@@ -8369,8 +8369,8 @@ io_signal:
 	.4byte	.LASF561
 	.byte	0x1
 	.2byte	0x145
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2f9c
@@ -8470,8 +8470,8 @@ io_signal:
 	.4byte	.LASF562
 	.byte	0x1
 	.2byte	0x152
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2fe6
@@ -8508,8 +8508,8 @@ io_signal:
 	.4byte	.LASF563
 	.byte	0x1
 	.2byte	0x15b
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3063
@@ -8535,7 +8535,7 @@ io_signal:
 	.4byte	.LASF566
 	.byte	0x1
 	.2byte	0x15b
-	.4byte	0x110
+	.4byte	0xe4
 	.uleb128 0x1
 	.byte	0x55
 	.uleb128 0x29
@@ -8562,9 +8562,9 @@ io_signal:
 	.4byte	.LASF568
 	.byte	0x1
 	.2byte	0x182
-	.4byte	0x110
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	0xe4
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x315d
@@ -8597,7 +8597,7 @@ io_signal:
 	.string	"ret"
 	.byte	0x1
 	.2byte	0x185
-	.4byte	0x110
+	.4byte	0xe4
 	.4byte	.LLST28
 	.uleb128 0x33
 	.4byte	0x270c
@@ -8661,17 +8661,17 @@ io_signal:
 	.4byte	.LASF603
 	.byte	0x1
 	.2byte	0x197
-	.4byte	0x110
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	0xe4
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x39
 	.4byte	.LASF571
 	.byte	0x1
 	.2byte	0x19c
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x322e
@@ -8748,8 +8748,8 @@ io_signal:
 	.4byte	.LASF572
 	.byte	0x1
 	.2byte	0x1ac
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3279
@@ -8810,7 +8810,7 @@ io_signal:
 	.uleb128 0x7
 	.4byte	0x3290
 	.uleb128 0x1d
-	.4byte	0x110
+	.4byte	0xe4
 	.4byte	0x32c6
 	.uleb128 0x1e
 	.4byte	0x85
@@ -8836,7 +8836,7 @@ io_signal:
 	.4byte	.LASF577
 	.byte	0x1
 	.byte	0x9e
-	.4byte	0x105
+	.4byte	0x10c
 	.uleb128 0x5
 	.byte	0x3
 	.4byte	spi_dma_spinlock
@@ -8877,7 +8877,7 @@ io_signal:
 	.4byte	.LASF581
 	.byte	0x1
 	.2byte	0x17f
-	.4byte	0x105
+	.4byte	0x10c
 	.uleb128 0x5
 	.byte	0x3
 	.4byte	dmaworkaround_mux
@@ -8942,12 +8942,12 @@ io_signal:
 	.4byte	.LASF591
 	.4byte	.LASF591
 	.byte	0x6
-	.byte	0xd9
+	.byte	0xdc
 	.uleb128 0x45
 	.4byte	.LASF592
 	.4byte	.LASF592
 	.byte	0x6
-	.byte	0xd8
+	.byte	0xdb
 	.uleb128 0x45
 	.4byte	.LASF593
 	.4byte	.LASF593
@@ -9955,7 +9955,7 @@ io_signal:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL2
-	.4byte	.LFE20
+	.4byte	.LFE24
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -9970,7 +9970,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x5d
 	.4byte	.LVL8
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9988,7 +9988,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x5c
 	.4byte	.LVL13
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10002,7 +10002,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL16
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10016,7 +10016,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL18
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10047,7 +10047,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL27
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10072,7 +10072,7 @@ io_signal:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL27
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -10089,7 +10089,7 @@ io_signal:
 	.sleb128 1
 	.byte	0x9f
 	.4byte	.LVL35
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10158,7 +10158,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL90
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10183,7 +10183,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL88
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10197,7 +10197,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL91
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10211,7 +10211,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x55
 	.4byte	.LVL40
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10236,7 +10236,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x56
 	.4byte	.LVL71
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10289,7 +10289,7 @@ io_signal:
 	.byte	0x2e
 	.byte	0x9f
 	.4byte	.LVL82
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x8
 	.byte	0xf3
 	.uleb128 0x1
@@ -10307,7 +10307,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL93
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10332,7 +10332,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL105
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10353,7 +10353,7 @@ io_signal:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL103
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -10375,7 +10375,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL106
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10389,7 +10389,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL109
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10403,7 +10403,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL120
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10483,7 +10483,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL125
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10506,7 +10506,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL135
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10542,7 +10542,7 @@ io_signal:
 	.byte	0x31
 	.byte	0x9f
 	.4byte	.LVL135
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -10585,7 +10585,7 @@ io_signal:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL140
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10637,7 +10637,7 @@ io_signal:
 	.sleb128 1
 	.byte	0x9f
 	.4byte	.LVL149
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10653,30 +10653,22 @@ io_signal:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.4byte	.LFB17
 	.4byte	.LFE17-.LFB17
 	.4byte	.LFB18
 	.4byte	.LFE18-.LFB18
 	.4byte	.LFB19
 	.4byte	.LFE19-.LFB19
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.4byte	.LFB21
 	.4byte	.LFE21-.LFB21
 	.4byte	.LFB22
 	.4byte	.LFE22-.LFB22
 	.4byte	.LFB23
 	.4byte	.LFE23-.LFB23
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
 	.4byte	.LFB25
 	.4byte	.LFE25-.LFB25
 	.4byte	.LFB26
@@ -10685,34 +10677,34 @@ io_signal:
 	.4byte	.LFE27-.LFB27
 	.4byte	.LFB28
 	.4byte	.LFE28-.LFB28
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB20
-	.4byte	.LFE20
-	.4byte	.LFB13
-	.4byte	.LFE13
-	.4byte	.LFB14
-	.4byte	.LFE14
-	.4byte	.LFB15
-	.4byte	.LFE15
-	.4byte	.LFB16
-	.4byte	.LFE16
+	.4byte	.LFB24
+	.4byte	.LFE24
 	.4byte	.LFB17
 	.4byte	.LFE17
 	.4byte	.LFB18
 	.4byte	.LFE18
 	.4byte	.LFB19
 	.4byte	.LFE19
+	.4byte	.LFB20
+	.4byte	.LFE20
 	.4byte	.LFB21
 	.4byte	.LFE21
 	.4byte	.LFB22
 	.4byte	.LFE22
 	.4byte	.LFB23
 	.4byte	.LFE23
-	.4byte	.LFB24
-	.4byte	.LFE24
 	.4byte	.LFB25
 	.4byte	.LFE25
 	.4byte	.LFB26
@@ -10721,6 +10713,14 @@ io_signal:
 	.4byte	.LFE27
 	.4byte	.LFB28
 	.4byte	.LFE28
+	.4byte	.LFB29
+	.4byte	.LFE29
+	.4byte	.LFB30
+	.4byte	.LFE30
+	.4byte	.LFB31
+	.4byte	.LFE31
+	.4byte	.LFB32
+	.4byte	.LFE32
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -10730,8 +10730,6 @@ io_signal:
 	.string	"cs2_dis"
 .LASF570:
 	.string	"otherchan"
-.LASF599:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF66:
 	.string	"miso_delay_mode"
 .LASF203:
@@ -10754,7 +10752,7 @@ io_signal:
 	.string	"PERIPH_PWM1_MODULE"
 .LASF125:
 	.string	"wr_buf_done"
-.LASF18:
+.LASF19:
 	.string	"owner"
 .LASF574:
 	.string	"io_signal"
@@ -10962,6 +10960,8 @@ io_signal:
 	.string	"fwrite_quad"
 .LASF554:
 	.string	"native"
+.LASF226:
+	.string	"date"
 .LASF333:
 	.string	"reserved_1ec"
 .LASF22:
@@ -11030,7 +11030,7 @@ io_signal:
 	.string	"usr_mosi_highpart"
 .LASF195:
 	.string	"ahbm_fifo_rst"
-.LASF21:
+.LASF18:
 	.string	"_Bool"
 .LASF150:
 	.string	"status_readback"
@@ -11354,7 +11354,7 @@ io_signal:
 	.string	"reserved16"
 .LASF208:
 	.string	"reserved17"
-.LASF19:
+.LASF20:
 	.string	"count"
 .LASF210:
 	.string	"stop"
@@ -11622,7 +11622,7 @@ io_signal:
 	.string	"status_bitlen"
 .LASF313:
 	.string	"reserved_19c"
-.LASF20:
+.LASF21:
 	.string	"portMUX_TYPE"
 .LASF475:
 	.string	"VSPI_HOST"
@@ -11910,8 +11910,8 @@ io_signal:
 	.string	"usr_addr_bitlen"
 .LASF565:
 	.string	"data"
-.LASF226:
-	.string	"date"
+.LASF599:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF57:
 	.string	"cs_hold_delay_res"
 .LASF90:
@@ -11934,4 +11934,4 @@ io_signal:
 	.string	"miso_io_num"
 .LASF424:
 	.string	"reserved_358"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

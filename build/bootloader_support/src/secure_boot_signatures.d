@@ -1,6 +1,6 @@
 src/secure_boot_signatures.o: \
  C:/esp/esp-idf/components/bootloader_support/src/secure_boot_signatures.c \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/bootloader_support/include_priv/bootloader_flash.h \
  C:/esp/esp-idf/components/newlib/include/stdint.h \
  C:/esp/esp-idf/components/newlib/include/machine/_default_types.h \
@@ -46,7 +46,7 @@ src/secure_boot_signatures.o: \
  C:/esp/esp-idf/components/esp32/include/rom/sha.h \
  C:/esp/esp-idf/components/esp32/include/esp_types.h
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/bootloader_support/include_priv/bootloader_flash.h:
 

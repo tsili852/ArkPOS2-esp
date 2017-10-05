@@ -4951,6 +4951,8 @@ encode_string:
 	.string	"saltlen"
 .LASF80:
 	.string	"dst_len"
+.LASF104:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF66:
 	.string	"ARGON2_VERSION_NUMBER"
 .LASF52:
@@ -5053,8 +5055,6 @@ encode_string:
 	.string	"ARGON2_OUTPUT_PTR_NULL"
 .LASF19:
 	.string	"ARGON2_SALT_TOO_LONG"
-.LASF104:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF41:
 	.string	"ARGON2_THREADS_TOO_MANY"
 .LASF48:
@@ -5065,4 +5065,4 @@ encode_string:
 	.string	"decode_decimal"
 .LASF37:
 	.string	"ARGON2_INCORRECT_PARAMETER"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

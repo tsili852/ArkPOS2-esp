@@ -8,7 +8,7 @@
 	.global	esp_apptrace_tmo_check
 	.type	esp_apptrace_tmo_check, @function
 esp_apptrace_tmo_check:
-.LFB13:
+.LFB17:
 	.file 1 "C:/esp/esp-idf/components/app_trace/app_trace_util.c"
 	.loc 1 28 0
 .LVL0:
@@ -62,14 +62,14 @@ esp_apptrace_tmo_check:
 	movi.n	a2, 0
 	.loc 1 41 0
 	retw.n
-.LFE13:
+.LFE17:
 	.size	esp_apptrace_tmo_check, .-esp_apptrace_tmo_check
 	.section	.text.esp_apptrace_lock_take,"ax",@progbits
 	.align	4
 	.global	esp_apptrace_lock_take
 	.type	esp_apptrace_lock_take, @function
 esp_apptrace_lock_take:
-.LFB14:
+.LFB18:
 	.loc 1 48 0
 .LVL8:
 	entry	sp, 32
@@ -80,9 +80,9 @@ esp_apptrace_lock_take:
 .LBB9:
 .LBB10:
 	.file 2 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
-	.loc 2 241 0
+	.loc 2 244 0
 #APP
-# 241 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 1
+# 244 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 1
 	rsil	a4, 3
 
 # 0 "" 2
@@ -124,14 +124,14 @@ esp_apptrace_lock_take:
 .LVL16:
 	.loc 1 70 0
 	retw.n
-.LFE14:
+.LFE18:
 	.size	esp_apptrace_lock_take, .-esp_apptrace_lock_take
 	.section	.text.esp_apptrace_lock_give,"ax",@progbits
 	.align	4
 	.global	esp_apptrace_lock_give
 	.type	esp_apptrace_lock_give, @function
 esp_apptrace_lock_give:
-.LFB15:
+.LFB19:
 	.loc 1 73 0
 .LVL17:
 	entry	sp, 32
@@ -151,14 +151,14 @@ esp_apptrace_lock_give:
 	movi.n	a2, 0
 .LVL21:
 	retw.n
-.LFE15:
+.LFE19:
 	.size	esp_apptrace_lock_give, .-esp_apptrace_lock_give
 	.section	.text.esp_apptrace_rb_produce,"ax",@progbits
 	.align	4
 	.global	esp_apptrace_rb_produce
 	.type	esp_apptrace_rb_produce, @function
 esp_apptrace_rb_produce:
-.LFB16:
+.LFB20:
 	.loc 1 88 0
 .LVL22:
 	entry	sp, 32
@@ -294,14 +294,14 @@ esp_apptrace_rb_produce:
 	movi.n	a2, 0
 	.loc 1 127 0
 	retw.n
-.LFE16:
+.LFE20:
 	.size	esp_apptrace_rb_produce, .-esp_apptrace_rb_produce
 	.section	.text.esp_apptrace_rb_consume,"ax",@progbits
 	.align	4
 	.global	esp_apptrace_rb_consume
 	.type	esp_apptrace_rb_consume, @function
 esp_apptrace_rb_consume:
-.LFB17:
+.LFB21:
 	.loc 1 130 0
 .LVL32:
 	entry	sp, 32
@@ -399,14 +399,14 @@ esp_apptrace_rb_consume:
 .LVL45:
 	.loc 1 153 0
 	retw.n
-.LFE17:
+.LFE21:
 	.size	esp_apptrace_rb_consume, .-esp_apptrace_rb_consume
 	.section	.text.esp_apptrace_rb_read_size_get,"ax",@progbits
 	.align	4
 	.global	esp_apptrace_rb_read_size_get
 	.type	esp_apptrace_rb_read_size_get, @function
 esp_apptrace_rb_read_size_get:
-.LFB18:
+.LFB22:
 	.loc 1 156 0
 .LVL46:
 	entry	sp, 32
@@ -439,14 +439,14 @@ esp_apptrace_rb_read_size_get:
 .LVL52:
 	.loc 1 166 0
 	retw.n
-.LFE18:
+.LFE22:
 	.size	esp_apptrace_rb_read_size_get, .-esp_apptrace_rb_read_size_get
 	.section	.text.esp_apptrace_rb_write_size_get,"ax",@progbits
 	.align	4
 	.global	esp_apptrace_rb_write_size_get
 	.type	esp_apptrace_rb_write_size_get, @function
 esp_apptrace_rb_write_size_get:
-.LFB19:
+.LFB23:
 	.loc 1 169 0
 .LVL53:
 	entry	sp, 32
@@ -491,7 +491,7 @@ esp_apptrace_rb_write_size_get:
 	.loc 1 182 0
 	mov.n	a2, a8
 	retw.n
-.LFE19:
+.LFE23:
 	.size	esp_apptrace_rb_write_size_get, .-esp_apptrace_rb_write_size_get
 	.section	.debug_frame,"",@progbits
 .Lframe0:
@@ -512,10 +512,10 @@ esp_apptrace_rb_write_size_get:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI0-.LFB13
+	.4byte	.LCFI0-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -524,10 +524,10 @@ esp_apptrace_rb_write_size_get:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI1-.LFB14
+	.4byte	.LCFI1-.LFB18
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -536,10 +536,10 @@ esp_apptrace_rb_write_size_get:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI2-.LFB15
+	.4byte	.LCFI2-.LFB19
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -548,10 +548,10 @@ esp_apptrace_rb_write_size_get:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI3-.LFB16
+	.4byte	.LCFI3-.LFB20
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -560,10 +560,10 @@ esp_apptrace_rb_write_size_get:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI4-.LFB17
+	.4byte	.LCFI4-.LFB21
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -572,10 +572,10 @@ esp_apptrace_rb_write_size_get:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI5-.LFB18
+	.4byte	.LCFI5-.LFB22
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -584,10 +584,10 @@ esp_apptrace_rb_write_size_get:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI6-.LFB19
+	.4byte	.LCFI6-.LFB23
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -692,38 +692,38 @@ esp_apptrace_rb_write_size_get:
 	.byte	0x4
 	.byte	0x2d
 	.4byte	0x65
+	.uleb128 0x3
+	.byte	0x1
+	.byte	0x2
+	.4byte	.LASF17
 	.uleb128 0x5
 	.byte	0x8
 	.byte	0x2
-	.byte	0x81
-	.4byte	0xdc
-	.uleb128 0x6
-	.4byte	.LASF17
-	.byte	0x2
-	.byte	0x82
-	.4byte	0xb0
-	.byte	0
+	.byte	0x84
+	.4byte	0xe3
 	.uleb128 0x6
 	.4byte	.LASF18
 	.byte	0x2
-	.byte	0x83
+	.byte	0x85
+	.4byte	0xb0
+	.byte	0
+	.uleb128 0x6
+	.4byte	.LASF19
+	.byte	0x2
+	.byte	0x86
 	.4byte	0xb0
 	.byte	0x4
 	.byte	0
 	.uleb128 0x4
-	.4byte	.LASF19
-	.byte	0x2
-	.byte	0x88
-	.4byte	0xbb
-	.uleb128 0x4
 	.4byte	.LASF20
+	.byte	0x2
+	.byte	0x8b
+	.4byte	0xc2
+	.uleb128 0x4
+	.4byte	.LASF21
 	.byte	0x5
 	.byte	0x18
 	.4byte	0xa5
-	.uleb128 0x3
-	.byte	0x1
-	.byte	0x2
-	.4byte	.LASF21
 	.uleb128 0x7
 	.4byte	0xb0
 	.uleb128 0x5
@@ -764,7 +764,7 @@ esp_apptrace_rb_write_size_get:
 	.string	"mux"
 	.byte	0x6
 	.byte	0x3e
-	.4byte	0xdc
+	.4byte	0xe3
 	.byte	0
 	.uleb128 0x6
 	.4byte	.LASF25
@@ -825,20 +825,20 @@ esp_apptrace_rb_write_size_get:
 	.uleb128 0xa
 	.4byte	.LASF49
 	.byte	0x2
-	.byte	0xf1
+	.byte	0xf4
 	.4byte	0x2c
 	.byte	0x3
 	.4byte	0x1df
 	.uleb128 0xb
 	.4byte	.LASF31
 	.byte	0x2
-	.byte	0xf1
+	.byte	0xf4
 	.4byte	0x2c
 	.uleb128 0xc
 	.uleb128 0xb
 	.4byte	.LASF32
 	.byte	0x2
-	.byte	0xf1
+	.byte	0xf4
 	.4byte	0x2c
 	.byte	0
 	.byte	0
@@ -846,9 +846,9 @@ esp_apptrace_rb_write_size_get:
 	.4byte	.LASF33
 	.byte	0x1
 	.byte	0x1b
-	.4byte	0xe7
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	0xee
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x22a
@@ -879,9 +879,9 @@ esp_apptrace_rb_write_size_get:
 	.4byte	.LASF34
 	.byte	0x1
 	.byte	0x2f
-	.4byte	0xe7
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	0xee
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x30c
@@ -919,7 +919,7 @@ esp_apptrace_rb_write_size_get:
 	.4byte	.LASF36
 	.byte	0x1
 	.byte	0x39
-	.4byte	0xf2
+	.4byte	0xbb
 	.4byte	.LLST3
 	.uleb128 0x17
 	.4byte	0x1b6
@@ -991,9 +991,9 @@ esp_apptrace_rb_write_size_get:
 	.4byte	.LASF37
 	.byte	0x1
 	.byte	0x48
-	.4byte	0xe7
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	0xee
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x36f
@@ -1037,8 +1037,8 @@ esp_apptrace_rb_write_size_get:
 	.byte	0x1
 	.byte	0x57
 	.4byte	0x1a5
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3b5
@@ -1069,8 +1069,8 @@ esp_apptrace_rb_write_size_get:
 	.byte	0x1
 	.byte	0x81
 	.4byte	0x1a5
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3ff
@@ -1099,8 +1099,8 @@ esp_apptrace_rb_write_size_get:
 	.byte	0x1
 	.byte	0x9b
 	.4byte	0xb0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x436
@@ -1122,8 +1122,8 @@ esp_apptrace_rb_write_size_get:
 	.byte	0x1
 	.byte	0xa8
 	.4byte	0xb0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x46d
@@ -1149,7 +1149,7 @@ esp_apptrace_rb_write_size_get:
 	.4byte	.LASF43
 	.4byte	.LASF43
 	.byte	0x2
-	.byte	0xe4
+	.byte	0xe7
 	.uleb128 0x1d
 	.4byte	.LASF44
 	.4byte	.LASF44
@@ -1159,7 +1159,7 @@ esp_apptrace_rb_write_size_get:
 	.4byte	.LASF45
 	.4byte	.LASF45
 	.byte	0x2
-	.byte	0xe5
+	.byte	0xe8
 	.byte	0
 	.section	.debug_abbrev,"",@progbits
 .Ldebug_abbrev0:
@@ -1570,7 +1570,7 @@ esp_apptrace_rb_write_size_get:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL7
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1606,7 +1606,7 @@ esp_apptrace_rb_write_size_get:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL16
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1631,7 +1631,7 @@ esp_apptrace_rb_write_size_get:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL19-1
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1652,7 +1652,7 @@ esp_apptrace_rb_write_size_get:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL23
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x1
 	.byte	0x58
 	.4byte	0
@@ -1692,7 +1692,7 @@ esp_apptrace_rb_write_size_get:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL31
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -1707,7 +1707,7 @@ esp_apptrace_rb_write_size_get:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL27
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x1
 	.byte	0x5b
 	.4byte	0
@@ -1762,7 +1762,7 @@ esp_apptrace_rb_write_size_get:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL45
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1805,7 +1805,7 @@ esp_apptrace_rb_write_size_get:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL42
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -1827,7 +1827,7 @@ esp_apptrace_rb_write_size_get:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL51
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1851,7 +1851,7 @@ esp_apptrace_rb_write_size_get:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL52
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -1873,7 +1873,7 @@ esp_apptrace_rb_write_size_get:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL59
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1897,7 +1897,7 @@ esp_apptrace_rb_write_size_get:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL60
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x1
 	.byte	0x58
 	.4byte	0
@@ -1910,38 +1910,38 @@ esp_apptrace_rb_write_size_get:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
 	.4byte	.LFB17
 	.4byte	.LFE17-.LFB17
 	.4byte	.LFB18
 	.4byte	.LFE18-.LFB18
 	.4byte	.LFB19
 	.4byte	.LFE19-.LFB19
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB13
-	.4byte	.LFE13
-	.4byte	.LFB14
-	.4byte	.LFE14
-	.4byte	.LFB15
-	.4byte	.LFE15
-	.4byte	.LFB16
-	.4byte	.LFE16
 	.4byte	.LFB17
 	.4byte	.LFE17
 	.4byte	.LFB18
 	.4byte	.LFE18
 	.4byte	.LFB19
 	.4byte	.LFE19
+	.4byte	.LFB20
+	.4byte	.LFE20
+	.4byte	.LFB21
+	.4byte	.LFE21
+	.4byte	.LFB22
+	.4byte	.LFE22
+	.4byte	.LFB23
+	.4byte	.LFE23
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -1957,9 +1957,9 @@ esp_apptrace_rb_write_size_get:
 	.string	"esp_apptrace_lock_give"
 .LASF31:
 	.string	"state"
-.LASF18:
-	.string	"count"
 .LASF19:
+	.string	"count"
+.LASF20:
 	.string	"portMUX_TYPE"
 .LASF22:
 	.string	"start"
@@ -1995,13 +1995,13 @@ esp_apptrace_rb_write_size_get:
 	.string	"C:/esp/esp-idf/components/app_trace/app_trace_util.c"
 .LASF25:
 	.string	"int_state"
-.LASF20:
-	.string	"esp_err_t"
+.LASF48:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\app_trace"
 .LASF26:
 	.string	"esp_apptrace_lock_t"
 .LASF42:
 	.string	"xthal_get_ccount"
-.LASF17:
+.LASF18:
 	.string	"owner"
 .LASF0:
 	.string	"unsigned int"
@@ -2017,8 +2017,8 @@ esp_apptrace_rb_write_size_get:
 	.string	"elapsed"
 .LASF40:
 	.string	"esp_apptrace_rb_read_size_get"
-.LASF48:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\app_trace"
+.LASF21:
+	.string	"esp_err_t"
 .LASF15:
 	.string	"int32_t"
 .LASF11:
@@ -2041,10 +2041,10 @@ esp_apptrace_rb_write_size_get:
 	.string	"lock"
 .LASF28:
 	.string	"size"
-.LASF21:
+.LASF17:
 	.string	"_Bool"
 .LASF38:
 	.string	"esp_apptrace_rb_produce"
 .LASF30:
 	.string	"esp_apptrace_rb_t"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

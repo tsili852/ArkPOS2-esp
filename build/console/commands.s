@@ -3880,6 +3880,8 @@ s_cmd_list:
 	.string	"__tm_hour"
 .LASF152:
 	.string	"buf_size"
+.LASF184:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\console"
 .LASF18:
 	.string	"__count"
 .LASF139:
@@ -4018,8 +4020,6 @@ s_cmd_list:
 	.string	"__tm_isdst"
 .LASF162:
 	.string	"s_cmd_list"
-.LASF184:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\console"
 .LASF134:
 	.string	"esp_console_cmd_t"
 .LASF145:
@@ -4180,4 +4180,4 @@ s_cmd_list:
 	.string	"_stderr"
 .LASF84:
 	.string	"_ubuf"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

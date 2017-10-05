@@ -1341,8 +1341,6 @@ esp_secure_boot_verify_signature:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF63:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bootloader_support"
 .LASF30:
 	.string	"version"
 .LASF35:
@@ -1363,6 +1361,8 @@ esp_secure_boot_verify_signature:
 	.string	"digest"
 .LASF11:
 	.string	"uint8_t"
+.LASF63:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bootloader_support"
 .LASF59:
 	.string	"esp_sha"
 .LASF41:
@@ -1473,4 +1473,4 @@ esp_secure_boot_verify_signature:
 	.string	"esp_err_t"
 .LASF58:
 	.string	"bootloader_mmap"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

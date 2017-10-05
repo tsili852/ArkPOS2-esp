@@ -23,7 +23,7 @@
 	.align	4
 	.type	spi_intr, @function
 spi_intr:
-.LFB22:
+.LFB23:
 	.file 1 "C:/esp/esp-idf/components/driver/spi_slave.c"
 	.loc 1 277 0
 .LVL0:
@@ -587,12 +587,12 @@ spi_intr:
 .LVL38:
 .L1:
 	retw.n
-.LFE22:
+.LFE23:
 	.size	spi_intr, .-spi_intr
 	.align	4
 	.type	spi_slave_restart_after_dmareset, @function
 spi_slave_restart_after_dmareset:
-.LFB21:
+.LFB22:
 	.loc 1 268 0 is_stmt 1
 .LVL39:
 	entry	sp, 32
@@ -603,7 +603,7 @@ spi_slave_restart_after_dmareset:
 	call8	esp_intr_enable
 .LVL41:
 	retw.n
-.LFE21:
+.LFE22:
 	.size	spi_slave_restart_after_dmareset, .-spi_slave_restart_after_dmareset
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -620,7 +620,7 @@ spi_slave_restart_after_dmareset:
 	.string	"host already in use"
 	.section	.text.spi_slave_initialize,"ax",@progbits
 	.literal_position
-	.literal .LC17, __FUNCTION__$6166
+	.literal .LC17, __FUNCTION__$6173
 	.literal .LC19, .LC18
 	.literal .LC21, .LC20
 	.literal .LC23, .LC22
@@ -644,7 +644,7 @@ spi_slave_restart_after_dmareset:
 	.global	spi_slave_initialize
 	.type	spi_slave_initialize, @function
 spi_slave_initialize:
-.LFB16:
+.LFB17:
 	.loc 1 70 0
 .LVL42:
 	entry	sp, 64
@@ -1292,7 +1292,7 @@ spi_slave_initialize:
 .LVL91:
 	.loc 1 183 0
 	retw.n
-.LFE16:
+.LFE17:
 	.size	spi_slave_initialize, .-spi_slave_initialize
 	.section	.rodata.str1.4
 	.align	4
@@ -1300,7 +1300,7 @@ spi_slave_initialize:
 	.string	"host not slave"
 	.section	.text.spi_slave_free,"ax",@progbits
 	.literal_position
-	.literal .LC41, __FUNCTION__$6173
+	.literal .LC41, __FUNCTION__$6180
 	.literal .LC42, .LC18
 	.literal .LC43, .LC20
 	.literal .LC44, .LC22
@@ -1310,7 +1310,7 @@ spi_slave_initialize:
 	.global	spi_slave_free
 	.type	spi_slave_free, @function
 spi_slave_free:
-.LFB17:
+.LFB18:
 	.loc 1 186 0
 .LVL92:
 	entry	sp, 48
@@ -1410,7 +1410,7 @@ spi_slave_free:
 .LVL107:
 	.loc 1 198 0
 	retw.n
-.LFE17:
+.LFE18:
 	.size	spi_slave_free, .-spi_slave_free
 	.section	.rodata.str1.4
 	.align	4
@@ -1424,7 +1424,7 @@ spi_slave_free:
 	.string	"data transfer > host maximum"
 	.section	.text.spi_slave_queue_trans,"ax",@progbits
 	.literal_position
-	.literal .LC48, __FUNCTION__$6180
+	.literal .LC48, __FUNCTION__$6187
 	.literal .LC49, .LC18
 	.literal .LC50, .LC20
 	.literal .LC51, .LC22
@@ -1439,7 +1439,7 @@ spi_slave_free:
 	.global	spi_slave_queue_trans
 	.type	spi_slave_queue_trans, @function
 spi_slave_queue_trans:
-.LFB18:
+.LFB19:
 	.loc 1 202 0
 .LVL108:
 	entry	sp, 64
@@ -1504,7 +1504,7 @@ spi_slave_queue_trans:
 .LBB17:
 .LBB18:
 	.file 2 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
-	.loc 2 63 0 is_stmt 1 discriminator 2
+	.loc 2 65 0 is_stmt 1 discriminator 2
 	l32r	a10, .LC54
 	add.n	a10, a11, a10
 .LBE18:
@@ -1543,7 +1543,7 @@ spi_slave_queue_trans:
 .LVL123:
 .LBB19:
 .LBB20:
-	.loc 2 63 0 is_stmt 1 discriminator 2
+	.loc 2 65 0 is_stmt 1 discriminator 2
 	l32r	a9, .LC54
 	add.n	a9, a10, a9
 .LBE20:
@@ -1628,11 +1628,11 @@ spi_slave_queue_trans:
 .LVL139:
 	.loc 1 216 0
 	retw.n
-.LFE18:
+.LFE19:
 	.size	spi_slave_queue_trans, .-spi_slave_queue_trans
 	.section	.text.spi_slave_get_trans_result,"ax",@progbits
 	.literal_position
-	.literal .LC62, __FUNCTION__$6187
+	.literal .LC62, __FUNCTION__$6194
 	.literal .LC63, .LC18
 	.literal .LC64, .LC20
 	.literal .LC65, .LC22
@@ -1642,7 +1642,7 @@ spi_slave_queue_trans:
 	.global	spi_slave_get_trans_result
 	.type	spi_slave_get_trans_result, @function
 spi_slave_get_trans_result:
-.LFB19:
+.LFB20:
 	.loc 1 220 0
 .LVL140:
 	entry	sp, 48
@@ -1710,7 +1710,7 @@ spi_slave_get_trans_result:
 	movi.n	a2, 0
 	.loc 1 227 0
 	retw.n
-.LFE19:
+.LFE20:
 	.size	spi_slave_get_trans_result, .-spi_slave_get_trans_result
 	.section	.rodata.str1.4
 	.align	4
@@ -1722,13 +1722,13 @@ spi_slave_get_trans_result:
 	.section	.text.spi_slave_transmit,"ax",@progbits
 	.literal_position
 	.literal .LC69, .LC68
-	.literal .LC70, __func__$6195
+	.literal .LC70, __func__$6202
 	.literal .LC72, .LC71
 	.align	4
 	.global	spi_slave_transmit
 	.type	spi_slave_transmit, @function
 spi_slave_transmit:
-.LFB20:
+.LFB21:
 	.loc 1 231 0
 .LVL149:
 	entry	sp, 48
@@ -1778,37 +1778,37 @@ spi_slave_transmit:
 	movi.n	a2, 0
 	.loc 1 241 0
 	retw.n
-.LFE20:
+.LFE21:
 	.size	spi_slave_transmit, .-spi_slave_transmit
-	.section	.rodata.__func__$6195,"a",@progbits
+	.section	.rodata.__func__$6202,"a",@progbits
 	.align	4
-	.type	__func__$6195, @object
-	.size	__func__$6195, 19
-__func__$6195:
+	.type	__func__$6202, @object
+	.size	__func__$6202, 19
+__func__$6202:
 	.string	"spi_slave_transmit"
+	.section	.rodata.__FUNCTION__$6194,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6194, @object
+	.size	__FUNCTION__$6194, 27
+__FUNCTION__$6194:
+	.string	"spi_slave_get_trans_result"
 	.section	.rodata.__FUNCTION__$6187,"a",@progbits
 	.align	4
 	.type	__FUNCTION__$6187, @object
-	.size	__FUNCTION__$6187, 27
+	.size	__FUNCTION__$6187, 22
 __FUNCTION__$6187:
-	.string	"spi_slave_get_trans_result"
+	.string	"spi_slave_queue_trans"
 	.section	.rodata.__FUNCTION__$6180,"a",@progbits
 	.align	4
 	.type	__FUNCTION__$6180, @object
-	.size	__FUNCTION__$6180, 22
+	.size	__FUNCTION__$6180, 15
 __FUNCTION__$6180:
-	.string	"spi_slave_queue_trans"
+	.string	"spi_slave_free"
 	.section	.rodata.__FUNCTION__$6173,"a",@progbits
 	.align	4
 	.type	__FUNCTION__$6173, @object
-	.size	__FUNCTION__$6173, 15
+	.size	__FUNCTION__$6173, 21
 __FUNCTION__$6173:
-	.string	"spi_slave_free"
-	.section	.rodata.__FUNCTION__$6166,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$6166, @object
-	.size	__FUNCTION__$6166, 21
-__FUNCTION__$6166:
 	.string	"spi_slave_initialize"
 	.section	.bss.spihost,"aw",@nobits
 	.align	4
@@ -1835,10 +1835,10 @@ spihost:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI0-.LFB22
+	.4byte	.LCFI0-.LFB23
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1847,10 +1847,10 @@ spihost:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI1-.LFB21
+	.4byte	.LCFI1-.LFB22
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1859,10 +1859,10 @@ spihost:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI2-.LFB16
+	.4byte	.LCFI2-.LFB17
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -1871,10 +1871,10 @@ spihost:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI3-.LFB17
+	.4byte	.LCFI3-.LFB18
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1883,10 +1883,10 @@ spihost:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI4-.LFB18
+	.4byte	.LCFI4-.LFB19
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -1895,10 +1895,10 @@ spihost:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI5-.LFB19
+	.4byte	.LCFI5-.LFB20
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1907,10 +1907,10 @@ spihost:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI6-.LFB20
+	.4byte	.LCFI6-.LFB21
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -6794,20 +6794,20 @@ spihost:
 	.byte	0x9
 	.byte	0x3d
 	.4byte	0x242e
-	.uleb128 0x3
-	.4byte	.LASF479
-	.byte	0xa
-	.byte	0x6c
-	.4byte	0x25
-	.uleb128 0x3
-	.4byte	.LASF480
-	.byte	0xa
-	.byte	0x73
-	.4byte	0xd3
 	.uleb128 0x4
 	.byte	0x1
 	.byte	0x2
+	.4byte	.LASF479
+	.uleb128 0x3
+	.4byte	.LASF480
+	.byte	0xa
+	.byte	0x6f
+	.4byte	0x25
+	.uleb128 0x3
 	.4byte	.LASF481
+	.byte	0xa
+	.byte	0x76
+	.4byte	0xd3
 	.uleb128 0x3
 	.4byte	.LASF482
 	.byte	0xb
@@ -7026,7 +7026,7 @@ spihost:
 	.4byte	.LASF513
 	.byte	0x1
 	.byte	0x3a
-	.4byte	0x24a0
+	.4byte	0x248a
 	.byte	0x2c
 	.uleb128 0x16
 	.4byte	.LASF477
@@ -7064,22 +7064,22 @@ spihost:
 	.uleb128 0x25
 	.4byte	.LASF576
 	.byte	0x2
-	.byte	0x3d
-	.4byte	0x24a0
+	.byte	0x3f
+	.4byte	0x248a
 	.byte	0x3
 	.4byte	0x26bc
 	.uleb128 0x26
 	.string	"p"
 	.byte	0x2
-	.byte	0x3d
+	.byte	0x3f
 	.4byte	0xe9
 	.byte	0
 	.uleb128 0x27
 	.4byte	.LASF523
 	.byte	0x1
 	.2byte	0x114
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x28c8
@@ -7093,13 +7093,13 @@ spihost:
 	.string	"r"
 	.byte	0x1
 	.2byte	0x116
-	.4byte	0x248a
+	.4byte	0x2491
 	.4byte	.LLST1
 	.uleb128 0x2a
 	.4byte	.LASF518
 	.byte	0x1
 	.2byte	0x117
-	.4byte	0x248a
+	.4byte	0x2491
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 -48
@@ -7351,8 +7351,8 @@ spihost:
 	.4byte	.LASF524
 	.byte	0x1
 	.2byte	0x10b
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x291b
@@ -7379,8 +7379,8 @@ spihost:
 	.byte	0x1
 	.byte	0x45
 	.4byte	0xf0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2c08
@@ -7412,7 +7412,7 @@ spihost:
 	.4byte	.LASF527
 	.byte	0x1
 	.byte	0x47
-	.4byte	0x24a0
+	.4byte	0x248a
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 -48
@@ -7420,14 +7420,14 @@ spihost:
 	.4byte	.LASF528
 	.byte	0x1
 	.byte	0x47
-	.4byte	0x24a0
+	.4byte	0x248a
 	.4byte	.LLST12
 	.uleb128 0x3b
 	.4byte	.LASF529
 	.4byte	0x2c2e
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6166
+	.4byte	__FUNCTION__$6173
 	.uleb128 0x3c
 	.4byte	.LASF577
 	.byte	0x1
@@ -7437,7 +7437,7 @@ spihost:
 	.4byte	.LASF530
 	.byte	0x1
 	.byte	0x7e
-	.4byte	0x24a0
+	.4byte	0x248a
 	.4byte	.LLST13
 	.uleb128 0x32
 	.4byte	.LBB16
@@ -7516,7 +7516,7 @@ spihost:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6166
+	.4byte	__FUNCTION__$6173
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -7578,7 +7578,7 @@ spihost:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6166
+	.4byte	__FUNCTION__$6173
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -7816,8 +7816,8 @@ spihost:
 	.byte	0x1
 	.byte	0xb9
 	.4byte	0xf0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2d4a
@@ -7832,7 +7832,7 @@ spihost:
 	.4byte	0x2d5a
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6173
+	.4byte	__FUNCTION__$6180
 	.uleb128 0x35
 	.4byte	.LVL93
 	.4byte	0x32b4
@@ -7868,7 +7868,7 @@ spihost:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6173
+	.4byte	__FUNCTION__$6180
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -7919,7 +7919,7 @@ spihost:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6173
+	.4byte	__FUNCTION__$6180
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -7975,8 +7975,8 @@ spihost:
 	.byte	0x1
 	.byte	0xc9
 	.4byte	0xf0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2fb7
@@ -7997,20 +7997,20 @@ spihost:
 	.4byte	.LASF536
 	.byte	0x1
 	.byte	0xc9
-	.4byte	0x2495
+	.4byte	0x249c
 	.4byte	.LLST17
 	.uleb128 0x3e
 	.string	"r"
 	.byte	0x1
 	.byte	0xcb
-	.4byte	0x248a
+	.4byte	0x2491
 	.4byte	.LLST18
 	.uleb128 0x3b
 	.4byte	.LASF529
 	.4byte	0x2fd2
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6180
+	.4byte	__FUNCTION__$6187
 	.uleb128 0x3f
 	.4byte	0x26a2
 	.4byte	.LBB17
@@ -8068,7 +8068,7 @@ spihost:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6180
+	.4byte	__FUNCTION__$6187
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -8119,7 +8119,7 @@ spihost:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6180
+	.4byte	__FUNCTION__$6187
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -8170,7 +8170,7 @@ spihost:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6180
+	.4byte	__FUNCTION__$6187
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -8221,7 +8221,7 @@ spihost:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6180
+	.4byte	__FUNCTION__$6187
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -8272,7 +8272,7 @@ spihost:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6180
+	.4byte	__FUNCTION__$6187
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -8333,8 +8333,8 @@ spihost:
 	.byte	0x1
 	.byte	0xdb
 	.4byte	0xf0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x30f1
@@ -8355,14 +8355,14 @@ spihost:
 	.4byte	.LASF536
 	.byte	0x1
 	.byte	0xdb
-	.4byte	0x2495
+	.4byte	0x249c
 	.uleb128 0x1
 	.byte	0x54
 	.uleb128 0x41
 	.string	"r"
 	.byte	0x1
 	.byte	0xdd
-	.4byte	0x248a
+	.4byte	0x2491
 	.uleb128 0x1
 	.byte	0x5a
 	.uleb128 0x3b
@@ -8370,7 +8370,7 @@ spihost:
 	.4byte	0x3107
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6187
+	.4byte	__FUNCTION__$6194
 	.uleb128 0x35
 	.4byte	.LVL141
 	.4byte	0x32b4
@@ -8406,7 +8406,7 @@ spihost:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6187
+	.4byte	__FUNCTION__$6194
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -8457,7 +8457,7 @@ spihost:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6187
+	.4byte	__FUNCTION__$6194
 	.uleb128 0x31
 	.uleb128 0x2
 	.byte	0x71
@@ -8512,8 +8512,8 @@ spihost:
 	.byte	0x1
 	.byte	0xe6
 	.4byte	0xf0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x31e6
@@ -8534,7 +8534,7 @@ spihost:
 	.4byte	.LASF536
 	.byte	0x1
 	.byte	0xe6
-	.4byte	0x2495
+	.4byte	0x249c
 	.uleb128 0x1
 	.byte	0x54
 	.uleb128 0x3e
@@ -8556,7 +8556,7 @@ spihost:
 	.4byte	0x31f6
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6195
+	.4byte	__func__$6202
 	.uleb128 0x34
 	.4byte	.LVL150
 	.4byte	0x2d5f
@@ -8623,7 +8623,7 @@ spihost:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6195
+	.4byte	__func__$6202
 	.uleb128 0x31
 	.uleb128 0x1
 	.byte	0x5d
@@ -8697,7 +8697,7 @@ spihost:
 	.4byte	.LASF548
 	.4byte	.LASF548
 	.byte	0xa
-	.2byte	0x11a
+	.2byte	0x129
 	.uleb128 0x44
 	.4byte	.LASF549
 	.4byte	.LASF549
@@ -8722,7 +8722,7 @@ spihost:
 	.4byte	.LASF553
 	.4byte	.LASF553
 	.byte	0x10
-	.byte	0x32
+	.byte	0x33
 	.uleb128 0x43
 	.4byte	.LASF554
 	.4byte	.LASF554
@@ -9724,7 +9724,7 @@ spihost:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL36
-	.4byte	.LFE22
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9760,7 +9760,7 @@ spihost:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL36
-	.4byte	.LFE22
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9861,7 +9861,7 @@ spihost:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL91
-	.4byte	.LFE16
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9886,7 +9886,7 @@ spihost:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL67
-	.4byte	.LFE16
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9944,7 +9944,7 @@ spihost:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL86
-	.4byte	.LFE16
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9974,7 +9974,7 @@ spihost:
 	.2byte	0x1
 	.byte	0x55
 	.4byte	.LVL68
-	.4byte	.LFE16
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10035,7 +10035,7 @@ spihost:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL107
-	.4byte	.LFE17
+	.4byte	.LFE18
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10115,7 +10115,7 @@ spihost:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL139
-	.4byte	.LFE18
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10136,7 +10136,7 @@ spihost:
 	.byte	0x54
 	.byte	0x9f
 	.4byte	.LVL138
-	.4byte	.LFE18
+	.4byte	.LFE19
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -10147,7 +10147,7 @@ spihost:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL138
-	.4byte	.LFE18
+	.4byte	.LFE19
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -10199,7 +10199,7 @@ spihost:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL145
-	.4byte	.LFE19
+	.4byte	.LFE20
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10235,7 +10235,7 @@ spihost:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL158
-	.4byte	.LFE20
+	.4byte	.LFE21
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10253,7 +10253,7 @@ spihost:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL155
-	.4byte	.LFE20
+	.4byte	.LFE21
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -10266,12 +10266,10 @@ spihost:
 	.byte	0
 	.2byte	0
 	.2byte	0
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.4byte	.LFB22
 	.4byte	.LFE22-.LFB22
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
 	.4byte	.LFB17
 	.4byte	.LFE17-.LFB17
 	.4byte	.LFB18
@@ -10280,6 +10278,8 @@ spihost:
 	.4byte	.LFE19-.LFB19
 	.4byte	.LFB20
 	.4byte	.LFE20-.LFB20
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
@@ -10296,12 +10296,10 @@ spihost:
 	.4byte	.LBE12
 	.4byte	0
 	.4byte	0
+	.4byte	.LFB23
+	.4byte	.LFE23
 	.4byte	.LFB22
 	.4byte	.LFE22
-	.4byte	.LFB21
-	.4byte	.LFE21
-	.4byte	.LFB16
-	.4byte	.LFE16
 	.4byte	.LFB17
 	.4byte	.LFE17
 	.4byte	.LFB18
@@ -10310,6 +10308,8 @@ spihost:
 	.4byte	.LFE19
 	.4byte	.LFB20
 	.4byte	.LFE20
+	.4byte	.LFB21
+	.4byte	.LFE21
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -10317,8 +10317,6 @@ spihost:
 	.section	.debug_str,"MS",@progbits,1
 .LASF108:
 	.string	"cs2_dis"
-.LASF575:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF60:
 	.string	"miso_delay_mode"
 .LASF197:
@@ -10385,7 +10383,7 @@ spihost:
 	.string	"__func__"
 .LASF393:
 	.string	"reserved_2f4"
-.LASF479:
+.LASF480:
 	.string	"BaseType_t"
 .LASF424:
 	.string	"reserved_370"
@@ -10537,6 +10535,8 @@ spihost:
 	.string	"fwrite_quad"
 .LASF527:
 	.string	"native"
+.LASF220:
+	.string	"date"
 .LASF327:
 	.string	"reserved_1ec"
 .LASF544:
@@ -10613,7 +10613,7 @@ spihost:
 	.string	"usr_mosi_highpart"
 .LASF189:
 	.string	"ahbm_fifo_rst"
-.LASF481:
+.LASF479:
 	.string	"_Bool"
 .LASF144:
 	.string	"status_readback"
@@ -11155,7 +11155,7 @@ spihost:
 	.string	"cs_keep_active"
 .LASF346:
 	.string	"reserved_238"
-.LASF480:
+.LASF481:
 	.string	"TickType_t"
 .LASF70:
 	.string	"clk_equ_sysclk"
@@ -11449,8 +11449,8 @@ spihost:
 	.string	"nodelay"
 .LASF522:
 	.string	"data"
-.LASF220:
-	.string	"date"
+.LASF575:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF51:
 	.string	"cs_hold_delay_res"
 .LASF84:
@@ -11471,4 +11471,4 @@ spihost:
 	.string	"reserved_358"
 .LASF549:
 	.string	"xQueueReceiveFromISR"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

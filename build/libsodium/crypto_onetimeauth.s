@@ -1249,6 +1249,8 @@ crypto_onetimeauth_keygen:
 	.string	"crypto_onetimeauth_state"
 .LASF15:
 	.string	"crypto_onetimeauth_bytes"
+.LASF33:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF27:
 	.string	"crypto_onetimeauth_poly1305_init"
 .LASF31:
@@ -1275,8 +1277,6 @@ crypto_onetimeauth_keygen:
 	.string	"randombytes_buf"
 .LASF29:
 	.string	"crypto_onetimeauth_poly1305_final"
-.LASF33:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF0:
 	.string	"unsigned int"
 .LASF19:
@@ -1305,4 +1305,4 @@ crypto_onetimeauth_keygen:
 	.string	"long int"
 .LASF2:
 	.string	"signed char"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

@@ -745,6 +745,8 @@ randombytes_esp32_implementation:
 	.string	"randombytes_implementation"
 .LASF29:
 	.string	"randombytes_esp32_implementation"
+.LASF25:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF17:
 	.string	"random"
 .LASF18:
@@ -763,8 +765,6 @@ randombytes_esp32_implementation:
 	.string	"short unsigned int"
 .LASF7:
 	.string	"__uint32_t"
-.LASF25:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF5:
 	.string	"unsigned char"
 .LASF0:
@@ -795,4 +795,4 @@ randombytes_esp32_implementation:
 	.string	"randombytes_esp32_random_buf"
 .LASF19:
 	.string	"uniform"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

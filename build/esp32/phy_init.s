@@ -4434,6 +4434,8 @@ phy_init_data:
 	.string	"spur_freq_cfg_msb_3"
 .LASF71:
 	.string	"gain_cmp_ext2_1"
+.LASF214:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF141:
 	.string	"reserved"
 .LASF144:
@@ -4630,8 +4632,6 @@ phy_init_data:
 	.string	"NVS_READONLY"
 .LASF76:
 	.string	"gain_cmp_ext3_11"
-.LASF214:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF18:
 	.string	"uint32_t"
 .LASF203:
@@ -4760,4 +4760,4 @@ phy_init_data:
 	.string	"bt_rx_gain_swp_step_8"
 .LASF61:
 	.string	"bt_rx_gain_swp_step_9"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/esp32/gdbstub.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\esp32//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\esp32//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/esp32/gdbstub.c"
@@ -139,7 +139,7 @@ typedef __uintptr_t uintptr_t;
 # 1 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 1
 # 19 "C:/esp/esp-idf/components/newlib/platform_include/assert.h"
        
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 2
 # 1 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 1
 # 10 "C:/esp/esp-idf/components/newlib/include/stdlib.h"

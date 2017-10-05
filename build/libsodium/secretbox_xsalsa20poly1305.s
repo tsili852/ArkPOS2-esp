@@ -1281,10 +1281,12 @@ crypto_secretbox_xsalsa20poly1305_keygen:
 	.string	"size_t"
 .LASF14:
 	.string	"clen"
-.LASF12:
-	.string	"crypto_secretbox_xsalsa20poly1305"
 .LASF11:
 	.string	"mlen"
+.LASF12:
+	.string	"crypto_secretbox_xsalsa20poly1305"
+.LASF28:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF26:
 	.string	"GNU C99 5.2.0 -mlongcalls -ggdb -Og -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields"
 .LASF2:
@@ -1303,8 +1305,6 @@ crypto_secretbox_xsalsa20poly1305_keygen:
 	.string	"crypto_stream_xsalsa20_xor"
 .LASF25:
 	.string	"randombytes_buf"
-.LASF28:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF13:
 	.string	"crypto_secretbox_xsalsa20poly1305_open"
 .LASF5:
@@ -1337,4 +1337,4 @@ crypto_secretbox_xsalsa20poly1305_keygen:
 	.string	"C:/esp/esp-idf/components/libsodium/libsodium/src/libsodium/crypto_secretbox/xsalsa20poly1305/secretbox_xsalsa20poly1305.c"
 .LASF16:
 	.string	"crypto_secretbox_xsalsa20poly1305_keybytes"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

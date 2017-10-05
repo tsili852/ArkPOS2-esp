@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/bootloader_support/src/secure_boot.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\bootloader_support//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\bootloader_support//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/bootloader_support/src/secure_boot.c"
@@ -634,7 +634,7 @@ typedef __builtin_va_list __gnuc_va_list;
 # 98 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 3 4
 typedef __gnuc_va_list va_list;
 # 20 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h" 1
 # 21 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h"
@@ -645,7 +645,7 @@ typedef __gnuc_va_list va_list;
 # 1 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 1
 # 19 "C:/esp/esp-idf/components/newlib/platform_include/assert.h"
        
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 2
 # 1 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 1
 # 10 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
@@ -1086,7 +1086,7 @@ void esp_log_buffer_hexdump_internal( const char *tag, const void *buffer, uint1
 # 20 "C:/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h"
 # 1 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h" 1
 # 15 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 16 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h" 2
 # 24 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h"
 void esp_dport_access_stall_other_cpu_start(void);
@@ -1245,7 +1245,7 @@ static inline void __attribute__ ((deprecated)) PIN_PULLDWN_EN(uint32_t PIN_NAME
 # 1 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h" 1
 # 29 "C:/esp/esp-idf/components/bootloader_support/src/secure_boot.c" 2
 
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 31 "C:/esp/esp-idf/components/bootloader_support/src/secure_boot.c" 2
 
 # 1 "C:/esp/esp-idf/components/bootloader_support/include_priv/bootloader_flash.h" 1
@@ -1845,7 +1845,7 @@ void _esp_error_check_failed(esp_err_t rc, const char *file, int line, const cha
 # 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
 # 21 "C:/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h" 2
 
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 23 "C:/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h" 2
 # 45 "C:/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h"
 void spi_flash_init();

@@ -6,7 +6,7 @@ esp32/cpu_util.o: C:/esp/esp-idf/components/soc/esp32/cpu_util.c \
  C:/esp/esp-idf/components/esp32/include/esp_assert.h \
  C:/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h \
  C:/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
- c:\esp\arkpos2-esp\build\include\sdkconfig.h
+ c:\esp\esp32-arkpos2\arkpos2-esp\build\include\sdkconfig.h
 
 C:/esp/esp-idf/components/esp32/include/esp_attr.h:
 
@@ -22,5 +22,5 @@ C:/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h:
 
 C:/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 
-c:\esp\arkpos2-esp\build\include\sdkconfig.h:
+c:\esp\esp32-arkpos2\arkpos2-esp\build\include\sdkconfig.h:
 /c/esp/esp-idf/components/soc/esp32/cpu_util.c:

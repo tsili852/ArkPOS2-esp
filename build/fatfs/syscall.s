@@ -6,7 +6,7 @@
 	.global	ff_cre_syncobj
 	.type	ff_cre_syncobj, @function
 ff_cre_syncobj:
-.LFB9:
+.LFB13:
 	.file 1 "C:/esp/esp-idf/components/fatfs/src/option/syscall.c"
 	.loc 1 23 0
 .LVL0:
@@ -24,14 +24,14 @@ ff_cre_syncobj:
 	movnez	a2, a8, a10
 	.loc 1 26 0
 	retw.n
-.LFE9:
+.LFE13:
 	.size	ff_cre_syncobj, .-ff_cre_syncobj
 	.section	.text.ff_del_syncobj,"ax",@progbits
 	.align	4
 	.global	ff_del_syncobj
 	.type	ff_del_syncobj, @function
 ff_del_syncobj:
-.LFB10:
+.LFB14:
 	.loc 1 41 0
 .LVL3:
 	entry	sp, 32
@@ -44,14 +44,14 @@ ff_del_syncobj:
 	movi.n	a2, 1
 .LVL5:
 	retw.n
-.LFE10:
+.LFE14:
 	.size	ff_del_syncobj, .-ff_del_syncobj
 	.section	.text.ff_req_grant,"ax",@progbits
 	.align	4
 	.global	ff_req_grant
 	.type	ff_req_grant, @function
 ff_req_grant:
-.LFB11:
+.LFB15:
 	.loc 1 58 0
 .LVL6:
 	entry	sp, 32
@@ -71,14 +71,14 @@ ff_req_grant:
 	moveqz	a2, a8, a10
 	.loc 1 60 0
 	retw.n
-.LFE11:
+.LFE15:
 	.size	ff_req_grant, .-ff_req_grant
 	.section	.text.ff_rel_grant,"ax",@progbits
 	.align	4
 	.global	ff_rel_grant
 	.type	ff_rel_grant, @function
 ff_rel_grant:
-.LFB12:
+.LFB16:
 	.loc 1 73 0
 .LVL9:
 	entry	sp, 32
@@ -91,7 +91,7 @@ ff_rel_grant:
 	call8	xQueueGenericSend
 .LVL10:
 	retw.n
-.LFE12:
+.LFE16:
 	.size	ff_rel_grant, .-ff_rel_grant
 	.section	.debug_frame,"",@progbits
 .Lframe0:
@@ -112,10 +112,10 @@ ff_rel_grant:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x4
-	.4byte	.LCFI0-.LFB9
+	.4byte	.LCFI0-.LFB13
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -124,10 +124,10 @@ ff_rel_grant:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI1-.LFB10
+	.4byte	.LCFI1-.LFB14
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -136,10 +136,10 @@ ff_rel_grant:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI2-.LFB11
+	.4byte	.LCFI2-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -148,10 +148,10 @@ ff_rel_grant:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI3-.LFB12
+	.4byte	.LCFI3-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -253,20 +253,20 @@ ff_rel_grant:
 	.byte	0x4
 	.byte	0x2d
 	.4byte	0x7a
-	.uleb128 0x4
-	.4byte	.LASF16
-	.byte	0x5
-	.byte	0x6c
-	.4byte	0x25
-	.uleb128 0x4
-	.4byte	.LASF17
-	.byte	0x5
-	.byte	0x73
-	.4byte	0xa7
 	.uleb128 0x3
 	.byte	0x1
 	.byte	0x2
+	.4byte	.LASF16
+	.uleb128 0x4
+	.4byte	.LASF17
+	.byte	0x5
+	.byte	0x6f
+	.4byte	0x25
+	.uleb128 0x4
 	.4byte	.LASF18
+	.byte	0x5
+	.byte	0x76
+	.4byte	0xa7
 	.uleb128 0x4
 	.4byte	.LASF19
 	.byte	0x6
@@ -282,8 +282,8 @@ ff_rel_grant:
 	.byte	0x1
 	.byte	0x13
 	.4byte	0x25
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x12a
@@ -318,8 +318,8 @@ ff_rel_grant:
 	.byte	0x1
 	.byte	0x26
 	.4byte	0x25
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x169
@@ -345,8 +345,8 @@ ff_rel_grant:
 	.byte	0x1
 	.byte	0x37
 	.4byte	0x25
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1b3
@@ -387,8 +387,8 @@ ff_rel_grant:
 	.4byte	.LASF32
 	.byte	0x1
 	.byte	0x46
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1f5
@@ -659,7 +659,7 @@ ff_rel_grant:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL2
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -673,7 +673,7 @@ ff_rel_grant:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL5
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -687,7 +687,7 @@ ff_rel_grant:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL8
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -703,36 +703,34 @@ ff_rel_grant:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB9
-	.4byte	.LFE9
-	.4byte	.LFB10
-	.4byte	.LFE10
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB12
-	.4byte	.LFE12
+	.4byte	.LFB13
+	.4byte	.LFE13
+	.4byte	.LFB14
+	.4byte	.LFE14
+	.4byte	.LFB15
+	.4byte	.LFE15
+	.4byte	.LFB16
+	.4byte	.LFE16
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF11:
-	.string	"long long int"
 .LASF9:
 	.string	"__uint8_t"
-.LASF17:
+.LASF18:
 	.string	"TickType_t"
 .LASF23:
 	.string	"ff_del_syncobj"
@@ -756,6 +754,8 @@ ff_rel_grant:
 	.string	"xQueueGenericReceive"
 .LASF3:
 	.string	"short unsigned int"
+.LASF31:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\fatfs"
 .LASF20:
 	.string	"SemaphoreHandle_t"
 .LASF10:
@@ -770,8 +770,8 @@ ff_rel_grant:
 	.string	"ff_req_grant"
 .LASF12:
 	.string	"sizetype"
-.LASF31:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\fatfs"
+.LASF11:
+	.string	"long long int"
 .LASF21:
 	.string	"sobj"
 .LASF28:
@@ -788,10 +788,10 @@ ff_rel_grant:
 	.string	"xQueueCreateMutex"
 .LASF7:
 	.string	"signed char"
-.LASF18:
-	.string	"_Bool"
 .LASF16:
+	.string	"_Bool"
+.LASF17:
 	.string	"BaseType_t"
 .LASF30:
 	.string	"C:/esp/esp-idf/components/fatfs/src/option/syscall.c"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

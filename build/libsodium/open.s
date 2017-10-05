@@ -2696,4 +2696,4 @@ L$2615:
 	.string	"crypto_core_curve25519_ref10_ge_frombytes_negate_vartime"
 .LASF35:
 	.string	"rcheck"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

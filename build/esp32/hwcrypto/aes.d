@@ -16,7 +16,7 @@ hwcrypto/aes.o: C:/esp/esp-idf/components/esp32/hwcrypto/aes.c \
  C:/esp/esp-idf/components/newlib/include/sys/string.h \
  C:/esp/esp-idf/components/mbedtls/include/mbedtls/aes.h \
  C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/mbedtls/include/mbedtls/check_config.h \
  C:/esp/esp-idf/components/newlib/include/limits.h \
  C:/esp/esp-idf/components/newlib/include/stdint.h \
@@ -60,6 +60,9 @@ hwcrypto/aes.o: C:/esp/esp-idf/components/esp32/hwcrypto/aes.c \
  C:/esp/esp-idf/components/esp32/include/xtensa/config/specreg.h \
  C:/esp/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h \
  C:/esp/esp-idf/components/esp32/include/esp_crosscore_int.h \
+ C:/esp/esp-idf/components/heap/include/esp_heap_caps.h \
+ C:/esp/esp-idf/components/heap/include/multi_heap.h \
+ C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h \
  C:/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h \
  C:/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  C:/esp/esp-idf/components/esp32/include/esp_system.h \
@@ -119,7 +122,7 @@ C:/esp/esp-idf/components/mbedtls/include/mbedtls/aes.h:
 
 C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/mbedtls/include/mbedtls/check_config.h:
 
@@ -206,6 +209,12 @@ C:/esp/esp-idf/components/esp32/include/xtensa/config/specreg.h:
 C:/esp/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h:
 
 C:/esp/esp-idf/components/esp32/include/esp_crosscore_int.h:
+
+C:/esp/esp-idf/components/heap/include/esp_heap_caps.h:
+
+C:/esp/esp-idf/components/heap/include/multi_heap.h:
+
+C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h:
 
 C:/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h:
 

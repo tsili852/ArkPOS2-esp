@@ -2105,13 +2105,13 @@ load_partition_table:
 	.section	.rodata.str1.4
 	.align	4
 .LC169:
-	.string	"v3.0-dev-753-g845c3fba"
+	.string	"v3.0-dev-782-ge6afe28b"
 	.align	4
 .LC172:
 	.string	"\033[0;32mI (%d) %s: ESP-IDF %s 2nd stage bootloader\033[0m\n"
 	.align	4
 .LC174:
-	.string	"\033[0;32mI (%d) %s: compile time 19:56:54\033[0m\n"
+	.string	"\033[0;32mI (%d) %s: compile time 09:22:25\033[0m\n"
 	.align	4
 .LC179:
 	.string	"\033[0;32mI (%d) %s: Enabling RNG early entropy source...\033[0m\n"
@@ -2356,7 +2356,7 @@ __assert_func:
 	.literal .LC193, _bss_start
 	.literal .LC194, _bss_end
 	.literal .LC196, .LC195
-	.literal .LC197, __func__$3747
+	.literal .LC197, __func__$3777
 	.literal .LC199, .LC198
 	.literal .LC200, _data_start
 	.literal .LC201, _data_end
@@ -2620,11 +2620,11 @@ call_start_cpu0:
 	retw.n
 .LFE19:
 	.size	call_start_cpu0, .-call_start_cpu0
-	.section	.rodata.__func__$3747,"a",@progbits
+	.section	.rodata.__func__$3777,"a",@progbits
 	.align	4
-	.type	__func__$3747, @object
-	.size	__func__$3747, 16
-__func__$3747:
+	.type	__func__$3777, @object
+	.size	__func__$3777, 16
+__func__$3777:
 	.string	"call_start_cpu0"
 	.comm	esp_image_spi_freq_t,4,4
 	.section	.debug_frame,"",@progbits
@@ -7113,7 +7113,7 @@ __func__$3747:
 	.4byte	0x2529
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$3747
+	.4byte	__func__$3777
 	.uleb128 0x4a
 	.4byte	0x210c
 	.4byte	.LBB201
@@ -7262,7 +7262,7 @@ __func__$3747:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$3747
+	.4byte	__func__$3777
 	.uleb128 0x2e
 	.uleb128 0x1
 	.byte	0x5d
@@ -7291,7 +7291,7 @@ __func__$3747:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$3747
+	.4byte	__func__$3777
 	.uleb128 0x2e
 	.uleb128 0x1
 	.byte	0x5d
@@ -7320,7 +7320,7 @@ __func__$3747:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$3747
+	.4byte	__func__$3777
 	.uleb128 0x2e
 	.uleb128 0x1
 	.byte	0x5d
@@ -7348,7 +7348,7 @@ __func__$3747:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$3747
+	.4byte	__func__$3777
 	.uleb128 0x2e
 	.uleb128 0x1
 	.byte	0x5d
@@ -10779,8 +10779,6 @@ __func__$3747:
 	.string	"RTC_SLOW_FREQ_8MD256"
 .LASF47:
 	.string	"RTCWDT_CPU_RESET"
-.LASF271:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\main"
 .LASF197:
 	.string	"get_selected_boot_partition"
 .LASF198:
@@ -11047,6 +11045,8 @@ __func__$3747:
 	.string	"RTCWDT_BROWN_OUT_RESET"
 .LASF203:
 	.string	"partition"
+.LASF271:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\main"
 .LASF220:
 	.string	"header"
 .LASF242:
@@ -11311,4 +11311,4 @@ __func__$3747:
 	.string	"ESP_LOG_ERROR"
 .LASF120:
 	.string	"segment_count"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

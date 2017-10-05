@@ -1,9 +1,9 @@
-# 1 "C:/esp/ArkPOS2-esp/main/iap.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\main//"
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\main//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/esp/ArkPOS2-esp/main/iap.c"
-# 9 "C:/esp/ArkPOS2-esp/main/iap.c"
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c"
+# 9 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c"
 # 1 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 1
 # 10 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
 # 1 "C:/esp/esp-idf/components/newlib/include/machine/ieeefp.h" 1
@@ -661,7 +661,7 @@ extern long double strtold (const char *restrict, char **restrict);
 
 
 
-# 10 "C:/esp/ArkPOS2-esp/main/iap.c" 2
+# 10 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c" 2
 # 1 "C:/esp/esp-idf/components/newlib/include/string.h" 1
 # 17 "C:/esp/esp-idf/components/newlib/include/string.h"
 # 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
@@ -782,7 +782,7 @@ char *strsignal (int __signo);
 # 164 "C:/esp/esp-idf/components/newlib/include/string.h" 2
 
 
-# 11 "C:/esp/ArkPOS2-esp/main/iap.c" 2
+# 11 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c" 2
 
 # 1 "C:/esp/esp-idf/components/app_update/include/esp_ota_ops.h" 1
 # 18 "C:/esp/esp-idf/components/app_update/include/esp_ota_ops.h"
@@ -1458,7 +1458,7 @@ FILE *_fopencookie_r (struct _reent *, void *__cookie, const char *__mode, cooki
 # 1 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 1
 # 19 "C:/esp/esp-idf/components/newlib/platform_include/assert.h"
        
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 2
 
 
@@ -1489,7 +1489,7 @@ void _esp_error_check_failed(esp_err_t rc, const char *file, int line, const cha
 # 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
 # 21 "C:/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h" 2
 
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 23 "C:/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h" 2
 # 45 "C:/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h"
 void spi_flash_init();
@@ -1692,7 +1692,7 @@ const esp_partition_t* esp_ota_get_boot_partition(void);
 const esp_partition_t* esp_ota_get_running_partition(void);
 # 172 "C:/esp/esp-idf/components/app_update/include/esp_ota_ops.h"
 const esp_partition_t* esp_ota_get_next_update_partition(const esp_partition_t *start_from);
-# 13 "C:/esp/ArkPOS2-esp/main/iap.c" 2
+# 13 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c" 2
 # 1 "C:/esp/esp-idf/components/log/include/esp_log.h" 1
 # 19 "C:/esp/esp-idf/components/log/include/esp_log.h"
 # 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 1 3 4
@@ -1701,7 +1701,7 @@ const esp_partition_t* esp_ota_get_next_update_partition(const esp_partition_t *
 # 98 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 3 4
 typedef __gnuc_va_list va_list;
 # 20 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h" 1
 # 21 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h"
@@ -1875,12 +1875,12 @@ void esp_log_buffer_hex_internal(const char *tag, const void *buffer, uint16_t b
 void esp_log_buffer_char_internal(const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t level);
 void esp_log_buffer_hexdump_internal( const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t log_level);
 # 99 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
-# 14 "C:/esp/ArkPOS2-esp/main/iap.c" 2
+# 14 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c" 2
 
-# 1 "C:/esp/ArkPOS2-esp/main/iap.h" 1
-# 31 "C:/esp/ArkPOS2-esp/main/iap.h"
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.h" 1
+# 31 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.h"
 typedef int32_t iap_err_t;
-# 45 "C:/esp/ArkPOS2-esp/main/iap.h"
+# 45 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.h"
 iap_err_t iap_init();
 
 
@@ -1897,8 +1897,8 @@ iap_err_t iap_commit();
 
 
 iap_err_t iap_abort();
-# 16 "C:/esp/ArkPOS2-esp/main/iap.c" 2
-# 32 "C:/esp/ArkPOS2-esp/main/iap.c"
+# 16 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c" 2
+# 32 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c"
 typedef struct iap_internal_state_
 {
 
@@ -2023,7 +2023,7 @@ iap_err_t iap_write(uint8_t *bytes, uint16_t len)
 
 
         if (iap_state.page_buffer_ix == 4096) {
-# 164 "C:/esp/ArkPOS2-esp/main/iap.c"
+# 164 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c"
             esp_err_t result = iap_write_page_buffer();
 
             if (result != 0) {
@@ -2105,9 +2105,9 @@ static iap_err_t iap_finish(int commit)
 
     free(iap_state.page_buffer);
     iap_state.page_buffer = 
-# 244 "C:/esp/ArkPOS2-esp/main/iap.c" 3 4
+# 244 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c" 3 4
                            ((void *)0)
-# 244 "C:/esp/ArkPOS2-esp/main/iap.c"
+# 244 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c"
                                ;
     iap_state.page_buffer_ix = 0;
     iap_state.cur_flash_address = 0;
@@ -2133,9 +2133,9 @@ static iap_err_t iap_finish(int commit)
 
     iap_state.ota_handle = 0;
     iap_state.partition_to_program = 
-# 268 "C:/esp/ArkPOS2-esp/main/iap.c" 3 4
+# 268 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c" 3 4
                                     ((void *)0)
-# 268 "C:/esp/ArkPOS2-esp/main/iap.c"
+# 268 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c"
                                         ;
     iap_state.module_state_flags = iap_state.module_state_flags & ~(1 << 1);
 
@@ -2150,9 +2150,9 @@ static const esp_partition_t *iap_find_next_boot_partition()
 
     const esp_partition_t *currentBootPartition = esp_ota_get_boot_partition();
     const esp_partition_t *nextBootPartition = 
-# 281 "C:/esp/ArkPOS2-esp/main/iap.c" 3 4
+# 281 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c" 3 4
                                               ((void *)0)
-# 281 "C:/esp/ArkPOS2-esp/main/iap.c"
+# 281 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c"
                                                   ;
 
     if (!strcmp("factory", currentBootPartition->label)) {

@@ -2314,8 +2314,6 @@ __FUNCTION__$3679:
 	.string	"GPIO_NUM_4"
 .LASF106:
 	.string	"gpio_set_direction"
-.LASF110:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF0:
 	.string	"__int8_t"
 .LASF18:
@@ -2388,6 +2386,8 @@ __FUNCTION__$3679:
 	.string	"C:/esp/esp-idf/components/driver/sigmadelta.c"
 .LASF75:
 	.string	"gpio_num_t"
+.LASF110:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF78:
 	.string	"GPIO_MODE_OUTPUT_OD"
 .LASF48:
@@ -2406,4 +2406,4 @@ __FUNCTION__$3679:
 	.string	"__uint8_t"
 .LASF87:
 	.string	"SIGMADELTA_CHANNEL_6"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

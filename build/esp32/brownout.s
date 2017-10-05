@@ -12,7 +12,7 @@
 	.align	4
 	.type	rtc_brownout_isr_handler, @function
 rtc_brownout_isr_handler:
-.LFB13:
+.LFB17:
 	.file 1 "C:/esp/esp-idf/components/esp32/brownout.c"
 	.loc 1 35 0
 	entry	sp, 32
@@ -48,7 +48,7 @@ rtc_brownout_isr_handler:
 	.loc 1 46 0
 	call8	esp_restart_noos
 .LVL3:
-.LFE13:
+.LFE17:
 	.size	rtc_brownout_isr_handler, .-rtc_brownout_isr_handler
 	.section	.rodata.str1.4
 	.align	4
@@ -63,14 +63,14 @@ rtc_brownout_isr_handler:
 	.literal .LC4, 1073905664
 	.literal .LC5, rtc_brownout_isr_handler
 	.literal .LC7, .LC6
-	.literal .LC8, __func__$4558
+	.literal .LC8, __func__$4662
 	.literal .LC10, .LC9
 	.literal .LC11, 1072988220
 	.align	4
 	.global	esp_brownout_init
 	.type	esp_brownout_init, @function
 esp_brownout_init:
-.LFB14:
+.LFB18:
 	.loc 1 50 0
 	entry	sp, 32
 .LCFI1:
@@ -107,13 +107,13 @@ esp_brownout_init:
 	memw
 	s32i.n	a8, a9, 0
 	retw.n
-.LFE14:
+.LFE18:
 	.size	esp_brownout_init, .-esp_brownout_init
-	.section	.rodata.__func__$4558,"a",@progbits
+	.section	.rodata.__func__$4662,"a",@progbits
 	.align	4
-	.type	__func__$4558, @object
-	.size	__func__$4558, 18
-__func__$4558:
+	.type	__func__$4662, @object
+	.size	__func__$4662, 18
+__func__$4662:
 	.string	"esp_brownout_init"
 	.section	.debug_frame,"",@progbits
 .Lframe0:
@@ -134,10 +134,10 @@ __func__$4558:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI0-.LFB13
+	.4byte	.LCFI0-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -146,10 +146,10 @@ __func__$4558:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI1-.LFB14
+	.4byte	.LCFI1-.LFB18
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -271,8 +271,8 @@ __func__$4558:
 	.4byte	.LASF27
 	.byte	0x1
 	.byte	0x22
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x138
@@ -313,8 +313,8 @@ __func__$4558:
 	.4byte	.LASF28
 	.byte	0x1
 	.byte	0x31
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1c2
@@ -323,7 +323,7 @@ __func__$4558:
 	.4byte	0x1d2
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$4558
+	.4byte	__func__$4662
 	.uleb128 0x9
 	.4byte	.LBB6
 	.4byte	.LBE6-.LBB6
@@ -375,7 +375,7 @@ __func__$4558:
 	.byte	0x5d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$4558
+	.4byte	__func__$4662
 	.uleb128 0xd
 	.uleb128 0x1
 	.byte	0x5e
@@ -724,18 +724,18 @@ __func__$4558:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB13
-	.4byte	.LFE13
-	.4byte	.LFB14
-	.4byte	.LFE14
+	.4byte	.LFB17
+	.4byte	.LFE17
+	.4byte	.LFB18
+	.4byte	.LFE18
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -765,14 +765,14 @@ __func__$4558:
 	.string	"esp_err_t"
 .LASF2:
 	.string	"short int"
-.LASF25:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF6:
 	.string	"unsigned int"
 .LASF8:
 	.string	"long long unsigned int"
 .LASF27:
 	.string	"rtc_brownout_isr_handler"
+.LASF25:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF19:
 	.string	"ets_printf"
 .LASF9:
@@ -799,4 +799,4 @@ __func__$4558:
 	.string	"_Bool"
 .LASF24:
 	.string	"C:/esp/esp-idf/components/esp32/brownout.c"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

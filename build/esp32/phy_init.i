@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/esp32/phy_init.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\esp32//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\esp32//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/esp32/phy_init.c"
@@ -880,7 +880,7 @@ typedef __uintptr_t uintptr_t;
 # 1 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 1
 # 19 "C:/esp/esp-idf/components/newlib/platform_include/assert.h"
        
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 2
 
 
@@ -1366,7 +1366,7 @@ void rtc_init(rtc_config_t cfg);
 # 20 "C:/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h" 1
 # 15 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 16 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h" 2
 # 24 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h"
 void esp_dport_access_stall_other_cpu_start(void);
@@ -3728,7 +3728,7 @@ void esp_chip_info(esp_chip_info_t* out_info);
 # 98 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 3 4
 typedef __gnuc_va_list va_list;
 # 20 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
 # 31 "C:/esp/esp-idf/components/log/include/esp_log.h"
 
@@ -3826,7 +3826,7 @@ esp_err_t nvs_flash_erase(void);
 # 100 "C:/esp/esp-idf/components/nvs_flash/include/nvs_flash.h"
 esp_err_t nvs_flash_erase_partition(const char *part_name);
 # 33 "C:/esp/esp-idf/components/esp32/phy_init.c" 2
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 34 "C:/esp/esp-idf/components/esp32/phy_init.c" 2
 
 # 1 "C:/esp/esp-idf/components/esp32/phy.h" 1
@@ -3869,7 +3869,7 @@ void phy_close_rf(void);
 # 15 "C:/esp/esp-idf/components/esp32/phy_init_data.h"
        
 
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 18 "C:/esp/esp-idf/components/esp32/phy_init_data.h" 2
 
 

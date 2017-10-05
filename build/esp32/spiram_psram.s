@@ -126,8 +126,6 @@
 	.string	"unsigned int"
 .LASF12:
 	.string	"GNU C99 5.2.0 -mlongcalls -ggdb -Og -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields"
-.LASF14:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF9:
 	.string	"long unsigned int"
 .LASF6:
@@ -148,6 +146,8 @@
 	.string	"signed char"
 .LASF4:
 	.string	"short int"
+.LASF14:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF8:
 	.string	"sizetype"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

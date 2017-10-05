@@ -6,7 +6,7 @@
 	.global	coap_fls
 	.type	coap_fls, @function
 coap_fls:
-.LFB9:
+.LFB13:
 	.file 1 "C:/esp/esp-idf/components/coap/libcoap/src/encode.c"
 	.loc 1 17 0
 .LVL0:
@@ -31,14 +31,14 @@ coap_fls:
 	bnez.n	a8, .L3
 	.loc 1 22 0 is_stmt 1
 	retw.n
-.LFE9:
+.LFE13:
 	.size	coap_fls, .-coap_fls
 	.section	.text.coap_decode_var_bytes,"ax",@progbits
 	.align	4
 	.global	coap_decode_var_bytes
 	.type	coap_decode_var_bytes, @function
 coap_decode_var_bytes:
-.LFB10:
+.LFB14:
 	.loc 1 25 0
 .LVL6:
 	entry	sp, 32
@@ -68,14 +68,14 @@ coap_decode_var_bytes:
 	mov.n	a2, a8
 .LVL12:
 	retw.n
-.LFE10:
+.LFE14:
 	.size	coap_decode_var_bytes, .-coap_decode_var_bytes
 	.section	.text.coap_encode_var_bytes,"ax",@progbits
 	.align	4
 	.global	coap_encode_var_bytes
 	.type	coap_encode_var_bytes, @function
 coap_encode_var_bytes:
-.LFB11:
+.LFB15:
 	.loc 1 34 0
 .LVL13:
 	entry	sp, 32
@@ -124,7 +124,7 @@ coap_encode_var_bytes:
 	mov.n	a2, a10
 .LVL22:
 	retw.n
-.LFE11:
+.LFE15:
 	.size	coap_encode_var_bytes, .-coap_encode_var_bytes
 	.section	.debug_frame,"",@progbits
 .Lframe0:
@@ -145,10 +145,10 @@ coap_encode_var_bytes:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x4
-	.4byte	.LCFI0-.LFB9
+	.4byte	.LCFI0-.LFB13
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -157,10 +157,10 @@ coap_encode_var_bytes:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI1-.LFB10
+	.4byte	.LCFI1-.LFB14
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -169,10 +169,10 @@ coap_encode_var_bytes:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI2-.LFB11
+	.4byte	.LCFI2-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -253,8 +253,8 @@ coap_encode_var_bytes:
 	.byte	0x1
 	.byte	0x11
 	.4byte	0x41
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xba
@@ -276,8 +276,8 @@ coap_encode_var_bytes:
 	.byte	0x1
 	.byte	0x19
 	.4byte	0x48
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x10a
@@ -312,8 +312,8 @@ coap_encode_var_bytes:
 	.byte	0x1
 	.byte	0x22
 	.4byte	0x48
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x6
@@ -500,7 +500,7 @@ coap_encode_var_bytes:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL2
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0x1
 	.byte	0x58
 	.4byte	0
@@ -512,7 +512,7 @@ coap_encode_var_bytes:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL3
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -523,7 +523,7 @@ coap_encode_var_bytes:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL12
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -538,7 +538,7 @@ coap_encode_var_bytes:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL8
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x1
 	.byte	0x59
 	.4byte	0
@@ -554,7 +554,7 @@ coap_encode_var_bytes:
 	.2byte	0x1
 	.byte	0x58
 	.4byte	.LVL10
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x1
 	.byte	0x58
 	.4byte	0
@@ -565,7 +565,7 @@ coap_encode_var_bytes:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL22
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -579,7 +579,7 @@ coap_encode_var_bytes:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL19
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -591,7 +591,7 @@ coap_encode_var_bytes:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL15
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -614,7 +614,7 @@ coap_encode_var_bytes:
 	.2byte	0x1
 	.byte	0x58
 	.4byte	.LVL21
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x1
 	.byte	0x59
 	.4byte	0
@@ -627,22 +627,22 @@ coap_encode_var_bytes:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB9
-	.4byte	.LFE9
-	.4byte	.LFB10
-	.4byte	.LFE10
-	.4byte	.LFB11
-	.4byte	.LFE11
+	.4byte	.LFB13
+	.4byte	.LFE13
+	.4byte	.LFB14
+	.4byte	.LFE14
+	.4byte	.LFB15
+	.4byte	.LFE15
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -660,6 +660,8 @@ coap_encode_var_bytes:
 	.string	"long unsigned int"
 .LASF15:
 	.string	"C:/esp/esp-idf/components/coap/libcoap/src/encode.c"
+.LASF16:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\coap"
 .LASF6:
 	.string	"long long unsigned int"
 .LASF1:
@@ -672,8 +674,6 @@ coap_encode_var_bytes:
 	.string	"coap_fls"
 .LASF11:
 	.string	"_Bool"
-.LASF16:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\coap"
 .LASF3:
 	.string	"short unsigned int"
 .LASF0:
@@ -684,4 +684,4 @@ coap_encode_var_bytes:
 	.string	"sizetype"
 .LASF13:
 	.string	"coap_decode_var_bytes"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

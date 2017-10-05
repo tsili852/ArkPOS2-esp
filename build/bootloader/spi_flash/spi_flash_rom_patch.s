@@ -5677,4 +5677,4 @@ esp_rom_spiflash_erase_area:
 	.string	"sector_num_per_block"
 .LASF69:
 	.string	"pgm_num"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

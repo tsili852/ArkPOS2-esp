@@ -136,12 +136,12 @@
 	.string	"unsigned char"
 .LASF10:
 	.string	"char"
+.LASF14:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bt"
 .LASF7:
 	.string	"long int"
 .LASF11:
 	.string	"_Bool"
-.LASF14:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bt"
 .LASF1:
 	.string	"short unsigned int"
 .LASF2:
@@ -150,4 +150,4 @@
 	.string	"short int"
 .LASF8:
 	.string	"sizetype"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

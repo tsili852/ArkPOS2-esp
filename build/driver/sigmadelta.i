@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/driver/sigmadelta.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\driver//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\driver//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/driver/sigmadelta.c"
@@ -137,7 +137,7 @@ typedef __builtin_va_list __gnuc_va_list;
 # 98 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 3 4
 typedef __gnuc_va_list va_list;
 # 20 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h" 1
 # 19 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h"
@@ -151,7 +151,7 @@ typedef __gnuc_va_list va_list;
 # 1 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 1
 # 19 "C:/esp/esp-idf/components/newlib/platform_include/assert.h"
        
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 2
 # 1 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 1
 # 10 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
@@ -1541,7 +1541,7 @@ void _esp_error_check_failed(esp_err_t rc, const char *file, int line, const cha
 # 20 "C:/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h" 1
 # 15 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 16 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h" 2
 # 24 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h"
 void esp_dport_access_stall_other_cpu_start(void);
@@ -2172,11 +2172,11 @@ typedef struct {
 } sigmadelta_config_t;
 # 60 "C:/esp/esp-idf/components/driver/include/driver/sigmadelta.h"
 esp_err_t sigmadelta_config(const sigmadelta_config_t *config);
-# 77 "C:/esp/esp-idf/components/driver/include/driver/sigmadelta.h"
+# 78 "C:/esp/esp-idf/components/driver/include/driver/sigmadelta.h"
 esp_err_t sigmadelta_set_duty(sigmadelta_channel_t channel, int8_t duty);
-# 90 "C:/esp/esp-idf/components/driver/include/driver/sigmadelta.h"
+# 91 "C:/esp/esp-idf/components/driver/include/driver/sigmadelta.h"
 esp_err_t sigmadelta_set_prescale(sigmadelta_channel_t channel, uint8_t prescale);
-# 102 "C:/esp/esp-idf/components/driver/include/driver/sigmadelta.h"
+# 103 "C:/esp/esp-idf/components/driver/include/driver/sigmadelta.h"
 esp_err_t sigmadelta_set_pin(sigmadelta_channel_t channel, gpio_num_t gpio_num);
 # 18 "C:/esp/esp-idf/components/driver/sigmadelta.c" 2
 

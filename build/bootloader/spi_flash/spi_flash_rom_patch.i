@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/spi_flash/spi_flash_rom_patch.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\bootloader\\spi_flash//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\bootloader\\spi_flash//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/spi_flash/spi_flash_rom_patch.c"
@@ -482,7 +482,7 @@ void esp_rom_spiflash_select_qio_pins(uint8_t wp_gpio_num, uint32_t spiconfig);
 
 extern esp_rom_spiflash_chip_t g_rom_flashchip;
 # 18 "C:/esp/esp-idf/components/spi_flash/spi_flash_rom_patch.c" 2
-# 1 "c:\\esp\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
+# 1 "c:\\esp\\esp32-arkpos2\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
 # 19 "C:/esp/esp-idf/components/spi_flash/spi_flash_rom_patch.c" 2
 
 

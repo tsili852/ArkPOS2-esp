@@ -1469,6 +1469,8 @@ table_ptrs:
 	.string	"upper"
 .LASF52:
 	.string	"atten"
+.LASF64:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp_adc_cal"
 .LASF65:
 	.string	"esp_adc_cal_interpolate_round"
 .LASF2:
@@ -1523,8 +1525,6 @@ table_ptrs:
 	.string	"unsigned char"
 .LASF14:
 	.string	"ADC_ATTEN_0db"
-.LASF64:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp_adc_cal"
 .LASF0:
 	.string	"signed char"
 .LASF6:
@@ -1603,4 +1603,4 @@ table_ptrs:
 	.string	"ideal_offset"
 .LASF47:
 	.string	"esp_adc_cal_characteristics_t"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

@@ -2564,6 +2564,8 @@ esp_secure_boot_permanently_enable:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF22:
+	.string	"ESP_LOG_VERBOSE"
 .LASF56:
 	.string	"esp_image_verify_bootloader"
 .LASF4:
@@ -2578,8 +2580,6 @@ esp_secure_boot_permanently_enable:
 	.string	"__uint32_t"
 .LASF50:
 	.string	"ets_secure_boot_obtain"
-.LASF59:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\bootloader_support"
 .LASF29:
 	.string	"digest"
 .LASF14:
@@ -2682,8 +2682,8 @@ esp_secure_boot_permanently_enable:
 	.string	"image"
 .LASF44:
 	.string	"ets_secure_boot_rd_iv"
-.LASF22:
-	.string	"ESP_LOG_VERBOSE"
+.LASF59:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\bootloader_support"
 .LASF6:
 	.string	"__int32_t"
 .LASF32:
@@ -2702,4 +2702,4 @@ esp_secure_boot_permanently_enable:
 	.string	"esp_err_t"
 .LASF48:
 	.string	"bootloader_mmap"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

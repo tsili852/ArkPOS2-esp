@@ -1504,4 +1504,4 @@ crypto_box_sealbytes:
 	.string	"sodium_memzero"
 .LASF33:
 	.string	"C:/esp/esp-idf/components/libsodium/libsodium/src/libsodium/crypto_box/crypto_box_seal.c"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

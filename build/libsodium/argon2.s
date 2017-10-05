@@ -3209,6 +3209,8 @@ argon2i_verify:
 	.string	"argon2_ctx"
 .LASF72:
 	.string	"block_"
+.LASF119:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF84:
 	.string	"lane_length"
 .LASF75:
@@ -3231,8 +3233,6 @@ argon2i_verify:
 	.string	"ARGON2_AD_TOO_SHORT"
 .LASF109:
 	.string	"sodium_memzero"
-.LASF41:
-	.string	"ARGON2_FREE_MEMORY_CBK_NULL"
 .LASF78:
 	.string	"block_region"
 .LASF8:
@@ -3311,8 +3311,8 @@ argon2i_verify:
 	.string	"ARGON2_OUTPUT_PTR_NULL"
 .LASF25:
 	.string	"ARGON2_SALT_TOO_LONG"
-.LASF119:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\libsodium"
+.LASF41:
+	.string	"ARGON2_FREE_MEMORY_CBK_NULL"
 .LASF54:
 	.string	"outlen"
 .LASF106:
@@ -3323,4 +3323,4 @@ argon2i_verify:
 	.string	"result"
 .LASF43:
 	.string	"ARGON2_INCORRECT_PARAMETER"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

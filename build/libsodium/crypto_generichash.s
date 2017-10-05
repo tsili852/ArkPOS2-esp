@@ -1511,4 +1511,4 @@ crypto_generichash_keygen:
 	.string	"outlen"
 .LASF43:
 	.string	"crypto_generichash_keygen"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

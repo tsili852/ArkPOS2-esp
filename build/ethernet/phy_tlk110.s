@@ -6,7 +6,7 @@
 	.global	phy_tlk110_check_phy_init
 	.type	phy_tlk110_check_phy_init, @function
 phy_tlk110_check_phy_init:
-.LFB10:
+.LFB14:
 	.file 1 "C:/esp/esp-idf/components/ethernet/eth_phy/phy_tlk110.c"
 	.loc 1 57 0
 	entry	sp, 32
@@ -45,14 +45,14 @@ phy_tlk110_check_phy_init:
 	retw.n
 .LBE13:
 .LBE12:
-.LFE10:
+.LFE14:
 	.size	phy_tlk110_check_phy_init, .-phy_tlk110_check_phy_init
 	.section	.text.phy_tlk110_get_speed_mode,"ax",@progbits
 	.align	4
 	.global	phy_tlk110_get_speed_mode
 	.type	phy_tlk110_get_speed_mode, @function
 phy_tlk110_get_speed_mode:
-.LFB11:
+.LFB15:
 	.loc 1 66 0
 	entry	sp, 32
 .LCFI1:
@@ -72,14 +72,14 @@ phy_tlk110_get_speed_mode:
 	movi.n	a2, 0
 	.loc 1 74 0
 	retw.n
-.LFE11:
+.LFE15:
 	.size	phy_tlk110_get_speed_mode, .-phy_tlk110_get_speed_mode
 	.section	.text.phy_tlk110_get_duplex_mode,"ax",@progbits
 	.align	4
 	.global	phy_tlk110_get_duplex_mode
 	.type	phy_tlk110_get_duplex_mode, @function
 phy_tlk110_get_duplex_mode:
-.LFB12:
+.LFB16:
 	.loc 1 77 0
 	entry	sp, 32
 .LCFI2:
@@ -99,7 +99,7 @@ phy_tlk110_get_duplex_mode:
 	movi.n	a2, 0
 	.loc 1 85 0
 	retw.n
-.LFE12:
+.LFE16:
 	.size	phy_tlk110_get_duplex_mode, .-phy_tlk110_get_duplex_mode
 	.section	.text.phy_tlk110_power_enable,"ax",@progbits
 	.literal_position
@@ -108,7 +108,7 @@ phy_tlk110_get_duplex_mode:
 	.global	phy_tlk110_power_enable
 	.type	phy_tlk110_power_enable, @function
 phy_tlk110_power_enable:
-.LFB13:
+.LFB17:
 	.loc 1 88 0
 .LVL6:
 	entry	sp, 32
@@ -126,7 +126,7 @@ phy_tlk110_power_enable:
 .LVL8:
 .L8:
 	retw.n
-.LFE13:
+.LFE17:
 	.size	phy_tlk110_power_enable, .-phy_tlk110_power_enable
 	.section	.text.phy_tlk110_init,"ax",@progbits
 	.literal_position
@@ -140,7 +140,7 @@ phy_tlk110_power_enable:
 	.global	phy_tlk110_init
 	.type	phy_tlk110_init, @function
 phy_tlk110_init:
-.LFB14:
+.LFB18:
 	.loc 1 98 0
 	entry	sp, 32
 .LCFI4:
@@ -183,19 +183,19 @@ phy_tlk110_init:
 	call8	phy_mii_enable_flow_ctrl
 .LVL16:
 	retw.n
-.LFE14:
+.LFE18:
 	.size	phy_tlk110_init, .-phy_tlk110_init
 	.section	.text.phy_tlk110_dump_registers,"ax",@progbits
 	.align	4
 	.global	phy_tlk110_dump_registers
 	.type	phy_tlk110_dump_registers, @function
 phy_tlk110_dump_registers:
-.LFB15:
+.LFB19:
 	.loc 1 137 0
 	entry	sp, 32
 .LCFI5:
 	retw.n
-.LFE15:
+.LFE19:
 	.size	phy_tlk110_dump_registers, .-phy_tlk110_dump_registers
 	.global	phy_tlk110_default_ethernet_config
 	.section	.rodata.phy_tlk110_default_ethernet_config,"a",@progbits
@@ -235,10 +235,10 @@ phy_tlk110_default_ethernet_config:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI0-.LFB10
+	.4byte	.LCFI0-.LFB14
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -247,10 +247,10 @@ phy_tlk110_default_ethernet_config:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI1-.LFB11
+	.4byte	.LCFI1-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -259,10 +259,10 @@ phy_tlk110_default_ethernet_config:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI2-.LFB12
+	.4byte	.LCFI2-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -271,10 +271,10 @@ phy_tlk110_default_ethernet_config:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI3-.LFB13
+	.4byte	.LCFI3-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -283,10 +283,10 @@ phy_tlk110_default_ethernet_config:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI4-.LFB14
+	.4byte	.LCFI4-.LFB18
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -295,10 +295,10 @@ phy_tlk110_default_ethernet_config:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI5-.LFB15
+	.4byte	.LCFI5-.LFB19
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -806,8 +806,8 @@ phy_tlk110_default_ethernet_config:
 	.4byte	.LASF95
 	.byte	0x1
 	.byte	0x38
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4cb
@@ -941,8 +941,8 @@ phy_tlk110_default_ethernet_config:
 	.byte	0x1
 	.byte	0x41
 	.4byte	0x153
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4f4
@@ -961,8 +961,8 @@ phy_tlk110_default_ethernet_config:
 	.byte	0x1
 	.byte	0x4c
 	.4byte	0x177
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x51d
@@ -980,8 +980,8 @@ phy_tlk110_default_ethernet_config:
 	.4byte	.LASF96
 	.byte	0x1
 	.byte	0x57
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x563
@@ -1016,8 +1016,8 @@ phy_tlk110_default_ethernet_config:
 	.4byte	.LASF97
 	.byte	0x1
 	.byte	0x61
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x637
@@ -1141,8 +1141,8 @@ phy_tlk110_default_ethernet_config:
 	.4byte	.LASF110
 	.byte	0x1
 	.byte	0x88
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x20
@@ -1695,34 +1695,34 @@ phy_tlk110_default_ethernet_config:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
 	.4byte	.LFB14
 	.4byte	.LFE14-.LFB14
 	.4byte	.LFB15
 	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB10
-	.4byte	.LFE10
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB12
-	.4byte	.LFE12
-	.4byte	.LFB13
-	.4byte	.LFE13
 	.4byte	.LFB14
 	.4byte	.LFE14
 	.4byte	.LFB15
 	.4byte	.LFE15
+	.4byte	.LFB16
+	.4byte	.LFE16
+	.4byte	.LFB17
+	.4byte	.LFE17
+	.4byte	.LFB18
+	.4byte	.LFE18
+	.4byte	.LFB19
+	.4byte	.LFE19
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -1768,6 +1768,8 @@ phy_tlk110_default_ethernet_config:
 	.string	"phy_power_enable"
 .LASF14:
 	.string	"sizetype"
+.LASF107:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\ethernet"
 .LASF104:
 	.string	"ets_delay_us"
 .LASF6:
@@ -1930,8 +1932,6 @@ phy_tlk110_default_ethernet_config:
 	.string	"ETH_MODE_FULLDUPLEX"
 .LASF76:
 	.string	"eth_phy_power_enable_func"
-.LASF107:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\ethernet"
 .LASF25:
 	.string	"ETH_MODE_RMII"
 .LASF106:
@@ -1952,4 +1952,4 @@ phy_tlk110_default_ethernet_config:
 	.string	"esp_err_t"
 .LASF79:
 	.string	"tcpip_input"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

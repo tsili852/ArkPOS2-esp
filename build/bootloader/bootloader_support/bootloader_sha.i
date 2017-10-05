@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/bootloader_support/src/bootloader_sha.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\bootloader\\bootloader_support//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\bootloader\\bootloader_support//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/bootloader_support/src/bootloader_sha.c"
@@ -952,7 +952,7 @@ void __assert_func (const char *, int, const char *, const char *) __attribute__
 # 20 "C:/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h" 1
 # 15 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h"
-# 1 "c:\\esp\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
+# 1 "c:\\esp\\esp32-arkpos2\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
 # 16 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h" 2
 # 24 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h"
 

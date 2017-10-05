@@ -8,7 +8,7 @@
 	.align	4
 	.type	rmt_get_mem_len, @function
 rmt_get_mem_len:
-.LFB49:
+.LFB53:
 	.file 1 "C:/esp/esp-idf/components/driver/rmt.c"
 	.loc 1 512 0
 .LVL0:
@@ -62,7 +62,7 @@ rmt_get_mem_len:
 .L3:
 	.loc 1 525 0 is_stmt 1
 	retw.n
-.LFE49:
+.LFE53:
 	.size	rmt_get_mem_len, .-rmt_get_mem_len
 	.section	.text.rmt_set_tx_wrap_en,"ax",@progbits
 	.literal_position
@@ -71,7 +71,7 @@ rmt_get_mem_len:
 	.align	4
 	.type	rmt_set_tx_wrap_en, @function
 rmt_set_tx_wrap_en:
-.LFB11:
+.LFB15:
 	.loc 1 79 0
 .LVL9:
 	entry	sp, 32
@@ -99,7 +99,7 @@ rmt_set_tx_wrap_en:
 	call8	vTaskExitCritical
 .LVL13:
 	retw.n
-.LFE11:
+.LFE15:
 	.size	rmt_set_tx_wrap_en, .-rmt_set_tx_wrap_en
 	.section	.text.rmt_set_data_mode,"ax",@progbits
 	.literal_position
@@ -108,7 +108,7 @@ rmt_set_tx_wrap_en:
 	.align	4
 	.type	rmt_set_data_mode, @function
 rmt_set_data_mode:
-.LFB12:
+.LFB16:
 	.loc 1 86 0
 .LVL14:
 	entry	sp, 32
@@ -134,7 +134,7 @@ rmt_set_data_mode:
 	call8	vTaskExitCritical
 .LVL17:
 	retw.n
-.LFE12:
+.LFE16:
 	.size	rmt_set_data_mode, .-rmt_set_data_mode
 	.section	.iram1
 	.literal_position
@@ -144,7 +144,7 @@ rmt_set_data_mode:
 	.align	4
 	.type	rmt_fill_memory, @function
 rmt_fill_memory:
-.LFB45:
+.LFB49:
 	.loc 1 474 0
 .LVL18:
 	entry	sp, 32
@@ -189,7 +189,7 @@ rmt_fill_memory:
 	blt	a9, a4, .L11
 	.loc 1 482 0 is_stmt 1
 	retw.n
-.LFE45:
+.LFE49:
 	.size	rmt_fill_memory, .-rmt_fill_memory
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -221,7 +221,7 @@ rmt_fill_memory:
 	.align	4
 	.type	rmt_driver_isr_default, @function
 rmt_driver_isr_default:
-.LFB50:
+.LFB54:
 	.loc 1 528 0
 .LVL23:
 	entry	sp, 48
@@ -549,7 +549,7 @@ rmt_driver_isr_default:
 	bgeu	a4, a2, .L28
 	.loc 1 618 0 is_stmt 1
 	retw.n
-.LFE50:
+.LFE54:
 	.size	rmt_driver_isr_default, .-rmt_driver_isr_default
 	.section	.rodata.str1.4
 	.align	4
@@ -560,7 +560,7 @@ rmt_driver_isr_default:
 	.string	"RMT CHANNEL ERR"
 	.section	.text.rmt_set_clk_div,"ax",@progbits
 	.literal_position
-	.literal .LC23, __FUNCTION__$5421
+	.literal .LC23, __FUNCTION__$5525
 	.literal .LC24, .LC13
 	.literal .LC26, .LC25
 	.literal .LC28, .LC27
@@ -569,7 +569,7 @@ rmt_driver_isr_default:
 	.global	rmt_set_clk_div
 	.type	rmt_set_clk_div, @function
 rmt_set_clk_div:
-.LFB13:
+.LFB17:
 	.loc 1 93 0
 .LVL64:
 	entry	sp, 48
@@ -615,7 +615,7 @@ rmt_set_clk_div:
 	movi.n	a2, 0
 	.loc 1 97 0
 	retw.n
-.LFE13:
+.LFE17:
 	.size	rmt_set_clk_div, .-rmt_set_clk_div
 	.section	.rodata.str1.4
 	.align	4
@@ -623,7 +623,7 @@ rmt_set_clk_div:
 	.string	"RMT ADDRESS ERR"
 	.section	.text.rmt_get_clk_div,"ax",@progbits
 	.literal_position
-	.literal .LC30, __FUNCTION__$5426
+	.literal .LC30, __FUNCTION__$5530
 	.literal .LC31, .LC13
 	.literal .LC32, .LC25
 	.literal .LC33, .LC27
@@ -633,7 +633,7 @@ rmt_set_clk_div:
 	.global	rmt_get_clk_div
 	.type	rmt_get_clk_div, @function
 rmt_get_clk_div:
-.LFB14:
+.LFB18:
 	.loc 1 100 0
 .LVL72:
 	entry	sp, 48
@@ -695,11 +695,11 @@ rmt_get_clk_div:
 	movi.n	a2, 0
 	.loc 1 105 0
 	retw.n
-.LFE14:
+.LFE18:
 	.size	rmt_get_clk_div, .-rmt_get_clk_div
 	.section	.text.rmt_set_rx_idle_thresh,"ax",@progbits
 	.literal_position
-	.literal .LC37, __FUNCTION__$5431
+	.literal .LC37, __FUNCTION__$5535
 	.literal .LC38, .LC13
 	.literal .LC39, .LC25
 	.literal .LC40, .LC27
@@ -709,7 +709,7 @@ rmt_get_clk_div:
 	.global	rmt_set_rx_idle_thresh
 	.type	rmt_set_rx_idle_thresh, @function
 rmt_set_rx_idle_thresh:
-.LFB15:
+.LFB19:
 	.loc 1 108 0
 .LVL83:
 	entry	sp, 48
@@ -756,11 +756,11 @@ rmt_set_rx_idle_thresh:
 	movi.n	a2, 0
 	.loc 1 112 0
 	retw.n
-.LFE15:
+.LFE19:
 	.size	rmt_set_rx_idle_thresh, .-rmt_set_rx_idle_thresh
 	.section	.text.rmt_get_rx_idle_thresh,"ax",@progbits
 	.literal_position
-	.literal .LC43, __FUNCTION__$5436
+	.literal .LC43, __FUNCTION__$5540
 	.literal .LC44, .LC13
 	.literal .LC45, .LC25
 	.literal .LC46, .LC27
@@ -770,7 +770,7 @@ rmt_set_rx_idle_thresh:
 	.global	rmt_get_rx_idle_thresh
 	.type	rmt_get_rx_idle_thresh, @function
 rmt_get_rx_idle_thresh:
-.LFB16:
+.LFB20:
 	.loc 1 115 0
 .LVL91:
 	entry	sp, 48
@@ -833,7 +833,7 @@ rmt_get_rx_idle_thresh:
 	movi.n	a2, 0
 	.loc 1 120 0
 	retw.n
-.LFE16:
+.LFE20:
 	.size	rmt_get_rx_idle_thresh, .-rmt_get_rx_idle_thresh
 	.section	.rodata.str1.4
 	.align	4
@@ -841,7 +841,7 @@ rmt_get_rx_idle_thresh:
 	.string	"RMT MEM BLOCK NUM ERR"
 	.section	.text.rmt_set_mem_block_num,"ax",@progbits
 	.literal_position
-	.literal .LC49, __FUNCTION__$5441
+	.literal .LC49, __FUNCTION__$5545
 	.literal .LC50, .LC13
 	.literal .LC51, .LC25
 	.literal .LC52, .LC27
@@ -852,7 +852,7 @@ rmt_get_rx_idle_thresh:
 	.global	rmt_set_mem_block_num
 	.type	rmt_set_mem_block_num, @function
 rmt_set_mem_block_num:
-.LFB17:
+.LFB21:
 	.loc 1 123 0
 .LVL102:
 	entry	sp, 48
@@ -923,11 +923,11 @@ rmt_set_mem_block_num:
 	movi.n	a2, 0
 	.loc 1 128 0
 	retw.n
-.LFE17:
+.LFE21:
 	.size	rmt_set_mem_block_num, .-rmt_set_mem_block_num
 	.section	.text.rmt_get_mem_block_num,"ax",@progbits
 	.literal_position
-	.literal .LC57, __FUNCTION__$5446
+	.literal .LC57, __FUNCTION__$5550
 	.literal .LC58, .LC13
 	.literal .LC59, .LC25
 	.literal .LC60, .LC27
@@ -937,7 +937,7 @@ rmt_set_mem_block_num:
 	.global	rmt_get_mem_block_num
 	.type	rmt_get_mem_block_num, @function
 rmt_get_mem_block_num:
-.LFB18:
+.LFB22:
 	.loc 1 131 0
 .LVL114:
 	entry	sp, 48
@@ -1000,7 +1000,7 @@ rmt_get_mem_block_num:
 	movi.n	a2, 0
 	.loc 1 136 0
 	retw.n
-.LFE18:
+.LFE22:
 	.size	rmt_get_mem_block_num, .-rmt_get_mem_block_num
 	.section	.rodata.str1.4
 	.align	4
@@ -1008,7 +1008,7 @@ rmt_get_mem_block_num:
 	.string	"RMT CARRIER LEVEL ERR"
 	.section	.text.rmt_set_tx_carrier,"ax",@progbits
 	.literal_position
-	.literal .LC63, __FUNCTION__$5454
+	.literal .LC63, __FUNCTION__$5558
 	.literal .LC64, .LC13
 	.literal .LC65, .LC25
 	.literal .LC66, .LC27
@@ -1021,7 +1021,7 @@ rmt_get_mem_block_num:
 	.global	rmt_set_tx_carrier
 	.type	rmt_set_tx_carrier, @function
 rmt_set_tx_carrier:
-.LFB19:
+.LFB23:
 	.loc 1 140 0
 .LVL125:
 	entry	sp, 48
@@ -1126,11 +1126,11 @@ rmt_set_tx_carrier:
 	movi.n	a2, 0
 	.loc 1 148 0
 	retw.n
-.LFE19:
+.LFE23:
 	.size	rmt_set_tx_carrier, .-rmt_set_tx_carrier
 	.section	.text.rmt_set_mem_pd,"ax",@progbits
 	.literal_position
-	.literal .LC73, __FUNCTION__$5459
+	.literal .LC73, __FUNCTION__$5563
 	.literal .LC74, .LC13
 	.literal .LC75, .LC25
 	.literal .LC76, .LC27
@@ -1140,7 +1140,7 @@ rmt_set_tx_carrier:
 	.global	rmt_set_mem_pd
 	.type	rmt_set_mem_pd, @function
 rmt_set_mem_pd:
-.LFB20:
+.LFB24:
 	.loc 1 151 0
 .LVL140:
 	entry	sp, 48
@@ -1188,11 +1188,11 @@ rmt_set_mem_pd:
 	movi.n	a2, 0
 	.loc 1 155 0
 	retw.n
-.LFE20:
+.LFE24:
 	.size	rmt_set_mem_pd, .-rmt_set_mem_pd
 	.section	.text.rmt_get_mem_pd,"ax",@progbits
 	.literal_position
-	.literal .LC79, __FUNCTION__$5464
+	.literal .LC79, __FUNCTION__$5568
 	.literal .LC80, .LC13
 	.literal .LC81, .LC25
 	.literal .LC82, .LC27
@@ -1201,7 +1201,7 @@ rmt_set_mem_pd:
 	.global	rmt_get_mem_pd
 	.type	rmt_get_mem_pd, @function
 rmt_get_mem_pd:
-.LFB21:
+.LFB25:
 	.loc 1 158 0
 .LVL148:
 	entry	sp, 48
@@ -1243,11 +1243,11 @@ rmt_get_mem_pd:
 	movi.n	a2, 0
 	.loc 1 162 0
 	retw.n
-.LFE21:
+.LFE25:
 	.size	rmt_get_mem_pd, .-rmt_get_mem_pd
 	.section	.text.rmt_tx_start,"ax",@progbits
 	.literal_position
-	.literal .LC84, __FUNCTION__$5469
+	.literal .LC84, __FUNCTION__$5573
 	.literal .LC85, .LC13
 	.literal .LC86, .LC25
 	.literal .LC87, .LC27
@@ -1257,7 +1257,7 @@ rmt_get_mem_pd:
 	.global	rmt_tx_start
 	.type	rmt_tx_start, @function
 rmt_tx_start:
-.LFB22:
+.LFB26:
 	.loc 1 165 0
 .LVL155:
 	entry	sp, 48
@@ -1331,11 +1331,11 @@ rmt_tx_start:
 	movi.n	a2, 0
 	.loc 1 175 0
 	retw.n
-.LFE22:
+.LFE26:
 	.size	rmt_tx_start, .-rmt_tx_start
 	.section	.text.rmt_tx_stop,"ax",@progbits
 	.literal_position
-	.literal .LC90, __FUNCTION__$5473
+	.literal .LC90, __FUNCTION__$5577
 	.literal .LC91, .LC13
 	.literal .LC92, .LC25
 	.literal .LC93, .LC27
@@ -1345,7 +1345,7 @@ rmt_tx_start:
 	.global	rmt_tx_stop
 	.type	rmt_tx_stop, @function
 rmt_tx_stop:
-.LFB23:
+.LFB27:
 	.loc 1 178 0
 .LVL165:
 	entry	sp, 48
@@ -1397,11 +1397,11 @@ rmt_tx_stop:
 	movi.n	a2, 0
 	.loc 1 184 0
 	retw.n
-.LFE23:
+.LFE27:
 	.size	rmt_tx_stop, .-rmt_tx_stop
 	.section	.text.rmt_rx_start,"ax",@progbits
 	.literal_position
-	.literal .LC96, __FUNCTION__$5478
+	.literal .LC96, __FUNCTION__$5582
 	.literal .LC97, .LC13
 	.literal .LC98, .LC25
 	.literal .LC99, .LC27
@@ -1411,7 +1411,7 @@ rmt_tx_stop:
 	.global	rmt_rx_start
 	.type	rmt_rx_start, @function
 rmt_rx_start:
-.LFB24:
+.LFB28:
 	.loc 1 187 0
 .LVL174:
 	entry	sp, 48
@@ -1492,11 +1492,11 @@ rmt_rx_start:
 	movi.n	a2, 0
 	.loc 1 198 0
 	retw.n
-.LFE24:
+.LFE28:
 	.size	rmt_rx_start, .-rmt_rx_start
 	.section	.text.rmt_rx_stop,"ax",@progbits
 	.literal_position
-	.literal .LC102, __FUNCTION__$5482
+	.literal .LC102, __FUNCTION__$5586
 	.literal .LC103, .LC13
 	.literal .LC104, .LC25
 	.literal .LC105, .LC27
@@ -1506,7 +1506,7 @@ rmt_rx_start:
 	.global	rmt_rx_stop
 	.type	rmt_rx_stop, @function
 rmt_rx_stop:
-.LFB25:
+.LFB29:
 	.loc 1 201 0
 .LVL184:
 	entry	sp, 48
@@ -1558,11 +1558,11 @@ rmt_rx_stop:
 	movi.n	a2, 0
 	.loc 1 207 0
 	retw.n
-.LFE25:
+.LFE29:
 	.size	rmt_rx_stop, .-rmt_rx_stop
 	.section	.text.rmt_memory_rw_rst,"ax",@progbits
 	.literal_position
-	.literal .LC108, __FUNCTION__$5486
+	.literal .LC108, __FUNCTION__$5590
 	.literal .LC109, .LC13
 	.literal .LC110, .LC25
 	.literal .LC111, .LC27
@@ -1572,7 +1572,7 @@ rmt_rx_stop:
 	.global	rmt_memory_rw_rst
 	.type	rmt_memory_rw_rst, @function
 rmt_memory_rw_rst:
-.LFB26:
+.LFB30:
 	.loc 1 210 0
 .LVL193:
 	entry	sp, 48
@@ -1631,7 +1631,7 @@ rmt_memory_rw_rst:
 	movi.n	a2, 0
 	.loc 1 217 0
 	retw.n
-.LFE26:
+.LFE30:
 	.size	rmt_memory_rw_rst, .-rmt_memory_rw_rst
 	.section	.rodata.str1.4
 	.align	4
@@ -1639,7 +1639,7 @@ rmt_memory_rw_rst:
 	.string	"RMT MEM OWNER_ERR"
 	.section	.text.rmt_set_memory_owner,"ax",@progbits
 	.literal_position
-	.literal .LC114, __FUNCTION__$5491
+	.literal .LC114, __FUNCTION__$5595
 	.literal .LC115, .LC13
 	.literal .LC116, .LC25
 	.literal .LC117, .LC27
@@ -1650,7 +1650,7 @@ rmt_memory_rw_rst:
 	.global	rmt_set_memory_owner
 	.type	rmt_set_memory_owner, @function
 rmt_set_memory_owner:
-.LFB27:
+.LFB31:
 	.loc 1 220 0
 .LVL202:
 	entry	sp, 48
@@ -1728,11 +1728,11 @@ rmt_set_memory_owner:
 	movi.n	a2, 0
 	.loc 1 227 0
 	retw.n
-.LFE27:
+.LFE31:
 	.size	rmt_set_memory_owner, .-rmt_set_memory_owner
 	.section	.text.rmt_get_memory_owner,"ax",@progbits
 	.literal_position
-	.literal .LC122, __FUNCTION__$5496
+	.literal .LC122, __FUNCTION__$5600
 	.literal .LC123, .LC13
 	.literal .LC124, .LC25
 	.literal .LC125, .LC27
@@ -1742,7 +1742,7 @@ rmt_set_memory_owner:
 	.global	rmt_get_memory_owner
 	.type	rmt_get_memory_owner, @function
 rmt_get_memory_owner:
-.LFB28:
+.LFB32:
 	.loc 1 230 0
 .LVL216:
 	entry	sp, 48
@@ -1805,11 +1805,11 @@ rmt_get_memory_owner:
 	movi.n	a2, 0
 	.loc 1 235 0
 	retw.n
-.LFE28:
+.LFE32:
 	.size	rmt_get_memory_owner, .-rmt_get_memory_owner
 	.section	.text.rmt_set_tx_loop_mode,"ax",@progbits
 	.literal_position
-	.literal .LC128, __FUNCTION__$5501
+	.literal .LC128, __FUNCTION__$5605
 	.literal .LC129, .LC13
 	.literal .LC130, .LC25
 	.literal .LC131, .LC27
@@ -1819,7 +1819,7 @@ rmt_get_memory_owner:
 	.global	rmt_set_tx_loop_mode
 	.type	rmt_set_tx_loop_mode, @function
 rmt_set_tx_loop_mode:
-.LFB29:
+.LFB33:
 	.loc 1 238 0
 .LVL227:
 	entry	sp, 48
@@ -1876,11 +1876,11 @@ rmt_set_tx_loop_mode:
 	movi.n	a2, 0
 	.loc 1 244 0
 	retw.n
-.LFE29:
+.LFE33:
 	.size	rmt_set_tx_loop_mode, .-rmt_set_tx_loop_mode
 	.section	.text.rmt_get_tx_loop_mode,"ax",@progbits
 	.literal_position
-	.literal .LC134, __FUNCTION__$5506
+	.literal .LC134, __FUNCTION__$5610
 	.literal .LC135, .LC13
 	.literal .LC136, .LC25
 	.literal .LC137, .LC27
@@ -1889,7 +1889,7 @@ rmt_set_tx_loop_mode:
 	.global	rmt_get_tx_loop_mode
 	.type	rmt_get_tx_loop_mode, @function
 rmt_get_tx_loop_mode:
-.LFB30:
+.LFB34:
 	.loc 1 247 0
 .LVL237:
 	entry	sp, 48
@@ -1931,11 +1931,11 @@ rmt_get_tx_loop_mode:
 	movi.n	a2, 0
 	.loc 1 251 0
 	retw.n
-.LFE30:
+.LFE34:
 	.size	rmt_get_tx_loop_mode, .-rmt_get_tx_loop_mode
 	.section	.text.rmt_set_rx_filter,"ax",@progbits
 	.literal_position
-	.literal .LC139, __FUNCTION__$5512
+	.literal .LC139, __FUNCTION__$5616
 	.literal .LC140, .LC13
 	.literal .LC141, .LC25
 	.literal .LC142, .LC27
@@ -1946,7 +1946,7 @@ rmt_get_tx_loop_mode:
 	.global	rmt_set_rx_filter
 	.type	rmt_set_rx_filter, @function
 rmt_set_rx_filter:
-.LFB31:
+.LFB35:
 	.loc 1 254 0
 .LVL244:
 	entry	sp, 48
@@ -2014,7 +2014,7 @@ rmt_set_rx_filter:
 	movi.n	a2, 0
 	.loc 1 261 0
 	retw.n
-.LFE31:
+.LFE35:
 	.size	rmt_set_rx_filter, .-rmt_set_rx_filter
 	.section	.rodata.str1.4
 	.align	4
@@ -2022,7 +2022,7 @@ rmt_set_rx_filter:
 	.string	"RMT BASECLK ERR"
 	.section	.text.rmt_set_source_clk,"ax",@progbits
 	.literal_position
-	.literal .LC146, __FUNCTION__$5517
+	.literal .LC146, __FUNCTION__$5621
 	.literal .LC147, .LC13
 	.literal .LC148, .LC25
 	.literal .LC149, .LC27
@@ -2034,7 +2034,7 @@ rmt_set_rx_filter:
 	.global	rmt_set_source_clk
 	.type	rmt_set_source_clk, @function
 rmt_set_source_clk:
-.LFB32:
+.LFB36:
 	.loc 1 264 0
 .LVL255:
 	entry	sp, 48
@@ -2112,11 +2112,11 @@ rmt_set_source_clk:
 	movi.n	a2, 0
 	.loc 1 271 0
 	retw.n
-.LFE32:
+.LFE36:
 	.size	rmt_set_source_clk, .-rmt_set_source_clk
 	.section	.text.rmt_get_source_clk,"ax",@progbits
 	.literal_position
-	.literal .LC155, __FUNCTION__$5522
+	.literal .LC155, __FUNCTION__$5626
 	.literal .LC156, .LC13
 	.literal .LC157, .LC25
 	.literal .LC158, .LC27
@@ -2125,7 +2125,7 @@ rmt_set_source_clk:
 	.global	rmt_get_source_clk
 	.type	rmt_get_source_clk, @function
 rmt_get_source_clk:
-.LFB33:
+.LFB37:
 	.loc 1 274 0
 .LVL269:
 	entry	sp, 48
@@ -2166,7 +2166,7 @@ rmt_get_source_clk:
 	movi.n	a2, 0
 	.loc 1 278 0
 	retw.n
-.LFE33:
+.LFE37:
 	.size	rmt_get_source_clk, .-rmt_get_source_clk
 	.section	.rodata.str1.4
 	.align	4
@@ -2174,7 +2174,7 @@ rmt_get_source_clk:
 	.string	"RMT IDLE LEVEL ERR"
 	.section	.text.rmt_set_idle_level,"ax",@progbits
 	.literal_position
-	.literal .LC160, __FUNCTION__$5528
+	.literal .LC160, __FUNCTION__$5632
 	.literal .LC161, .LC13
 	.literal .LC162, .LC25
 	.literal .LC163, .LC27
@@ -2187,7 +2187,7 @@ rmt_get_source_clk:
 	.global	rmt_set_idle_level
 	.type	rmt_set_idle_level, @function
 rmt_set_idle_level:
-.LFB34:
+.LFB38:
 	.loc 1 281 0
 .LVL276:
 	entry	sp, 48
@@ -2277,11 +2277,11 @@ rmt_set_idle_level:
 	movi.n	a2, 0
 	.loc 1 289 0
 	retw.n
-.LFE34:
+.LFE38:
 	.size	rmt_set_idle_level, .-rmt_set_idle_level
 	.section	.text.rmt_get_status,"ax",@progbits
 	.literal_position
-	.literal .LC170, __FUNCTION__$5533
+	.literal .LC170, __FUNCTION__$5637
 	.literal .LC171, .LC13
 	.literal .LC172, .LC25
 	.literal .LC173, .LC27
@@ -2290,7 +2290,7 @@ rmt_set_idle_level:
 	.global	rmt_get_status
 	.type	rmt_get_status, @function
 rmt_get_status:
-.LFB35:
+.LFB39:
 	.loc 1 292 0
 .LVL291:
 	entry	sp, 48
@@ -2330,7 +2330,7 @@ rmt_get_status:
 	movi.n	a2, 0
 	.loc 1 296 0
 	retw.n
-.LFE35:
+.LFE39:
 	.size	rmt_get_status, .-rmt_get_status
 	.section	.text.rmt_get_data_mode,"ax",@progbits
 	.literal_position
@@ -2339,7 +2339,7 @@ rmt_get_status:
 	.global	rmt_get_data_mode
 	.type	rmt_get_data_mode, @function
 rmt_get_data_mode:
-.LFB36:
+.LFB40:
 	.loc 1 299 0
 	entry	sp, 32
 .LCFI28:
@@ -2350,7 +2350,7 @@ rmt_get_data_mode:
 	.loc 1 301 0
 	extui	a2, a2, 0, 1
 	retw.n
-.LFE36:
+.LFE40:
 	.size	rmt_get_data_mode, .-rmt_get_data_mode
 	.section	.text.rmt_set_intr_enable_mask,"ax",@progbits
 	.literal_position
@@ -2360,7 +2360,7 @@ rmt_get_data_mode:
 	.global	rmt_set_intr_enable_mask
 	.type	rmt_set_intr_enable_mask, @function
 rmt_set_intr_enable_mask:
-.LFB37:
+.LFB41:
 	.loc 1 304 0
 .LVL298:
 	entry	sp, 32
@@ -2383,7 +2383,7 @@ rmt_set_intr_enable_mask:
 	call8	vTaskExitCritical
 .LVL301:
 	retw.n
-.LFE37:
+.LFE41:
 	.size	rmt_set_intr_enable_mask, .-rmt_set_intr_enable_mask
 	.section	.text.rmt_clr_intr_enable_mask,"ax",@progbits
 	.literal_position
@@ -2393,7 +2393,7 @@ rmt_set_intr_enable_mask:
 	.global	rmt_clr_intr_enable_mask
 	.type	rmt_clr_intr_enable_mask, @function
 rmt_clr_intr_enable_mask:
-.LFB38:
+.LFB42:
 	.loc 1 311 0
 .LVL302:
 	entry	sp, 32
@@ -2418,11 +2418,11 @@ rmt_clr_intr_enable_mask:
 	call8	vTaskExitCritical
 .LVL305:
 	retw.n
-.LFE38:
+.LFE42:
 	.size	rmt_clr_intr_enable_mask, .-rmt_clr_intr_enable_mask
 	.section	.text.rmt_set_rx_intr_en,"ax",@progbits
 	.literal_position
-	.literal .LC180, __FUNCTION__$5546
+	.literal .LC180, __FUNCTION__$5650
 	.literal .LC181, .LC13
 	.literal .LC182, .LC25
 	.literal .LC183, .LC27
@@ -2430,7 +2430,7 @@ rmt_clr_intr_enable_mask:
 	.global	rmt_set_rx_intr_en
 	.type	rmt_set_rx_intr_en, @function
 rmt_set_rx_intr_en:
-.LFB39:
+.LFB43:
 	.loc 1 318 0
 .LVL306:
 	entry	sp, 48
@@ -2487,11 +2487,11 @@ rmt_set_rx_intr_en:
 	movi.n	a2, 0
 	.loc 1 326 0
 	retw.n
-.LFE39:
+.LFE43:
 	.size	rmt_set_rx_intr_en, .-rmt_set_rx_intr_en
 	.section	.text.rmt_set_err_intr_en,"ax",@progbits
 	.literal_position
-	.literal .LC184, __FUNCTION__$5551
+	.literal .LC184, __FUNCTION__$5655
 	.literal .LC185, .LC13
 	.literal .LC186, .LC25
 	.literal .LC187, .LC27
@@ -2499,7 +2499,7 @@ rmt_set_rx_intr_en:
 	.global	rmt_set_err_intr_en
 	.type	rmt_set_err_intr_en, @function
 rmt_set_err_intr_en:
-.LFB40:
+.LFB44:
 	.loc 1 329 0
 .LVL316:
 	entry	sp, 48
@@ -2556,11 +2556,11 @@ rmt_set_err_intr_en:
 	movi.n	a2, 0
 	.loc 1 337 0
 	retw.n
-.LFE40:
+.LFE44:
 	.size	rmt_set_err_intr_en, .-rmt_set_err_intr_en
 	.section	.text.rmt_set_tx_intr_en,"ax",@progbits
 	.literal_position
-	.literal .LC188, __FUNCTION__$5556
+	.literal .LC188, __FUNCTION__$5660
 	.literal .LC189, .LC13
 	.literal .LC190, .LC25
 	.literal .LC191, .LC27
@@ -2568,7 +2568,7 @@ rmt_set_err_intr_en:
 	.global	rmt_set_tx_intr_en
 	.type	rmt_set_tx_intr_en, @function
 rmt_set_tx_intr_en:
-.LFB41:
+.LFB45:
 	.loc 1 340 0
 .LVL326:
 	entry	sp, 48
@@ -2623,7 +2623,7 @@ rmt_set_tx_intr_en:
 	movi.n	a2, 0
 	.loc 1 348 0
 	retw.n
-.LFE41:
+.LFE45:
 	.size	rmt_set_tx_intr_en, .-rmt_set_tx_intr_en
 	.section	.rodata.str1.4
 	.align	4
@@ -2631,7 +2631,7 @@ rmt_set_tx_intr_en:
 	.string	"RMT EVT THRESH ERR"
 	.section	.text.rmt_set_tx_thr_intr_en,"ax",@progbits
 	.literal_position
-	.literal .LC192, __FUNCTION__$5562
+	.literal .LC192, __FUNCTION__$5666
 	.literal .LC193, .LC13
 	.literal .LC194, .LC25
 	.literal .LC195, .LC27
@@ -2641,7 +2641,7 @@ rmt_set_tx_intr_en:
 	.global	rmt_set_tx_thr_intr_en
 	.type	rmt_set_tx_thr_intr_en, @function
 rmt_set_tx_thr_intr_en:
-.LFB42:
+.LFB46:
 	.loc 1 351 0
 .LVL336:
 	entry	sp, 48
@@ -2741,7 +2741,7 @@ rmt_set_tx_thr_intr_en:
 .LVL354:
 	.loc 1 362 0
 	retw.n
-.LFE42:
+.LFE46:
 	.size	rmt_set_tx_thr_intr_en, .-rmt_set_tx_thr_intr_en
 	.section	.rodata.str1.4
 	.align	4
@@ -2752,7 +2752,7 @@ rmt_set_tx_thr_intr_en:
 	.string	"RMT GPIO ERROR"
 	.section	.text.rmt_set_pin,"ax",@progbits
 	.literal_position
-	.literal .LC199, __FUNCTION__$5568
+	.literal .LC199, __FUNCTION__$5672
 	.literal .LC200, .LC13
 	.literal .LC201, .LC25
 	.literal .LC202, .LC27
@@ -2765,7 +2765,7 @@ rmt_set_tx_thr_intr_en:
 	.global	rmt_set_pin
 	.type	rmt_set_pin, @function
 rmt_set_pin:
-.LFB43:
+.LFB47:
 	.loc 1 365 0
 .LVL355:
 	entry	sp, 48
@@ -2903,7 +2903,7 @@ rmt_set_pin:
 .LVL374:
 	.loc 1 380 0
 	retw.n
-.LFE43:
+.LFE47:
 	.size	rmt_set_pin, .-rmt_set_pin
 	.section	.rodata.str1.4
 	.align	4
@@ -2914,7 +2914,7 @@ rmt_set_pin:
 	.string	"RMT carrier frequency can't be zero"
 	.section	.text.rmt_config,"ax",@progbits
 	.literal_position
-	.literal .LC210, __FUNCTION__$5579
+	.literal .LC210, __FUNCTION__$5683
 	.literal .LC211, .LC13
 	.literal .LC212, .LC25
 	.literal .LC213, .LC27
@@ -2940,7 +2940,7 @@ rmt_set_pin:
 	.global	rmt_config
 	.type	rmt_config, @function
 rmt_config:
-.LFB44:
+.LFB48:
 	.loc 1 383 0
 .LVL375:
 	entry	sp, 80
@@ -3437,7 +3437,7 @@ rmt_config:
 	movi.n	a2, 0
 	.loc 1 471 0
 	retw.n
-.LFE44:
+.LFE48:
 	.size	rmt_config, .-rmt_config
 	.section	.rodata.str1.4
 	.align	4
@@ -3448,7 +3448,7 @@ rmt_config:
 	.string	"RMT WR MEM OVERFLOW"
 	.section	.text.rmt_fill_tx_items,"ax",@progbits
 	.literal_position
-	.literal .LC234, __FUNCTION__$5606
+	.literal .LC234, __FUNCTION__$5710
 	.literal .LC235, .LC13
 	.literal .LC236, .LC25
 	.literal .LC237, .LC27
@@ -3460,7 +3460,7 @@ rmt_config:
 	.global	rmt_fill_tx_items
 	.type	rmt_fill_tx_items, @function
 rmt_fill_tx_items:
-.LFB46:
+.LFB50:
 	.loc 1 485 0
 .LVL440:
 	entry	sp, 48
@@ -3574,7 +3574,7 @@ rmt_fill_tx_items:
 .LVL459:
 	.loc 1 495 0
 	retw.n
-.LFE46:
+.LFE50:
 	.size	rmt_fill_tx_items, .-rmt_fill_tx_items
 	.section	.rodata.str1.4
 	.align	4
@@ -3582,7 +3582,7 @@ rmt_fill_tx_items:
 	.string	"RMT driver installed, can not install generic ISR handler"
 	.section	.text.rmt_isr_register,"ax",@progbits
 	.literal_position
-	.literal .LC244, __FUNCTION__$5615
+	.literal .LC244, __FUNCTION__$5719
 	.literal .LC245, .LC13
 	.literal .LC246, .LC25
 	.literal .LC247, .LC34
@@ -3592,7 +3592,7 @@ rmt_fill_tx_items:
 	.global	rmt_isr_register
 	.type	rmt_isr_register, @function
 rmt_isr_register:
-.LFB47:
+.LFB51:
 	.loc 1 498 0
 .LVL460:
 	entry	sp, 48
@@ -3655,14 +3655,14 @@ rmt_isr_register:
 .LVL470:
 	.loc 1 503 0
 	retw.n
-.LFE47:
+.LFE51:
 	.size	rmt_isr_register, .-rmt_isr_register
 	.section	.text.rmt_isr_deregister,"ax",@progbits
 	.align	4
 	.global	rmt_isr_deregister
 	.type	rmt_isr_deregister, @function
 rmt_isr_deregister:
-.LFB48:
+.LFB52:
 	.loc 1 507 0
 .LVL471:
 	entry	sp, 32
@@ -3675,7 +3675,7 @@ rmt_isr_deregister:
 	mov.n	a2, a10
 .LVL473:
 	retw.n
-.LFE48:
+.LFE52:
 	.size	rmt_isr_deregister, .-rmt_isr_deregister
 	.section	.rodata.str1.4
 	.align	4
@@ -3683,7 +3683,7 @@ rmt_isr_deregister:
 	.string	"No RMT driver for this channel"
 	.section	.text.rmt_driver_uninstall,"ax",@progbits
 	.literal_position
-	.literal .LC251, __FUNCTION__$5654
+	.literal .LC251, __FUNCTION__$5758
 	.literal .LC252, .LC13
 	.literal .LC253, .LC25
 	.literal .LC254, .LC27
@@ -3697,7 +3697,7 @@ rmt_isr_deregister:
 	.global	rmt_driver_uninstall
 	.type	rmt_driver_uninstall, @function
 rmt_driver_uninstall:
-.LFB51:
+.LFB55:
 	.loc 1 621 0
 .LVL474:
 	entry	sp, 48
@@ -3880,7 +3880,7 @@ rmt_driver_uninstall:
 .LVL503:
 	.loc 1 661 0
 	retw.n
-.LFE51:
+.LFE55:
 	.size	rmt_driver_uninstall, .-rmt_driver_uninstall
 	.section	.rodata.str1.4
 	.align	4
@@ -3891,7 +3891,7 @@ rmt_driver_uninstall:
 	.string	"\033[0;31mE (%d) %s: RMT driver malloc error\033[0m\n"
 	.section	.text.rmt_driver_install,"ax",@progbits
 	.literal_position
-	.literal .LC262, __FUNCTION__$5660
+	.literal .LC262, __FUNCTION__$5764
 	.literal .LC263, .LC13
 	.literal .LC264, .LC25
 	.literal .LC265, .LC27
@@ -3906,7 +3906,7 @@ rmt_driver_uninstall:
 	.global	rmt_driver_install
 	.type	rmt_driver_install, @function
 rmt_driver_install:
-.LFB52:
+.LFB56:
 	.loc 1 664 0
 .LVL504:
 	entry	sp, 48
@@ -4113,7 +4113,7 @@ rmt_driver_install:
 .LVL535:
 	.loc 1 712 0
 	retw.n
-.LFE52:
+.LFE56:
 	.size	rmt_driver_install, .-rmt_driver_install
 	.section	.rodata.str1.4
 	.align	4
@@ -4121,7 +4121,7 @@ rmt_driver_install:
 	.string	"RMT DRIVER ERR"
 	.section	.text.rmt_write_items,"ax",@progbits
 	.literal_position
-	.literal .LC275, __FUNCTION__$5668
+	.literal .LC275, __FUNCTION__$5772
 	.literal .LC276, .LC13
 	.literal .LC277, .LC25
 	.literal .LC278, .LC27
@@ -4135,7 +4135,7 @@ rmt_driver_install:
 	.global	rmt_write_items
 	.type	rmt_write_items, @function
 rmt_write_items:
-.LFB53:
+.LFB57:
 	.loc 1 715 0
 .LVL536:
 	entry	sp, 64
@@ -4365,7 +4365,7 @@ rmt_write_items:
 .LVL571:
 	.loc 1 749 0
 	retw.n
-.LFE53:
+.LFE57:
 	.size	rmt_write_items, .-rmt_write_items
 	.section	.rodata.str1.4
 	.align	4
@@ -4373,7 +4373,7 @@ rmt_write_items:
 	.string	"\033[0;31mE (%d) %s: Timeout on wait_tx_done\033[0m\n"
 	.section	.text.rmt_wait_tx_done,"ax",@progbits
 	.literal_position
-	.literal .LC286, __FUNCTION__$5678
+	.literal .LC286, __FUNCTION__$5782
 	.literal .LC287, .LC13
 	.literal .LC288, .LC25
 	.literal .LC289, .LC27
@@ -4384,7 +4384,7 @@ rmt_write_items:
 	.global	rmt_wait_tx_done
 	.type	rmt_wait_tx_done, @function
 rmt_wait_tx_done:
-.LFB54:
+.LFB58:
 	.loc 1 752 0
 .LVL572:
 	entry	sp, 48
@@ -4476,11 +4476,11 @@ rmt_wait_tx_done:
 .LVL588:
 	.loc 1 763 0 discriminator 1
 	retw.n
-.LFE54:
+.LFE58:
 	.size	rmt_wait_tx_done, .-rmt_wait_tx_done
 	.section	.text.rmt_get_ringbuf_handle,"ax",@progbits
 	.literal_position
-	.literal .LC294, __FUNCTION__$5683
+	.literal .LC294, __FUNCTION__$5787
 	.literal .LC295, .LC13
 	.literal .LC296, .LC25
 	.literal .LC297, .LC27
@@ -4491,7 +4491,7 @@ rmt_wait_tx_done:
 	.global	rmt_get_ringbuf_handle
 	.type	rmt_get_ringbuf_handle, @function
 rmt_get_ringbuf_handle:
-.LFB55:
+.LFB59:
 	.loc 1 766 0
 .LVL589:
 	entry	sp, 48
@@ -4569,223 +4569,223 @@ rmt_get_ringbuf_handle:
 	movi.n	a2, 0
 	.loc 1 772 0
 	retw.n
-.LFE55:
+.LFE59:
 	.size	rmt_get_ringbuf_handle, .-rmt_get_ringbuf_handle
+	.section	.rodata.__FUNCTION__$5787,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5787, @object
+	.size	__FUNCTION__$5787, 23
+__FUNCTION__$5787:
+	.string	"rmt_get_ringbuf_handle"
+	.section	.rodata.__FUNCTION__$5782,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5782, @object
+	.size	__FUNCTION__$5782, 17
+__FUNCTION__$5782:
+	.string	"rmt_wait_tx_done"
+	.section	.rodata.__FUNCTION__$5772,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5772, @object
+	.size	__FUNCTION__$5772, 16
+__FUNCTION__$5772:
+	.string	"rmt_write_items"
+	.section	.rodata.__FUNCTION__$5764,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5764, @object
+	.size	__FUNCTION__$5764, 19
+__FUNCTION__$5764:
+	.string	"rmt_driver_install"
+	.section	.rodata.__FUNCTION__$5758,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5758, @object
+	.size	__FUNCTION__$5758, 21
+__FUNCTION__$5758:
+	.string	"rmt_driver_uninstall"
+	.section	.rodata.__FUNCTION__$5719,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5719, @object
+	.size	__FUNCTION__$5719, 17
+__FUNCTION__$5719:
+	.string	"rmt_isr_register"
+	.section	.rodata.__FUNCTION__$5710,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5710, @object
+	.size	__FUNCTION__$5710, 18
+__FUNCTION__$5710:
+	.string	"rmt_fill_tx_items"
 	.section	.rodata.__FUNCTION__$5683,"a",@progbits
 	.align	4
 	.type	__FUNCTION__$5683, @object
-	.size	__FUNCTION__$5683, 23
+	.size	__FUNCTION__$5683, 11
 __FUNCTION__$5683:
-	.string	"rmt_get_ringbuf_handle"
-	.section	.rodata.__FUNCTION__$5678,"a",@progbits
+	.string	"rmt_config"
+	.section	.rodata.__FUNCTION__$5672,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5678, @object
-	.size	__FUNCTION__$5678, 17
-__FUNCTION__$5678:
-	.string	"rmt_wait_tx_done"
-	.section	.rodata.__FUNCTION__$5668,"a",@progbits
+	.type	__FUNCTION__$5672, @object
+	.size	__FUNCTION__$5672, 12
+__FUNCTION__$5672:
+	.string	"rmt_set_pin"
+	.section	.rodata.__FUNCTION__$5666,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5668, @object
-	.size	__FUNCTION__$5668, 16
-__FUNCTION__$5668:
-	.string	"rmt_write_items"
+	.type	__FUNCTION__$5666, @object
+	.size	__FUNCTION__$5666, 23
+__FUNCTION__$5666:
+	.string	"rmt_set_tx_thr_intr_en"
 	.section	.rodata.__FUNCTION__$5660,"a",@progbits
 	.align	4
 	.type	__FUNCTION__$5660, @object
 	.size	__FUNCTION__$5660, 19
 __FUNCTION__$5660:
-	.string	"rmt_driver_install"
-	.section	.rodata.__FUNCTION__$5654,"a",@progbits
+	.string	"rmt_set_tx_intr_en"
+	.section	.rodata.__FUNCTION__$5655,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5654, @object
-	.size	__FUNCTION__$5654, 21
-__FUNCTION__$5654:
-	.string	"rmt_driver_uninstall"
-	.section	.rodata.__FUNCTION__$5615,"a",@progbits
+	.type	__FUNCTION__$5655, @object
+	.size	__FUNCTION__$5655, 20
+__FUNCTION__$5655:
+	.string	"rmt_set_err_intr_en"
+	.section	.rodata.__FUNCTION__$5650,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5615, @object
-	.size	__FUNCTION__$5615, 17
-__FUNCTION__$5615:
-	.string	"rmt_isr_register"
-	.section	.rodata.__FUNCTION__$5606,"a",@progbits
+	.type	__FUNCTION__$5650, @object
+	.size	__FUNCTION__$5650, 19
+__FUNCTION__$5650:
+	.string	"rmt_set_rx_intr_en"
+	.section	.rodata.__FUNCTION__$5637,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5606, @object
-	.size	__FUNCTION__$5606, 18
-__FUNCTION__$5606:
-	.string	"rmt_fill_tx_items"
-	.section	.rodata.__FUNCTION__$5579,"a",@progbits
+	.type	__FUNCTION__$5637, @object
+	.size	__FUNCTION__$5637, 15
+__FUNCTION__$5637:
+	.string	"rmt_get_status"
+	.section	.rodata.__FUNCTION__$5632,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5579, @object
-	.size	__FUNCTION__$5579, 11
-__FUNCTION__$5579:
-	.string	"rmt_config"
+	.type	__FUNCTION__$5632, @object
+	.size	__FUNCTION__$5632, 19
+__FUNCTION__$5632:
+	.string	"rmt_set_idle_level"
+	.section	.rodata.__FUNCTION__$5626,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5626, @object
+	.size	__FUNCTION__$5626, 19
+__FUNCTION__$5626:
+	.string	"rmt_get_source_clk"
+	.section	.rodata.__FUNCTION__$5621,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5621, @object
+	.size	__FUNCTION__$5621, 19
+__FUNCTION__$5621:
+	.string	"rmt_set_source_clk"
+	.section	.rodata.__FUNCTION__$5616,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5616, @object
+	.size	__FUNCTION__$5616, 18
+__FUNCTION__$5616:
+	.string	"rmt_set_rx_filter"
+	.section	.rodata.__FUNCTION__$5610,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5610, @object
+	.size	__FUNCTION__$5610, 21
+__FUNCTION__$5610:
+	.string	"rmt_get_tx_loop_mode"
+	.section	.rodata.__FUNCTION__$5605,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5605, @object
+	.size	__FUNCTION__$5605, 21
+__FUNCTION__$5605:
+	.string	"rmt_set_tx_loop_mode"
+	.section	.rodata.__FUNCTION__$5600,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5600, @object
+	.size	__FUNCTION__$5600, 21
+__FUNCTION__$5600:
+	.string	"rmt_get_memory_owner"
+	.section	.rodata.__FUNCTION__$5595,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5595, @object
+	.size	__FUNCTION__$5595, 21
+__FUNCTION__$5595:
+	.string	"rmt_set_memory_owner"
+	.section	.rodata.__FUNCTION__$5590,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5590, @object
+	.size	__FUNCTION__$5590, 18
+__FUNCTION__$5590:
+	.string	"rmt_memory_rw_rst"
+	.section	.rodata.__FUNCTION__$5586,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5586, @object
+	.size	__FUNCTION__$5586, 12
+__FUNCTION__$5586:
+	.string	"rmt_rx_stop"
+	.section	.rodata.__FUNCTION__$5582,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5582, @object
+	.size	__FUNCTION__$5582, 13
+__FUNCTION__$5582:
+	.string	"rmt_rx_start"
+	.section	.rodata.__FUNCTION__$5577,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5577, @object
+	.size	__FUNCTION__$5577, 12
+__FUNCTION__$5577:
+	.string	"rmt_tx_stop"
+	.section	.rodata.__FUNCTION__$5573,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5573, @object
+	.size	__FUNCTION__$5573, 13
+__FUNCTION__$5573:
+	.string	"rmt_tx_start"
 	.section	.rodata.__FUNCTION__$5568,"a",@progbits
 	.align	4
 	.type	__FUNCTION__$5568, @object
-	.size	__FUNCTION__$5568, 12
+	.size	__FUNCTION__$5568, 15
 __FUNCTION__$5568:
-	.string	"rmt_set_pin"
-	.section	.rodata.__FUNCTION__$5562,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5562, @object
-	.size	__FUNCTION__$5562, 23
-__FUNCTION__$5562:
-	.string	"rmt_set_tx_thr_intr_en"
-	.section	.rodata.__FUNCTION__$5556,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5556, @object
-	.size	__FUNCTION__$5556, 19
-__FUNCTION__$5556:
-	.string	"rmt_set_tx_intr_en"
-	.section	.rodata.__FUNCTION__$5551,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5551, @object
-	.size	__FUNCTION__$5551, 20
-__FUNCTION__$5551:
-	.string	"rmt_set_err_intr_en"
-	.section	.rodata.__FUNCTION__$5546,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5546, @object
-	.size	__FUNCTION__$5546, 19
-__FUNCTION__$5546:
-	.string	"rmt_set_rx_intr_en"
-	.section	.rodata.__FUNCTION__$5533,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5533, @object
-	.size	__FUNCTION__$5533, 15
-__FUNCTION__$5533:
-	.string	"rmt_get_status"
-	.section	.rodata.__FUNCTION__$5528,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5528, @object
-	.size	__FUNCTION__$5528, 19
-__FUNCTION__$5528:
-	.string	"rmt_set_idle_level"
-	.section	.rodata.__FUNCTION__$5522,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5522, @object
-	.size	__FUNCTION__$5522, 19
-__FUNCTION__$5522:
-	.string	"rmt_get_source_clk"
-	.section	.rodata.__FUNCTION__$5517,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5517, @object
-	.size	__FUNCTION__$5517, 19
-__FUNCTION__$5517:
-	.string	"rmt_set_source_clk"
-	.section	.rodata.__FUNCTION__$5512,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5512, @object
-	.size	__FUNCTION__$5512, 18
-__FUNCTION__$5512:
-	.string	"rmt_set_rx_filter"
-	.section	.rodata.__FUNCTION__$5506,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5506, @object
-	.size	__FUNCTION__$5506, 21
-__FUNCTION__$5506:
-	.string	"rmt_get_tx_loop_mode"
-	.section	.rodata.__FUNCTION__$5501,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5501, @object
-	.size	__FUNCTION__$5501, 21
-__FUNCTION__$5501:
-	.string	"rmt_set_tx_loop_mode"
-	.section	.rodata.__FUNCTION__$5496,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5496, @object
-	.size	__FUNCTION__$5496, 21
-__FUNCTION__$5496:
-	.string	"rmt_get_memory_owner"
-	.section	.rodata.__FUNCTION__$5491,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5491, @object
-	.size	__FUNCTION__$5491, 21
-__FUNCTION__$5491:
-	.string	"rmt_set_memory_owner"
-	.section	.rodata.__FUNCTION__$5486,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5486, @object
-	.size	__FUNCTION__$5486, 18
-__FUNCTION__$5486:
-	.string	"rmt_memory_rw_rst"
-	.section	.rodata.__FUNCTION__$5482,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5482, @object
-	.size	__FUNCTION__$5482, 12
-__FUNCTION__$5482:
-	.string	"rmt_rx_stop"
-	.section	.rodata.__FUNCTION__$5478,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5478, @object
-	.size	__FUNCTION__$5478, 13
-__FUNCTION__$5478:
-	.string	"rmt_rx_start"
-	.section	.rodata.__FUNCTION__$5473,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5473, @object
-	.size	__FUNCTION__$5473, 12
-__FUNCTION__$5473:
-	.string	"rmt_tx_stop"
-	.section	.rodata.__FUNCTION__$5469,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5469, @object
-	.size	__FUNCTION__$5469, 13
-__FUNCTION__$5469:
-	.string	"rmt_tx_start"
-	.section	.rodata.__FUNCTION__$5464,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5464, @object
-	.size	__FUNCTION__$5464, 15
-__FUNCTION__$5464:
 	.string	"rmt_get_mem_pd"
-	.section	.rodata.__FUNCTION__$5459,"a",@progbits
+	.section	.rodata.__FUNCTION__$5563,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5459, @object
-	.size	__FUNCTION__$5459, 15
-__FUNCTION__$5459:
+	.type	__FUNCTION__$5563, @object
+	.size	__FUNCTION__$5563, 15
+__FUNCTION__$5563:
 	.string	"rmt_set_mem_pd"
-	.section	.rodata.__FUNCTION__$5454,"a",@progbits
+	.section	.rodata.__FUNCTION__$5558,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5454, @object
-	.size	__FUNCTION__$5454, 19
-__FUNCTION__$5454:
+	.type	__FUNCTION__$5558, @object
+	.size	__FUNCTION__$5558, 19
+__FUNCTION__$5558:
 	.string	"rmt_set_tx_carrier"
-	.section	.rodata.__FUNCTION__$5446,"a",@progbits
+	.section	.rodata.__FUNCTION__$5550,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5446, @object
-	.size	__FUNCTION__$5446, 22
-__FUNCTION__$5446:
+	.type	__FUNCTION__$5550, @object
+	.size	__FUNCTION__$5550, 22
+__FUNCTION__$5550:
 	.string	"rmt_get_mem_block_num"
-	.section	.rodata.__FUNCTION__$5441,"a",@progbits
+	.section	.rodata.__FUNCTION__$5545,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5441, @object
-	.size	__FUNCTION__$5441, 22
-__FUNCTION__$5441:
+	.type	__FUNCTION__$5545, @object
+	.size	__FUNCTION__$5545, 22
+__FUNCTION__$5545:
 	.string	"rmt_set_mem_block_num"
-	.section	.rodata.__FUNCTION__$5436,"a",@progbits
+	.section	.rodata.__FUNCTION__$5540,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5436, @object
-	.size	__FUNCTION__$5436, 23
-__FUNCTION__$5436:
+	.type	__FUNCTION__$5540, @object
+	.size	__FUNCTION__$5540, 23
+__FUNCTION__$5540:
 	.string	"rmt_get_rx_idle_thresh"
-	.section	.rodata.__FUNCTION__$5431,"a",@progbits
+	.section	.rodata.__FUNCTION__$5535,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5431, @object
-	.size	__FUNCTION__$5431, 23
-__FUNCTION__$5431:
+	.type	__FUNCTION__$5535, @object
+	.size	__FUNCTION__$5535, 23
+__FUNCTION__$5535:
 	.string	"rmt_set_rx_idle_thresh"
-	.section	.rodata.__FUNCTION__$5426,"a",@progbits
+	.section	.rodata.__FUNCTION__$5530,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5426, @object
-	.size	__FUNCTION__$5426, 16
-__FUNCTION__$5426:
+	.type	__FUNCTION__$5530, @object
+	.size	__FUNCTION__$5530, 16
+__FUNCTION__$5530:
 	.string	"rmt_get_clk_div"
-	.section	.rodata.__FUNCTION__$5421,"a",@progbits
+	.section	.rodata.__FUNCTION__$5525,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5421, @object
-	.size	__FUNCTION__$5421, 16
-__FUNCTION__$5421:
+	.type	__FUNCTION__$5525, @object
+	.size	__FUNCTION__$5525, 16
+__FUNCTION__$5525:
 	.string	"rmt_set_clk_div"
 	.global	p_rmt_obj
 	.section	.bss.p_rmt_obj,"aw",@nobits
@@ -4837,10 +4837,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB49
-	.4byte	.LFE49-.LFB49
+	.4byte	.LFB53
+	.4byte	.LFE53-.LFB53
 	.byte	0x4
-	.4byte	.LCFI0-.LFB49
+	.4byte	.LCFI0-.LFB53
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4849,10 +4849,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI1-.LFB11
+	.4byte	.LCFI1-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4861,10 +4861,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI2-.LFB12
+	.4byte	.LCFI2-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4873,10 +4873,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB45
-	.4byte	.LFE45-.LFB45
+	.4byte	.LFB49
+	.4byte	.LFE49-.LFB49
 	.byte	0x4
-	.4byte	.LCFI3-.LFB45
+	.4byte	.LCFI3-.LFB49
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4885,10 +4885,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB50
-	.4byte	.LFE50-.LFB50
+	.4byte	.LFB54
+	.4byte	.LFE54-.LFB54
 	.byte	0x4
-	.4byte	.LCFI4-.LFB50
+	.4byte	.LCFI4-.LFB54
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4897,10 +4897,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI5-.LFB13
+	.4byte	.LCFI5-.LFB17
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4909,10 +4909,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI6-.LFB14
+	.4byte	.LCFI6-.LFB18
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4921,10 +4921,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI7-.LFB15
+	.4byte	.LCFI7-.LFB19
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4933,10 +4933,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI8-.LFB16
+	.4byte	.LCFI8-.LFB20
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4945,10 +4945,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI9-.LFB17
+	.4byte	.LCFI9-.LFB21
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4957,10 +4957,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI10-.LFB18
+	.4byte	.LCFI10-.LFB22
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4969,10 +4969,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI11-.LFB19
+	.4byte	.LCFI11-.LFB23
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4981,10 +4981,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE24-.LASFDE24
 .LASFDE24:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.byte	0x4
-	.4byte	.LCFI12-.LFB20
+	.4byte	.LCFI12-.LFB24
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4993,10 +4993,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE26-.LASFDE26
 .LASFDE26:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.byte	0x4
-	.4byte	.LCFI13-.LFB21
+	.4byte	.LCFI13-.LFB25
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5005,10 +5005,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE28-.LASFDE28
 .LASFDE28:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI14-.LFB22
+	.4byte	.LCFI14-.LFB26
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5017,10 +5017,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE30-.LASFDE30
 .LASFDE30:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI15-.LFB23
+	.4byte	.LCFI15-.LFB27
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5029,10 +5029,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE32-.LASFDE32
 .LASFDE32:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI16-.LFB24
+	.4byte	.LCFI16-.LFB28
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5041,10 +5041,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE34-.LASFDE34
 .LASFDE34:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI17-.LFB25
+	.4byte	.LCFI17-.LFB29
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5053,10 +5053,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE36-.LASFDE36
 .LASFDE36:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI18-.LFB26
+	.4byte	.LCFI18-.LFB30
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5065,10 +5065,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE38-.LASFDE38
 .LASFDE38:
 	.4byte	.Lframe0
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.byte	0x4
-	.4byte	.LCFI19-.LFB27
+	.4byte	.LCFI19-.LFB31
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5077,10 +5077,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE40-.LASFDE40
 .LASFDE40:
 	.4byte	.Lframe0
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.byte	0x4
-	.4byte	.LCFI20-.LFB28
+	.4byte	.LCFI20-.LFB32
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5089,10 +5089,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE42-.LASFDE42
 .LASFDE42:
 	.4byte	.Lframe0
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.byte	0x4
-	.4byte	.LCFI21-.LFB29
+	.4byte	.LCFI21-.LFB33
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5101,10 +5101,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE44-.LASFDE44
 .LASFDE44:
 	.4byte	.Lframe0
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.byte	0x4
-	.4byte	.LCFI22-.LFB30
+	.4byte	.LCFI22-.LFB34
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5113,10 +5113,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE46-.LASFDE46
 .LASFDE46:
 	.4byte	.Lframe0
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.byte	0x4
-	.4byte	.LCFI23-.LFB31
+	.4byte	.LCFI23-.LFB35
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5125,10 +5125,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE48-.LASFDE48
 .LASFDE48:
 	.4byte	.Lframe0
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.byte	0x4
-	.4byte	.LCFI24-.LFB32
+	.4byte	.LCFI24-.LFB36
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5137,10 +5137,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE50-.LASFDE50
 .LASFDE50:
 	.4byte	.Lframe0
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.byte	0x4
-	.4byte	.LCFI25-.LFB33
+	.4byte	.LCFI25-.LFB37
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5149,10 +5149,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE52-.LASFDE52
 .LASFDE52:
 	.4byte	.Lframe0
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.byte	0x4
-	.4byte	.LCFI26-.LFB34
+	.4byte	.LCFI26-.LFB38
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5161,10 +5161,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE54-.LASFDE54
 .LASFDE54:
 	.4byte	.Lframe0
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.byte	0x4
-	.4byte	.LCFI27-.LFB35
+	.4byte	.LCFI27-.LFB39
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5173,10 +5173,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE56-.LASFDE56
 .LASFDE56:
 	.4byte	.Lframe0
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
 	.byte	0x4
-	.4byte	.LCFI28-.LFB36
+	.4byte	.LCFI28-.LFB40
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -5185,10 +5185,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE58-.LASFDE58
 .LASFDE58:
 	.4byte	.Lframe0
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
 	.byte	0x4
-	.4byte	.LCFI29-.LFB37
+	.4byte	.LCFI29-.LFB41
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -5197,10 +5197,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE60-.LASFDE60
 .LASFDE60:
 	.4byte	.Lframe0
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
 	.byte	0x4
-	.4byte	.LCFI30-.LFB38
+	.4byte	.LCFI30-.LFB42
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -5209,10 +5209,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE62-.LASFDE62
 .LASFDE62:
 	.4byte	.Lframe0
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.byte	0x4
-	.4byte	.LCFI31-.LFB39
+	.4byte	.LCFI31-.LFB43
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5221,10 +5221,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE64-.LASFDE64
 .LASFDE64:
 	.4byte	.Lframe0
-	.4byte	.LFB40
-	.4byte	.LFE40-.LFB40
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
 	.byte	0x4
-	.4byte	.LCFI32-.LFB40
+	.4byte	.LCFI32-.LFB44
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5233,10 +5233,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE66-.LASFDE66
 .LASFDE66:
 	.4byte	.Lframe0
-	.4byte	.LFB41
-	.4byte	.LFE41-.LFB41
+	.4byte	.LFB45
+	.4byte	.LFE45-.LFB45
 	.byte	0x4
-	.4byte	.LCFI33-.LFB41
+	.4byte	.LCFI33-.LFB45
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5245,10 +5245,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE68-.LASFDE68
 .LASFDE68:
 	.4byte	.Lframe0
-	.4byte	.LFB42
-	.4byte	.LFE42-.LFB42
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
 	.byte	0x4
-	.4byte	.LCFI34-.LFB42
+	.4byte	.LCFI34-.LFB46
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5257,10 +5257,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE70-.LASFDE70
 .LASFDE70:
 	.4byte	.Lframe0
-	.4byte	.LFB43
-	.4byte	.LFE43-.LFB43
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
 	.byte	0x4
-	.4byte	.LCFI35-.LFB43
+	.4byte	.LCFI35-.LFB47
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5269,10 +5269,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE72-.LASFDE72
 .LASFDE72:
 	.4byte	.Lframe0
-	.4byte	.LFB44
-	.4byte	.LFE44-.LFB44
+	.4byte	.LFB48
+	.4byte	.LFE48-.LFB48
 	.byte	0x4
-	.4byte	.LCFI36-.LFB44
+	.4byte	.LCFI36-.LFB48
 	.byte	0xe
 	.uleb128 0x50
 	.align	4
@@ -5281,10 +5281,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE74-.LASFDE74
 .LASFDE74:
 	.4byte	.Lframe0
-	.4byte	.LFB46
-	.4byte	.LFE46-.LFB46
+	.4byte	.LFB50
+	.4byte	.LFE50-.LFB50
 	.byte	0x4
-	.4byte	.LCFI37-.LFB46
+	.4byte	.LCFI37-.LFB50
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5293,10 +5293,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE76-.LASFDE76
 .LASFDE76:
 	.4byte	.Lframe0
-	.4byte	.LFB47
-	.4byte	.LFE47-.LFB47
+	.4byte	.LFB51
+	.4byte	.LFE51-.LFB51
 	.byte	0x4
-	.4byte	.LCFI38-.LFB47
+	.4byte	.LCFI38-.LFB51
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5305,10 +5305,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE78-.LASFDE78
 .LASFDE78:
 	.4byte	.Lframe0
-	.4byte	.LFB48
-	.4byte	.LFE48-.LFB48
+	.4byte	.LFB52
+	.4byte	.LFE52-.LFB52
 	.byte	0x4
-	.4byte	.LCFI39-.LFB48
+	.4byte	.LCFI39-.LFB52
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -5317,10 +5317,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE80-.LASFDE80
 .LASFDE80:
 	.4byte	.Lframe0
-	.4byte	.LFB51
-	.4byte	.LFE51-.LFB51
+	.4byte	.LFB55
+	.4byte	.LFE55-.LFB55
 	.byte	0x4
-	.4byte	.LCFI40-.LFB51
+	.4byte	.LCFI40-.LFB55
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5329,10 +5329,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE82-.LASFDE82
 .LASFDE82:
 	.4byte	.Lframe0
-	.4byte	.LFB52
-	.4byte	.LFE52-.LFB52
+	.4byte	.LFB56
+	.4byte	.LFE56-.LFB56
 	.byte	0x4
-	.4byte	.LCFI41-.LFB52
+	.4byte	.LCFI41-.LFB56
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5341,10 +5341,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE84-.LASFDE84
 .LASFDE84:
 	.4byte	.Lframe0
-	.4byte	.LFB53
-	.4byte	.LFE53-.LFB53
+	.4byte	.LFB57
+	.4byte	.LFE57-.LFB57
 	.byte	0x4
-	.4byte	.LCFI42-.LFB53
+	.4byte	.LCFI42-.LFB57
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -5353,10 +5353,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE86-.LASFDE86
 .LASFDE86:
 	.4byte	.Lframe0
-	.4byte	.LFB54
-	.4byte	.LFE54-.LFB54
+	.4byte	.LFB58
+	.4byte	.LFE58-.LFB58
 	.byte	0x4
-	.4byte	.LCFI43-.LFB54
+	.4byte	.LCFI43-.LFB58
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5365,10 +5365,10 @@ s_rmt_driver_channels:
 	.4byte	.LEFDE88-.LASFDE88
 .LASFDE88:
 	.4byte	.Lframe0
-	.4byte	.LFB55
-	.4byte	.LFE55-.LFB55
+	.4byte	.LFB59
+	.4byte	.LFE59-.LFB59
 	.byte	0x4
-	.4byte	.LCFI44-.LFB55
+	.4byte	.LCFI44-.LFB59
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5520,53 +5520,53 @@ s_rmt_driver_channels:
 	.uleb128 0x9
 	.4byte	0xd9
 	.byte	0
-	.uleb128 0x3
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x2
 	.4byte	.LASF21
-	.byte	0x6
-	.byte	0x6c
-	.4byte	0x70
 	.uleb128 0x3
 	.4byte	.LASF22
 	.byte	0x6
-	.byte	0x6d
-	.4byte	0x25
+	.byte	0x6f
+	.4byte	0x70
 	.uleb128 0x3
 	.4byte	.LASF23
 	.byte	0x6
-	.byte	0x73
+	.byte	0x70
+	.4byte	0x25
+	.uleb128 0x3
+	.4byte	.LASF24
+	.byte	0x6
+	.byte	0x76
 	.4byte	0xb5
 	.uleb128 0xa
 	.byte	0x8
 	.byte	0x6
-	.byte	0x81
-	.4byte	0x147
-	.uleb128 0xb
-	.4byte	.LASF24
-	.byte	0x6
-	.byte	0x82
-	.4byte	0xb5
-	.byte	0
+	.byte	0x84
+	.4byte	0x14e
 	.uleb128 0xb
 	.4byte	.LASF25
 	.byte	0x6
-	.byte	0x83
+	.byte	0x85
+	.4byte	0xb5
+	.byte	0
+	.uleb128 0xb
+	.4byte	.LASF26
+	.byte	0x6
+	.byte	0x86
 	.4byte	0xb5
 	.byte	0x4
 	.byte	0
 	.uleb128 0x3
-	.4byte	.LASF26
-	.byte	0x6
-	.byte	0x88
-	.4byte	0x126
-	.uleb128 0x3
 	.4byte	.LASF27
+	.byte	0x6
+	.byte	0x8b
+	.4byte	0x12d
+	.uleb128 0x3
+	.4byte	.LASF28
 	.byte	0x7
 	.byte	0x18
 	.4byte	0xaa
-	.uleb128 0x2
-	.byte	0x1
-	.byte	0x2
-	.4byte	.LASF28
 	.uleb128 0x3
 	.4byte	.LASF29
 	.byte	0x8
@@ -7944,7 +7944,7 @@ s_rmt_driver_channels:
 	.4byte	.LASF233
 	.byte	0x10
 	.byte	0x57
-	.4byte	0x15d
+	.4byte	0x105
 	.byte	0
 	.uleb128 0xb
 	.4byte	.LASF234
@@ -7968,7 +7968,7 @@ s_rmt_driver_channels:
 	.4byte	.LASF88
 	.byte	0x10
 	.byte	0x5b
-	.4byte	0x15d
+	.4byte	0x105
 	.byte	0x10
 	.uleb128 0xb
 	.4byte	.LASF237
@@ -7980,7 +7980,7 @@ s_rmt_driver_channels:
 	.4byte	.LASF238
 	.byte	0x10
 	.byte	0x5d
-	.4byte	0x15d
+	.4byte	0x105
 	.byte	0x18
 	.byte	0
 	.uleb128 0x3
@@ -7997,7 +7997,7 @@ s_rmt_driver_channels:
 	.4byte	.LASF240
 	.byte	0x10
 	.byte	0x64
-	.4byte	0x15d
+	.4byte	0x105
 	.byte	0
 	.uleb128 0xb
 	.4byte	.LASF241
@@ -8151,8 +8151,8 @@ s_rmt_driver_channels:
 	.byte	0x1
 	.2byte	0x1ff
 	.4byte	0x70
-	.4byte	.LFB49
-	.4byte	.LFE49-.LFB49
+	.4byte	.LFB53
+	.4byte	.LFE53-.LFB53
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x13e7
@@ -8198,8 +8198,8 @@ s_rmt_driver_channels:
 	.4byte	.LASF264
 	.byte	0x1
 	.byte	0x4e
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1449
@@ -8213,7 +8213,7 @@ s_rmt_driver_channels:
 	.string	"en"
 	.byte	0x1
 	.byte	0x4e
-	.4byte	0x15d
+	.4byte	0x105
 	.4byte	.LLST4
 	.uleb128 0x27
 	.4byte	.LVL11
@@ -8241,8 +8241,8 @@ s_rmt_driver_channels:
 	.4byte	.LASF265
 	.byte	0x1
 	.byte	0x55
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1492
@@ -8278,8 +8278,8 @@ s_rmt_driver_channels:
 	.4byte	.LASF267
 	.byte	0x1
 	.2byte	0x1d9
-	.4byte	.LFB45
-	.4byte	.LFE45-.LFB45
+	.4byte	.LFB49
+	.4byte	.LFE49-.LFB49
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1513
@@ -8343,8 +8343,8 @@ s_rmt_driver_channels:
 	.4byte	.LASF271
 	.byte	0x1
 	.2byte	0x20f
-	.4byte	.LFB50
-	.4byte	.LFE50-.LFB50
+	.4byte	.LFB54
+	.4byte	.LFE54-.LFB54
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x173c
@@ -8408,7 +8408,7 @@ s_rmt_driver_channels:
 	.string	"res"
 	.byte	0x1
 	.2byte	0x22f
-	.4byte	0x105
+	.4byte	0x10c
 	.4byte	.LLST12
 	.uleb128 0x27
 	.4byte	.LVL35
@@ -8618,9 +8618,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF278
 	.byte	0x1
 	.byte	0x5c
-	.4byte	0x152
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	0x159
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x17d6
@@ -8641,7 +8641,7 @@ s_rmt_driver_channels:
 	.4byte	0x17e6
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5421
+	.4byte	__FUNCTION__$5525
 	.uleb128 0x2f
 	.4byte	.LVL65
 	.4byte	0x420a
@@ -8676,7 +8676,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5421
+	.4byte	__FUNCTION__$5525
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -8706,9 +8706,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF279
 	.byte	0x1
 	.byte	0x63
-	.4byte	0x152
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	0x159
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x18ce
@@ -8730,7 +8730,7 @@ s_rmt_driver_channels:
 	.4byte	0x18d4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5426
+	.4byte	__FUNCTION__$5530
 	.uleb128 0x2f
 	.4byte	.LVL73
 	.4byte	0x420a
@@ -8766,7 +8766,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5426
+	.4byte	__FUNCTION__$5530
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -8816,7 +8816,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5426
+	.4byte	__FUNCTION__$5530
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -8842,9 +8842,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF281
 	.byte	0x1
 	.byte	0x6b
-	.4byte	0x152
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	0x159
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x196d
@@ -8865,7 +8865,7 @@ s_rmt_driver_channels:
 	.4byte	0x197d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5431
+	.4byte	__FUNCTION__$5535
 	.uleb128 0x2f
 	.4byte	.LVL84
 	.4byte	0x420a
@@ -8900,7 +8900,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5431
+	.4byte	__FUNCTION__$5535
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -8930,9 +8930,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF283
 	.byte	0x1
 	.byte	0x72
-	.4byte	0x152
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	0x159
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1a65
@@ -8954,7 +8954,7 @@ s_rmt_driver_channels:
 	.4byte	0x1a6b
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5436
+	.4byte	__FUNCTION__$5540
 	.uleb128 0x2f
 	.4byte	.LVL92
 	.4byte	0x420a
@@ -8990,7 +8990,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5436
+	.4byte	__FUNCTION__$5540
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -9040,7 +9040,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5436
+	.4byte	__FUNCTION__$5540
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -9066,9 +9066,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF284
 	.byte	0x1
 	.byte	0x7a
-	.4byte	0x152
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	0x159
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1b55
@@ -9089,7 +9089,7 @@ s_rmt_driver_channels:
 	.4byte	0x1b65
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5441
+	.4byte	__FUNCTION__$5545
 	.uleb128 0x2f
 	.4byte	.LVL103
 	.4byte	0x420a
@@ -9125,7 +9125,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5441
+	.4byte	__FUNCTION__$5545
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -9175,7 +9175,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5441
+	.4byte	__FUNCTION__$5545
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -9205,9 +9205,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF286
 	.byte	0x1
 	.byte	0x82
-	.4byte	0x152
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	0x159
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1c4d
@@ -9229,7 +9229,7 @@ s_rmt_driver_channels:
 	.4byte	0x1c4d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5446
+	.4byte	__FUNCTION__$5550
 	.uleb128 0x2f
 	.4byte	.LVL115
 	.4byte	0x420a
@@ -9265,7 +9265,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5446
+	.4byte	__FUNCTION__$5550
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -9315,7 +9315,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5446
+	.4byte	__FUNCTION__$5550
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -9338,9 +9338,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF287
 	.byte	0x1
 	.byte	0x8a
-	.4byte	0x152
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	0x159
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1d64
@@ -9354,7 +9354,7 @@ s_rmt_driver_channels:
 	.4byte	.LASF88
 	.byte	0x1
 	.byte	0x8a
-	.4byte	0x15d
+	.4byte	0x105
 	.4byte	.LLST26
 	.uleb128 0x25
 	.4byte	.LASF288
@@ -9379,7 +9379,7 @@ s_rmt_driver_channels:
 	.4byte	0x1d74
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5454
+	.4byte	__FUNCTION__$5558
 	.uleb128 0x2f
 	.4byte	.LVL126
 	.4byte	0x420a
@@ -9415,7 +9415,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5454
+	.4byte	__FUNCTION__$5558
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -9465,7 +9465,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5454
+	.4byte	__FUNCTION__$5558
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -9495,9 +9495,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF290
 	.byte	0x1
 	.byte	0x96
-	.4byte	0x152
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	0x159
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1e0d
@@ -9511,14 +9511,14 @@ s_rmt_driver_channels:
 	.4byte	.LASF291
 	.byte	0x1
 	.byte	0x96
-	.4byte	0x15d
+	.4byte	0x105
 	.4byte	.LLST31
 	.uleb128 0x31
 	.4byte	.LASF280
 	.4byte	0x1e1d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5459
+	.4byte	__FUNCTION__$5563
 	.uleb128 0x2f
 	.4byte	.LVL141
 	.4byte	0x420a
@@ -9553,7 +9553,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5459
+	.4byte	__FUNCTION__$5563
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -9583,9 +9583,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF292
 	.byte	0x1
 	.byte	0x9d
-	.4byte	0x152
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	0x159
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1eb4
@@ -9607,7 +9607,7 @@ s_rmt_driver_channels:
 	.4byte	0x1eba
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5464
+	.4byte	__FUNCTION__$5568
 	.uleb128 0x2f
 	.4byte	.LVL149
 	.4byte	0x420a
@@ -9642,7 +9642,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5464
+	.4byte	__FUNCTION__$5568
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -9661,16 +9661,16 @@ s_rmt_driver_channels:
 	.byte	0
 	.uleb128 0x6
 	.byte	0x4
-	.4byte	0x15d
+	.4byte	0x105
 	.uleb128 0x7
 	.4byte	0x1e0d
 	.uleb128 0x30
 	.4byte	.LASF293
 	.byte	0x1
 	.byte	0xa4
-	.4byte	0x152
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	0x159
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1f81
@@ -9684,14 +9684,14 @@ s_rmt_driver_channels:
 	.4byte	.LASF294
 	.byte	0x1
 	.byte	0xa4
-	.4byte	0x15d
+	.4byte	0x105
 	.4byte	.LLST34
 	.uleb128 0x31
 	.4byte	.LASF280
 	.4byte	0x1f91
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5469
+	.4byte	__FUNCTION__$5573
 	.uleb128 0x2f
 	.4byte	.LVL156
 	.4byte	0x420a
@@ -9727,7 +9727,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5469
+	.4byte	__FUNCTION__$5573
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -9778,9 +9778,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF295
 	.byte	0x1
 	.byte	0xb1
-	.4byte	0x152
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	0x159
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2043
@@ -9795,7 +9795,7 @@ s_rmt_driver_channels:
 	.4byte	0x2053
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5473
+	.4byte	__FUNCTION__$5577
 	.uleb128 0x2f
 	.4byte	.LVL166
 	.4byte	0x420a
@@ -9831,7 +9831,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5473
+	.4byte	__FUNCTION__$5577
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -9882,9 +9882,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF296
 	.byte	0x1
 	.byte	0xba
-	.4byte	0x152
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	0x159
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x211a
@@ -9898,14 +9898,14 @@ s_rmt_driver_channels:
 	.4byte	.LASF297
 	.byte	0x1
 	.byte	0xba
-	.4byte	0x15d
+	.4byte	0x105
 	.4byte	.LLST37
 	.uleb128 0x31
 	.4byte	.LASF280
 	.4byte	0x211a
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5478
+	.4byte	__FUNCTION__$5582
 	.uleb128 0x2f
 	.4byte	.LVL175
 	.4byte	0x420a
@@ -9941,7 +9941,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5478
+	.4byte	__FUNCTION__$5582
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -9985,9 +9985,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF298
 	.byte	0x1
 	.byte	0xc8
-	.4byte	0x152
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	0x159
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x21cc
@@ -10002,7 +10002,7 @@ s_rmt_driver_channels:
 	.4byte	0x21cc
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5482
+	.4byte	__FUNCTION__$5586
 	.uleb128 0x2f
 	.4byte	.LVL185
 	.4byte	0x420a
@@ -10038,7 +10038,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5482
+	.4byte	__FUNCTION__$5586
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -10082,9 +10082,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF299
 	.byte	0x1
 	.byte	0xd1
-	.4byte	0x152
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	0x159
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x227e
@@ -10099,7 +10099,7 @@ s_rmt_driver_channels:
 	.4byte	0x228e
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5486
+	.4byte	__FUNCTION__$5590
 	.uleb128 0x2f
 	.4byte	.LVL194
 	.4byte	0x420a
@@ -10135,7 +10135,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5486
+	.4byte	__FUNCTION__$5590
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -10186,9 +10186,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF300
 	.byte	0x1
 	.byte	0xdb
-	.4byte	0x152
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	0x159
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x23a0
@@ -10199,7 +10199,7 @@ s_rmt_driver_channels:
 	.4byte	0x10da
 	.4byte	.LLST40
 	.uleb128 0x25
-	.4byte	.LASF24
+	.4byte	.LASF25
 	.byte	0x1
 	.byte	0xdb
 	.4byte	0x1104
@@ -10209,7 +10209,7 @@ s_rmt_driver_channels:
 	.4byte	0x23b0
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5491
+	.4byte	__FUNCTION__$5595
 	.uleb128 0x2f
 	.4byte	.LVL203
 	.4byte	0x420a
@@ -10245,7 +10245,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5491
+	.4byte	__FUNCTION__$5595
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -10296,7 +10296,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5491
+	.4byte	__FUNCTION__$5595
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -10347,9 +10347,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF301
 	.byte	0x1
 	.byte	0xe5
-	.4byte	0x152
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	0x159
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2498
@@ -10360,7 +10360,7 @@ s_rmt_driver_channels:
 	.4byte	0x10da
 	.4byte	.LLST42
 	.uleb128 0x32
-	.4byte	.LASF24
+	.4byte	.LASF25
 	.byte	0x1
 	.byte	0xe5
 	.4byte	0x2498
@@ -10371,7 +10371,7 @@ s_rmt_driver_channels:
 	.4byte	0x249e
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5496
+	.4byte	__FUNCTION__$5600
 	.uleb128 0x2f
 	.4byte	.LVL217
 	.4byte	0x420a
@@ -10407,7 +10407,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5496
+	.4byte	__FUNCTION__$5600
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -10457,7 +10457,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5496
+	.4byte	__FUNCTION__$5600
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -10483,9 +10483,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF302
 	.byte	0x1
 	.byte	0xed
-	.4byte	0x152
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	0x159
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x255f
@@ -10499,14 +10499,14 @@ s_rmt_driver_channels:
 	.4byte	.LASF233
 	.byte	0x1
 	.byte	0xed
-	.4byte	0x15d
+	.4byte	0x105
 	.4byte	.LLST44
 	.uleb128 0x31
 	.4byte	.LASF280
 	.4byte	0x255f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5501
+	.4byte	__FUNCTION__$5605
 	.uleb128 0x2f
 	.4byte	.LVL228
 	.4byte	0x420a
@@ -10542,7 +10542,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5501
+	.4byte	__FUNCTION__$5605
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -10586,9 +10586,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF303
 	.byte	0x1
 	.byte	0xf6
-	.4byte	0x152
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	0x159
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x25f6
@@ -10610,7 +10610,7 @@ s_rmt_driver_channels:
 	.4byte	0x25f6
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5506
+	.4byte	__FUNCTION__$5610
 	.uleb128 0x2f
 	.4byte	.LVL238
 	.4byte	0x420a
@@ -10645,7 +10645,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5506
+	.4byte	__FUNCTION__$5610
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -10668,9 +10668,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF304
 	.byte	0x1
 	.byte	0xfd
-	.4byte	0x152
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	0x159
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x26c6
@@ -10684,7 +10684,7 @@ s_rmt_driver_channels:
 	.4byte	.LASF99
 	.byte	0x1
 	.byte	0xfd
-	.4byte	0x15d
+	.4byte	0x105
 	.4byte	.LLST47
 	.uleb128 0x25
 	.4byte	.LASF282
@@ -10697,7 +10697,7 @@ s_rmt_driver_channels:
 	.4byte	0x26c6
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5512
+	.4byte	__FUNCTION__$5616
 	.uleb128 0x2f
 	.4byte	.LVL245
 	.4byte	0x420a
@@ -10733,7 +10733,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5512
+	.4byte	__FUNCTION__$5616
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -10777,9 +10777,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF305
 	.byte	0x1
 	.2byte	0x107
-	.4byte	0x152
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	0x159
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x27db
@@ -10800,7 +10800,7 @@ s_rmt_driver_channels:
 	.4byte	0x27db
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5517
+	.4byte	__FUNCTION__$5621
 	.uleb128 0x2f
 	.4byte	.LVL256
 	.4byte	0x420a
@@ -10836,7 +10836,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5517
+	.4byte	__FUNCTION__$5621
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -10887,7 +10887,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5517
+	.4byte	__FUNCTION__$5621
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -10931,9 +10931,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF307
 	.byte	0x1
 	.2byte	0x111
-	.4byte	0x152
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	0x159
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2875
@@ -10955,7 +10955,7 @@ s_rmt_driver_channels:
 	.4byte	0x287b
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5522
+	.4byte	__FUNCTION__$5626
 	.uleb128 0x2f
 	.4byte	.LVL270
 	.4byte	0x420a
@@ -10990,7 +10990,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5522
+	.4byte	__FUNCTION__$5626
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -11016,9 +11016,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF309
 	.byte	0x1
 	.2byte	0x118
-	.4byte	0x152
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	0x159
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x29a0
@@ -11032,7 +11032,7 @@ s_rmt_driver_channels:
 	.4byte	.LASF104
 	.byte	0x1
 	.2byte	0x118
-	.4byte	0x15d
+	.4byte	0x105
 	.4byte	.LLST53
 	.uleb128 0x20
 	.4byte	.LASF167
@@ -11045,7 +11045,7 @@ s_rmt_driver_channels:
 	.4byte	0x29a0
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5528
+	.4byte	__FUNCTION__$5632
 	.uleb128 0x2f
 	.4byte	.LVL277
 	.4byte	0x420a
@@ -11081,7 +11081,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5528
+	.4byte	__FUNCTION__$5632
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -11132,7 +11132,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5528
+	.4byte	__FUNCTION__$5632
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -11176,9 +11176,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF310
 	.byte	0x1
 	.2byte	0x123
-	.4byte	0x152
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
+	.4byte	0x159
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2a3a
@@ -11200,7 +11200,7 @@ s_rmt_driver_channels:
 	.4byte	0x2a40
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5533
+	.4byte	__FUNCTION__$5637
 	.uleb128 0x2f
 	.4byte	.LVL292
 	.4byte	0x420a
@@ -11235,7 +11235,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5533
+	.4byte	__FUNCTION__$5637
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -11262,16 +11262,16 @@ s_rmt_driver_channels:
 	.byte	0x1
 	.2byte	0x12a
 	.4byte	0x1158
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x35
 	.4byte	.LASF313
 	.byte	0x1
 	.2byte	0x12f
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2aa6
@@ -11307,8 +11307,8 @@ s_rmt_driver_channels:
 	.4byte	.LASF314
 	.byte	0x1
 	.2byte	0x136
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2af1
@@ -11344,9 +11344,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF315
 	.byte	0x1
 	.2byte	0x13d
-	.4byte	0x152
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
+	.4byte	0x159
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2bb1
@@ -11360,7 +11360,7 @@ s_rmt_driver_channels:
 	.string	"en"
 	.byte	0x1
 	.2byte	0x13d
-	.4byte	0x15d
+	.4byte	0x105
 	.uleb128 0x1
 	.byte	0x53
 	.uleb128 0x31
@@ -11368,7 +11368,7 @@ s_rmt_driver_channels:
 	.4byte	0x2bb1
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5546
+	.4byte	__FUNCTION__$5650
 	.uleb128 0x2f
 	.4byte	.LVL307
 	.4byte	0x420a
@@ -11404,7 +11404,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5546
+	.4byte	__FUNCTION__$5650
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -11452,9 +11452,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF316
 	.byte	0x1
 	.2byte	0x148
-	.4byte	0x152
-	.4byte	.LFB40
-	.4byte	.LFE40-.LFB40
+	.4byte	0x159
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2c76
@@ -11468,7 +11468,7 @@ s_rmt_driver_channels:
 	.string	"en"
 	.byte	0x1
 	.2byte	0x148
-	.4byte	0x15d
+	.4byte	0x105
 	.uleb128 0x1
 	.byte	0x53
 	.uleb128 0x31
@@ -11476,7 +11476,7 @@ s_rmt_driver_channels:
 	.4byte	0x2c86
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5551
+	.4byte	__FUNCTION__$5655
 	.uleb128 0x2f
 	.4byte	.LVL317
 	.4byte	0x420a
@@ -11512,7 +11512,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5551
+	.4byte	__FUNCTION__$5655
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -11567,9 +11567,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF317
 	.byte	0x1
 	.2byte	0x153
-	.4byte	0x152
-	.4byte	.LFB41
-	.4byte	.LFE41-.LFB41
+	.4byte	0x159
+	.4byte	.LFB45
+	.4byte	.LFE45-.LFB45
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2d4b
@@ -11583,7 +11583,7 @@ s_rmt_driver_channels:
 	.string	"en"
 	.byte	0x1
 	.2byte	0x153
-	.4byte	0x15d
+	.4byte	0x105
 	.uleb128 0x1
 	.byte	0x53
 	.uleb128 0x31
@@ -11591,7 +11591,7 @@ s_rmt_driver_channels:
 	.4byte	0x2d4b
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5556
+	.4byte	__FUNCTION__$5660
 	.uleb128 0x2f
 	.4byte	.LVL327
 	.4byte	0x420a
@@ -11627,7 +11627,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5556
+	.4byte	__FUNCTION__$5660
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -11675,9 +11675,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF318
 	.byte	0x1
 	.2byte	0x15e
-	.4byte	0x152
-	.4byte	.LFB42
-	.4byte	.LFE42-.LFB42
+	.4byte	0x159
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2e8c
@@ -11691,7 +11691,7 @@ s_rmt_driver_channels:
 	.string	"en"
 	.byte	0x1
 	.2byte	0x15e
-	.4byte	0x15d
+	.4byte	0x105
 	.4byte	.LLST62
 	.uleb128 0x20
 	.4byte	.LASF319
@@ -11704,7 +11704,7 @@ s_rmt_driver_channels:
 	.4byte	0x2e8c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5562
+	.4byte	__FUNCTION__$5666
 	.uleb128 0x2f
 	.4byte	.LVL337
 	.4byte	0x420a
@@ -11740,7 +11740,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5562
+	.4byte	__FUNCTION__$5666
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -11791,7 +11791,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5562
+	.4byte	__FUNCTION__$5666
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -11855,9 +11855,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF320
 	.byte	0x1
 	.2byte	0x16c
-	.4byte	0x152
-	.4byte	.LFB43
-	.4byte	.LFE43-.LFB43
+	.4byte	0x159
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x304d
@@ -11886,7 +11886,7 @@ s_rmt_driver_channels:
 	.4byte	0x304d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5568
+	.4byte	__FUNCTION__$5672
 	.uleb128 0x2f
 	.4byte	.LVL356
 	.4byte	0x420a
@@ -11922,7 +11922,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5568
+	.4byte	__FUNCTION__$5672
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -11973,7 +11973,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5568
+	.4byte	__FUNCTION__$5672
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -12024,7 +12024,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5568
+	.4byte	__FUNCTION__$5672
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -12127,9 +12127,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF322
 	.byte	0x1
 	.2byte	0x17e
-	.4byte	0x152
-	.4byte	.LFB44
-	.4byte	.LFE44-.LFB44
+	.4byte	0x159
+	.4byte	.LFB48
+	.4byte	.LFE48-.LFB48
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3416
@@ -12180,14 +12180,14 @@ s_rmt_driver_channels:
 	.4byte	.LASF88
 	.byte	0x1
 	.2byte	0x186
-	.4byte	0x15d
+	.4byte	0x105
 	.4byte	.LLST71
 	.uleb128 0x31
 	.4byte	.LASF280
 	.4byte	0x3431
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5579
+	.4byte	__FUNCTION__$5683
 	.uleb128 0x2d
 	.4byte	.LBB7
 	.4byte	.LBE7-.LBB7
@@ -12340,7 +12340,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5579
+	.4byte	__FUNCTION__$5683
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -12391,7 +12391,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5579
+	.4byte	__FUNCTION__$5683
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -12442,7 +12442,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5579
+	.4byte	__FUNCTION__$5683
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -12493,7 +12493,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5579
+	.4byte	__FUNCTION__$5683
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -12544,7 +12544,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5579
+	.4byte	__FUNCTION__$5683
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -12648,9 +12648,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF331
 	.byte	0x1
 	.2byte	0x1e4
-	.4byte	0x152
-	.4byte	.LFB46
-	.4byte	.LFE46-.LFB46
+	.4byte	0x159
+	.4byte	.LFB50
+	.4byte	.LFE50-.LFB50
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3600
@@ -12686,7 +12686,7 @@ s_rmt_driver_channels:
 	.4byte	0x3600
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5606
+	.4byte	__FUNCTION__$5710
 	.uleb128 0x37
 	.4byte	.LASF324
 	.byte	0x1
@@ -12727,7 +12727,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5606
+	.4byte	__FUNCTION__$5710
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -12778,7 +12778,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5606
+	.4byte	__FUNCTION__$5710
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -12829,7 +12829,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5606
+	.4byte	__FUNCTION__$5710
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -12880,7 +12880,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5606
+	.4byte	__FUNCTION__$5710
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -12919,9 +12919,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF332
 	.byte	0x1
 	.2byte	0x1f1
-	.4byte	0x152
-	.4byte	.LFB47
-	.4byte	.LFE47-.LFB47
+	.4byte	0x159
+	.4byte	.LFB51
+	.4byte	.LFE51-.LFB51
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3732
@@ -12957,7 +12957,7 @@ s_rmt_driver_channels:
 	.4byte	0x3748
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5615
+	.4byte	__FUNCTION__$5719
 	.uleb128 0x2f
 	.4byte	.LVL461
 	.4byte	0x420a
@@ -12993,7 +12993,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5615
+	.4byte	__FUNCTION__$5719
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -13044,7 +13044,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5615
+	.4byte	__FUNCTION__$5719
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -13111,9 +13111,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF335
 	.byte	0x1
 	.2byte	0x1fa
-	.4byte	0x152
-	.4byte	.LFB48
-	.4byte	.LFE48-.LFB48
+	.4byte	0x159
+	.4byte	.LFB52
+	.4byte	.LFE52-.LFB52
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3788
@@ -13138,9 +13138,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF336
 	.byte	0x1
 	.2byte	0x26c
-	.4byte	0x152
-	.4byte	.LFB51
-	.4byte	.LFE51-.LFB51
+	.4byte	0x159
+	.4byte	.LFB55
+	.4byte	.LFE55-.LFB55
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x394f
@@ -13154,14 +13154,14 @@ s_rmt_driver_channels:
 	.string	"err"
 	.byte	0x1
 	.2byte	0x26e
-	.4byte	0x152
+	.4byte	0x159
 	.4byte	.LLST86
 	.uleb128 0x31
 	.4byte	.LASF280
 	.4byte	0x394f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5654
+	.4byte	__FUNCTION__$5758
 	.uleb128 0x2f
 	.4byte	.LVL476
 	.4byte	0x420a
@@ -13197,7 +13197,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5654
+	.4byte	__FUNCTION__$5758
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -13248,7 +13248,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5654
+	.4byte	__FUNCTION__$5758
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -13396,9 +13396,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF337
 	.byte	0x1
 	.2byte	0x297
-	.4byte	0x152
-	.4byte	.LFB52
-	.4byte	.LFE52-.LFB52
+	.4byte	0x159
+	.4byte	.LFB56
+	.4byte	.LFE56-.LFB56
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3bb7
@@ -13425,12 +13425,12 @@ s_rmt_driver_channels:
 	.4byte	0x3bb7
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5660
+	.4byte	__FUNCTION__$5764
 	.uleb128 0x23
 	.string	"err"
 	.byte	0x1
 	.2byte	0x29c
-	.4byte	0x152
+	.4byte	0x159
 	.4byte	.LLST90
 	.uleb128 0x2f
 	.4byte	.LVL505
@@ -13467,7 +13467,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5660
+	.4byte	__FUNCTION__$5764
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -13518,7 +13518,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5660
+	.4byte	__FUNCTION__$5764
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -13752,9 +13752,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF339
 	.byte	0x1
 	.2byte	0x2ca
-	.4byte	0x152
-	.4byte	.LFB53
-	.4byte	.LFE53-.LFB53
+	.4byte	0x159
+	.4byte	.LFB57
+	.4byte	.LFE57-.LFB57
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3e90
@@ -13780,7 +13780,7 @@ s_rmt_driver_channels:
 	.4byte	.LASF341
 	.byte	0x1
 	.2byte	0x2ca
-	.4byte	0x15d
+	.4byte	0x105
 	.uleb128 0x1
 	.byte	0x55
 	.uleb128 0x31
@@ -13788,7 +13788,7 @@ s_rmt_driver_channels:
 	.4byte	0x3e90
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5668
+	.4byte	__FUNCTION__$5772
 	.uleb128 0x22
 	.4byte	.LASF274
 	.byte	0x1
@@ -13856,7 +13856,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5668
+	.4byte	__FUNCTION__$5772
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -13907,7 +13907,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5668
+	.4byte	__FUNCTION__$5772
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -13958,7 +13958,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5668
+	.4byte	__FUNCTION__$5772
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -14009,7 +14009,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5668
+	.4byte	__FUNCTION__$5772
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -14191,9 +14191,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF343
 	.byte	0x1
 	.2byte	0x2ef
-	.4byte	0x152
-	.4byte	.LFB54
-	.4byte	.LFE54-.LFB54
+	.4byte	0x159
+	.4byte	.LFB58
+	.4byte	.LFE58-.LFB58
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3fef
@@ -14207,14 +14207,14 @@ s_rmt_driver_channels:
 	.4byte	.LASF344
 	.byte	0x1
 	.2byte	0x2ef
-	.4byte	0x11b
+	.4byte	0x122
 	.4byte	.LLST98
 	.uleb128 0x31
 	.4byte	.LASF280
 	.4byte	0x3fef
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5678
+	.4byte	__FUNCTION__$5782
 	.uleb128 0x2f
 	.4byte	.LVL573
 	.4byte	0x420a
@@ -14250,7 +14250,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5678
+	.4byte	__FUNCTION__$5782
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -14301,7 +14301,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5678
+	.4byte	__FUNCTION__$5782
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -14395,9 +14395,9 @@ s_rmt_driver_channels:
 	.4byte	.LASF345
 	.byte	0x1
 	.2byte	0x2fd
-	.4byte	0x152
-	.4byte	.LFB55
-	.4byte	.LFE55-.LFB55
+	.4byte	0x159
+	.4byte	.LFB59
+	.4byte	.LFE59-.LFB59
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x412b
@@ -14419,7 +14419,7 @@ s_rmt_driver_channels:
 	.4byte	0x4131
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5683
+	.4byte	__FUNCTION__$5787
 	.uleb128 0x2f
 	.4byte	.LVL590
 	.4byte	0x420a
@@ -14455,7 +14455,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5683
+	.4byte	__FUNCTION__$5787
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -14506,7 +14506,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5683
+	.4byte	__FUNCTION__$5787
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -14556,7 +14556,7 @@ s_rmt_driver_channels:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5683
+	.4byte	__FUNCTION__$5787
 	.uleb128 0x28
 	.uleb128 0x2
 	.byte	0x71
@@ -14609,7 +14609,7 @@ s_rmt_driver_channels:
 	.4byte	.LASF350
 	.byte	0x1
 	.byte	0x3c
-	.4byte	0x147
+	.4byte	0x14e
 	.uleb128 0x5
 	.byte	0x3
 	.4byte	rmt_spinlock
@@ -14664,12 +14664,12 @@ s_rmt_driver_channels:
 	.4byte	.LASF355
 	.4byte	.LASF355
 	.byte	0x6
-	.byte	0xd9
+	.byte	0xdc
 	.uleb128 0x3d
 	.4byte	.LASF356
 	.4byte	.LASF356
 	.byte	0x6
-	.byte	0xd8
+	.byte	0xdb
 	.uleb128 0x3d
 	.4byte	.LASF357
 	.4byte	.LASF357
@@ -14689,7 +14689,7 @@ s_rmt_driver_channels:
 	.4byte	.LASF360
 	.4byte	.LASF360
 	.byte	0x6
-	.2byte	0x11a
+	.2byte	0x129
 	.uleb128 0x3e
 	.4byte	.LASF361
 	.4byte	.LASF361
@@ -15688,7 +15688,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL3
-	.4byte	.LFE49
+	.4byte	.LFE53
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15720,7 +15720,7 @@ s_rmt_driver_channels:
 	.sleb128 -1
 	.byte	0x9f
 	.4byte	.LVL7
-	.4byte	.LFE49
+	.4byte	.LFE53
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -15731,7 +15731,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL10
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15745,7 +15745,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL12
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15759,7 +15759,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL16
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15774,7 +15774,7 @@ s_rmt_driver_channels:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL21
-	.4byte	.LFE45
+	.4byte	.LFE49
 	.2byte	0x1
 	.byte	0x59
 	.4byte	0
@@ -15785,7 +15785,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL24
-	.4byte	.LFE50
+	.4byte	.LFE54
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15800,7 +15800,7 @@ s_rmt_driver_channels:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL26
-	.4byte	.LFE50
+	.4byte	.LFE54
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -15936,7 +15936,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL70
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15950,7 +15950,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL71
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15992,7 +15992,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL82
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16023,7 +16023,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL89
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16037,7 +16037,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL90
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16079,7 +16079,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL101
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16121,7 +16121,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL112
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16135,7 +16135,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL113
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16177,7 +16177,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL124
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16219,7 +16219,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL137
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16233,7 +16233,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL138
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16247,7 +16247,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL134
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16261,7 +16261,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x55
 	.4byte	.LVL135
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16275,7 +16275,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x56
 	.4byte	.LVL139
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16306,7 +16306,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL146
-	.4byte	.LFE20
+	.4byte	.LFE24
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16320,7 +16320,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL147
-	.4byte	.LFE20
+	.4byte	.LFE24
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16351,7 +16351,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL154
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16382,7 +16382,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL163
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16396,7 +16396,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL161
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16427,7 +16427,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL172
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16458,7 +16458,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL182
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16472,7 +16472,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL180
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16503,7 +16503,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL191
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16534,7 +16534,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL200
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16576,7 +16576,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL213
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16590,7 +16590,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL214
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16632,7 +16632,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL226
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16663,7 +16663,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL234
-	.4byte	.LFE29
+	.4byte	.LFE33
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16677,7 +16677,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL235
-	.4byte	.LFE29
+	.4byte	.LFE33
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16708,7 +16708,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL243
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16739,7 +16739,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL251
-	.4byte	.LFE31
+	.4byte	.LFE35
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16753,7 +16753,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL252
-	.4byte	.LFE31
+	.4byte	.LFE35
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16767,7 +16767,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL253
-	.4byte	.LFE31
+	.4byte	.LFE35
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16809,7 +16809,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL266
-	.4byte	.LFE32
+	.4byte	.LFE36
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16823,7 +16823,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL267
-	.4byte	.LFE32
+	.4byte	.LFE36
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16854,7 +16854,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL275
-	.4byte	.LFE33
+	.4byte	.LFE37
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16896,7 +16896,7 @@ s_rmt_driver_channels:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL287
-	.4byte	.LFE34
+	.4byte	.LFE38
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16910,7 +16910,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL288
-	.4byte	.LFE34
+	.4byte	.LFE38
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16924,7 +16924,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL289
-	.4byte	.LFE34
+	.4byte	.LFE38
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16955,7 +16955,7 @@ s_rmt_driver_channels:
 	.sleb128 -24
 	.byte	0x9f
 	.4byte	.LVL297
-	.4byte	.LFE35
+	.4byte	.LFE39
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16969,7 +16969,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL300
-	.4byte	.LFE37
+	.4byte	.LFE41
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16983,7 +16983,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL304
-	.4byte	.LFE38
+	.4byte	.LFE42
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17019,7 +17019,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL314
-	.4byte	.LFE39
+	.4byte	.LFE43
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17055,7 +17055,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL324
-	.4byte	.LFE40
+	.4byte	.LFE44
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17091,7 +17091,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL334
-	.4byte	.LFE41
+	.4byte	.LFE45
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17150,7 +17150,7 @@ s_rmt_driver_channels:
 	.sleb128 -24
 	.byte	0x9f
 	.4byte	.LVL354
-	.4byte	.LFE42
+	.4byte	.LFE46
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17164,7 +17164,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL341
-	.4byte	.LFE42
+	.4byte	.LFE46
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17178,7 +17178,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL346
-	.4byte	.LFE42
+	.4byte	.LFE46
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17236,7 +17236,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL374
-	.4byte	.LFE43
+	.4byte	.LFE47
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17316,7 +17316,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL437
-	.4byte	.LFE44
+	.4byte	.LFE48
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17788,7 +17788,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL459
-	.4byte	.LFE46
+	.4byte	.LFE50
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17824,7 +17824,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL470
-	.4byte	.LFE47
+	.4byte	.LFE51
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17838,7 +17838,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL473
-	.4byte	.LFE48
+	.4byte	.LFE52
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17896,7 +17896,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL503
-	.4byte	.LFE51
+	.4byte	.LFE55
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17929,7 +17929,7 @@ s_rmt_driver_channels:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL502
-	.4byte	.LFE51
+	.4byte	.LFE55
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -17984,7 +17984,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL535
-	.4byte	.LFE52
+	.4byte	.LFE56
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -18005,7 +18005,7 @@ s_rmt_driver_channels:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL534
-	.4byte	.LFE52
+	.4byte	.LFE56
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -18023,7 +18023,7 @@ s_rmt_driver_channels:
 	.byte	0x54
 	.byte	0x9f
 	.4byte	.LVL534
-	.4byte	.LFE52
+	.4byte	.LFE56
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -18048,7 +18048,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL534
-	.4byte	.LFE52
+	.4byte	.LFE56
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -18115,7 +18115,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL571
-	.4byte	.LFE53
+	.4byte	.LFE57
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -18140,7 +18140,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL563
-	.4byte	.LFE53
+	.4byte	.LFE57
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -18165,7 +18165,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL564
-	.4byte	.LFE53
+	.4byte	.LFE57
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -18186,7 +18186,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x58
 	.4byte	.LVL556-1
-	.4byte	.LFE53
+	.4byte	.LFE57
 	.2byte	0x2
 	.byte	0x91
 	.sleb128 -48
@@ -18245,7 +18245,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL588
-	.4byte	.LFE54
+	.4byte	.LFE58
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -18266,7 +18266,7 @@ s_rmt_driver_channels:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL585
-	.4byte	.LFE54
+	.4byte	.LFE58
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -18288,7 +18288,7 @@ s_rmt_driver_channels:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL594
-	.4byte	.LFE55
+	.4byte	.LFE59
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -18304,24 +18304,16 @@ s_rmt_driver_channels:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB49
-	.4byte	.LFE49-.LFB49
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
-	.4byte	.LFB45
-	.4byte	.LFE45-.LFB45
-	.4byte	.LFB50
-	.4byte	.LFE50-.LFB50
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB53
+	.4byte	.LFE53-.LFB53
 	.4byte	.LFB15
 	.4byte	.LFE15-.LFB15
 	.4byte	.LFB16
 	.4byte	.LFE16-.LFB16
+	.4byte	.LFB49
+	.4byte	.LFE49-.LFB49
+	.4byte	.LFB54
+	.4byte	.LFE54-.LFB54
 	.4byte	.LFB17
 	.4byte	.LFE17-.LFB17
 	.4byte	.LFB18
@@ -18378,44 +18370,44 @@ s_rmt_driver_channels:
 	.4byte	.LFE43-.LFB43
 	.4byte	.LFB44
 	.4byte	.LFE44-.LFB44
+	.4byte	.LFB45
+	.4byte	.LFE45-.LFB45
 	.4byte	.LFB46
 	.4byte	.LFE46-.LFB46
 	.4byte	.LFB47
 	.4byte	.LFE47-.LFB47
 	.4byte	.LFB48
 	.4byte	.LFE48-.LFB48
+	.4byte	.LFB50
+	.4byte	.LFE50-.LFB50
 	.4byte	.LFB51
 	.4byte	.LFE51-.LFB51
 	.4byte	.LFB52
 	.4byte	.LFE52-.LFB52
-	.4byte	.LFB53
-	.4byte	.LFE53-.LFB53
-	.4byte	.LFB54
-	.4byte	.LFE54-.LFB54
 	.4byte	.LFB55
 	.4byte	.LFE55-.LFB55
+	.4byte	.LFB56
+	.4byte	.LFE56-.LFB56
+	.4byte	.LFB57
+	.4byte	.LFE57-.LFB57
+	.4byte	.LFB58
+	.4byte	.LFE58-.LFB58
+	.4byte	.LFB59
+	.4byte	.LFE59-.LFB59
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB49
-	.4byte	.LFE49
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB12
-	.4byte	.LFE12
-	.4byte	.LFB45
-	.4byte	.LFE45
-	.4byte	.LFB50
-	.4byte	.LFE50
-	.4byte	.LFB13
-	.4byte	.LFE13
-	.4byte	.LFB14
-	.4byte	.LFE14
+	.4byte	.LFB53
+	.4byte	.LFE53
 	.4byte	.LFB15
 	.4byte	.LFE15
 	.4byte	.LFB16
 	.4byte	.LFE16
+	.4byte	.LFB49
+	.4byte	.LFE49
+	.4byte	.LFB54
+	.4byte	.LFE54
 	.4byte	.LFB17
 	.4byte	.LFE17
 	.4byte	.LFB18
@@ -18472,22 +18464,30 @@ s_rmt_driver_channels:
 	.4byte	.LFE43
 	.4byte	.LFB44
 	.4byte	.LFE44
+	.4byte	.LFB45
+	.4byte	.LFE45
 	.4byte	.LFB46
 	.4byte	.LFE46
 	.4byte	.LFB47
 	.4byte	.LFE47
 	.4byte	.LFB48
 	.4byte	.LFE48
+	.4byte	.LFB50
+	.4byte	.LFE50
 	.4byte	.LFB51
 	.4byte	.LFE51
 	.4byte	.LFB52
 	.4byte	.LFE52
-	.4byte	.LFB53
-	.4byte	.LFE53
-	.4byte	.LFB54
-	.4byte	.LFE54
 	.4byte	.LFB55
 	.4byte	.LFE55
+	.4byte	.LFB56
+	.4byte	.LFE56
+	.4byte	.LFB57
+	.4byte	.LFE57
+	.4byte	.LFB58
+	.4byte	.LFE58
+	.4byte	.LFB59
+	.4byte	.LFE59
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -18495,8 +18495,6 @@ s_rmt_driver_channels:
 	.section	.debug_str,"MS",@progbits,1
 .LASF167:
 	.string	"level"
-.LASF381:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF291:
 	.string	"pd_en"
 .LASF236:
@@ -18511,7 +18509,7 @@ s_rmt_driver_channels:
 	.string	"data16"
 .LASF184:
 	.string	"PERIPH_PWM1_MODULE"
-.LASF24:
+.LASF25:
 	.string	"owner"
 .LASF89:
 	.string	"carrier_out_lv"
@@ -18537,7 +18535,7 @@ s_rmt_driver_channels:
 	.string	"ch1_tx_thr_event"
 .LASF315:
 	.string	"rmt_set_rx_intr_en"
-.LASF21:
+.LASF22:
 	.string	"BaseType_t"
 .LASF190:
 	.string	"PERIPH_PCNT_MODULE"
@@ -18611,6 +18609,8 @@ s_rmt_driver_channels:
 	.string	"clk_div"
 .LASF140:
 	.string	"high"
+.LASF159:
+	.string	"date"
 .LASF376:
 	.string	"xQueueGenericCreate"
 .LASF256:
@@ -18687,7 +18687,7 @@ s_rmt_driver_channels:
 	.string	"rmt_mode_t"
 .LASF271:
 	.string	"rmt_driver_isr_default"
-.LASF28:
+.LASF21:
 	.string	"_Bool"
 .LASF283:
 	.string	"rmt_get_rx_idle_thresh"
@@ -18869,7 +18869,7 @@ s_rmt_driver_channels:
 	.string	"GPIO_MODE_INPUT_OUTPUT"
 .LASF196:
 	.string	"PERIPH_SDIO_SLAVE_MODULE"
-.LASF27:
+.LASF28:
 	.string	"esp_err_t"
 .LASF151:
 	.string	"int_st"
@@ -18907,7 +18907,7 @@ s_rmt_driver_channels:
 	.string	"rx_buf"
 .LASF227:
 	.string	"RMT_IDLE_LEVEL_MAX"
-.LASF25:
+.LASF26:
 	.string	"count"
 .LASF330:
 	.string	"threshold"
@@ -19045,7 +19045,7 @@ s_rmt_driver_channels:
 	.string	"rmt_tx_stop"
 .LASF212:
 	.string	"rmt_mem_owner_t"
-.LASF22:
+.LASF23:
 	.string	"UBaseType_t"
 .LASF347:
 	.string	"RMT_TAG"
@@ -19055,13 +19055,13 @@ s_rmt_driver_channels:
 	.string	"s_rmt_driver_channels"
 .LASF78:
 	.string	"ESP_LOG_NONE"
-.LASF23:
+.LASF24:
 	.string	"TickType_t"
 .LASF364:
 	.string	"gpio_matrix_out"
 .LASF377:
 	.string	"xQueueGenericSend"
-.LASF26:
+.LASF27:
 	.string	"portMUX_TYPE"
 .LASF278:
 	.string	"rmt_set_clk_div"
@@ -19247,8 +19247,8 @@ s_rmt_driver_channels:
 	.string	"ch7_err"
 .LASF263:
 	.string	"data"
-.LASF159:
-	.string	"date"
+.LASF381:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF327:
 	.string	"duty_h"
 .LASF161:
@@ -19263,4 +19263,4 @@ s_rmt_driver_channels:
 	.string	"evt_thresh"
 .LASF345:
 	.string	"rmt_get_ringbuf_handle"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

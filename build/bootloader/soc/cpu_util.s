@@ -556,4 +556,4 @@ esp_cpu_in_ocd_debug_mode:
 	.string	"_Bool"
 .LASF12:
 	.string	"esp_cpu_in_ocd_debug_mode"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

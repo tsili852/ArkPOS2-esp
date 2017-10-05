@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/esp32/hw_random.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\esp32//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\esp32//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/esp32/hw_random.c"
@@ -628,7 +628,7 @@ char *strsignal (int __signo);
 # 1 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 1
 # 19 "C:/esp/esp-idf/components/newlib/platform_include/assert.h"
        
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 2
 # 1 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 1
 # 10 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
@@ -899,7 +899,7 @@ void __assert_func (const char *, int, const char *, const char *) __attribute__
 # 21 "C:/esp/esp-idf/components/esp32/hw_random.c" 2
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h" 1
 # 73 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 74 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h" 2
 # 102 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h"
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h" 1

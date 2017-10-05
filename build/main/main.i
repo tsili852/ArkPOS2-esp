@@ -1,10 +1,10 @@
-# 1 "C:/esp/ArkPOS2-esp/main/main.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\main//"
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/main.c"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\main//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/esp/ArkPOS2-esp/main/main.c"
-# 1 "C:/esp/esp-idf/components/newlib/include/string.h" 1
-# 10 "C:/esp/esp-idf/components/newlib/include/string.h"
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/main.c"
+# 1 "C:/esp/esp-idf/components/newlib/include/stdio.h" 1
+# 29 "C:/esp/esp-idf/components/newlib/include/stdio.h"
 # 1 "C:/esp/esp-idf/components/newlib/include/_ansi.h" 1
 # 15 "C:/esp/esp-idf/components/newlib/include/_ansi.h"
 # 1 "C:/esp/esp-idf/components/newlib/include/newlib.h" 1
@@ -21,33 +21,15 @@
 # 1 "C:/esp/esp-idf/components/esp32/include/xtensa/config/core-isa.h" 1
 # 190 "C:/esp/esp-idf/components/newlib/include/sys/config.h" 2
 # 17 "C:/esp/esp-idf/components/newlib/include/_ansi.h" 2
-# 11 "C:/esp/esp-idf/components/newlib/include/string.h" 2
-# 1 "C:/esp/esp-idf/components/newlib/include/sys/reent.h" 1
-# 13 "C:/esp/esp-idf/components/newlib/include/sys/reent.h"
-# 1 "C:/esp/esp-idf/components/newlib/include/_ansi.h" 1
-# 14 "C:/esp/esp-idf/components/newlib/include/sys/reent.h" 2
-# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
-# 149 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 3 4
-
-# 149 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 3 4
-typedef int ptrdiff_t;
-# 216 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 3 4
-typedef unsigned int size_t;
-# 328 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 3 4
-typedef short unsigned int wchar_t;
-# 15 "C:/esp/esp-idf/components/newlib/include/sys/reent.h" 2
-# 1 "C:/esp/esp-idf/components/newlib/include/sys/_types.h" 1
-# 12 "C:/esp/esp-idf/components/newlib/include/sys/_types.h"
-# 1 "C:/esp/esp-idf/components/newlib/include/machine/_types.h" 1
+# 30 "C:/esp/esp-idf/components/newlib/include/stdio.h" 2
 
 
 
 
 
-
+# 1 "C:/esp/esp-idf/components/newlib/include/sys/cdefs.h" 1
+# 43 "C:/esp/esp-idf/components/newlib/include/sys/cdefs.h"
 # 1 "C:/esp/esp-idf/components/newlib/include/machine/_default_types.h" 1
-# 17 "C:/esp/esp-idf/components/newlib/include/machine/_default_types.h"
-
 # 17 "C:/esp/esp-idf/components/newlib/include/machine/_default_types.h"
 typedef signed char __int8_t ;
 typedef unsigned char __uint8_t ;
@@ -83,9 +65,47 @@ typedef __uint64_t __uint_least64_t;
 
 typedef int __intptr_t;
 typedef unsigned int __uintptr_t;
-# 8 "C:/esp/esp-idf/components/newlib/include/machine/_types.h" 2
+# 44 "C:/esp/esp-idf/components/newlib/include/sys/cdefs.h" 2
+
+# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
+# 216 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 3 4
+
+# 216 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 3 4
+typedef unsigned int size_t;
+# 46 "C:/esp/esp-idf/components/newlib/include/sys/cdefs.h" 2
+# 36 "C:/esp/esp-idf/components/newlib/include/stdio.h" 2
+# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
+# 149 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 3 4
+typedef int ptrdiff_t;
+# 328 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 3 4
+typedef short unsigned int wchar_t;
+# 37 "C:/esp/esp-idf/components/newlib/include/stdio.h" 2
+
+
+# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 1 3 4
+# 40 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 40 "C:/esp/esp-idf/components/newlib/include/stdio.h" 2
+
+
+
+
+
+
+
+# 1 "C:/esp/esp-idf/components/newlib/include/sys/reent.h" 1
+# 13 "C:/esp/esp-idf/components/newlib/include/sys/reent.h"
+# 1 "C:/esp/esp-idf/components/newlib/include/_ansi.h" 1
+# 14 "C:/esp/esp-idf/components/newlib/include/sys/reent.h" 2
+# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
+# 15 "C:/esp/esp-idf/components/newlib/include/sys/reent.h" 2
+# 1 "C:/esp/esp-idf/components/newlib/include/sys/_types.h" 1
+# 12 "C:/esp/esp-idf/components/newlib/include/sys/_types.h"
+# 1 "C:/esp/esp-idf/components/newlib/include/machine/_types.h" 1
 # 13 "C:/esp/esp-idf/components/newlib/include/sys/_types.h" 2
 # 1 "C:/esp/esp-idf/components/newlib/include/sys/lock.h" 1
+# 11 "C:/esp/esp-idf/components/newlib/include/sys/lock.h"
+
 # 11 "C:/esp/esp-idf/components/newlib/include/sys/lock.h"
 typedef int _lock_t;
 typedef _lock_t _LOCK_RECURSIVE_T;
@@ -405,16 +425,830 @@ void _reclaim_reent (struct _reent *);
 
 
   struct _reent * __getreent (void);
-# 12 "C:/esp/esp-idf/components/newlib/include/string.h" 2
-# 1 "C:/esp/esp-idf/components/newlib/include/sys/cdefs.h" 1
-# 45 "C:/esp/esp-idf/components/newlib/include/sys/cdefs.h"
+# 48 "C:/esp/esp-idf/components/newlib/include/stdio.h" 2
+# 1 "C:/esp/esp-idf/components/newlib/include/sys/types.h" 1
+# 69 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
 # 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
-# 46 "C:/esp/esp-idf/components/newlib/include/sys/cdefs.h" 2
-# 13 "C:/esp/esp-idf/components/newlib/include/string.h" 2
+# 70 "C:/esp/esp-idf/components/newlib/include/sys/types.h" 2
+# 1 "C:/esp/esp-idf/components/newlib/include/machine/types.h" 1
+# 19 "C:/esp/esp-idf/components/newlib/include/machine/types.h"
+typedef long int __off_t;
+typedef int __pid_t;
+
+__extension__ typedef long long int __loff_t;
+# 71 "C:/esp/esp-idf/components/newlib/include/sys/types.h" 2
+# 93 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
+typedef unsigned char u_char;
+
+
+
+typedef unsigned short u_short;
+
+
+
+typedef unsigned int u_int;
+
+
+
+typedef unsigned long u_long;
 
 
 
 
+
+typedef unsigned short ushort;
+typedef unsigned int uint;
+typedef unsigned long ulong;
+
+
+
+typedef unsigned long clock_t;
+
+
+
+
+typedef long time_t;
+
+
+
+
+
+
+
+struct timespec {
+  time_t tv_sec;
+  long tv_nsec;
+};
+
+
+struct itimerspec {
+  struct timespec it_interval;
+  struct timespec it_value;
+};
+
+
+typedef long daddr_t;
+
+
+
+typedef char * caddr_t;
+# 155 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
+typedef unsigned short ino_t;
+# 184 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
+typedef _off_t off_t;
+typedef __dev_t dev_t;
+typedef __uid_t uid_t;
+typedef __gid_t gid_t;
+
+
+
+
+
+typedef int pid_t;
+
+
+
+
+
+
+
+typedef long key_t;
+
+typedef _ssize_t ssize_t;
+# 217 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
+typedef unsigned int mode_t __attribute__ ((__mode__ (__SI__)));
+
+
+
+
+typedef unsigned short nlink_t;
+# 244 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
+typedef long fd_mask;
+
+
+
+
+
+
+
+typedef struct _types_fd_set {
+ fd_mask fds_bits[(((64)+(((sizeof (fd_mask) * 8))-1))/((sizeof (fd_mask) * 8)))];
+} _types_fd_set;
+# 275 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
+typedef unsigned long clockid_t;
+
+
+
+
+typedef unsigned long timer_t;
+
+
+
+typedef unsigned long useconds_t;
+typedef long suseconds_t;
+# 299 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
+# 1 "C:/esp/esp-idf/components/newlib/include/sys/sched.h" 1
+# 46 "C:/esp/esp-idf/components/newlib/include/sys/sched.h"
+struct sched_param {
+  int sched_priority;
+# 59 "C:/esp/esp-idf/components/newlib/include/sys/sched.h"
+};
+
+int sched_yield( void );
+# 300 "C:/esp/esp-idf/components/newlib/include/sys/types.h" 2
+# 308 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
+typedef __uint32_t pthread_t;
+# 341 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
+typedef struct {
+  int is_initialized;
+  void *stackaddr;
+  int stacksize;
+  int contentionscope;
+  int inheritsched;
+  int schedpolicy;
+  struct sched_param schedparam;
+# 357 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
+  int detachstate;
+
+
+
+
+
+} pthread_attr_t;
+# 442 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
+typedef __uint32_t pthread_mutex_t;
+
+typedef struct {
+  int is_initialized;
+# 454 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
+  int type;
+
+  int recursive;
+} pthread_mutexattr_t;
+
+
+
+
+typedef __uint32_t pthread_cond_t;
+
+typedef struct {
+  int is_initialized;
+
+
+
+} pthread_condattr_t;
+
+
+
+typedef __uint32_t pthread_key_t;
+
+typedef struct {
+  int is_initialized;
+  int init_executed;
+} pthread_once_t;
+# 49 "C:/esp/esp-idf/components/newlib/include/stdio.h" 2
+
+
+
+typedef __FILE FILE;
+
+
+
+
+typedef _fpos_t fpos_t;
+
+
+
+
+
+# 1 "C:/esp/esp-idf/components/newlib/include/sys/stdio.h" 1
+# 64 "C:/esp/esp-idf/components/newlib/include/stdio.h" 2
+# 164 "C:/esp/esp-idf/components/newlib/include/stdio.h"
+FILE * tmpfile (void);
+char * tmpnam (char *);
+
+char * tempnam (const char *, const char *);
+
+int fclose (FILE *);
+int fflush (FILE *);
+FILE * freopen (const char *restrict, const char *restrict, FILE *restrict);
+void setbuf (FILE *restrict, char *restrict);
+int setvbuf (FILE *restrict, char *restrict, int, size_t);
+int fprintf (FILE *restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
+                                                            ;
+int fscanf (FILE *restrict, const char *restrict, ...) __attribute__ ((__format__ (__scanf__, 2, 3)))
+                                                           ;
+int printf (const char *restrict, ...) __attribute__ ((__format__ (__printf__, 1, 2)))
+                                                            ;
+int scanf (const char *restrict, ...) __attribute__ ((__format__ (__scanf__, 1, 2)))
+                                                           ;
+int sscanf (const char *restrict, const char *restrict, ...) __attribute__ ((__format__ (__scanf__, 2, 3)))
+                                                           ;
+int vfprintf (FILE *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
+                                                            ;
+int vprintf (const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 1, 0)))
+                                                            ;
+int vsprintf (char *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
+                                                            ;
+int fgetc (FILE *);
+char * fgets (char *restrict, int, FILE *restrict);
+int fputc (int, FILE *);
+int fputs (const char *restrict, FILE *restrict);
+int getc (FILE *);
+int getchar (void);
+char * gets (char *);
+int putc (int, FILE *);
+int putchar (int);
+int puts (const char *);
+int ungetc (int, FILE *);
+size_t fread (void * restrict, size_t _size, size_t _n, FILE *restrict);
+size_t fwrite (const void * restrict , size_t _size, size_t _n, FILE *);
+
+
+
+int fgetpos (FILE *restrict, fpos_t *restrict);
+
+int fseek (FILE *, long, int);
+
+
+
+int fsetpos (FILE *, const fpos_t *);
+
+long ftell ( FILE *);
+void rewind (FILE *);
+void clearerr (FILE *);
+int feof (FILE *);
+int ferror (FILE *);
+void perror (const char *);
+
+FILE * fopen (const char *restrict _name, const char *restrict _type);
+int sprintf (char *restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
+                                                            ;
+int remove (const char *);
+int rename (const char *, const char *);
+# 235 "C:/esp/esp-idf/components/newlib/include/stdio.h"
+int fseeko (FILE *, off_t, int);
+off_t ftello ( FILE *);
+
+
+
+
+
+
+
+int asiprintf (char **, const char *, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
+                                                            ;
+char * asniprintf (char *, size_t *, const char *, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
+                                                            ;
+char * asnprintf (char *restrict, size_t *restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
+                                                            ;
+int asprintf (char **restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
+                                                            ;
+
+int diprintf (int, const char *, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
+                                                            ;
+
+int fiprintf (FILE *, const char *, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
+                                                            ;
+int fiscanf (FILE *, const char *, ...) __attribute__ ((__format__ (__scanf__, 2, 3)))
+                                                           ;
+int iprintf (const char *, ...) __attribute__ ((__format__ (__printf__, 1, 2)))
+                                                            ;
+int iscanf (const char *, ...) __attribute__ ((__format__ (__scanf__, 1, 2)))
+                                                           ;
+int siprintf (char *, const char *, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
+                                                            ;
+int siscanf (const char *, const char *, ...) __attribute__ ((__format__ (__scanf__, 2, 3)))
+                                                           ;
+int snprintf (char *restrict, size_t, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
+                                                            ;
+int sniprintf (char *, size_t, const char *, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
+                                                            ;
+int vasiprintf (char **, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
+                                                            ;
+char * vasniprintf (char *, size_t *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
+                                                            ;
+char * vasnprintf (char *, size_t *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
+                                                            ;
+int vasprintf (char **, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
+                                                            ;
+int vdiprintf (int, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
+                                                            ;
+int vfiprintf (FILE *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
+                                                            ;
+int vfiscanf (FILE *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 2, 0)))
+                                                           ;
+int vfscanf (FILE *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 2, 0)))
+                                                           ;
+int viprintf (const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 1, 0)))
+                                                            ;
+int viscanf (const char *, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 1, 0)))
+                                                           ;
+int vscanf (const char *, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 1, 0)))
+                                                           ;
+int vsiprintf (char *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
+                                                            ;
+int vsiscanf (const char *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 2, 0)))
+                                                           ;
+int vsniprintf (char *, size_t, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
+                                                            ;
+int vsnprintf (char *restrict, size_t, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
+                                                            ;
+int vsscanf (const char *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 2, 0)))
+                                                           ;
+# 313 "C:/esp/esp-idf/components/newlib/include/stdio.h"
+FILE * fdopen (int, const char *);
+
+int fileno (FILE *);
+int getw (FILE *);
+int pclose (FILE *);
+FILE * popen (const char *, const char *);
+int putw (int, FILE *);
+void setbuffer (FILE *, char *, int);
+int setlinebuf (FILE *);
+int getc_unlocked (FILE *);
+int getchar_unlocked (void);
+void flockfile (FILE *);
+int ftrylockfile (FILE *);
+void funlockfile (FILE *);
+int putc_unlocked (int, FILE *);
+int putchar_unlocked (int);
+# 338 "C:/esp/esp-idf/components/newlib/include/stdio.h"
+int dprintf (int, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
+                                                            ;
+
+FILE * fmemopen (void *restrict, size_t, const char *restrict);
+
+
+FILE * open_memstream (char **, size_t *);
+
+int renameat (int, const char *, int, const char *);
+
+int vdprintf (int, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
+                                                            ;
+
+
+
+
+
+
+
+int _asiprintf_r (struct _reent *, char **, const char *, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
+                                                            ;
+char * _asniprintf_r (struct _reent *, char *, size_t *, const char *, ...) __attribute__ ((__format__ (__printf__, 4, 5)))
+                                                            ;
+char * _asnprintf_r (struct _reent *, char *restrict, size_t *restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 4, 5)))
+                                                            ;
+int _asprintf_r (struct _reent *, char **restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
+                                                            ;
+int _diprintf_r (struct _reent *, int, const char *, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
+                                                            ;
+int _dprintf_r (struct _reent *, int, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
+                                                            ;
+int _fclose_r (struct _reent *, FILE *);
+int _fcloseall_r (struct _reent *);
+FILE * _fdopen_r (struct _reent *, int, const char *);
+int _fflush_r (struct _reent *, FILE *);
+int _fgetc_r (struct _reent *, FILE *);
+int _fgetc_unlocked_r (struct _reent *, FILE *);
+char * _fgets_r (struct _reent *, char *restrict, int, FILE *restrict);
+char * _fgets_unlocked_r (struct _reent *, char *restrict, int, FILE *restrict);
+
+
+
+
+int _fgetpos_r (struct _reent *, FILE *, fpos_t *);
+int _fsetpos_r (struct _reent *, FILE *, const fpos_t *);
+
+int _fiprintf_r (struct _reent *, FILE *, const char *, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
+                                                            ;
+int _fiscanf_r (struct _reent *, FILE *, const char *, ...) __attribute__ ((__format__ (__scanf__, 3, 4)))
+                                                           ;
+FILE * _fmemopen_r (struct _reent *, void *restrict, size_t, const char *restrict);
+FILE * _fopen_r (struct _reent *, const char *restrict, const char *restrict);
+FILE * _freopen_r (struct _reent *, const char *restrict, const char *restrict, FILE *restrict);
+int _fprintf_r (struct _reent *, FILE *restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
+                                                            ;
+int _fpurge_r (struct _reent *, FILE *);
+int _fputc_r (struct _reent *, int, FILE *);
+int _fputc_unlocked_r (struct _reent *, int, FILE *);
+int _fputs_r (struct _reent *, const char *restrict, FILE *restrict);
+int _fputs_unlocked_r (struct _reent *, const char *restrict, FILE *restrict);
+size_t _fread_r (struct _reent *, void * restrict, size_t _size, size_t _n, FILE *restrict);
+size_t _fread_unlocked_r (struct _reent *, void * restrict, size_t _size, size_t _n, FILE *restrict);
+int _fscanf_r (struct _reent *, FILE *restrict, const char *restrict, ...) __attribute__ ((__format__ (__scanf__, 3, 4)))
+                                                           ;
+int _fseek_r (struct _reent *, FILE *, long, int);
+int _fseeko_r (struct _reent *, FILE *, _off_t, int);
+long _ftell_r (struct _reent *, FILE *);
+_off_t _ftello_r (struct _reent *, FILE *);
+void _rewind_r (struct _reent *, FILE *);
+size_t _fwrite_r (struct _reent *, const void * restrict, size_t _size, size_t _n, FILE *restrict);
+size_t _fwrite_unlocked_r (struct _reent *, const void * restrict, size_t _size, size_t _n, FILE *restrict);
+int _getc_r (struct _reent *, FILE *);
+int _getc_unlocked_r (struct _reent *, FILE *);
+int _getchar_r (struct _reent *);
+int _getchar_unlocked_r (struct _reent *);
+char * _gets_r (struct _reent *, char *);
+int _iprintf_r (struct _reent *, const char *, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
+                                                            ;
+int _iscanf_r (struct _reent *, const char *, ...) __attribute__ ((__format__ (__scanf__, 2, 3)))
+                                                           ;
+FILE * _open_memstream_r (struct _reent *, char **, size_t *);
+void _perror_r (struct _reent *, const char *);
+int _printf_r (struct _reent *, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
+                                                            ;
+int _putc_r (struct _reent *, int, FILE *);
+int _putc_unlocked_r (struct _reent *, int, FILE *);
+int _putchar_unlocked_r (struct _reent *, int);
+int _putchar_r (struct _reent *, int);
+int _puts_r (struct _reent *, const char *);
+int _remove_r (struct _reent *, const char *);
+int _rename_r (struct _reent *, const char *_old, const char *_new)
+                                          ;
+int _scanf_r (struct _reent *, const char *restrict, ...) __attribute__ ((__format__ (__scanf__, 2, 3)))
+                                                           ;
+int _siprintf_r (struct _reent *, char *, const char *, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
+                                                            ;
+int _siscanf_r (struct _reent *, const char *, const char *, ...) __attribute__ ((__format__ (__scanf__, 3, 4)))
+                                                           ;
+int _sniprintf_r (struct _reent *, char *, size_t, const char *, ...) __attribute__ ((__format__ (__printf__, 4, 5)))
+                                                            ;
+int _snprintf_r (struct _reent *, char *restrict, size_t, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 4, 5)))
+                                                            ;
+int _sprintf_r (struct _reent *, char *restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
+                                                            ;
+int _sscanf_r (struct _reent *, const char *restrict, const char *restrict, ...) __attribute__ ((__format__ (__scanf__, 3, 4)))
+                                                           ;
+char * _tempnam_r (struct _reent *, const char *, const char *);
+FILE * _tmpfile_r (struct _reent *);
+char * _tmpnam_r (struct _reent *, char *);
+int _ungetc_r (struct _reent *, int, FILE *);
+int _vasiprintf_r (struct _reent *, char **, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
+                                                            ;
+char * _vasniprintf_r (struct _reent*, char *, size_t *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 4, 0)))
+                                                            ;
+char * _vasnprintf_r (struct _reent*, char *, size_t *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 4, 0)))
+                                                            ;
+int _vasprintf_r (struct _reent *, char **, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
+                                                            ;
+int _vdiprintf_r (struct _reent *, int, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
+                                                            ;
+int _vdprintf_r (struct _reent *, int, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
+                                                            ;
+int _vfiprintf_r (struct _reent *, FILE *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
+                                                            ;
+int _vfiscanf_r (struct _reent *, FILE *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 3, 0)))
+                                                           ;
+int _vfprintf_r (struct _reent *, FILE *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
+                                                            ;
+int _vfscanf_r (struct _reent *, FILE *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 3, 0)))
+                                                           ;
+int _viprintf_r (struct _reent *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
+                                                            ;
+int _viscanf_r (struct _reent *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 2, 0)))
+                                                           ;
+int _vprintf_r (struct _reent *, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
+                                                            ;
+int _vscanf_r (struct _reent *, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 2, 0)))
+                                                           ;
+int _vsiprintf_r (struct _reent *, char *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
+                                                            ;
+int _vsiscanf_r (struct _reent *, const char *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 3, 0)))
+                                                           ;
+int _vsniprintf_r (struct _reent *, char *, size_t, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 4, 0)))
+                                                            ;
+int _vsnprintf_r (struct _reent *, char *restrict, size_t, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 4, 0)))
+                                                            ;
+int _vsprintf_r (struct _reent *, char *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
+                                                            ;
+int _vsscanf_r (struct _reent *, const char *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 3, 0)))
+                                                           ;
+
+
+
+int fpurge (FILE *);
+ssize_t __getdelim (char **, size_t *, int, FILE *);
+ssize_t __getline (char **, size_t *, FILE *);
+
+
+void clearerr_unlocked (FILE *);
+int feof_unlocked (FILE *);
+int ferror_unlocked (FILE *);
+int fileno_unlocked (FILE *);
+int fflush_unlocked (FILE *);
+int fgetc_unlocked (FILE *);
+int fputc_unlocked (int, FILE *);
+size_t fread_unlocked (void * restrict, size_t _size, size_t _n, FILE *restrict);
+size_t fwrite_unlocked (const void * restrict , size_t _size, size_t _n, FILE *);
+# 538 "C:/esp/esp-idf/components/newlib/include/stdio.h"
+int __srget_r (struct _reent *, FILE *);
+int __swbuf_r (struct _reent *, int, FILE *);
+# 562 "C:/esp/esp-idf/components/newlib/include/stdio.h"
+FILE *funopen (const void * __cookie, int (*__readfn)(void * __cookie, char *__buf, int __n), int (*__writefn)(void * __cookie, const char *__buf, int __n), fpos_t (*__seekfn)(void * __cookie, fpos_t __off, int __whence), int (*__closefn)(void * __cookie))
+
+
+
+
+
+                                   ;
+FILE *_funopen_r (struct _reent *, const void * __cookie, int (*__readfn)(void * __cookie, char *__buf, int __n), int (*__writefn)(void * __cookie, const char *__buf, int __n), fpos_t (*__seekfn)(void * __cookie, fpos_t __off, int __whence), int (*__closefn)(void * __cookie))
+
+
+
+
+
+                                   ;
+
+
+
+
+
+
+
+typedef ssize_t cookie_read_function_t(void *__cookie, char *__buf, size_t __n);
+typedef ssize_t cookie_write_function_t(void *__cookie, const char *__buf,
+     size_t __n);
+
+
+
+
+typedef int cookie_seek_function_t(void *__cookie, off_t *__off, int __whence);
+
+typedef int cookie_close_function_t(void *__cookie);
+typedef struct
+{
+
+
+  cookie_read_function_t *read;
+  cookie_write_function_t *write;
+  cookie_seek_function_t *seek;
+  cookie_close_function_t *close;
+} cookie_io_functions_t;
+FILE *fopencookie (void *__cookie, const char *__mode, cookie_io_functions_t __functions)
+                                                         ;
+FILE *_fopencookie_r (struct _reent *, void *__cookie, const char *__mode, cookie_io_functions_t __functions)
+                                                         ;
+# 725 "C:/esp/esp-idf/components/newlib/include/stdio.h"
+
+# 2 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/main.c" 2
+# 1 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 1
+# 10 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
+# 1 "C:/esp/esp-idf/components/newlib/include/machine/ieeefp.h" 1
+# 11 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 2
+
+
+
+
+
+# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
+# 17 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 2
+
+
+
+# 1 "C:/esp/esp-idf/components/newlib/include/machine/stdlib.h" 1
+# 21 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 2
+
+# 1 "C:/esp/esp-idf/components/newlib/include/alloca.h" 1
+# 23 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 2
+
+
+
+
+
+
+
+
+typedef struct
+{
+  int quot;
+  int rem;
+} div_t;
+
+typedef struct
+{
+  long quot;
+  long rem;
+} ldiv_t;
+
+
+
+
+typedef struct
+{
+  long long int quot;
+  long long int rem;
+} lldiv_t;
+
+
+
+
+typedef int (*__compar_fn_t) (const void *, const void *);
+# 67 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
+int __locale_mb_cur_max (void);
+
+
+
+void abort (void) __attribute__ ((__noreturn__));
+int abs (int);
+int atexit (void (*__func)(void));
+double atof (const char *__nptr);
+
+float atoff (const char *__nptr);
+
+int atoi (const char *__nptr);
+int _atoi_r (struct _reent *, const char *__nptr);
+long atol (const char *__nptr);
+long _atol_r (struct _reent *, const char *__nptr);
+void * bsearch (const void * __key, const void * __base, size_t __nmemb, size_t __size, __compar_fn_t _compar)
+
+
+
+                                ;
+void * calloc (size_t __nmemb, size_t __size) ;
+div_t div (int __numer, int __denom);
+void exit (int __status) __attribute__ ((__noreturn__));
+void free (void *) ;
+char * getenv (const char *__string);
+char * _getenv_r (struct _reent *, const char *__string);
+char * _findenv (const char *, int *);
+char * _findenv_r (struct _reent *, const char *, int *);
+
+extern char *suboptarg;
+int getsubopt (char **, char * const *, char **);
+
+long labs (long);
+ldiv_t ldiv (long __numer, long __denom);
+void * malloc (size_t __size) ;
+int mblen (const char *, size_t);
+int _mblen_r (struct _reent *, const char *, size_t, _mbstate_t *);
+int mbtowc (wchar_t *restrict, const char *restrict, size_t);
+int _mbtowc_r (struct _reent *, wchar_t *restrict, const char *restrict, size_t, _mbstate_t *);
+int wctomb (char *, wchar_t);
+int _wctomb_r (struct _reent *, char *, wchar_t, _mbstate_t *);
+size_t mbstowcs (wchar_t *restrict, const char *restrict, size_t);
+size_t _mbstowcs_r (struct _reent *, wchar_t *restrict, const char *restrict, size_t, _mbstate_t *);
+size_t wcstombs (char *restrict, const wchar_t *restrict, size_t);
+size_t _wcstombs_r (struct _reent *, char *restrict, const wchar_t *restrict, size_t, _mbstate_t *);
+
+
+char * mkdtemp (char *);
+int mkostemp (char *, int);
+int mkostemps (char *, int, int);
+int mkstemp (char *);
+int mkstemps (char *, int);
+
+char * mktemp (char *);
+
+
+
+
+char * _mkdtemp_r (struct _reent *, char *);
+int _mkostemp_r (struct _reent *, char *, int);
+int _mkostemps_r (struct _reent *, char *, int, int);
+int _mkstemp_r (struct _reent *, char *);
+int _mkstemps_r (struct _reent *, char *, int);
+
+char * _mktemp_r (struct _reent *, char *);
+
+
+
+
+void qsort (void * __base, size_t __nmemb, size_t __size, __compar_fn_t _compar);
+int rand (void);
+void * realloc (void * __r, size_t __size) ;
+
+void * reallocf (void * __r, size_t __size);
+char * realpath (const char *restrict path, char *restrict resolved_path);
+
+void srand (unsigned __seed);
+double strtod (const char *restrict __n, char **restrict __end_PTR);
+double _strtod_r (struct _reent *,const char *restrict __n, char **restrict __end_PTR);
+
+
+
+float strtof (const char *restrict __n, char **restrict __end_PTR);
+
+
+
+
+
+
+
+long strtol (const char *restrict __n, char **restrict __end_PTR, int __base);
+long _strtol_r (struct _reent *,const char *restrict __n, char **restrict __end_PTR, int __base);
+unsigned long strtoul (const char *restrict __n, char **restrict __end_PTR, int __base);
+unsigned long _strtoul_r (struct _reent *,const char *restrict __n, char **restrict __end_PTR, int __base);
+
+int system (const char *__string);
+
+
+long a64l (const char *__input);
+char * l64a (long __input);
+char * _l64a_r (struct _reent *,long __input);
+int on_exit (void (*__func)(int, void *),void * __arg);
+
+
+
+
+void _Exit (int __status) __attribute__ ((__noreturn__));
+
+
+int putenv (char *__string);
+int _putenv_r (struct _reent *, char *__string);
+void * _reallocf_r (struct _reent *, void *, size_t);
+int setenv (const char *__string, const char *__value, int __overwrite);
+int _setenv_r (struct _reent *, const char *__string, const char *__value, int __overwrite);
+
+char * gcvt (double,int,char *);
+char * gcvtf (float,int,char *);
+char * fcvt (double,int,int *,int *);
+char * fcvtf (float,int,int *,int *);
+char * ecvt (double,int,int *,int *);
+char * ecvtbuf (double, int, int*, int*, char *);
+char * fcvtbuf (double, int, int*, int*, char *);
+char * ecvtf (float,int,int *,int *);
+char * dtoa (double, int, int, int *, int*, char**);
+
+char * __itoa (int, char *, int);
+char * __utoa (unsigned, char *, int);
+
+char * itoa (int, char *, int);
+char * utoa (unsigned, char *, int);
+int rand_r (unsigned *__seed);
+
+double drand48 (void);
+double _drand48_r (struct _reent *);
+double erand48 (unsigned short [3]);
+double _erand48_r (struct _reent *, unsigned short [3]);
+long jrand48 (unsigned short [3]);
+long _jrand48_r (struct _reent *, unsigned short [3]);
+void lcong48 (unsigned short [7]);
+void _lcong48_r (struct _reent *, unsigned short [7]);
+long lrand48 (void);
+long _lrand48_r (struct _reent *);
+long mrand48 (void);
+long _mrand48_r (struct _reent *);
+long nrand48 (unsigned short [3]);
+long _nrand48_r (struct _reent *, unsigned short [3]);
+unsigned short *
+       seed48 (unsigned short [3]);
+unsigned short *
+       _seed48_r (struct _reent *, unsigned short [3]);
+void srand48 (long);
+void _srand48_r (struct _reent *, long);
+
+
+
+
+long long atoll (const char *__nptr);
+
+
+long long _atoll_r (struct _reent *, const char *__nptr);
+
+
+
+
+long long llabs (long long);
+lldiv_t lldiv (long long __numer, long long __denom);
+long long strtoll (const char *restrict __n, char **restrict __end_PTR, int __base);
+
+
+long long _strtoll_r (struct _reent *, const char *restrict __n, char **restrict __end_PTR, int __base);
+
+
+
+
+unsigned long long strtoull (const char *restrict __n, char **restrict __end_PTR, int __base);
+
+
+unsigned long long _strtoull_r (struct _reent *, const char *restrict __n, char **restrict __end_PTR, int __base);
+
+
+void cfree (void *);
+int unsetenv (const char *__string);
+int _unsetenv_r (struct _reent *, const char *__string);
+# 258 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
+char * _dtoa_r (struct _reent *, double, int, int, int *, int*, char**);
+
+void * _malloc_r (struct _reent *, size_t) ;
+void * _calloc_r (struct _reent *, size_t, size_t) ;
+void _free_r (struct _reent *, void *) ;
+void * _realloc_r (struct _reent *, void *, size_t) ;
+void _mstats_r (struct _reent *, char *);
+
+int _system_r (struct _reent *, const char *);
+
+void __eprintf (const char *, const char *, unsigned int, const char *);
+# 291 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
+extern long double strtold (const char *restrict, char **restrict);
+
+
+
+
+# 3 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/main.c" 2
+# 1 "C:/esp/esp-idf/components/newlib/include/string.h" 1
+# 17 "C:/esp/esp-idf/components/newlib/include/string.h"
 # 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
 # 18 "C:/esp/esp-idf/components/newlib/include/string.h" 2
 
@@ -533,7 +1367,7 @@ char *strsignal (int __signo);
 # 164 "C:/esp/esp-idf/components/newlib/include/string.h" 2
 
 
-# 2 "C:/esp/ArkPOS2-esp/main/main.c" 2
+# 4 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/main.c" 2
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h" 1
 # 76 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h"
 # 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
@@ -626,7 +1460,7 @@ typedef __uintptr_t uintptr_t;
 
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h" 1
 # 73 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 74 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h" 2
 # 102 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h"
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h" 1
@@ -1248,261 +2082,7 @@ long a3;
 
 
 
-# 1 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 1
-# 10 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
-# 1 "C:/esp/esp-idf/components/newlib/include/machine/ieeefp.h" 1
-# 11 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 2
 
-
-
-
-
-# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
-# 17 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 2
-
-
-
-# 1 "C:/esp/esp-idf/components/newlib/include/machine/stdlib.h" 1
-# 21 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 2
-
-# 1 "C:/esp/esp-idf/components/newlib/include/alloca.h" 1
-# 23 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 2
-
-
-
-
-
-
-
-
-typedef struct
-{
-  int quot;
-  int rem;
-} div_t;
-
-typedef struct
-{
-  long quot;
-  long rem;
-} ldiv_t;
-
-
-
-
-typedef struct
-{
-  long long int quot;
-  long long int rem;
-} lldiv_t;
-
-
-
-
-typedef int (*__compar_fn_t) (const void *, const void *);
-# 67 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
-int __locale_mb_cur_max (void);
-
-
-
-void abort (void) __attribute__ ((__noreturn__));
-int abs (int);
-int atexit (void (*__func)(void));
-double atof (const char *__nptr);
-
-float atoff (const char *__nptr);
-
-int atoi (const char *__nptr);
-int _atoi_r (struct _reent *, const char *__nptr);
-long atol (const char *__nptr);
-long _atol_r (struct _reent *, const char *__nptr);
-void * bsearch (const void * __key, const void * __base, size_t __nmemb, size_t __size, __compar_fn_t _compar)
-
-
-
-                                ;
-void * calloc (size_t __nmemb, size_t __size) ;
-div_t div (int __numer, int __denom);
-void exit (int __status) __attribute__ ((__noreturn__));
-void free (void *) ;
-char * getenv (const char *__string);
-char * _getenv_r (struct _reent *, const char *__string);
-char * _findenv (const char *, int *);
-char * _findenv_r (struct _reent *, const char *, int *);
-
-extern char *suboptarg;
-int getsubopt (char **, char * const *, char **);
-
-long labs (long);
-ldiv_t ldiv (long __numer, long __denom);
-void * malloc (size_t __size) ;
-int mblen (const char *, size_t);
-int _mblen_r (struct _reent *, const char *, size_t, _mbstate_t *);
-int mbtowc (wchar_t *restrict, const char *restrict, size_t);
-int _mbtowc_r (struct _reent *, wchar_t *restrict, const char *restrict, size_t, _mbstate_t *);
-int wctomb (char *, wchar_t);
-int _wctomb_r (struct _reent *, char *, wchar_t, _mbstate_t *);
-size_t mbstowcs (wchar_t *restrict, const char *restrict, size_t);
-size_t _mbstowcs_r (struct _reent *, wchar_t *restrict, const char *restrict, size_t, _mbstate_t *);
-size_t wcstombs (char *restrict, const wchar_t *restrict, size_t);
-size_t _wcstombs_r (struct _reent *, char *restrict, const wchar_t *restrict, size_t, _mbstate_t *);
-
-
-char * mkdtemp (char *);
-int mkostemp (char *, int);
-int mkostemps (char *, int, int);
-int mkstemp (char *);
-int mkstemps (char *, int);
-
-char * mktemp (char *);
-
-
-
-
-char * _mkdtemp_r (struct _reent *, char *);
-int _mkostemp_r (struct _reent *, char *, int);
-int _mkostemps_r (struct _reent *, char *, int, int);
-int _mkstemp_r (struct _reent *, char *);
-int _mkstemps_r (struct _reent *, char *, int);
-
-char * _mktemp_r (struct _reent *, char *);
-
-
-
-
-void qsort (void * __base, size_t __nmemb, size_t __size, __compar_fn_t _compar);
-int rand (void);
-void * realloc (void * __r, size_t __size) ;
-
-void * reallocf (void * __r, size_t __size);
-char * realpath (const char *restrict path, char *restrict resolved_path);
-
-void srand (unsigned __seed);
-double strtod (const char *restrict __n, char **restrict __end_PTR);
-double _strtod_r (struct _reent *,const char *restrict __n, char **restrict __end_PTR);
-
-
-
-float strtof (const char *restrict __n, char **restrict __end_PTR);
-
-
-
-
-
-
-
-long strtol (const char *restrict __n, char **restrict __end_PTR, int __base);
-long _strtol_r (struct _reent *,const char *restrict __n, char **restrict __end_PTR, int __base);
-unsigned long strtoul (const char *restrict __n, char **restrict __end_PTR, int __base);
-unsigned long _strtoul_r (struct _reent *,const char *restrict __n, char **restrict __end_PTR, int __base);
-
-int system (const char *__string);
-
-
-long a64l (const char *__input);
-char * l64a (long __input);
-char * _l64a_r (struct _reent *,long __input);
-int on_exit (void (*__func)(int, void *),void * __arg);
-
-
-
-
-void _Exit (int __status) __attribute__ ((__noreturn__));
-
-
-int putenv (char *__string);
-int _putenv_r (struct _reent *, char *__string);
-void * _reallocf_r (struct _reent *, void *, size_t);
-int setenv (const char *__string, const char *__value, int __overwrite);
-int _setenv_r (struct _reent *, const char *__string, const char *__value, int __overwrite);
-
-char * gcvt (double,int,char *);
-char * gcvtf (float,int,char *);
-char * fcvt (double,int,int *,int *);
-char * fcvtf (float,int,int *,int *);
-char * ecvt (double,int,int *,int *);
-char * ecvtbuf (double, int, int*, int*, char *);
-char * fcvtbuf (double, int, int*, int*, char *);
-char * ecvtf (float,int,int *,int *);
-char * dtoa (double, int, int, int *, int*, char**);
-
-char * __itoa (int, char *, int);
-char * __utoa (unsigned, char *, int);
-
-char * itoa (int, char *, int);
-char * utoa (unsigned, char *, int);
-int rand_r (unsigned *__seed);
-
-double drand48 (void);
-double _drand48_r (struct _reent *);
-double erand48 (unsigned short [3]);
-double _erand48_r (struct _reent *, unsigned short [3]);
-long jrand48 (unsigned short [3]);
-long _jrand48_r (struct _reent *, unsigned short [3]);
-void lcong48 (unsigned short [7]);
-void _lcong48_r (struct _reent *, unsigned short [7]);
-long lrand48 (void);
-long _lrand48_r (struct _reent *);
-long mrand48 (void);
-long _mrand48_r (struct _reent *);
-long nrand48 (unsigned short [3]);
-long _nrand48_r (struct _reent *, unsigned short [3]);
-unsigned short *
-       seed48 (unsigned short [3]);
-unsigned short *
-       _seed48_r (struct _reent *, unsigned short [3]);
-void srand48 (long);
-void _srand48_r (struct _reent *, long);
-
-
-
-
-long long atoll (const char *__nptr);
-
-
-long long _atoll_r (struct _reent *, const char *__nptr);
-
-
-
-
-long long llabs (long long);
-lldiv_t lldiv (long long __numer, long long __denom);
-long long strtoll (const char *restrict __n, char **restrict __end_PTR, int __base);
-
-
-long long _strtoll_r (struct _reent *, const char *restrict __n, char **restrict __end_PTR, int __base);
-
-
-
-
-unsigned long long strtoull (const char *restrict __n, char **restrict __end_PTR, int __base);
-
-
-unsigned long long _strtoull_r (struct _reent *, const char *restrict __n, char **restrict __end_PTR, int __base);
-
-
-void cfree (void *);
-int unsetenv (const char *__string);
-int _unsetenv_r (struct _reent *, const char *__string);
-# 258 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
-char * _dtoa_r (struct _reent *, double, int, int, int *, int*, char**);
-
-void * _malloc_r (struct _reent *, size_t) ;
-void * _calloc_r (struct _reent *, size_t, size_t) ;
-void _free_r (struct _reent *, void *) ;
-void * _realloc_r (struct _reent *, void *, size_t) ;
-void _mstats_r (struct _reent *, char *);
-
-int _system_r (struct _reent *, const char *);
-
-void __eprintf (const char *, const char *, unsigned int, const char *);
-# 291 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
-extern long double strtold (const char *restrict, char **restrict);
-
-
-
-
-# 108 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h" 1
 # 19 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h"
 # 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdbool.h" 1 3 4
@@ -1515,7 +2095,7 @@ extern long double strtold (const char *restrict, char **restrict);
 # 1 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 1
 # 19 "C:/esp/esp-idf/components/newlib/platform_include/assert.h"
        
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 2
 
 
@@ -1853,7 +2433,212 @@ void esp_crosscore_int_init();
 # 40 "C:/esp/esp-idf/components/esp32/include/esp_crosscore_int.h"
 void esp_crosscore_int_send_yield(int coreId);
 # 83 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
-# 107 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+
+
+# 1 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 1
+# 14 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+       
+
+
+
+# 1 "C:/esp/esp-idf/components/heap/include/multi_heap.h" 1
+# 14 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+       
+# 30 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+typedef struct multi_heap_info *multi_heap_handle_t;
+# 41 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+void *multi_heap_malloc(multi_heap_handle_t heap, size_t size);
+# 50 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+void multi_heap_free(multi_heap_handle_t heap, void *p);
+# 62 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+void *multi_heap_realloc(multi_heap_handle_t heap, void *p, size_t size);
+# 73 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+size_t multi_heap_get_allocated_size(multi_heap_handle_t heap, void *p);
+# 87 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+multi_heap_handle_t multi_heap_register(void *start, size_t size);
+# 99 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+void multi_heap_set_lock(multi_heap_handle_t heap, void* lock);
+
+
+
+
+
+
+
+void multi_heap_dump(multi_heap_handle_t heap);
+# 119 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+
+# 119 "C:/esp/esp-idf/components/heap/include/multi_heap.h" 3 4
+_Bool 
+# 119 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+    multi_heap_check(multi_heap_handle_t heap, 
+# 119 "C:/esp/esp-idf/components/heap/include/multi_heap.h" 3 4
+                                               _Bool 
+# 119 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+                                                    print_errors);
+# 133 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+size_t multi_heap_free_size(multi_heap_handle_t heap);
+# 145 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+size_t multi_heap_minimum_free_size(multi_heap_handle_t heap);
+
+
+typedef struct {
+    size_t total_free_bytes;
+    size_t total_allocated_bytes;
+    size_t largest_free_block;
+    size_t minimum_free_bytes;
+    size_t allocated_blocks;
+    size_t free_blocks;
+    size_t total_blocks;
+} multi_heap_info_t;
+# 165 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+void multi_heap_get_info(multi_heap_handle_t heap, multi_heap_info_t *info);
+# 19 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 2
+# 51 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void *heap_caps_malloc(size_t size, uint32_t caps);
+# 63 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void heap_caps_free( void *ptr);
+# 82 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void *heap_caps_realloc( void *ptr, size_t size, int caps);
+# 99 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+size_t heap_caps_get_free_size( uint32_t caps );
+# 117 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+size_t heap_caps_get_minimum_free_size( uint32_t caps );
+# 129 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+size_t heap_caps_get_largest_free_block( uint32_t caps );
+# 145 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void heap_caps_get_info( multi_heap_info_t *info, uint32_t caps );
+# 158 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void heap_caps_print_heap_info( uint32_t caps );
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 3 4
+_Bool 
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+    heap_caps_check_integrity(uint32_t caps, 
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 3 4
+                                             _Bool 
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+                                                  print_errors);
+# 190 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void heap_caps_malloc_extmem_enable(size_t limit);
+# 86 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
+# 1 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 1
+# 14 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+       
+
+
+
+
+
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 21 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 2
+# 1 "C:/esp/esp-idf/components/esp32/include/esp_attr.h" 1
+# 22 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 2
+
+
+
+
+
+typedef struct {
+    const char *name;
+    uint32_t caps[3];
+    
+# 30 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 30 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        aliased_iram;
+    
+# 31 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 31 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        startup_stack;
+} soc_memory_type_desc_t;
+
+
+extern const soc_memory_type_desc_t soc_memory_types[];
+extern const size_t soc_memory_type_count;
+
+
+
+typedef struct
+{
+    intptr_t start;
+    size_t size;
+    size_t type;
+    intptr_t iram_address;
+} soc_memory_region_t;
+
+extern const soc_memory_region_t soc_memory_regions[];
+extern const size_t soc_memory_region_count;
+
+
+
+
+typedef struct
+{
+    intptr_t start;
+    intptr_t end;
+} soc_reserved_region_t;
+
+extern const soc_reserved_region_t soc_reserved_regions[];
+extern const size_t soc_reserved_region_count;
+
+inline static 
+# 63 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 63 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_dma_capable(const void *p)
+{
+    return (intptr_t)p >= 0x3FFAE000 && (intptr_t)p < 0x40000000;
+}
+
+inline static 
+# 68 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 68 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_executable(const void *p)
+{
+    intptr_t ip = (intptr_t) p;
+    return (ip >= 0x400D0000 && ip < 0x40400000)
+        || (ip >= 0x40080000 && ip < 0x400A0000)
+        || (ip >= 0x400C0000 && ip < 0x400C2000);
+}
+
+inline static 
+# 76 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 76 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_byte_accessible(const void *p)
+{
+    
+# 78 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 78 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        r;
+    r = ((intptr_t)p >= 0x3FFAE000 && (intptr_t)p < 0x40000000);
+
+
+
+    return r;
+}
+
+inline static 
+# 86 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 86 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_internal(const void *p) {
+    
+# 87 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 87 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        r;
+    r = ((intptr_t)p >= 0x3F400000 && (intptr_t)p < 0x400C2000);
+    r |= ((intptr_t)p >= 0x50000000 && (intptr_t)p < 0x50002000);
+    return r;
+}
+# 87 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
+# 110 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 typedef uint8_t StackType_t;
 typedef int BaseType_t;
 typedef unsigned int UBaseType_t;
@@ -1869,12 +2654,11 @@ typedef unsigned int UBaseType_t;
 
 
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h" 1
-# 122 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
-
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
-# 124 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
-# 1 "C:/esp/esp-idf/components/esp32/include/esp_attr.h" 1
 # 125 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
+
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 127 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
+
 
 
 
@@ -1887,24 +2671,24 @@ typedef struct {
 
 
 } portMUX_TYPE;
-# 174 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 177 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vPortAssertIfInISR();
-# 202 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 205 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vPortCPUInitializeMutex(portMUX_TYPE *mux);
-# 216 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 219 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vTaskExitCritical( portMUX_TYPE *mux );
 void vTaskEnterCritical( portMUX_TYPE *mux );
 void vPortCPUAcquireMutex(portMUX_TYPE *mux);
-# 228 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 231 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 
-# 228 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 3 4
+# 231 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 3 4
 _Bool 
-# 228 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 231 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
     vPortCPUAcquireMutexTimeout(portMUX_TYPE *mux, int timeout_cycles);
 void vPortCPUReleaseMutex(portMUX_TYPE *mux);
-# 241 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 244 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 static inline unsigned portENTER_CRITICAL_NESTED() { unsigned state = ({ unsigned __tmp; __asm__ __volatile__( "rsil	%0, " "3" "\n" : "=a" (__tmp) : : "memory" ); __tmp;}); ; return state; }
-# 258 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 273 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 static inline void uxPortCompareSet(volatile uint32_t *addr, uint32_t compare, uint32_t *set) {
     __asm__ __volatile__ (
         "WSR 	    %2,SCOMPARE1 \n"
@@ -1913,20 +2697,20 @@ static inline void uxPortCompareSet(volatile uint32_t *addr, uint32_t compare, u
         :"r"(addr), "r"(compare), "0"(*set)
         );
 }
-# 281 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 296 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vPortYield( void );
 void _frxt_setup_switch( void );
 
 
 
 static inline uint32_t xPortGetCoreID();
-# 307 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 322 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 typedef struct {
 
  volatile StackType_t* coproc_area;
-# 324 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 339 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 } xMPU_SETTINGS;
-# 336 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 351 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void _xt_coproc_release(volatile void * coproc_sa_base);
 # 95 "C:/esp/esp-idf/components/freertos/include/freertos/portable.h" 2
 # 125 "C:/esp/esp-idf/components/freertos/include/freertos/portable.h"
@@ -1937,595 +2721,7 @@ void _xt_coproc_release(volatile void * coproc_sa_base);
 # 1 "C:/esp/esp-idf/components/esp32/include/esp_err.h" 1
 # 14 "C:/esp/esp-idf/components/esp32/include/esp_err.h"
        
-
-
-# 1 "C:/esp/esp-idf/components/newlib/include/stdio.h" 1
-# 36 "C:/esp/esp-idf/components/newlib/include/stdio.h"
-# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
-# 37 "C:/esp/esp-idf/components/newlib/include/stdio.h" 2
-
-
-# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 1 3 4
-# 40 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 3 4
-
-# 40 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 3 4
-typedef __builtin_va_list __gnuc_va_list;
-# 40 "C:/esp/esp-idf/components/newlib/include/stdio.h" 2
-# 48 "C:/esp/esp-idf/components/newlib/include/stdio.h"
-# 1 "C:/esp/esp-idf/components/newlib/include/sys/types.h" 1
-# 69 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
-# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
-# 70 "C:/esp/esp-idf/components/newlib/include/sys/types.h" 2
-# 1 "C:/esp/esp-idf/components/newlib/include/machine/types.h" 1
-# 19 "C:/esp/esp-idf/components/newlib/include/machine/types.h"
-
-# 19 "C:/esp/esp-idf/components/newlib/include/machine/types.h"
-typedef long int __off_t;
-typedef int __pid_t;
-
-__extension__ typedef long long int __loff_t;
-# 71 "C:/esp/esp-idf/components/newlib/include/sys/types.h" 2
-# 93 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
-typedef unsigned char u_char;
-
-
-
-typedef unsigned short u_short;
-
-
-
-typedef unsigned int u_int;
-
-
-
-typedef unsigned long u_long;
-
-
-
-
-
-typedef unsigned short ushort;
-typedef unsigned int uint;
-typedef unsigned long ulong;
-
-
-
-typedef unsigned long clock_t;
-
-
-
-
-typedef long time_t;
-
-
-
-
-
-
-
-struct timespec {
-  time_t tv_sec;
-  long tv_nsec;
-};
-
-
-struct itimerspec {
-  struct timespec it_interval;
-  struct timespec it_value;
-};
-
-
-typedef long daddr_t;
-
-
-
-typedef char * caddr_t;
-# 155 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
-typedef unsigned short ino_t;
-# 184 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
-typedef _off_t off_t;
-typedef __dev_t dev_t;
-typedef __uid_t uid_t;
-typedef __gid_t gid_t;
-
-
-
-
-
-typedef int pid_t;
-
-
-
-
-
-
-
-typedef long key_t;
-
-typedef _ssize_t ssize_t;
-# 217 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
-typedef unsigned int mode_t __attribute__ ((__mode__ (__SI__)));
-
-
-
-
-typedef unsigned short nlink_t;
-# 244 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
-typedef long fd_mask;
-
-
-
-
-
-
-
-typedef struct _types_fd_set {
- fd_mask fds_bits[(((64)+(((sizeof (fd_mask) * 8))-1))/((sizeof (fd_mask) * 8)))];
-} _types_fd_set;
-# 275 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
-typedef unsigned long clockid_t;
-
-
-
-
-typedef unsigned long timer_t;
-
-
-
-typedef unsigned long useconds_t;
-typedef long suseconds_t;
-# 299 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
-# 1 "C:/esp/esp-idf/components/newlib/include/sys/sched.h" 1
-# 46 "C:/esp/esp-idf/components/newlib/include/sys/sched.h"
-struct sched_param {
-  int sched_priority;
-# 59 "C:/esp/esp-idf/components/newlib/include/sys/sched.h"
-};
-
-int sched_yield( void );
-# 300 "C:/esp/esp-idf/components/newlib/include/sys/types.h" 2
-# 308 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
-typedef __uint32_t pthread_t;
-# 341 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
-typedef struct {
-  int is_initialized;
-  void *stackaddr;
-  int stacksize;
-  int contentionscope;
-  int inheritsched;
-  int schedpolicy;
-  struct sched_param schedparam;
-# 357 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
-  int detachstate;
-
-
-
-
-
-} pthread_attr_t;
-# 442 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
-typedef __uint32_t pthread_mutex_t;
-
-typedef struct {
-  int is_initialized;
-# 454 "C:/esp/esp-idf/components/newlib/include/sys/types.h"
-  int type;
-
-  int recursive;
-} pthread_mutexattr_t;
-
-
-
-
-typedef __uint32_t pthread_cond_t;
-
-typedef struct {
-  int is_initialized;
-
-
-
-} pthread_condattr_t;
-
-
-
-typedef __uint32_t pthread_key_t;
-
-typedef struct {
-  int is_initialized;
-  int init_executed;
-} pthread_once_t;
-# 49 "C:/esp/esp-idf/components/newlib/include/stdio.h" 2
-
-
-
-typedef __FILE FILE;
-
-
-
-
-typedef _fpos_t fpos_t;
-
-
-
-
-
-# 1 "C:/esp/esp-idf/components/newlib/include/sys/stdio.h" 1
-# 64 "C:/esp/esp-idf/components/newlib/include/stdio.h" 2
-# 164 "C:/esp/esp-idf/components/newlib/include/stdio.h"
-FILE * tmpfile (void);
-char * tmpnam (char *);
-
-char * tempnam (const char *, const char *);
-
-int fclose (FILE *);
-int fflush (FILE *);
-FILE * freopen (const char *restrict, const char *restrict, FILE *restrict);
-void setbuf (FILE *restrict, char *restrict);
-int setvbuf (FILE *restrict, char *restrict, int, size_t);
-int fprintf (FILE *restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
-                                                            ;
-int fscanf (FILE *restrict, const char *restrict, ...) __attribute__ ((__format__ (__scanf__, 2, 3)))
-                                                           ;
-int printf (const char *restrict, ...) __attribute__ ((__format__ (__printf__, 1, 2)))
-                                                            ;
-int scanf (const char *restrict, ...) __attribute__ ((__format__ (__scanf__, 1, 2)))
-                                                           ;
-int sscanf (const char *restrict, const char *restrict, ...) __attribute__ ((__format__ (__scanf__, 2, 3)))
-                                                           ;
-int vfprintf (FILE *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
-                                                            ;
-int vprintf (const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 1, 0)))
-                                                            ;
-int vsprintf (char *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
-                                                            ;
-int fgetc (FILE *);
-char * fgets (char *restrict, int, FILE *restrict);
-int fputc (int, FILE *);
-int fputs (const char *restrict, FILE *restrict);
-int getc (FILE *);
-int getchar (void);
-char * gets (char *);
-int putc (int, FILE *);
-int putchar (int);
-int puts (const char *);
-int ungetc (int, FILE *);
-size_t fread (void * restrict, size_t _size, size_t _n, FILE *restrict);
-size_t fwrite (const void * restrict , size_t _size, size_t _n, FILE *);
-
-
-
-int fgetpos (FILE *restrict, fpos_t *restrict);
-
-int fseek (FILE *, long, int);
-
-
-
-int fsetpos (FILE *, const fpos_t *);
-
-long ftell ( FILE *);
-void rewind (FILE *);
-void clearerr (FILE *);
-int feof (FILE *);
-int ferror (FILE *);
-void perror (const char *);
-
-FILE * fopen (const char *restrict _name, const char *restrict _type);
-int sprintf (char *restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
-                                                            ;
-int remove (const char *);
-int rename (const char *, const char *);
-# 235 "C:/esp/esp-idf/components/newlib/include/stdio.h"
-int fseeko (FILE *, off_t, int);
-off_t ftello ( FILE *);
-
-
-
-
-
-
-
-int asiprintf (char **, const char *, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
-                                                            ;
-char * asniprintf (char *, size_t *, const char *, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
-                                                            ;
-char * asnprintf (char *restrict, size_t *restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
-                                                            ;
-int asprintf (char **restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
-                                                            ;
-
-int diprintf (int, const char *, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
-                                                            ;
-
-int fiprintf (FILE *, const char *, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
-                                                            ;
-int fiscanf (FILE *, const char *, ...) __attribute__ ((__format__ (__scanf__, 2, 3)))
-                                                           ;
-int iprintf (const char *, ...) __attribute__ ((__format__ (__printf__, 1, 2)))
-                                                            ;
-int iscanf (const char *, ...) __attribute__ ((__format__ (__scanf__, 1, 2)))
-                                                           ;
-int siprintf (char *, const char *, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
-                                                            ;
-int siscanf (const char *, const char *, ...) __attribute__ ((__format__ (__scanf__, 2, 3)))
-                                                           ;
-int snprintf (char *restrict, size_t, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
-                                                            ;
-int sniprintf (char *, size_t, const char *, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
-                                                            ;
-int vasiprintf (char **, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
-                                                            ;
-char * vasniprintf (char *, size_t *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
-                                                            ;
-char * vasnprintf (char *, size_t *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
-                                                            ;
-int vasprintf (char **, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
-                                                            ;
-int vdiprintf (int, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
-                                                            ;
-int vfiprintf (FILE *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
-                                                            ;
-int vfiscanf (FILE *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 2, 0)))
-                                                           ;
-int vfscanf (FILE *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 2, 0)))
-                                                           ;
-int viprintf (const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 1, 0)))
-                                                            ;
-int viscanf (const char *, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 1, 0)))
-                                                           ;
-int vscanf (const char *, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 1, 0)))
-                                                           ;
-int vsiprintf (char *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
-                                                            ;
-int vsiscanf (const char *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 2, 0)))
-                                                           ;
-int vsniprintf (char *, size_t, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
-                                                            ;
-int vsnprintf (char *restrict, size_t, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
-                                                            ;
-int vsscanf (const char *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 2, 0)))
-                                                           ;
-# 313 "C:/esp/esp-idf/components/newlib/include/stdio.h"
-FILE * fdopen (int, const char *);
-
-int fileno (FILE *);
-int getw (FILE *);
-int pclose (FILE *);
-FILE * popen (const char *, const char *);
-int putw (int, FILE *);
-void setbuffer (FILE *, char *, int);
-int setlinebuf (FILE *);
-int getc_unlocked (FILE *);
-int getchar_unlocked (void);
-void flockfile (FILE *);
-int ftrylockfile (FILE *);
-void funlockfile (FILE *);
-int putc_unlocked (int, FILE *);
-int putchar_unlocked (int);
-# 338 "C:/esp/esp-idf/components/newlib/include/stdio.h"
-int dprintf (int, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
-                                                            ;
-
-FILE * fmemopen (void *restrict, size_t, const char *restrict);
-
-
-FILE * open_memstream (char **, size_t *);
-
-int renameat (int, const char *, int, const char *);
-
-int vdprintf (int, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
-                                                            ;
-
-
-
-
-
-
-
-int _asiprintf_r (struct _reent *, char **, const char *, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
-                                                            ;
-char * _asniprintf_r (struct _reent *, char *, size_t *, const char *, ...) __attribute__ ((__format__ (__printf__, 4, 5)))
-                                                            ;
-char * _asnprintf_r (struct _reent *, char *restrict, size_t *restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 4, 5)))
-                                                            ;
-int _asprintf_r (struct _reent *, char **restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
-                                                            ;
-int _diprintf_r (struct _reent *, int, const char *, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
-                                                            ;
-int _dprintf_r (struct _reent *, int, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
-                                                            ;
-int _fclose_r (struct _reent *, FILE *);
-int _fcloseall_r (struct _reent *);
-FILE * _fdopen_r (struct _reent *, int, const char *);
-int _fflush_r (struct _reent *, FILE *);
-int _fgetc_r (struct _reent *, FILE *);
-int _fgetc_unlocked_r (struct _reent *, FILE *);
-char * _fgets_r (struct _reent *, char *restrict, int, FILE *restrict);
-char * _fgets_unlocked_r (struct _reent *, char *restrict, int, FILE *restrict);
-
-
-
-
-int _fgetpos_r (struct _reent *, FILE *, fpos_t *);
-int _fsetpos_r (struct _reent *, FILE *, const fpos_t *);
-
-int _fiprintf_r (struct _reent *, FILE *, const char *, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
-                                                            ;
-int _fiscanf_r (struct _reent *, FILE *, const char *, ...) __attribute__ ((__format__ (__scanf__, 3, 4)))
-                                                           ;
-FILE * _fmemopen_r (struct _reent *, void *restrict, size_t, const char *restrict);
-FILE * _fopen_r (struct _reent *, const char *restrict, const char *restrict);
-FILE * _freopen_r (struct _reent *, const char *restrict, const char *restrict, FILE *restrict);
-int _fprintf_r (struct _reent *, FILE *restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
-                                                            ;
-int _fpurge_r (struct _reent *, FILE *);
-int _fputc_r (struct _reent *, int, FILE *);
-int _fputc_unlocked_r (struct _reent *, int, FILE *);
-int _fputs_r (struct _reent *, const char *restrict, FILE *restrict);
-int _fputs_unlocked_r (struct _reent *, const char *restrict, FILE *restrict);
-size_t _fread_r (struct _reent *, void * restrict, size_t _size, size_t _n, FILE *restrict);
-size_t _fread_unlocked_r (struct _reent *, void * restrict, size_t _size, size_t _n, FILE *restrict);
-int _fscanf_r (struct _reent *, FILE *restrict, const char *restrict, ...) __attribute__ ((__format__ (__scanf__, 3, 4)))
-                                                           ;
-int _fseek_r (struct _reent *, FILE *, long, int);
-int _fseeko_r (struct _reent *, FILE *, _off_t, int);
-long _ftell_r (struct _reent *, FILE *);
-_off_t _ftello_r (struct _reent *, FILE *);
-void _rewind_r (struct _reent *, FILE *);
-size_t _fwrite_r (struct _reent *, const void * restrict, size_t _size, size_t _n, FILE *restrict);
-size_t _fwrite_unlocked_r (struct _reent *, const void * restrict, size_t _size, size_t _n, FILE *restrict);
-int _getc_r (struct _reent *, FILE *);
-int _getc_unlocked_r (struct _reent *, FILE *);
-int _getchar_r (struct _reent *);
-int _getchar_unlocked_r (struct _reent *);
-char * _gets_r (struct _reent *, char *);
-int _iprintf_r (struct _reent *, const char *, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
-                                                            ;
-int _iscanf_r (struct _reent *, const char *, ...) __attribute__ ((__format__ (__scanf__, 2, 3)))
-                                                           ;
-FILE * _open_memstream_r (struct _reent *, char **, size_t *);
-void _perror_r (struct _reent *, const char *);
-int _printf_r (struct _reent *, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 2, 3)))
-                                                            ;
-int _putc_r (struct _reent *, int, FILE *);
-int _putc_unlocked_r (struct _reent *, int, FILE *);
-int _putchar_unlocked_r (struct _reent *, int);
-int _putchar_r (struct _reent *, int);
-int _puts_r (struct _reent *, const char *);
-int _remove_r (struct _reent *, const char *);
-int _rename_r (struct _reent *, const char *_old, const char *_new)
-                                          ;
-int _scanf_r (struct _reent *, const char *restrict, ...) __attribute__ ((__format__ (__scanf__, 2, 3)))
-                                                           ;
-int _siprintf_r (struct _reent *, char *, const char *, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
-                                                            ;
-int _siscanf_r (struct _reent *, const char *, const char *, ...) __attribute__ ((__format__ (__scanf__, 3, 4)))
-                                                           ;
-int _sniprintf_r (struct _reent *, char *, size_t, const char *, ...) __attribute__ ((__format__ (__printf__, 4, 5)))
-                                                            ;
-int _snprintf_r (struct _reent *, char *restrict, size_t, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 4, 5)))
-                                                            ;
-int _sprintf_r (struct _reent *, char *restrict, const char *restrict, ...) __attribute__ ((__format__ (__printf__, 3, 4)))
-                                                            ;
-int _sscanf_r (struct _reent *, const char *restrict, const char *restrict, ...) __attribute__ ((__format__ (__scanf__, 3, 4)))
-                                                           ;
-char * _tempnam_r (struct _reent *, const char *, const char *);
-FILE * _tmpfile_r (struct _reent *);
-char * _tmpnam_r (struct _reent *, char *);
-int _ungetc_r (struct _reent *, int, FILE *);
-int _vasiprintf_r (struct _reent *, char **, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
-                                                            ;
-char * _vasniprintf_r (struct _reent*, char *, size_t *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 4, 0)))
-                                                            ;
-char * _vasnprintf_r (struct _reent*, char *, size_t *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 4, 0)))
-                                                            ;
-int _vasprintf_r (struct _reent *, char **, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
-                                                            ;
-int _vdiprintf_r (struct _reent *, int, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
-                                                            ;
-int _vdprintf_r (struct _reent *, int, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
-                                                            ;
-int _vfiprintf_r (struct _reent *, FILE *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
-                                                            ;
-int _vfiscanf_r (struct _reent *, FILE *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 3, 0)))
-                                                           ;
-int _vfprintf_r (struct _reent *, FILE *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
-                                                            ;
-int _vfscanf_r (struct _reent *, FILE *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 3, 0)))
-                                                           ;
-int _viprintf_r (struct _reent *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
-                                                            ;
-int _viscanf_r (struct _reent *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 2, 0)))
-                                                           ;
-int _vprintf_r (struct _reent *, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 2, 0)))
-                                                            ;
-int _vscanf_r (struct _reent *, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 2, 0)))
-                                                           ;
-int _vsiprintf_r (struct _reent *, char *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
-                                                            ;
-int _vsiscanf_r (struct _reent *, const char *, const char *, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 3, 0)))
-                                                           ;
-int _vsniprintf_r (struct _reent *, char *, size_t, const char *, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 4, 0)))
-                                                            ;
-int _vsnprintf_r (struct _reent *, char *restrict, size_t, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 4, 0)))
-                                                            ;
-int _vsprintf_r (struct _reent *, char *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__printf__, 3, 0)))
-                                                            ;
-int _vsscanf_r (struct _reent *, const char *restrict, const char *restrict, __gnuc_va_list) __attribute__ ((__format__ (__scanf__, 3, 0)))
-                                                           ;
-
-
-
-int fpurge (FILE *);
-ssize_t __getdelim (char **, size_t *, int, FILE *);
-ssize_t __getline (char **, size_t *, FILE *);
-
-
-void clearerr_unlocked (FILE *);
-int feof_unlocked (FILE *);
-int ferror_unlocked (FILE *);
-int fileno_unlocked (FILE *);
-int fflush_unlocked (FILE *);
-int fgetc_unlocked (FILE *);
-int fputc_unlocked (int, FILE *);
-size_t fread_unlocked (void * restrict, size_t _size, size_t _n, FILE *restrict);
-size_t fwrite_unlocked (const void * restrict , size_t _size, size_t _n, FILE *);
-# 538 "C:/esp/esp-idf/components/newlib/include/stdio.h"
-int __srget_r (struct _reent *, FILE *);
-int __swbuf_r (struct _reent *, int, FILE *);
-# 562 "C:/esp/esp-idf/components/newlib/include/stdio.h"
-FILE *funopen (const void * __cookie, int (*__readfn)(void * __cookie, char *__buf, int __n), int (*__writefn)(void * __cookie, const char *__buf, int __n), fpos_t (*__seekfn)(void * __cookie, fpos_t __off, int __whence), int (*__closefn)(void * __cookie))
-
-
-
-
-
-                                   ;
-FILE *_funopen_r (struct _reent *, const void * __cookie, int (*__readfn)(void * __cookie, char *__buf, int __n), int (*__writefn)(void * __cookie, const char *__buf, int __n), fpos_t (*__seekfn)(void * __cookie, fpos_t __off, int __whence), int (*__closefn)(void * __cookie))
-
-
-
-
-
-                                   ;
-
-
-
-
-
-
-
-typedef ssize_t cookie_read_function_t(void *__cookie, char *__buf, size_t __n);
-typedef ssize_t cookie_write_function_t(void *__cookie, const char *__buf,
-     size_t __n);
-
-
-
-
-typedef int cookie_seek_function_t(void *__cookie, off_t *__off, int __whence);
-
-typedef int cookie_close_function_t(void *__cookie);
-typedef struct
-{
-
-
-  cookie_read_function_t *read;
-  cookie_write_function_t *write;
-  cookie_seek_function_t *seek;
-  cookie_close_function_t *close;
-} cookie_io_functions_t;
-FILE *fopencookie (void *__cookie, const char *__mode, cookie_io_functions_t __functions)
-                                                         ;
-FILE *_fopencookie_r (struct _reent *, void *__cookie, const char *__mode, cookie_io_functions_t __functions)
-                                                         ;
-# 725 "C:/esp/esp-idf/components/newlib/include/stdio.h"
-
-# 18 "C:/esp/esp-idf/components/esp32/include/esp_err.h" 2
-
-
-
-
-
-
+# 24 "C:/esp/esp-idf/components/esp32/include/esp_err.h"
 typedef int32_t esp_err_t;
 # 45 "C:/esp/esp-idf/components/esp32/include/esp_err.h"
 void _esp_error_check_failed(esp_err_t rc, const char *file, int line, const char *function, const char *expression) __attribute__((noreturn));
@@ -3649,7 +3845,7 @@ typedef struct xSTATIC_QUEUE
 
 } StaticQueue_t;
 typedef StaticQueue_t StaticSemaphore_t;
-# 3 "C:/esp/ArkPOS2-esp/main/main.c" 2
+# 5 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/main.c" 2
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/task.h" 1
 # 78 "C:/esp/esp-idf/components/freertos/include/freertos/task.h"
 # 1 "C:/esp/esp-idf/components/newlib/include/limits.h" 1
@@ -3986,7 +4182,7 @@ eSleepModeStatus eTaskConfirmSleepModeStatus( void ) ;
 void *pvTaskIncrementMutexHeldCount( void );
 # 2216 "C:/esp/esp-idf/components/freertos/include/freertos/task.h"
 UBaseType_t uxTaskGetSnapshotAll( TaskSnapshot_t * const pxTaskSnapshotArray, const UBaseType_t uxArraySize, UBaseType_t * const pxTcbSz );
-# 4 "C:/esp/ArkPOS2-esp/main/main.c" 2
+# 6 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/main.c" 2
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/event_groups.h" 1
 # 77 "C:/esp/esp-idf/components/freertos/include/freertos/event_groups.h"
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/timers.h" 1
@@ -4050,7 +4246,7 @@ void vEventGroupDelete( EventGroupHandle_t xEventGroup );
 
 void vEventGroupSetBitsCallback( void *pvEventGroup, const uint32_t ulBitsToSet );
 void vEventGroupClearBitsCallback( void *pvEventGroup, const uint32_t ulBitsToClear );
-# 5 "C:/esp/ArkPOS2-esp/main/main.c" 2
+# 7 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/main.c" 2
 
 # 1 "C:/esp/esp-idf/components/log/include/esp_log.h" 1
 # 19 "C:/esp/esp-idf/components/log/include/esp_log.h"
@@ -4060,7 +4256,7 @@ void vEventGroupClearBitsCallback( void *pvEventGroup, const uint32_t ulBitsToCl
 # 98 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 3 4
 typedef __gnuc_va_list va_list;
 # 20 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
 # 31 "C:/esp/esp-idf/components/log/include/esp_log.h"
 
@@ -4092,7 +4288,7 @@ void esp_log_buffer_hex_internal(const char *tag, const void *buffer, uint16_t b
 void esp_log_buffer_char_internal(const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t level);
 void esp_log_buffer_hexdump_internal( const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t log_level);
 # 99 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
-# 7 "C:/esp/ArkPOS2-esp/main/main.c" 2
+# 9 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/main.c" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/esp_event_loop.h" 1
 # 22 "C:/esp/esp-idf/components/esp32/include/esp_event_loop.h"
 # 1 "C:/esp/esp-idf/components/esp32/include/esp_event.h" 1
@@ -4130,11 +4326,15 @@ typedef esp_interface_t wifi_interface_t;
 
 
 typedef enum {
-    WIFI_COUNTRY_CN = 0,
-    WIFI_COUNTRY_JP,
-    WIFI_COUNTRY_US,
-    WIFI_COUNTRY_EU,
-    WIFI_COUNTRY_MAX
+    WIFI_COUNTRY_POLICY_AUTO,
+    WIFI_COUNTRY_POLICY_MANUAL,
+} wifi_country_policy_t;
+
+typedef struct {
+    char cc[3];
+    uint8_t schan;
+    uint8_t nchan;
+    wifi_country_policy_t policy;
 } wifi_country_t;
 
 typedef enum {
@@ -4207,13 +4407,23 @@ typedef struct {
     uint8_t *bssid;
     uint8_t channel;
     
-# 119 "C:/esp/esp-idf/components/esp32/include/esp_wifi_types.h" 3 4
+# 123 "C:/esp/esp-idf/components/esp32/include/esp_wifi_types.h" 3 4
    _Bool 
-# 119 "C:/esp/esp-idf/components/esp32/include/esp_wifi_types.h"
+# 123 "C:/esp/esp-idf/components/esp32/include/esp_wifi_types.h"
         show_hidden;
     wifi_scan_type_t scan_type;
     wifi_scan_time_t scan_time;
 } wifi_scan_config_t;
+
+typedef enum {
+    WIFI_CIPHER_TYPE_NONE = 0,
+    WIFI_CIPHER_TYPE_WEP40,
+    WIFI_CIPHER_TYPE_WEP104,
+    WIFI_CIPHER_TYPE_TKIP,
+    WIFI_CIPHER_TYPE_CCMP,
+    WIFI_CIPHER_TYPE_TKIP_CCMP,
+    WIFI_CIPHER_TYPE_UNKNOWN,
+} wifi_cipher_type_t;
 
 typedef struct {
     uint8_t bssid[6];
@@ -4222,8 +4432,14 @@ typedef struct {
     wifi_second_chan_t second;
     int8_t rssi;
     wifi_auth_mode_t authmode;
-    uint32_t low_rate_enable:1;
-    uint32_t reserved:31;
+    wifi_cipher_type_t pairwise_cipher;
+    wifi_cipher_type_t group_cipher;
+    uint32_t phy_11b:1;
+    uint32_t phy_11g:1;
+    uint32_t phy_11n:1;
+    uint32_t phy_lr:1;
+    uint32_t wps:1;
+    uint32_t reserved:27;
 } wifi_ap_record_t;
 
 typedef enum {
@@ -4267,9 +4483,9 @@ typedef struct {
     uint8_t password[64];
     wifi_scan_method_t scan_method;
     
-# 175 "C:/esp/esp-idf/components/esp32/include/esp_wifi_types.h" 3 4
+# 195 "C:/esp/esp-idf/components/esp32/include/esp_wifi_types.h" 3 4
    _Bool 
-# 175 "C:/esp/esp-idf/components/esp32/include/esp_wifi_types.h"
+# 195 "C:/esp/esp-idf/components/esp32/include/esp_wifi_types.h"
         bssid_set;
     uint8_t bssid[6];
     uint8_t channel;
@@ -4319,7 +4535,7 @@ typedef enum {
     WIFI_VND_IE_ID_0,
     WIFI_VND_IE_ID_1,
 } wifi_vendor_ie_id_t;
-# 232 "C:/esp/esp-idf/components/esp32/include/esp_wifi_types.h"
+# 252 "C:/esp/esp-idf/components/esp32/include/esp_wifi_types.h"
 typedef struct {
     uint8_t element_id;
     uint8_t length;
@@ -4370,7 +4586,7 @@ typedef enum {
     WIFI_PKT_DATA,
     WIFI_PKT_MISC,
 } wifi_promiscuous_pkt_type_t;
-# 291 "C:/esp/esp-idf/components/esp32/include/esp_wifi_types.h"
+# 311 "C:/esp/esp-idf/components/esp32/include/esp_wifi_types.h"
 typedef struct {
     uint32_t filter_mask;
 } wifi_promiscuous_filter_t;
@@ -4610,11 +4826,11 @@ extern int flock (int, int);
 # 39 "C:/esp/esp-idf/components/lwip/include/lwip/port/lwipopts.h" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/esp_task.h" 1
 # 29 "C:/esp/esp-idf/components/esp32/include/esp_task.h"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 30 "C:/esp/esp-idf/components/esp32/include/esp_task.h" 2
 # 40 "C:/esp/esp-idf/components/lwip/include/lwip/port/lwipopts.h" 2
 
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 42 "C:/esp/esp-idf/components/lwip/include/lwip/port/lwipopts.h" 2
 # 46 "C:/esp/esp-idf/components/lwip/include/lwip/lwip/opt.h" 2
 # 1 "C:/esp/esp-idf/components/lwip/include/lwip/lwip/debug.h" 1
@@ -5232,12 +5448,12 @@ esp_err_t esp_event_loop_init(system_event_cb_t cb, void *ctx);
 system_event_cb_t esp_event_loop_set_cb(system_event_cb_t cb, void *ctx);
 # 74 "C:/esp/esp-idf/components/esp32/include/esp_event_loop.h"
 QueueHandle_t esp_event_loop_get_queue(void);
-# 8 "C:/esp/ArkPOS2-esp/main/main.c" 2
+# 10 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/main.c" 2
 
 
 # 1 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h" 1
 # 65 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 66 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h" 2
 
 
@@ -5431,1064 +5647,66 @@ esp_err_t esp_wifi_get_bandwidth(wifi_interface_t ifx, wifi_bandwidth_t *bw);
 esp_err_t esp_wifi_set_channel(uint8_t primary, wifi_second_chan_t second);
 # 517 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 esp_err_t esp_wifi_get_channel(uint8_t *primary, wifi_second_chan_t *second);
-# 531 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
-esp_err_t esp_wifi_set_country(wifi_country_t country);
-# 543 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+# 542 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+esp_err_t esp_wifi_set_country(wifi_country_t *country);
+# 554 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 esp_err_t esp_wifi_get_country(wifi_country_t *country);
-# 565 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+# 577 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 esp_err_t esp_wifi_set_mac(wifi_interface_t ifx, uint8_t mac[6]);
-# 579 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+# 591 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 esp_err_t esp_wifi_get_mac(wifi_interface_t ifx, uint8_t mac[6]);
-# 589 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+# 601 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 typedef void (* wifi_promiscuous_cb_t)(void *buf, wifi_promiscuous_pkt_type_t type);
-# 602 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+# 614 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 esp_err_t esp_wifi_set_promiscuous_rx_cb(wifi_promiscuous_cb_t cb);
-# 613 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
-esp_err_t esp_wifi_set_promiscuous(
-# 613 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h" 3 4
-                                  _Bool 
-# 613 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
-                                       en);
 # 625 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
-esp_err_t esp_wifi_get_promiscuous(
+esp_err_t esp_wifi_set_promiscuous(
 # 625 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h" 3 4
                                   _Bool 
 # 625 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+                                       en);
+# 637 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+esp_err_t esp_wifi_get_promiscuous(
+# 637 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h" 3 4
+                                  _Bool 
+# 637 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
                                        *en);
-# 638 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
-esp_err_t esp_wifi_set_promiscuous_filter(const wifi_promiscuous_filter_t *filter);
 # 650 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+esp_err_t esp_wifi_set_promiscuous_filter(const wifi_promiscuous_filter_t *filter);
+# 662 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 esp_err_t esp_wifi_get_promiscuous_filter(wifi_promiscuous_filter_t *filter);
-# 673 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+# 685 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 esp_err_t esp_wifi_set_config(wifi_interface_t ifx, wifi_config_t *conf);
-# 687 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+# 699 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 esp_err_t esp_wifi_get_config(wifi_interface_t ifx, wifi_config_t *conf);
-# 703 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+# 715 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 esp_err_t esp_wifi_ap_get_sta_list(wifi_sta_list_t *sta);
-# 718 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+# 730 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 esp_err_t esp_wifi_set_storage(wifi_storage_t storage);
-# 732 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
-esp_err_t esp_wifi_set_auto_connect(
-# 732 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h" 3 4
-                                   _Bool 
-# 732 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
-                                        en);
 # 744 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
-esp_err_t esp_wifi_get_auto_connect(
+esp_err_t esp_wifi_set_auto_connect(
 # 744 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h" 3 4
                                    _Bool 
 # 744 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+                                        en);
+# 756 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+esp_err_t esp_wifi_get_auto_connect(
+# 756 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h" 3 4
+                                   _Bool 
+# 756 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
                                         *en);
-# 762 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+# 774 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 esp_err_t esp_wifi_set_vendor_ie(
-# 762 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h" 3 4
+# 774 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h" 3 4
                                 _Bool 
-# 762 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+# 774 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
                                      enable, wifi_vendor_ie_type_t type, wifi_vendor_ie_id_t idx, const void *vnd_ie);
-# 772 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
-typedef void (*esp_vendor_ie_cb_t) (void *ctx, wifi_vendor_ie_type_t type, const uint8_t sa[6], const vendor_ie_data_t *vnd_ie, int rssi);
 # 784 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+typedef void (*esp_vendor_ie_cb_t) (void *ctx, wifi_vendor_ie_type_t type, const uint8_t sa[6], const vendor_ie_data_t *vnd_ie, int rssi);
+# 796 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 esp_err_t esp_wifi_set_vendor_ie_cb(esp_vendor_ie_cb_t cb, void *ctx);
-# 820 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+# 832 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 esp_err_t esp_wifi_set_max_tx_power(int8_t power);
-# 848 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
+# 860 "C:/esp/esp-idf/components/esp32/include/esp_wifi.h"
 esp_err_t esp_wifi_get_max_tx_power(int8_t *power);
-# 11 "C:/esp/ArkPOS2-esp/main/main.c" 2
-# 1 "C:/esp/esp-idf/components/ulp/include/esp32/ulp.h" 1
-# 15 "C:/esp/esp-idf/components/ulp/include/esp32/ulp.h"
-       
-
-# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
-# 18 "C:/esp/esp-idf/components/ulp/include/esp32/ulp.h" 2
-# 123 "C:/esp/esp-idf/components/ulp/include/esp32/ulp.h"
-typedef union {
-
-    struct {
-        uint32_t cycles : 16;
-        uint32_t unused : 12;
-        uint32_t opcode : 4;
-    } delay;
-
-    struct {
-        uint32_t dreg : 2;
-        uint32_t sreg : 2;
-        uint32_t unused1 : 6;
-        uint32_t offset : 11;
-        uint32_t unused2 : 4;
-        uint32_t sub_opcode : 3;
-        uint32_t opcode : 4;
-    } st;
-
-    struct {
-        uint32_t dreg : 2;
-        uint32_t sreg : 2;
-        uint32_t unused1 : 6;
-        uint32_t offset : 11;
-        uint32_t unused2 : 7;
-        uint32_t opcode : 4;
-    } ld;
-
-    struct {
-        uint32_t unused : 28;
-        uint32_t opcode : 4;
-    } halt;
-
-    struct {
-        uint32_t dreg : 2;
-        uint32_t addr : 11;
-        uint32_t unused : 8;
-        uint32_t reg : 1;
-        uint32_t type : 3;
-        uint32_t sub_opcode : 3;
-        uint32_t opcode : 4;
-    } bx;
-
-    struct {
-        uint32_t imm : 16;
-        uint32_t cmp : 1;
-        uint32_t offset : 7;
-        uint32_t sign : 1;
-        uint32_t sub_opcode : 3;
-        uint32_t opcode : 4;
-    } b;
-
-    struct {
-        uint32_t dreg : 2;
-        uint32_t sreg : 2;
-        uint32_t treg : 2;
-        uint32_t unused : 15;
-        uint32_t sel : 4;
-        uint32_t sub_opcode : 3;
-        uint32_t opcode : 4;
-    } alu_reg;
-
-    struct {
-        uint32_t dreg : 2;
-        uint32_t sreg : 2;
-        uint32_t imm : 16;
-        uint32_t unused : 1;
-        uint32_t sel : 4;
-        uint32_t sub_opcode : 3;
-        uint32_t opcode : 4;
-    } alu_imm;
-
-    struct {
-        uint32_t addr : 8;
-        uint32_t periph_sel : 2;
-        uint32_t data : 8;
-        uint32_t low : 5;
-        uint32_t high : 5;
-        uint32_t opcode : 4;
-    } wr_reg;
-
-    struct {
-        uint32_t addr : 8;
-        uint32_t periph_sel : 2;
-        uint32_t unused : 8;
-        uint32_t low : 5;
-        uint32_t high : 5;
-        uint32_t opcode : 4;
-    } rd_reg;
-
-    struct {
-        uint32_t dreg : 2;
-        uint32_t mux : 4;
-        uint32_t sar_sel : 1;
-        uint32_t unused1 : 1;
-        uint32_t cycles : 16;
-        uint32_t unused2 : 4;
-        uint32_t opcode: 4;
-    } adc;
-
-    struct {
-        uint32_t dreg : 2;
-        uint32_t wait_delay: 14;
-        uint32_t reserved: 12;
-        uint32_t opcode: 4;
-    } tsens;
-
-    struct {
-        uint32_t i2c_addr : 8;
-        uint32_t data : 8;
-        uint32_t low_bits : 3;
-        uint32_t high_bits : 3;
-        uint32_t i2c_sel : 4;
-        uint32_t unused : 1;
-        uint32_t rw : 1;
-        uint32_t opcode : 4;
-    } i2c;
-
-    struct {
-        uint32_t wakeup : 1;
-        uint32_t unused : 24;
-        uint32_t sub_opcode : 3;
-        uint32_t opcode : 4;
-    } end;
-
-    struct {
-        uint32_t cycle_sel : 4;
-        uint32_t unused : 21;
-        uint32_t sub_opcode : 3;
-        uint32_t opcode : 4;
-    } sleep;
-
-    struct {
-        uint32_t label : 16;
-        uint32_t unused : 8;
-        uint32_t sub_opcode : 4;
-        uint32_t opcode: 4;
-    } macro;
-
-} ulp_insn_t;
-
-_Static_assert(sizeof(ulp_insn_t) == 4, "ULP coprocessor instruction size should be 4 bytes");
-# 292 "C:/esp/esp-idf/components/ulp/include/esp32/ulp.h"
-static inline uint32_t SOC_REG_TO_ULP_PERIPH_SEL(uint32_t reg) {
-    uint32_t ret = 3;
-    if (reg < 0x3ff48000) {
-        ((0 && "invalid register base") ? (void)0 : __assert_func ("C:/esp/esp-idf/components/ulp/include/esp32/ulp.h", 295, __func__, "0 && \"invalid register base\""));
-    } else if (reg < 0x3ff48400) {
-        ret = 0;
-    } else if (reg < 0x3ff48800) {
-        ret = 1;
-    } else if (reg < 0x3ff61000){
-        ret = 2;
-    } else {
-        ((0 && "invalid register base") ? (void)0 : __assert_func ("C:/esp/esp-idf/components/ulp/include/esp32/ulp.h", 303, __func__, "0 && \"invalid register base\""));
-    }
-    return ret;
-}
-# 848 "C:/esp/esp-idf/components/ulp/include/esp32/ulp.h"
-esp_err_t ulp_process_macros_and_load(uint32_t load_addr, const ulp_insn_t* program, size_t* psize);
-# 876 "C:/esp/esp-idf/components/ulp/include/esp32/ulp.h"
-esp_err_t ulp_load_binary(uint32_t load_addr, const uint8_t* program_binary, size_t program_size);
-
-
-
-
-
-
-esp_err_t ulp_run(uint32_t entry_point);
-# 901 "C:/esp/esp-idf/components/ulp/include/esp32/ulp.h"
-esp_err_t ulp_set_wakeup_period(size_t period_index, uint32_t period_us);
-# 12 "C:/esp/ArkPOS2-esp/main/main.c" 2
-
-# 1 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h" 1
-# 14 "C:/esp/ArkPOS2-esp/main/main.c" 2
-# 1 "C:/esp/esp-idf/components/soc/esp32/include/soc/sens_reg.h" 1
-# 15 "C:/esp/ArkPOS2-esp/main/main.c" 2
-# 1 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h" 1
-# 14 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-       
-
-
-# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
-# 18 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h" 2
-# 60 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-typedef enum {
-    RTC_XTAL_FREQ_AUTO = 0,
-    RTC_XTAL_FREQ_40M = 40,
-    RTC_XTAL_FREQ_26M = 26,
-    RTC_XTAL_FREQ_24M = 24,
-} rtc_xtal_freq_t;
-
-
-
-
-typedef enum {
-    RTC_CPU_FREQ_XTAL = 0,
-    RTC_CPU_FREQ_80M = 1,
-    RTC_CPU_FREQ_160M = 2,
-    RTC_CPU_FREQ_240M = 3,
-    RTC_CPU_FREQ_2M = 4,
-} rtc_cpu_freq_t;
-
-
-
-
-typedef enum {
-    RTC_SLOW_FREQ_RTC = 0,
-    RTC_SLOW_FREQ_32K_XTAL = 1,
-    RTC_SLOW_FREQ_8MD256 = 2,
-} rtc_slow_freq_t;
-
-
-
-
-typedef enum {
-    RTC_FAST_FREQ_XTALD4 = 0,
-    RTC_FAST_FREQ_8M = 1,
-} rtc_fast_freq_t;
-
-
-
-
-
-
-
-typedef enum {
-    RTC_CAL_RTC_MUX = 0,
-    RTC_CAL_8MD256 = 1,
-    RTC_CAL_32K_XTAL = 2
-} rtc_cal_sel_t;
-
-
-
-
-typedef struct {
-    rtc_xtal_freq_t xtal_freq : 8;
-    rtc_cpu_freq_t cpu_freq : 3;
-    rtc_fast_freq_t fast_freq : 1;
-    rtc_slow_freq_t slow_freq : 2;
-    uint32_t clk_8m_div : 3;
-    uint32_t slow_clk_dcap : 8;
-    uint32_t clk_8m_dfreq : 8;
-} rtc_clk_config_t;
-# 147 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-void rtc_clk_init(rtc_clk_config_t cfg);
-# 157 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-rtc_xtal_freq_t rtc_clk_xtal_freq_get();
-
-
-
-
-
-void rtc_clk_32k_enable(
-# 163 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h" 3 4
-                       _Bool 
-# 163 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-                            en);
-
-
-
-
-
-
-# 169 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h" 3 4
-_Bool 
-# 169 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-    rtc_clk_32k_enabled();
-# 178 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-void rtc_clk_32k_bootstrap();
-# 196 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-void rtc_clk_8m_enable(
-# 196 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h" 3 4
-                      _Bool 
-# 196 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-                           clk_8m_en, 
-# 196 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h" 3 4
-                                      _Bool 
-# 196 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-                                           d256_en);
-
-
-
-
-
-
-# 202 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h" 3 4
-_Bool 
-# 202 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-    rtc_clk_8m_enabled();
-
-
-
-
-
-
-# 208 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h" 3 4
-_Bool 
-# 208 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-    rtc_clk_8md256_enabled();
-# 226 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-void rtc_clk_apll_enable(
-# 226 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h" 3 4
-                        _Bool 
-# 226 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-                             enable, uint32_t sdm0, uint32_t sdm1,
-        uint32_t sdm2, uint32_t o_div);
-
-
-
-
-
-void rtc_clk_slow_freq_set(rtc_slow_freq_t slow_freq);
-
-
-
-
-
-rtc_slow_freq_t rtc_clk_slow_freq_get();
-# 253 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-uint32_t rtc_clk_slow_freq_get_hz();
-
-
-
-
-
-void rtc_clk_fast_freq_set(rtc_fast_freq_t fast_freq);
-
-
-
-
-
-rtc_fast_freq_t rtc_clk_fast_freq_get();
-# 277 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-void rtc_clk_cpu_freq_set(rtc_cpu_freq_t cpu_freq);
-# 290 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-rtc_cpu_freq_t rtc_clk_cpu_freq_get();
-
-
-
-
-
-
-uint32_t rtc_clk_cpu_freq_value(rtc_cpu_freq_t cpu_freq);
-# 311 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-void rtc_clk_apb_freq_update(uint32_t apb_freq);
-
-
-
-
-
-uint32_t rtc_clk_apb_freq_get();
-# 334 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-uint32_t rtc_clk_cal(rtc_cal_sel_t cal_clk, uint32_t slow_clk_cycles);
-# 343 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-uint32_t rtc_clk_cal_ratio(rtc_cal_sel_t cal_clk, uint32_t slow_clk_cycles);
-# 352 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-uint64_t rtc_time_us_to_slowclk(uint64_t time_in_us, uint32_t period);
-# 361 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-uint64_t rtc_time_slowclk_to_us(uint64_t rtc_cycles, uint32_t period);
-# 374 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-uint64_t rtc_time_get();
-
-
-
-
-typedef struct {
-    uint32_t soc_clk_sel : 2;
-    uint32_t lslp_mem_inf_fpu : 1;
-    uint32_t rtc_mem_inf_fpu : 1;
-    uint32_t rtc_mem_inf_follow_cpu : 1;
-    uint32_t rtc_fastmem_pd_en : 1;
-    uint32_t rtc_slowmem_pd_en : 1;
-    uint32_t rtc_peri_pd_en : 1;
-    uint32_t wifi_pd_en : 1;
-    uint32_t rom_mem_pd_en : 1;
-    uint32_t deep_slp : 1;
-    uint32_t wdt_flashboot_mod_en : 1;
-    uint32_t dig_dbias_wak : 3;
-    uint32_t dig_dbias_slp : 3;
-    uint32_t rtc_dbias_wak : 3;
-    uint32_t rtc_dbias_slp : 3;
-    uint32_t lslp_meminf_pd : 1;
-    uint32_t vddsdio_pd_en : 1;
-} rtc_sleep_config_t;
-# 447 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-void rtc_sleep_init(rtc_sleep_config_t cfg);
-
-
-
-
-
-
-
-void rtc_sleep_set_wakeup_time(uint64_t t);
-# 495 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-uint32_t rtc_sleep_start(uint32_t wakeup_opt, uint32_t reject_opt);
-
-
-
-
-typedef struct {
-    uint32_t ck8m_wait : 8;
-    uint32_t xtal_wait : 8;
-    uint32_t pll_wait : 8;
-    uint32_t clkctl_init : 1;
-    uint32_t pwrctl_init : 1;
-    uint32_t rtc_dboost_fpd : 1;
-} rtc_config_t;
-# 528 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc.h"
-void rtc_init(rtc_config_t cfg);
-# 16 "C:/esp/ArkPOS2-esp/main/main.c" 2
-
-# 1 "C:/esp/esp-idf/components/nvs_flash/include/nvs_flash.h" 1
-# 21 "C:/esp/esp-idf/components/nvs_flash/include/nvs_flash.h"
-# 1 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h" 1
-# 18 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h"
-# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
-# 19 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h" 2
-# 29 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h"
-typedef uint32_t nvs_handle;
-# 53 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h"
-typedef enum {
- NVS_READONLY,
- NVS_READWRITE
-} nvs_open_mode;
-# 85 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h"
-esp_err_t nvs_open(const char* name, nvs_open_mode open_mode, nvs_handle *out_handle);
-# 113 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h"
-esp_err_t nvs_open_from_partition(const char *part_name, const char* name, nvs_open_mode open_mode, nvs_handle *out_handle);
-# 144 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h"
-esp_err_t nvs_set_i8 (nvs_handle handle, const char* key, int8_t value);
-esp_err_t nvs_set_u8 (nvs_handle handle, const char* key, uint8_t value);
-esp_err_t nvs_set_i16 (nvs_handle handle, const char* key, int16_t value);
-esp_err_t nvs_set_u16 (nvs_handle handle, const char* key, uint16_t value);
-esp_err_t nvs_set_i32 (nvs_handle handle, const char* key, int32_t value);
-esp_err_t nvs_set_u32 (nvs_handle handle, const char* key, uint32_t value);
-esp_err_t nvs_set_i64 (nvs_handle handle, const char* key, int64_t value);
-esp_err_t nvs_set_u64 (nvs_handle handle, const char* key, uint64_t value);
-esp_err_t nvs_set_str (nvs_handle handle, const char* key, const char* value);
-# 181 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h"
-esp_err_t nvs_set_blob(nvs_handle handle, const char* key, const void* value, size_t length);
-# 221 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h"
-esp_err_t nvs_get_i8 (nvs_handle handle, const char* key, int8_t* out_value);
-esp_err_t nvs_get_u8 (nvs_handle handle, const char* key, uint8_t* out_value);
-esp_err_t nvs_get_i16 (nvs_handle handle, const char* key, int16_t* out_value);
-esp_err_t nvs_get_u16 (nvs_handle handle, const char* key, uint16_t* out_value);
-esp_err_t nvs_get_i32 (nvs_handle handle, const char* key, int32_t* out_value);
-esp_err_t nvs_get_u32 (nvs_handle handle, const char* key, uint32_t* out_value);
-esp_err_t nvs_get_i64 (nvs_handle handle, const char* key, int64_t* out_value);
-esp_err_t nvs_get_u64 (nvs_handle handle, const char* key, uint64_t* out_value);
-# 288 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h"
-esp_err_t nvs_get_str (nvs_handle handle, const char* key, char* out_value, size_t* length);
-esp_err_t nvs_get_blob(nvs_handle handle, const char* key, void* out_value, size_t* length);
-# 311 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h"
-esp_err_t nvs_erase_key(nvs_handle handle, const char* key);
-# 327 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h"
-esp_err_t nvs_erase_all(nvs_handle handle);
-# 344 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h"
-esp_err_t nvs_commit(nvs_handle handle);
-# 357 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h"
-void nvs_close(nvs_handle handle);
-# 22 "C:/esp/esp-idf/components/nvs_flash/include/nvs_flash.h" 2
-# 36 "C:/esp/esp-idf/components/nvs_flash/include/nvs_flash.h"
-esp_err_t nvs_flash_init(void);
-# 51 "C:/esp/esp-idf/components/nvs_flash/include/nvs_flash.h"
-esp_err_t nvs_flash_init_partition(const char *partition_label);
-# 62 "C:/esp/esp-idf/components/nvs_flash/include/nvs_flash.h"
-esp_err_t nvs_flash_deinit(void);
-# 74 "C:/esp/esp-idf/components/nvs_flash/include/nvs_flash.h"
-esp_err_t nvs_flash_deinit_partition(const char* partition_label);
-# 86 "C:/esp/esp-idf/components/nvs_flash/include/nvs_flash.h"
-esp_err_t nvs_flash_erase(void);
-# 100 "C:/esp/esp-idf/components/nvs_flash/include/nvs_flash.h"
-esp_err_t nvs_flash_erase_partition(const char *part_name);
-# 18 "C:/esp/ArkPOS2-esp/main/main.c" 2
-# 1 "C:/esp/esp-idf/components/nvs_flash/include/nvs.h" 1
-# 19 "C:/esp/ArkPOS2-esp/main/main.c" 2
-
-
-
-# 1 "C:/esp/esp-idf/components/driver/include/driver/adc.h" 1
-# 25 "C:/esp/esp-idf/components/driver/include/driver/adc.h"
-# 1 "C:/esp/esp-idf/components/soc/esp32/include/soc/adc_channel.h" 1
-# 26 "C:/esp/esp-idf/components/driver/include/driver/adc.h" 2
-
-typedef enum {
-    ADC_ATTEN_0db = 0,
-    ADC_ATTEN_2_5db = 1,
-    ADC_ATTEN_6db = 2,
-    ADC_ATTEN_11db = 3,
-} adc_atten_t;
-
-typedef enum {
-    ADC_WIDTH_9Bit = 0,
-    ADC_WIDTH_10Bit = 1,
-    ADC_WIDTH_11Bit = 2,
-    ADC_WIDTH_12Bit = 3,
-} adc_bits_width_t;
-
-typedef enum {
-    ADC1_CHANNEL_0 = 0,
-    ADC1_CHANNEL_1,
-    ADC1_CHANNEL_2,
-    ADC1_CHANNEL_3,
-    ADC1_CHANNEL_4,
-    ADC1_CHANNEL_5,
-    ADC1_CHANNEL_6,
-    ADC1_CHANNEL_7,
-    ADC1_CHANNEL_MAX,
-} adc1_channel_t;
-
-typedef enum {
-    ADC2_CHANNEL_0 = 0,
-    ADC2_CHANNEL_1,
-    ADC2_CHANNEL_2,
-    ADC2_CHANNEL_3,
-    ADC2_CHANNEL_4,
-    ADC2_CHANNEL_5,
-    ADC2_CHANNEL_6,
-    ADC2_CHANNEL_7,
-    ADC2_CHANNEL_8,
-    ADC2_CHANNEL_9,
-    ADC2_CHANNEL_MAX,
-} adc2_channel_t;
-# 78 "C:/esp/esp-idf/components/driver/include/driver/adc.h"
-esp_err_t adc1_config_width(adc_bits_width_t width_bit);
-# 109 "C:/esp/esp-idf/components/driver/include/driver/adc.h"
-esp_err_t adc1_config_channel_atten(adc1_channel_t channel, adc_atten_t atten);
-# 126 "C:/esp/esp-idf/components/driver/include/driver/adc.h"
-int adc1_get_raw(adc1_channel_t channel);
-
-
-
-
-
-
-
-int adc1_get_voltage(adc1_channel_t channel) __attribute__((deprecated));
-# 146 "C:/esp/esp-idf/components/driver/include/driver/adc.h"
-void adc1_ulp_enable();
-# 162 "C:/esp/esp-idf/components/driver/include/driver/adc.h"
-int hall_sensor_read();
-# 178 "C:/esp/esp-idf/components/driver/include/driver/adc.h"
-esp_err_t adc2_vref_to_gpio(gpio_num_t gpio);
-# 23 "C:/esp/ArkPOS2-esp/main/main.c" 2
-# 1 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h" 1
-# 21 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-# 1 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h" 1
-# 22 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h" 2
-# 33 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-typedef struct {
-    uint32_t reg;
-    uint32_t mux;
-    uint32_t func;
-    uint32_t ie;
-    uint32_t pullup;
-    uint32_t pulldown;
-    uint32_t slpsel;
-    uint32_t slpie;
-    uint32_t hold;
-    uint32_t hold_force;
-    uint32_t drv_v;
-    uint32_t drv_s;
-    int rtc_num;
-} rtc_gpio_desc_t;
-
-typedef enum {
-    RTC_GPIO_MODE_INPUT_ONLY ,
-    RTC_GPIO_MODE_OUTPUT_ONLY,
-    RTC_GPIO_MODE_INPUT_OUTUT,
-    RTC_GPIO_MODE_DISABLED,
-} rtc_gpio_mode_t;
-# 63 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-extern const rtc_gpio_desc_t rtc_gpio_desc[40];
-
-
-
-
-
-
-
-inline static 
-# 71 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h" 3 4
-             _Bool 
-# 71 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-                  rtc_gpio_is_valid_gpio(gpio_num_t gpio_num)
-{
-    return gpio_num < 40
-        && rtc_gpio_desc[gpio_num].reg != 0;
-}
-# 90 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-esp_err_t rtc_gpio_init(gpio_num_t gpio_num);
-# 101 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-esp_err_t rtc_gpio_deinit(gpio_num_t gpio_num);
-# 113 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-uint32_t rtc_gpio_get_level(gpio_num_t gpio_num);
-# 125 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-esp_err_t rtc_gpio_set_level(gpio_num_t gpio_num, uint32_t level);
-# 140 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-esp_err_t rtc_gpio_set_direction(gpio_num_t gpio_num, rtc_gpio_mode_t mode);
-# 154 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-esp_err_t rtc_gpio_pullup_en(gpio_num_t gpio_num);
-# 168 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-esp_err_t rtc_gpio_pulldown_en(gpio_num_t gpio_num);
-# 182 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-esp_err_t rtc_gpio_pullup_dis(gpio_num_t gpio_num);
-# 196 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-esp_err_t rtc_gpio_pulldown_dis(gpio_num_t gpio_num);
-# 211 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-esp_err_t rtc_gpio_hold_en(gpio_num_t gpio_num);
-# 225 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-esp_err_t rtc_gpio_hold_dis(gpio_num_t gpio_num);
-# 236 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-void rtc_gpio_force_hold_dis_all();
-# 248 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-esp_err_t rtc_gpio_set_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t strength);
-# 260 "C:/esp/esp-idf/components/driver/include/driver/rtc_io.h"
-esp_err_t rtc_gpio_get_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t* strength);
-# 24 "C:/esp/ArkPOS2-esp/main/main.c" 2
-
-# 1 "C:/esp/ArkPOS2-esp/main/wifi_sta.h" 1
-# 33 "C:/esp/ArkPOS2-esp/main/wifi_sta.h"
-typedef struct wifi_sta_init_struct_ {
-
-
-    const char *network_ssid;
-
-
-    const char *network_password;
-
-} wifi_sta_init_struct_t;
-
-
-
-esp_err_t wifi_sta_init(wifi_sta_init_struct_t *param);
-
-
-esp_err_t wifi_sta_handle_event(void *ctx, system_event_t *event, int *handled);
-
-
-int wifi_sta_is_connected();
-
-
-EventGroupHandle_t wifi_sta_get_event_group();
-# 26 "C:/esp/ArkPOS2-esp/main/main.c" 2
-# 1 "C:/esp/ArkPOS2-esp/main/iap_https.h" 1
-# 29 "C:/esp/ArkPOS2-esp/main/iap_https.h"
-typedef struct iap_https_config_ {
-
-
-    int current_software_version;
-
-
-    const char *server_host_name;
-
-
-    const char *server_port;
-
-
-
-    const char *server_root_ca_public_key_pem;
-
-
-
-    const char *peer_public_key_pem;
-
-
-
-    char server_metadata_path[256];
-
-
-    char server_firmware_path[256];
-
-
-
-
-
-
-
-    uint32_t polling_interval_s;
-
-
-
-
-    int auto_reboot;
-
-} iap_https_config_t;
-
-
-
-int iap_https_init(iap_https_config_t *config);
-
-
-
-
-int iap_https_check_now();
-
-
-int iap_https_update_in_progress();
-
-
-int iap_https_new_firmware_installed();
-
-
-int iap_https_has_update();
-
-void iap_https_download_image();
-# 27 "C:/esp/ArkPOS2-esp/main/main.c" 2
-# 1 "C:/esp/ArkPOS2-esp/main/main.h" 1
-# 28 "C:/esp/ArkPOS2-esp/main/main.c" 2
-# 40 "C:/esp/ArkPOS2-esp/main/main.c"
-static const char *server_root_ca_public_key_pem = "-----BEGIN CERTIFICATE-----\n" "MIIEDTCCAvWgAwIBAgIJAMdYuHX70E/rMA0GCSqGSIb3DQEBCwUAMIGcMQswCQYD\n" "VQQGEwJDSDEPMA0GA1UECAwGVmFsYWlzMQ4wDAYDVQQKDAVDSEJTQTE6MDgGA1UE\n" "Awwxb3RhLXVwZGF0ZS5hcmtwb3MyLnRlc3RzLnNhYXMuY2hiLXRlY2hub2xvZ2ll\n" "cy5jaDEwMC4GCSqGSIb3DQEJARYhbmljay50c2lsaXZpc0BjaGItdGVjaG5vbG9n\n" "aWVzLmNoMB4XDTE3MDkxNTEyMTgxMloXDTM3MDkxMDEyMTgxMlowgZwxCzAJBgNV\n" "BAYTAkNIMQ8wDQYDVQQIDAZWYWxhaXMxDjAMBgNVBAoMBUNIQlNBMTowOAYDVQQD\n" "DDFvdGEtdXBkYXRlLmFya3BvczIudGVzdHMuc2Fhcy5jaGItdGVjaG5vbG9naWVz\n" "LmNoMTAwLgYJKoZIhvcNAQkBFiFuaWNrLnRzaWxpdmlzQGNoYi10ZWNobm9sb2dp\n" "ZXMuY2gwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDVjnpJQdilX8n4\n" "rut+tMe0oq+3qSJjRhENVEdd3FpKYnPEEAtla+MjIrx/biS9uzD1KZ4OJAjrbqaf\n" "SsQJ9ksusYEtEqPrNKy9t9GIbYXh+fQM0cJs/tDqklXcs8CbSo9JQEHa2HXDEGke\n" "yOojy1xJ7CzV+HJQp1QGbCRhkJB77xtPV1AubMolk+yzN2jrfEHTj2QeOCFifVjD\n" "1t7RsA28RzYqtvoj35aKxPkDzCSwf7wx68KFZK/vfv+6YjS8mxGuQhaPvDi7G2Ve\n" "QLFABvOKQyxaRjMF2WCsZkRrjJac8/gKilDNM44GbRGxIhh+iCIELn6D203kAA/q\n" "Nf7K/hJbAgMBAAGjUDBOMB0GA1UdDgQWBBRvxMQJatofmLiTMiko8mhvSH43ujAf\n" "BgNVHSMEGDAWgBRvxMQJatofmLiTMiko8mhvSH43ujAMBgNVHRMEBTADAQH/MA0G\n" "CSqGSIb3DQEBCwUAA4IBAQBvhNq1BJ0BcfrWe1l5TU/vg1r5CsvyD/Es1sRQ2Ijm\n" "pw/ztaXWTxRn6WGmSzKOwQNpz/GZ99hHgxAUKghm31qx8GeD5v6EYd+mEkgRVS+f\n" "sd/fNWWuo3pyHY+OMiiwKtD3XaaBqO3EoLJnPrePatJgSFSDz9/S26Nfj97+Hyy1\n" "+NmWdxlrqWKMkX0mDsfsO8fjJ8gPDRYmfYSOIENtEf3rRlNCKlurRQg4wQ6rHvR7\n" "zuIHtvIHR6dEKB5LNfZufPG17LARg4gXFZ/RvUY8P4vw2/iOXDu03jbIbfeYtMO2\n" "0+4TnKrOZL5rsiMliCTosf09bj9djicGD3ZFl30PqRIh\n" "-----END CERTIFICATE-----\n";
-static const char *peer_public_key_pem = "-----BEGIN CERTIFICATE-----\n" "MIIDYTCCAkkCCQDG3Zr5jtYD1jANBgkqhkiG9w0BAQsFADCBnDELMAkGA1UEBhMC\n" "Q0gxDzANBgNVBAgMBlZhbGFpczEOMAwGA1UECgwFQ0hCU0ExOjA4BgNVBAMMMW90\n" "YS11cGRhdGUuYXJrcG9zMi50ZXN0cy5zYWFzLmNoYi10ZWNobm9sb2dpZXMuY2gx\n" "MDAuBgkqhkiG9w0BCQEWIW5pY2sudHNpbGl2aXNAY2hiLXRlY2hub2xvZ2llcy5j\n" "aDAeFw0xNzA5MTUxNDMxNDFaFw0zNzA5MTAxNDMxNDFaMEgxCzAJBgNVBAYTAkNI\n" "MQ8wDQYDVQQIDAZWQUxBSVMxDjAMBgNVBAoMBUNIQkFTMRgwFgYDVQQDDA9sb2Nh\n" "bC5FU1AzMi5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCvt/VE\n" "kG1s2OtbBx6/RpKrKoQQwkKsB2NqhSqFbAPeBDUOcjxNPhRNrE+mc92MNvUqHw2X\n" "tb3OvkHS3KrS3OO8hgWnJRlCBrduzx+iF8m7EaVebbrYG7CMwjsIhmmjKvXn0QXu\n" "D+mTJ2KfkS9/TSx0acWYJ2W7TyCH5nZICLxMLFctIzsWQ2rjtn06m0B/QKAuEs/s\n" "LO6s1bnnjuL4BzR6rOmmSnHEPfqoFbo+Vwls3WG/zmn2pV5CMrs0ruJ1Fu1IyoiS\n" "iKSUaEXZr66JGJcnLU6HxElRvmJ1OJxD9m8jyxnu7Aydzj548CpoDov25ZlqsE6a\n" "/8UhvoXy8Hha+VqNAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAOEi8unc8HvEWvdR\n" "IHjIZaQyYXnNaiuhu8Ao3EXY9ws0HgRW5+ewRxGBPtEjFw5CmLsnrAf2hu0sdSL3\n" "xblqbYBr/OLob/cSf/xSGtb3K/kmJ8weS3p3eLLfm8UDeH6rZrquENHXTlJ6jpgf\n" "M9h7ShpcZ1JujvJ6WJ1rZtiQ/sKsrcwumanbgJegsnGxgdti0FAqnX8ol9pthBS1\n" "9tbT7DAvCq+69Texk/feUB/dVVGdOIHTqxHrC1l2k6Wu1jrBulx1A5TyTxg4gbdt\n" "vj0czJYu9KZowhbLaRpDBI66rPFQPiHt9C9T/KJdA8dg1lS2zoZ1+cw3BNmEq288\n" "QmKOBXc=\n" "-----END CERTIFICATE-----\n";
-
-static __attribute__((section(".rtc.data"))) struct timeval sleep_enter_time;
-
-static wifi_sta_init_struct_t wifi_params;
-
-
-static iap_https_config_t ota_config;
-
-static void init_wifi();
-static void init_led();
-static void check_for_updates();
-static void touch_pad_events();
-static void calibrate_touch_pads();
-static void init_ota();
-static esp_err_t app_event_handler(void *ctx, system_event_t *event);
-
-
-void app_main()
-{
-
-    struct timeval now;
-    gettimeofday(&now, 
-# 63 "C:/esp/ArkPOS2-esp/main/main.c" 3 4
-                      ((void *)0)
-# 63 "C:/esp/ArkPOS2-esp/main/main.c"
-                          );
-    int sleep_time_ms = (now.tv_sec - sleep_enter_time.tv_sec) * 1000 + (now.tv_usec - sleep_enter_time.tv_usec) / 1000;
-
-    switch (esp_sleep_get_wakeup_cause())
-    {
-        case ESP_SLEEP_WAKEUP_TIMER: {
-            printf("Wake up for update check. Time in DS: %dms\n", sleep_time_ms);
-
-            check_for_updates();
-            break;
-
-        }
-        case ESP_SLEEP_WAKEUP_TOUCHPAD: {
-            printf("Wake up from touch pad on T%d\n", esp_sleep_get_touchpad_wakeup_status());
-
-
-
-
-
-            break;
-        }
-        case ESP_SLEEP_WAKEUP_UNDEFINED: {
-            printf("Not a deep sleep reset\n");
-            break;
-        }
-        case ESP_SLEEP_WAKEUP_EXT0: {
-            printf("Wake up from EXT0\n");
-            break;
-        }
-        case ESP_SLEEP_WAKEUP_EXT1: {
-            printf("Wake up from EXT1\n");
-            break;
-        }
-        case ESP_SLEEP_WAKEUP_ULP: {
-            printf("Wake up from ULP\n");
-            break;
-        }
-    }
-
-    if (((esp_log_level_t) 3) >= ESP_LOG_INFO) { esp_log_write(ESP_LOG_INFO, "main", "\033[0;" "32" "m" "I" " (%d) %s: " "---------- Intialization started ----------" "\033[0m" "\n", esp_log_timestamp(), "main"); };
-    if (((esp_log_level_t) 3) >= ESP_LOG_INFO) { esp_log_write(ESP_LOG_INFO, "main", "\033[0;" "32" "m" "I" " (%d) %s: " "---------- Software version: %2d -----------" "\033[0m" "\n", esp_log_timestamp(), "main", 1); };
-
-    esp_err_t err_nvs = nvs_flash_init();
-    if (err_nvs == (0x1100 + 0x0d)) {
-
-        do { esp_err_t rc = (nvs_flash_erase()); if (rc != 0) { _esp_error_check_failed(rc, "C:/esp/ArkPOS2-esp/main/main.c", 108, __func__, "nvs_flash_erase()"); } } while(0);;
-
-        err_nvs = nvs_flash_init();
-    }
-    do { esp_err_t rc = (err_nvs); if (rc != 0) { _esp_error_check_failed(rc, "C:/esp/ArkPOS2-esp/main/main.c", 112, __func__, "err_nvs"); } } while(0);;
-
-
-
-    const long long wakeup_time_sec = 43200;
-
-    printf("Wake up timer set to %lld seconds.\n", wakeup_time_sec);
-    esp_sleep_enable_timer_wakeup(wakeup_time_sec * 1000000);
-
-    touch_pad_init();
-    touch_pad_filter_start(10);
-    touch_pad_set_meas_time(0x1000, 0xffff);
-    touch_pad_set_voltage(TOUCH_HVOLT_2V4, TOUCH_LVOLT_0V8, TOUCH_HVOLT_ATTEN_1V5);
-
-    uint16_t touch_1_val;
-    touch_pad_read(0, &touch_1_val);
-    printf("T:%d\n", touch_1_val);
-
-    calibrate_touch_pads();
-
-    printf("Touch pad wake up configured\n");
-    esp_sleep_enable_touchpad_wakeup();
-
-    init_led();
-
-    printf("Entering Deep Sleep\n");
-    gettimeofday(&sleep_enter_time, 
-# 138 "C:/esp/ArkPOS2-esp/main/main.c" 3 4
-                                   ((void *)0)
-# 138 "C:/esp/ArkPOS2-esp/main/main.c"
-                                       );
-    esp_deep_sleep_start();
-}
-
-static void check_for_updates() {
-
-
-
-
-
-    esp_event_loop_init(&app_event_handler, 
-# 148 "C:/esp/ArkPOS2-esp/main/main.c" 3 4
-                                           ((void *)0)
-# 148 "C:/esp/ArkPOS2-esp/main/main.c"
-                                               );
-
-    init_wifi();
-
-    xEventGroupWaitBits(wifi_sta_get_event_group(), (1 << 0), ( ( BaseType_t ) 0 ), ( ( BaseType_t ) 0 ), ( TickType_t ) 0xffffffffUL);
-
-    init_ota();
-
-    if (!wifi_sta_is_connected())
-    {
-        if (((esp_log_level_t) 3) >= ESP_LOG_ERROR) { esp_log_write(ESP_LOG_ERROR, "main", "\033[0;" "31" "m" "E" " (%d) %s: " "Wifi was not connected. Please reboot the device\n" "\033[0m" "\n", esp_log_timestamp(), "main"); };
-
-    }
-
-    if (iap_https_has_update())
-    {
-        if (((esp_log_level_t) 3) >= ESP_LOG_INFO) { esp_log_write(ESP_LOG_INFO, "main", "\033[0;" "32" "m" "I" " (%d) %s: " "We need to update" "\033[0m" "\n", esp_log_timestamp(), "main"); };
-        iap_https_download_image();
-    }
-    else
-    {
-        if (((esp_log_level_t) 3) >= ESP_LOG_INFO) { esp_log_write(ESP_LOG_INFO, "main", "\033[0;" "32" "m" "I" " (%d) %s: " "Firmaware is up-to-date" "\033[0m" "\n", esp_log_timestamp(), "main"); };
-    }
-}
-
-static void touch_pad_events() {
-    uint16_t touch_1_val = 0;
-    uint16_t touch_2_val = 0;
-    uint16_t touch_3_val = 0;
-    uint16_t touch_4_val = 0;
-
-    uint16_t touch_1_threshold = 0;
-    uint16_t touch_2_threshold = 0;
-    uint16_t touch_3_threshold = 0;
-    uint16_t touch_4_threshold = 0;
-
-    touch_pad_init();
-
-    touch_pad_read(0, &touch_1_val);
-    touch_pad_read(3, &touch_2_val);
-    touch_pad_read(5, &touch_3_val);
-    touch_pad_read(7, &touch_4_val);
-
-    touch_pad_get_thresh(0, &touch_1_threshold);
-    touch_pad_get_thresh(3, &touch_2_threshold);
-    touch_pad_get_thresh(5, &touch_3_threshold);
-    touch_pad_get_thresh(7, &touch_4_threshold);
-
-    printf("T0:%d with Trh: %d\n", touch_1_val, touch_1_threshold);
-    printf("T3:%d with Trh: %d\n", touch_2_val, touch_2_threshold);
-    printf("T5:%d with Trh: %d\n", touch_3_val, touch_3_threshold);
-    printf("T7:%d with Trh: %d\n", touch_4_val, touch_4_threshold);
-}
-
-static void init_led() {
-    if (((esp_log_level_t) 3) >= ESP_LOG_INFO) { esp_log_write(ESP_LOG_INFO, "main", "\033[0;" "32" "m" "I" " (%d) %s: " "Initialize LEDs\n" "\033[0m" "\n", esp_log_timestamp(), "main"); }
-
-    gpio_pad_select_gpio(22);
-    gpio_set_direction(22, GPIO_MODE_OUTPUT);
-    gpio_set_level(22, 0);
-
-    gpio_pad_select_gpio(23);
-    gpio_set_direction(23, GPIO_MODE_OUTPUT);
-    gpio_set_level(23, 0);
-
-    gpio_pad_select_gpio(26);
-    gpio_set_direction(26, GPIO_MODE_OUTPUT);
-    gpio_set_level(26, 0);
-
-    gpio_pad_select_gpio(21);
-    gpio_set_direction(21, GPIO_MODE_OUTPUT);
-    gpio_set_level(21, 0);
-}
-
-static void calibrate_touch_pads() {
-
-    for (size_t j = 0; j < 8; j++)
-    {
-        if (j == 0 || j == 3 || j == 5 || j == 7)
-        {
-            touch_pad_config(j, 0);
-
-            vTaskDelay(100 / ( ( TickType_t ) 1000 / ( 100 ) ));
-
-            int avg = 0;
-            const size_t calibration_count = 128;
-            for (int i = 0; i < calibration_count; i++)
-            {
-                uint16_t val;
-                touch_pad_read(j, &val);
-                avg += val;
-            }
-            avg /= calibration_count;
-            if (avg < 300)
-            {
-                printf("Touch pad %d is too low: %d \n"
-                        "Cannot use it for wake up\n", j, avg);
-                touch_pad_config(j, 0);
-            }
-            else
-            {
-                int threshold = avg - 2000;
-                printf("Touch pad %d threshold set to: %d\n", j, threshold);
-                touch_pad_config(j, threshold);
-            }
-        }
-    }
-# 279 "C:/esp/ArkPOS2-esp/main/main.c"
-}
-
-static void init_wifi()
-{
-    if (((esp_log_level_t) 3) >= ESP_LOG_INFO) { esp_log_write(ESP_LOG_INFO, "main", "\033[0;" "32" "m" "I" " (%d) %s: " "Initialize WIFI network connection." "\033[0m" "\n", esp_log_timestamp(), "main"); };
-    if (((esp_log_level_t) 3) >= ESP_LOG_INFO) { esp_log_write(ESP_LOG_INFO, "main", "\033[0;" "32" "m" "I" " (%d) %s: " "SSID: %s, Password: %s" "\033[0m" "\n", esp_log_timestamp(), "main", "ProlecAdmin", "Car-Naval-015"); };
-
-    wifi_params.network_ssid = "ProlecAdmin";
-    wifi_params.network_password = "Car-Naval-015";
-
-    wifi_sta_init(&wifi_params);
-}
-
-static void init_ota()
-{
-    if (((esp_log_level_t) 3) >= ESP_LOG_INFO) { esp_log_write(ESP_LOG_INFO, "main", "\033[0;" "32" "m" "I" " (%d) %s: " "Initialising OTA firmware updating." "\033[0m" "\n", esp_log_timestamp(), "main"); };
-
-    ota_config.current_software_version = 1;
-    ota_config.server_host_name = "ota-update.arkpos2.tests.saas.chb-technologies.ch";
-    ota_config.server_port = "8883";
-    strncpy(ota_config.server_metadata_path, "/esp32-ota-https/final_binaries/ota.txt", sizeof(ota_config.server_metadata_path) / sizeof(char));
-    bzero(ota_config.server_firmware_path, sizeof(ota_config.server_firmware_path) / sizeof(char));
-    ota_config.server_root_ca_public_key_pem = server_root_ca_public_key_pem;
-    ota_config.peer_public_key_pem = peer_public_key_pem;
-    ota_config.polling_interval_s = 5;
-    ota_config.auto_reboot = 1;
-
-    iap_https_init(&ota_config);
-
-
-    iap_https_check_now();
-}
-
-static esp_err_t app_event_handler(void *ctx, system_event_t *event)
-{
-    esp_err_t result = 0;
-    int handled = 0;
-
-    if (((esp_log_level_t) 3) >= ESP_LOG_INFO) { esp_log_write(ESP_LOG_INFO, "main", "\033[0;" "32" "m" "I" " (%d) %s: " "app_event_handler: event: %d" "\033[0m" "\n", esp_log_timestamp(), "main", event->event_id); };
-
-
-
-    result = wifi_sta_handle_event(ctx, event, &handled);
-    if (0 != result || handled) {
-        return result;
-    }
-
-
-
-    if (((esp_log_level_t) 3) >= ESP_LOG_WARN) { esp_log_write(ESP_LOG_WARN, "main", "\033[0;" "33" "m" "W" " (%d) %s: " "app_event_handler: unhandled event: %d" "\033[0m" "\n", esp_log_timestamp(), "main", event->event_id); };
-    return 0;
-}
+# 13 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/main.c" 2

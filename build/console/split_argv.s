@@ -922,6 +922,8 @@ esp_console_split_argv:
 	.string	"size_t"
 .LASF24:
 	.string	"state"
+.LASF33:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\console"
 .LASF14:
 	.string	"SS_ARG_ESCAPED"
 .LASF28:
@@ -948,8 +950,8 @@ esp_console_split_argv:
 	.string	"short unsigned int"
 .LASF32:
 	.string	"C:/esp/esp-idf/components/console/split_argv.c"
-.LASF33:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\console"
+.LASF17:
+	.string	"split_state_t"
 .LASF15:
 	.string	"SS_QUOTED_ARG_ESCAPED"
 .LASF13:
@@ -968,8 +970,6 @@ esp_console_split_argv:
 	.string	"sizetype"
 .LASF34:
 	.string	"esp_console_split_argv"
-.LASF17:
-	.string	"split_state_t"
 .LASF5:
 	.string	"long long int"
 .LASF10:
@@ -990,4 +990,4 @@ esp_console_split_argv:
 	.string	"QUOTE"
 .LASF35:
 	.string	"end_arg"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

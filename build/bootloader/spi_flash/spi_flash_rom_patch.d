@@ -9,7 +9,7 @@ spi_flash_rom_patch.o: \
  C:/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  C:/esp/esp-idf/components/esp32/include/rom/spi_flash.h \
  C:/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
- c:\esp\arkpos2-esp\build\include\sdkconfig.h
+ c:\esp\esp32-arkpos2\arkpos2-esp\build\include\sdkconfig.h
 
 C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
 
@@ -29,5 +29,5 @@ C:/esp/esp-idf/components/esp32/include/rom/spi_flash.h:
 
 C:/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
 
-c:\esp\arkpos2-esp\build\include\sdkconfig.h:
+c:\esp\esp32-arkpos2\arkpos2-esp\build\include\sdkconfig.h:
 /c/esp/esp-idf/components/spi_flash/./spi_flash_rom_patch.c:

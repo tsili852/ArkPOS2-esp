@@ -1259,6 +1259,8 @@ TAG:
 	.string	"__uint8_t"
 .LASF3:
 	.string	"size_t"
+.LASF26:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bootloader_support"
 .LASF25:
 	.string	"C:/esp/esp-idf/components/bootloader_support/src/bootloader_random.c"
 .LASF1:
@@ -1291,8 +1293,6 @@ TAG:
 	.string	"long long int"
 .LASF15:
 	.string	"char"
-.LASF26:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bootloader_support"
 .LASF6:
 	.string	"short int"
 .LASF17:
@@ -1313,4 +1313,4 @@ TAG:
 	.string	"_Bool"
 .LASF18:
 	.string	"length"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

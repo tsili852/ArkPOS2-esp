@@ -5,7 +5,7 @@
 	.align	4
 	.type	is_ota_partition, @function
 is_ota_partition:
-.LFB13:
+.LFB17:
 	.file 1 "C:/esp/esp-idf/components/app_update/esp_ota_ops.c"
 	.loc 1 72 0
 .LVL0:
@@ -44,7 +44,7 @@ is_ota_partition:
 	movi.n	a2, 1
 	.loc 1 77 0 is_stmt 1
 	retw.n
-.LFE13:
+.LFE17:
 	.size	is_ota_partition, .-is_ota_partition
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -56,12 +56,12 @@ is_ota_partition:
 	.section	.text.get_ota_partition_count,"ax",@progbits
 	.literal_position
 	.literal .LC1, .LC0
-	.literal .LC2, __func__$5367
+	.literal .LC2, __func__$5471
 	.literal .LC4, .LC3
 	.align	4
 	.type	get_ota_partition_count, @function
 get_ota_partition_count:
-.LFB20:
+.LFB24:
 	.loc 1 286 0
 	entry	sp, 32
 .LCFI1:
@@ -100,7 +100,7 @@ get_ota_partition_count:
 	extui	a2, a2, 0, 8
 .LVL12:
 	retw.n
-.LFE20:
+.LFE24:
 	.size	get_ota_partition_count, .-get_ota_partition_count
 	.section	.rodata.str1.4
 	.align	4
@@ -116,7 +116,7 @@ get_ota_partition_count:
 	.align	4
 	.type	find_default_boot_partition, @function
 find_default_boot_partition:
-.LFB23:
+.LFB27:
 	.loc 1 417 0
 	entry	sp, 32
 .LCFI2:
@@ -192,13 +192,13 @@ find_default_boot_partition:
 .LVL27:
 	.loc 1 442 0
 	retw.n
-.LFE23:
+.LFE27:
 	.size	find_default_boot_partition, .-find_default_boot_partition
 	.section	.text.ota_select_crc,"ax",@progbits
 	.align	4
 	.type	ota_select_crc, @function
 ota_select_crc:
-.LFB17:
+.LFB21:
 	.loc 1 258 0
 .LVL28:
 	entry	sp, 32
@@ -213,13 +213,13 @@ ota_select_crc:
 	mov.n	a2, a10
 .LVL30:
 	retw.n
-.LFE17:
+.LFE21:
 	.size	ota_select_crc, .-ota_select_crc
 	.section	.text.ota_select_valid,"ax",@progbits
 	.align	4
 	.type	ota_select_valid, @function
 ota_select_valid:
-.LFB18:
+.LFB22:
 	.loc 1 263 0
 .LVL31:
 	entry	sp, 32
@@ -248,7 +248,7 @@ ota_select_valid:
 .LVL37:
 	.loc 1 265 0 is_stmt 1
 	retw.n
-.LFE18:
+.LFE22:
 	.size	ota_select_valid, .-ota_select_valid
 	.section	.text.rewrite_ota_seq,"ax",@progbits
 	.literal_position
@@ -257,7 +257,7 @@ ota_select_valid:
 	.align	4
 	.type	rewrite_ota_seq, @function
 rewrite_ota_seq:
-.LFB19:
+.LFB23:
 	.loc 1 268 0
 .LVL38:
 	entry	sp, 32
@@ -309,17 +309,17 @@ rewrite_ota_seq:
 	mov.n	a2, a10
 	.loc 1 283 0
 	retw.n
-.LFE19:
+.LFE23:
 	.size	rewrite_ota_seq, .-rewrite_ota_seq
 	.section	.text.esp_rewrite_ota_data,"ax",@progbits
 	.literal_position
-	.literal .LC11, ota_data_map$5379
+	.literal .LC11, ota_data_map$5483
 	.literal .LC12, s_ota_select
 	.literal .LC13, s_ota_select+32
 	.align	4
 	.type	esp_rewrite_ota_data, @function
 esp_rewrite_ota_data:
-.LFB21:
+.LFB25:
 	.loc 1 296 0
 .LVL48:
 	entry	sp, 48
@@ -525,7 +525,7 @@ esp_rewrite_ota_data:
 	mov.n	a2, a10
 	.loc 1 369 0
 	retw.n
-.LFE21:
+.LFE25:
 	.size	esp_rewrite_ota_data, .-esp_rewrite_ota_data
 	.section	.rodata.str1.4
 	.align	4
@@ -538,14 +538,14 @@ esp_rewrite_ota_data:
 	.literal_position
 	.literal .LC14, esp_ota_get_running_partition
 	.literal .LC16, .LC15
-	.literal .LC17, __func__$5416
+	.literal .LC17, __func__$5520
 	.literal .LC18, .LC3
 	.literal .LC20, .LC19
 	.align	4
 	.global	esp_ota_get_running_partition
 	.type	esp_ota_get_running_partition, @function
 esp_ota_get_running_partition:
-.LFB25:
+.LFB29:
 	.loc 1 503 0
 	entry	sp, 32
 .LCFI7:
@@ -617,7 +617,7 @@ esp_ota_get_running_partition:
 	.loc 1 525 0
 	call8	abort
 .LVL101:
-.LFE25:
+.LFE29:
 	.size	esp_ota_get_running_partition, .-esp_ota_get_running_partition
 	.section	.text.esp_ota_begin,"ax",@progbits
 	.literal_position
@@ -628,7 +628,7 @@ esp_ota_get_running_partition:
 	.global	esp_ota_begin
 	.type	esp_ota_begin, @function
 esp_ota_begin:
-.LFB14:
+.LFB18:
 	.loc 1 80 0
 .LVL102:
 	entry	sp, 32
@@ -771,7 +771,7 @@ esp_ota_begin:
 .LVL129:
 	.loc 1 129 0
 	retw.n
-.LFE14:
+.LFE18:
 	.size	esp_ota_begin, .-esp_ota_begin
 	.section	.rodata.str1.4
 	.align	4
@@ -793,7 +793,7 @@ esp_ota_begin:
 	.literal .LC27, .LC26
 	.literal .LC28, s_ota_ops_entries_head
 	.literal .LC30, .LC29
-	.literal .LC31, __func__$5335
+	.literal .LC31, __func__$5439
 	.literal .LC32, .LC3
 	.literal .LC34, .LC33
 	.literal .LC35, 1073061888
@@ -802,7 +802,7 @@ esp_ota_begin:
 	.global	esp_ota_write
 	.type	esp_ota_write, @function
 esp_ota_write:
-.LFB15:
+.LFB19:
 	.loc 1 132 0
 .LVL130:
 	entry	sp, 32
@@ -1032,7 +1032,7 @@ esp_ota_write:
 	mov.n	a2, a10
 	.loc 1 196 0
 	retw.n
-.LFE15:
+.LFE19:
 	.size	esp_ota_write, .-esp_ota_write
 	.section	.text.esp_ota_end,"ax",@progbits
 	.literal_position
@@ -1042,7 +1042,7 @@ esp_ota_write:
 	.global	esp_ota_end
 	.type	esp_ota_end, @function
 esp_ota_end:
-.LFB16:
+.LFB20:
 	.loc 1 199 0
 .LVL168:
 	entry	sp, 272
@@ -1162,7 +1162,7 @@ esp_ota_end:
 .LVL185:
 	.loc 1 255 0
 	retw.n
-.LFE16:
+.LFE20:
 	.size	esp_ota_end, .-esp_ota_end
 	.section	.text.esp_ota_set_boot_partition,"ax",@progbits
 	.literal_position
@@ -1171,7 +1171,7 @@ esp_ota_end:
 	.global	esp_ota_set_boot_partition
 	.type	esp_ota_set_boot_partition, @function
 esp_ota_set_boot_partition:
-.LFB22:
+.LFB26:
 	.loc 1 372 0
 .LVL186:
 	entry	sp, 272
@@ -1266,7 +1266,7 @@ esp_ota_set_boot_partition:
 .LVL206:
 	.loc 1 414 0
 	retw.n
-.LFE22:
+.LFE26:
 	.size	esp_ota_set_boot_partition, .-esp_ota_set_boot_partition
 	.section	.rodata.str1.4
 	.align	4
@@ -1282,7 +1282,7 @@ esp_ota_set_boot_partition:
 	.literal_position
 	.literal .LC41, .LC5
 	.literal .LC43, .LC42
-	.literal .LC44, ota_data_map$5409
+	.literal .LC44, ota_data_map$5513
 	.literal .LC46, .LC45
 	.literal .LC47, s_ota_select
 	.literal .LC48, s_ota_select+32
@@ -1291,7 +1291,7 @@ esp_ota_set_boot_partition:
 	.global	esp_ota_get_boot_partition
 	.type	esp_ota_get_boot_partition, @function
 esp_ota_get_boot_partition:
-.LFB24:
+.LFB28:
 	.loc 1 445 0
 	entry	sp, 48
 .LCFI12:
@@ -1472,7 +1472,7 @@ esp_ota_get_boot_partition:
 	mov.n	a2, a10
 	.loc 1 499 0 discriminator 1
 	retw.n
-.LFE24:
+.LFE28:
 	.size	esp_ota_get_boot_partition, .-esp_ota_get_boot_partition
 	.section	.rodata.str1.4
 	.align	4
@@ -1481,13 +1481,13 @@ esp_ota_get_boot_partition:
 	.section	.text.esp_ota_get_next_update_partition,"ax",@progbits
 	.literal_position
 	.literal .LC52, .LC51
-	.literal .LC53, __func__$5427
+	.literal .LC53, __func__$5531
 	.literal .LC54, .LC3
 	.align	4
 	.global	esp_ota_get_next_update_partition
 	.type	esp_ota_get_next_update_partition, @function
 esp_ota_get_next_update_partition:
-.LFB26:
+.LFB30:
 	.loc 1 530 0
 .LVL236:
 	entry	sp, 32
@@ -1573,43 +1573,43 @@ esp_ota_get_next_update_partition:
 .LBE15:
 	.loc 1 575 0
 	retw.n
-.LFE26:
+.LFE30:
 	.size	esp_ota_get_next_update_partition, .-esp_ota_get_next_update_partition
-	.section	.rodata.__func__$5427,"a",@progbits
+	.section	.rodata.__func__$5531,"a",@progbits
 	.align	4
-	.type	__func__$5427, @object
-	.size	__func__$5427, 34
-__func__$5427:
+	.type	__func__$5531, @object
+	.size	__func__$5531, 34
+__func__$5531:
 	.string	"esp_ota_get_next_update_partition"
-	.section	.rodata.__func__$5416,"a",@progbits
+	.section	.rodata.__func__$5520,"a",@progbits
 	.align	4
-	.type	__func__$5416, @object
-	.size	__func__$5416, 30
-__func__$5416:
+	.type	__func__$5520, @object
+	.size	__func__$5520, 30
+__func__$5520:
 	.string	"esp_ota_get_running_partition"
-	.section	.bss.ota_data_map$5409,"aw",@nobits
+	.section	.bss.ota_data_map$5513,"aw",@nobits
 	.align	4
-	.type	ota_data_map$5409, @object
-	.size	ota_data_map$5409, 4
-ota_data_map$5409:
+	.type	ota_data_map$5513, @object
+	.size	ota_data_map$5513, 4
+ota_data_map$5513:
 	.zero	4
-	.section	.rodata.__func__$5367,"a",@progbits
+	.section	.rodata.__func__$5471,"a",@progbits
 	.align	4
-	.type	__func__$5367, @object
-	.size	__func__$5367, 24
-__func__$5367:
+	.type	__func__$5471, @object
+	.size	__func__$5471, 24
+__func__$5471:
 	.string	"get_ota_partition_count"
-	.section	.bss.ota_data_map$5379,"aw",@nobits
+	.section	.bss.ota_data_map$5483,"aw",@nobits
 	.align	4
-	.type	ota_data_map$5379, @object
-	.size	ota_data_map$5379, 4
-ota_data_map$5379:
+	.type	ota_data_map$5483, @object
+	.size	ota_data_map$5483, 4
+ota_data_map$5483:
 	.zero	4
-	.section	.rodata.__func__$5335,"a",@progbits
+	.section	.rodata.__func__$5439,"a",@progbits
 	.align	4
-	.type	__func__$5335, @object
-	.size	__func__$5335, 14
-__func__$5335:
+	.type	__func__$5439, @object
+	.size	__func__$5439, 14
+__func__$5439:
 	.string	"esp_ota_write"
 	.section	.bss.s_ota_select,"aw",@nobits
 	.align	4
@@ -1649,10 +1649,10 @@ s_ota_ops_entries_head:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI0-.LFB13
+	.4byte	.LCFI0-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1661,10 +1661,10 @@ s_ota_ops_entries_head:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.byte	0x4
-	.4byte	.LCFI1-.LFB20
+	.4byte	.LCFI1-.LFB24
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1673,10 +1673,10 @@ s_ota_ops_entries_head:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI2-.LFB23
+	.4byte	.LCFI2-.LFB27
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1685,10 +1685,10 @@ s_ota_ops_entries_head:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI3-.LFB17
+	.4byte	.LCFI3-.LFB21
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1697,10 +1697,10 @@ s_ota_ops_entries_head:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI4-.LFB18
+	.4byte	.LCFI4-.LFB22
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1709,10 +1709,10 @@ s_ota_ops_entries_head:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI5-.LFB19
+	.4byte	.LCFI5-.LFB23
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1721,10 +1721,10 @@ s_ota_ops_entries_head:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.byte	0x4
-	.4byte	.LCFI6-.LFB21
+	.4byte	.LCFI6-.LFB25
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1733,10 +1733,10 @@ s_ota_ops_entries_head:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI7-.LFB25
+	.4byte	.LCFI7-.LFB29
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1745,10 +1745,10 @@ s_ota_ops_entries_head:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI8-.LFB14
+	.4byte	.LCFI8-.LFB18
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1757,10 +1757,10 @@ s_ota_ops_entries_head:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI9-.LFB15
+	.4byte	.LCFI9-.LFB19
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1769,10 +1769,10 @@ s_ota_ops_entries_head:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI10-.LFB16
+	.4byte	.LCFI10-.LFB20
 	.byte	0xe
 	.uleb128 0x110
 	.align	4
@@ -1781,10 +1781,10 @@ s_ota_ops_entries_head:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI11-.LFB22
+	.4byte	.LCFI11-.LFB26
 	.byte	0xe
 	.uleb128 0x110
 	.align	4
@@ -1793,10 +1793,10 @@ s_ota_ops_entries_head:
 	.4byte	.LEFDE24-.LASFDE24
 .LASFDE24:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI12-.LFB24
+	.4byte	.LCFI12-.LFB28
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1805,10 +1805,10 @@ s_ota_ops_entries_head:
 	.4byte	.LEFDE26-.LASFDE26
 .LASFDE26:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI13-.LFB26
+	.4byte	.LCFI13-.LFB30
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1945,15 +1945,15 @@ s_ota_ops_entries_head:
 	.byte	0x4
 	.4byte	0xed
 	.uleb128 0x7
-	.uleb128 0x3
-	.4byte	.LASF20
-	.byte	0x6
-	.byte	0x18
-	.4byte	0x9f
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x2
+	.4byte	.LASF20
+	.uleb128 0x3
 	.4byte	.LASF21
+	.byte	0x6
+	.byte	0x18
+	.4byte	0x9f
 	.uleb128 0x8
 	.4byte	0x89
 	.4byte	0x110
@@ -2144,7 +2144,7 @@ s_ota_ops_entries_head:
 	.4byte	.LASF63
 	.byte	0x8
 	.byte	0x68
-	.4byte	0xf9
+	.4byte	0xee
 	.byte	0x21
 	.byte	0
 	.uleb128 0x8
@@ -2554,7 +2554,7 @@ s_ota_ops_entries_head:
 	.4byte	.LASF179
 	.byte	0x2
 	.byte	0x24
-	.4byte	0xf9
+	.4byte	0xee
 	.byte	0x3
 	.4byte	0x5ca
 	.uleb128 0x13
@@ -2566,15 +2566,15 @@ s_ota_ops_entries_head:
 	.4byte	.LASF118
 	.byte	0x2
 	.byte	0x27
-	.4byte	0xf9
+	.4byte	0xee
 	.byte	0
 	.uleb128 0x14
 	.4byte	.LASF119
 	.byte	0x1
 	.byte	0x47
-	.4byte	0xf9
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	0xee
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5f1
@@ -2590,8 +2590,8 @@ s_ota_ops_entries_head:
 	.byte	0x1
 	.2byte	0x11d
 	.4byte	0x89
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x675
@@ -2606,7 +2606,7 @@ s_ota_ops_entries_head:
 	.4byte	0x685
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5367
+	.4byte	__func__$5471
 	.uleb128 0x19
 	.4byte	.LVL8
 	.4byte	0x146f
@@ -2628,7 +2628,7 @@ s_ota_ops_entries_head:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5367
+	.4byte	__func__$5471
 	.uleb128 0x1a
 	.uleb128 0x1
 	.byte	0x5d
@@ -2671,8 +2671,8 @@ s_ota_ops_entries_head:
 	.byte	0x1
 	.2byte	0x1a0
 	.4byte	0x53c
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x755
@@ -2789,8 +2789,8 @@ s_ota_ops_entries_head:
 	.byte	0x1
 	.2byte	0x101
 	.4byte	0xaa
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x799
@@ -2831,9 +2831,9 @@ s_ota_ops_entries_head:
 	.4byte	.LASF126
 	.byte	0x1
 	.2byte	0x106
-	.4byte	0xf9
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	0xee
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7dd
@@ -2858,9 +2858,9 @@ s_ota_ops_entries_head:
 	.4byte	.LASF127
 	.byte	0x1
 	.2byte	0x10b
-	.4byte	0xee
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	0xf5
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x88d
@@ -2887,7 +2887,7 @@ s_ota_ops_entries_head:
 	.string	"ret"
 	.byte	0x1
 	.2byte	0x10d
-	.4byte	0xee
+	.4byte	0xf5
 	.4byte	.LLST8
 	.uleb128 0x19
 	.4byte	.LVL39
@@ -2956,9 +2956,9 @@ s_ota_ops_entries_head:
 	.4byte	.LASF130
 	.byte	0x1
 	.2byte	0x127
-	.4byte	0xee
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	0xf5
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xa9c
@@ -2972,7 +2972,7 @@ s_ota_ops_entries_head:
 	.string	"ret"
 	.byte	0x1
 	.2byte	0x129
-	.4byte	0xee
+	.4byte	0xf5
 	.4byte	.LLST10
 	.uleb128 0x17
 	.4byte	.LASF131
@@ -3005,7 +3005,7 @@ s_ota_ops_entries_head:
 	.4byte	0x12e
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	ota_data_map$5379
+	.4byte	ota_data_map$5483
 	.uleb128 0x22
 	.4byte	.LASF124
 	.byte	0x1
@@ -3068,7 +3068,7 @@ s_ota_ops_entries_head:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	ota_data_map$5379
+	.4byte	ota_data_map$5483
 	.byte	0
 	.uleb128 0x19
 	.4byte	.LVL57
@@ -3254,8 +3254,8 @@ s_ota_ops_entries_head:
 	.byte	0x1
 	.2byte	0x1f6
 	.4byte	0x53c
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xbd3
@@ -3271,7 +3271,7 @@ s_ota_ops_entries_head:
 	.4byte	0xbe3
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5416
+	.4byte	__func__$5520
 	.uleb128 0x24
 	.string	"it"
 	.byte	0x1
@@ -3354,7 +3354,7 @@ s_ota_ops_entries_head:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5416
+	.4byte	__func__$5520
 	.uleb128 0x1a
 	.uleb128 0x1
 	.byte	0x5d
@@ -3404,7 +3404,7 @@ s_ota_ops_entries_head:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5416
+	.4byte	__func__$5520
 	.uleb128 0x1a
 	.uleb128 0x1
 	.byte	0x5d
@@ -3429,9 +3429,9 @@ s_ota_ops_entries_head:
 	.4byte	.LASF135
 	.byte	0x1
 	.byte	0x4f
-	.4byte	0xee
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	0xf5
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xccf
@@ -3464,7 +3464,7 @@ s_ota_ops_entries_head:
 	.string	"ret"
 	.byte	0x1
 	.byte	0x52
-	.4byte	0xee
+	.4byte	0xf5
 	.4byte	.LLST19
 	.uleb128 0x19
 	.4byte	.LVL104
@@ -3561,9 +3561,9 @@ s_ota_ops_entries_head:
 	.4byte	.LASF140
 	.byte	0x1
 	.byte	0x83
-	.4byte	0xee
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	0xf5
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xef7
@@ -3596,7 +3596,7 @@ s_ota_ops_entries_head:
 	.string	"ret"
 	.byte	0x1
 	.byte	0x86
-	.4byte	0xee
+	.4byte	0xf5
 	.4byte	.LLST23
 	.uleb128 0x2c
 	.string	"it"
@@ -3610,7 +3610,7 @@ s_ota_ops_entries_head:
 	.4byte	0xf12
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5335
+	.4byte	__func__$5439
 	.uleb128 0x2d
 	.4byte	0x5a3
 	.4byte	.LBB8
@@ -3765,7 +3765,7 @@ s_ota_ops_entries_head:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5335
+	.4byte	__func__$5439
 	.uleb128 0x1a
 	.uleb128 0x1
 	.byte	0x5d
@@ -3870,9 +3870,9 @@ s_ota_ops_entries_head:
 	.4byte	.LASF144
 	.byte	0x1
 	.byte	0xc6
-	.4byte	0xee
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	0xf5
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xfcc
@@ -3893,7 +3893,7 @@ s_ota_ops_entries_head:
 	.string	"ret"
 	.byte	0x1
 	.byte	0xc9
-	.4byte	0xee
+	.4byte	0xf5
 	.4byte	.LLST28
 	.uleb128 0x30
 	.4byte	.LASF180
@@ -3971,9 +3971,9 @@ s_ota_ops_entries_head:
 	.4byte	.LASF146
 	.byte	0x1
 	.2byte	0x173
-	.4byte	0xee
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	0xf5
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x10a1
@@ -4086,8 +4086,8 @@ s_ota_ops_entries_head:
 	.byte	0x1
 	.2byte	0x1bc
 	.4byte	0x53c
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x130b
@@ -4095,7 +4095,7 @@ s_ota_ops_entries_head:
 	.string	"ret"
 	.byte	0x1
 	.2byte	0x1be
-	.4byte	0xee
+	.4byte	0xf5
 	.4byte	.LLST31
 	.uleb128 0x17
 	.4byte	.LASF131
@@ -4110,7 +4110,7 @@ s_ota_ops_entries_head:
 	.4byte	0x12e
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	ota_data_map$5409
+	.4byte	ota_data_map$5513
 	.uleb128 0x22
 	.4byte	.LASF124
 	.byte	0x1
@@ -4201,7 +4201,7 @@ s_ota_ops_entries_head:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	ota_data_map$5409
+	.4byte	ota_data_map$5513
 	.byte	0
 	.uleb128 0x1e
 	.4byte	.LVL215
@@ -4421,8 +4421,8 @@ s_ota_ops_entries_head:
 	.byte	0x1
 	.2byte	0x211
 	.4byte	0x53c
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x13f4
@@ -4442,14 +4442,14 @@ s_ota_ops_entries_head:
 	.4byte	.LASF151
 	.byte	0x1
 	.2byte	0x214
-	.4byte	0xf9
+	.4byte	0xee
 	.4byte	.LLST36
 	.uleb128 0x18
 	.4byte	.LASF121
 	.4byte	0x1404
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5427
+	.4byte	__func__$5531
 	.uleb128 0x1c
 	.4byte	.Ldebug_ranges0+0x30
 	.4byte	0x13aa
@@ -4523,7 +4523,7 @@ s_ota_ops_entries_head:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5427
+	.4byte	__func__$5531
 	.uleb128 0x1a
 	.uleb128 0x1
 	.byte	0x5d
@@ -5467,7 +5467,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL5
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -5511,7 +5511,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL23
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -5537,7 +5537,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL30
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -5573,7 +5573,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL37
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -5598,7 +5598,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL46
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -5619,7 +5619,7 @@ s_ota_ops_entries_head:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL45
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -5630,7 +5630,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL47
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -5652,7 +5652,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL87
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -5666,7 +5666,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL89
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -5678,7 +5678,7 @@ s_ota_ops_entries_head:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL51
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -5765,7 +5765,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x59
 	.4byte	.LVL84
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -5910,7 +5910,7 @@ s_ota_ops_entries_head:
 	.sleb128 1
 	.byte	0x9f
 	.4byte	.LVL118
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -5921,7 +5921,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL128
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -5984,7 +5984,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL162
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6009,7 +6009,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL167
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6027,7 +6027,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL158
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -6042,7 +6042,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL165
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -6102,7 +6102,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL185
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6147,7 +6147,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL184
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -6225,7 +6225,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL206
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6258,7 +6258,7 @@ s_ota_ops_entries_head:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL203
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -6297,7 +6297,7 @@ s_ota_ops_entries_head:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL224
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x6
 	.byte	0x73
 	.sleb128 0
@@ -6321,7 +6321,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL242
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x1
 	.byte	0x55
 	.4byte	0
@@ -6363,7 +6363,7 @@ s_ota_ops_entries_head:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL249
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -6374,7 +6374,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL249
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -6385,7 +6385,7 @@ s_ota_ops_entries_head:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL250
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -6398,34 +6398,34 @@ s_ota_ops_entries_head:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
 	.4byte	.LFB17
 	.4byte	.LFE17-.LFB17
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.4byte	.LFB18
 	.4byte	.LFE18-.LFB18
 	.4byte	.LFB19
 	.4byte	.LFE19-.LFB19
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.4byte	.LFB26
 	.4byte	.LFE26-.LFB26
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
@@ -6454,34 +6454,34 @@ s_ota_ops_entries_head:
 	.4byte	.LBE14
 	.4byte	0
 	.4byte	0
-	.4byte	.LFB13
-	.4byte	.LFE13
-	.4byte	.LFB20
-	.4byte	.LFE20
-	.4byte	.LFB23
-	.4byte	.LFE23
 	.4byte	.LFB17
 	.4byte	.LFE17
+	.4byte	.LFB24
+	.4byte	.LFE24
+	.4byte	.LFB27
+	.4byte	.LFE27
+	.4byte	.LFB21
+	.4byte	.LFE21
+	.4byte	.LFB22
+	.4byte	.LFE22
+	.4byte	.LFB23
+	.4byte	.LFE23
+	.4byte	.LFB25
+	.4byte	.LFE25
+	.4byte	.LFB29
+	.4byte	.LFE29
 	.4byte	.LFB18
 	.4byte	.LFE18
 	.4byte	.LFB19
 	.4byte	.LFE19
-	.4byte	.LFB21
-	.4byte	.LFE21
-	.4byte	.LFB25
-	.4byte	.LFE25
-	.4byte	.LFB14
-	.4byte	.LFE14
-	.4byte	.LFB15
-	.4byte	.LFE15
-	.4byte	.LFB16
-	.4byte	.LFE16
-	.4byte	.LFB22
-	.4byte	.LFE22
-	.4byte	.LFB24
-	.4byte	.LFE24
+	.4byte	.LFB20
+	.4byte	.LFE20
 	.4byte	.LFB26
 	.4byte	.LFE26
+	.4byte	.LFB28
+	.4byte	.LFE28
+	.4byte	.LFB30
+	.4byte	.LFE30
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -6529,8 +6529,6 @@ s_ota_ops_entries_head:
 	.string	"__int32_t"
 .LASF57:
 	.string	"esp_partition_iterator_t"
-.LASF89:
-	.string	"image_len"
 .LASF144:
 	.string	"esp_ota_end"
 .LASF174:
@@ -6675,8 +6673,8 @@ s_ota_ops_entries_head:
 	.string	"hash_appended"
 .LASF26:
 	.string	"ESP_PARTITION_TYPE_DATA"
-.LASF154:
-	.string	"s_ota_select"
+.LASF177:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\app_update"
 .LASF123:
 	.string	"ota_app_count"
 .LASF91:
@@ -6703,7 +6701,7 @@ s_ota_ops_entries_head:
 	.string	"lh_first"
 .LASF81:
 	.string	"esp_image_header_t"
-.LASF21:
+.LASF20:
 	.string	"_Bool"
 .LASF13:
 	.string	"int32_t"
@@ -6785,8 +6783,8 @@ s_ota_ops_entries_head:
 	.string	"esp_image_metadata_t"
 .LASF31:
 	.string	"ESP_PARTITION_SUBTYPE_APP_OTA_1"
-.LASF177:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\app_update"
+.LASF89:
+	.string	"image_len"
 .LASF33:
 	.string	"ESP_PARTITION_SUBTYPE_APP_OTA_3"
 .LASF163:
@@ -6823,7 +6821,7 @@ s_ota_ops_entries_head:
 	.string	"ESP_PARTITION_SUBTYPE_APP_OTA_15"
 .LASF48:
 	.string	"ESP_PARTITION_SUBTYPE_DATA_OTA"
-.LASF20:
+.LASF21:
 	.string	"esp_err_t"
 .LASF51:
 	.string	"ESP_PARTITION_SUBTYPE_DATA_COREDUMP"
@@ -6833,6 +6831,8 @@ s_ota_ops_entries_head:
 	.string	"segments"
 .LASF11:
 	.string	"uint8_t"
+.LASF154:
+	.string	"s_ota_select"
 .LASF54:
 	.string	"ESP_PARTITION_SUBTYPE_DATA_SPIFFS"
 .LASF155:
@@ -6853,4 +6853,4 @@ s_ota_ops_entries_head:
 	.string	"data_bytes"
 .LASF124:
 	.string	"result"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

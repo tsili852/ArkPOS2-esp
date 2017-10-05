@@ -1,6 +1,6 @@
 src/secure_boot_signatures.o: \
  C:/esp/esp-idf/components/bootloader_support/src/secure_boot_signatures.c \
- c:\esp\arkpos2-esp\build\include\sdkconfig.h \
+ c:\esp\esp32-arkpos2\arkpos2-esp\build\include\sdkconfig.h \
  C:/esp/esp-idf/components/bootloader_support/include_priv/bootloader_flash.h \
  C:/esp/esp-idf/components/esp32/include/esp_err.h \
  C:/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
@@ -19,7 +19,7 @@ src/secure_boot_signatures.o: \
  C:/esp/esp-idf/components/micro-ecc/micro-ecc/uECC.h \
  C:/esp/esp-idf/components/esp32/include/rom/sha.h
 
-c:\esp\arkpos2-esp\build\include\sdkconfig.h:
+c:\esp\esp32-arkpos2\arkpos2-esp\build\include\sdkconfig.h:
 
 C:/esp/esp-idf/components/bootloader_support/include_priv/bootloader_flash.h:
 

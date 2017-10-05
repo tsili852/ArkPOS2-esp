@@ -6,99 +6,99 @@
 	.global	esp_dport_access_stall_other_cpu_start
 	.type	esp_dport_access_stall_other_cpu_start, @function
 esp_dport_access_stall_other_cpu_start:
-.LFB19:
+.LFB23:
 	.file 1 "C:/esp/esp-idf/components/esp32/dport_access.c"
 	.loc 1 71 0
 	entry	sp, 32
 .LCFI0:
 	retw.n
-.LFE19:
+.LFE23:
 	.size	esp_dport_access_stall_other_cpu_start, .-esp_dport_access_stall_other_cpu_start
 	.align	4
 	.global	esp_dport_access_stall_other_cpu_end
 	.type	esp_dport_access_stall_other_cpu_end, @function
 esp_dport_access_stall_other_cpu_end:
-.LFB20:
+.LFB24:
 	.loc 1 116 0
 	.loc 1 116 0
 	entry	sp, 32
 .LCFI1:
 	retw.n
-.LFE20:
+.LFE24:
 	.size	esp_dport_access_stall_other_cpu_end, .-esp_dport_access_stall_other_cpu_end
 	.align	4
 	.global	esp_dport_access_stall_other_cpu_start_wrap
 	.type	esp_dport_access_stall_other_cpu_start_wrap, @function
 esp_dport_access_stall_other_cpu_start_wrap:
-.LFB21:
+.LFB25:
 	.loc 1 148 0
 	.loc 1 148 0
 	entry	sp, 32
 .LCFI2:
 	retw.n
-.LFE21:
+.LFE25:
 	.size	esp_dport_access_stall_other_cpu_start_wrap, .-esp_dport_access_stall_other_cpu_start_wrap
 	.align	4
 	.global	esp_dport_access_stall_other_cpu_end_wrap
 	.type	esp_dport_access_stall_other_cpu_end_wrap, @function
 esp_dport_access_stall_other_cpu_end_wrap:
-.LFB22:
+.LFB26:
 	.loc 1 153 0
 	.loc 1 153 0
 	entry	sp, 32
 .LCFI3:
 	retw.n
-.LFE22:
+.LFE26:
 	.size	esp_dport_access_stall_other_cpu_end_wrap, .-esp_dport_access_stall_other_cpu_end_wrap
 	.section	.text.esp_dport_access_int_init,"ax",@progbits
 	.align	4
 	.global	esp_dport_access_int_init
 	.type	esp_dport_access_int_init, @function
 esp_dport_access_int_init:
-.LFB23:
+.LFB27:
 	.loc 1 184 0
 	.loc 1 184 0
 	entry	sp, 32
 .LCFI4:
 	retw.n
-.LFE23:
+.LFE27:
 	.size	esp_dport_access_int_init, .-esp_dport_access_int_init
 	.section	.iram1
 	.align	4
 	.global	esp_dport_access_int_pause
 	.type	esp_dport_access_int_pause, @function
 esp_dport_access_int_pause:
-.LFB24:
+.LFB28:
 	.loc 1 192 0
 	.loc 1 192 0
 	entry	sp, 32
 .LCFI5:
 	retw.n
-.LFE24:
+.LFE28:
 	.size	esp_dport_access_int_pause, .-esp_dport_access_int_pause
 	.align	4
 	.global	esp_dport_access_int_abort
 	.type	esp_dport_access_int_abort, @function
 esp_dport_access_int_abort:
-.LFB25:
+.LFB29:
 	.loc 1 203 0
 	.loc 1 203 0
 	entry	sp, 32
 .LCFI6:
 	retw.n
-.LFE25:
+.LFE29:
 	.size	esp_dport_access_int_abort, .-esp_dport_access_int_abort
 	.align	4
 	.global	esp_dport_access_int_resume
 	.type	esp_dport_access_int_resume, @function
 esp_dport_access_int_resume:
-.LFB26:
+.LFB30:
 	.loc 1 211 0
 	.loc 1 211 0
 	entry	sp, 32
 .LCFI7:
 	retw.n
-.LFE26:
+.LFE30:
 	.size	esp_dport_access_int_resume, .-esp_dport_access_int_resume
 	.section	.debug_frame,"",@progbits
 .Lframe0:
@@ -119,10 +119,10 @@ esp_dport_access_int_resume:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI0-.LFB19
+	.4byte	.LCFI0-.LFB23
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -131,10 +131,10 @@ esp_dport_access_int_resume:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.byte	0x4
-	.4byte	.LCFI1-.LFB20
+	.4byte	.LCFI1-.LFB24
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -143,10 +143,10 @@ esp_dport_access_int_resume:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.byte	0x4
-	.4byte	.LCFI2-.LFB21
+	.4byte	.LCFI2-.LFB25
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -155,10 +155,10 @@ esp_dport_access_int_resume:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI3-.LFB22
+	.4byte	.LCFI3-.LFB26
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -167,10 +167,10 @@ esp_dport_access_int_resume:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI4-.LFB23
+	.4byte	.LCFI4-.LFB27
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -179,10 +179,10 @@ esp_dport_access_int_resume:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI5-.LFB24
+	.4byte	.LCFI5-.LFB28
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -191,10 +191,10 @@ esp_dport_access_int_resume:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI6-.LFB25
+	.4byte	.LCFI6-.LFB29
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -203,10 +203,10 @@ esp_dport_access_int_resume:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI7-.LFB26
+	.4byte	.LCFI7-.LFB30
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -283,64 +283,64 @@ esp_dport_access_int_resume:
 	.4byte	.LASF12
 	.byte	0x1
 	.byte	0x46
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x4
 	.4byte	.LASF13
 	.byte	0x1
 	.byte	0x73
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x4
 	.4byte	.LASF14
 	.byte	0x1
 	.byte	0x93
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x4
 	.4byte	.LASF15
 	.byte	0x1
 	.byte	0x98
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x4
 	.4byte	.LASF16
 	.byte	0x1
 	.byte	0xb7
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x4
 	.4byte	.LASF17
 	.byte	0x1
 	.byte	0xbf
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x4
 	.4byte	.LASF18
 	.byte	0x1
 	.byte	0xca
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x4
 	.4byte	.LASF19
 	.byte	0x1
 	.byte	0xd2
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.byte	0
@@ -419,14 +419,6 @@ esp_dport_access_int_resume:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
 	.4byte	.LFB23
 	.4byte	.LFE23-.LFB23
 	.4byte	.LFB24
@@ -435,18 +427,18 @@ esp_dport_access_int_resume:
 	.4byte	.LFE25-.LFB25
 	.4byte	.LFB26
 	.4byte	.LFE26-.LFB26
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB19
-	.4byte	.LFE19
-	.4byte	.LFB20
-	.4byte	.LFE20
-	.4byte	.LFB21
-	.4byte	.LFE21
-	.4byte	.LFB22
-	.4byte	.LFE22
 	.4byte	.LFB23
 	.4byte	.LFE23
 	.4byte	.LFB24
@@ -455,6 +447,14 @@ esp_dport_access_int_resume:
 	.4byte	.LFE25
 	.4byte	.LFB26
 	.4byte	.LFE26
+	.4byte	.LFB27
+	.4byte	.LFE27
+	.4byte	.LFB28
+	.4byte	.LFE28
+	.4byte	.LFB29
+	.4byte	.LFE29
+	.4byte	.LFB30
+	.4byte	.LFE30
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -468,8 +468,6 @@ esp_dport_access_int_resume:
 	.string	"unsigned char"
 .LASF20:
 	.string	"GNU C99 5.2.0 -mlongcalls -ggdb -Og -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields"
-.LASF22:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF9:
 	.string	"long unsigned int"
 .LASF6:
@@ -502,8 +500,10 @@ esp_dport_access_int_resume:
 	.string	"esp_dport_access_int_pause"
 .LASF2:
 	.string	"short int"
+.LASF22:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF21:
 	.string	"C:/esp/esp-idf/components/esp32/dport_access.c"
 .LASF8:
 	.string	"sizetype"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

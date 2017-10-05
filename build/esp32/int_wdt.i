@@ -1,10 +1,10 @@
 # 1 "C:/esp/esp-idf/components/esp32/int_wdt.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\esp32//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\esp32//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/esp32/int_wdt.c"
 # 17 "C:/esp/esp-idf/components/esp32/int_wdt.c"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 18 "C:/esp/esp-idf/components/esp32/int_wdt.c" 2
 # 1 "C:/esp/esp-idf/components/newlib/include/stdint.h" 1
 # 12 "C:/esp/esp-idf/components/newlib/include/stdint.h"
@@ -1342,7 +1342,7 @@ extern long double strtold (const char *restrict, char **restrict);
 # 99 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h"
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h" 1
 # 73 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 74 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h" 2
 # 102 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h"
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h" 1
@@ -1974,7 +1974,7 @@ long a3;
 # 1 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 1
 # 19 "C:/esp/esp-idf/components/newlib/platform_include/assert.h"
        
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 2
 
 
@@ -2312,7 +2312,212 @@ void esp_crosscore_int_init();
 # 40 "C:/esp/esp-idf/components/esp32/include/esp_crosscore_int.h"
 void esp_crosscore_int_send_yield(int coreId);
 # 83 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
-# 107 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+
+
+# 1 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 1
+# 14 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+       
+
+
+
+# 1 "C:/esp/esp-idf/components/heap/include/multi_heap.h" 1
+# 14 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+       
+# 30 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+typedef struct multi_heap_info *multi_heap_handle_t;
+# 41 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+void *multi_heap_malloc(multi_heap_handle_t heap, size_t size);
+# 50 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+void multi_heap_free(multi_heap_handle_t heap, void *p);
+# 62 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+void *multi_heap_realloc(multi_heap_handle_t heap, void *p, size_t size);
+# 73 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+size_t multi_heap_get_allocated_size(multi_heap_handle_t heap, void *p);
+# 87 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+multi_heap_handle_t multi_heap_register(void *start, size_t size);
+# 99 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+void multi_heap_set_lock(multi_heap_handle_t heap, void* lock);
+
+
+
+
+
+
+
+void multi_heap_dump(multi_heap_handle_t heap);
+# 119 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+
+# 119 "C:/esp/esp-idf/components/heap/include/multi_heap.h" 3 4
+_Bool 
+# 119 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+    multi_heap_check(multi_heap_handle_t heap, 
+# 119 "C:/esp/esp-idf/components/heap/include/multi_heap.h" 3 4
+                                               _Bool 
+# 119 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+                                                    print_errors);
+# 133 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+size_t multi_heap_free_size(multi_heap_handle_t heap);
+# 145 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+size_t multi_heap_minimum_free_size(multi_heap_handle_t heap);
+
+
+typedef struct {
+    size_t total_free_bytes;
+    size_t total_allocated_bytes;
+    size_t largest_free_block;
+    size_t minimum_free_bytes;
+    size_t allocated_blocks;
+    size_t free_blocks;
+    size_t total_blocks;
+} multi_heap_info_t;
+# 165 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
+void multi_heap_get_info(multi_heap_handle_t heap, multi_heap_info_t *info);
+# 19 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 2
+# 51 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void *heap_caps_malloc(size_t size, uint32_t caps);
+# 63 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void heap_caps_free( void *ptr);
+# 82 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void *heap_caps_realloc( void *ptr, size_t size, int caps);
+# 99 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+size_t heap_caps_get_free_size( uint32_t caps );
+# 117 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+size_t heap_caps_get_minimum_free_size( uint32_t caps );
+# 129 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+size_t heap_caps_get_largest_free_block( uint32_t caps );
+# 145 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void heap_caps_get_info( multi_heap_info_t *info, uint32_t caps );
+# 158 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void heap_caps_print_heap_info( uint32_t caps );
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 3 4
+_Bool 
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+    heap_caps_check_integrity(uint32_t caps, 
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 3 4
+                                             _Bool 
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+                                                  print_errors);
+# 190 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void heap_caps_malloc_extmem_enable(size_t limit);
+# 86 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
+# 1 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 1
+# 14 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+       
+
+
+
+
+
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 21 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 2
+# 1 "C:/esp/esp-idf/components/esp32/include/esp_attr.h" 1
+# 22 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 2
+
+
+
+
+
+typedef struct {
+    const char *name;
+    uint32_t caps[3];
+    
+# 30 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 30 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        aliased_iram;
+    
+# 31 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 31 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        startup_stack;
+} soc_memory_type_desc_t;
+
+
+extern const soc_memory_type_desc_t soc_memory_types[];
+extern const size_t soc_memory_type_count;
+
+
+
+typedef struct
+{
+    intptr_t start;
+    size_t size;
+    size_t type;
+    intptr_t iram_address;
+} soc_memory_region_t;
+
+extern const soc_memory_region_t soc_memory_regions[];
+extern const size_t soc_memory_region_count;
+
+
+
+
+typedef struct
+{
+    intptr_t start;
+    intptr_t end;
+} soc_reserved_region_t;
+
+extern const soc_reserved_region_t soc_reserved_regions[];
+extern const size_t soc_reserved_region_count;
+
+inline static 
+# 63 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 63 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_dma_capable(const void *p)
+{
+    return (intptr_t)p >= 0x3FFAE000 && (intptr_t)p < 0x40000000;
+}
+
+inline static 
+# 68 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 68 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_executable(const void *p)
+{
+    intptr_t ip = (intptr_t) p;
+    return (ip >= 0x400D0000 && ip < 0x40400000)
+        || (ip >= 0x40080000 && ip < 0x400A0000)
+        || (ip >= 0x400C0000 && ip < 0x400C2000);
+}
+
+inline static 
+# 76 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 76 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_byte_accessible(const void *p)
+{
+    
+# 78 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 78 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        r;
+    r = ((intptr_t)p >= 0x3FFAE000 && (intptr_t)p < 0x40000000);
+
+
+
+    return r;
+}
+
+inline static 
+# 86 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 86 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_internal(const void *p) {
+    
+# 87 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 87 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        r;
+    r = ((intptr_t)p >= 0x3F400000 && (intptr_t)p < 0x400C2000);
+    r |= ((intptr_t)p >= 0x50000000 && (intptr_t)p < 0x50002000);
+    return r;
+}
+# 87 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
+# 110 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 typedef uint8_t StackType_t;
 typedef int BaseType_t;
 typedef unsigned int UBaseType_t;
@@ -2328,12 +2533,11 @@ typedef unsigned int UBaseType_t;
 
 
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h" 1
-# 122 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
-
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
-# 124 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
-# 1 "C:/esp/esp-idf/components/esp32/include/esp_attr.h" 1
 # 125 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
+
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 127 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
+
 
 
 
@@ -2346,24 +2550,24 @@ typedef struct {
 
 
 } portMUX_TYPE;
-# 174 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 177 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vPortAssertIfInISR();
-# 202 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 205 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vPortCPUInitializeMutex(portMUX_TYPE *mux);
-# 216 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 219 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vTaskExitCritical( portMUX_TYPE *mux );
 void vTaskEnterCritical( portMUX_TYPE *mux );
 void vPortCPUAcquireMutex(portMUX_TYPE *mux);
-# 228 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 231 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 
-# 228 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 3 4
+# 231 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 3 4
 _Bool 
-# 228 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 231 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
     vPortCPUAcquireMutexTimeout(portMUX_TYPE *mux, int timeout_cycles);
 void vPortCPUReleaseMutex(portMUX_TYPE *mux);
-# 241 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 244 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 static inline unsigned portENTER_CRITICAL_NESTED() { unsigned state = ({ unsigned __tmp; __asm__ __volatile__( "rsil	%0, " "3" "\n" : "=a" (__tmp) : : "memory" ); __tmp;}); ; return state; }
-# 258 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 273 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 static inline void uxPortCompareSet(volatile uint32_t *addr, uint32_t compare, uint32_t *set) {
     __asm__ __volatile__ (
         "WSR 	    %2,SCOMPARE1 \n"
@@ -2372,20 +2576,20 @@ static inline void uxPortCompareSet(volatile uint32_t *addr, uint32_t compare, u
         :"r"(addr), "r"(compare), "0"(*set)
         );
 }
-# 281 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 296 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vPortYield( void );
 void _frxt_setup_switch( void );
 
 
 
 static inline uint32_t xPortGetCoreID();
-# 307 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 322 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 typedef struct {
 
  volatile StackType_t* coproc_area;
-# 324 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 339 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 } xMPU_SETTINGS;
-# 336 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 351 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void _xt_coproc_release(volatile void * coproc_sa_base);
 # 95 "C:/esp/esp-idf/components/freertos/include/freertos/portable.h" 2
 # 125 "C:/esp/esp-idf/components/freertos/include/freertos/portable.h"

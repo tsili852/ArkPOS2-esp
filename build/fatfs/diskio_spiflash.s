@@ -6,7 +6,7 @@
 	.global	ff_wl_initialize
 	.type	ff_wl_initialize, @function
 ff_wl_initialize:
-.LFB9:
+.LFB13:
 	.file 1 "C:/esp/esp-idf/components/fatfs/src/diskio_spiflash.c"
 	.loc 1 31 0
 .LVL0:
@@ -16,14 +16,14 @@ ff_wl_initialize:
 	movi.n	a2, 0
 .LVL1:
 	retw.n
-.LFE9:
+.LFE13:
 	.size	ff_wl_initialize, .-ff_wl_initialize
 	.section	.text.ff_wl_status,"ax",@progbits
 	.align	4
 	.global	ff_wl_status
 	.type	ff_wl_status, @function
 ff_wl_status:
-.LFB10:
+.LFB14:
 	.loc 1 36 0
 .LVL2:
 	entry	sp, 32
@@ -32,7 +32,7 @@ ff_wl_status:
 	movi.n	a2, 0
 .LVL3:
 	retw.n
-.LFE10:
+.LFE14:
 	.size	ff_wl_status, .-ff_wl_status
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -51,7 +51,7 @@ ff_wl_status:
 	.literal_position
 	.literal .LC0, ff_wl_handles
 	.literal .LC2, .LC1
-	.literal .LC3, __func__$5398
+	.literal .LC3, __func__$5502
 	.literal .LC5, .LC4
 	.literal .LC7, .LC6
 	.literal .LC9, .LC8
@@ -59,7 +59,7 @@ ff_wl_status:
 	.global	ff_wl_read
 	.type	ff_wl_read, @function
 ff_wl_read:
-.LFB11:
+.LFB15:
 	.loc 1 41 0
 .LVL4:
 	entry	sp, 32
@@ -122,7 +122,7 @@ ff_wl_read:
 .LVL17:
 	.loc 1 51 0
 	retw.n
-.LFE11:
+.LFE15:
 	.size	ff_wl_read, .-ff_wl_read
 	.section	.rodata.str1.4
 	.align	4
@@ -135,7 +135,7 @@ ff_wl_read:
 	.literal_position
 	.literal .LC10, ff_wl_handles
 	.literal .LC11, .LC1
-	.literal .LC12, __func__$5407
+	.literal .LC12, __func__$5511
 	.literal .LC13, .LC4
 	.literal .LC14, .LC6
 	.literal .LC16, .LC15
@@ -144,7 +144,7 @@ ff_wl_read:
 	.global	ff_wl_write
 	.type	ff_wl_write, @function
 ff_wl_write:
-.LFB12:
+.LFB16:
 	.loc 1 54 0
 .LVL18:
 	entry	sp, 32
@@ -241,19 +241,19 @@ ff_wl_write:
 .LVL39:
 	.loc 1 69 0
 	retw.n
-.LFE12:
+.LFE16:
 	.size	ff_wl_write, .-ff_wl_write
 	.section	.text.ff_wl_ioctl,"ax",@progbits
 	.literal_position
 	.literal .LC19, ff_wl_handles
 	.literal .LC20, .LC1
-	.literal .LC21, __func__$5415
+	.literal .LC21, __func__$5519
 	.literal .LC22, .LC4
 	.align	4
 	.global	ff_wl_ioctl
 	.type	ff_wl_ioctl, @function
 ff_wl_ioctl:
-.LFB13:
+.LFB17:
 	.loc 1 72 0
 .LVL40:
 	entry	sp, 32
@@ -321,17 +321,17 @@ ff_wl_ioctl:
 .LVL54:
 	.loc 1 89 0
 	retw.n
-.LFE13:
+.LFE17:
 	.size	ff_wl_ioctl, .-ff_wl_ioctl
 	.section	.text.ff_diskio_register_wl_partition,"ax",@progbits
 	.literal_position
 	.literal .LC23, ff_wl_handles
-	.literal .LC24, wl_impl$5424
+	.literal .LC24, wl_impl$5528
 	.align	4
 	.global	ff_diskio_register_wl_partition
 	.type	ff_diskio_register_wl_partition, @function
 ff_diskio_register_wl_partition:
-.LFB14:
+.LFB18:
 	.loc 1 93 0
 .LVL55:
 	entry	sp, 32
@@ -358,7 +358,7 @@ ff_diskio_register_wl_partition:
 .LVL59:
 	.loc 1 107 0
 	retw.n
-.LFE14:
+.LFE18:
 	.size	ff_diskio_register_wl_partition, .-ff_diskio_register_wl_partition
 	.section	.text.ff_diskio_get_pdrv_wl,"ax",@progbits
 	.literal_position
@@ -367,7 +367,7 @@ ff_diskio_register_wl_partition:
 	.global	ff_diskio_get_pdrv_wl
 	.type	ff_diskio_get_pdrv_wl, @function
 ff_diskio_get_pdrv_wl:
-.LFB15:
+.LFB19:
 	.loc 1 110 0
 .LVL60:
 	entry	sp, 32
@@ -402,35 +402,35 @@ ff_diskio_get_pdrv_wl:
 .LVL66:
 	.loc 1 117 0
 	retw.n
-.LFE15:
+.LFE19:
 	.size	ff_diskio_get_pdrv_wl, .-ff_diskio_get_pdrv_wl
-	.section	.rodata.wl_impl$5424,"a",@progbits
+	.section	.rodata.wl_impl$5528,"a",@progbits
 	.align	4
-	.type	wl_impl$5424, @object
-	.size	wl_impl$5424, 20
-wl_impl$5424:
+	.type	wl_impl$5528, @object
+	.size	wl_impl$5528, 20
+wl_impl$5528:
 	.word	ff_wl_initialize
 	.word	ff_wl_status
 	.word	ff_wl_read
 	.word	ff_wl_write
 	.word	ff_wl_ioctl
-	.section	.rodata.__func__$5415,"a",@progbits
+	.section	.rodata.__func__$5519,"a",@progbits
 	.align	4
-	.type	__func__$5415, @object
-	.size	__func__$5415, 12
-__func__$5415:
+	.type	__func__$5519, @object
+	.size	__func__$5519, 12
+__func__$5519:
 	.string	"ff_wl_ioctl"
-	.section	.rodata.__func__$5407,"a",@progbits
+	.section	.rodata.__func__$5511,"a",@progbits
 	.align	4
-	.type	__func__$5407, @object
-	.size	__func__$5407, 12
-__func__$5407:
+	.type	__func__$5511, @object
+	.size	__func__$5511, 12
+__func__$5511:
 	.string	"ff_wl_write"
-	.section	.rodata.__func__$5398,"a",@progbits
+	.section	.rodata.__func__$5502,"a",@progbits
 	.align	4
-	.type	__func__$5398, @object
-	.size	__func__$5398, 11
-__func__$5398:
+	.type	__func__$5502, @object
+	.size	__func__$5502, 11
+__func__$5502:
 	.string	"ff_wl_read"
 	.global	ff_wl_handles
 	.section	.data.ff_wl_handles,"aw",@progbits
@@ -459,10 +459,10 @@ ff_wl_handles:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x4
-	.4byte	.LCFI0-.LFB9
+	.4byte	.LCFI0-.LFB13
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -471,10 +471,10 @@ ff_wl_handles:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI1-.LFB10
+	.4byte	.LCFI1-.LFB14
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -483,10 +483,10 @@ ff_wl_handles:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI2-.LFB11
+	.4byte	.LCFI2-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -495,10 +495,10 @@ ff_wl_handles:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI3-.LFB12
+	.4byte	.LCFI3-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -507,10 +507,10 @@ ff_wl_handles:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI4-.LFB13
+	.4byte	.LCFI4-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -519,10 +519,10 @@ ff_wl_handles:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI5-.LFB14
+	.4byte	.LCFI5-.LFB18
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -531,10 +531,10 @@ ff_wl_handles:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI6-.LFB15
+	.4byte	.LCFI6-.LFB19
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -839,8 +839,8 @@ ff_wl_handles:
 	.byte	0x1
 	.byte	0x1e
 	.4byte	0xec
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x27a
@@ -856,8 +856,8 @@ ff_wl_handles:
 	.byte	0x1
 	.byte	0x23
 	.4byte	0xec
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2a3
@@ -873,8 +873,8 @@ ff_wl_handles:
 	.byte	0x1
 	.byte	0x28
 	.4byte	0x122
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3d2
@@ -915,7 +915,7 @@ ff_wl_handles:
 	.4byte	0x3e2
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5398
+	.4byte	__func__$5502
 	.uleb128 0x13
 	.string	"err"
 	.byte	0x1
@@ -943,7 +943,7 @@ ff_wl_handles:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5398
+	.4byte	__func__$5502
 	.uleb128 0x15
 	.uleb128 0x1
 	.byte	0x5d
@@ -1047,8 +1047,8 @@ ff_wl_handles:
 	.byte	0x1
 	.byte	0x35
 	.4byte	0x122
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x595
@@ -1089,7 +1089,7 @@ ff_wl_handles:
 	.4byte	0x5a5
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5407
+	.4byte	__func__$5511
 	.uleb128 0x13
 	.string	"err"
 	.byte	0x1
@@ -1117,7 +1117,7 @@ ff_wl_handles:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5407
+	.4byte	__func__$5511
 	.uleb128 0x15
 	.uleb128 0x1
 	.byte	0x5d
@@ -1297,8 +1297,8 @@ ff_wl_handles:
 	.byte	0x1
 	.byte	0x47
 	.4byte	0x122
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x674
@@ -1332,7 +1332,7 @@ ff_wl_handles:
 	.4byte	0x674
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5415
+	.4byte	__func__$5519
 	.uleb128 0x14
 	.4byte	.LVL43
 	.4byte	0x75a
@@ -1354,7 +1354,7 @@ ff_wl_handles:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5415
+	.4byte	__func__$5519
 	.uleb128 0x15
 	.uleb128 0x1
 	.byte	0x5d
@@ -1402,8 +1402,8 @@ ff_wl_handles:
 	.byte	0x1
 	.byte	0x5c
 	.4byte	0xd3
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x6dd
@@ -1427,7 +1427,7 @@ ff_wl_handles:
 	.4byte	0x6dd
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	wl_impl$5424
+	.4byte	wl_impl$5528
 	.uleb128 0x17
 	.4byte	.LVL57
 	.4byte	0x7b2
@@ -1446,7 +1446,7 @@ ff_wl_handles:
 	.byte	0x5b
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	wl_impl$5424
+	.4byte	wl_impl$5528
 	.byte	0
 	.byte	0
 	.uleb128 0x7
@@ -1456,8 +1456,8 @@ ff_wl_handles:
 	.byte	0x1
 	.byte	0x6d
 	.4byte	0xa7
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x722
@@ -1952,7 +1952,7 @@ ff_wl_handles:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL1
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1966,7 +1966,7 @@ ff_wl_handles:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL3
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1980,7 +1980,7 @@ ff_wl_handles:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL5
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1994,7 +1994,7 @@ ff_wl_handles:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL9
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2019,7 +2019,7 @@ ff_wl_handles:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL17
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -2030,7 +2030,7 @@ ff_wl_handles:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL19
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2044,7 +2044,7 @@ ff_wl_handles:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL31
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2077,7 +2077,7 @@ ff_wl_handles:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL39
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -2088,7 +2088,7 @@ ff_wl_handles:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL41
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2102,7 +2102,7 @@ ff_wl_handles:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL47
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2142,7 +2142,7 @@ ff_wl_handles:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL54
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0xb
 	.byte	0xf3
 	.uleb128 0x1
@@ -2178,7 +2178,7 @@ ff_wl_handles:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL59
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -2200,7 +2200,7 @@ ff_wl_handles:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL66
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2215,7 +2215,7 @@ ff_wl_handles:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL62
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x1
 	.byte	0x58
 	.4byte	0
@@ -2228,38 +2228,38 @@ ff_wl_handles:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
 	.4byte	.LFB13
 	.4byte	.LFE13-.LFB13
 	.4byte	.LFB14
 	.4byte	.LFE14-.LFB14
 	.4byte	.LFB15
 	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB9
-	.4byte	.LFE9
-	.4byte	.LFB10
-	.4byte	.LFE10
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB12
-	.4byte	.LFE12
 	.4byte	.LFB13
 	.4byte	.LFE13
 	.4byte	.LFB14
 	.4byte	.LFE14
 	.4byte	.LFB15
 	.4byte	.LFE15
+	.4byte	.LFB16
+	.4byte	.LFE16
+	.4byte	.LFB17
+	.4byte	.LFE17
+	.4byte	.LFB18
+	.4byte	.LFE18
+	.4byte	.LFB19
+	.4byte	.LFE19
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -2327,8 +2327,6 @@ ff_wl_handles:
 	.string	"ff_diskio_impl_t"
 .LASF67:
 	.string	"C:/esp/esp-idf/components/fatfs/src/diskio_spiflash.c"
-.LASF68:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\fatfs"
 .LASF21:
 	.string	"DSTATUS"
 .LASF49:
@@ -2399,10 +2397,12 @@ ff_wl_handles:
 	.string	"RES_PARERR"
 .LASF35:
 	.string	"ESP_LOG_ERROR"
+.LASF68:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\fatfs"
 .LASF42:
 	.string	"ff_wl_initialize"
 .LASF18:
 	.string	"esp_err_t"
 .LASF37:
 	.string	"ESP_LOG_INFO"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

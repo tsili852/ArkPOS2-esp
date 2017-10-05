@@ -1439,6 +1439,8 @@ implementation:
 	.string	"crypto_onetimeauth_poly1305_update"
 .LASF27:
 	.string	"crypto_onetimeauth_poly1305_bytes"
+.LASF33:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF23:
 	.string	"crypto_onetimeauth_poly1305_init"
 .LASF32:
@@ -1463,8 +1465,6 @@ implementation:
 	.string	"randombytes_buf"
 .LASF26:
 	.string	"crypto_onetimeauth_poly1305_final"
-.LASF33:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF36:
 	.string	"crypto_onetimeauth_poly1305_donna_implementation"
 .LASF4:
@@ -1499,4 +1499,4 @@ implementation:
 	.string	"_crypto_onetimeauth_poly1305_pick_best_implementation"
 .LASF19:
 	.string	"onetimeauth_final"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

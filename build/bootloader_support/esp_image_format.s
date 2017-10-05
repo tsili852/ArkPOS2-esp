@@ -5907,6 +5907,8 @@ esp_image_verify_bootloader:
 	.string	"ESP_IMAGE_SPI_MODE_DIO"
 .LASF112:
 	.string	"segment"
+.LASF155:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bootloader_support"
 .LASF44:
 	.string	"UART1_TRIG"
 .LASF87:
@@ -5979,8 +5981,6 @@ esp_image_verify_bootloader:
 	.string	"TG0WDT_SYS_RESET"
 .LASF3:
 	.string	"size_t"
-.LASF155:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bootloader_support"
 .LASF55:
 	.string	"offset"
 .LASF123:
@@ -6191,4 +6191,4 @@ esp_image_verify_bootloader:
 	.string	"ESP_LOG_ERROR"
 .LASF75:
 	.string	"segment_count"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

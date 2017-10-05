@@ -6,7 +6,7 @@
 	.global	esp_wifi_init
 	.type	esp_wifi_init, @function
 esp_wifi_init:
-.LFB9:
+.LFB13:
 	.file 1 "C:/esp/esp-idf/components/esp32/wifi_init.c"
 	.loc 1 20 0
 .LVL0:
@@ -23,7 +23,7 @@ esp_wifi_init:
 	mov.n	a2, a10
 .LVL3:
 	retw.n
-.LFE9:
+.LFE13:
 	.size	esp_wifi_init, .-esp_wifi_init
 	.section	.debug_frame,"",@progbits
 .Lframe0:
@@ -44,10 +44,10 @@ esp_wifi_init:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x4
-	.4byte	.LCFI0-.LFB9
+	.4byte	.LCFI0-.LFB13
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -177,7 +177,7 @@ esp_wifi_init:
 	.byte	0x4
 	.4byte	0x69
 	.byte	0x5
-	.byte	0x32
+	.byte	0x36
 	.4byte	0x110
 	.uleb128 0x9
 	.4byte	.LASF18
@@ -204,7 +204,7 @@ esp_wifi_init:
 	.uleb128 0x3
 	.4byte	.LASF25
 	.byte	0x5
-	.byte	0x3a
+	.byte	0x3e
 	.4byte	0xd9
 	.uleb128 0x2
 	.byte	0x1
@@ -1013,8 +1013,8 @@ esp_wifi_init:
 	.byte	0x1
 	.byte	0x13
 	.4byte	0xce
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7b8
@@ -1411,7 +1411,7 @@ esp_wifi_init:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL3
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1427,14 +1427,14 @@ esp_wifi_init:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB9
-	.4byte	.LFE9
+	.4byte	.LFB13
+	.4byte	.LFE13
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -1522,6 +1522,8 @@ esp_wifi_init:
 	.string	"SYSTEM_EVENT_STA_WPS_ER_SUCCESS"
 .LASF99:
 	.string	"sta_connected"
+.LASF135:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF44:
 	.string	"SYSTEM_EVENT_STA_LOST_IP"
 .LASF86:
@@ -1636,8 +1638,6 @@ esp_wifi_init:
 	.string	"reason"
 .LASF73:
 	.string	"channel"
-.LASF135:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF95:
 	.string	"auth_change"
 .LASF60:
@@ -1716,4 +1716,4 @@ esp_wifi_init:
 	.string	"SYSTEM_EVENT_AP_START"
 .LASF19:
 	.string	"WIFI_AUTH_WEP"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

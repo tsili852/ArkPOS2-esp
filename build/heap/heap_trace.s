@@ -5,7 +5,7 @@
 	.align	4
 	.type	set_tracing, @function
 set_tracing:
-.LFB14:
+.LFB15:
 	.file 1 "C:/esp/esp-idf/components/heap/heap_trace.c"
 	.loc 1 95 0
 .LVL0:
@@ -15,7 +15,7 @@ set_tracing:
 	movi	a2, 0x106
 .LVL1:
 	retw.n
-.LFE14:
+.LFE15:
 	.size	set_tracing, .-set_tracing
 	.section	.iram1,"ax",@progbits
 	.literal_position
@@ -23,7 +23,7 @@ set_tracing:
 	.align	4
 	.type	record_allocation, @function
 record_allocation:
-.LFB20:
+.LFB21:
 	.loc 1 194 0
 .LVL2:
 	entry	sp, 32
@@ -39,12 +39,12 @@ record_allocation:
 	call8	vTaskExitCritical
 .LVL5:
 	retw.n
-.LFE20:
+.LFE21:
 	.size	record_allocation, .-record_allocation
 	.align	4
 	.type	trace_malloc, @function
 trace_malloc:
-.LFB25:
+.LFB26:
 	.loc 1 318 0
 .LVL6:
 	entry	sp, 32
@@ -75,14 +75,14 @@ trace_malloc:
 	mov.n	a2, a10
 .LVL11:
 	retw.n
-.LFE25:
+.LFE26:
 	.size	trace_malloc, .-trace_malloc
 	.literal_position
 	.literal .LC1, count
 	.align	4
 	.type	remove_record, @function
 remove_record:
-.LFB22:
+.LFB23:
 	.loc 1 252 0
 .LVL12:
 	entry	sp, 32
@@ -133,14 +133,14 @@ remove_record:
 	l32r	a2, .LC1
 	s32i.n	a3, a2, 0
 	retw.n
-.LFE22:
+.LFE23:
 	.size	remove_record, .-remove_record
 	.literal_position
 	.literal .LC2, trace_mux
 	.align	4
 	.type	record_free, @function
 record_free:
-.LFB21:
+.LFB22:
 	.loc 1 226 0
 .LVL18:
 	entry	sp, 32
@@ -156,12 +156,12 @@ record_free:
 	call8	vTaskExitCritical
 .LVL21:
 	retw.n
-.LFE21:
+.LFE22:
 	.size	record_free, .-record_free
 	.align	4
 	.type	trace_free, @function
 trace_free:
-.LFB26:
+.LFB27:
 	.loc 1 343 0
 .LVL22:
 	entry	sp, 32
@@ -171,12 +171,12 @@ trace_free:
 	call8	__real_heap_caps_free
 .LVL23:
 	retw.n
-.LFE26:
+.LFE27:
 	.size	trace_free, .-trace_free
 	.align	4
 	.type	trace_realloc, @function
 trace_realloc:
-.LFB27:
+.LFB28:
 	.loc 1 356 0
 .LVL24:
 	entry	sp, 32
@@ -209,14 +209,14 @@ trace_realloc:
 	mov.n	a2, a10
 .LVL29:
 	retw.n
-.LFE27:
+.LFE28:
 	.size	trace_realloc, .-trace_realloc
 	.section	.text.heap_trace_init_standalone,"ax",@progbits
 	.align	4
 	.global	heap_trace_init_standalone
 	.type	heap_trace_init_standalone, @function
 heap_trace_init_standalone:
-.LFB12:
+.LFB13:
 	.loc 1 57 0
 .LVL30:
 	entry	sp, 32
@@ -225,14 +225,14 @@ heap_trace_init_standalone:
 	movi	a2, 0x106
 .LVL31:
 	retw.n
-.LFE12:
+.LFE13:
 	.size	heap_trace_init_standalone, .-heap_trace_init_standalone
 	.section	.text.heap_trace_start,"ax",@progbits
 	.align	4
 	.global	heap_trace_start
 	.type	heap_trace_start, @function
 heap_trace_start:
-.LFB13:
+.LFB14:
 	.loc 1 72 0
 .LVL32:
 	entry	sp, 32
@@ -241,14 +241,14 @@ heap_trace_start:
 	movi	a2, 0x106
 .LVL33:
 	retw.n
-.LFE13:
+.LFE14:
 	.size	heap_trace_start, .-heap_trace_start
 	.section	.text.heap_trace_stop,"ax",@progbits
 	.align	4
 	.global	heap_trace_stop
 	.type	heap_trace_stop, @function
 heap_trace_stop:
-.LFB15:
+.LFB16:
 	.loc 1 107 0
 	entry	sp, 32
 .LCFI9:
@@ -259,14 +259,14 @@ heap_trace_stop:
 	.loc 1 109 0
 	mov.n	a2, a10
 	retw.n
-.LFE15:
+.LFE16:
 	.size	heap_trace_stop, .-heap_trace_stop
 	.section	.text.heap_trace_resume,"ax",@progbits
 	.align	4
 	.global	heap_trace_resume
 	.type	heap_trace_resume, @function
 heap_trace_resume:
-.LFB16:
+.LFB17:
 	.loc 1 112 0
 	entry	sp, 32
 .LCFI10:
@@ -277,7 +277,7 @@ heap_trace_resume:
 	.loc 1 114 0
 	mov.n	a2, a10
 	retw.n
-.LFE16:
+.LFE17:
 	.size	heap_trace_resume, .-heap_trace_resume
 	.section	.text.heap_trace_get_count,"ax",@progbits
 	.literal_position
@@ -286,7 +286,7 @@ heap_trace_resume:
 	.global	heap_trace_get_count
 	.type	heap_trace_get_count, @function
 heap_trace_get_count:
-.LFB17:
+.LFB18:
 	.loc 1 117 0
 	entry	sp, 32
 .LCFI11:
@@ -294,14 +294,14 @@ heap_trace_get_count:
 	l32r	a8, .LC3
 	l32i.n	a2, a8, 0
 	retw.n
-.LFE17:
+.LFE18:
 	.size	heap_trace_get_count, .-heap_trace_get_count
 	.section	.text.heap_trace_get,"ax",@progbits
 	.align	4
 	.global	heap_trace_get
 	.type	heap_trace_get, @function
 heap_trace_get:
-.LFB18:
+.LFB19:
 	.loc 1 122 0
 .LVL36:
 	entry	sp, 32
@@ -310,7 +310,7 @@ heap_trace_get:
 	movi	a2, 0x106
 .LVL37:
 	retw.n
-.LFE18:
+.LFE19:
 	.size	heap_trace_get, .-heap_trace_get
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -323,7 +323,7 @@ heap_trace_get:
 	.global	heap_trace_dump
 	.type	heap_trace_dump, @function
 heap_trace_dump:
-.LFB19:
+.LFB20:
 	.loc 1 143 0
 	entry	sp, 32
 .LCFI13:
@@ -332,14 +332,14 @@ heap_trace_dump:
 	call8	puts
 .LVL38:
 	retw.n
-.LFE19:
+.LFE20:
 	.size	heap_trace_dump, .-heap_trace_dump
 	.section	.iram1
 	.align	4
 	.global	__wrap_malloc
 	.type	__wrap_malloc, @function
 __wrap_malloc:
-.LFB28:
+.LFB29:
 	.loc 1 391 0
 .LVL39:
 	entry	sp, 32
@@ -354,13 +354,13 @@ __wrap_malloc:
 	mov.n	a2, a10
 .LVL41:
 	retw.n
-.LFE28:
+.LFE29:
 	.size	__wrap_malloc, .-__wrap_malloc
 	.align	4
 	.global	__wrap_free
 	.type	__wrap_free, @function
 __wrap_free:
-.LFB29:
+.LFB30:
 	.loc 1 396 0
 .LVL42:
 	entry	sp, 32
@@ -370,7 +370,7 @@ __wrap_free:
 	call8	trace_free
 .LVL43:
 	retw.n
-.LFE29:
+.LFE30:
 	.size	__wrap_free, .-__wrap_free
 	.global	__wrap_heap_caps_free
 	.set	__wrap_heap_caps_free,__wrap_free
@@ -378,7 +378,7 @@ __wrap_free:
 	.global	__wrap_realloc
 	.type	__wrap_realloc, @function
 __wrap_realloc:
-.LFB30:
+.LFB31:
 	.loc 1 401 0
 .LVL44:
 	entry	sp, 32
@@ -394,13 +394,13 @@ __wrap_realloc:
 	mov.n	a2, a10
 .LVL46:
 	retw.n
-.LFE30:
+.LFE31:
 	.size	__wrap_realloc, .-__wrap_realloc
 	.align	4
 	.global	__wrap_calloc
 	.type	__wrap_calloc, @function
 __wrap_calloc:
-.LFB31:
+.LFB32:
 	.loc 1 406 0
 .LVL47:
 	entry	sp, 32
@@ -426,13 +426,13 @@ __wrap_calloc:
 .L25:
 	.loc 1 413 0
 	retw.n
-.LFE31:
+.LFE32:
 	.size	__wrap_calloc, .-__wrap_calloc
 	.align	4
 	.global	__wrap_heap_caps_malloc
 	.type	__wrap_heap_caps_malloc, @function
 __wrap_heap_caps_malloc:
-.LFB32:
+.LFB33:
 	.loc 1 416 0
 .LVL52:
 	entry	sp, 32
@@ -447,13 +447,13 @@ __wrap_heap_caps_malloc:
 	mov.n	a2, a10
 .LVL54:
 	retw.n
-.LFE32:
+.LFE33:
 	.size	__wrap_heap_caps_malloc, .-__wrap_heap_caps_malloc
 	.align	4
 	.global	__wrap_heap_caps_realloc
 	.type	__wrap_heap_caps_realloc, @function
 __wrap_heap_caps_realloc:
-.LFB33:
+.LFB34:
 	.loc 1 423 0
 .LVL55:
 	entry	sp, 32
@@ -469,7 +469,7 @@ __wrap_heap_caps_realloc:
 	mov.n	a2, a10
 .LVL57:
 	retw.n
-.LFE33:
+.LFE34:
 	.size	__wrap_heap_caps_realloc, .-__wrap_heap_caps_realloc
 	.section	.bss.count,"aw",@nobits
 	.align	4
@@ -503,10 +503,10 @@ trace_mux:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI0-.LFB14
+	.4byte	.LCFI0-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -515,10 +515,10 @@ trace_mux:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI1-.LFB20
+	.4byte	.LCFI1-.LFB21
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -527,10 +527,10 @@ trace_mux:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI2-.LFB25
+	.4byte	.LCFI2-.LFB26
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -539,10 +539,10 @@ trace_mux:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI3-.LFB22
+	.4byte	.LCFI3-.LFB23
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -551,10 +551,10 @@ trace_mux:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI4-.LFB21
+	.4byte	.LCFI4-.LFB22
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -563,10 +563,10 @@ trace_mux:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI5-.LFB26
+	.4byte	.LCFI5-.LFB27
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -575,10 +575,10 @@ trace_mux:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI6-.LFB27
+	.4byte	.LCFI6-.LFB28
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -587,10 +587,10 @@ trace_mux:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x4
-	.4byte	.LCFI7-.LFB12
+	.4byte	.LCFI7-.LFB13
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -599,10 +599,10 @@ trace_mux:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI8-.LFB13
+	.4byte	.LCFI8-.LFB14
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -611,10 +611,10 @@ trace_mux:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI9-.LFB15
+	.4byte	.LCFI9-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -623,10 +623,10 @@ trace_mux:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI10-.LFB16
+	.4byte	.LCFI10-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -635,10 +635,10 @@ trace_mux:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI11-.LFB17
+	.4byte	.LCFI11-.LFB18
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -647,10 +647,10 @@ trace_mux:
 	.4byte	.LEFDE24-.LASFDE24
 .LASFDE24:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI12-.LFB18
+	.4byte	.LCFI12-.LFB19
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -659,10 +659,10 @@ trace_mux:
 	.4byte	.LEFDE26-.LASFDE26
 .LASFDE26:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI13-.LFB19
+	.4byte	.LCFI13-.LFB20
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -671,10 +671,10 @@ trace_mux:
 	.4byte	.LEFDE28-.LASFDE28
 .LASFDE28:
 	.4byte	.Lframe0
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI14-.LFB28
+	.4byte	.LCFI14-.LFB29
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -683,10 +683,10 @@ trace_mux:
 	.4byte	.LEFDE30-.LASFDE30
 .LASFDE30:
 	.4byte	.Lframe0
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI15-.LFB29
+	.4byte	.LCFI15-.LFB30
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -695,10 +695,10 @@ trace_mux:
 	.4byte	.LEFDE32-.LASFDE32
 .LASFDE32:
 	.4byte	.Lframe0
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.byte	0x4
-	.4byte	.LCFI16-.LFB30
+	.4byte	.LCFI16-.LFB31
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -707,10 +707,10 @@ trace_mux:
 	.4byte	.LEFDE34-.LASFDE34
 .LASFDE34:
 	.4byte	.Lframe0
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.byte	0x4
-	.4byte	.LCFI17-.LFB31
+	.4byte	.LCFI17-.LFB32
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -719,10 +719,10 @@ trace_mux:
 	.4byte	.LEFDE36-.LASFDE36
 .LASFDE36:
 	.4byte	.Lframe0
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.byte	0x4
-	.4byte	.LCFI18-.LFB32
+	.4byte	.LCFI18-.LFB33
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -731,10 +731,10 @@ trace_mux:
 	.4byte	.LEFDE38-.LASFDE38
 .LASFDE38:
 	.4byte	.Lframe0
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.byte	0x4
-	.4byte	.LCFI19-.LFB33
+	.4byte	.LCFI19-.LFB34
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -916,33 +916,33 @@ trace_mux:
 	.byte	0x6
 	.byte	0x2a
 	.4byte	0xe1
+	.uleb128 0x4
+	.byte	0x1
+	.byte	0x2
+	.4byte	.LASF26
 	.uleb128 0x8
 	.byte	0x8
 	.byte	0x7
-	.byte	0x81
-	.4byte	0x170
-	.uleb128 0x9
-	.4byte	.LASF26
-	.byte	0x7
-	.byte	0x82
-	.4byte	0xa7
-	.byte	0
+	.byte	0x84
+	.4byte	0x177
 	.uleb128 0x9
 	.4byte	.LASF27
 	.byte	0x7
-	.byte	0x83
+	.byte	0x85
+	.4byte	0xa7
+	.byte	0
+	.uleb128 0x9
+	.4byte	.LASF28
+	.byte	0x7
+	.byte	0x86
 	.4byte	0xa7
 	.byte	0x4
 	.byte	0
 	.uleb128 0x3
-	.4byte	.LASF28
-	.byte	0x7
-	.byte	0x88
-	.4byte	0x14f
-	.uleb128 0x4
-	.byte	0x1
-	.byte	0x2
 	.4byte	.LASF29
+	.byte	0x7
+	.byte	0x8b
+	.4byte	0x156
 	.uleb128 0xc
 	.byte	0x4
 	.4byte	0x37
@@ -979,8 +979,8 @@ trace_mux:
 	.byte	0x1
 	.byte	0x5e
 	.4byte	0xb2
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1ef
@@ -988,15 +988,15 @@ trace_mux:
 	.4byte	.LASF33
 	.byte	0x1
 	.byte	0x5e
-	.4byte	0x17b
+	.4byte	0x14f
 	.4byte	.LLST0
 	.byte	0
 	.uleb128 0x12
 	.4byte	.LASF39
 	.byte	0x1
 	.byte	0xc1
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x238
@@ -1038,8 +1038,8 @@ trace_mux:
 	.byte	0x1
 	.2byte	0x13d
 	.4byte	0x8c
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2fb
@@ -1123,8 +1123,8 @@ trace_mux:
 	.4byte	.LASF40
 	.byte	0x1
 	.byte	0xfb
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x356
@@ -1187,8 +1187,8 @@ trace_mux:
 	.4byte	.LASF42
 	.byte	0x1
 	.byte	0xe1
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3aa
@@ -1234,8 +1234,8 @@ trace_mux:
 	.4byte	.LASF44
 	.byte	0x1
 	.2byte	0x156
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3e3
@@ -1262,8 +1262,8 @@ trace_mux:
 	.byte	0x1
 	.2byte	0x163
 	.4byte	0x8c
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4bf
@@ -1378,8 +1378,8 @@ trace_mux:
 	.byte	0x1
 	.byte	0x38
 	.4byte	0xb2
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x504
@@ -1405,8 +1405,8 @@ trace_mux:
 	.byte	0x1
 	.byte	0x47
 	.4byte	0xb2
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x533
@@ -1422,8 +1422,8 @@ trace_mux:
 	.byte	0x1
 	.byte	0x6a
 	.4byte	0xb2
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x55c
@@ -1442,8 +1442,8 @@ trace_mux:
 	.byte	0x1
 	.byte	0x6f
 	.4byte	0xb2
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x585
@@ -1462,8 +1462,8 @@ trace_mux:
 	.byte	0x1
 	.byte	0x74
 	.4byte	0x2c
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x25
@@ -1471,8 +1471,8 @@ trace_mux:
 	.byte	0x1
 	.byte	0x79
 	.4byte	0xb2
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5db
@@ -1499,8 +1499,8 @@ trace_mux:
 	.4byte	.LASF59
 	.byte	0x1
 	.byte	0x8e
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x625
@@ -1535,8 +1535,8 @@ trace_mux:
 	.byte	0x1
 	.2byte	0x186
 	.4byte	0x8c
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x66a
@@ -1571,8 +1571,8 @@ trace_mux:
 	.4byte	.LASF60
 	.byte	0x1
 	.2byte	0x18b
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x69d
@@ -1599,8 +1599,8 @@ trace_mux:
 	.byte	0x1
 	.2byte	0x190
 	.4byte	0x8c
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x6f4
@@ -1649,8 +1649,8 @@ trace_mux:
 	.byte	0x1
 	.2byte	0x195
 	.4byte	0x8c
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x776
@@ -1721,8 +1721,8 @@ trace_mux:
 	.byte	0x1
 	.2byte	0x19f
 	.4byte	0x8c
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7ca
@@ -1766,8 +1766,8 @@ trace_mux:
 	.byte	0x1
 	.2byte	0x1a6
 	.4byte	0x8c
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x830
@@ -1823,7 +1823,7 @@ trace_mux:
 	.4byte	.LASF66
 	.byte	0x1
 	.byte	0x20
-	.4byte	0x170
+	.4byte	0x177
 	.uleb128 0x5
 	.byte	0x3
 	.4byte	trace_mux
@@ -1833,7 +1833,7 @@ trace_mux:
 	.byte	0x21
 	.4byte	0x84c
 	.uleb128 0x17
-	.4byte	0x17b
+	.4byte	0x14f
 	.uleb128 0x27
 	.4byte	.LASF38
 	.byte	0x1
@@ -1856,7 +1856,7 @@ trace_mux:
 	.uleb128 0x17
 	.4byte	0x2c
 	.uleb128 0x2c
-	.4byte	.LASF27
+	.4byte	.LASF28
 	.byte	0x1
 	.byte	0x2d
 	.4byte	0x2c
@@ -1877,17 +1877,17 @@ trace_mux:
 	.4byte	.LASF72
 	.byte	0x1
 	.byte	0x36
-	.4byte	0x17b
+	.4byte	0x14f
 	.uleb128 0x2d
 	.4byte	.LASF73
 	.4byte	.LASF73
 	.byte	0x7
-	.byte	0xd9
+	.byte	0xdc
 	.uleb128 0x2d
 	.4byte	.LASF74
 	.4byte	.LASF74
 	.byte	0x7
-	.byte	0xd8
+	.byte	0xdb
 	.uleb128 0x2e
 	.4byte	.LASF75
 	.4byte	.LASF75
@@ -2674,7 +2674,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL1
-	.4byte	.LFE14
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2688,7 +2688,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL3
-	.4byte	.LFE20
+	.4byte	.LFE21
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2702,7 +2702,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL11
-	.4byte	.LFE25
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2716,7 +2716,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL10
-	.4byte	.LFE25
+	.4byte	.LFE26
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -2745,7 +2745,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL17
-	.4byte	.LFE22
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2759,7 +2759,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL19
-	.4byte	.LFE21
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2773,7 +2773,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL29
-	.4byte	.LFE27
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2787,7 +2787,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL28
-	.4byte	.LFE27
+	.4byte	.LFE28
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -2798,7 +2798,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL31
-	.4byte	.LFE12
+	.4byte	.LFE13
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2812,7 +2812,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL33
-	.4byte	.LFE13
+	.4byte	.LFE14
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2826,7 +2826,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL37
-	.4byte	.LFE18
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2840,7 +2840,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL41
-	.4byte	.LFE28
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2854,7 +2854,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL46
-	.4byte	.LFE30
+	.4byte	.LFE31
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2868,7 +2868,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL50
-	.4byte	.LFE31
+	.4byte	.LFE32
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2882,7 +2882,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL48
-	.4byte	.LFE31
+	.4byte	.LFE32
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -2893,7 +2893,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL54
-	.4byte	.LFE32
+	.4byte	.LFE33
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2907,7 +2907,7 @@ trace_mux:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL57
-	.4byte	.LFE33
+	.4byte	.LFE34
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2923,26 +2923,24 @@ trace_mux:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.4byte	.LFB21
 	.4byte	.LFE21-.LFB21
 	.4byte	.LFB26
 	.4byte	.LFE26-.LFB26
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.4byte	.LFB27
 	.4byte	.LFE27-.LFB27
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.4byte	.LFB13
 	.4byte	.LFE13-.LFB13
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.4byte	.LFB16
 	.4byte	.LFE16-.LFB16
 	.4byte	.LFB17
@@ -2951,8 +2949,8 @@ trace_mux:
 	.4byte	.LFE18-.LFB18
 	.4byte	.LFB19
 	.4byte	.LFE19-.LFB19
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.4byte	.LFB29
 	.4byte	.LFE29-.LFB29
 	.4byte	.LFB30
@@ -2963,30 +2961,30 @@ trace_mux:
 	.4byte	.LFE32-.LFB32
 	.4byte	.LFB33
 	.4byte	.LFE33-.LFB33
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB14
-	.4byte	.LFE14
-	.4byte	.LFB20
-	.4byte	.LFE20
-	.4byte	.LFB25
-	.4byte	.LFE25
-	.4byte	.LFB22
-	.4byte	.LFE22
+	.4byte	.LFB15
+	.4byte	.LFE15
 	.4byte	.LFB21
 	.4byte	.LFE21
 	.4byte	.LFB26
 	.4byte	.LFE26
+	.4byte	.LFB23
+	.4byte	.LFE23
+	.4byte	.LFB22
+	.4byte	.LFE22
 	.4byte	.LFB27
 	.4byte	.LFE27
-	.4byte	.LFB12
-	.4byte	.LFE12
+	.4byte	.LFB28
+	.4byte	.LFE28
 	.4byte	.LFB13
 	.4byte	.LFE13
-	.4byte	.LFB15
-	.4byte	.LFE15
+	.4byte	.LFB14
+	.4byte	.LFE14
 	.4byte	.LFB16
 	.4byte	.LFE16
 	.4byte	.LFB17
@@ -2995,8 +2993,8 @@ trace_mux:
 	.4byte	.LFE18
 	.4byte	.LFB19
 	.4byte	.LFE19
-	.4byte	.LFB28
-	.4byte	.LFE28
+	.4byte	.LFB20
+	.4byte	.LFE20
 	.4byte	.LFB29
 	.4byte	.LFE29
 	.4byte	.LFB30
@@ -3007,6 +3005,8 @@ trace_mux:
 	.4byte	.LFE32
 	.4byte	.LFB33
 	.4byte	.LFE33
+	.4byte	.LFB34
+	.4byte	.LFE34
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -3108,7 +3108,7 @@ trace_mux:
 	.string	"memmove"
 .LASF3:
 	.string	"unsigned char"
-.LASF26:
+.LASF27:
 	.string	"owner"
 .LASF72:
 	.string	"has_overflowed"
@@ -3120,7 +3120,7 @@ trace_mux:
 	.string	"address"
 .LASF15:
 	.string	"uint32_t"
-.LASF28:
+.LASF29:
 	.string	"portMUX_TYPE"
 .LASF66:
 	.string	"trace_mux"
@@ -3148,7 +3148,7 @@ trace_mux:
 	.string	"__int32_t"
 .LASF1:
 	.string	"short unsigned int"
-.LASF29:
+.LASF26:
 	.string	"_Bool"
 .LASF52:
 	.string	"heap_trace_resume"
@@ -3160,16 +3160,16 @@ trace_mux:
 	.string	"long unsigned int"
 .LASF69:
 	.string	"total_records"
+.LASF84:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\heap"
 .LASF22:
 	.string	"size"
-.LASF27:
+.LASF28:
 	.string	"count"
 .LASF65:
 	.string	"__wrap_heap_caps_realloc"
 .LASF89:
 	.string	"memset"
-.LASF84:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\heap"
 .LASF58:
 	.string	"__wrap_malloc"
 .LASF57:
@@ -3192,4 +3192,4 @@ trace_mux:
 	.string	"tracing"
 .LASF16:
 	.string	"esp_err_t"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

@@ -5496,6 +5496,8 @@ _pad0:
 	.string	"crypto_aead_chacha20poly1305_encrypt"
 .LASF35:
 	.string	"crypto_aead_chacha20poly1305_ietf_decrypt_detached"
+.LASF61:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF18:
 	.string	"mlen"
 .LASF16:
@@ -5554,8 +5556,6 @@ _pad0:
 	.string	"uint8_t"
 .LASF33:
 	.string	"crypto_aead_chacha20poly1305_decrypt"
-.LASF61:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF54:
 	.string	"abort"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

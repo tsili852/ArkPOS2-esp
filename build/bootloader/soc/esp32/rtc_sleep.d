@@ -8,7 +8,7 @@ esp32/rtc_sleep.o: C:/esp/esp-idf/components/soc/esp32/rtc_sleep.c \
  C:/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
  C:/esp/esp-idf/components/esp32/include/esp_attr.h \
  C:/esp/esp-idf/components/esp32/include/esp_dport_access.h \
- c:\esp\arkpos2-esp\build\include\sdkconfig.h \
+ c:\esp\esp32-arkpos2\arkpos2-esp\build\include\sdkconfig.h \
  C:/esp/esp-idf/components/soc/esp32/include/soc/i2s_reg.h \
  C:/esp/esp-idf/components/soc/esp32/include/soc/timer_group_reg.h \
  C:/esp/esp-idf/components/soc/esp32/include/soc/bb_reg.h \
@@ -34,7 +34,7 @@ C:/esp/esp-idf/components/esp32/include/esp_attr.h:
 
 C:/esp/esp-idf/components/esp32/include/esp_dport_access.h:
 
-c:\esp\arkpos2-esp\build\include\sdkconfig.h:
+c:\esp\esp32-arkpos2\arkpos2-esp\build\include\sdkconfig.h:
 
 C:/esp/esp-idf/components/soc/esp32/include/soc/i2s_reg.h:
 

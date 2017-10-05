@@ -42,7 +42,7 @@
 	.global	periph_module_enable
 	.type	periph_module_enable, @function
 periph_module_enable:
-.LFB11:
+.LFB15:
 	.file 1 "C:/esp/esp-idf/components/driver/periph_ctrl.c"
 	.loc 1 25 0
 .LVL0:
@@ -955,7 +955,7 @@ periph_module_enable:
 	call8	vTaskExitCritical
 .LVL108:
 	retw.n
-.LFE11:
+.LFE15:
 	.size	periph_module_enable, .-periph_module_enable
 	.section	.text.periph_module_disable,"ax",@progbits
 	.literal_position
@@ -997,7 +997,7 @@ periph_module_enable:
 	.global	periph_module_disable
 	.type	periph_module_disable, @function
 periph_module_disable:
-.LFB12:
+.LFB16:
 	.loc 1 139 0
 .LVL109:
 	entry	sp, 32
@@ -1908,7 +1908,7 @@ periph_module_disable:
 	call8	vTaskExitCritical
 .LVL217:
 	retw.n
-.LFE12:
+.LFE16:
 	.size	periph_module_disable, .-periph_module_disable
 	.section	.data.periph_spinlock,"aw",@progbits
 	.align	4
@@ -1936,10 +1936,10 @@ periph_spinlock:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI0-.LFB11
+	.4byte	.LCFI0-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1948,10 +1948,10 @@ periph_spinlock:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI1-.LFB12
+	.4byte	.LCFI1-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -2034,33 +2034,33 @@ periph_spinlock:
 	.byte	0x1
 	.byte	0x8
 	.4byte	.LASF12
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x2
+	.4byte	.LASF13
 	.uleb128 0x5
 	.byte	0x8
 	.byte	0x5
-	.byte	0x81
-	.4byte	0xb0
-	.uleb128 0x6
-	.4byte	.LASF13
-	.byte	0x5
-	.byte	0x82
-	.4byte	0x68
-	.byte	0
+	.byte	0x84
+	.4byte	0xb7
 	.uleb128 0x6
 	.4byte	.LASF14
 	.byte	0x5
-	.byte	0x83
+	.byte	0x85
+	.4byte	0x68
+	.byte	0
+	.uleb128 0x6
+	.4byte	.LASF15
+	.byte	0x5
+	.byte	0x86
 	.4byte	0x68
 	.byte	0x4
 	.byte	0
 	.uleb128 0x4
-	.4byte	.LASF15
-	.byte	0x5
-	.byte	0x88
-	.4byte	0x8f
-	.uleb128 0x2
-	.byte	0x1
-	.byte	0x2
 	.4byte	.LASF16
+	.byte	0x5
+	.byte	0x8b
+	.4byte	0x96
 	.uleb128 0x7
 	.byte	0x4
 	.4byte	0x53
@@ -2173,8 +2173,8 @@ periph_spinlock:
 	.4byte	.LASF44
 	.byte	0x1
 	.byte	0x18
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xbac
@@ -3146,8 +3146,8 @@ periph_spinlock:
 	.4byte	.LASF45
 	.byte	0x1
 	.byte	0x8a
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x15bb
@@ -4119,7 +4119,7 @@ periph_spinlock:
 	.4byte	.LASF54
 	.byte	0x1
 	.byte	0x16
-	.4byte	0xb0
+	.4byte	0xb7
 	.uleb128 0x5
 	.byte	0x3
 	.4byte	periph_spinlock
@@ -4127,12 +4127,12 @@ periph_spinlock:
 	.4byte	.LASF47
 	.4byte	.LASF47
 	.byte	0x5
-	.byte	0xd9
+	.byte	0xdc
 	.uleb128 0x16
 	.4byte	.LASF48
 	.4byte	.LASF48
 	.byte	0x5
-	.byte	0xd8
+	.byte	0xdb
 	.byte	0
 	.section	.debug_abbrev,"",@progbits
 .Ldebug_abbrev0:
@@ -4441,7 +4441,7 @@ periph_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL2
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -5287,7 +5287,7 @@ periph_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL111
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6135,18 +6135,18 @@ periph_spinlock:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB12
-	.4byte	.LFE12
+	.4byte	.LFB15
+	.4byte	.LFE15
+	.4byte	.LFB16
+	.4byte	.LFE16
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -6164,7 +6164,7 @@ periph_spinlock:
 	.string	"PERIPH_TIMG1_MODULE"
 .LASF20:
 	.string	"PERIPH_UART2_MODULE"
-.LASF15:
+.LASF16:
 	.string	"portMUX_TYPE"
 .LASF22:
 	.string	"PERIPH_I2C1_MODULE"
@@ -6214,7 +6214,7 @@ periph_spinlock:
 	.string	"vTaskEnterCritical"
 .LASF29:
 	.string	"PERIPH_PWM2_MODULE"
-.LASF13:
+.LASF14:
 	.string	"owner"
 .LASF11:
 	.string	"long unsigned int"
@@ -6225,9 +6225,7 @@ periph_spinlock:
 .LASF17:
 	.string	"PERIPH_LEDC_MODULE"
 .LASF51:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\driver"
-.LASF46:
-	.string	"periph"
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF49:
 	.string	"GNU C99 5.2.0 -mlongcalls -ggdb -Og -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields"
 .LASF28:
@@ -6242,8 +6240,10 @@ periph_spinlock:
 	.string	"PERIPH_SDMMC_MODULE"
 .LASF45:
 	.string	"periph_module_disable"
-.LASF14:
+.LASF15:
 	.string	"count"
+.LASF46:
+	.string	"periph"
 .LASF2:
 	.string	"short int"
 .LASF33:
@@ -6258,8 +6258,8 @@ periph_spinlock:
 	.string	"PERIPH_UHCI1_MODULE"
 .LASF0:
 	.string	"signed char"
-.LASF16:
+.LASF13:
 	.string	"_Bool"
 .LASF40:
 	.string	"PERIPH_SDIO_SLAVE_MODULE"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

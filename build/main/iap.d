@@ -1,4 +1,4 @@
-iap.o: C:/esp/ArkPOS2-esp/main/iap.c \
+iap.o: C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c \
  C:/esp/esp-idf/components/newlib/include/stdlib.h \
  C:/esp/esp-idf/components/newlib/include/machine/ieeefp.h \
  C:/esp/esp-idf/components/newlib/include/_ansi.h \
@@ -27,7 +27,7 @@ iap.o: C:/esp/ArkPOS2-esp/main/iap.c \
  C:/esp/esp-idf/components/newlib/include/sys/sched.h \
  C:/esp/esp-idf/components/newlib/include/sys/stdio.h \
  C:/esp/esp-idf/components/newlib/platform_include/assert.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/newlib/include/assert.h \
  C:/esp/esp-idf/components/spi_flash/include/esp_partition.h \
  C:/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
@@ -37,7 +37,7 @@ iap.o: C:/esp/ArkPOS2-esp/main/iap.c \
  C:/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  C:/esp/esp-idf/components/esp32/include/esp_assert.h \
  C:/esp/esp-idf/components/log/include/esp_log_internal.h \
- C:/esp/ArkPOS2-esp/main/iap.h
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.h
 
 C:/esp/esp-idf/components/newlib/include/stdlib.h:
 
@@ -95,7 +95,7 @@ C:/esp/esp-idf/components/newlib/include/sys/stdio.h:
 
 C:/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/newlib/include/assert.h:
 
@@ -115,5 +115,5 @@ C:/esp/esp-idf/components/esp32/include/esp_assert.h:
 
 C:/esp/esp-idf/components/log/include/esp_log_internal.h:
 
-C:/esp/ArkPOS2-esp/main/iap.h:
-/c/esp/ArkPOS2-esp/main/./iap.c:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.h:
+/c/esp/esp32-ArkPOS2/ArkPOS2-esp/main/./iap.c:

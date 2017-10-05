@@ -6046,4 +6046,4 @@ crypto_core_salsa208_constbytes:
 	.string	"crypto_core_salsa2012_inputbytes"
 .LASF37:
 	.string	"crypto_core_salsa"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

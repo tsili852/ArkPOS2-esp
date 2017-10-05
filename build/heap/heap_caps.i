@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/heap/heap_caps.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\heap//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\heap//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/heap/heap_caps.c"
@@ -540,7 +540,7 @@ char *strsignal (int __signo);
 # 1 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 1
 # 19 "C:/esp/esp-idf/components/newlib/platform_include/assert.h"
        
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 2
 # 1 "C:/esp/esp-idf/components/newlib/include/stdlib.h" 1
 # 10 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
@@ -1535,32 +1535,34 @@ typedef struct {
 # 165 "C:/esp/esp-idf/components/heap/include/multi_heap.h"
 void multi_heap_get_info(multi_heap_handle_t heap, multi_heap_info_t *info);
 # 19 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 2
-# 50 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+# 51 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
 void *heap_caps_malloc(size_t size, uint32_t caps);
-# 62 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+# 63 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
 void heap_caps_free( void *ptr);
-# 81 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+# 82 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
 void *heap_caps_realloc( void *ptr, size_t size, int caps);
-# 98 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+# 99 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
 size_t heap_caps_get_free_size( uint32_t caps );
-# 116 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+# 117 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
 size_t heap_caps_get_minimum_free_size( uint32_t caps );
-# 128 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+# 129 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
 size_t heap_caps_get_largest_free_block( uint32_t caps );
-# 144 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+# 145 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
 void heap_caps_get_info( multi_heap_info_t *info, uint32_t caps );
-# 157 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+# 158 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
 void heap_caps_print_heap_info( uint32_t caps );
-# 174 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
 
-# 174 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 3 4
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 3 4
 _Bool 
-# 174 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
     heap_caps_check_integrity(uint32_t caps, 
-# 174 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 3 4
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 3 4
                                              _Bool 
-# 174 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
                                                   print_errors);
+# 190 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void heap_caps_malloc_extmem_enable(size_t limit);
 # 21 "C:/esp/esp-idf/components/heap/heap_caps.c" 2
 
 # 1 "C:/esp/esp-idf/components/log/include/esp_log.h" 1
@@ -1571,7 +1573,7 @@ _Bool
 # 98 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 3 4
 typedef __gnuc_va_list va_list;
 # 20 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h" 1
 # 21 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h"
@@ -1759,7 +1761,7 @@ void esp_log_buffer_hexdump_internal( const char *tag, const void *buffer, uint1
 # 99 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h"
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h" 1
 # 73 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 74 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h" 2
 # 102 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h"
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h" 1
@@ -2566,7 +2568,124 @@ void esp_crosscore_int_init();
 # 40 "C:/esp/esp-idf/components/esp32/include/esp_crosscore_int.h"
 void esp_crosscore_int_send_yield(int coreId);
 # 83 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
-# 107 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+
+
+
+# 1 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 1
+# 14 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+       
+
+
+
+
+
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 21 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 2
+
+
+
+
+
+
+typedef struct {
+    const char *name;
+    uint32_t caps[3];
+    
+# 30 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 30 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        aliased_iram;
+    
+# 31 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 31 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        startup_stack;
+} soc_memory_type_desc_t;
+
+
+extern const soc_memory_type_desc_t soc_memory_types[];
+extern const size_t soc_memory_type_count;
+
+
+
+typedef struct
+{
+    intptr_t start;
+    size_t size;
+    size_t type;
+    intptr_t iram_address;
+} soc_memory_region_t;
+
+extern const soc_memory_region_t soc_memory_regions[];
+extern const size_t soc_memory_region_count;
+
+
+
+
+typedef struct
+{
+    intptr_t start;
+    intptr_t end;
+} soc_reserved_region_t;
+
+extern const soc_reserved_region_t soc_reserved_regions[];
+extern const size_t soc_reserved_region_count;
+
+inline static 
+# 63 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 63 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_dma_capable(const void *p)
+{
+    return (intptr_t)p >= 0x3FFAE000 && (intptr_t)p < 0x40000000;
+}
+
+inline static 
+# 68 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 68 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_executable(const void *p)
+{
+    intptr_t ip = (intptr_t) p;
+    return (ip >= 0x400D0000 && ip < 0x40400000)
+        || (ip >= 0x40080000 && ip < 0x400A0000)
+        || (ip >= 0x400C0000 && ip < 0x400C2000);
+}
+
+inline static 
+# 76 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 76 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_byte_accessible(const void *p)
+{
+    
+# 78 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 78 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        r;
+    r = ((intptr_t)p >= 0x3FFAE000 && (intptr_t)p < 0x40000000);
+
+
+
+    return r;
+}
+
+inline static 
+# 86 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 86 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_internal(const void *p) {
+    
+# 87 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 87 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        r;
+    r = ((intptr_t)p >= 0x3F400000 && (intptr_t)p < 0x400C2000);
+    r |= ((intptr_t)p >= 0x50000000 && (intptr_t)p < 0x50002000);
+    return r;
+}
+# 87 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
+# 110 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 typedef uint8_t StackType_t;
 typedef int BaseType_t;
 typedef unsigned int UBaseType_t;
@@ -2582,10 +2701,10 @@ typedef unsigned int UBaseType_t;
 
 
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h" 1
-# 122 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
+# 125 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
 
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
-# 124 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 127 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
 
 
 
@@ -2599,24 +2718,24 @@ typedef struct {
 
 
 } portMUX_TYPE;
-# 174 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 177 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vPortAssertIfInISR();
-# 202 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 205 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vPortCPUInitializeMutex(portMUX_TYPE *mux);
-# 216 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 219 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vTaskExitCritical( portMUX_TYPE *mux );
 void vTaskEnterCritical( portMUX_TYPE *mux );
 void vPortCPUAcquireMutex(portMUX_TYPE *mux);
-# 228 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 231 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 
-# 228 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 3 4
+# 231 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 3 4
 _Bool 
-# 228 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 231 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
     vPortCPUAcquireMutexTimeout(portMUX_TYPE *mux, int timeout_cycles);
 void vPortCPUReleaseMutex(portMUX_TYPE *mux);
-# 241 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 244 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 static inline unsigned portENTER_CRITICAL_NESTED() { unsigned state = ({ unsigned __tmp; __asm__ __volatile__( "rsil	%0, " "3" "\n" : "=a" (__tmp) : : "memory" ); __tmp;}); ; return state; }
-# 258 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 273 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 static inline void uxPortCompareSet(volatile uint32_t *addr, uint32_t compare, uint32_t *set) {
     __asm__ __volatile__ (
         "WSR 	    %2,SCOMPARE1 \n"
@@ -2625,20 +2744,20 @@ static inline void uxPortCompareSet(volatile uint32_t *addr, uint32_t compare, u
         :"r"(addr), "r"(compare), "0"(*set)
         );
 }
-# 281 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 296 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vPortYield( void );
 void _frxt_setup_switch( void );
 
 
 
 static inline uint32_t xPortGetCoreID();
-# 307 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 322 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 typedef struct {
 
  volatile StackType_t* coproc_area;
-# 324 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 339 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 } xMPU_SETTINGS;
-# 336 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 351 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void _xt_coproc_release(volatile void * coproc_sa_base);
 # 95 "C:/esp/esp-idf/components/freertos/include/freertos/portable.h" 2
 # 125 "C:/esp/esp-idf/components/freertos/include/freertos/portable.h"
@@ -3774,85 +3893,7 @@ typedef struct xSTATIC_QUEUE
 } StaticQueue_t;
 typedef StaticQueue_t StaticSemaphore_t;
 # 19 "C:/esp/esp-idf/components/heap/heap_private.h" 2
-# 1 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 1
-# 14 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
-       
-# 25 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
-typedef struct {
-    const char *name;
-    uint32_t caps[3];
-    
-# 28 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
-   _Bool 
-# 28 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
-        aliased_iram;
-    
-# 29 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
-   _Bool 
-# 29 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
-        startup_stack;
-} soc_memory_type_desc_t;
 
-
-extern const soc_memory_type_desc_t soc_memory_types[];
-extern const size_t soc_memory_type_count;
-
-
-
-typedef struct
-{
-    intptr_t start;
-    size_t size;
-    size_t type;
-    intptr_t iram_address;
-} soc_memory_region_t;
-
-extern const soc_memory_region_t soc_memory_regions[];
-extern const size_t soc_memory_region_count;
-
-
-
-
-typedef struct
-{
-    intptr_t start;
-    intptr_t end;
-} soc_reserved_region_t;
-
-extern const soc_reserved_region_t soc_reserved_regions[];
-extern const size_t soc_reserved_region_count;
-
-inline static 
-# 61 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
-             _Bool 
-# 61 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
-                  esp_ptr_dma_capable(const void *p)
-{
-    return (intptr_t)p >= 0x3FFAE000 && (intptr_t)p < 0x40000000;
-}
-
-inline static 
-# 66 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
-             _Bool 
-# 66 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
-                  esp_ptr_executable(const void *p)
-{
-    intptr_t ip = (intptr_t) p;
-    return (ip >= 0x400D0000 && ip < 0x40400000)
-        || (ip >= 0x40080000 && ip < 0x400A0000)
-        || (ip >= 0x400C0000 && ip < 0x400C2000);
-}
-
-inline 
-# 74 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
-      _Bool 
-# 74 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
-           esp_ptr_byte_accesible(const void *p)
-{
-
-    return (intptr_t)p >= 0x3FFAE000 && (intptr_t)p < 0x40000000;
-}
-# 20 "C:/esp/esp-idf/components/heap/heap_private.h" 2
 
 # 1 "C:/esp/esp-idf/components/esp32/include/rom/queue.h" 1
 # 22 "C:/esp/esp-idf/components/heap/heap_private.h" 2
@@ -4021,9 +4062,37 @@ __attribute__((section(".iram1"))) void *heap_caps_malloc( size_t size, uint32_t
 
 
 
+static int malloc_alwaysinternal_limit=-1;
+
+void heap_caps_malloc_extmem_enable(size_t limit)
+{
+    malloc_alwaysinternal_limit=limit;
+}
+
+
+
+
 __attribute__((section(".iram1"))) void *heap_caps_malloc_default( size_t size )
 {
-    return heap_caps_malloc( size, (1<<2) | (1<<11) );
+    if (malloc_alwaysinternal_limit==-1) {
+        return heap_caps_malloc( size, (1<<12) | (1<<11));
+    } else {
+        void *r;
+        if (size <= malloc_alwaysinternal_limit) {
+            r=heap_caps_malloc( size, (1<<12) | (1<<11) );
+        } else {
+            r=heap_caps_malloc( size, (1<<12) | (1<<10) );
+        }
+        if (r==
+# 160 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+              ((void *)0)
+# 160 "C:/esp/esp-idf/components/heap/heap_caps.c"
+                  ) {
+
+            r=heap_caps_malloc( size, (1<<12) );
+        }
+        return r;
+    }
 }
 
 
@@ -4032,26 +4101,44 @@ __attribute__((section(".iram1"))) void *heap_caps_malloc_default( size_t size )
 
 __attribute__((section(".iram1"))) void *heap_caps_realloc_default( void *ptr, size_t size )
 {
-    return heap_caps_realloc( ptr, size, (1<<2) | (1<<11) );
+    if (malloc_alwaysinternal_limit==-1) {
+        return heap_caps_realloc( ptr, size, (1<<12) | (1<<11) );
+    } else {
+        void *r;
+        if (size <= malloc_alwaysinternal_limit) {
+            r=heap_caps_realloc( ptr, size, (1<<12) | (1<<11) );
+        } else {
+            r=heap_caps_realloc( ptr, size, (1<<12) | (1<<10) );
+        }
+        if (r==
+# 183 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+              ((void *)0) 
+# 183 "C:/esp/esp-idf/components/heap/heap_caps.c"
+                   && size>0) {
+
+            r=heap_caps_realloc( ptr, size, (1<<12) );
+        }
+        return r;
+    }
 }
-# 160 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 198 "C:/esp/esp-idf/components/heap/heap_caps.c"
 __attribute__((section(".iram1"))) static heap_t *find_containing_heap(void *ptr )
 {
     intptr_t p = (intptr_t)ptr;
     heap_t *heap;
     for ((heap) = (((&registered_heaps))->slh_first); (heap); (heap) = (((heap))->next.sle_next)) {
         if (heap->heap != 
-# 165 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 203 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
                          ((void *)0) 
-# 165 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 203 "C:/esp/esp-idf/components/heap/heap_caps.c"
                               && p >= heap->start && p < heap->end) {
             return heap;
         }
     }
     return 
-# 169 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 207 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
           ((void *)0)
-# 169 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 207 "C:/esp/esp-idf/components/heap/heap_caps.c"
               ;
 }
 
@@ -4060,9 +4147,9 @@ __attribute__((section(".iram1"))) void heap_caps_free( void *ptr)
     intptr_t p = (intptr_t)ptr;
 
     if (ptr == 
-# 176 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 214 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
               ((void *)0)
-# 176 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 214 "C:/esp/esp-idf/components/heap/heap_caps.c"
                   ) {
         return;
     }
@@ -4077,19 +4164,19 @@ __attribute__((section(".iram1"))) void heap_caps_free( void *ptr)
 
     heap_t *heap = find_containing_heap(ptr);
     ((heap != 
-# 189 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 227 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
    ((void *)0) 
-# 189 "C:/esp/esp-idf/components/heap/heap_caps.c"
-   && "free() target pointer is outside heap areas") ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/heap_caps.c", 189, __func__, "heap != NULL && \"free() target pointer is outside heap areas\""));
+# 227 "C:/esp/esp-idf/components/heap/heap_caps.c"
+   && "free() target pointer is outside heap areas") ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/heap_caps.c", 227, __func__, "heap != NULL && \"free() target pointer is outside heap areas\""));
     multi_heap_free(heap->heap, ptr);
 }
 
 __attribute__((section(".iram1"))) void *heap_caps_realloc( void *ptr, size_t size, int caps)
 {
     if (ptr == 
-# 195 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 233 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
               ((void *)0)
-# 195 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 233 "C:/esp/esp-idf/components/heap/heap_caps.c"
                   ) {
         return heap_caps_malloc(size, caps);
     }
@@ -4097,26 +4184,26 @@ __attribute__((section(".iram1"))) void *heap_caps_realloc( void *ptr, size_t si
     if (size == 0) {
         heap_caps_free(ptr);
         return 
-# 201 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 239 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
               ((void *)0)
-# 201 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 239 "C:/esp/esp-idf/components/heap/heap_caps.c"
                   ;
     }
 
     heap_t *heap = find_containing_heap(ptr);
 
     ((heap != 
-# 206 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 244 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
    ((void *)0) 
-# 206 "C:/esp/esp-idf/components/heap/heap_caps.c"
-   && "realloc() pointer is outside heap areas") ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/heap_caps.c", 206, __func__, "heap != NULL && \"realloc() pointer is outside heap areas\""));
+# 244 "C:/esp/esp-idf/components/heap/heap_caps.c"
+   && "realloc() pointer is outside heap areas") ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/heap_caps.c", 244, __func__, "heap != NULL && \"realloc() pointer is outside heap areas\""));
 
 
 
     
-# 210 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 248 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
    _Bool 
-# 210 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 248 "C:/esp/esp-idf/components/heap/heap_caps.c"
         compatible_caps = (caps & get_all_caps(heap)) == caps;
 
     if (compatible_caps) {
@@ -4124,9 +4211,9 @@ __attribute__((section(".iram1"))) void *heap_caps_realloc( void *ptr, size_t si
 
         void *r = multi_heap_realloc(heap->heap, ptr, size);
         if (r != 
-# 216 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 254 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
                 ((void *)0)
-# 216 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 254 "C:/esp/esp-idf/components/heap/heap_caps.c"
                     ) {
             return r;
         }
@@ -4136,20 +4223,20 @@ __attribute__((section(".iram1"))) void *heap_caps_realloc( void *ptr, size_t si
 
     void *new_p = heap_caps_malloc(size, caps);
     if (new_p != 
-# 224 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 262 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
                 ((void *)0)
-# 224 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 262 "C:/esp/esp-idf/components/heap/heap_caps.c"
                     ) {
         size_t old_size = multi_heap_get_allocated_size(heap->heap, ptr);
-        ((old_size > 0) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/heap_caps.c", 226, __func__, "old_size > 0"));
+        ((old_size > 0) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/heap_caps.c", 264, __func__, "old_size > 0"));
         memcpy(new_p, ptr, old_size);
         heap_caps_free(ptr);
         return new_p;
     }
     return 
-# 231 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 269 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
           ((void *)0)
-# 231 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 269 "C:/esp/esp-idf/components/heap/heap_caps.c"
               ;
 }
 
@@ -4229,37 +4316,37 @@ void heap_caps_print_heap_info( uint32_t caps )
 }
 
 
-# 309 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 347 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
 _Bool 
-# 309 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 347 "C:/esp/esp-idf/components/heap/heap_caps.c"
     heap_caps_check_integrity(uint32_t caps, 
-# 309 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 347 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
                                              _Bool 
-# 309 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 347 "C:/esp/esp-idf/components/heap/heap_caps.c"
                                                   print_errors)
 {
     
-# 311 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 349 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
    _Bool 
-# 311 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 349 "C:/esp/esp-idf/components/heap/heap_caps.c"
         all_heaps = caps & (1<<31);
     
-# 312 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 350 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
    _Bool 
-# 312 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 350 "C:/esp/esp-idf/components/heap/heap_caps.c"
         valid = 
-# 312 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 350 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
                 1
-# 312 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 350 "C:/esp/esp-idf/components/heap/heap_caps.c"
                     ;
 
     heap_t *heap;
     for ((heap) = (((&registered_heaps))->slh_first); (heap); (heap) = (((heap))->next.sle_next)) {
         if (heap->heap != 
-# 316 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
+# 354 "C:/esp/esp-idf/components/heap/heap_caps.c" 3 4
                          ((void *)0)
             
-# 317 "C:/esp/esp-idf/components/heap/heap_caps.c"
+# 355 "C:/esp/esp-idf/components/heap/heap_caps.c"
            && (all_heaps || (get_all_caps(heap) & caps) == caps)) {
             valid = multi_heap_check(heap->heap, print_errors) && valid;
         }

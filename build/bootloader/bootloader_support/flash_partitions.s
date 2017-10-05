@@ -1155,14 +1155,16 @@ esp_partition_table_basic_verify:
 	.string	"esp_err_t"
 .LASF6:
 	.string	"__int32_t"
+.LASF53:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\bootloader_support"
 .LASF11:
 	.string	"uint8_t"
 .LASF45:
 	.string	"num_partitions"
 .LASF4:
 	.string	"__uint16_t"
-.LASF53:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\bootloader_support"
+.LASF37:
+	.string	"chip_size"
 .LASF28:
 	.string	"esp_partition_info_t"
 .LASF49:
@@ -1175,8 +1177,6 @@ esp_partition_table_basic_verify:
 	.string	"size"
 .LASF55:
 	.string	"g_rom_flashchip"
-.LASF37:
-	.string	"chip_size"
 .LASF17:
 	.string	"long unsigned int"
 .LASF5:
@@ -1255,4 +1255,4 @@ esp_partition_table_basic_verify:
 	.string	"ESP_LOG_VERBOSE"
 .LASF40:
 	.string	"page_size"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

@@ -5909,8 +5909,6 @@ ram_obfs_value:
 	.string	"TG0WDT_SYS_RESET"
 .LASF3:
 	.string	"size_t"
-.LASF160:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\bootloader_support"
 .LASF55:
 	.string	"offset"
 .LASF127:
@@ -6007,6 +6005,8 @@ ram_obfs_value:
 	.string	"data_len"
 .LASF146:
 	.string	"ram_obfs_value"
+.LASF160:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\bootloader_support"
 .LASF134:
 	.string	"is_mapping"
 .LASF6:
@@ -6131,4 +6131,4 @@ ram_obfs_value:
 	.string	"ESP_LOG_ERROR"
 .LASF75:
 	.string	"segment_count"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

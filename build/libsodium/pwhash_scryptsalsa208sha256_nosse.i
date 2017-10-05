@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/nosse/pwhash_scryptsalsa208sha256_nosse.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\libsodium//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\libsodium//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/libsodium/libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/nosse/pwhash_scryptsalsa208sha256_nosse.c"
@@ -1140,7 +1140,7 @@ typedef struct {
 # 29 "C:/esp/esp-idf/components/mbedtls/include/mbedtls/sha256.h"
 # 1 "C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h" 1
 # 30 "C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 31 "C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h" 2
 # 2665 "C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h"
 # 1 "C:/esp/esp-idf/components/mbedtls/include/mbedtls/check_config.h" 1

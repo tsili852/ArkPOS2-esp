@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/bootloader_support/src/efuse.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\bootloader\\bootloader_support//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\bootloader\\bootloader_support//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/bootloader_support/src/efuse.c"
@@ -190,7 +190,7 @@ typedef __builtin_va_list __gnuc_va_list;
 # 98 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 3 4
 typedef __gnuc_va_list va_list;
 # 20 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
-# 1 "c:\\esp\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
+# 1 "c:\\esp\\esp32-arkpos2\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h" 1
 # 19 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h"

@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\bootloader\\main//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\bootloader\\main//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c"
@@ -647,7 +647,7 @@ typedef __builtin_va_list __gnuc_va_list;
 # 98 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 3 4
 typedef __gnuc_va_list va_list;
 # 20 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
-# 1 "c:\\esp\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
+# 1 "c:\\esp\\esp32-arkpos2\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h" 1
 # 19 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h"
@@ -840,7 +840,7 @@ void esp_log_buffer_hexdump_internal( const char *tag, const void *buffer, uint1
 # 20 "C:/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h"
 # 1 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h" 1
 # 15 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h"
-# 1 "c:\\esp\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
+# 1 "c:\\esp\\esp32-arkpos2\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
 # 16 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h" 2
 # 24 "C:/esp/esp-idf/components/esp32/include/esp_dport_access.h"
 void esp_dport_access_stall_other_cpu_start(void);
@@ -1747,7 +1747,7 @@ static inline void __attribute__ ((deprecated)) PIN_PULLDWN_EN(uint32_t PIN_NAME
 # 1 "C:/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h" 1
 # 42 "C:/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c" 2
 
-# 1 "c:\\esp\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
+# 1 "c:\\esp\\esp32-arkpos2\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
 # 44 "C:/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c" 2
 # 1 "C:/esp/esp-idf/components/bootloader_support/include/esp_image_format.h" 1
 # 14 "C:/esp/esp-idf/components/bootloader_support/include/esp_image_format.h"
@@ -1886,6 +1886,70 @@ typedef unsigned long timer_t;
 
 typedef unsigned long useconds_t;
 typedef long suseconds_t;
+# 299 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\sched.h" 1 3
+# 46 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\sched.h" 3
+struct sched_param {
+  int sched_priority;
+# 59 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\sched.h" 3
+};
+
+
+
+
+
+int sched_yield( void );
+# 300 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 2 3
+# 308 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+typedef __uint32_t pthread_t;
+# 341 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+typedef struct {
+  int is_initialized;
+  void *stackaddr;
+  int stacksize;
+  int contentionscope;
+  int inheritsched;
+  int schedpolicy;
+  struct sched_param schedparam;
+# 357 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+  int detachstate;
+
+
+
+
+
+} pthread_attr_t;
+# 442 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+typedef __uint32_t pthread_mutex_t;
+
+typedef struct {
+  int is_initialized;
+# 454 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+  int type;
+
+  int recursive;
+} pthread_mutexattr_t;
+
+
+
+
+typedef __uint32_t pthread_cond_t;
+
+typedef struct {
+  int is_initialized;
+
+
+
+} pthread_condattr_t;
+
+
+
+typedef __uint32_t pthread_key_t;
+
+typedef struct {
+  int is_initialized;
+  int init_executed;
+} pthread_once_t;
 # 49 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\stdio.h" 2 3
 
 
@@ -2458,7 +2522,7 @@ typedef struct {
 # 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
 # 21 "C:/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h" 2
 
-# 1 "c:\\esp\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
+# 1 "c:\\esp\\esp32-arkpos2\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
 # 23 "C:/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h" 2
 # 45 "C:/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h"
 void spi_flash_init();
@@ -3142,14 +3206,14 @@ void bootloader_main()
     clock_configure();
     uart_console_configure();
     wdt_reset_check();
-    if (((esp_log_level_t) 3) >= ESP_LOG_INFO) { ets_printf("\033[0;" "32" "m" "I" " (%d) %s: " "ESP-IDF %s 2nd stage bootloader" "\033[0m" "\n", esp_log_timestamp(), TAG, "v3.0-dev-753-g845c3fba"); };
+    if (((esp_log_level_t) 3) >= ESP_LOG_INFO) { ets_printf("\033[0;" "32" "m" "I" " (%d) %s: " "ESP-IDF %s 2nd stage bootloader" "\033[0m" "\n", esp_log_timestamp(), TAG, "v3.0-dev-782-ge6afe28b"); };
 
 
 
     esp_image_header_t fhdr;
     bootloader_state_t bs = { 0 };
 
-    if (((esp_log_level_t) 3) >= ESP_LOG_INFO) { ets_printf("\033[0;" "32" "m" "I" " (%d) %s: " "compile time " "19:56:54" "\033[0m" "\n", esp_log_timestamp(), TAG); };
+    if (((esp_log_level_t) 3) >= ESP_LOG_INFO) { ets_printf("\033[0;" "32" "m" "I" " (%d) %s: " "compile time " "09:22:25" "\033[0m" "\n", esp_log_timestamp(), TAG); };
     ets_set_appcpu_boot_addr(0);
 
 

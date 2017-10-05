@@ -1828,8 +1828,6 @@ net80211_printf:
 	.string	"phy_printf"
 .LASF28:
 	.string	"wpa2_printf"
-.LASF39:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF37:
 	.string	"GNU C99 5.2.0 -mlongcalls -ggdb -Og -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields"
 .LASF35:
@@ -1868,6 +1866,8 @@ net80211_printf:
 	.string	"wpa_printf"
 .LASF8:
 	.string	"__va_reg"
+.LASF39:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF41:
 	.string	"lib_printf"
 .LASF36:
@@ -1902,4 +1902,4 @@ net80211_printf:
 	.string	"ESP_LOG_VERBOSE"
 .LASF30:
 	.string	"pp_printf"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

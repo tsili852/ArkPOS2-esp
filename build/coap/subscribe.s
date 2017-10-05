@@ -11,13 +11,13 @@
 	.section	.text.coap_subscription_init,"ax",@progbits
 	.literal_position
 	.literal .LC1, .LC0
-	.literal .LC2, __func__$6334
+	.literal .LC2, __func__$6438
 	.literal .LC4, .LC3
 	.align	4
 	.global	coap_subscription_init
 	.type	coap_subscription_init, @function
 coap_subscription_init:
-.LFB34:
+.LFB38:
 	.file 1 "C:/esp/esp-idf/components/coap/libcoap/src/subscribe.c"
 	.loc 1 20 0
 .LVL0:
@@ -40,13 +40,13 @@ coap_subscription_init:
 	call8	memset
 .LVL2:
 	retw.n
-.LFE34:
+.LFE38:
 	.size	coap_subscription_init, .-coap_subscription_init
-	.section	.rodata.__func__$6334,"a",@progbits
+	.section	.rodata.__func__$6438,"a",@progbits
 	.align	4
-	.type	__func__$6334, @object
-	.size	__func__$6334, 23
-__func__$6334:
+	.type	__func__$6438, @object
+	.size	__func__$6438, 23
+__func__$6438:
 	.string	"coap_subscription_init"
 	.section	.debug_frame,"",@progbits
 .Lframe0:
@@ -67,10 +67,10 @@ __func__$6334:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.byte	0x4
-	.4byte	.LCFI0-.LFB34
+	.4byte	.LCFI0-.LFB38
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -639,8 +639,8 @@ __func__$6334:
 	.4byte	.LASF75
 	.byte	0x1
 	.byte	0x14
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4c3
@@ -656,7 +656,7 @@ __func__$6334:
 	.4byte	0x4d3
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6334
+	.4byte	__func__$6438
 	.uleb128 0x13
 	.4byte	.LVL1
 	.4byte	0x4e8
@@ -677,7 +677,7 @@ __func__$6334:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6334
+	.4byte	__func__$6438
 	.uleb128 0x14
 	.uleb128 0x1
 	.byte	0x5d
@@ -1072,14 +1072,14 @@ __func__$6334:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB34
-	.4byte	.LFE34
+	.4byte	.LFB38
+	.4byte	.LFE38
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -1089,8 +1089,6 @@ __func__$6334:
 	.string	"non_cnt"
 .LASF71:
 	.string	"token"
-.LASF57:
-	.string	"addr"
 .LASF49:
 	.string	"ss_family"
 .LASF51:
@@ -1137,14 +1135,16 @@ __func__$6334:
 	.string	"conn"
 .LASF39:
 	.string	"sin6_port"
+.LASF74:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\coap"
 .LASF9:
 	.string	"long long int"
 .LASF79:
 	.string	"memset"
 .LASF11:
 	.string	"long int"
-.LASF74:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\coap"
+.LASF57:
+	.string	"addr"
 .LASF4:
 	.string	"__uint8_t"
 .LASF54:
@@ -1245,4 +1245,4 @@ __func__$6334:
 	.string	"sockaddr_in"
 .LASF61:
 	.string	"ifindex"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

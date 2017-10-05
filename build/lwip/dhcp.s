@@ -5,7 +5,7 @@
 	.align	4
 	.type	dhcp_set_state, @function
 dhcp_set_state:
-.LFB36:
+.LFB40:
 	.file 1 "C:/esp/esp-idf/components/lwip/core/ipv4/dhcp.c"
 	.loc 1 1475 0
 .LVL0:
@@ -26,7 +26,7 @@ dhcp_set_state:
 .LVL2:
 .L1:
 	retw.n
-.LFE36:
+.LFE40:
 	.size	dhcp_set_state, .-dhcp_set_state
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -38,12 +38,12 @@ dhcp_set_state:
 	.section	.text.dhcp_option_short,"ax",@progbits
 	.literal_position
 	.literal .LC1, .LC0
-	.literal .LC2, __func__$6256
+	.literal .LC2, __func__$6360
 	.literal .LC4, .LC3
 	.align	4
 	.type	dhcp_option_short, @function
 dhcp_option_short:
-.LFB39:
+.LFB43:
 	.loc 1 1508 0
 .LVL3:
 	entry	sp, 32
@@ -76,7 +76,7 @@ dhcp_option_short:
 	add.n	a8, a9, a8
 	s8i	a3, a8, 240
 	retw.n
-.LFE39:
+.LFE43:
 	.size	dhcp_option_short, .-dhcp_option_short
 	.section	.rodata.str1.4
 	.align	4
@@ -85,12 +85,12 @@ dhcp_option_short:
 	.section	.text.dhcp_option,"ax",@progbits
 	.literal_position
 	.literal .LC6, .LC5
-	.literal .LC7, __func__$6246
+	.literal .LC7, __func__$6350
 	.literal .LC8, .LC3
 	.align	4
 	.type	dhcp_option, @function
 dhcp_option:
-.LFB37:
+.LFB41:
 	.loc 1 1490 0
 .LVL5:
 	entry	sp, 32
@@ -126,7 +126,7 @@ dhcp_option:
 	add.n	a8, a3, a8
 	s8i	a4, a8, 240
 	retw.n
-.LFE37:
+.LFE41:
 	.size	dhcp_option, .-dhcp_option
 	.section	.rodata.str1.4
 	.align	4
@@ -135,12 +135,12 @@ dhcp_option:
 	.section	.text.dhcp_option_byte,"ax",@progbits
 	.literal_position
 	.literal .LC10, .LC9
-	.literal .LC11, __func__$6251
+	.literal .LC11, __func__$6355
 	.literal .LC12, .LC3
 	.align	4
 	.type	dhcp_option_byte, @function
 dhcp_option_byte:
-.LFB38:
+.LFB42:
 	.loc 1 1501 0
 .LVL10:
 	entry	sp, 32
@@ -164,7 +164,7 @@ dhcp_option_byte:
 	add.n	a8, a9, a8
 	s8i	a3, a8, 240
 	retw.n
-.LFE38:
+.LFE42:
 	.size	dhcp_option_byte, .-dhcp_option_byte
 	.section	.rodata.str1.4
 	.align	4
@@ -180,13 +180,13 @@ dhcp_option_byte:
 	.literal_position
 	.literal .LC14, .LC13
 	.literal .LC16, .LC15
-	.literal .LC17, __func__$6379
+	.literal .LC17, __func__$6483
 	.literal .LC18, .LC3
 	.literal .LC20, .LC19
 	.align	4
 	.type	dhcp_option_trailer, @function
 dhcp_option_trailer:
-.LFB46:
+.LFB50:
 	.loc 1 2002 0
 .LVL12:
 	entry	sp, 32
@@ -254,7 +254,7 @@ dhcp_option_trailer:
 	bgeu	a9, a8, .L16
 .L9:
 	retw.n
-.LFE46:
+.LFE50:
 	.size	dhcp_option_trailer, .-dhcp_option_trailer
 	.section	.rodata.str1.4
 	.align	4
@@ -263,14 +263,14 @@ dhcp_option_trailer:
 	.section	.text.dhcp_option_long,"ax",@progbits
 	.literal_position
 	.literal .LC22, .LC21
-	.literal .LC23, __func__$6261
+	.literal .LC23, __func__$6365
 	.literal .LC24, .LC3
 	.literal .LC25, 16711680
 	.literal .LC26, 65280
 	.align	4
 	.type	dhcp_option_long, @function
 dhcp_option_long:
-.LFB40:
+.LFB44:
 	.loc 1 1516 0 is_stmt 1
 .LVL16:
 	entry	sp, 32
@@ -323,7 +323,7 @@ dhcp_option_long:
 	add.n	a8, a9, a8
 	s8i	a3, a8, 240
 	retw.n
-.LFE40:
+.LFE44:
 	.size	dhcp_option_long, .-dhcp_option_long
 	.section	.rodata.str1.4
 	.align	4
@@ -346,15 +346,15 @@ dhcp_option_long:
 	.literal .LC28, .LC27
 	.literal .LC30, .LC29
 	.literal .LC32, .LC31
-	.literal .LC33, __func__$6357
+	.literal .LC33, __func__$6461
 	.literal .LC34, .LC3
 	.literal .LC36, .LC35
 	.literal .LC38, .LC37
-	.literal .LC39, xid$6356
+	.literal .LC39, xid$6460
 	.align	4
 	.type	dhcp_create_msg, @function
 dhcp_create_msg:
-.LFB44:
+.LFB48:
 	.loc 1 1884 0
 .LVL18:
 	entry	sp, 32
@@ -664,7 +664,7 @@ dhcp_create_msg:
 .LVL52:
 	.loc 1 1972 0
 	retw.n
-.LFE44:
+.LFE48:
 	.size	dhcp_create_msg, .-dhcp_create_msg
 	.section	.rodata.str1.4
 	.align	4
@@ -673,12 +673,12 @@ dhcp_create_msg:
 	.section	.text.dhcp_option_hostname,"ax",@progbits
 	.literal_position
 	.literal .LC41, .LC40
-	.literal .LC42, __func__$6270
+	.literal .LC42, __func__$6374
 	.literal .LC43, .LC3
 	.align	4
 	.type	dhcp_option_hostname, @function
 dhcp_option_hostname:
-.LFB41:
+.LFB45:
 	.loc 1 1527 0
 .LVL53:
 	entry	sp, 32
@@ -751,7 +751,7 @@ dhcp_option_hostname:
 	retw.n
 .LBE3:
 .LBE2:
-.LFE41:
+.LFE45:
 	.size	dhcp_option_hostname, .-dhcp_option_hostname
 	.section	.rodata.str1.4
 	.align	4
@@ -767,13 +767,13 @@ dhcp_option_hostname:
 	.literal_position
 	.literal .LC45, .LC44
 	.literal .LC47, .LC46
-	.literal .LC48, __func__$6375
+	.literal .LC48, __func__$6479
 	.literal .LC49, .LC3
 	.literal .LC51, .LC50
 	.align	4
 	.type	dhcp_delete_msg, @function
 dhcp_delete_msg:
-.LFB45:
+.LFB49:
 	.loc 1 1981 0
 .LVL70:
 	entry	sp, 32
@@ -820,7 +820,7 @@ dhcp_delete_msg:
 	.loc 1 1989 0
 	s32i.n	a8, a2, 16
 	retw.n
-.LFE45:
+.LFE49:
 	.size	dhcp_delete_msg, .-dhcp_delete_msg
 	.section	.text.dhcp_discover,"ax",@progbits
 	.literal_position
@@ -833,7 +833,7 @@ dhcp_delete_msg:
 	.align	4
 	.type	dhcp_discover, @function
 dhcp_discover:
-.LFB29:
+.LFB33:
 	.loc 1 1012 0
 .LVL75:
 	entry	sp, 32
@@ -967,7 +967,7 @@ dhcp_discover:
 	s16i	a3, a4, 22
 	.loc 1 1069 0 discriminator 4
 	retw.n
-.LFE29:
+.LFE33:
 	.size	dhcp_discover, .-dhcp_discover
 	.section	.text.dhcp_rebind,"ax",@progbits
 	.literal_position
@@ -978,7 +978,7 @@ dhcp_discover:
 	.align	4
 	.type	dhcp_rebind, @function
 dhcp_rebind:
-.LFB32:
+.LFB36:
 	.loc 1 1285 0
 .LVL97:
 	entry	sp, 32
@@ -1081,13 +1081,13 @@ dhcp_rebind:
 	s16i	a8, a3, 22
 	.loc 1 1320 0 discriminator 4
 	retw.n
-.LFE32:
+.LFE36:
 	.size	dhcp_rebind, .-dhcp_rebind
 	.section	.text.dhcp_t2_timeout,"ax",@progbits
 	.align	4
 	.type	dhcp_t2_timeout, @function
 dhcp_t2_timeout:
-.LFB19:
+.LFB23:
 	.loc 1 586 0
 .LVL112:
 	entry	sp, 32
@@ -1131,7 +1131,7 @@ dhcp_t2_timeout:
 .LVL118:
 .L65:
 	retw.n
-.LFE19:
+.LFE23:
 	.size	dhcp_t2_timeout, .-dhcp_t2_timeout
 	.section	.text.dhcp_select,"ax",@progbits
 	.literal_position
@@ -1144,7 +1144,7 @@ dhcp_t2_timeout:
 	.align	4
 	.type	dhcp_select, @function
 dhcp_select:
-.LFB14:
+.LFB18:
 	.loc 1 360 0
 .LVL119:
 	entry	sp, 32
@@ -1302,7 +1302,7 @@ dhcp_select:
 	s16i	a3, a4, 22
 	.loc 1 409 0 discriminator 4
 	retw.n
-.LFE14:
+.LFE18:
 	.size	dhcp_select, .-dhcp_select
 	.section	.text.dhcp_handle_offer,"ax",@progbits
 	.literal_position
@@ -1311,7 +1311,7 @@ dhcp_select:
 	.align	4
 	.type	dhcp_handle_offer, @function
 dhcp_handle_offer:
-.LFB13:
+.LFB17:
 	.loc 1 329 0
 .LVL146:
 	entry	sp, 32
@@ -1356,7 +1356,7 @@ dhcp_handle_offer:
 .LVL149:
 .L75:
 	retw.n
-.LFE13:
+.LFE17:
 	.size	dhcp_handle_offer, .-dhcp_handle_offer
 	.section	.text.dhcp_reboot,"ax",@progbits
 	.literal_position
@@ -1367,7 +1367,7 @@ dhcp_handle_offer:
 	.align	4
 	.type	dhcp_reboot, @function
 dhcp_reboot:
-.LFB33:
+.LFB37:
 	.loc 1 1329 0
 .LVL150:
 	entry	sp, 32
@@ -1481,7 +1481,7 @@ dhcp_reboot:
 	s16i	a8, a3, 22
 	.loc 1 1363 0 discriminator 4
 	retw.n
-.LFE33:
+.LFE37:
 	.size	dhcp_reboot, .-dhcp_reboot
 	.section	.text.dhcp_decline,"ax",@progbits
 	.literal_position
@@ -1491,7 +1491,7 @@ dhcp_reboot:
 	.align	4
 	.type	dhcp_decline, @function
 dhcp_decline:
-.LFB28:
+.LFB32:
 	.loc 1 970 0
 .LVL169:
 	entry	sp, 32
@@ -1572,13 +1572,13 @@ dhcp_decline:
 	.loc 1 1001 0
 	mov.n	a2, a4
 	retw.n
-.LFE28:
+.LFE32:
 	.size	dhcp_decline, .-dhcp_decline
 	.section	.text.dhcp_check,"ax",@progbits
 	.align	4
 	.type	dhcp_check, @function
 dhcp_check:
-.LFB12:
+.LFB16:
 	.loc 1 300 0
 .LVL184:
 	entry	sp, 32
@@ -1611,7 +1611,7 @@ dhcp_check:
 	movi.n	a2, 1
 	s16i	a2, a3, 22
 	retw.n
-.LFE12:
+.LFE16:
 	.size	dhcp_check, .-dhcp_check
 	.section	.rodata.str1.4
 	.align	4
@@ -1630,7 +1630,7 @@ dhcp_check:
 	.align	4
 	.type	dhcp_bind, @function
 dhcp_bind:
-.LFB30:
+.LFB34:
 	.loc 1 1079 0
 .LVL190:
 	entry	sp, 48
@@ -1790,7 +1790,7 @@ dhcp_bind:
 .LVL208:
 .L88:
 	retw.n
-.LFE30:
+.LFE34:
 	.size	dhcp_bind, .-dhcp_bind
 	.section	.text.dhcp_handle_nak,"ax",@progbits
 	.literal_position
@@ -1798,7 +1798,7 @@ dhcp_bind:
 	.align	4
 	.type	dhcp_handle_nak, @function
 dhcp_handle_nak:
-.LFB11:
+.LFB15:
 	.loc 1 267 0
 .LVL209:
 	entry	sp, 32
@@ -1831,7 +1831,7 @@ dhcp_handle_nak:
 	call8	dhcp_discover
 .LVL214:
 	retw.n
-.LFE11:
+.LFE15:
 	.size	dhcp_handle_nak, .-dhcp_handle_nak
 	.section	.rodata.str1.4
 	.align	4
@@ -1841,13 +1841,13 @@ dhcp_handle_nak:
 	.literal_position
 	.literal .LC85, dhcp_pcb_refcount
 	.literal .LC87, .LC86
-	.literal .LC88, __func__$6004
+	.literal .LC88, __func__$6108
 	.literal .LC89, .LC3
 	.literal .LC90, dhcp_pcb
 	.align	4
 	.type	dhcp_dec_pcb_refcount, @function
 dhcp_dec_pcb_refcount:
-.LFB10:
+.LFB14:
 	.loc 1 243 0
 	entry	sp, 32
 .LCFI19:
@@ -1880,7 +1880,7 @@ dhcp_dec_pcb_refcount:
 	s32i.n	a8, a2, 0
 .L107:
 	retw.n
-.LFE10:
+.LFE14:
 	.size	dhcp_dec_pcb_refcount, .-dhcp_dec_pcb_refcount
 	.section	.rodata.str1.4
 	.align	4
@@ -1891,14 +1891,14 @@ dhcp_dec_pcb_refcount:
 	.literal .LC91, dhcp_pcb_refcount
 	.literal .LC92, dhcp_pcb
 	.literal .LC94, .LC93
-	.literal .LC95, __func__$6000
+	.literal .LC95, __func__$6104
 	.literal .LC96, .LC3
 	.literal .LC97, ip_addr_any
 	.literal .LC98, dhcp_recv
 	.align	4
 	.type	dhcp_inc_pcb_refcount, @function
 dhcp_inc_pcb_refcount:
-.LFB9:
+.LFB13:
 	.loc 1 216 0
 	entry	sp, 32
 .LCFI20:
@@ -1963,7 +1963,7 @@ dhcp_inc_pcb_refcount:
 	movi	a2, 0xff
 	.loc 1 238 0
 	retw.n
-.LFE9:
+.LFE13:
 	.size	dhcp_inc_pcb_refcount, .-dhcp_inc_pcb_refcount
 	.section	.rodata.str1.4
 	.align	4
@@ -1992,7 +1992,7 @@ dhcp_inc_pcb_refcount:
 	.literal .LC104, .LC103
 	.literal .LC106, .LC105
 	.literal .LC108, .LC107
-	.literal .LC109, __func__$6311
+	.literal .LC109, __func__$6415
 	.literal .LC110, .LC3
 	.literal .LC111, dhcp_rx_options_val
 	.literal .LC113, .LC112
@@ -2000,7 +2000,7 @@ dhcp_inc_pcb_refcount:
 	.align	4
 	.type	dhcp_parse_reply, @function
 dhcp_parse_reply:
-.LFB42:
+.LFB46:
 	.loc 1 1559 0
 .LVL222:
 	entry	sp, 64
@@ -2614,7 +2614,7 @@ dhcp_parse_reply:
 	movi	a2, 0xfe
 	.loc 1 1762 0
 	retw.n
-.LFE42:
+.LFE46:
 	.size	dhcp_parse_reply, .-dhcp_parse_reply
 	.section	.text.dhcp_handle_ack,"ax",@progbits
 	.literal_position
@@ -2623,7 +2623,7 @@ dhcp_parse_reply:
 	.align	4
 	.type	dhcp_handle_ack, @function
 dhcp_handle_ack:
-.LFB20:
+.LFB24:
 	.loc 1 621 0
 .LVL313:
 	entry	sp, 64
@@ -2757,7 +2757,7 @@ dhcp_handle_ack:
 	bnez.n	a9, .L182
 .L171:
 	retw.n
-.LFE20:
+.LFE24:
 	.size	dhcp_handle_ack, .-dhcp_handle_ack
 	.section	.rodata.str1.4
 	.align	4
@@ -2770,7 +2770,7 @@ dhcp_handle_ack:
 	.literal_position
 	.literal .LC118, ip_data
 	.literal .LC120, .LC119
-	.literal .LC121, __func__$6333
+	.literal .LC121, __func__$6437
 	.literal .LC122, .LC3
 	.literal .LC124, .LC123
 	.literal .LC125, dhcp_rx_options_given
@@ -2778,7 +2778,7 @@ dhcp_handle_ack:
 	.align	4
 	.type	dhcp_recv, @function
 dhcp_recv:
-.LFB43:
+.LFB47:
 	.loc 1 1769 0 is_stmt 1
 .LVL323:
 	entry	sp, 32
@@ -2962,7 +2962,7 @@ dhcp_recv:
 	call8	pbuf_free
 .LVL349:
 	retw.n
-.LFE43:
+.LFE47:
 	.size	dhcp_recv, .-dhcp_recv
 	.section	.rodata.str1.4
 	.align	4
@@ -2977,7 +2977,7 @@ dhcp_recv:
 	.section	.text.dhcp_set_struct,"ax",@progbits
 	.literal_position
 	.literal .LC128, .LC127
-	.literal .LC129, __func__$6097
+	.literal .LC129, __func__$6201
 	.literal .LC130, .LC3
 	.literal .LC132, .LC131
 	.literal .LC134, .LC133
@@ -2985,7 +2985,7 @@ dhcp_recv:
 	.global	dhcp_set_struct
 	.type	dhcp_set_struct, @function
 dhcp_set_struct:
-.LFB21:
+.LFB25:
 	.loc 1 709 0
 .LVL350:
 	entry	sp, 32
@@ -3030,18 +3030,18 @@ dhcp_set_struct:
 	.loc 1 717 0
 	s32i	a3, a2, 152
 	retw.n
-.LFE21:
+.LFE25:
 	.size	dhcp_set_struct, .-dhcp_set_struct
 	.section	.text.dhcp_cleanup,"ax",@progbits
 	.literal_position
 	.literal .LC135, .LC127
-	.literal .LC136, __func__$6101
+	.literal .LC136, __func__$6205
 	.literal .LC137, .LC3
 	.align	4
 	.global	dhcp_cleanup
 	.type	dhcp_cleanup, @function
 dhcp_cleanup:
-.LFB22:
+.LFB26:
 	.loc 1 728 0
 .LVL355:
 	entry	sp, 32
@@ -3067,18 +3067,18 @@ dhcp_cleanup:
 	s32i	a8, a2, 152
 .L198:
 	retw.n
-.LFE22:
+.LFE26:
 	.size	dhcp_cleanup, .-dhcp_cleanup
 	.section	.text.dhcp_set_cb,"ax",@progbits
 	.literal_position
 	.literal .LC138, .LC127
-	.literal .LC139, __func__$6107
+	.literal .LC139, __func__$6211
 	.literal .LC140, .LC3
 	.align	4
 	.global	dhcp_set_cb
 	.type	dhcp_set_cb, @function
 dhcp_set_cb:
-.LFB23:
+.LFB27:
 	.loc 1 749 0
 .LVL358:
 	entry	sp, 32
@@ -3101,7 +3101,7 @@ dhcp_set_cb:
 	s32i	a3, a2, 92
 .L201:
 	retw.n
-.LFE23:
+.LFE27:
 	.size	dhcp_set_cb, .-dhcp_set_cb
 	.section	.text.dhcp_inform,"ax",@progbits
 	.literal_position
@@ -3112,7 +3112,7 @@ dhcp_set_cb:
 	.global	dhcp_inform
 	.type	dhcp_inform, @function
 dhcp_inform:
-.LFB25:
+.LFB29:
 	.loc 1 859 0
 .LVL361:
 	entry	sp, 128
@@ -3196,14 +3196,14 @@ dhcp_inform:
 .LVL377:
 .L204:
 	retw.n
-.LFE25:
+.LFE29:
 	.size	dhcp_inform, .-dhcp_inform
 	.section	.text.dhcp_network_changed,"ax",@progbits
 	.align	4
 	.global	dhcp_network_changed
 	.type	dhcp_network_changed, @function
 dhcp_network_changed:
-.LFB26:
+.LFB30:
 	.loc 1 901 0
 .LVL378:
 	entry	sp, 32
@@ -3242,7 +3242,7 @@ dhcp_network_changed:
 .LVL382:
 .L209:
 	retw.n
-.LFE26:
+.LFE30:
 	.size	dhcp_network_changed, .-dhcp_network_changed
 	.section	.text.dhcp_arp_reply,"ax",@progbits
 	.literal_position
@@ -3251,7 +3251,7 @@ dhcp_network_changed:
 	.global	dhcp_arp_reply
 	.type	dhcp_arp_reply, @function
 dhcp_arp_reply:
-.LFB27:
+.LFB31:
 	.loc 1 941 0
 .LVL383:
 	entry	sp, 32
@@ -3281,7 +3281,7 @@ dhcp_arp_reply:
 .LVL386:
 .L214:
 	retw.n
-.LFE27:
+.LFE31:
 	.size	dhcp_arp_reply, .-dhcp_arp_reply
 	.section	.text.dhcp_renew,"ax",@progbits
 	.literal_position
@@ -3292,7 +3292,7 @@ dhcp_arp_reply:
 	.global	dhcp_renew
 	.type	dhcp_renew, @function
 dhcp_renew:
-.LFB31:
+.LFB35:
 	.loc 1 1239 0
 .LVL387:
 	entry	sp, 32
@@ -3395,13 +3395,13 @@ dhcp_renew:
 	s16i	a8, a3, 22
 	.loc 1 1276 0 discriminator 4
 	retw.n
-.LFE31:
+.LFE35:
 	.size	dhcp_renew, .-dhcp_renew
 	.section	.text.dhcp_t1_timeout,"ax",@progbits
 	.align	4
 	.type	dhcp_t1_timeout, @function
 dhcp_t1_timeout:
-.LFB18:
+.LFB22:
 	.loc 1 549 0
 .LVL402:
 	entry	sp, 32
@@ -3443,7 +3443,7 @@ dhcp_t1_timeout:
 .LVL408:
 .L222:
 	retw.n
-.LFE18:
+.LFE22:
 	.size	dhcp_t1_timeout, .-dhcp_t1_timeout
 	.section	.rodata.str1.4
 	.align	4
@@ -3453,13 +3453,13 @@ dhcp_t1_timeout:
 	.literal_position
 	.literal .LC149, .LC148
 	.literal .LC150, .LC123
-	.literal .LC151, __func__$6236
+	.literal .LC151, __func__$6340
 	.literal .LC152, .LC3
 	.align	4
 	.global	dhcp_stop
 	.type	dhcp_stop, @function
 dhcp_stop:
-.LFB35:
+.LFB39:
 	.loc 1 1443 0
 .LVL409:
 	entry	sp, 32
@@ -3504,7 +3504,7 @@ dhcp_stop:
 	s8i	a8, a2, 8
 .L225:
 	retw.n
-.LFE35:
+.LFE39:
 	.size	dhcp_stop, .-dhcp_stop
 	.section	.rodata.str1.4
 	.align	4
@@ -3518,14 +3518,14 @@ dhcp_stop:
 	.literal .LC153, .LC127
 	.literal .LC155, .LC154
 	.literal .LC157, .LC156
-	.literal .LC158, __func__$6120
+	.literal .LC158, __func__$6224
 	.literal .LC159, .LC3
 	.literal .LC160, .LC123
 	.align	4
 	.global	dhcp_start
 	.type	dhcp_start, @function
 dhcp_start:
-.LFB24:
+.LFB28:
 	.loc 1 773 0
 .LVL415:
 	entry	sp, 32
@@ -3670,14 +3670,14 @@ dhcp_start:
 .LVL444:
 	.loc 1 846 0
 	retw.n
-.LFE24:
+.LFE28:
 	.size	dhcp_start, .-dhcp_start
 	.section	.text.dhcp_supplied_address,"ax",@progbits
 	.align	4
 	.global	dhcp_supplied_address
 	.type	dhcp_supplied_address, @function
 dhcp_supplied_address:
-.LFB47:
+.LFB51:
 	.loc 1 2023 0
 .LVL445:
 	entry	sp, 32
@@ -3715,7 +3715,7 @@ dhcp_supplied_address:
 	movi.n	a2, 1
 	.loc 1 2031 0
 	retw.n
-.LFE47:
+.LFE51:
 	.size	dhcp_supplied_address, .-dhcp_supplied_address
 	.section	.text.dhcp_release,"ax",@progbits
 	.literal_position
@@ -3725,7 +3725,7 @@ dhcp_supplied_address:
 	.global	dhcp_release
 	.type	dhcp_release, @function
 dhcp_release:
-.LFB34:
+.LFB38:
 	.loc 1 1373 0
 .LVL449:
 	entry	sp, 64
@@ -3884,7 +3884,7 @@ dhcp_release:
 .LVL473:
 	.loc 1 1434 0
 	retw.n
-.LFE34:
+.LFE38:
 	.size	dhcp_release, .-dhcp_release
 	.section	.text.dhcp_coarse_tmr,"ax",@progbits
 	.literal_position
@@ -3893,7 +3893,7 @@ dhcp_release:
 	.global	dhcp_coarse_tmr
 	.type	dhcp_coarse_tmr, @function
 dhcp_coarse_tmr:
-.LFB15:
+.LFB19:
 	.loc 1 416 0
 	entry	sp, 32
 .LCFI36:
@@ -3967,13 +3967,13 @@ dhcp_coarse_tmr:
 	bnez.n	a2, .L262
 	.loc 1 445 0
 	retw.n
-.LFE15:
+.LFE19:
 	.size	dhcp_coarse_tmr, .-dhcp_coarse_tmr
 	.section	.text.dhcp_timeout,"ax",@progbits
 	.align	4
 	.type	dhcp_timeout, @function
 dhcp_timeout:
-.LFB17:
+.LFB21:
 	.loc 1 503 0
 .LVL483:
 	entry	sp, 32
@@ -4059,7 +4059,7 @@ dhcp_timeout:
 .LVL498:
 .L263:
 	retw.n
-.LFE17:
+.LFE21:
 	.size	dhcp_timeout, .-dhcp_timeout
 	.section	.text.dhcp_fine_tmr,"ax",@progbits
 	.literal_position
@@ -4068,7 +4068,7 @@ dhcp_timeout:
 	.global	dhcp_fine_tmr
 	.type	dhcp_fine_tmr, @function
 dhcp_fine_tmr:
-.LFB16:
+.LFB20:
 	.loc 1 455 0
 	entry	sp, 32
 .LCFI38:
@@ -4108,115 +4108,115 @@ dhcp_fine_tmr:
 	bnez.n	a2, .L275
 	.loc 1 491 0
 	retw.n
-.LFE16:
+.LFE20:
 	.size	dhcp_fine_tmr, .-dhcp_fine_tmr
-	.section	.rodata.__func__$6236,"a",@progbits
+	.section	.rodata.__func__$6340,"a",@progbits
 	.align	4
-	.type	__func__$6236, @object
-	.size	__func__$6236, 10
-__func__$6236:
+	.type	__func__$6340, @object
+	.size	__func__$6340, 10
+__func__$6340:
 	.string	"dhcp_stop"
-	.section	.rodata.__func__$6311,"a",@progbits
+	.section	.rodata.__func__$6415,"a",@progbits
 	.align	4
-	.type	__func__$6311, @object
-	.size	__func__$6311, 17
-__func__$6311:
+	.type	__func__$6415, @object
+	.size	__func__$6415, 17
+__func__$6415:
 	.string	"dhcp_parse_reply"
-	.section	.rodata.__func__$6333,"a",@progbits
+	.section	.rodata.__func__$6437,"a",@progbits
 	.align	4
-	.type	__func__$6333, @object
-	.size	__func__$6333, 10
-__func__$6333:
+	.type	__func__$6437, @object
+	.size	__func__$6437, 10
+__func__$6437:
 	.string	"dhcp_recv"
-	.section	.rodata.__func__$6000,"a",@progbits
+	.section	.rodata.__func__$6104,"a",@progbits
 	.align	4
-	.type	__func__$6000, @object
-	.size	__func__$6000, 22
-__func__$6000:
+	.type	__func__$6104, @object
+	.size	__func__$6104, 22
+__func__$6104:
 	.string	"dhcp_inc_pcb_refcount"
-	.section	.rodata.__func__$6004,"a",@progbits
+	.section	.rodata.__func__$6108,"a",@progbits
 	.align	4
-	.type	__func__$6004, @object
-	.size	__func__$6004, 22
-__func__$6004:
+	.type	__func__$6108, @object
+	.size	__func__$6108, 22
+__func__$6108:
 	.string	"dhcp_dec_pcb_refcount"
-	.section	.rodata.__func__$6120,"a",@progbits
+	.section	.rodata.__func__$6224,"a",@progbits
 	.align	4
-	.type	__func__$6120, @object
-	.size	__func__$6120, 11
-__func__$6120:
+	.type	__func__$6224, @object
+	.size	__func__$6224, 11
+__func__$6224:
 	.string	"dhcp_start"
-	.section	.rodata.__func__$6107,"a",@progbits
+	.section	.rodata.__func__$6211,"a",@progbits
 	.align	4
-	.type	__func__$6107, @object
-	.size	__func__$6107, 12
-__func__$6107:
+	.type	__func__$6211, @object
+	.size	__func__$6211, 12
+__func__$6211:
 	.string	"dhcp_set_cb"
-	.section	.rodata.__func__$6101,"a",@progbits
+	.section	.rodata.__func__$6205,"a",@progbits
 	.align	4
-	.type	__func__$6101, @object
-	.size	__func__$6101, 13
-__func__$6101:
+	.type	__func__$6205, @object
+	.size	__func__$6205, 13
+__func__$6205:
 	.string	"dhcp_cleanup"
-	.section	.rodata.__func__$6097,"a",@progbits
+	.section	.rodata.__func__$6201,"a",@progbits
 	.align	4
-	.type	__func__$6097, @object
-	.size	__func__$6097, 16
-__func__$6097:
+	.type	__func__$6201, @object
+	.size	__func__$6201, 16
+__func__$6201:
 	.string	"dhcp_set_struct"
-	.section	.rodata.__func__$6261,"a",@progbits
+	.section	.rodata.__func__$6365,"a",@progbits
 	.align	4
-	.type	__func__$6261, @object
-	.size	__func__$6261, 17
-__func__$6261:
+	.type	__func__$6365, @object
+	.size	__func__$6365, 17
+__func__$6365:
 	.string	"dhcp_option_long"
-	.section	.rodata.__func__$6375,"a",@progbits
+	.section	.rodata.__func__$6479,"a",@progbits
 	.align	4
-	.type	__func__$6375, @object
-	.size	__func__$6375, 16
-__func__$6375:
+	.type	__func__$6479, @object
+	.size	__func__$6479, 16
+__func__$6479:
 	.string	"dhcp_delete_msg"
-	.section	.rodata.__func__$6379,"a",@progbits
+	.section	.rodata.__func__$6483,"a",@progbits
 	.align	4
-	.type	__func__$6379, @object
-	.size	__func__$6379, 20
-__func__$6379:
+	.type	__func__$6483, @object
+	.size	__func__$6483, 20
+__func__$6483:
 	.string	"dhcp_option_trailer"
-	.section	.rodata.__func__$6251,"a",@progbits
+	.section	.rodata.__func__$6355,"a",@progbits
 	.align	4
-	.type	__func__$6251, @object
-	.size	__func__$6251, 17
-__func__$6251:
+	.type	__func__$6355, @object
+	.size	__func__$6355, 17
+__func__$6355:
 	.string	"dhcp_option_byte"
-	.section	.rodata.__func__$6246,"a",@progbits
+	.section	.rodata.__func__$6350,"a",@progbits
 	.align	4
-	.type	__func__$6246, @object
-	.size	__func__$6246, 12
-__func__$6246:
+	.type	__func__$6350, @object
+	.size	__func__$6350, 12
+__func__$6350:
 	.string	"dhcp_option"
-	.section	.rodata.__func__$6270,"a",@progbits
+	.section	.rodata.__func__$6374,"a",@progbits
 	.align	4
-	.type	__func__$6270, @object
-	.size	__func__$6270, 21
-__func__$6270:
+	.type	__func__$6374, @object
+	.size	__func__$6374, 21
+__func__$6374:
 	.string	"dhcp_option_hostname"
-	.section	.rodata.__func__$6256,"a",@progbits
+	.section	.rodata.__func__$6360,"a",@progbits
 	.align	4
-	.type	__func__$6256, @object
-	.size	__func__$6256, 18
-__func__$6256:
+	.type	__func__$6360, @object
+	.size	__func__$6360, 18
+__func__$6360:
 	.string	"dhcp_option_short"
-	.section	.bss.xid$6356,"aw",@nobits
+	.section	.bss.xid$6460,"aw",@nobits
 	.align	4
-	.type	xid$6356, @object
-	.size	xid$6356, 4
-xid$6356:
+	.type	xid$6460, @object
+	.size	xid$6460, 4
+xid$6460:
 	.zero	4
-	.section	.rodata.__func__$6357,"a",@progbits
+	.section	.rodata.__func__$6461,"a",@progbits
 	.align	4
-	.type	__func__$6357, @object
-	.size	__func__$6357, 16
-__func__$6357:
+	.type	__func__$6461, @object
+	.size	__func__$6461, 16
+__func__$6461:
 	.string	"dhcp_create_msg"
 	.section	.bss.dhcp_pcb_refcount,"aw",@nobits
 	.type	dhcp_pcb_refcount, @object
@@ -4267,10 +4267,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
 	.byte	0x4
-	.4byte	.LCFI0-.LFB36
+	.4byte	.LCFI0-.LFB40
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4279,10 +4279,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.byte	0x4
-	.4byte	.LCFI1-.LFB39
+	.4byte	.LCFI1-.LFB43
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4291,10 +4291,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
 	.byte	0x4
-	.4byte	.LCFI2-.LFB37
+	.4byte	.LCFI2-.LFB41
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4303,10 +4303,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
 	.byte	0x4
-	.4byte	.LCFI3-.LFB38
+	.4byte	.LCFI3-.LFB42
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4315,10 +4315,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB46
-	.4byte	.LFE46-.LFB46
+	.4byte	.LFB50
+	.4byte	.LFE50-.LFB50
 	.byte	0x4
-	.4byte	.LCFI4-.LFB46
+	.4byte	.LCFI4-.LFB50
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4327,10 +4327,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB40
-	.4byte	.LFE40-.LFB40
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
 	.byte	0x4
-	.4byte	.LCFI5-.LFB40
+	.4byte	.LCFI5-.LFB44
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4339,10 +4339,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB44
-	.4byte	.LFE44-.LFB44
+	.4byte	.LFB48
+	.4byte	.LFE48-.LFB48
 	.byte	0x4
-	.4byte	.LCFI6-.LFB44
+	.4byte	.LCFI6-.LFB48
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4351,10 +4351,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB41
-	.4byte	.LFE41-.LFB41
+	.4byte	.LFB45
+	.4byte	.LFE45-.LFB45
 	.byte	0x4
-	.4byte	.LCFI7-.LFB41
+	.4byte	.LCFI7-.LFB45
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4363,10 +4363,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB45
-	.4byte	.LFE45-.LFB45
+	.4byte	.LFB49
+	.4byte	.LFE49-.LFB49
 	.byte	0x4
-	.4byte	.LCFI8-.LFB45
+	.4byte	.LCFI8-.LFB49
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4375,10 +4375,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.byte	0x4
-	.4byte	.LCFI9-.LFB29
+	.4byte	.LCFI9-.LFB33
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4387,10 +4387,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.byte	0x4
-	.4byte	.LCFI10-.LFB32
+	.4byte	.LCFI10-.LFB36
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4399,10 +4399,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI11-.LFB19
+	.4byte	.LCFI11-.LFB23
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4411,10 +4411,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE24-.LASFDE24
 .LASFDE24:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI12-.LFB14
+	.4byte	.LCFI12-.LFB18
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4423,10 +4423,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE26-.LASFDE26
 .LASFDE26:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI13-.LFB13
+	.4byte	.LCFI13-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4435,10 +4435,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE28-.LASFDE28
 .LASFDE28:
 	.4byte	.Lframe0
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.byte	0x4
-	.4byte	.LCFI14-.LFB33
+	.4byte	.LCFI14-.LFB37
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4447,10 +4447,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE30-.LASFDE30
 .LASFDE30:
 	.4byte	.Lframe0
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.byte	0x4
-	.4byte	.LCFI15-.LFB28
+	.4byte	.LCFI15-.LFB32
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4459,10 +4459,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE32-.LASFDE32
 .LASFDE32:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI16-.LFB12
+	.4byte	.LCFI16-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4471,10 +4471,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE34-.LASFDE34
 .LASFDE34:
 	.4byte	.Lframe0
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.byte	0x4
-	.4byte	.LCFI17-.LFB30
+	.4byte	.LCFI17-.LFB34
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4483,10 +4483,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE36-.LASFDE36
 .LASFDE36:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI18-.LFB11
+	.4byte	.LCFI18-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4495,10 +4495,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE38-.LASFDE38
 .LASFDE38:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI19-.LFB10
+	.4byte	.LCFI19-.LFB14
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4507,10 +4507,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE40-.LASFDE40
 .LASFDE40:
 	.4byte	.Lframe0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x4
-	.4byte	.LCFI20-.LFB9
+	.4byte	.LCFI20-.LFB13
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4519,10 +4519,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE42-.LASFDE42
 .LASFDE42:
 	.4byte	.Lframe0
-	.4byte	.LFB42
-	.4byte	.LFE42-.LFB42
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
 	.byte	0x4
-	.4byte	.LCFI21-.LFB42
+	.4byte	.LCFI21-.LFB46
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -4531,10 +4531,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE44-.LASFDE44
 .LASFDE44:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.byte	0x4
-	.4byte	.LCFI22-.LFB20
+	.4byte	.LCFI22-.LFB24
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -4543,10 +4543,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE46-.LASFDE46
 .LASFDE46:
 	.4byte	.Lframe0
-	.4byte	.LFB43
-	.4byte	.LFE43-.LFB43
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
 	.byte	0x4
-	.4byte	.LCFI23-.LFB43
+	.4byte	.LCFI23-.LFB47
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4555,10 +4555,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE48-.LASFDE48
 .LASFDE48:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.byte	0x4
-	.4byte	.LCFI24-.LFB21
+	.4byte	.LCFI24-.LFB25
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4567,10 +4567,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE50-.LASFDE50
 .LASFDE50:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI25-.LFB22
+	.4byte	.LCFI25-.LFB26
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4579,10 +4579,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE52-.LASFDE52
 .LASFDE52:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI26-.LFB23
+	.4byte	.LCFI26-.LFB27
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4591,10 +4591,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE54-.LASFDE54
 .LASFDE54:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI27-.LFB25
+	.4byte	.LCFI27-.LFB29
 	.byte	0xe
 	.uleb128 0x80
 	.align	4
@@ -4603,10 +4603,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE56-.LASFDE56
 .LASFDE56:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI28-.LFB26
+	.4byte	.LCFI28-.LFB30
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4615,10 +4615,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE58-.LASFDE58
 .LASFDE58:
 	.4byte	.Lframe0
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.byte	0x4
-	.4byte	.LCFI29-.LFB27
+	.4byte	.LCFI29-.LFB31
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4627,10 +4627,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE60-.LASFDE60
 .LASFDE60:
 	.4byte	.Lframe0
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.byte	0x4
-	.4byte	.LCFI30-.LFB31
+	.4byte	.LCFI30-.LFB35
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4639,10 +4639,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE62-.LASFDE62
 .LASFDE62:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI31-.LFB18
+	.4byte	.LCFI31-.LFB22
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4651,10 +4651,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE64-.LASFDE64
 .LASFDE64:
 	.4byte	.Lframe0
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.byte	0x4
-	.4byte	.LCFI32-.LFB35
+	.4byte	.LCFI32-.LFB39
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4663,10 +4663,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE66-.LASFDE66
 .LASFDE66:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI33-.LFB24
+	.4byte	.LCFI33-.LFB28
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4675,10 +4675,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE68-.LASFDE68
 .LASFDE68:
 	.4byte	.Lframe0
-	.4byte	.LFB47
-	.4byte	.LFE47-.LFB47
+	.4byte	.LFB51
+	.4byte	.LFE51-.LFB51
 	.byte	0x4
-	.4byte	.LCFI34-.LFB47
+	.4byte	.LCFI34-.LFB51
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4687,10 +4687,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE70-.LASFDE70
 .LASFDE70:
 	.4byte	.Lframe0
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.byte	0x4
-	.4byte	.LCFI35-.LFB34
+	.4byte	.LCFI35-.LFB38
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -4699,10 +4699,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE72-.LASFDE72
 .LASFDE72:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI36-.LFB15
+	.4byte	.LCFI36-.LFB19
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4711,10 +4711,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE74-.LASFDE74
 .LASFDE74:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI37-.LFB17
+	.4byte	.LCFI37-.LFB21
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4723,10 +4723,10 @@ dhcp_discover_select_options:
 	.4byte	.LEFDE76-.LASFDE76
 .LASFDE76:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI38-.LFB16
+	.4byte	.LCFI38-.LFB20
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -6123,8 +6123,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF175
 	.byte	0x1
 	.2byte	0x5c2
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xb24
@@ -6146,8 +6146,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF176
 	.byte	0x1
 	.2byte	0x5e3
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xb92
@@ -6170,7 +6170,7 @@ dhcp_discover_select_options:
 	.4byte	0xba2
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6256
+	.4byte	__func__$6360
 	.uleb128 0x1c
 	.4byte	.LVL4
 	.4byte	0x2ce3
@@ -6191,7 +6191,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6256
+	.4byte	__func__$6360
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -6213,8 +6213,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF178
 	.byte	0x1
 	.2byte	0x5d1
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xc25
@@ -6243,7 +6243,7 @@ dhcp_discover_select_options:
 	.4byte	0xc35
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6246
+	.4byte	__func__$6350
 	.uleb128 0x1c
 	.4byte	.LVL6
 	.4byte	0x2ce3
@@ -6264,7 +6264,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6246
+	.4byte	__func__$6350
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -6286,8 +6286,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF182
 	.byte	0x1
 	.2byte	0x5dc
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xca8
@@ -6310,7 +6310,7 @@ dhcp_discover_select_options:
 	.4byte	0xcb8
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6251
+	.4byte	__func__$6355
 	.uleb128 0x1c
 	.4byte	.LVL11
 	.4byte	0x2ce3
@@ -6331,7 +6331,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6251
+	.4byte	__func__$6355
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -6353,8 +6353,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF183
 	.byte	0x1
 	.2byte	0x7d1
-	.4byte	.LFB46
-	.4byte	.LFE46-.LFB46
+	.4byte	.LFB50
+	.4byte	.LFE50-.LFB50
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xd64
@@ -6370,7 +6370,7 @@ dhcp_discover_select_options:
 	.4byte	0xd74
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6379
+	.4byte	__func__$6483
 	.uleb128 0x1e
 	.4byte	.LVL13
 	.4byte	0x2cee
@@ -6403,7 +6403,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6379
+	.4byte	__func__$6483
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -6431,7 +6431,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6379
+	.4byte	__func__$6483
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -6453,8 +6453,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF184
 	.byte	0x1
 	.2byte	0x5eb
-	.4byte	.LFB40
-	.4byte	.LFE40-.LFB40
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xde7
@@ -6477,7 +6477,7 @@ dhcp_discover_select_options:
 	.4byte	0xde7
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6261
+	.4byte	__func__$6365
 	.uleb128 0x1c
 	.4byte	.LVL17
 	.4byte	0x2ce3
@@ -6498,7 +6498,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6261
+	.4byte	__func__$6365
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -6514,8 +6514,8 @@ dhcp_discover_select_options:
 	.byte	0x1
 	.2byte	0x75b
 	.4byte	0x1d4
-	.4byte	.LFB44
-	.4byte	.LFE44-.LFB44
+	.4byte	.LFB48
+	.4byte	.LFE48-.LFB48
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xf86
@@ -6552,13 +6552,13 @@ dhcp_discover_select_options:
 	.4byte	0x14a
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	xid$6356
+	.4byte	xid$6460
 	.uleb128 0x1b
 	.4byte	.LASF181
 	.4byte	0xf96
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6357
+	.4byte	__func__$6461
 	.uleb128 0x1e
 	.4byte	.LVL19
 	.4byte	0x2cee
@@ -6602,7 +6602,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6357
+	.4byte	__func__$6461
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -6631,7 +6631,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6357
+	.4byte	__func__$6461
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -6681,7 +6681,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6357
+	.4byte	__func__$6461
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -6747,8 +6747,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF186
 	.byte	0x1
 	.2byte	0x5f6
-	.4byte	.LFB41
-	.4byte	.LFE41-.LFB41
+	.4byte	.LFB45
+	.4byte	.LFE45-.LFB45
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x10a4
@@ -6770,7 +6770,7 @@ dhcp_discover_select_options:
 	.4byte	0x10b4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6270
+	.4byte	__func__$6374
 	.uleb128 0x23
 	.4byte	.LBB2
 	.4byte	.LBE2-.LBB2
@@ -6823,7 +6823,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6270
+	.4byte	__func__$6374
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -6889,8 +6889,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF189
 	.byte	0x1
 	.2byte	0x7bc
-	.4byte	.LFB45
-	.4byte	.LFE45-.LFB45
+	.4byte	.LFB49
+	.4byte	.LFE49-.LFB49
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x116d
@@ -6906,7 +6906,7 @@ dhcp_discover_select_options:
 	.4byte	0x116d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6375
+	.4byte	__func__$6479
 	.uleb128 0x1e
 	.4byte	.LVL71
 	.4byte	0x2cee
@@ -6939,7 +6939,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6375
+	.4byte	__func__$6479
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -6968,7 +6968,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6375
+	.4byte	__func__$6479
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -6987,8 +6987,8 @@ dhcp_discover_select_options:
 	.byte	0x1
 	.2byte	0x3f3
 	.4byte	0x1d4
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x12e7
@@ -7206,8 +7206,8 @@ dhcp_discover_select_options:
 	.byte	0x1
 	.2byte	0x504
 	.4byte	0x1d4
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x140b
@@ -7372,8 +7372,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF195
 	.byte	0x1
 	.2byte	0x249
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1462
@@ -7411,8 +7411,8 @@ dhcp_discover_select_options:
 	.byte	0x1
 	.2byte	0x167
 	.4byte	0x1d4
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x164f
@@ -7701,8 +7701,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF198
 	.byte	0x1
 	.2byte	0x148
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x169b
@@ -7739,8 +7739,8 @@ dhcp_discover_select_options:
 	.byte	0x1
 	.2byte	0x530
 	.4byte	0x1d4
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x17ea
@@ -7930,8 +7930,8 @@ dhcp_discover_select_options:
 	.byte	0x1
 	.2byte	0x3c9
 	.4byte	0x1d4
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x18fd
@@ -8081,8 +8081,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF201
 	.byte	0x1
 	.2byte	0x12b
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1981
@@ -8152,8 +8152,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF202
 	.byte	0x1
 	.2byte	0x436
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1a7f
@@ -8287,8 +8287,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF207
 	.byte	0x1
 	.2byte	0x10a
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1aff
@@ -8358,8 +8358,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF208
 	.byte	0x1
 	.byte	0xf2
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1b5c
@@ -8368,7 +8368,7 @@ dhcp_discover_select_options:
 	.4byte	0x1b6c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6004
+	.4byte	__func__$6108
 	.uleb128 0x1e
 	.4byte	.LVL215
 	.4byte	0x2ce3
@@ -8390,7 +8390,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6004
+	.4byte	__func__$6108
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -8416,8 +8416,8 @@ dhcp_discover_select_options:
 	.byte	0x1
 	.byte	0xd7
 	.4byte	0x1d4
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1c1e
@@ -8426,7 +8426,7 @@ dhcp_discover_select_options:
 	.4byte	0x1c1e
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6000
+	.4byte	__func__$6104
 	.uleb128 0x1e
 	.4byte	.LVL217
 	.4byte	0x2ce3
@@ -8448,7 +8448,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6000
+	.4byte	__func__$6104
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -8516,8 +8516,8 @@ dhcp_discover_select_options:
 	.byte	0x1
 	.2byte	0x616
 	.4byte	0x1d4
-	.4byte	.LFB42
-	.4byte	.LFE42-.LFB42
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1f15
@@ -8596,7 +8596,7 @@ dhcp_discover_select_options:
 	.4byte	0x1f1b
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6311
+	.4byte	__func__$6415
 	.uleb128 0x25
 	.4byte	.LBB5
 	.4byte	.LBE5-.LBB5
@@ -8670,7 +8670,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6311
+	.4byte	__func__$6415
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -8837,7 +8837,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6311
+	.4byte	__func__$6415
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -8866,8 +8866,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF224
 	.byte	0x1
 	.2byte	0x26c
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1fb3
@@ -8932,8 +8932,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF226
 	.byte	0x1
 	.2byte	0x6e8
-	.4byte	.LFB43
-	.4byte	.LFE43-.LFB43
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2174
@@ -9009,7 +9009,7 @@ dhcp_discover_select_options:
 	.4byte	0x2184
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6333
+	.4byte	__func__$6437
 	.uleb128 0x1e
 	.4byte	.LVL329
 	.4byte	0x2ce3
@@ -9031,7 +9031,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6333
+	.4byte	__func__$6437
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -9060,7 +9060,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6333
+	.4byte	__func__$6437
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -9167,8 +9167,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF231
 	.byte	0x1
 	.2byte	0x2c4
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2276
@@ -9191,7 +9191,7 @@ dhcp_discover_select_options:
 	.4byte	0x2276
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6097
+	.4byte	__func__$6201
 	.uleb128 0x1e
 	.4byte	.LVL351
 	.4byte	0x2ce3
@@ -9213,7 +9213,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6097
+	.4byte	__func__$6201
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -9242,7 +9242,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6097
+	.4byte	__func__$6201
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -9271,7 +9271,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6097
+	.4byte	__func__$6201
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -9307,8 +9307,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF232
 	.byte	0x1
 	.2byte	0x2d7
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x22e8
@@ -9324,7 +9324,7 @@ dhcp_discover_select_options:
 	.4byte	0x22f8
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6101
+	.4byte	__func__$6205
 	.uleb128 0x1e
 	.4byte	.LVL356
 	.4byte	0x2ce3
@@ -9346,7 +9346,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6101
+	.4byte	__func__$6205
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -9371,8 +9371,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF233
 	.byte	0x1
 	.2byte	0x2e9
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x236c
@@ -9394,7 +9394,7 @@ dhcp_discover_select_options:
 	.4byte	0x236c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6107
+	.4byte	__func__$6211
 	.uleb128 0x1c
 	.4byte	.LVL359
 	.4byte	0x2ce3
@@ -9415,7 +9415,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6107
+	.4byte	__func__$6211
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -9430,8 +9430,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF234
 	.byte	0x1
 	.2byte	0x35a
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x24be
@@ -9613,8 +9613,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF235
 	.byte	0x1
 	.2byte	0x384
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2517
@@ -9657,8 +9657,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF236
 	.byte	0x1
 	.2byte	0x3ac
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2573
@@ -9702,8 +9702,8 @@ dhcp_discover_select_options:
 	.byte	0x1
 	.2byte	0x4d6
 	.4byte	0x1d4
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x269d
@@ -9874,8 +9874,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF237
 	.byte	0x1
 	.2byte	0x224
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x26f4
@@ -9912,8 +9912,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF239
 	.byte	0x1
 	.2byte	0x5a2
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x27a1
@@ -9935,7 +9935,7 @@ dhcp_discover_select_options:
 	.4byte	0x27a1
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6236
+	.4byte	__func__$6340
 	.uleb128 0x1e
 	.4byte	.LVL410
 	.4byte	0x2cee
@@ -9968,7 +9968,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6236
+	.4byte	__func__$6340
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -10003,8 +10003,8 @@ dhcp_discover_select_options:
 	.byte	0x1
 	.2byte	0x304
 	.4byte	0x1d4
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x28f5
@@ -10032,7 +10032,7 @@ dhcp_discover_select_options:
 	.4byte	0x2905
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6120
+	.4byte	__func__$6224
 	.uleb128 0x1e
 	.4byte	.LVL416
 	.4byte	0x2cee
@@ -10087,7 +10087,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6120
+	.4byte	__func__$6224
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -10116,7 +10116,7 @@ dhcp_discover_select_options:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6120
+	.4byte	__func__$6224
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -10188,8 +10188,8 @@ dhcp_discover_select_options:
 	.byte	0x1
 	.2byte	0x7e6
 	.4byte	0x11e
-	.4byte	.LFB47
-	.4byte	.LFE47-.LFB47
+	.4byte	.LFB51
+	.4byte	.LFE51-.LFB51
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2935
@@ -10205,8 +10205,8 @@ dhcp_discover_select_options:
 	.byte	0x1
 	.2byte	0x55c
 	.4byte	0x1d4
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2a9b
@@ -10403,8 +10403,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF245
 	.byte	0x1
 	.2byte	0x19f
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2b26
@@ -10473,8 +10473,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF246
 	.byte	0x1
 	.2byte	0x1f6
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2bf7
@@ -10583,8 +10583,8 @@ dhcp_discover_select_options:
 	.4byte	.LASF247
 	.byte	0x1
 	.2byte	0x1c6
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2c2c
@@ -11599,7 +11599,7 @@ dhcp_discover_select_options:
 	.byte	0x72
 	.sleb128 9
 	.4byte	.LVL2
-	.4byte	.LFE36
+	.4byte	.LFE40
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -11628,7 +11628,7 @@ dhcp_discover_select_options:
 	.byte	0x23
 	.uleb128 0xef
 	.4byte	.LVL9
-	.4byte	.LFE37
+	.4byte	.LFE41
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -11675,7 +11675,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL52
-	.4byte	.LFE44
+	.4byte	.LFE48
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -11758,7 +11758,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL56
-	.4byte	.LFE41
+	.4byte	.LFE45
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -11836,7 +11836,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x55
 	.4byte	.LVL95
-	.4byte	.LFE29
+	.4byte	.LFE33
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -11855,7 +11855,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL81
-	.4byte	.LFE29
+	.4byte	.LFE33
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -11896,7 +11896,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x5e
 	.4byte	.LVL109-1
-	.4byte	.LFE32
+	.4byte	.LFE36
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -11910,7 +11910,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL102
-	.4byte	.LFE32
+	.4byte	.LFE36
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -11921,7 +11921,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL115
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -11953,7 +11953,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x55
 	.4byte	.LVL144
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -11967,7 +11967,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL124
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -12008,7 +12008,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x5e
 	.4byte	.LVL164-1
-	.4byte	.LFE33
+	.4byte	.LFE37
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -12022,7 +12022,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL155
-	.4byte	.LFE33
+	.4byte	.LFE37
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -12050,7 +12050,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x5e
 	.4byte	.LVL181-1
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -12069,7 +12069,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL174
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -12080,7 +12080,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL188
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -12150,7 +12150,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL311
-	.4byte	.LFE42
+	.4byte	.LFE46
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -12164,7 +12164,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL224
-	.4byte	.LFE42
+	.4byte	.LFE46
 	.2byte	0x2
 	.byte	0x91
 	.sleb128 -44
@@ -12239,7 +12239,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x56
 	.4byte	.LVL312
-	.4byte	.LFE42
+	.4byte	.LFE46
 	.2byte	0x1
 	.byte	0x56
 	.4byte	0
@@ -12262,7 +12262,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x57
 	.4byte	.LVL312
-	.4byte	.LFE42
+	.4byte	.LFE46
 	.2byte	0x1
 	.byte	0x57
 	.4byte	0
@@ -12282,7 +12282,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x55
 	.4byte	.LVL312
-	.4byte	.LFE42
+	.4byte	.LFE46
 	.2byte	0x1
 	.byte	0x55
 	.4byte	0
@@ -12313,7 +12313,7 @@ dhcp_discover_select_options:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL312
-	.4byte	.LFE42
+	.4byte	.LFE46
 	.2byte	0x2
 	.byte	0x91
 	.sleb128 -40
@@ -12355,7 +12355,7 @@ dhcp_discover_select_options:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL312
-	.4byte	.LFE42
+	.4byte	.LFE46
 	.2byte	0x2
 	.byte	0x91
 	.sleb128 -36
@@ -12692,7 +12692,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL314
-	.4byte	.LFE20
+	.4byte	.LFE24
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -12719,7 +12719,7 @@ dhcp_discover_select_options:
 	.sleb128 -1
 	.byte	0x9f
 	.4byte	.LVL322
-	.4byte	.LFE20
+	.4byte	.LFE24
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -12730,7 +12730,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL324
-	.4byte	.LFE43
+	.4byte	.LFE47
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -12744,7 +12744,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL325
-	.4byte	.LFE43
+	.4byte	.LFE47
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -12758,7 +12758,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x55
 	.4byte	.LVL328
-	.4byte	.LFE43
+	.4byte	.LFE47
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -12772,7 +12772,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x56
 	.4byte	.LVL343
-	.4byte	.LFE43
+	.4byte	.LFE47
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -12852,7 +12852,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL360
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -12870,7 +12870,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x5e
 	.4byte	.LVL375-1
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -12907,7 +12907,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL385
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -12929,7 +12929,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x5e
 	.4byte	.LVL399-1
-	.4byte	.LFE31
+	.4byte	.LFE35
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -12943,7 +12943,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL392
-	.4byte	.LFE31
+	.4byte	.LFE35
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -12954,7 +12954,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL405
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -12982,7 +12982,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL411
-	.4byte	.LFE35
+	.4byte	.LFE39
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -13073,7 +13073,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL444
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -13087,7 +13087,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL443
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -13109,7 +13109,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL448
-	.4byte	.LFE47
+	.4byte	.LFE51
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -13156,7 +13156,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL473
-	.4byte	.LFE34
+	.4byte	.LFE38
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -13185,7 +13185,7 @@ dhcp_discover_select_options:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL472
-	.4byte	.LFE34
+	.4byte	.LFE38
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -13255,166 +13255,166 @@ dhcp_discover_select_options:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
-	.4byte	.LFB46
-	.4byte	.LFE46-.LFB46
 	.4byte	.LFB40
 	.4byte	.LFE40-.LFB40
-	.4byte	.LFB44
-	.4byte	.LFE44-.LFB44
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.4byte	.LFB41
 	.4byte	.LFE41-.LFB41
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
+	.4byte	.LFB50
+	.4byte	.LFE50-.LFB50
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
+	.4byte	.LFB48
+	.4byte	.LFE48-.LFB48
 	.4byte	.LFB45
 	.4byte	.LFE45-.LFB45
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB49
+	.4byte	.LFE49-.LFB49
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.4byte	.LFB32
 	.4byte	.LFE32-.LFB32
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.4byte	.LFB14
 	.4byte	.LFE14-.LFB14
 	.4byte	.LFB13
 	.4byte	.LFE13-.LFB13
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
-	.4byte	.LFB42
-	.4byte	.LFE42-.LFB42
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
-	.4byte	.LFB43
-	.4byte	.LFE43-.LFB43
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
 	.4byte	.LFB25
 	.4byte	.LFE25-.LFB25
 	.4byte	.LFB26
 	.4byte	.LFE26-.LFB26
 	.4byte	.LFB27
 	.4byte	.LFE27-.LFB27
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.4byte	.LFB31
 	.4byte	.LFE31-.LFB31
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
 	.4byte	.LFB35
 	.4byte	.LFE35-.LFB35
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
-	.4byte	.LFB47
-	.4byte	.LFE47-.LFB47
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
+	.4byte	.LFB51
+	.4byte	.LFE51-.LFB51
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB36
-	.4byte	.LFE36
-	.4byte	.LFB39
-	.4byte	.LFE39
-	.4byte	.LFB37
-	.4byte	.LFE37
-	.4byte	.LFB38
-	.4byte	.LFE38
-	.4byte	.LFB46
-	.4byte	.LFE46
 	.4byte	.LFB40
 	.4byte	.LFE40
-	.4byte	.LFB44
-	.4byte	.LFE44
+	.4byte	.LFB43
+	.4byte	.LFE43
 	.4byte	.LFB41
 	.4byte	.LFE41
+	.4byte	.LFB42
+	.4byte	.LFE42
+	.4byte	.LFB50
+	.4byte	.LFE50
+	.4byte	.LFB44
+	.4byte	.LFE44
+	.4byte	.LFB48
+	.4byte	.LFE48
 	.4byte	.LFB45
 	.4byte	.LFE45
-	.4byte	.LFB29
-	.4byte	.LFE29
+	.4byte	.LFB49
+	.4byte	.LFE49
+	.4byte	.LFB33
+	.4byte	.LFE33
+	.4byte	.LFB36
+	.4byte	.LFE36
+	.4byte	.LFB23
+	.4byte	.LFE23
+	.4byte	.LFB18
+	.4byte	.LFE18
+	.4byte	.LFB17
+	.4byte	.LFE17
+	.4byte	.LFB37
+	.4byte	.LFE37
 	.4byte	.LFB32
 	.4byte	.LFE32
-	.4byte	.LFB19
-	.4byte	.LFE19
+	.4byte	.LFB16
+	.4byte	.LFE16
+	.4byte	.LFB34
+	.4byte	.LFE34
+	.4byte	.LFB15
+	.4byte	.LFE15
 	.4byte	.LFB14
 	.4byte	.LFE14
 	.4byte	.LFB13
 	.4byte	.LFE13
-	.4byte	.LFB33
-	.4byte	.LFE33
-	.4byte	.LFB28
-	.4byte	.LFE28
-	.4byte	.LFB12
-	.4byte	.LFE12
-	.4byte	.LFB30
-	.4byte	.LFE30
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB10
-	.4byte	.LFE10
-	.4byte	.LFB9
-	.4byte	.LFE9
-	.4byte	.LFB42
-	.4byte	.LFE42
-	.4byte	.LFB20
-	.4byte	.LFE20
-	.4byte	.LFB43
-	.4byte	.LFE43
-	.4byte	.LFB21
-	.4byte	.LFE21
-	.4byte	.LFB22
-	.4byte	.LFE22
-	.4byte	.LFB23
-	.4byte	.LFE23
+	.4byte	.LFB46
+	.4byte	.LFE46
+	.4byte	.LFB24
+	.4byte	.LFE24
+	.4byte	.LFB47
+	.4byte	.LFE47
 	.4byte	.LFB25
 	.4byte	.LFE25
 	.4byte	.LFB26
 	.4byte	.LFE26
 	.4byte	.LFB27
 	.4byte	.LFE27
+	.4byte	.LFB29
+	.4byte	.LFE29
+	.4byte	.LFB30
+	.4byte	.LFE30
 	.4byte	.LFB31
 	.4byte	.LFE31
-	.4byte	.LFB18
-	.4byte	.LFE18
 	.4byte	.LFB35
 	.4byte	.LFE35
-	.4byte	.LFB24
-	.4byte	.LFE24
-	.4byte	.LFB47
-	.4byte	.LFE47
-	.4byte	.LFB34
-	.4byte	.LFE34
-	.4byte	.LFB15
-	.4byte	.LFE15
-	.4byte	.LFB17
-	.4byte	.LFE17
-	.4byte	.LFB16
-	.4byte	.LFE16
+	.4byte	.LFB22
+	.4byte	.LFE22
+	.4byte	.LFB39
+	.4byte	.LFE39
+	.4byte	.LFB28
+	.4byte	.LFE28
+	.4byte	.LFB51
+	.4byte	.LFE51
+	.4byte	.LFB38
+	.4byte	.LFE38
+	.4byte	.LFB19
+	.4byte	.LFE19
+	.4byte	.LFB21
+	.4byte	.LFE21
+	.4byte	.LFB20
+	.4byte	.LFE20
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -13446,6 +13446,8 @@ dhcp_discover_select_options:
 	.string	"MEMP_TCP_PCB"
 .LASF85:
 	.string	"igmp_mac_filter"
+.LASF281:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\lwip"
 .LASF169:
 	.string	"chaddr"
 .LASF108:
@@ -13800,8 +13802,6 @@ dhcp_discover_select_options:
 	.string	"lease_used"
 .LASF47:
 	.string	"err_t"
-.LASF281:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\lwip"
 .LASF159:
 	.string	"udp_recv_fn"
 .LASF74:
@@ -13986,4 +13986,4 @@ dhcp_discover_select_options:
 	.string	"request_timeout"
 .LASF37:
 	.string	"MEMP_ARP_QUEUE"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

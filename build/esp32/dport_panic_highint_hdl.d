@@ -15,7 +15,7 @@ dport_panic_highint_hdl.o: \
  C:/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  C:/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h \
  C:/esp/esp-idf/components/esp32/include/esp_panic.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  C:/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  C:/esp/esp-idf/components/soc/esp32/include/soc/soc.h
@@ -50,7 +50,7 @@ C:/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h:
 
 C:/esp/esp-idf/components/esp32/include/esp_panic.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 

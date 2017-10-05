@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/bootloader_support/src/bootloader_sha.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\bootloader_support//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\bootloader_support//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/bootloader_support/src/bootloader_sha.c"
@@ -879,7 +879,7 @@ char *strsignal (int __signo);
 # 1 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 1
 # 19 "C:/esp/esp-idf/components/newlib/platform_include/assert.h"
        
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 2
 
 
@@ -907,7 +907,7 @@ void __assert_func (const char *, int, const char *, const char *) __attribute__
 # 29 "C:/esp/esp-idf/components/mbedtls/include/mbedtls/sha256.h"
 # 1 "C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h" 1
 # 30 "C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 31 "C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h" 2
 # 2665 "C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h"
 # 1 "C:/esp/esp-idf/components/mbedtls/include/mbedtls/check_config.h" 1

@@ -13,9 +13,9 @@
 	.string	"CPU %d: %s\n"
 	.section	.text.task_wdt_isr,"ax",@progbits
 	.literal_position
-	.literal .LC0, __c$5412
-	.literal .LC1, __c$5414
-	.literal .LC2, __c$5416
+	.literal .LC0, __c$5516
+	.literal .LC1, __c$5518
+	.literal .LC2, __c$5520
 	.literal .LC3, TIMERG0
 	.literal .LC4, 1356348065
 	.literal .LC5, taskwdt_spinlock
@@ -23,12 +23,12 @@
 	.literal .LC8, .LC7
 	.literal .LC9, 2147483647
 	.literal .LC11, .LC10
-	.literal .LC12, __c$5421
+	.literal .LC12, __c$5525
 	.literal .LC14, .LC13
 	.align	4
 	.type	task_wdt_isr, @function
 task_wdt_isr:
-.LFB9:
+.LFB13:
 	.file 1 "C:/esp/esp-idf/components/esp32/task_wdt.c"
 	.loc 1 55 0
 .LVL0:
@@ -152,7 +152,7 @@ task_wdt_isr:
 	call8	vTaskExitCritical
 .LVL19:
 	retw.n
-.LFE9:
+.LFE13:
 	.size	task_wdt_isr, .-task_wdt_isr
 	.section	.text.esp_task_wdt_feed,"ax",@progbits
 	.literal_position
@@ -164,7 +164,7 @@ task_wdt_isr:
 	.global	esp_task_wdt_feed
 	.type	esp_task_wdt_feed, @function
 esp_task_wdt_feed:
-.LFB10:
+.LFB14:
 	.loc 1 96 0
 	entry	sp, 32
 .LCFI1:
@@ -295,13 +295,13 @@ esp_task_wdt_feed:
 	call8	vTaskExitCritical
 .LVL40:
 	retw.n
-.LFE10:
+.LFE14:
 	.size	esp_task_wdt_feed, .-esp_task_wdt_feed
 	.section	.text.idle_hook,"ax",@progbits
 	.align	4
 	.type	idle_hook, @function
 idle_hook:
-.LFB12:
+.LFB16:
 	.loc 1 179 0
 	entry	sp, 32
 .LCFI2:
@@ -327,7 +327,7 @@ idle_hook:
 	.loc 1 185 0
 	movi.n	a2, 1
 	retw.n
-.LFE12:
+.LFE16:
 	.size	idle_hook, .-idle_hook
 	.section	.rodata.str1.4
 	.align	4
@@ -350,7 +350,7 @@ idle_hook:
 	.global	esp_task_wdt_delete
 	.type	esp_task_wdt_delete, @function
 esp_task_wdt_delete:
-.LFB11:
+.LFB15:
 	.loc 1 139 0
 	entry	sp, 32
 .LCFI3:
@@ -470,7 +470,7 @@ esp_task_wdt_delete:
 	call8	vTaskExitCritical
 .LVL66:
 	retw.n
-.LFE11:
+.LFE15:
 	.size	esp_task_wdt_delete, .-esp_task_wdt_delete
 	.section	.rodata.str1.4
 	.align	4
@@ -496,13 +496,13 @@ esp_task_wdt_delete:
 	.literal .LC39, idle_hook
 	.literal .LC40, task_wdt_isr
 	.literal .LC42, .LC41
-	.literal .LC43, __func__$5458
+	.literal .LC43, __func__$5562
 	.literal .LC45, .LC44
 	.align	4
 	.global	esp_task_wdt_init
 	.type	esp_task_wdt_init, @function
 esp_task_wdt_init:
-.LFB13:
+.LFB17:
 	.loc 1 189 0
 	entry	sp, 32
 .LCFI4:
@@ -604,34 +604,34 @@ esp_task_wdt_init:
 .L36:
 	retw.n
 .LBE10:
-.LFE13:
+.LFE17:
 	.size	esp_task_wdt_init, .-esp_task_wdt_init
-	.section	.rodata.__func__$5458,"a",@progbits
+	.section	.rodata.__func__$5562,"a",@progbits
 	.align	4
-	.type	__func__$5458, @object
-	.size	__func__$5458, 18
-__func__$5458:
+	.type	__func__$5562, @object
+	.size	__func__$5562, 18
+__func__$5562:
 	.string	"esp_task_wdt_init"
 	.section	.dram1,"a",@progbits
 	.align	4
-	.type	__c$5421, @object
-	.size	__c$5421, 26
-__c$5421:
+	.type	__c$5525, @object
+	.size	__c$5525, 26
+__c$5525:
 	.string	"Tasks currently running:\n"
 	.align	4
-	.type	__c$5416, @object
-	.size	__c$5416, 8
-__c$5416:
+	.type	__c$5520, @object
+	.size	__c$5520, 8
+__c$5520:
 	.string	"CPU 0/1"
 	.align	4
-	.type	__c$5414, @object
-	.size	__c$5414, 6
-__c$5414:
+	.type	__c$5518, @object
+	.size	__c$5518, 6
+__c$5518:
 	.string	"CPU 1"
 	.align	4
-	.type	__c$5412, @object
-	.size	__c$5412, 6
-__c$5412:
+	.type	__c$5516, @object
+	.size	__c$5516, 6
+__c$5516:
 	.string	"CPU 0"
 	.section	.data.taskwdt_spinlock,"aw",@progbits
 	.align	4
@@ -665,10 +665,10 @@ wdt_task_list:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x4
-	.4byte	.LCFI0-.LFB9
+	.4byte	.LCFI0-.LFB13
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -677,10 +677,10 @@ wdt_task_list:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI1-.LFB10
+	.4byte	.LCFI1-.LFB14
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -689,10 +689,10 @@ wdt_task_list:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI2-.LFB12
+	.4byte	.LCFI2-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -701,10 +701,10 @@ wdt_task_list:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI3-.LFB11
+	.4byte	.LCFI3-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -713,10 +713,10 @@ wdt_task_list:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI4-.LFB13
+	.4byte	.LCFI4-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -823,38 +823,38 @@ wdt_task_list:
 	.4byte	0xad
 	.uleb128 0x7
 	.4byte	0xa0
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x2
+	.4byte	.LASF15
 	.uleb128 0x8
 	.byte	0x8
 	.byte	0x5
-	.byte	0x81
-	.4byte	0xd3
-	.uleb128 0x9
-	.4byte	.LASF15
-	.byte	0x5
-	.byte	0x82
-	.4byte	0x7e
-	.byte	0
+	.byte	0x84
+	.4byte	0xda
 	.uleb128 0x9
 	.4byte	.LASF16
 	.byte	0x5
-	.byte	0x83
+	.byte	0x85
+	.4byte	0x7e
+	.byte	0
+	.uleb128 0x9
+	.4byte	.LASF17
+	.byte	0x5
+	.byte	0x86
 	.4byte	0x7e
 	.byte	0x4
 	.byte	0
 	.uleb128 0x3
-	.4byte	.LASF17
-	.byte	0x5
-	.byte	0x88
-	.4byte	0xb2
-	.uleb128 0x3
 	.4byte	.LASF18
+	.byte	0x5
+	.byte	0x8b
+	.4byte	0xb9
+	.uleb128 0x3
+	.4byte	.LASF19
 	.byte	0x6
 	.byte	0x18
 	.4byte	0x73
-	.uleb128 0x2
-	.byte	0x1
-	.byte	0x2
-	.4byte	.LASF19
 	.uleb128 0x3
 	.4byte	.LASF20
 	.byte	0x7
@@ -2116,7 +2116,7 @@ wdt_task_list:
 	.4byte	.LASF114
 	.byte	0x1
 	.byte	0x2f
-	.4byte	0xe9
+	.4byte	0xb2
 	.byte	0x4
 	.uleb128 0x9
 	.4byte	.LASF115
@@ -2145,8 +2145,8 @@ wdt_task_list:
 	.4byte	.LASF146
 	.byte	0x1
 	.byte	0x37
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xb34
@@ -2277,7 +2277,7 @@ wdt_task_list:
 	.byte	0x5a
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__c$5421
+	.4byte	__c$5525
 	.byte	0
 	.uleb128 0x21
 	.4byte	.LVL19
@@ -2294,8 +2294,8 @@ wdt_task_list:
 	.4byte	.LASF121
 	.byte	0x1
 	.byte	0x60
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xbe5
@@ -2309,13 +2309,13 @@ wdt_task_list:
 	.4byte	.LASF117
 	.byte	0x1
 	.byte	0x62
-	.4byte	0xe9
+	.4byte	0xb2
 	.4byte	.LLST5
 	.uleb128 0x1b
 	.4byte	.LASF118
 	.byte	0x1
 	.byte	0x62
-	.4byte	0xe9
+	.4byte	0xb2
 	.4byte	.LLST6
 	.uleb128 0x1b
 	.4byte	.LASF119
@@ -2372,9 +2372,9 @@ wdt_task_list:
 	.4byte	.LASF147
 	.byte	0x1
 	.byte	0xb3
-	.4byte	0xe9
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	0xb2
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xc2f
@@ -2401,8 +2401,8 @@ wdt_task_list:
 	.4byte	.LASF122
 	.byte	0x1
 	.byte	0x8b
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xda5
@@ -2580,8 +2580,8 @@ wdt_task_list:
 	.4byte	.LASF124
 	.byte	0x1
 	.byte	0xbd
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xe52
@@ -2590,7 +2590,7 @@ wdt_task_list:
 	.4byte	0xe62
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5458
+	.4byte	__func__$5562
 	.uleb128 0x1d
 	.4byte	.LBB10
 	.4byte	.LBE10-.LBB10
@@ -2599,7 +2599,7 @@ wdt_task_list:
 	.string	"rc"
 	.byte	0x1
 	.byte	0xcd
-	.4byte	0xde
+	.4byte	0xe5
 	.4byte	.LLST14
 	.uleb128 0x1e
 	.4byte	.LVL68
@@ -2655,7 +2655,7 @@ wdt_task_list:
 	.byte	0x5d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5458
+	.4byte	__func__$5562
 	.uleb128 0x1f
 	.uleb128 0x1
 	.byte	0x5e
@@ -2705,7 +2705,7 @@ wdt_task_list:
 	.4byte	.LASF127
 	.byte	0x1
 	.byte	0x34
-	.4byte	0xd3
+	.4byte	0xda
 	.uleb128 0x5
 	.byte	0x3
 	.4byte	taskwdt_spinlock
@@ -2733,12 +2733,12 @@ wdt_task_list:
 	.4byte	.LASF131
 	.4byte	.LASF131
 	.byte	0x5
-	.byte	0xd9
+	.byte	0xdc
 	.uleb128 0x2c
 	.4byte	.LASF132
 	.4byte	.LASF132
 	.byte	0x5
-	.byte	0xd8
+	.byte	0xdb
 	.uleb128 0x2b
 	.4byte	.LASF133
 	.4byte	.LASF133
@@ -3392,7 +3392,7 @@ wdt_task_list:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL1
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3421,7 +3421,7 @@ wdt_task_list:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL14
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -3486,7 +3486,7 @@ wdt_task_list:
 	.byte	0x31
 	.byte	0x9f
 	.4byte	.LVL25
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -3538,7 +3538,7 @@ wdt_task_list:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL58
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -3563,7 +3563,7 @@ wdt_task_list:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL69
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -3576,36 +3576,36 @@ wdt_task_list:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
 	.4byte	.LFB13
 	.4byte	.LFE13-.LFB13
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB9
-	.4byte	.LFE9
-	.4byte	.LFB10
-	.4byte	.LFE10
-	.4byte	.LFB12
-	.4byte	.LFE12
-	.4byte	.LFB11
-	.4byte	.LFE11
 	.4byte	.LFB13
 	.4byte	.LFE13
+	.4byte	.LFB14
+	.4byte	.LFE14
+	.4byte	.LFB16
+	.4byte	.LFE16
+	.4byte	.LFB15
+	.4byte	.LFE15
+	.4byte	.LFB17
+	.4byte	.LFE17
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF16:
+.LASF17:
 	.string	"count"
 .LASF36:
 	.string	"load_high"
@@ -3687,7 +3687,7 @@ wdt_task_list:
 	.string	"alarm_high"
 .LASF94:
 	.string	"reserved_d4"
-.LASF17:
+.LASF18:
 	.string	"portMUX_TYPE"
 .LASF26:
 	.string	"autoreload"
@@ -3697,6 +3697,8 @@ wdt_task_list:
 	.string	"esp_register_freertos_idle_hook"
 .LASF100:
 	.string	"reserved_ec"
+.LASF144:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF27:
 	.string	"increase"
 .LASF54:
@@ -3783,7 +3785,7 @@ wdt_task_list:
 	.string	"taskwdt_spinlock"
 .LASF22:
 	.string	"alarm_en"
-.LASF19:
+.LASF15:
 	.string	"_Bool"
 .LASF9:
 	.string	"int32_t"
@@ -3819,15 +3821,13 @@ wdt_task_list:
 	.string	"int_clr_timers"
 .LASF66:
 	.string	"wdt_wprotect"
-.LASF144:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF38:
 	.string	"flashboot_mod_en"
 .LASF10:
 	.string	"uint32_t"
 .LASF21:
 	.string	"reserved0"
-.LASF15:
+.LASF16:
 	.string	"owner"
 .LASF105:
 	.string	"ESP_LOG_NONE"
@@ -3873,7 +3873,7 @@ wdt_task_list:
 	.string	"ESP_LOG_WARN"
 .LASF40:
 	.string	"cpu_reset_length"
-.LASF18:
+.LASF19:
 	.string	"esp_err_t"
 .LASF88:
 	.string	"reserved_bc"
@@ -3903,4 +3903,4 @@ wdt_task_list:
 	.string	"lactrtc"
 .LASF116:
 	.string	"wdttask"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

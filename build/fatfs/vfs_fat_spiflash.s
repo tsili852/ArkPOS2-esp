@@ -45,7 +45,7 @@
 	.global	esp_vfs_fat_spiflash_mount
 	.type	esp_vfs_fat_spiflash_mount, @function
 esp_vfs_fat_spiflash_mount:
-.LFB11:
+.LFB15:
 	.file 1 "C:/esp/esp-idf/components/fatfs/src/vfs_fat_spiflash.c"
 	.loc 1 30 0
 .LVL0:
@@ -333,14 +333,14 @@ esp_vfs_fat_spiflash_mount:
 .L4:
 	.loc 1 105 0
 	retw.n
-.LFE11:
+.LFE15:
 	.size	esp_vfs_fat_spiflash_mount, .-esp_vfs_fat_spiflash_mount
 	.section	.text.esp_vfs_fat_spiflash_unmount,"ax",@progbits
 	.align	4
 	.global	esp_vfs_fat_spiflash_unmount
 	.type	esp_vfs_fat_spiflash_unmount, @function
 esp_vfs_fat_spiflash_unmount:
-.LFB12:
+.LFB16:
 	.loc 1 108 0
 .LVL63:
 	entry	sp, 48
@@ -401,7 +401,7 @@ esp_vfs_fat_spiflash_unmount:
 .LVL75:
 	.loc 1 122 0
 	retw.n
-.LFE12:
+.LFE16:
 	.size	esp_vfs_fat_spiflash_unmount, .-esp_vfs_fat_spiflash_unmount
 	.section	.debug_frame,"",@progbits
 .Lframe0:
@@ -422,10 +422,10 @@ esp_vfs_fat_spiflash_unmount:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI0-.LFB11
+	.4byte	.LCFI0-.LFB15
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -434,10 +434,10 @@ esp_vfs_fat_spiflash_unmount:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI1-.LFB12
+	.4byte	.LCFI1-.LFB16
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1035,8 +1035,8 @@ esp_vfs_fat_spiflash_unmount:
 	.byte	0x1
 	.byte	0x1a
 	.4byte	0xf9
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x860
@@ -1625,8 +1625,8 @@ esp_vfs_fat_spiflash_unmount:
 	.byte	0x1
 	.byte	0x6b
 	.4byte	0xf9
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x971
@@ -2246,7 +2246,7 @@ esp_vfs_fat_spiflash_unmount:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL9
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x1
 	.byte	0x56
 	.4byte	0
@@ -2268,7 +2268,7 @@ esp_vfs_fat_spiflash_unmount:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL62
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2337,7 +2337,7 @@ esp_vfs_fat_spiflash_unmount:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL62
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2362,7 +2362,7 @@ esp_vfs_fat_spiflash_unmount:
 	.2byte	0x1
 	.byte	0x55
 	.4byte	.LVL62
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2430,7 +2430,7 @@ esp_vfs_fat_spiflash_unmount:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL61
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -2501,7 +2501,7 @@ esp_vfs_fat_spiflash_unmount:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL75
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2526,7 +2526,7 @@ esp_vfs_fat_spiflash_unmount:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL74
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -2537,7 +2537,7 @@ esp_vfs_fat_spiflash_unmount:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL74
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -2550,18 +2550,18 @@ esp_vfs_fat_spiflash_unmount:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB12
-	.4byte	.LFE12
+	.4byte	.LFB15
+	.4byte	.LFE15
+	.4byte	.LFB16
+	.4byte	.LFE16
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -2569,14 +2569,14 @@ esp_vfs_fat_spiflash_unmount:
 	.section	.debug_str,"MS",@progbits,1
 .LASF52:
 	.string	"FR_NOT_READY"
-.LASF4:
-	.string	"short int"
 .LASF134:
 	.string	"malloc"
 .LASF122:
 	.string	"fresult"
 .LASF37:
 	.string	"ssize"
+.LASF143:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\fatfs"
 .LASF5:
 	.string	"size_t"
 .LASF31:
@@ -2689,8 +2689,8 @@ esp_vfs_fat_spiflash_unmount:
 	.string	"winsect"
 .LASF106:
 	.string	"label"
-.LASF143:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\fatfs"
+.LASF4:
+	.string	"short int"
 .LASF29:
 	.string	"WORD"
 .LASF103:
@@ -2857,4 +2857,4 @@ esp_vfs_fat_spiflash_unmount:
 	.string	"result"
 .LASF56:
 	.string	"FR_DENIED"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

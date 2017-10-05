@@ -20,7 +20,7 @@
 	.type	iap_find_next_boot_partition, @function
 iap_find_next_boot_partition:
 .LFB7:
-	.file 1 "C:/esp/ArkPOS2-esp/main/iap.c"
+	.file 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c"
 	.loc 1 275 0
 	entry	sp, 32
 .LCFI0:
@@ -903,7 +903,7 @@ iap_state:
 	.file 5 "C:/esp/esp-idf/components/spi_flash/include/esp_partition.h"
 	.file 6 "C:/esp/esp-idf/components/app_update/include/esp_ota_ops.h"
 	.file 7 "C:/esp/esp-idf/components/log/include/esp_log.h"
-	.file 8 "C:/esp/ArkPOS2-esp/main/iap.h"
+	.file 8 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.h"
 	.file 9 "C:/esp/esp-idf/components/newlib/include/string.h"
 	.file 10 "C:/esp/esp-idf/components/newlib/include/stdlib.h"
 	.section	.debug_info,"",@progbits
@@ -3099,8 +3099,8 @@ iap_state:
 	.string	"esp_partition_t"
 .LASF54:
 	.string	"address"
-.LASF72:
-	.string	"cur_flash_address"
+.LASF102:
+	.string	"C:/esp/esp32-ArkPOS2/ArkPOS2-esp/main/iap.c"
 .LASF64:
 	.string	"ESP_LOG_INFO"
 .LASF69:
@@ -3125,8 +3125,12 @@ iap_state:
 	.string	"esp_ota_set_boot_partition"
 .LASF2:
 	.string	"signed char"
+.LASF17:
+	.string	"int32_t"
 .LASF10:
 	.string	"long long unsigned int"
+.LASF27:
+	.string	"ESP_PARTITION_SUBTYPE_APP_OTA_2"
 .LASF18:
 	.string	"uint32_t"
 .LASF49:
@@ -3159,22 +3163,18 @@ iap_state:
 	.string	"iap_write"
 .LASF52:
 	.string	"type"
-.LASF17:
-	.string	"int32_t"
+.LASF103:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\main"
 .LASF61:
 	.string	"ESP_LOG_NONE"
-.LASF102:
-	.string	"C:/esp/ArkPOS2-esp/main/iap.c"
+.LASF1:
+	.string	"short unsigned int"
 .LASF58:
 	.string	"_Bool"
 .LASF67:
 	.string	"esp_log_level_t"
 .LASF63:
 	.string	"ESP_LOG_WARN"
-.LASF103:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\main"
-.LASF1:
-	.string	"short unsigned int"
 .LASF65:
 	.string	"ESP_LOG_DEBUG"
 .LASF24:
@@ -3229,8 +3229,8 @@ iap_state:
 	.string	"ESP_PARTITION_SUBTYPE_APP_OTA_0"
 .LASF26:
 	.string	"ESP_PARTITION_SUBTYPE_APP_OTA_1"
-.LASF27:
-	.string	"ESP_PARTITION_SUBTYPE_APP_OTA_2"
+.LASF72:
+	.string	"cur_flash_address"
 .LASF28:
 	.string	"ESP_PARTITION_SUBTYPE_APP_OTA_3"
 .LASF29:
@@ -3239,4 +3239,4 @@ iap_state:
 	.string	"ESP_PARTITION_SUBTYPE_APP_OTA_5"
 .LASF31:
 	.string	"ESP_PARTITION_SUBTYPE_APP_OTA_6"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

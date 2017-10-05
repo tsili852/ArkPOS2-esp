@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/heap/multi_heap.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\heap//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\heap//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/heap/multi_heap.c"
@@ -745,7 +745,7 @@ extern long double strtold (const char *restrict, char **restrict);
 # 1 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 1
 # 19 "C:/esp/esp-idf/components/newlib/platform_include/assert.h"
        
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 2
 
 
@@ -1569,7 +1569,7 @@ void multi_heap_internal_poison_fill_region(void *start, size_t size,
 # 99 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h"
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h" 1
 # 73 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 74 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h" 2
 # 102 "C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h"
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h" 1
@@ -2523,7 +2523,156 @@ void esp_crosscore_int_init();
 # 40 "C:/esp/esp-idf/components/esp32/include/esp_crosscore_int.h"
 void esp_crosscore_int_send_yield(int coreId);
 # 83 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
-# 107 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+
+
+# 1 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 1
+# 14 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+       
+# 51 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void *heap_caps_malloc(size_t size, uint32_t caps);
+# 63 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void heap_caps_free( void *ptr);
+# 82 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void *heap_caps_realloc( void *ptr, size_t size, int caps);
+# 99 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+size_t heap_caps_get_free_size( uint32_t caps );
+# 117 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+size_t heap_caps_get_minimum_free_size( uint32_t caps );
+# 129 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+size_t heap_caps_get_largest_free_block( uint32_t caps );
+# 145 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void heap_caps_get_info( multi_heap_info_t *info, uint32_t caps );
+# 158 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void heap_caps_print_heap_info( uint32_t caps );
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 3 4
+_Bool 
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+    heap_caps_check_integrity(uint32_t caps, 
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h" 3 4
+                                             _Bool 
+# 175 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+                                                  print_errors);
+# 190 "C:/esp/esp-idf/components/heap/include/esp_heap_caps.h"
+void heap_caps_malloc_extmem_enable(size_t limit);
+# 86 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
+# 1 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 1
+# 14 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+       
+
+
+
+
+
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 21 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 2
+# 1 "C:/esp/esp-idf/components/esp32/include/esp_attr.h" 1
+# 22 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 2
+
+
+
+
+
+typedef struct {
+    const char *name;
+    uint32_t caps[3];
+    
+# 30 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 30 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        aliased_iram;
+    
+# 31 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 31 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        startup_stack;
+} soc_memory_type_desc_t;
+
+
+extern const soc_memory_type_desc_t soc_memory_types[];
+extern const size_t soc_memory_type_count;
+
+
+
+typedef struct
+{
+    intptr_t start;
+    size_t size;
+    size_t type;
+    intptr_t iram_address;
+} soc_memory_region_t;
+
+extern const soc_memory_region_t soc_memory_regions[];
+extern const size_t soc_memory_region_count;
+
+
+
+
+typedef struct
+{
+    intptr_t start;
+    intptr_t end;
+} soc_reserved_region_t;
+
+extern const soc_reserved_region_t soc_reserved_regions[];
+extern const size_t soc_reserved_region_count;
+
+inline static 
+# 63 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 63 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_dma_capable(const void *p)
+{
+    return (intptr_t)p >= 0x3FFAE000 && (intptr_t)p < 0x40000000;
+}
+
+inline static 
+# 68 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 68 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_executable(const void *p)
+{
+    intptr_t ip = (intptr_t) p;
+    return (ip >= 0x400D0000 && ip < 0x40400000)
+        || (ip >= 0x40080000 && ip < 0x400A0000)
+        || (ip >= 0x400C0000 && ip < 0x400C2000);
+}
+
+inline static 
+# 76 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 76 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_byte_accessible(const void *p)
+{
+    
+# 78 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 78 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        r;
+    r = ((intptr_t)p >= 0x3FFAE000 && (intptr_t)p < 0x40000000);
+
+
+
+    return r;
+}
+
+inline static 
+# 86 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 86 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_internal(const void *p) {
+    
+# 87 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 87 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        r;
+    r = ((intptr_t)p >= 0x3F400000 && (intptr_t)p < 0x400C2000);
+    r |= ((intptr_t)p >= 0x50000000 && (intptr_t)p < 0x50002000);
+    return r;
+}
+# 87 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
+# 110 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 typedef uint8_t StackType_t;
 typedef int BaseType_t;
 typedef unsigned int UBaseType_t;
@@ -2539,12 +2688,11 @@ typedef unsigned int UBaseType_t;
 
 
 # 1 "C:/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h" 1
-# 122 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
-
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
-# 124 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
-# 1 "C:/esp/esp-idf/components/esp32/include/esp_attr.h" 1
 # 125 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
+
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 127 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 2
+
 
 
 
@@ -2557,24 +2705,24 @@ typedef struct {
 
 
 } portMUX_TYPE;
-# 174 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 177 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vPortAssertIfInISR();
-# 202 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 205 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vPortCPUInitializeMutex(portMUX_TYPE *mux);
-# 216 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 219 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vTaskExitCritical( portMUX_TYPE *mux );
 void vTaskEnterCritical( portMUX_TYPE *mux );
 void vPortCPUAcquireMutex(portMUX_TYPE *mux);
-# 228 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 231 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 
-# 228 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 3 4
+# 231 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h" 3 4
 _Bool 
-# 228 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 231 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
     vPortCPUAcquireMutexTimeout(portMUX_TYPE *mux, int timeout_cycles);
 void vPortCPUReleaseMutex(portMUX_TYPE *mux);
-# 241 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 244 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 static inline unsigned portENTER_CRITICAL_NESTED() { unsigned state = ({ unsigned __tmp; __asm__ __volatile__( "rsil	%0, " "3" "\n" : "=a" (__tmp) : : "memory" ); __tmp;}); ; return state; }
-# 258 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 273 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 static inline void uxPortCompareSet(volatile uint32_t *addr, uint32_t compare, uint32_t *set) {
     __asm__ __volatile__ (
         "WSR 	    %2,SCOMPARE1 \n"
@@ -2583,20 +2731,20 @@ static inline void uxPortCompareSet(volatile uint32_t *addr, uint32_t compare, u
         :"r"(addr), "r"(compare), "0"(*set)
         );
 }
-# 281 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 296 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void vPortYield( void );
 void _frxt_setup_switch( void );
 
 
 
 static inline uint32_t xPortGetCoreID();
-# 307 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 322 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 typedef struct {
 
  volatile StackType_t* coproc_area;
-# 324 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 339 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 } xMPU_SETTINGS;
-# 336 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
+# 351 "C:/esp/esp-idf/components/freertos/include/freertos/portmacro.h"
 void _xt_coproc_release(volatile void * coproc_sa_base);
 # 95 "C:/esp/esp-idf/components/freertos/include/freertos/portable.h" 2
 # 125 "C:/esp/esp-idf/components/freertos/include/freertos/portable.h"
@@ -4069,6 +4217,28 @@ void *pvTaskIncrementMutexHeldCount( void );
 # 2216 "C:/esp/esp-idf/components/freertos/include/freertos/task.h"
 UBaseType_t uxTaskGetSnapshotAll( TaskSnapshot_t * const pxTaskSnapshotArray, const UBaseType_t uxArraySize, UBaseType_t * const pxTcbSz );
 # 20 "C:/esp/esp-idf/components/heap/multi_heap_platform.h" 2
+# 44 "C:/esp/esp-idf/components/heap/multi_heap_platform.h"
+inline static void multi_heap_assert(
+# 44 "C:/esp/esp-idf/components/heap/multi_heap_platform.h" 3 4
+                                    _Bool 
+# 44 "C:/esp/esp-idf/components/heap/multi_heap_platform.h"
+                                         condition, const char *format, int line, intptr_t address)
+{
+
+
+
+
+
+    if(!condition) {
+
+        ets_printf(format, line, address);
+
+        abort();
+    }
+
+
+
+}
 # 27 "C:/esp/esp-idf/components/heap/multi_heap.c" 2
 
 
@@ -4078,7 +4248,7 @@ UBaseType_t uxTaskGetSnapshotAll( TaskSnapshot_t * const pxTaskSnapshotArray, co
 
 
 
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 19 "C:/esp/esp-idf/components/heap/multi_heap_config.h" 2
 # 30 "C:/esp/esp-idf/components/heap/multi_heap.c" 2
 
@@ -4202,43 +4372,49 @@ static inline size_t block_data_size(const heap_block_t *block)
 
 static void assert_valid_block(const heap_t *heap, const heap_block_t *block)
 {
-    ((block >= &heap->first_block && block <= heap->last_block) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 147, __func__, "block >= &heap->first_block && block <= heap->last_block"));
+    multi_heap_assert((block >= &heap->first_block && block <= heap->last_block), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n",
+                           148
+# 147 "C:/esp/esp-idf/components/heap/multi_heap.c"
+    , (intptr_t)(block))
+                            ;
     if (heap < (const heap_t *)heap->last_block) {
         const heap_block_t *next = get_next_block(block);
-        ((next >= &heap->first_block && next <= heap->last_block) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 150, __func__, "next >= &heap->first_block && next <= heap->last_block"));
+        multi_heap_assert((next >= &heap->first_block && next <= heap->last_block), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 151, (intptr_t)(block));
         if (is_free(block)) {
-            ((block->next_free >= &heap->first_block && block->next_free <= heap->last_block) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 152, __func__, "block->next_free >= &heap->first_block && block->next_free <= heap->last_block"));
+
+            multi_heap_assert((block->next_free >= &heap->first_block && block->next_free <= heap->last_block), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 154, (intptr_t)(&block->next_free));
         }
     }
 }
-# 166 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 168 "C:/esp/esp-idf/components/heap/multi_heap.c"
 static heap_block_t *get_prev_free_block(heap_t *heap, const heap_block_t *block)
 {
-    ((block != &heap->first_block) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 168, __func__, "block != &heap->first_block"));
+    ((block != &heap->first_block) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 170, __func__, "block != &heap->first_block"));
 
     for (heap_block_t *b = &heap->first_block; b != 
-# 170 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
-                                                   ((void *)0) 
-# 170 "C:/esp/esp-idf/components/heap/multi_heap.c"
-                                                        && b < block; b = b->next_free) {
-        ((is_free(b)) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 171, __func__, "is_free(b)"));
-        if (b->next_free == 
 # 172 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
-                           ((void *)0) 
+                                                   ((void *)0) 
 # 172 "C:/esp/esp-idf/components/heap/multi_heap.c"
+                                                        && b < block; b = b->next_free) {
+        multi_heap_assert((is_free(b)), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 173, (intptr_t)(b));
+        if (b->next_free == 
+# 174 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+                           ((void *)0) 
+# 174 "C:/esp/esp-idf/components/heap/multi_heap.c"
                                 || b->next_free >= block) {
             if (is_free(block)) {
-                ((b->next_free == block) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 174, __func__, "b->next_free == block"));
+
+                multi_heap_assert((b->next_free == block), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 177, (intptr_t)(&b->next_free));
             }
             return b;
         }
     }
     abort();
 }
-# 190 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 193 "C:/esp/esp-idf/components/heap/multi_heap.c"
 static heap_block_t *merge_adjacent(heap_t *heap, heap_block_t *a, heap_block_t *b)
 {
-    ((a < b) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 192, __func__, "a < b"));
+    ((a < b) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 195, __func__, "a < b"));
 
 
     if (is_last_block(b)) {
@@ -4248,12 +4424,12 @@ static heap_block_t *merge_adjacent(heap_t *heap, heap_block_t *a, heap_block_t 
         return b;
     }
 
-    ((get_next_block(a) == b) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 202, __func__, "get_next_block(a) == b"));
+    multi_heap_assert((get_next_block(a) == b), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 205, (intptr_t)(a));
 
     
-# 204 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 207 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    _Bool 
-# 204 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 207 "C:/esp/esp-idf/components/heap/multi_heap.c"
         free = is_free(a) && is_free(b);
     if (!free && (is_free(a) || is_free(b))) {
 
@@ -4261,26 +4437,24 @@ static heap_block_t *merge_adjacent(heap_t *heap, heap_block_t *a, heap_block_t 
 
         heap_block_t *free_block = is_free(a) ? a : b;
         heap_block_t *prev_free = get_prev_free_block(heap, free_block);
-        ((free_block->next_free > prev_free) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 211, __func__, "free_block->next_free > prev_free"));
+        multi_heap_assert((free_block->next_free > prev_free), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 214, (intptr_t)(&free_block->next_free));
         prev_free->next_free = free_block->next_free;
 
         heap->free_bytes -= block_data_size(free_block);
     }
 
     a->header = b->header & (~3);
-    ((a->header != 0) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 218, __func__, "a->header != 0"));
+    multi_heap_assert((a->header != 0), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 221, (intptr_t)(a));
     if (free) {
         a->header |= 0x1;
-        ((b->next_free == 
-# 221 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
-       ((void *)0) 
-# 221 "C:/esp/esp-idf/components/heap/multi_heap.c"
-       || b->next_free > a) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 221, __func__, "b->next_free == NULL || b->next_free > a"));
-        ((b->next_free == 
-# 222 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
-       ((void *)0) 
-# 222 "C:/esp/esp-idf/components/heap/multi_heap.c"
-       || b->next_free > b) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 222, __func__, "b->next_free == NULL || b->next_free > b"));
+        if (b->next_free != 
+# 224 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+                           ((void *)0)
+# 224 "C:/esp/esp-idf/components/heap/multi_heap.c"
+                               ) {
+            multi_heap_assert((b->next_free > a), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 225, (intptr_t)(&b->next_free));
+            multi_heap_assert((b->next_free > b), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 226, (intptr_t)(&b->next_free));
+        }
         a->next_free = b->next_free;
 
 
@@ -4294,16 +4468,16 @@ static heap_block_t *merge_adjacent(heap_t *heap, heap_block_t *a, heap_block_t 
 
     return a;
 }
-# 246 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 251 "C:/esp/esp-idf/components/heap/multi_heap.c"
 static void split_if_necessary(heap_t *heap, heap_block_t *block, size_t size, heap_block_t *prev_free_block)
 {
-    ((!is_free(block)) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 248, __func__, "!is_free(block)"));
-    ((size <= block_data_size(block)) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 249, __func__, "size <= block_data_size(block)"));
+    multi_heap_assert((!is_free(block)), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 253, (intptr_t)(block));
+    multi_heap_assert((size <= block_data_size(block)), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 254, (intptr_t)(block));
     size = (((size)+sizeof(void *)-1) & ~(sizeof(void *)-1));
 
 
-    ((block != &heap->first_block) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 253, __func__, "block != &heap->first_block"));
-    ((!is_last_block(block)) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 254, __func__, "!is_last_block(block)"));
+    ((block != &heap->first_block) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 258, __func__, "block != &heap->first_block"));
+    ((!is_last_block(block)) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 259, __func__, "!is_last_block(block)"));
 
     if (block_data_size(block) < size + sizeof(heap_block_t)) {
 
@@ -4316,13 +4490,18 @@ static void split_if_necessary(heap_t *heap, heap_block_t *block, size_t size, h
     block->header = (intptr_t)new_block;
 
     if (prev_free_block == 
-# 266 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 271 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                           ((void *)0)
-# 266 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 271 "C:/esp/esp-idf/components/heap/multi_heap.c"
                               ) {
         prev_free_block = get_prev_free_block(heap, block);
     }
-    ((prev_free_block->next_free > new_block) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 269, __func__, "prev_free_block->next_free > new_block"));
+
+    multi_heap_assert((prev_free_block->next_free > new_block), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n",
+                                                 276
+# 275 "C:/esp/esp-idf/components/heap/multi_heap.c"
+    , (intptr_t)(&prev_free_block->next_free))
+                                                  ;
     new_block->next_free = prev_free_block->next_free;
     prev_free_block->next_free = new_block;
     heap->free_bytes += block_data_size(new_block);
@@ -4333,7 +4512,7 @@ size_t multi_heap_get_allocated_size_impl(multi_heap_handle_t heap, void *p)
     heap_block_t *pb = get_block(p);
 
     assert_valid_block(heap, pb);
-    ((!is_free(pb)) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 280, __func__, "!is_free(pb)"));
+    multi_heap_assert((!is_free(pb)), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 287, (intptr_t)(pb));
     return block_data_size(pb);
 }
 
@@ -4343,15 +4522,15 @@ multi_heap_handle_t multi_heap_register_impl(void *start, size_t size)
     uintptr_t end = (((uintptr_t)start + size) & ~(sizeof(void *)-1));
     if (end - (uintptr_t)start < sizeof(heap_t) + 2*sizeof(heap_block_t)) {
         return 
-# 289 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 296 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
               ((void *)0)
-# 289 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 296 "C:/esp/esp-idf/components/heap/multi_heap.c"
                   ;
     }
     heap->lock = 
-# 291 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 298 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                 ((void *)0)
-# 291 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 298 "C:/esp/esp-idf/components/heap/multi_heap.c"
                     ;
     heap->last_block = (heap_block_t *)(end - sizeof(heap_block_t));
 
@@ -4363,9 +4542,9 @@ multi_heap_handle_t multi_heap_register_impl(void *start, size_t size)
 
     heap->last_block->header = 0x1;
     heap->last_block->next_free = 
-# 301 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 308 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                                  ((void *)0)
-# 301 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 308 "C:/esp/esp-idf/components/heap/multi_heap.c"
                                      ;
 
 
@@ -4393,49 +4572,50 @@ void multi_heap_set_lock(multi_heap_handle_t heap, void *lock)
 void *multi_heap_malloc_impl(multi_heap_handle_t heap, size_t size)
 {
     heap_block_t *best_block = 
-# 327 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 334 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                               ((void *)0)
-# 327 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 334 "C:/esp/esp-idf/components/heap/multi_heap.c"
                                   ;
     heap_block_t *prev_free = 
-# 328 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 335 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                              ((void *)0)
-# 328 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 335 "C:/esp/esp-idf/components/heap/multi_heap.c"
                                  ;
     heap_block_t *prev = 
-# 329 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 336 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                         ((void *)0)
-# 329 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 336 "C:/esp/esp-idf/components/heap/multi_heap.c"
                             ;
     size_t best_size = 0xffffffffU;
     size = (((size)+sizeof(void *)-1) & ~(sizeof(void *)-1));
 
     if (size == 0 || heap == 
-# 333 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 340 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                             ((void *)0) 
-# 333 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 340 "C:/esp/esp-idf/components/heap/multi_heap.c"
                                  || heap->free_bytes < size) {
         return 
-# 334 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 341 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
               ((void *)0)
-# 334 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 341 "C:/esp/esp-idf/components/heap/multi_heap.c"
                   ;
     }
 
     do { if((heap->lock) != 
-# 337 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 344 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0)
-# 337 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 344 "C:/esp/esp-idf/components/heap/multi_heap.c"
    ) { vTaskEnterCritical((portMUX_TYPE *)(heap->lock)); } } while(0);
 
 
     prev = &heap->first_block;
     for (heap_block_t *b = heap->first_block.next_free; b != 
-# 341 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 348 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                                                             ((void *)0)
-# 341 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 348 "C:/esp/esp-idf/components/heap/multi_heap.c"
                                                                 ; b = b->next_free) {
-        ((is_free(b)) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 342, __func__, "is_free(b)"));
+        multi_heap_assert((b > prev), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 349, (intptr_t)(&prev->next_free));
+        multi_heap_assert((is_free(b)), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 350, (intptr_t)(b));
         size_t bs = block_data_size(b);
         if (bs >= size && bs < best_size) {
             best_block = b;
@@ -4449,19 +4629,19 @@ void *multi_heap_malloc_impl(multi_heap_handle_t heap, size_t size)
     }
 
     if (best_block == 
-# 355 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 363 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                      ((void *)0)
-# 355 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 363 "C:/esp/esp-idf/components/heap/multi_heap.c"
                          ) {
         do { if ((heap->lock) != 
-# 356 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 364 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
        ((void *)0)
-# 356 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 364 "C:/esp/esp-idf/components/heap/multi_heap.c"
        ) { vTaskExitCritical((portMUX_TYPE *)(heap->lock)); } } while(0);
         return 
-# 357 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 365 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
               ((void *)0)
-# 357 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 365 "C:/esp/esp-idf/components/heap/multi_heap.c"
                   ;
     }
 
@@ -4477,9 +4657,9 @@ void *multi_heap_malloc_impl(multi_heap_handle_t heap, size_t size)
     }
 
     do { if ((heap->lock) != 
-# 371 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 379 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0)
-# 371 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 379 "C:/esp/esp-idf/components/heap/multi_heap.c"
    ) { vTaskExitCritical((portMUX_TYPE *)(heap->lock)); } } while(0);
 
     return best_block->data;
@@ -4490,37 +4670,38 @@ void multi_heap_free_impl(multi_heap_handle_t heap, void *p)
     heap_block_t *pb = get_block(p);
 
     if (heap == 
-# 380 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 388 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                ((void *)0) 
-# 380 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 388 "C:/esp/esp-idf/components/heap/multi_heap.c"
                     || p == 
-# 380 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 388 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                             ((void *)0)
-# 380 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 388 "C:/esp/esp-idf/components/heap/multi_heap.c"
                                 ) {
         return;
     }
 
     do { if((heap->lock) != 
-# 384 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 392 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0)
-# 384 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 392 "C:/esp/esp-idf/components/heap/multi_heap.c"
    ) { vTaskEnterCritical((portMUX_TYPE *)(heap->lock)); } } while(0);
 
     assert_valid_block(heap, pb);
-    ((!is_free(pb)) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 387, __func__, "!is_free(pb)"));
-    ((!is_last_block(pb)) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 388, __func__, "!is_last_block(pb)"));
-    ((pb != &heap->first_block) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 389, __func__, "pb != &heap->first_block"));
+    multi_heap_assert((!is_free(pb)), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 395, (intptr_t)(pb));
+    multi_heap_assert((!is_last_block(pb)), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 396, (intptr_t)(pb));
+    multi_heap_assert((pb != &heap->first_block), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 397, (intptr_t)(pb));
 
     heap_block_t *next = get_next_block(pb);
 
 
     heap_block_t *prev_free = get_prev_free_block(heap, pb);
-    ((prev_free->next_free == 
-# 395 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+
+    multi_heap_assert((prev_free->next_free == 
+# 404 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0) 
-# 395 "C:/esp/esp-idf/components/heap/multi_heap.c"
-   || prev_free->next_free > pb) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 395, __func__, "prev_free->next_free == NULL || prev_free->next_free > pb"));
+# 404 "C:/esp/esp-idf/components/heap/multi_heap.c"
+   || prev_free->next_free > pb), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 404, (intptr_t)(&prev_free->next_free));
     pb->next_free = prev_free->next_free;
     prev_free->next_free = pb;
 
@@ -4540,9 +4721,9 @@ void multi_heap_free_impl(multi_heap_handle_t heap, void *p)
     }
 
     do { if ((heap->lock) != 
-# 414 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 423 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0)
-# 414 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 423 "C:/esp/esp-idf/components/heap/multi_heap.c"
    ) { vTaskExitCritical((portMUX_TYPE *)(heap->lock)); } } while(0);
 }
 
@@ -4554,84 +4735,85 @@ void *multi_heap_realloc_impl(multi_heap_handle_t heap, void *p, size_t size)
     size = (((size)+sizeof(void *)-1) & ~(sizeof(void *)-1));
 
     ((heap != 
-# 424 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 433 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0)
-# 424 "C:/esp/esp-idf/components/heap/multi_heap.c"
-   ) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 424, __func__, "heap != NULL"));
+# 433 "C:/esp/esp-idf/components/heap/multi_heap.c"
+   ) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 433, __func__, "heap != NULL"));
 
     if (p == 
-# 426 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 435 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
             ((void *)0)
-# 426 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 435 "C:/esp/esp-idf/components/heap/multi_heap.c"
                 ) {
         return multi_heap_malloc_impl(heap, size);
     }
 
     assert_valid_block(heap, pb);
-    ((!is_free(pb) && "realloc arg should be allocated") ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 431, __func__, "!is_free(pb) && \"realloc arg should be allocated\""));
+
+    multi_heap_assert((!is_free(pb)), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 441, (intptr_t)(pb));
 
     if (size == 0) {
 
 
         multi_heap_free_impl(heap, p);
         return 
-# 437 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 447 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
               ((void *)0)
-# 437 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 447 "C:/esp/esp-idf/components/heap/multi_heap.c"
                   ;
     }
 
     if (heap == 
-# 440 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 450 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                ((void *)0)
-# 440 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 450 "C:/esp/esp-idf/components/heap/multi_heap.c"
                    ) {
         return 
-# 441 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 451 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
               ((void *)0)
-# 441 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 451 "C:/esp/esp-idf/components/heap/multi_heap.c"
                   ;
     }
 
     do { if((heap->lock) != 
-# 444 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 454 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0)
-# 444 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 454 "C:/esp/esp-idf/components/heap/multi_heap.c"
    ) { vTaskEnterCritical((portMUX_TYPE *)(heap->lock)); } } while(0);
     result = 
-# 445 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 455 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
             ((void *)0)
-# 445 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 455 "C:/esp/esp-idf/components/heap/multi_heap.c"
                 ;
 
     if (size <= block_data_size(pb)) {
 
         split_if_necessary(heap, pb, size, 
-# 449 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 459 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                                           ((void *)0)
-# 449 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 459 "C:/esp/esp-idf/components/heap/multi_heap.c"
                                               );
         result = pb->data;
     }
     else if (heap->free_bytes < size - block_data_size(pb)) {
 
         do { if ((heap->lock) != 
-# 454 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 464 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
        ((void *)0)
-# 454 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 464 "C:/esp/esp-idf/components/heap/multi_heap.c"
        ) { vTaskExitCritical((portMUX_TYPE *)(heap->lock)); } } while(0);
         return 
-# 455 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 465 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
               ((void *)0)
-# 455 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 465 "C:/esp/esp-idf/components/heap/multi_heap.c"
                   ;
     }
 
 
     if (result == 
-# 459 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 469 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                  ((void *)0)
-# 459 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 469 "C:/esp/esp-idf/components/heap/multi_heap.c"
                      ) {
 
         heap_block_t *orig_pb = pb;
@@ -4658,18 +4840,18 @@ void *multi_heap_realloc_impl(multi_heap_handle_t heap, void *p, size_t size)
         if (block_data_size(pb) >= size) {
             memmove(pb->data, orig_pb->data, orig_size);
             split_if_necessary(heap, pb, size, 
-# 484 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 494 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                                               ((void *)0)
-# 484 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 494 "C:/esp/esp-idf/components/heap/multi_heap.c"
                                                   );
             result = pb->data;
         }
     }
 
     if (result == 
-# 489 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 499 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                  ((void *)0)
-# 489 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 499 "C:/esp/esp-idf/components/heap/multi_heap.c"
                      ) {
 
 
@@ -4677,9 +4859,9 @@ void *multi_heap_realloc_impl(multi_heap_handle_t heap, void *p, size_t size)
 
         result = multi_heap_malloc_impl(heap, size);
         if (result != 
-# 495 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 505 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                      ((void *)0)
-# 495 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 505 "C:/esp/esp-idf/components/heap/multi_heap.c"
                          ) {
             memcpy(result, pb->data, block_data_size(pb));
             multi_heap_free_impl(heap, pb->data);
@@ -4691,88 +4873,88 @@ void *multi_heap_realloc_impl(multi_heap_handle_t heap, void *p, size_t size)
     }
 
     do { if ((heap->lock) != 
-# 505 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 515 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0)
-# 505 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 515 "C:/esp/esp-idf/components/heap/multi_heap.c"
    ) { vTaskExitCritical((portMUX_TYPE *)(heap->lock)); } } while(0);
     return result;
 }
-# 517 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 527 "C:/esp/esp-idf/components/heap/multi_heap.c"
 
-# 517 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 527 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
 _Bool 
-# 517 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 527 "C:/esp/esp-idf/components/heap/multi_heap.c"
     multi_heap_check(multi_heap_handle_t heap, 
-# 517 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 527 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                                                _Bool 
-# 517 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 527 "C:/esp/esp-idf/components/heap/multi_heap.c"
                                                     print_errors)
 {
     
-# 519 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 529 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    _Bool 
-# 519 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 529 "C:/esp/esp-idf/components/heap/multi_heap.c"
         valid = 
-# 519 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 529 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                 1
-# 519 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 529 "C:/esp/esp-idf/components/heap/multi_heap.c"
                     ;
     size_t total_free_bytes = 0;
     ((heap != 
-# 521 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 531 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0)
-# 521 "C:/esp/esp-idf/components/heap/multi_heap.c"
-   ) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 521, __func__, "heap != NULL"));
+# 531 "C:/esp/esp-idf/components/heap/multi_heap.c"
+   ) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 531, __func__, "heap != NULL"));
 
     do { if((heap->lock) != 
-# 523 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 533 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0)
-# 523 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 533 "C:/esp/esp-idf/components/heap/multi_heap.c"
    ) { vTaskEnterCritical((portMUX_TYPE *)(heap->lock)); } } while(0);
 
     heap_block_t *prev = 
-# 525 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 535 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                         ((void *)0)
-# 525 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 535 "C:/esp/esp-idf/components/heap/multi_heap.c"
                             ;
     heap_block_t *prev_free = 
-# 526 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 536 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                              ((void *)0)
-# 526 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 536 "C:/esp/esp-idf/components/heap/multi_heap.c"
                                  ;
     heap_block_t *expected_free = 
-# 527 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 537 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                                  ((void *)0)
-# 527 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 537 "C:/esp/esp-idf/components/heap/multi_heap.c"
                                      ;
 
 
     for(heap_block_t *b = &heap->first_block; b != 
-# 530 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 540 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                                                   ((void *)0)
-# 530 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 540 "C:/esp/esp-idf/components/heap/multi_heap.c"
                                                       ; b = (heap_block_t *)(b->header & (~3))) {
         if (b == prev) {
             do { if (print_errors) { ets_printf("CORRUPT HEAP: Block %p points to itself\n", b); } valid = 
-# 532 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 542 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
            0
-# 532 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 542 "C:/esp/esp-idf/components/heap/multi_heap.c"
            ; } while(0);
             goto done;
         }
         if (b < prev) {
             do { if (print_errors) { ets_printf("CORRUPT HEAP: Block %p is before prev block %p\n", b, prev); } valid = 
-# 536 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 546 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
            0
-# 536 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 546 "C:/esp/esp-idf/components/heap/multi_heap.c"
            ; } while(0);
             goto done;
         }
         if (b > heap->last_block || b < &heap->first_block) {
             do { if (print_errors) { ets_printf("CORRUPT HEAP: Block %p is outside heap (last valid block %p)\n", b, prev); } valid = 
-# 540 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 550 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
            0
-# 540 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 550 "C:/esp/esp-idf/components/heap/multi_heap.c"
            ; } while(0);
             goto done;
         }
@@ -4780,14 +4962,14 @@ _Bool
 
         if (is_free(b)) {
             if (expected_free != 
-# 546 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 556 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                                 ((void *)0) 
-# 546 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 556 "C:/esp/esp-idf/components/heap/multi_heap.c"
                                      && expected_free != b) {
                 do { if (print_errors) { ets_printf("CORRUPT HEAP: Prev free block %p pointed to next free %p but this free block is %p\n", prev_free, expected_free, b); } valid = 
-# 547 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 557 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                0
-# 547 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 557 "C:/esp/esp-idf/components/heap/multi_heap.c"
                ; } while(0)
                                                    ;
             }
@@ -4797,37 +4979,37 @@ _Bool
                 total_free_bytes += block_data_size(b);
             }
         }
-# 572 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 582 "C:/esp/esp-idf/components/heap/multi_heap.c"
     }
 
     if (prev != heap->last_block) {
         do { if (print_errors) { ets_printf("CORRUPT HEAP: Last block %p not %p\n", prev, heap->last_block); } valid = 
-# 575 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 585 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
        0
-# 575 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 585 "C:/esp/esp-idf/components/heap/multi_heap.c"
        ; } while(0);
     }
     if (!is_free(heap->last_block)) {
         do { if (print_errors) { ets_printf("CORRUPT HEAP: Expected prev block %p to be free\n", heap->last_block); } valid = 
-# 578 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 588 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
        0
-# 578 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 588 "C:/esp/esp-idf/components/heap/multi_heap.c"
        ; } while(0);
     }
 
     if (heap->free_bytes != total_free_bytes) {
         do { if (print_errors) { ets_printf("CORRUPT HEAP: Expected %u free bytes counted %u\n", (unsigned)heap->free_bytes, (unsigned)total_free_bytes); } valid = 
-# 582 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 592 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
        0
-# 582 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 592 "C:/esp/esp-idf/components/heap/multi_heap.c"
        ; } while(0);
     }
 
  done:
     do { if ((heap->lock) != 
-# 586 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 596 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0)
-# 586 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 596 "C:/esp/esp-idf/components/heap/multi_heap.c"
    ) { vTaskExitCritical((portMUX_TYPE *)(heap->lock)); } } while(0);
 
     return valid;
@@ -4836,21 +5018,21 @@ _Bool
 void multi_heap_dump(multi_heap_handle_t heap)
 {
     ((heap != 
-# 593 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 603 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0)
-# 593 "C:/esp/esp-idf/components/heap/multi_heap.c"
-   ) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 593, __func__, "heap != NULL"));
+# 603 "C:/esp/esp-idf/components/heap/multi_heap.c"
+   ) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 603, __func__, "heap != NULL"));
 
     do { if((heap->lock) != 
-# 595 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 605 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0)
-# 595 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 605 "C:/esp/esp-idf/components/heap/multi_heap.c"
    ) { vTaskEnterCritical((portMUX_TYPE *)(heap->lock)); } } while(0);
     printf("Heap start %p end %p\nFirst free block %p\n", &heap->first_block, heap->last_block, heap->first_block.next_free);
     for(heap_block_t *b = &heap->first_block; b != 
-# 597 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 607 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                                                   ((void *)0)
-# 597 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 607 "C:/esp/esp-idf/components/heap/multi_heap.c"
                                                       ; b = get_next_block(b)) {
         printf("Block %p data size 0x%08zx bytes next block %p", b, block_data_size(b), get_next_block(b));
         if (is_free(b)) {
@@ -4860,18 +5042,18 @@ void multi_heap_dump(multi_heap_handle_t heap)
         }
     }
     do { if ((heap->lock) != 
-# 605 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 615 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0)
-# 605 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 615 "C:/esp/esp-idf/components/heap/multi_heap.c"
    ) { vTaskExitCritical((portMUX_TYPE *)(heap->lock)); } } while(0);
 }
 
 size_t multi_heap_free_size_impl(multi_heap_handle_t heap)
 {
     if (heap == 
-# 610 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 620 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                ((void *)0)
-# 610 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 620 "C:/esp/esp-idf/components/heap/multi_heap.c"
                    ) {
         return 0;
     }
@@ -4881,9 +5063,9 @@ size_t multi_heap_free_size_impl(multi_heap_handle_t heap)
 size_t multi_heap_minimum_free_size_impl(multi_heap_handle_t heap)
 {
     if (heap == 
-# 618 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 628 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                ((void *)0)
-# 618 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 628 "C:/esp/esp-idf/components/heap/multi_heap.c"
                    ) {
         return 0;
     }
@@ -4895,17 +5077,17 @@ void multi_heap_get_info_impl(multi_heap_handle_t heap, multi_heap_info_t *info)
     memset(info, 0, sizeof(multi_heap_info_t));
 
     if (heap == 
-# 628 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 638 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
                ((void *)0)
-# 628 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 638 "C:/esp/esp-idf/components/heap/multi_heap.c"
                    ) {
         return;
     }
 
     do { if((heap->lock) != 
-# 632 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 642 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0)
-# 632 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 642 "C:/esp/esp-idf/components/heap/multi_heap.c"
    ) { vTaskEnterCritical((portMUX_TYPE *)(heap->lock)); } } while(0);
     for(heap_block_t *b = get_next_block(&heap->first_block); !is_last_block(b); b = get_next_block(b)) {
         info->total_blocks++;
@@ -4923,12 +5105,13 @@ void multi_heap_get_info_impl(multi_heap_handle_t heap, multi_heap_info_t *info)
     }
 
     info->minimum_free_bytes = heap->minimum_free_bytes;
-    ((info->total_free_bytes == heap->free_bytes) ? (void)0 : __assert_func ("C:/esp/esp-idf/components/heap/multi_heap.c", 649, __func__, "info->total_free_bytes == heap->free_bytes"));
+
+    multi_heap_assert((info->total_free_bytes == heap->free_bytes), "CORRUPT HEAP: multi_heap.c:%d detected at 0x%08x\n", 660, (intptr_t)(heap));
 
     do { if ((heap->lock) != 
-# 651 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
+# 662 "C:/esp/esp-idf/components/heap/multi_heap.c" 3 4
    ((void *)0)
-# 651 "C:/esp/esp-idf/components/heap/multi_heap.c"
+# 662 "C:/esp/esp-idf/components/heap/multi_heap.c"
    ) { vTaskExitCritical((portMUX_TYPE *)(heap->lock)); } } while(0);
 
 }

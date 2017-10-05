@@ -11,7 +11,7 @@
 	.align	4
 	.type	i2c_master_cmd_begin_static, @function
 i2c_master_cmd_begin_static:
-.LFB39:
+.LFB43:
 	.file 1 "C:/esp/esp-idf/components/driver/i2c.c"
 	.loc 1 824 0
 .LVL0:
@@ -484,7 +484,7 @@ i2c_master_cmd_begin_static:
 	s32i.n	a8, a2, 4
 .L1:
 	retw.n
-.LFE39:
+.LFE43:
 	.size	i2c_master_cmd_begin_static, .-i2c_master_cmd_begin_static
 	.section	.text.i2c_isr_handler_default,"ax",@progbits
 	.literal_position
@@ -496,7 +496,7 @@ i2c_master_cmd_begin_static:
 	.align	4
 	.type	i2c_isr_handler_default, @function
 i2c_isr_handler_default:
-.LFB15:
+.LFB19:
 	.loc 1 324 0
 .LVL28:
 	entry	sp, 48
@@ -882,7 +882,7 @@ i2c_isr_handler_default:
 	bnez.n	a4, .L49
 	.loc 1 409 0
 	retw.n
-.LFE15:
+.LFE19:
 	.size	i2c_isr_handler_default, .-i2c_isr_handler_default
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -898,7 +898,7 @@ i2c_isr_handler_default:
 	.align	4
 	.type	i2c_cmd_link_append, @function
 i2c_cmd_link_append:
-.LFB32:
+.LFB36:
 	.loc 1 689 0
 .LVL61:
 	entry	sp, 32
@@ -981,7 +981,7 @@ i2c_cmd_link_append:
 	s32i.n	a2, a3, 16
 	.loc 1 713 0
 	retw.n
-.LFE32:
+.LFE36:
 	.size	i2c_cmd_link_append, .-i2c_cmd_link_append
 	.section	.text.i2c_slave_read,"ax",@progbits
 	.literal_position
@@ -989,7 +989,7 @@ i2c_cmd_link_append:
 	.align	4
 	.type	i2c_slave_read, @function
 i2c_slave_read:
-.LFB42:
+.LFB46:
 	.loc 1 1004 0
 .LVL76:
 	entry	sp, 48
@@ -1032,7 +1032,7 @@ i2c_slave_read:
 	l32i.n	a2, sp, 0
 .LVL83:
 	retw.n
-.LFE42:
+.LFE46:
 	.size	i2c_slave_read, .-i2c_slave_read
 	.section	.rodata.str1.4
 	.align	4
@@ -1053,7 +1053,7 @@ i2c_slave_read:
 	.literal .LC17, .LC10
 	.literal .LC19, .LC18
 	.literal .LC21, .LC20
-	.literal .LC22, __FUNCTION__$5797
+	.literal .LC22, __FUNCTION__$5901
 	.literal .LC23, p_i2c_obj
 	.literal .LC25, .LC24
 	.literal .LC26, 1073033256
@@ -1062,7 +1062,7 @@ i2c_slave_read:
 	.global	i2c_driver_delete
 	.type	i2c_driver_delete, @function
 i2c_driver_delete:
-.LFB12:
+.LFB16:
 	.loc 1 253 0
 .LVL84:
 	entry	sp, 48
@@ -1208,7 +1208,7 @@ i2c_driver_delete:
 	s32i.n	a2, a3, 0
 	.loc 1 301 0
 	retw.n
-.LFE12:
+.LFE16:
 	.size	i2c_driver_delete, .-i2c_driver_delete
 	.section	.text.i2c_reset_tx_fifo,"ax",@progbits
 	.literal_position
@@ -1216,7 +1216,7 @@ i2c_driver_delete:
 	.literal .LC29, .LC10
 	.literal .LC30, .LC18
 	.literal .LC31, .LC20
-	.literal .LC32, __FUNCTION__$5803
+	.literal .LC32, __FUNCTION__$5907
 	.literal .LC33, i2c_spinlock
 	.literal .LC34, I2C
 	.literal .LC35, 8192
@@ -1225,7 +1225,7 @@ i2c_driver_delete:
 	.global	i2c_reset_tx_fifo
 	.type	i2c_reset_tx_fifo, @function
 i2c_reset_tx_fifo:
-.LFB13:
+.LFB17:
 	.loc 1 304 0
 .LVL104:
 	entry	sp, 48
@@ -1286,7 +1286,7 @@ i2c_reset_tx_fifo:
 	movi.n	a2, 0
 	.loc 1 311 0
 	retw.n
-.LFE13:
+.LFE17:
 	.size	i2c_reset_tx_fifo, .-i2c_reset_tx_fifo
 	.section	.text.i2c_reset_rx_fifo,"ax",@progbits
 	.literal_position
@@ -1294,7 +1294,7 @@ i2c_reset_tx_fifo:
 	.literal .LC38, .LC10
 	.literal .LC39, .LC18
 	.literal .LC40, .LC20
-	.literal .LC41, __FUNCTION__$5807
+	.literal .LC41, __FUNCTION__$5911
 	.literal .LC42, i2c_spinlock
 	.literal .LC43, I2C
 	.literal .LC44, 4096
@@ -1303,7 +1303,7 @@ i2c_reset_tx_fifo:
 	.global	i2c_reset_rx_fifo
 	.type	i2c_reset_rx_fifo, @function
 i2c_reset_rx_fifo:
-.LFB14:
+.LFB18:
 	.loc 1 314 0
 .LVL112:
 	entry	sp, 48
@@ -1364,7 +1364,7 @@ i2c_reset_rx_fifo:
 	movi.n	a2, 0
 	.loc 1 321 0
 	retw.n
-.LFE14:
+.LFE18:
 	.size	i2c_reset_rx_fifo, .-i2c_reset_rx_fifo
 	.section	.rodata.str1.4
 	.align	4
@@ -1376,7 +1376,7 @@ i2c_reset_rx_fifo:
 	.literal .LC47, .LC10
 	.literal .LC48, .LC18
 	.literal .LC49, .LC20
-	.literal .LC50, __FUNCTION__$5838
+	.literal .LC50, __FUNCTION__$5942
 	.literal .LC52, .LC51
 	.literal .LC53, i2c_spinlock
 	.literal .LC54, I2C
@@ -1384,7 +1384,7 @@ i2c_reset_rx_fifo:
 	.global	i2c_set_data_mode
 	.type	i2c_set_data_mode, @function
 i2c_set_data_mode:
-.LFB16:
+.LFB20:
 	.loc 1 412 0
 .LVL120:
 	entry	sp, 48
@@ -1502,7 +1502,7 @@ i2c_set_data_mode:
 	movi.n	a2, 0
 	.loc 1 421 0
 	retw.n
-.LFE16:
+.LFE20:
 	.size	i2c_set_data_mode, .-i2c_set_data_mode
 	.section	.text.i2c_get_data_mode,"ax",@progbits
 	.literal_position
@@ -1510,13 +1510,13 @@ i2c_set_data_mode:
 	.literal .LC56, .LC10
 	.literal .LC57, .LC18
 	.literal .LC58, .LC20
-	.literal .LC59, __FUNCTION__$5844
+	.literal .LC59, __FUNCTION__$5948
 	.literal .LC60, I2C
 	.align	4
 	.global	i2c_get_data_mode
 	.type	i2c_get_data_mode, @function
 i2c_get_data_mode:
-.LFB17:
+.LFB21:
 	.loc 1 424 0
 .LVL138:
 	entry	sp, 48
@@ -1577,7 +1577,7 @@ i2c_get_data_mode:
 .LVL146:
 	.loc 1 433 0
 	retw.n
-.LFE17:
+.LFE21:
 	.size	i2c_get_data_mode, .-i2c_get_data_mode
 	.section	.text.i2c_set_period,"ax",@progbits
 	.literal_position
@@ -1585,7 +1585,7 @@ i2c_get_data_mode:
 	.literal .LC62, .LC10
 	.literal .LC63, .LC18
 	.literal .LC64, .LC20
-	.literal .LC65, __FUNCTION__$5857
+	.literal .LC65, __FUNCTION__$5961
 	.literal .LC66, i2c_spinlock
 	.literal .LC67, I2C
 	.literal .LC68, -16384
@@ -1593,7 +1593,7 @@ i2c_get_data_mode:
 	.global	i2c_set_period
 	.type	i2c_set_period, @function
 i2c_set_period:
-.LFB19:
+.LFB23:
 	.loc 1 492 0
 .LVL147:
 	entry	sp, 48
@@ -1660,7 +1660,7 @@ i2c_set_period:
 	movi.n	a2, 0
 	.loc 1 499 0
 	retw.n
-.LFE19:
+.LFE23:
 	.size	i2c_set_period, .-i2c_set_period
 	.section	.text.i2c_get_period,"ax",@progbits
 	.literal_position
@@ -1668,14 +1668,14 @@ i2c_set_period:
 	.literal .LC70, .LC10
 	.literal .LC71, .LC18
 	.literal .LC72, .LC20
-	.literal .LC73, __FUNCTION__$5863
+	.literal .LC73, __FUNCTION__$5967
 	.literal .LC74, i2c_spinlock
 	.literal .LC75, I2C
 	.align	4
 	.global	i2c_get_period
 	.type	i2c_get_period, @function
 i2c_get_period:
-.LFB20:
+.LFB24:
 	.loc 1 502 0
 .LVL157:
 	entry	sp, 48
@@ -1742,7 +1742,7 @@ i2c_get_period:
 	movi.n	a2, 0
 	.loc 1 513 0
 	retw.n
-.LFE20:
+.LFE24:
 	.size	i2c_get_period, .-i2c_get_period
 	.section	.text.i2c_set_start_timing,"ax",@progbits
 	.literal_position
@@ -1750,13 +1750,13 @@ i2c_get_period:
 	.literal .LC77, .LC10
 	.literal .LC78, .LC18
 	.literal .LC79, .LC20
-	.literal .LC80, __FUNCTION__$5869
+	.literal .LC80, __FUNCTION__$5973
 	.literal .LC81, I2C
 	.align	4
 	.global	i2c_set_start_timing
 	.type	i2c_set_start_timing, @function
 i2c_set_start_timing:
-.LFB21:
+.LFB25:
 	.loc 1 516 0
 .LVL166:
 	entry	sp, 48
@@ -1813,7 +1813,7 @@ i2c_set_start_timing:
 	movi.n	a2, 0
 	.loc 1 521 0
 	retw.n
-.LFE21:
+.LFE25:
 	.size	i2c_set_start_timing, .-i2c_set_start_timing
 	.section	.text.i2c_get_start_timing,"ax",@progbits
 	.literal_position
@@ -1821,14 +1821,14 @@ i2c_set_start_timing:
 	.literal .LC83, .LC10
 	.literal .LC84, .LC18
 	.literal .LC85, .LC20
-	.literal .LC86, __FUNCTION__$5875
+	.literal .LC86, __FUNCTION__$5979
 	.literal .LC87, i2c_spinlock
 	.literal .LC88, I2C
 	.align	4
 	.global	i2c_get_start_timing
 	.type	i2c_get_start_timing, @function
 i2c_get_start_timing:
-.LFB22:
+.LFB26:
 	.loc 1 524 0
 .LVL174:
 	entry	sp, 48
@@ -1895,7 +1895,7 @@ i2c_get_start_timing:
 	movi.n	a2, 0
 	.loc 1 535 0
 	retw.n
-.LFE22:
+.LFE26:
 	.size	i2c_get_start_timing, .-i2c_get_start_timing
 	.section	.text.i2c_set_stop_timing,"ax",@progbits
 	.literal_position
@@ -1903,14 +1903,14 @@ i2c_get_start_timing:
 	.literal .LC90, .LC10
 	.literal .LC91, .LC18
 	.literal .LC92, .LC20
-	.literal .LC93, __FUNCTION__$5881
+	.literal .LC93, __FUNCTION__$5985
 	.literal .LC94, I2C
 	.literal .LC95, -16384
 	.align	4
 	.global	i2c_set_stop_timing
 	.type	i2c_set_stop_timing, @function
 i2c_set_stop_timing:
-.LFB23:
+.LFB27:
 	.loc 1 538 0
 .LVL183:
 	entry	sp, 48
@@ -1967,7 +1967,7 @@ i2c_set_stop_timing:
 	movi.n	a2, 0
 	.loc 1 543 0
 	retw.n
-.LFE23:
+.LFE27:
 	.size	i2c_set_stop_timing, .-i2c_set_stop_timing
 	.section	.text.i2c_get_stop_timing,"ax",@progbits
 	.literal_position
@@ -1975,14 +1975,14 @@ i2c_set_stop_timing:
 	.literal .LC97, .LC10
 	.literal .LC98, .LC18
 	.literal .LC99, .LC20
-	.literal .LC100, __FUNCTION__$5887
+	.literal .LC100, __FUNCTION__$5991
 	.literal .LC101, i2c_spinlock
 	.literal .LC102, I2C
 	.align	4
 	.global	i2c_get_stop_timing
 	.type	i2c_get_stop_timing, @function
 i2c_get_stop_timing:
-.LFB24:
+.LFB28:
 	.loc 1 546 0
 .LVL191:
 	entry	sp, 48
@@ -2049,7 +2049,7 @@ i2c_get_stop_timing:
 	movi.n	a2, 0
 	.loc 1 557 0
 	retw.n
-.LFE24:
+.LFE28:
 	.size	i2c_get_stop_timing, .-i2c_get_stop_timing
 	.section	.text.i2c_set_data_timing,"ax",@progbits
 	.literal_position
@@ -2057,13 +2057,13 @@ i2c_get_stop_timing:
 	.literal .LC104, .LC10
 	.literal .LC105, .LC18
 	.literal .LC106, .LC20
-	.literal .LC107, __FUNCTION__$5893
+	.literal .LC107, __FUNCTION__$5997
 	.literal .LC108, I2C
 	.align	4
 	.global	i2c_set_data_timing
 	.type	i2c_set_data_timing, @function
 i2c_set_data_timing:
-.LFB25:
+.LFB29:
 	.loc 1 560 0
 .LVL200:
 	entry	sp, 48
@@ -2120,7 +2120,7 @@ i2c_set_data_timing:
 	movi.n	a2, 0
 	.loc 1 565 0
 	retw.n
-.LFE25:
+.LFE29:
 	.size	i2c_set_data_timing, .-i2c_set_data_timing
 	.section	.text.i2c_get_data_timing,"ax",@progbits
 	.literal_position
@@ -2128,14 +2128,14 @@ i2c_set_data_timing:
 	.literal .LC110, .LC10
 	.literal .LC111, .LC18
 	.literal .LC112, .LC20
-	.literal .LC113, __FUNCTION__$5899
+	.literal .LC113, __FUNCTION__$6003
 	.literal .LC114, i2c_spinlock
 	.literal .LC115, I2C
 	.align	4
 	.global	i2c_get_data_timing
 	.type	i2c_get_data_timing, @function
 i2c_get_data_timing:
-.LFB26:
+.LFB30:
 	.loc 1 568 0
 .LVL208:
 	entry	sp, 48
@@ -2202,7 +2202,7 @@ i2c_get_data_timing:
 	movi.n	a2, 0
 	.loc 1 579 0
 	retw.n
-.LFE26:
+.LFE30:
 	.size	i2c_get_data_timing, .-i2c_get_data_timing
 	.section	.rodata.str1.4
 	.align	4
@@ -2214,13 +2214,13 @@ i2c_get_data_timing:
 	.literal .LC117, .LC10
 	.literal .LC118, .LC18
 	.literal .LC119, .LC20
-	.literal .LC120, __FUNCTION__$5908
+	.literal .LC120, __FUNCTION__$6012
 	.literal .LC122, .LC121
 	.align	4
 	.global	i2c_isr_register
 	.type	i2c_isr_register, @function
 i2c_isr_register:
-.LFB27:
+.LFB31:
 	.loc 1 582 0
 .LVL217:
 	entry	sp, 48
@@ -2301,7 +2301,7 @@ i2c_isr_register:
 .LVL230:
 	.loc 1 596 0
 	retw.n
-.LFE27:
+.LFE31:
 	.size	i2c_isr_register, .-i2c_isr_register
 	.section	.rodata.str1.4
 	.align	4
@@ -2325,7 +2325,7 @@ i2c_isr_register:
 	.literal .LC124, .LC10
 	.literal .LC125, .LC18
 	.literal .LC126, .LC20
-	.literal .LC127, __FUNCTION__$5790
+	.literal .LC127, __FUNCTION__$5894
 	.literal .LC129, .LC128
 	.literal .LC130, p_i2c_obj
 	.literal .LC132, .LC131
@@ -2338,7 +2338,7 @@ i2c_isr_register:
 	.global	i2c_driver_install
 	.type	i2c_driver_install, @function
 i2c_driver_install:
-.LFB11:
+.LFB15:
 	.loc 1 137 0
 .LVL231:
 	entry	sp, 48
@@ -2747,14 +2747,14 @@ i2c_driver_install:
 	movi.n	a2, -1
 	.loc 1 250 0
 	retw.n
-.LFE11:
+.LFE15:
 	.size	i2c_driver_install, .-i2c_driver_install
 	.section	.text.i2c_isr_free,"ax",@progbits
 	.align	4
 	.global	i2c_isr_free
 	.type	i2c_isr_free, @function
 i2c_isr_free:
-.LFB28:
+.LFB32:
 	.loc 1 599 0
 .LVL285:
 	entry	sp, 32
@@ -2767,7 +2767,7 @@ i2c_isr_free:
 	mov.n	a2, a10
 .LVL287:
 	retw.n
-.LFE28:
+.LFE32:
 	.size	i2c_isr_free, .-i2c_isr_free
 	.section	.rodata.str1.4
 	.align	4
@@ -2785,7 +2785,7 @@ i2c_isr_free:
 	.literal .LC142, .LC10
 	.literal .LC143, .LC18
 	.literal .LC144, .LC20
-	.literal .LC145, __FUNCTION__$5925
+	.literal .LC145, __FUNCTION__$6029
 	.literal .LC146, GPIO_PIN_MUX_REG
 	.literal .LC148, .LC147
 	.literal .LC150, .LC149
@@ -2796,7 +2796,7 @@ i2c_isr_free:
 	.global	i2c_set_pin
 	.type	i2c_set_pin, @function
 i2c_set_pin:
-.LFB29:
+.LFB33:
 	.loc 1 604 0
 .LVL288:
 	entry	sp, 64
@@ -3114,7 +3114,7 @@ i2c_set_pin:
 	movi.n	a2, 0
 	.loc 1 662 0
 	retw.n
-.LFE29:
+.LFE33:
 	.size	i2c_set_pin, .-i2c_set_pin
 	.section	.rodata.str1.4
 	.align	4
@@ -3126,7 +3126,7 @@ i2c_set_pin:
 	.literal .LC156, .LC10
 	.literal .LC157, .LC18
 	.literal .LC158, .LC20
-	.literal .LC159, __FUNCTION__$5849
+	.literal .LC159, __FUNCTION__$5953
 	.literal .LC160, .LC121
 	.literal .LC162, .LC161
 	.literal .LC163, i2c_spinlock
@@ -3143,7 +3143,7 @@ i2c_set_pin:
 	.global	i2c_param_config
 	.type	i2c_param_config, @function
 i2c_param_config:
-.LFB18:
+.LFB22:
 	.loc 1 436 0
 .LVL328:
 	entry	sp, 48
@@ -3489,14 +3489,14 @@ i2c_param_config:
 .LVL354:
 	.loc 1 489 0
 	retw.n
-.LFE18:
+.LFE22:
 	.size	i2c_param_config, .-i2c_param_config
 	.section	.text.i2c_cmd_link_create,"ax",@progbits
 	.align	4
 	.global	i2c_cmd_link_create
 	.type	i2c_cmd_link_create, @function
 i2c_cmd_link_create:
-.LFB30:
+.LFB34:
 	.loc 1 665 0
 	entry	sp, 32
 .LCFI22:
@@ -3508,14 +3508,14 @@ i2c_cmd_link_create:
 	.loc 1 668 0
 	mov.n	a2, a10
 	retw.n
-.LFE30:
+.LFE34:
 	.size	i2c_cmd_link_create, .-i2c_cmd_link_create
 	.section	.text.i2c_cmd_link_delete,"ax",@progbits
 	.align	4
 	.global	i2c_cmd_link_delete
 	.type	i2c_cmd_link_delete, @function
 i2c_cmd_link_delete:
-.LFB31:
+.LFB35:
 	.loc 1 671 0
 .LVL356:
 	entry	sp, 32
@@ -3549,7 +3549,7 @@ i2c_cmd_link_delete:
 	call8	free
 .LVL359:
 	retw.n
-.LFE31:
+.LFE35:
 	.size	i2c_cmd_link_delete, .-i2c_cmd_link_delete
 	.section	.rodata.str1.4
 	.align	4
@@ -3561,12 +3561,12 @@ i2c_cmd_link_delete:
 	.literal .LC174, .LC10
 	.literal .LC175, .LC18
 	.literal .LC177, .LC176
-	.literal .LC178, __FUNCTION__$5954
+	.literal .LC178, __FUNCTION__$6058
 	.align	4
 	.global	i2c_master_start
 	.type	i2c_master_start, @function
 i2c_master_start:
-.LFB33:
+.LFB37:
 	.loc 1 716 0
 .LVL360:
 	entry	sp, 64
@@ -3618,7 +3618,7 @@ i2c_master_start:
 .LVL366:
 	.loc 1 726 0
 	retw.n
-.LFE33:
+.LFE37:
 	.size	i2c_master_start, .-i2c_master_start
 	.section	.text.i2c_master_stop,"ax",@progbits
 	.literal_position
@@ -3626,12 +3626,12 @@ i2c_master_start:
 	.literal .LC180, .LC10
 	.literal .LC181, .LC18
 	.literal .LC182, .LC176
-	.literal .LC183, __FUNCTION__$5959
+	.literal .LC183, __FUNCTION__$6063
 	.align	4
 	.global	i2c_master_stop
 	.type	i2c_master_stop, @function
 i2c_master_stop:
-.LFB34:
+.LFB38:
 	.loc 1 729 0
 .LVL367:
 	entry	sp, 64
@@ -3684,7 +3684,7 @@ i2c_master_stop:
 .LVL373:
 	.loc 1 739 0
 	retw.n
-.LFE34:
+.LFE38:
 	.size	i2c_master_stop, .-i2c_master_stop
 	.section	.text.i2c_master_write,"ax",@progbits
 	.literal_position
@@ -3692,13 +3692,13 @@ i2c_master_stop:
 	.literal .LC185, .LC10
 	.literal .LC186, .LC18
 	.literal .LC187, .LC121
-	.literal .LC188, __FUNCTION__$5967
+	.literal .LC188, __FUNCTION__$6071
 	.literal .LC189, .LC176
 	.align	4
 	.global	i2c_master_write
 	.type	i2c_master_write, @function
 i2c_master_write:
-.LFB35:
+.LFB39:
 	.loc 1 742 0
 .LVL374:
 	entry	sp, 64
@@ -3804,7 +3804,7 @@ i2c_master_write:
 .LVL391:
 	.loc 1 766 0
 	retw.n
-.LFE35:
+.LFE39:
 	.size	i2c_master_write, .-i2c_master_write
 	.section	.text.i2c_master_write_byte,"ax",@progbits
 	.literal_position
@@ -3812,12 +3812,12 @@ i2c_master_write:
 	.literal .LC191, .LC10
 	.literal .LC192, .LC18
 	.literal .LC193, .LC176
-	.literal .LC194, __FUNCTION__$5980
+	.literal .LC194, __FUNCTION__$6084
 	.align	4
 	.global	i2c_master_write_byte
 	.type	i2c_master_write_byte, @function
 i2c_master_write_byte:
-.LFB36:
+.LFB40:
 	.loc 1 769 0
 .LVL392:
 	entry	sp, 64
@@ -3876,7 +3876,7 @@ i2c_master_write_byte:
 .LVL399:
 	.loc 1 780 0
 	retw.n
-.LFE36:
+.LFE40:
 	.size	i2c_master_write_byte, .-i2c_master_write_byte
 	.section	.text.i2c_master_read,"ax",@progbits
 	.literal_position
@@ -3884,13 +3884,13 @@ i2c_master_write_byte:
 	.literal .LC196, .LC10
 	.literal .LC197, .LC18
 	.literal .LC198, .LC121
-	.literal .LC199, __FUNCTION__$5988
+	.literal .LC199, __FUNCTION__$6092
 	.literal .LC200, .LC176
 	.align	4
 	.global	i2c_master_read
 	.type	i2c_master_read, @function
 i2c_master_read:
-.LFB37:
+.LFB41:
 	.loc 1 783 0
 .LVL400:
 	entry	sp, 64
@@ -3994,7 +3994,7 @@ i2c_master_read:
 .LVL416:
 	.loc 1 807 0
 	retw.n
-.LFE37:
+.LFE41:
 	.size	i2c_master_read, .-i2c_master_read
 	.section	.text.i2c_master_read_byte,"ax",@progbits
 	.literal_position
@@ -4002,13 +4002,13 @@ i2c_master_read:
 	.literal .LC202, .LC10
 	.literal .LC203, .LC18
 	.literal .LC204, .LC121
-	.literal .LC205, __FUNCTION__$6001
+	.literal .LC205, __FUNCTION__$6105
 	.literal .LC206, .LC176
 	.align	4
 	.global	i2c_master_read_byte
 	.type	i2c_master_read_byte, @function
 i2c_master_read_byte:
-.LFB38:
+.LFB42:
 	.loc 1 810 0
 .LVL417:
 	entry	sp, 64
@@ -4087,7 +4087,7 @@ i2c_master_read_byte:
 .LVL428:
 	.loc 1 821 0
 	retw.n
-.LFE38:
+.LFE42:
 	.size	i2c_master_read_byte, .-i2c_master_read_byte
 	.section	.rodata.str1.4
 	.align	4
@@ -4102,7 +4102,7 @@ i2c_master_read_byte:
 	.literal .LC208, .LC10
 	.literal .LC209, .LC18
 	.literal .LC210, .LC20
-	.literal .LC211, __FUNCTION__$6025
+	.literal .LC211, __FUNCTION__$6129
 	.literal .LC212, p_i2c_obj
 	.literal .LC214, .LC213
 	.literal .LC216, .LC215
@@ -4111,7 +4111,7 @@ i2c_master_read_byte:
 	.global	i2c_master_cmd_begin
 	.type	i2c_master_cmd_begin, @function
 i2c_master_cmd_begin:
-.LFB40:
+.LFB44:
 	.loc 1 929 0
 .LVL429:
 	entry	sp, 48
@@ -4333,7 +4333,7 @@ i2c_master_cmd_begin:
 .LVL468:
 	.loc 1 971 0
 	retw.n
-.LFE40:
+.LFE44:
 	.size	i2c_master_cmd_begin, .-i2c_master_cmd_begin
 	.section	.rodata.str1.4
 	.align	4
@@ -4345,7 +4345,7 @@ i2c_master_cmd_begin:
 	.literal .LC219, .LC10
 	.literal .LC220, .LC18
 	.literal .LC221, .LC20
-	.literal .LC222, __FUNCTION__$6037
+	.literal .LC222, __FUNCTION__$6141
 	.literal .LC223, .LC121
 	.literal .LC224, p_i2c_obj
 	.literal .LC226, .LC225
@@ -4355,7 +4355,7 @@ i2c_master_cmd_begin:
 	.global	i2c_slave_write_buffer
 	.type	i2c_slave_write_buffer, @function
 i2c_slave_write_buffer:
-.LFB41:
+.LFB45:
 	.loc 1 974 0
 .LVL469:
 	entry	sp, 64
@@ -4520,7 +4520,7 @@ i2c_slave_write_buffer:
 .L228:
 	.loc 1 1001 0
 	retw.n
-.LFE41:
+.LFE45:
 	.size	i2c_slave_write_buffer, .-i2c_slave_write_buffer
 	.section	.text.i2c_slave_read_buffer,"ax",@progbits
 	.literal_position
@@ -4528,7 +4528,7 @@ i2c_slave_write_buffer:
 	.literal .LC230, .LC10
 	.literal .LC231, .LC18
 	.literal .LC232, .LC20
-	.literal .LC233, __FUNCTION__$6057
+	.literal .LC233, __FUNCTION__$6161
 	.literal .LC234, .LC121
 	.literal .LC235, p_i2c_obj
 	.literal .LC236, .LC225
@@ -4538,7 +4538,7 @@ i2c_slave_write_buffer:
 	.global	i2c_slave_read_buffer
 	.type	i2c_slave_read_buffer, @function
 i2c_slave_read_buffer:
-.LFB43:
+.LFB47:
 	.loc 1 1016 0
 .LVL500:
 	entry	sp, 64
@@ -4714,163 +4714,163 @@ i2c_slave_read_buffer:
 .L235:
 	.loc 1 1043 0
 	retw.n
-.LFE43:
+.LFE47:
 	.size	i2c_slave_read_buffer, .-i2c_slave_read_buffer
-	.section	.rodata.__FUNCTION__$6057,"a",@progbits
+	.section	.rodata.__FUNCTION__$6161,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6057, @object
-	.size	__FUNCTION__$6057, 22
-__FUNCTION__$6057:
+	.type	__FUNCTION__$6161, @object
+	.size	__FUNCTION__$6161, 22
+__FUNCTION__$6161:
 	.string	"i2c_slave_read_buffer"
-	.section	.rodata.__FUNCTION__$6037,"a",@progbits
+	.section	.rodata.__FUNCTION__$6141,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6037, @object
-	.size	__FUNCTION__$6037, 23
-__FUNCTION__$6037:
+	.type	__FUNCTION__$6141, @object
+	.size	__FUNCTION__$6141, 23
+__FUNCTION__$6141:
 	.string	"i2c_slave_write_buffer"
-	.section	.rodata.__FUNCTION__$6025,"a",@progbits
+	.section	.rodata.__FUNCTION__$6129,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6025, @object
-	.size	__FUNCTION__$6025, 21
-__FUNCTION__$6025:
+	.type	__FUNCTION__$6129, @object
+	.size	__FUNCTION__$6129, 21
+__FUNCTION__$6129:
 	.string	"i2c_master_cmd_begin"
-	.section	.rodata.__FUNCTION__$6001,"a",@progbits
+	.section	.rodata.__FUNCTION__$6105,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$6001, @object
-	.size	__FUNCTION__$6001, 21
-__FUNCTION__$6001:
+	.type	__FUNCTION__$6105, @object
+	.size	__FUNCTION__$6105, 21
+__FUNCTION__$6105:
 	.string	"i2c_master_read_byte"
-	.section	.rodata.__FUNCTION__$5988,"a",@progbits
+	.section	.rodata.__FUNCTION__$6092,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5988, @object
-	.size	__FUNCTION__$5988, 16
-__FUNCTION__$5988:
+	.type	__FUNCTION__$6092, @object
+	.size	__FUNCTION__$6092, 16
+__FUNCTION__$6092:
 	.string	"i2c_master_read"
-	.section	.rodata.__FUNCTION__$5980,"a",@progbits
+	.section	.rodata.__FUNCTION__$6084,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5980, @object
-	.size	__FUNCTION__$5980, 22
-__FUNCTION__$5980:
+	.type	__FUNCTION__$6084, @object
+	.size	__FUNCTION__$6084, 22
+__FUNCTION__$6084:
 	.string	"i2c_master_write_byte"
+	.section	.rodata.__FUNCTION__$6071,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6071, @object
+	.size	__FUNCTION__$6071, 17
+__FUNCTION__$6071:
+	.string	"i2c_master_write"
+	.section	.rodata.__FUNCTION__$6063,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6063, @object
+	.size	__FUNCTION__$6063, 16
+__FUNCTION__$6063:
+	.string	"i2c_master_stop"
+	.section	.rodata.__FUNCTION__$6058,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6058, @object
+	.size	__FUNCTION__$6058, 17
+__FUNCTION__$6058:
+	.string	"i2c_master_start"
+	.section	.rodata.__FUNCTION__$6029,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6029, @object
+	.size	__FUNCTION__$6029, 12
+__FUNCTION__$6029:
+	.string	"i2c_set_pin"
+	.section	.rodata.__FUNCTION__$6012,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6012, @object
+	.size	__FUNCTION__$6012, 17
+__FUNCTION__$6012:
+	.string	"i2c_isr_register"
+	.section	.rodata.__FUNCTION__$6003,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$6003, @object
+	.size	__FUNCTION__$6003, 20
+__FUNCTION__$6003:
+	.string	"i2c_get_data_timing"
+	.section	.rodata.__FUNCTION__$5997,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5997, @object
+	.size	__FUNCTION__$5997, 20
+__FUNCTION__$5997:
+	.string	"i2c_set_data_timing"
+	.section	.rodata.__FUNCTION__$5991,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5991, @object
+	.size	__FUNCTION__$5991, 20
+__FUNCTION__$5991:
+	.string	"i2c_get_stop_timing"
+	.section	.rodata.__FUNCTION__$5985,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5985, @object
+	.size	__FUNCTION__$5985, 20
+__FUNCTION__$5985:
+	.string	"i2c_set_stop_timing"
+	.section	.rodata.__FUNCTION__$5979,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5979, @object
+	.size	__FUNCTION__$5979, 21
+__FUNCTION__$5979:
+	.string	"i2c_get_start_timing"
+	.section	.rodata.__FUNCTION__$5973,"a",@progbits
+	.align	4
+	.type	__FUNCTION__$5973, @object
+	.size	__FUNCTION__$5973, 21
+__FUNCTION__$5973:
+	.string	"i2c_set_start_timing"
 	.section	.rodata.__FUNCTION__$5967,"a",@progbits
 	.align	4
 	.type	__FUNCTION__$5967, @object
-	.size	__FUNCTION__$5967, 17
+	.size	__FUNCTION__$5967, 15
 __FUNCTION__$5967:
-	.string	"i2c_master_write"
-	.section	.rodata.__FUNCTION__$5959,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5959, @object
-	.size	__FUNCTION__$5959, 16
-__FUNCTION__$5959:
-	.string	"i2c_master_stop"
-	.section	.rodata.__FUNCTION__$5954,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5954, @object
-	.size	__FUNCTION__$5954, 17
-__FUNCTION__$5954:
-	.string	"i2c_master_start"
-	.section	.rodata.__FUNCTION__$5925,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5925, @object
-	.size	__FUNCTION__$5925, 12
-__FUNCTION__$5925:
-	.string	"i2c_set_pin"
-	.section	.rodata.__FUNCTION__$5908,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5908, @object
-	.size	__FUNCTION__$5908, 17
-__FUNCTION__$5908:
-	.string	"i2c_isr_register"
-	.section	.rodata.__FUNCTION__$5899,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5899, @object
-	.size	__FUNCTION__$5899, 20
-__FUNCTION__$5899:
-	.string	"i2c_get_data_timing"
-	.section	.rodata.__FUNCTION__$5893,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5893, @object
-	.size	__FUNCTION__$5893, 20
-__FUNCTION__$5893:
-	.string	"i2c_set_data_timing"
-	.section	.rodata.__FUNCTION__$5887,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5887, @object
-	.size	__FUNCTION__$5887, 20
-__FUNCTION__$5887:
-	.string	"i2c_get_stop_timing"
-	.section	.rodata.__FUNCTION__$5881,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5881, @object
-	.size	__FUNCTION__$5881, 20
-__FUNCTION__$5881:
-	.string	"i2c_set_stop_timing"
-	.section	.rodata.__FUNCTION__$5875,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5875, @object
-	.size	__FUNCTION__$5875, 21
-__FUNCTION__$5875:
-	.string	"i2c_get_start_timing"
-	.section	.rodata.__FUNCTION__$5869,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5869, @object
-	.size	__FUNCTION__$5869, 21
-__FUNCTION__$5869:
-	.string	"i2c_set_start_timing"
-	.section	.rodata.__FUNCTION__$5863,"a",@progbits
-	.align	4
-	.type	__FUNCTION__$5863, @object
-	.size	__FUNCTION__$5863, 15
-__FUNCTION__$5863:
 	.string	"i2c_get_period"
-	.section	.rodata.__FUNCTION__$5857,"a",@progbits
+	.section	.rodata.__FUNCTION__$5961,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5857, @object
-	.size	__FUNCTION__$5857, 15
-__FUNCTION__$5857:
+	.type	__FUNCTION__$5961, @object
+	.size	__FUNCTION__$5961, 15
+__FUNCTION__$5961:
 	.string	"i2c_set_period"
-	.section	.rodata.__FUNCTION__$5849,"a",@progbits
+	.section	.rodata.__FUNCTION__$5953,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5849, @object
-	.size	__FUNCTION__$5849, 17
-__FUNCTION__$5849:
+	.type	__FUNCTION__$5953, @object
+	.size	__FUNCTION__$5953, 17
+__FUNCTION__$5953:
 	.string	"i2c_param_config"
-	.section	.rodata.__FUNCTION__$5844,"a",@progbits
+	.section	.rodata.__FUNCTION__$5948,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5844, @object
-	.size	__FUNCTION__$5844, 18
-__FUNCTION__$5844:
+	.type	__FUNCTION__$5948, @object
+	.size	__FUNCTION__$5948, 18
+__FUNCTION__$5948:
 	.string	"i2c_get_data_mode"
-	.section	.rodata.__FUNCTION__$5838,"a",@progbits
+	.section	.rodata.__FUNCTION__$5942,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5838, @object
-	.size	__FUNCTION__$5838, 18
-__FUNCTION__$5838:
+	.type	__FUNCTION__$5942, @object
+	.size	__FUNCTION__$5942, 18
+__FUNCTION__$5942:
 	.string	"i2c_set_data_mode"
-	.section	.rodata.__FUNCTION__$5807,"a",@progbits
+	.section	.rodata.__FUNCTION__$5911,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5807, @object
-	.size	__FUNCTION__$5807, 18
-__FUNCTION__$5807:
+	.type	__FUNCTION__$5911, @object
+	.size	__FUNCTION__$5911, 18
+__FUNCTION__$5911:
 	.string	"i2c_reset_rx_fifo"
-	.section	.rodata.__FUNCTION__$5803,"a",@progbits
+	.section	.rodata.__FUNCTION__$5907,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5803, @object
-	.size	__FUNCTION__$5803, 18
-__FUNCTION__$5803:
+	.type	__FUNCTION__$5907, @object
+	.size	__FUNCTION__$5907, 18
+__FUNCTION__$5907:
 	.string	"i2c_reset_tx_fifo"
-	.section	.rodata.__FUNCTION__$5797,"a",@progbits
+	.section	.rodata.__FUNCTION__$5901,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5797, @object
-	.size	__FUNCTION__$5797, 18
-__FUNCTION__$5797:
+	.type	__FUNCTION__$5901, @object
+	.size	__FUNCTION__$5901, 18
+__FUNCTION__$5901:
 	.string	"i2c_driver_delete"
-	.section	.rodata.__FUNCTION__$5790,"a",@progbits
+	.section	.rodata.__FUNCTION__$5894,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5790, @object
-	.size	__FUNCTION__$5790, 19
-__FUNCTION__$5790:
+	.type	__FUNCTION__$5894, @object
+	.size	__FUNCTION__$5894, 19
+__FUNCTION__$5894:
 	.string	"i2c_driver_install"
 	.section	.bss.p_i2c_obj,"aw",@nobits
 	.align	4
@@ -4913,10 +4913,10 @@ i2c_spinlock:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.byte	0x4
-	.4byte	.LCFI0-.LFB39
+	.4byte	.LCFI0-.LFB43
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4925,10 +4925,10 @@ i2c_spinlock:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI1-.LFB15
+	.4byte	.LCFI1-.LFB19
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4937,10 +4937,10 @@ i2c_spinlock:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.byte	0x4
-	.4byte	.LCFI2-.LFB32
+	.4byte	.LCFI2-.LFB36
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4949,10 +4949,10 @@ i2c_spinlock:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB42
-	.4byte	.LFE42-.LFB42
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
 	.byte	0x4
-	.4byte	.LCFI3-.LFB42
+	.4byte	.LCFI3-.LFB46
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4961,10 +4961,10 @@ i2c_spinlock:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI4-.LFB12
+	.4byte	.LCFI4-.LFB16
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4973,10 +4973,10 @@ i2c_spinlock:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI5-.LFB13
+	.4byte	.LCFI5-.LFB17
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4985,10 +4985,10 @@ i2c_spinlock:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI6-.LFB14
+	.4byte	.LCFI6-.LFB18
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -4997,10 +4997,10 @@ i2c_spinlock:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI7-.LFB16
+	.4byte	.LCFI7-.LFB20
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5009,10 +5009,10 @@ i2c_spinlock:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI8-.LFB17
+	.4byte	.LCFI8-.LFB21
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5021,10 +5021,10 @@ i2c_spinlock:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI9-.LFB19
+	.4byte	.LCFI9-.LFB23
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5033,10 +5033,10 @@ i2c_spinlock:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.byte	0x4
-	.4byte	.LCFI10-.LFB20
+	.4byte	.LCFI10-.LFB24
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5045,10 +5045,10 @@ i2c_spinlock:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.byte	0x4
-	.4byte	.LCFI11-.LFB21
+	.4byte	.LCFI11-.LFB25
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5057,10 +5057,10 @@ i2c_spinlock:
 	.4byte	.LEFDE24-.LASFDE24
 .LASFDE24:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI12-.LFB22
+	.4byte	.LCFI12-.LFB26
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5069,10 +5069,10 @@ i2c_spinlock:
 	.4byte	.LEFDE26-.LASFDE26
 .LASFDE26:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI13-.LFB23
+	.4byte	.LCFI13-.LFB27
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5081,10 +5081,10 @@ i2c_spinlock:
 	.4byte	.LEFDE28-.LASFDE28
 .LASFDE28:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI14-.LFB24
+	.4byte	.LCFI14-.LFB28
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5093,10 +5093,10 @@ i2c_spinlock:
 	.4byte	.LEFDE30-.LASFDE30
 .LASFDE30:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI15-.LFB25
+	.4byte	.LCFI15-.LFB29
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5105,10 +5105,10 @@ i2c_spinlock:
 	.4byte	.LEFDE32-.LASFDE32
 .LASFDE32:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI16-.LFB26
+	.4byte	.LCFI16-.LFB30
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5117,10 +5117,10 @@ i2c_spinlock:
 	.4byte	.LEFDE34-.LASFDE34
 .LASFDE34:
 	.4byte	.Lframe0
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.byte	0x4
-	.4byte	.LCFI17-.LFB27
+	.4byte	.LCFI17-.LFB31
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5129,10 +5129,10 @@ i2c_spinlock:
 	.4byte	.LEFDE36-.LASFDE36
 .LASFDE36:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI18-.LFB11
+	.4byte	.LCFI18-.LFB15
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5141,10 +5141,10 @@ i2c_spinlock:
 	.4byte	.LEFDE38-.LASFDE38
 .LASFDE38:
 	.4byte	.Lframe0
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.byte	0x4
-	.4byte	.LCFI19-.LFB28
+	.4byte	.LCFI19-.LFB32
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -5153,10 +5153,10 @@ i2c_spinlock:
 	.4byte	.LEFDE40-.LASFDE40
 .LASFDE40:
 	.4byte	.Lframe0
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.byte	0x4
-	.4byte	.LCFI20-.LFB29
+	.4byte	.LCFI20-.LFB33
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -5165,10 +5165,10 @@ i2c_spinlock:
 	.4byte	.LEFDE42-.LASFDE42
 .LASFDE42:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI21-.LFB18
+	.4byte	.LCFI21-.LFB22
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5177,10 +5177,10 @@ i2c_spinlock:
 	.4byte	.LEFDE44-.LASFDE44
 .LASFDE44:
 	.4byte	.Lframe0
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.byte	0x4
-	.4byte	.LCFI22-.LFB30
+	.4byte	.LCFI22-.LFB34
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -5189,10 +5189,10 @@ i2c_spinlock:
 	.4byte	.LEFDE46-.LASFDE46
 .LASFDE46:
 	.4byte	.Lframe0
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.byte	0x4
-	.4byte	.LCFI23-.LFB31
+	.4byte	.LCFI23-.LFB35
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -5201,10 +5201,10 @@ i2c_spinlock:
 	.4byte	.LEFDE48-.LASFDE48
 .LASFDE48:
 	.4byte	.Lframe0
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.byte	0x4
-	.4byte	.LCFI24-.LFB33
+	.4byte	.LCFI24-.LFB37
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -5213,10 +5213,10 @@ i2c_spinlock:
 	.4byte	.LEFDE50-.LASFDE50
 .LASFDE50:
 	.4byte	.Lframe0
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.byte	0x4
-	.4byte	.LCFI25-.LFB34
+	.4byte	.LCFI25-.LFB38
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -5225,10 +5225,10 @@ i2c_spinlock:
 	.4byte	.LEFDE52-.LASFDE52
 .LASFDE52:
 	.4byte	.Lframe0
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.byte	0x4
-	.4byte	.LCFI26-.LFB35
+	.4byte	.LCFI26-.LFB39
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -5237,10 +5237,10 @@ i2c_spinlock:
 	.4byte	.LEFDE54-.LASFDE54
 .LASFDE54:
 	.4byte	.Lframe0
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
 	.byte	0x4
-	.4byte	.LCFI27-.LFB36
+	.4byte	.LCFI27-.LFB40
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -5249,10 +5249,10 @@ i2c_spinlock:
 	.4byte	.LEFDE56-.LASFDE56
 .LASFDE56:
 	.4byte	.Lframe0
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
 	.byte	0x4
-	.4byte	.LCFI28-.LFB37
+	.4byte	.LCFI28-.LFB41
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -5261,10 +5261,10 @@ i2c_spinlock:
 	.4byte	.LEFDE58-.LASFDE58
 .LASFDE58:
 	.4byte	.Lframe0
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
 	.byte	0x4
-	.4byte	.LCFI29-.LFB38
+	.4byte	.LCFI29-.LFB42
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -5273,10 +5273,10 @@ i2c_spinlock:
 	.4byte	.LEFDE60-.LASFDE60
 .LASFDE60:
 	.4byte	.Lframe0
-	.4byte	.LFB40
-	.4byte	.LFE40-.LFB40
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
 	.byte	0x4
-	.4byte	.LCFI30-.LFB40
+	.4byte	.LCFI30-.LFB44
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5285,10 +5285,10 @@ i2c_spinlock:
 	.4byte	.LEFDE62-.LASFDE62
 .LASFDE62:
 	.4byte	.Lframe0
-	.4byte	.LFB41
-	.4byte	.LFE41-.LFB41
+	.4byte	.LFB45
+	.4byte	.LFE45-.LFB45
 	.byte	0x4
-	.4byte	.LCFI31-.LFB41
+	.4byte	.LCFI31-.LFB45
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -5297,10 +5297,10 @@ i2c_spinlock:
 	.4byte	.LEFDE64-.LASFDE64
 .LASFDE64:
 	.4byte	.Lframe0
-	.4byte	.LFB43
-	.4byte	.LFE43-.LFB43
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
 	.byte	0x4
-	.4byte	.LCFI32-.LFB43
+	.4byte	.LCFI32-.LFB47
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -5476,53 +5476,53 @@ i2c_spinlock:
 	.byte	0x5
 	.byte	0x26
 	.4byte	0xfa
-	.uleb128 0x3
+	.uleb128 0x4
+	.byte	0x1
+	.byte	0x2
 	.4byte	.LASF27
-	.byte	0x6
-	.byte	0x6c
-	.4byte	0x25
 	.uleb128 0x3
 	.4byte	.LASF28
 	.byte	0x6
-	.byte	0x6d
-	.4byte	0x37
+	.byte	0x6f
+	.4byte	0x25
 	.uleb128 0x3
 	.4byte	.LASF29
 	.byte	0x6
-	.byte	0x73
+	.byte	0x70
+	.4byte	0x37
+	.uleb128 0x3
+	.4byte	.LASF30
+	.byte	0x6
+	.byte	0x76
 	.4byte	0xde
 	.uleb128 0xc
 	.byte	0x8
 	.byte	0x6
-	.byte	0x81
-	.4byte	0x178
-	.uleb128 0xd
-	.4byte	.LASF30
-	.byte	0x6
-	.byte	0x82
-	.4byte	0xde
-	.byte	0
+	.byte	0x84
+	.4byte	0x17f
 	.uleb128 0xd
 	.4byte	.LASF31
 	.byte	0x6
-	.byte	0x83
+	.byte	0x85
+	.4byte	0xde
+	.byte	0
+	.uleb128 0xd
+	.4byte	.LASF32
+	.byte	0x6
+	.byte	0x86
 	.4byte	0xde
 	.byte	0x4
 	.byte	0
 	.uleb128 0x3
-	.4byte	.LASF32
-	.byte	0x6
-	.byte	0x88
-	.4byte	0x157
-	.uleb128 0x3
 	.4byte	.LASF33
+	.byte	0x6
+	.byte	0x8b
+	.4byte	0x15e
+	.uleb128 0x3
+	.4byte	.LASF34
 	.byte	0x7
 	.byte	0x18
 	.4byte	0xd3
-	.uleb128 0x4
-	.byte	0x1
-	.byte	0x2
-	.4byte	.LASF34
 	.uleb128 0x3
 	.4byte	.LASF35
 	.byte	0x8
@@ -8209,8 +8209,8 @@ i2c_spinlock:
 	.4byte	.LASF297
 	.byte	0x1
 	.2byte	0x337
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x15a2
@@ -8305,8 +8305,8 @@ i2c_spinlock:
 	.4byte	.LASF298
 	.byte	0x1
 	.2byte	0x143
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1744
@@ -8501,9 +8501,9 @@ i2c_spinlock:
 	.4byte	.LASF303
 	.byte	0x1
 	.2byte	0x2b0
-	.4byte	0x183
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	0x18a
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1840
@@ -8635,8 +8635,8 @@ i2c_spinlock:
 	.byte	0x1
 	.2byte	0x3eb
 	.4byte	0x25
-	.4byte	.LFB42
-	.4byte	.LFE42-.LFB42
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1912
@@ -8743,9 +8743,9 @@ i2c_spinlock:
 	.4byte	.LASF309
 	.byte	0x1
 	.byte	0xfc
-	.4byte	0x183
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	0x18a
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1a84
@@ -8760,7 +8760,7 @@ i2c_spinlock:
 	.4byte	0x1a94
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5797
+	.4byte	__FUNCTION__$5901
 	.uleb128 0x23
 	.4byte	.LASF294
 	.byte	0x1
@@ -8822,7 +8822,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5797
+	.4byte	__FUNCTION__$5901
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -8880,7 +8880,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5797
+	.4byte	__FUNCTION__$5901
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -8948,9 +8948,9 @@ i2c_spinlock:
 	.4byte	.LASF310
 	.byte	0x1
 	.2byte	0x12f
-	.4byte	0x183
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	0x18a
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1b52
@@ -8965,7 +8965,7 @@ i2c_spinlock:
 	.4byte	0x1b52
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5803
+	.4byte	__FUNCTION__$5907
 	.uleb128 0x2a
 	.4byte	.LVL105
 	.4byte	0x40ab
@@ -9015,7 +9015,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5803
+	.4byte	__FUNCTION__$5907
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -9052,9 +9052,9 @@ i2c_spinlock:
 	.4byte	.LASF312
 	.byte	0x1
 	.2byte	0x139
-	.4byte	0x183
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	0x18a
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1c10
@@ -9069,7 +9069,7 @@ i2c_spinlock:
 	.4byte	0x1c10
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5807
+	.4byte	__FUNCTION__$5911
 	.uleb128 0x2a
 	.4byte	.LVL113
 	.4byte	0x40ab
@@ -9119,7 +9119,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5807
+	.4byte	__FUNCTION__$5911
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -9156,9 +9156,9 @@ i2c_spinlock:
 	.4byte	.LASF313
 	.byte	0x1
 	.2byte	0x19b
-	.4byte	0x183
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	0x18a
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1da4
@@ -9185,7 +9185,7 @@ i2c_spinlock:
 	.4byte	0x1da4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5838
+	.4byte	__FUNCTION__$5942
 	.uleb128 0x2a
 	.4byte	.LVL121
 	.4byte	0x40ab
@@ -9235,7 +9235,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5838
+	.4byte	__FUNCTION__$5942
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -9293,7 +9293,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5838
+	.4byte	__FUNCTION__$5942
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -9351,7 +9351,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5838
+	.4byte	__FUNCTION__$5942
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -9388,9 +9388,9 @@ i2c_spinlock:
 	.4byte	.LASF316
 	.byte	0x1
 	.2byte	0x1a7
-	.4byte	0x183
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	0x18a
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1e58
@@ -9418,7 +9418,7 @@ i2c_spinlock:
 	.4byte	0x1e5e
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5844
+	.4byte	__FUNCTION__$5948
 	.uleb128 0x2a
 	.4byte	.LVL139
 	.4byte	0x40ab
@@ -9467,7 +9467,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5844
+	.4byte	__FUNCTION__$5948
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -9486,9 +9486,9 @@ i2c_spinlock:
 	.4byte	.LASF317
 	.byte	0x1
 	.2byte	0x1eb
-	.4byte	0x183
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	0x18a
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1f3c
@@ -9515,7 +9515,7 @@ i2c_spinlock:
 	.4byte	0x1f4c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5857
+	.4byte	__FUNCTION__$5961
 	.uleb128 0x2a
 	.4byte	.LVL148
 	.4byte	0x40ab
@@ -9565,7 +9565,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5857
+	.4byte	__FUNCTION__$5961
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -9609,9 +9609,9 @@ i2c_spinlock:
 	.4byte	.LASF320
 	.byte	0x1
 	.2byte	0x1f5
-	.4byte	0x183
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	0x18a
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2028
@@ -9639,7 +9639,7 @@ i2c_spinlock:
 	.4byte	0x202e
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5863
+	.4byte	__FUNCTION__$5967
 	.uleb128 0x2a
 	.4byte	.LVL158
 	.4byte	0x40ab
@@ -9689,7 +9689,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5863
+	.4byte	__FUNCTION__$5967
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -9729,9 +9729,9 @@ i2c_spinlock:
 	.4byte	.LASF321
 	.byte	0x1
 	.2byte	0x203
-	.4byte	0x183
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	0x18a
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x20e4
@@ -9758,7 +9758,7 @@ i2c_spinlock:
 	.4byte	0x20f4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5869
+	.4byte	__FUNCTION__$5973
 	.uleb128 0x2a
 	.4byte	.LVL167
 	.4byte	0x40ab
@@ -9807,7 +9807,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5869
+	.4byte	__FUNCTION__$5973
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -9830,9 +9830,9 @@ i2c_spinlock:
 	.4byte	.LASF324
 	.byte	0x1
 	.2byte	0x20b
-	.4byte	0x183
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	0x18a
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x21d0
@@ -9860,7 +9860,7 @@ i2c_spinlock:
 	.4byte	0x21d0
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5875
+	.4byte	__FUNCTION__$5979
 	.uleb128 0x2a
 	.4byte	.LVL175
 	.4byte	0x40ab
@@ -9910,7 +9910,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5875
+	.4byte	__FUNCTION__$5979
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -9947,9 +9947,9 @@ i2c_spinlock:
 	.4byte	.LASF325
 	.byte	0x1
 	.2byte	0x219
-	.4byte	0x183
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	0x18a
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2286
@@ -9976,7 +9976,7 @@ i2c_spinlock:
 	.4byte	0x2296
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5881
+	.4byte	__FUNCTION__$5985
 	.uleb128 0x2a
 	.4byte	.LVL184
 	.4byte	0x40ab
@@ -10025,7 +10025,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5881
+	.4byte	__FUNCTION__$5985
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -10048,9 +10048,9 @@ i2c_spinlock:
 	.4byte	.LASF326
 	.byte	0x1
 	.2byte	0x221
-	.4byte	0x183
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	0x18a
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2372
@@ -10078,7 +10078,7 @@ i2c_spinlock:
 	.4byte	0x2372
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5887
+	.4byte	__FUNCTION__$5991
 	.uleb128 0x2a
 	.4byte	.LVL192
 	.4byte	0x40ab
@@ -10128,7 +10128,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5887
+	.4byte	__FUNCTION__$5991
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -10165,9 +10165,9 @@ i2c_spinlock:
 	.4byte	.LASF327
 	.byte	0x1
 	.2byte	0x22f
-	.4byte	0x183
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	0x18a
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2428
@@ -10194,7 +10194,7 @@ i2c_spinlock:
 	.4byte	0x2428
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5893
+	.4byte	__FUNCTION__$5997
 	.uleb128 0x2a
 	.4byte	.LVL201
 	.4byte	0x40ab
@@ -10243,7 +10243,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5893
+	.4byte	__FUNCTION__$5997
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -10259,9 +10259,9 @@ i2c_spinlock:
 	.4byte	.LASF329
 	.byte	0x1
 	.2byte	0x237
-	.4byte	0x183
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	0x18a
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2504
@@ -10289,7 +10289,7 @@ i2c_spinlock:
 	.4byte	0x2504
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5899
+	.4byte	__FUNCTION__$6003
 	.uleb128 0x2a
 	.4byte	.LVL209
 	.4byte	0x40ab
@@ -10339,7 +10339,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5899
+	.4byte	__FUNCTION__$6003
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -10376,9 +10376,9 @@ i2c_spinlock:
 	.4byte	.LASF330
 	.byte	0x1
 	.2byte	0x245
-	.4byte	0x183
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	0x18a
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2690
@@ -10421,12 +10421,12 @@ i2c_spinlock:
 	.4byte	0x26a6
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5908
+	.4byte	__FUNCTION__$6012
 	.uleb128 0x36
 	.string	"ret"
 	.byte	0x1
 	.2byte	0x249
-	.4byte	0x183
+	.4byte	0x18a
 	.uleb128 0x2a
 	.4byte	.LVL218
 	.4byte	0x40ab
@@ -10476,7 +10476,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5908
+	.4byte	__FUNCTION__$6012
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -10534,7 +10534,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5908
+	.4byte	__FUNCTION__$6012
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -10629,9 +10629,9 @@ i2c_spinlock:
 	.4byte	.LASF333
 	.byte	0x1
 	.byte	0x87
-	.4byte	0x183
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	0x18a
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2a4f
@@ -10671,7 +10671,7 @@ i2c_spinlock:
 	.4byte	0x2a5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5790
+	.4byte	__FUNCTION__$5894
 	.uleb128 0x38
 	.4byte	.LASF308
 	.byte	0x1
@@ -10994,7 +10994,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5790
+	.4byte	__FUNCTION__$5894
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -11052,7 +11052,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5790
+	.4byte	__FUNCTION__$5894
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -11150,9 +11150,9 @@ i2c_spinlock:
 	.4byte	.LASF336
 	.byte	0x1
 	.2byte	0x256
-	.4byte	0x183
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	0x18a
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2a9f
@@ -11177,9 +11177,9 @@ i2c_spinlock:
 	.4byte	.LASF337
 	.byte	0x1
 	.2byte	0x25b
-	.4byte	0x183
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	0x18a
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2e8b
@@ -11228,7 +11228,7 @@ i2c_spinlock:
 	.4byte	0x2e9b
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5925
+	.4byte	__FUNCTION__$6029
 	.uleb128 0x23
 	.4byte	.LASF338
 	.byte	0x1
@@ -11306,7 +11306,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5925
+	.4byte	__FUNCTION__$6029
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -11364,7 +11364,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5925
+	.4byte	__FUNCTION__$6029
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -11422,7 +11422,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5925
+	.4byte	__FUNCTION__$6029
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -11480,7 +11480,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5925
+	.4byte	__FUNCTION__$6029
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -11538,7 +11538,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5925
+	.4byte	__FUNCTION__$6029
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -11804,9 +11804,9 @@ i2c_spinlock:
 	.4byte	.LASF342
 	.byte	0x1
 	.2byte	0x1b3
-	.4byte	0x183
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	0x18a
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3079
@@ -11827,12 +11827,12 @@ i2c_spinlock:
 	.4byte	0x3084
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5849
+	.4byte	__FUNCTION__$5953
 	.uleb128 0x26
 	.string	"ret"
 	.byte	0x1
 	.2byte	0x1b9
-	.4byte	0x183
+	.4byte	0x18a
 	.4byte	.LLST58
 	.uleb128 0x23
 	.4byte	.LASF344
@@ -11889,7 +11889,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5849
+	.4byte	__FUNCTION__$5953
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -11947,7 +11947,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5849
+	.4byte	__FUNCTION__$5953
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -12005,7 +12005,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5849
+	.4byte	__FUNCTION__$5953
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -12079,8 +12079,8 @@ i2c_spinlock:
 	.byte	0x1
 	.2byte	0x298
 	.4byte	0x120f
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x30c6
@@ -12110,8 +12110,8 @@ i2c_spinlock:
 	.4byte	.LASF346
 	.byte	0x1
 	.2byte	0x29e
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x312e
@@ -12156,9 +12156,9 @@ i2c_spinlock:
 	.4byte	.LASF348
 	.byte	0x1
 	.2byte	0x2cb
-	.4byte	0x183
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	0x18a
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x31e8
@@ -12173,7 +12173,7 @@ i2c_spinlock:
 	.4byte	0x31e8
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5954
+	.4byte	__FUNCTION__$6058
 	.uleb128 0x3d
 	.string	"cmd"
 	.byte	0x1
@@ -12231,7 +12231,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5954
+	.4byte	__FUNCTION__$6058
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -12263,9 +12263,9 @@ i2c_spinlock:
 	.4byte	.LASF349
 	.byte	0x1
 	.2byte	0x2d8
-	.4byte	0x183
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	0x18a
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x32a7
@@ -12280,7 +12280,7 @@ i2c_spinlock:
 	.4byte	0x32b7
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5959
+	.4byte	__FUNCTION__$6063
 	.uleb128 0x3d
 	.string	"cmd"
 	.byte	0x1
@@ -12338,7 +12338,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5959
+	.4byte	__FUNCTION__$6063
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -12377,9 +12377,9 @@ i2c_spinlock:
 	.4byte	.LASF350
 	.byte	0x1
 	.2byte	0x2e5
-	.4byte	0x183
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
+	.4byte	0x18a
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3437
@@ -12406,7 +12406,7 @@ i2c_spinlock:
 	.4byte	.LASF154
 	.byte	0x1
 	.2byte	0x2e5
-	.4byte	0x18e
+	.4byte	0x136
 	.uleb128 0x1
 	.byte	0x55
 	.uleb128 0x33
@@ -12414,7 +12414,7 @@ i2c_spinlock:
 	.4byte	0x3437
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5967
+	.4byte	__FUNCTION__$6071
 	.uleb128 0x23
 	.4byte	.LASF352
 	.byte	0x1
@@ -12431,7 +12431,7 @@ i2c_spinlock:
 	.string	"ret"
 	.byte	0x1
 	.2byte	0x2ec
-	.4byte	0x183
+	.4byte	0x18a
 	.4byte	.LLST67
 	.uleb128 0x25
 	.4byte	.LBB11
@@ -12511,7 +12511,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5967
+	.4byte	__FUNCTION__$6071
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -12568,7 +12568,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5967
+	.4byte	__FUNCTION__$6071
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -12584,9 +12584,9 @@ i2c_spinlock:
 	.4byte	.LASF354
 	.byte	0x1
 	.2byte	0x300
-	.4byte	0x183
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
+	.4byte	0x18a
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3514
@@ -12607,14 +12607,14 @@ i2c_spinlock:
 	.4byte	.LASF154
 	.byte	0x1
 	.2byte	0x300
-	.4byte	0x18e
+	.4byte	0x136
 	.4byte	.LLST69
 	.uleb128 0x33
 	.4byte	.LASF311
 	.4byte	0x3524
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5980
+	.4byte	__FUNCTION__$6084
 	.uleb128 0x3d
 	.string	"cmd"
 	.byte	0x1
@@ -12672,7 +12672,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5980
+	.4byte	__FUNCTION__$6084
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -12711,9 +12711,9 @@ i2c_spinlock:
 	.4byte	.LASF355
 	.byte	0x1
 	.2byte	0x30e
-	.4byte	0x183
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
+	.4byte	0x18a
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x36a4
@@ -12748,7 +12748,7 @@ i2c_spinlock:
 	.4byte	0x36a4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5988
+	.4byte	__FUNCTION__$6092
 	.uleb128 0x23
 	.4byte	.LASF352
 	.byte	0x1
@@ -12765,7 +12765,7 @@ i2c_spinlock:
 	.string	"ret"
 	.byte	0x1
 	.2byte	0x315
-	.4byte	0x183
+	.4byte	0x18a
 	.4byte	.LLST74
 	.uleb128 0x25
 	.4byte	.LBB12
@@ -12845,7 +12845,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5988
+	.4byte	__FUNCTION__$6092
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -12902,7 +12902,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5988
+	.4byte	__FUNCTION__$6092
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -12918,9 +12918,9 @@ i2c_spinlock:
 	.4byte	.LASF356
 	.byte	0x1
 	.2byte	0x329
-	.4byte	0x183
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
+	.4byte	0x18a
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x37dc
@@ -12948,7 +12948,7 @@ i2c_spinlock:
 	.4byte	0x37dc
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6001
+	.4byte	__FUNCTION__$6105
 	.uleb128 0x3d
 	.string	"cmd"
 	.byte	0x1
@@ -13006,7 +13006,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6001
+	.4byte	__FUNCTION__$6105
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -13064,7 +13064,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6001
+	.4byte	__FUNCTION__$6105
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -13096,9 +13096,9 @@ i2c_spinlock:
 	.4byte	.LASF357
 	.byte	0x1
 	.2byte	0x3a0
-	.4byte	0x183
-	.4byte	.LFB40
-	.4byte	.LFE40-.LFB40
+	.4byte	0x18a
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3ad7
@@ -13125,12 +13125,12 @@ i2c_spinlock:
 	.4byte	0x3ad7
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6025
+	.4byte	__FUNCTION__$6129
 	.uleb128 0x26
 	.string	"ret"
 	.byte	0x1
 	.2byte	0x3a7
-	.4byte	0x183
+	.4byte	0x18a
 	.4byte	.LLST80
 	.uleb128 0x24
 	.4byte	.LASF294
@@ -13143,7 +13143,7 @@ i2c_spinlock:
 	.4byte	.LASF358
 	.byte	0x1
 	.2byte	0x3a9
-	.4byte	0x14c
+	.4byte	0x153
 	.uleb128 0x1
 	.byte	0x56
 	.uleb128 0x26
@@ -13207,7 +13207,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6025
+	.4byte	__FUNCTION__$6129
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -13265,7 +13265,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6025
+	.4byte	__FUNCTION__$6129
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -13323,7 +13323,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6025
+	.4byte	__FUNCTION__$6129
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -13381,7 +13381,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6025
+	.4byte	__FUNCTION__$6129
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -13536,8 +13536,8 @@ i2c_spinlock:
 	.byte	0x1
 	.2byte	0x3cd
 	.4byte	0x25
-	.4byte	.LFB41
-	.4byte	.LFE41-.LFB41
+	.4byte	.LFB45
+	.4byte	.LFE45-.LFB45
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3d20
@@ -13570,7 +13570,7 @@ i2c_spinlock:
 	.4byte	0x3d30
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6037
+	.4byte	__FUNCTION__$6141
 	.uleb128 0x24
 	.4byte	.LASF294
 	.byte	0x1
@@ -13594,7 +13594,7 @@ i2c_spinlock:
 	.4byte	.LASF358
 	.byte	0x1
 	.2byte	0x3d6
-	.4byte	0x14c
+	.4byte	0x153
 	.4byte	.LLST89
 	.uleb128 0x2a
 	.4byte	.LVL470
@@ -13645,7 +13645,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6037
+	.4byte	__FUNCTION__$6141
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -13703,7 +13703,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6037
+	.4byte	__FUNCTION__$6141
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -13761,7 +13761,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6037
+	.4byte	__FUNCTION__$6141
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -13870,8 +13870,8 @@ i2c_spinlock:
 	.byte	0x1
 	.2byte	0x3f7
 	.4byte	0x25
-	.4byte	.LFB43
-	.4byte	.LFE43-.LFB43
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3faa
@@ -13906,7 +13906,7 @@ i2c_spinlock:
 	.4byte	0x3faa
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6057
+	.4byte	__FUNCTION__$6161
 	.uleb128 0x24
 	.4byte	.LASF294
 	.byte	0x1
@@ -13924,7 +13924,7 @@ i2c_spinlock:
 	.4byte	.LASF358
 	.byte	0x1
 	.2byte	0x3ff
-	.4byte	0x14c
+	.4byte	0x153
 	.4byte	.LLST93
 	.uleb128 0x26
 	.string	"cnt"
@@ -13981,7 +13981,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6057
+	.4byte	__FUNCTION__$6161
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -14039,7 +14039,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6057
+	.4byte	__FUNCTION__$6161
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -14097,7 +14097,7 @@ i2c_spinlock:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$6057
+	.4byte	__FUNCTION__$6161
 	.uleb128 0x29
 	.uleb128 0x2
 	.byte	0x71
@@ -14242,7 +14242,7 @@ i2c_spinlock:
 	.4byte	.LC10
 	.byte	0x9f
 	.uleb128 0x13
-	.4byte	0x178
+	.4byte	0x17f
 	.4byte	0x3fd1
 	.uleb128 0x14
 	.4byte	0x9b
@@ -14324,7 +14324,7 @@ i2c_spinlock:
 	.4byte	.LASF368
 	.4byte	.LASF368
 	.byte	0x6
-	.2byte	0x11a
+	.2byte	0x129
 	.uleb128 0x43
 	.4byte	.LASF369
 	.4byte	.LASF369
@@ -14397,12 +14397,12 @@ i2c_spinlock:
 	.4byte	.LASF381
 	.4byte	.LASF381
 	.byte	0x6
-	.byte	0xd9
+	.byte	0xdc
 	.uleb128 0x43
 	.4byte	.LASF382
 	.4byte	.LASF382
 	.byte	0x6
-	.byte	0xd8
+	.byte	0xdb
 	.uleb128 0x43
 	.4byte	.LASF383
 	.4byte	.LASF383
@@ -15463,7 +15463,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL27
-	.4byte	.LFE39
+	.4byte	.LFE43
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15658,7 +15658,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL75
-	.4byte	.LFE32
+	.4byte	.LFE36
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15672,7 +15672,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL74
-	.4byte	.LFE32
+	.4byte	.LFE36
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15708,7 +15708,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL75
-	.4byte	.LFE32
+	.4byte	.LFE36
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15722,7 +15722,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL77
-	.4byte	.LFE42
+	.4byte	.LFE46
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15765,7 +15765,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL103
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15797,7 +15797,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL110
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15822,7 +15822,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL118
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15869,7 +15869,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL134
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15883,7 +15883,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL136
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15897,7 +15897,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL135
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15933,7 +15933,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL146
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15954,7 +15954,7 @@ i2c_spinlock:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL145
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -15976,7 +15976,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL153
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15990,7 +15990,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL154
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16004,7 +16004,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL155
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16029,7 +16029,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL164
-	.4byte	.LFE20
+	.4byte	.LFE24
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16043,7 +16043,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL163
-	.4byte	.LFE20
+	.4byte	.LFE24
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16068,7 +16068,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL171
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16082,7 +16082,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL173
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16096,7 +16096,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL172
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16121,7 +16121,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL181
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16135,7 +16135,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL180
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16160,7 +16160,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL188
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16174,7 +16174,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL190
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16188,7 +16188,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL189
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16213,7 +16213,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL198
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16227,7 +16227,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL197
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16252,7 +16252,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL205
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16266,7 +16266,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL207
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16280,7 +16280,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL206
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16305,7 +16305,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL215
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16319,7 +16319,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL214
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16366,7 +16366,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL230
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16435,7 +16435,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL283
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16476,7 +16476,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL268
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16512,7 +16512,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL277
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16533,7 +16533,7 @@ i2c_spinlock:
 	.byte	0x55
 	.byte	0x9f
 	.4byte	.LVL275
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x1
 	.byte	0x55
 	.4byte	0
@@ -16549,7 +16549,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL275
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -16561,7 +16561,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x57
 	.4byte	.LVL268
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x1
 	.byte	0x57
 	.4byte	0
@@ -16572,7 +16572,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL287
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16652,7 +16652,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL311
-	.4byte	.LFE29
+	.4byte	.LFE33
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16666,7 +16666,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL321
-	.4byte	.LFE29
+	.4byte	.LFE33
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16731,7 +16731,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL354
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16752,7 +16752,7 @@ i2c_spinlock:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL353
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -16767,7 +16767,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL353
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -16803,7 +16803,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL366
-	.4byte	.LFE33
+	.4byte	.LFE37
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16828,7 +16828,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL373
-	.4byte	.LFE34
+	.4byte	.LFE38
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16875,7 +16875,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL391
-	.4byte	.LFE35
+	.4byte	.LFE39
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16889,7 +16889,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL384
-	.4byte	.LFE35
+	.4byte	.LFE39
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -16907,7 +16907,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x56
 	.4byte	.LVL390
-	.4byte	.LFE35
+	.4byte	.LFE39
 	.2byte	0x1
 	.byte	0x56
 	.4byte	0
@@ -16936,7 +16936,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL399
-	.4byte	.LFE36
+	.4byte	.LFE40
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16950,7 +16950,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL397
-	.4byte	.LFE36
+	.4byte	.LFE40
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16997,7 +16997,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL416
-	.4byte	.LFE37
+	.4byte	.LFE41
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17011,7 +17011,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL410
-	.4byte	.LFE37
+	.4byte	.LFE41
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -17029,7 +17029,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x57
 	.4byte	.LVL415
-	.4byte	.LFE37
+	.4byte	.LFE41
 	.2byte	0x1
 	.byte	0x57
 	.4byte	0
@@ -17069,7 +17069,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL428
-	.4byte	.LFE38
+	.4byte	.LFE42
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17083,7 +17083,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL426
-	.4byte	.LFE38
+	.4byte	.LFE42
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17163,7 +17163,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL468
-	.4byte	.LFE40
+	.4byte	.LFE44
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17184,7 +17184,7 @@ i2c_spinlock:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL467
-	.4byte	.LFE40
+	.4byte	.LFE44
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -17215,7 +17215,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x5c
 	.4byte	.LVL467
-	.4byte	.LFE40
+	.4byte	.LFE44
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -17237,7 +17237,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL467
-	.4byte	.LFE40
+	.4byte	.LFE44
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -17293,7 +17293,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x56
 	.4byte	.LVL497
-	.4byte	.LFE41
+	.4byte	.LFE45
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17318,7 +17318,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL497
-	.4byte	.LFE41
+	.4byte	.LFE45
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17336,7 +17336,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x57
 	.4byte	.LVL497
-	.4byte	.LFE41
+	.4byte	.LFE45
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17440,7 +17440,7 @@ i2c_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL509
-	.4byte	.LFE43
+	.4byte	.LFE47
 	.2byte	0x1
 	.byte	0x56
 	.4byte	0
@@ -17509,32 +17509,24 @@ i2c_spinlock:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
-	.4byte	.LFB42
-	.4byte	.LFE42-.LFB42
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
 	.4byte	.LFB16
 	.4byte	.LFE16-.LFB16
 	.4byte	.LFB17
 	.4byte	.LFE17-.LFB17
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.4byte	.LFB20
 	.4byte	.LFE20-.LFB20
 	.4byte	.LFB21
 	.4byte	.LFE21-.LFB21
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
 	.4byte	.LFB23
 	.4byte	.LFE23-.LFB23
 	.4byte	.LFB24
@@ -17545,36 +17537,44 @@ i2c_spinlock:
 	.4byte	.LFE26-.LFB26
 	.4byte	.LFB27
 	.4byte	.LFE27-.LFB27
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
 	.4byte	.LFB28
 	.4byte	.LFE28-.LFB28
 	.4byte	.LFB29
 	.4byte	.LFE29-.LFB29
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
 	.4byte	.LFB30
 	.4byte	.LFE30-.LFB30
 	.4byte	.LFB31
 	.4byte	.LFE31-.LFB31
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.4byte	.LFB33
 	.4byte	.LFE33-.LFB33
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.4byte	.LFB34
 	.4byte	.LFE34-.LFB34
 	.4byte	.LFB35
 	.4byte	.LFE35-.LFB35
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
 	.4byte	.LFB37
 	.4byte	.LFE37-.LFB37
 	.4byte	.LFB38
 	.4byte	.LFE38-.LFB38
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.4byte	.LFB40
 	.4byte	.LFE40-.LFB40
 	.4byte	.LFB41
 	.4byte	.LFE41-.LFB41
-	.4byte	.LFB43
-	.4byte	.LFE43-.LFB43
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
+	.4byte	.LFB45
+	.4byte	.LFE45-.LFB45
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
@@ -17585,32 +17585,24 @@ i2c_spinlock:
 	.4byte	.LBE9
 	.4byte	0
 	.4byte	0
-	.4byte	.LFB39
-	.4byte	.LFE39
-	.4byte	.LFB15
-	.4byte	.LFE15
-	.4byte	.LFB32
-	.4byte	.LFE32
-	.4byte	.LFB42
-	.4byte	.LFE42
-	.4byte	.LFB12
-	.4byte	.LFE12
-	.4byte	.LFB13
-	.4byte	.LFE13
-	.4byte	.LFB14
-	.4byte	.LFE14
+	.4byte	.LFB43
+	.4byte	.LFE43
+	.4byte	.LFB19
+	.4byte	.LFE19
+	.4byte	.LFB36
+	.4byte	.LFE36
+	.4byte	.LFB46
+	.4byte	.LFE46
 	.4byte	.LFB16
 	.4byte	.LFE16
 	.4byte	.LFB17
 	.4byte	.LFE17
-	.4byte	.LFB19
-	.4byte	.LFE19
+	.4byte	.LFB18
+	.4byte	.LFE18
 	.4byte	.LFB20
 	.4byte	.LFE20
 	.4byte	.LFB21
 	.4byte	.LFE21
-	.4byte	.LFB22
-	.4byte	.LFE22
 	.4byte	.LFB23
 	.4byte	.LFE23
 	.4byte	.LFB24
@@ -17621,36 +17613,44 @@ i2c_spinlock:
 	.4byte	.LFE26
 	.4byte	.LFB27
 	.4byte	.LFE27
-	.4byte	.LFB11
-	.4byte	.LFE11
 	.4byte	.LFB28
 	.4byte	.LFE28
 	.4byte	.LFB29
 	.4byte	.LFE29
-	.4byte	.LFB18
-	.4byte	.LFE18
 	.4byte	.LFB30
 	.4byte	.LFE30
 	.4byte	.LFB31
 	.4byte	.LFE31
+	.4byte	.LFB15
+	.4byte	.LFE15
+	.4byte	.LFB32
+	.4byte	.LFE32
 	.4byte	.LFB33
 	.4byte	.LFE33
+	.4byte	.LFB22
+	.4byte	.LFE22
 	.4byte	.LFB34
 	.4byte	.LFE34
 	.4byte	.LFB35
 	.4byte	.LFE35
-	.4byte	.LFB36
-	.4byte	.LFE36
 	.4byte	.LFB37
 	.4byte	.LFE37
 	.4byte	.LFB38
 	.4byte	.LFE38
+	.4byte	.LFB39
+	.4byte	.LFE39
 	.4byte	.LFB40
 	.4byte	.LFE40
 	.4byte	.LFB41
 	.4byte	.LFE41
-	.4byte	.LFB43
-	.4byte	.LFE43
+	.4byte	.LFB42
+	.4byte	.LFE42
+	.4byte	.LFB44
+	.4byte	.LFE44
+	.4byte	.LFB45
+	.4byte	.LFE45
+	.4byte	.LFB47
+	.4byte	.LFE47
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -17658,8 +17658,6 @@ i2c_spinlock:
 	.section	.debug_str,"MS",@progbits,1
 .LASF292:
 	.string	"tx_ring_buf"
-.LASF399:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF3:
 	.string	"size_t"
 .LASF175:
@@ -17682,7 +17680,7 @@ i2c_spinlock:
 	.string	"PERIPH_PWM1_MODULE"
 .LASF215:
 	.string	"I2C_DATA_MODE_MAX"
-.LASF30:
+.LASF31:
 	.string	"owner"
 .LASF173:
 	.string	"reserved_3c"
@@ -17712,7 +17710,7 @@ i2c_spinlock:
 	.string	"I2C_DATA_MODE_MSB_FIRST"
 .LASF271:
 	.string	"I2C_STATUS_READ"
-.LASF27:
+.LASF28:
 	.string	"BaseType_t"
 .LASF255:
 	.string	"PERIPH_PCNT_MODULE"
@@ -17780,14 +17778,16 @@ i2c_spinlock:
 	.string	"byte_cmd"
 .LASF216:
 	.string	"i2c_trans_mode_t"
-.LASF333:
-	.string	"i2c_driver_install"
+.LASF205:
+	.string	"date"
 .LASF73:
 	.string	"GPIO_MODE_INPUT"
 .LASF138:
 	.string	"tx_fifo_empty"
 .LASF181:
 	.string	"reserved_98"
+.LASF333:
+	.string	"i2c_driver_install"
 .LASF85:
 	.string	"QueueHandle_t"
 .LASF2:
@@ -17858,7 +17858,7 @@ i2c_spinlock:
 	.string	"rx_fifo_ovf"
 .LASF339:
 	.string	"sda_out_sig"
-.LASF34:
+.LASF27:
 	.string	"_Bool"
 .LASF334:
 	.string	"slv_rx_buf_len"
@@ -18040,7 +18040,7 @@ i2c_spinlock:
 	.string	"rx_cnt"
 .LASF261:
 	.string	"PERIPH_SDIO_SLAVE_MODULE"
-.LASF33:
+.LASF34:
 	.string	"esp_err_t"
 .LASF147:
 	.string	"tx_send_empty"
@@ -18086,7 +18086,7 @@ i2c_spinlock:
 	.string	"reserved_b4"
 .LASF189:
 	.string	"reserved_b8"
-.LASF31:
+.LASF32:
 	.string	"count"
 .LASF119:
 	.string	"addr"
@@ -18268,7 +18268,7 @@ i2c_spinlock:
 	.string	"scl_state_last"
 .LASF187:
 	.string	"reserved_b0"
-.LASF28:
+.LASF29:
 	.string	"UBaseType_t"
 .LASF293:
 	.string	"i2c_obj_t"
@@ -18282,13 +18282,13 @@ i2c_spinlock:
 	.string	"trans_complete"
 .LASF20:
 	.string	"ESP_LOG_NONE"
-.LASF29:
+.LASF30:
 	.string	"TickType_t"
 .LASF391:
 	.string	"gpio_matrix_out"
 .LASF395:
 	.string	"xQueueGenericSend"
-.LASF32:
+.LASF33:
 	.string	"portMUX_TYPE"
 .LASF91:
 	.string	"period"
@@ -18452,12 +18452,12 @@ i2c_spinlock:
 	.string	"next"
 .LASF135:
 	.string	"data"
-.LASF205:
-	.string	"date"
+.LASF399:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF296:
 	.string	"wr_filled"
 .LASF393:
 	.string	"periph_module_enable"
 .LASF233:
 	.string	"sda_pullup_en"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

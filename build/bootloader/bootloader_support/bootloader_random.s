@@ -1262,10 +1262,10 @@ TAG:
 	.string	"start"
 .LASF1:
 	.string	"short unsigned int"
-.LASF23:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\bootloader_support"
 .LASF16:
 	.string	"random"
+.LASF23:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\bootloader_support"
 .LASF5:
 	.string	"unsigned char"
 .LASF18:
@@ -1302,4 +1302,4 @@ TAG:
 	.string	"bootloader_random_enable"
 .LASF14:
 	.string	"length"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

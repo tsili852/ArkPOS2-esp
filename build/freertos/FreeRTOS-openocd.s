@@ -173,6 +173,8 @@ uxTopUsedPriority:
 	.string	"long unsigned int"
 .LASF6:
 	.string	"long long unsigned int"
+.LASF14:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\freertos"
 .LASF15:
 	.string	"uxTopUsedPriority"
 .LASF3:
@@ -191,8 +193,6 @@ uxTopUsedPriority:
 	.string	"C:/esp/esp-idf/components/freertos/FreeRTOS-openocd.c"
 .LASF4:
 	.string	"short int"
-.LASF14:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\freertos"
 .LASF8:
 	.string	"sizetype"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

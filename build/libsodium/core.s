@@ -554,8 +554,6 @@ initialized:
 	.string	"_crypto_generichash_blake2b_pick_best_implementation"
 .LASF14:
 	.string	"randombytes_stir"
-.LASF24:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF12:
 	.string	"sodium_crit_leave"
 .LASF3:
@@ -580,6 +578,8 @@ initialized:
 	.string	"C:/esp/esp-idf/components/libsodium/libsodium/src/libsodium/sodium/core.c"
 .LASF20:
 	.string	"_crypto_stream_chacha20_pick_best_implementation"
+.LASF24:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF4:
 	.string	"short int"
 .LASF15:
@@ -588,4 +588,4 @@ initialized:
 	.string	"_crypto_scalarmult_curve25519_pick_best_implementation"
 .LASF8:
 	.string	"sizetype"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

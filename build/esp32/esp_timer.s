@@ -5,7 +5,7 @@
 	.align	4
 	.type	timer_armed, @function
 timer_armed:
-.LFB16:
+.LFB20:
 	.file 1 "C:/esp/esp-idf/components/esp32/esp_timer.c"
 	.loc 1 233 0
 .LVL0:
@@ -21,7 +21,7 @@ timer_armed:
 	movnez	a2, a9, a8
 	.loc 1 235 0
 	retw.n
-.LFE16:
+.LFE20:
 	.size	timer_armed, .-timer_armed
 	.section	.text.is_initialized,"ax",@progbits
 	.literal_position
@@ -29,7 +29,7 @@ timer_armed:
 	.align	4
 	.type	is_initialized, @function
 is_initialized:
-.LFB22:
+.LFB26:
 	.loc 1 309 0
 	entry	sp, 32
 .LCFI1:
@@ -41,7 +41,7 @@ is_initialized:
 	movnez	a2, a9, a8
 	.loc 1 311 0
 	retw.n
-.LFE22:
+.LFE26:
 	.size	is_initialized, .-is_initialized
 	.section	.text.timer_list_lock,"ax",@progbits
 	.literal_position
@@ -49,7 +49,7 @@ is_initialized:
 	.align	4
 	.type	timer_list_lock, @function
 timer_list_lock:
-.LFB17:
+.LFB21:
 	.loc 1 238 0
 	entry	sp, 32
 .LCFI2:
@@ -58,7 +58,7 @@ timer_list_lock:
 	call8	vTaskEnterCritical
 .LVL2:
 	retw.n
-.LFE17:
+.LFE21:
 	.size	timer_list_lock, .-timer_list_lock
 	.section	.text.timer_list_unlock,"ax",@progbits
 	.literal_position
@@ -66,7 +66,7 @@ timer_list_lock:
 	.align	4
 	.type	timer_list_unlock, @function
 timer_list_unlock:
-.LFB18:
+.LFB22:
 	.loc 1 243 0
 	entry	sp, 32
 .LCFI3:
@@ -75,7 +75,7 @@ timer_list_unlock:
 	call8	vTaskExitCritical
 .LVL3:
 	retw.n
-.LFE18:
+.LFE22:
 	.size	timer_list_unlock, .-timer_list_unlock
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -88,12 +88,12 @@ timer_list_unlock:
 	.literal_position
 	.literal .LC3, s_timers
 	.literal .LC5, .LC4
-	.literal .LC6, __func__$5011
+	.literal .LC6, __func__$5115
 	.literal .LC8, .LC7
 	.align	4
 	.type	timer_insert, @function
 timer_insert:
-.LFB14:
+.LFB18:
 	.loc 1 162 0
 .LVL4:
 	entry	sp, 32
@@ -201,7 +201,7 @@ timer_insert:
 	movi.n	a2, 0
 .LVL18:
 	retw.n
-.LFE14:
+.LFE18:
 	.size	timer_insert, .-timer_insert
 	.section	.text.timer_remove,"ax",@progbits
 	.literal_position
@@ -209,7 +209,7 @@ timer_insert:
 	.align	4
 	.type	timer_remove, @function
 timer_remove:
-.LFB15:
+.LFB19:
 	.loc 1 191 0
 .LVL19:
 	entry	sp, 32
@@ -243,7 +243,7 @@ timer_remove:
 	movi.n	a2, 0
 .LVL22:
 	retw.n
-.LFE15:
+.LFE19:
 	.size	timer_remove, .-timer_remove
 	.section	.iram1,"ax",@progbits
 	.literal_position
@@ -251,7 +251,7 @@ timer_remove:
 	.align	4
 	.type	timer_alarm_handler, @function
 timer_alarm_handler:
-.LFB21:
+.LFB25:
 	.loc 1 297 0
 .LVL23:
 	entry	sp, 48
@@ -271,7 +271,7 @@ timer_alarm_handler:
 .LVL25:
 .L20:
 	retw.n
-.LFE21:
+.LFE25:
 	.size	timer_alarm_handler, .-timer_alarm_handler
 	.section	.text.timer_process_alarm,"ax",@progbits
 	.literal_position
@@ -280,7 +280,7 @@ timer_alarm_handler:
 	.align	4
 	.type	timer_process_alarm, @function
 timer_process_alarm:
-.LFB19:
+.LFB23:
 	.loc 1 248 0
 .LVL26:
 	entry	sp, 32
@@ -389,7 +389,7 @@ timer_process_alarm:
 	call8	timer_list_unlock
 .LVL43:
 	retw.n
-.LFE19:
+.LFE23:
 	.size	timer_process_alarm, .-timer_process_alarm
 	.section	.rodata.str1.4
 	.align	4
@@ -399,12 +399,12 @@ timer_process_alarm:
 	.literal_position
 	.literal .LC13, s_timer_semaphore
 	.literal .LC15, .LC14
-	.literal .LC16, __func__$5035
+	.literal .LC16, __func__$5139
 	.literal .LC17, .LC7
 	.align	4
 	.type	timer_task, @function
 timer_task:
-.LFB20:
+.LFB24:
 	.loc 1 288 0
 .LVL44:
 	entry	sp, 32
@@ -438,7 +438,7 @@ timer_task:
 .LBE2:
 	.loc 1 293 0
 	j	.L37
-.LFE20:
+.LFE24:
 	.size	timer_task, .-timer_task
 	.section	.rodata.str1.4
 	.align	4
@@ -450,7 +450,7 @@ timer_task:
 	.align	4
 	.type	print_timer_info, @function
 print_timer_info:
-.LFB25:
+.LFB29:
 	.loc 1 375 0
 .LVL50:
 	entry	sp, 48
@@ -479,14 +479,14 @@ print_timer_info:
 .LVL53:
 	s32i.n	a10, a4, 0
 	retw.n
-.LFE25:
+.LFE29:
 	.size	print_timer_info, .-print_timer_info
 	.section	.text.esp_timer_create,"ax",@progbits
 	.align	4
 	.global	esp_timer_create
 	.type	esp_timer_create, @function
 esp_timer_create:
-.LFB9:
+.LFB13:
 	.loc 1 90 0
 .LVL54:
 	entry	sp, 32
@@ -535,14 +535,14 @@ esp_timer_create:
 .LVL63:
 	.loc 1 109 0
 	retw.n
-.LFE9:
+.LFE13:
 	.size	esp_timer_create, .-esp_timer_create
 	.section	.text.esp_timer_stop,"ax",@progbits
 	.align	4
 	.global	esp_timer_stop
 	.type	esp_timer_stop, @function
 esp_timer_stop:
-.LFB12:
+.LFB16:
 	.loc 1 139 0
 .LVL64:
 	entry	sp, 32
@@ -575,14 +575,14 @@ esp_timer_stop:
 .LVL72:
 	.loc 1 144 0
 	retw.n
-.LFE12:
+.LFE16:
 	.size	esp_timer_stop, .-esp_timer_stop
 	.section	.text.esp_timer_delete,"ax",@progbits
 	.align	4
 	.global	esp_timer_delete
 	.type	esp_timer_delete, @function
 esp_timer_delete:
-.LFB13:
+.LFB17:
 	.loc 1 147 0
 .LVL73:
 	entry	sp, 32
@@ -615,7 +615,7 @@ esp_timer_delete:
 .LVL80:
 	.loc 1 159 0
 	retw.n
-.LFE13:
+.LFE17:
 	.size	esp_timer_delete, .-esp_timer_delete
 	.section	.rodata.str1.4
 	.align	4
@@ -633,7 +633,7 @@ esp_timer_delete:
 	.global	esp_timer_init
 	.type	esp_timer_init, @function
 esp_timer_init:
-.LFB23:
+.LFB27:
 	.loc 1 315 0
 	entry	sp, 48
 .LCFI13:
@@ -718,7 +718,7 @@ esp_timer_init:
 .LVL94:
 	.loc 1 343 0
 	retw.n
-.LFE23:
+.LFE27:
 	.size	esp_timer_init, .-esp_timer_init
 	.section	.text.esp_timer_deinit,"ax",@progbits
 	.literal_position
@@ -729,7 +729,7 @@ esp_timer_init:
 	.global	esp_timer_deinit
 	.type	esp_timer_deinit, @function
 esp_timer_deinit:
-.LFB24:
+.LFB28:
 	.loc 1 346 0
 	entry	sp, 32
 .LCFI14:
@@ -769,7 +769,7 @@ esp_timer_deinit:
 	movi	a2, 0x103
 	.loc 1 372 0
 	retw.n
-.LFE24:
+.LFE28:
 	.size	esp_timer_deinit, .-esp_timer_deinit
 	.section	.text.esp_timer_dump,"ax",@progbits
 	.literal_position
@@ -778,7 +778,7 @@ esp_timer_deinit:
 	.global	esp_timer_dump
 	.type	esp_timer_dump, @function
 esp_timer_dump:
-.LFB26:
+.LFB30:
 	.loc 1 393 0
 .LVL99:
 	entry	sp, 48
@@ -872,14 +872,14 @@ esp_timer_dump:
 .LVL119:
 	.loc 1 444 0
 	retw.n
-.LFE26:
+.LFE30:
 	.size	esp_timer_dump, .-esp_timer_dump
 	.section	.iram1
 	.align	4
 	.global	esp_timer_get_time
 	.type	esp_timer_get_time, @function
 esp_timer_get_time:
-.LFB27:
+.LFB31:
 	.loc 1 447 0
 	entry	sp, 32
 .LCFI16:
@@ -890,7 +890,7 @@ esp_timer_get_time:
 	mov.n	a2, a10
 	mov.n	a3, a11
 	retw.n
-.LFE27:
+.LFE31:
 	.size	esp_timer_get_time, .-esp_timer_get_time
 	.section	.text.esp_timer_start_once,"ax",@progbits
 	.literal_position
@@ -899,7 +899,7 @@ esp_timer_get_time:
 	.global	esp_timer_start_once
 	.type	esp_timer_start_once, @function
 esp_timer_start_once:
-.LFB10:
+.LFB14:
 	.loc 1 112 0
 .LVL121:
 	entry	sp, 32
@@ -950,14 +950,14 @@ esp_timer_start_once:
 .LVL131:
 	.loc 1 122 0
 	retw.n
-.LFE10:
+.LFE14:
 	.size	esp_timer_start_once, .-esp_timer_start_once
 	.section	.text.esp_timer_start_periodic,"ax",@progbits
 	.align	4
 	.global	esp_timer_start_periodic
 	.type	esp_timer_start_periodic, @function
 esp_timer_start_periodic:
-.LFB11:
+.LFB15:
 	.loc 1 125 0
 .LVL132:
 	entry	sp, 32
@@ -1020,19 +1020,19 @@ esp_timer_start_periodic:
 .LVL145:
 	.loc 1 136 0
 	retw.n
-.LFE11:
+.LFE15:
 	.size	esp_timer_start_periodic, .-esp_timer_start_periodic
-	.section	.rodata.__func__$5035,"a",@progbits
+	.section	.rodata.__func__$5139,"a",@progbits
 	.align	4
-	.type	__func__$5035, @object
-	.size	__func__$5035, 11
-__func__$5035:
+	.type	__func__$5139, @object
+	.size	__func__$5139, 11
+__func__$5139:
 	.string	"timer_task"
-	.section	.rodata.__func__$5011,"a",@progbits
+	.section	.rodata.__func__$5115,"a",@progbits
 	.align	4
-	.type	__func__$5011, @object
-	.size	__func__$5011, 13
-__func__$5011:
+	.type	__func__$5115, @object
+	.size	__func__$5115, 13
+__func__$5115:
 	.string	"timer_insert"
 	.section	.data.s_timer_lock,"aw",@progbits
 	.align	4
@@ -1078,10 +1078,10 @@ s_timers:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI0-.LFB16
+	.4byte	.LCFI0-.LFB20
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1090,10 +1090,10 @@ s_timers:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI1-.LFB22
+	.4byte	.LCFI1-.LFB26
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1102,10 +1102,10 @@ s_timers:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI2-.LFB17
+	.4byte	.LCFI2-.LFB21
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1114,10 +1114,10 @@ s_timers:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI3-.LFB18
+	.4byte	.LCFI3-.LFB22
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1126,10 +1126,10 @@ s_timers:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI4-.LFB14
+	.4byte	.LCFI4-.LFB18
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1138,10 +1138,10 @@ s_timers:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI5-.LFB15
+	.4byte	.LCFI5-.LFB19
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1150,10 +1150,10 @@ s_timers:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.byte	0x4
-	.4byte	.LCFI6-.LFB21
+	.4byte	.LCFI6-.LFB25
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1162,10 +1162,10 @@ s_timers:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI7-.LFB19
+	.4byte	.LCFI7-.LFB23
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1174,10 +1174,10 @@ s_timers:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.byte	0x4
-	.4byte	.LCFI8-.LFB20
+	.4byte	.LCFI8-.LFB24
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1186,10 +1186,10 @@ s_timers:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI9-.LFB25
+	.4byte	.LCFI9-.LFB29
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1198,10 +1198,10 @@ s_timers:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x4
-	.4byte	.LCFI10-.LFB9
+	.4byte	.LCFI10-.LFB13
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1210,10 +1210,10 @@ s_timers:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI11-.LFB12
+	.4byte	.LCFI11-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1222,10 +1222,10 @@ s_timers:
 	.4byte	.LEFDE24-.LASFDE24
 .LASFDE24:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI12-.LFB13
+	.4byte	.LCFI12-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1234,10 +1234,10 @@ s_timers:
 	.4byte	.LEFDE26-.LASFDE26
 .LASFDE26:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI13-.LFB23
+	.4byte	.LCFI13-.LFB27
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1246,10 +1246,10 @@ s_timers:
 	.4byte	.LEFDE28-.LASFDE28
 .LASFDE28:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI14-.LFB24
+	.4byte	.LCFI14-.LFB28
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1258,10 +1258,10 @@ s_timers:
 	.4byte	.LEFDE30-.LASFDE30
 .LASFDE30:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI15-.LFB26
+	.4byte	.LCFI15-.LFB30
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1270,10 +1270,10 @@ s_timers:
 	.4byte	.LEFDE32-.LASFDE32
 .LASFDE32:
 	.4byte	.Lframe0
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.byte	0x4
-	.4byte	.LCFI16-.LFB27
+	.4byte	.LCFI16-.LFB31
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1282,10 +1282,10 @@ s_timers:
 	.4byte	.LEFDE34-.LASFDE34
 .LASFDE34:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI17-.LFB10
+	.4byte	.LCFI17-.LFB14
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1294,10 +1294,10 @@ s_timers:
 	.4byte	.LEFDE36-.LASFDE36
 .LASFDE36:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI18-.LFB11
+	.4byte	.LCFI18-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -2483,43 +2483,43 @@ s_timers:
 	.byte	0xb
 	.byte	0x26
 	.4byte	0x933
-	.uleb128 0x3
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x2
 	.4byte	.LASF146
-	.byte	0xc
-	.byte	0x6c
-	.4byte	0x53
 	.uleb128 0x3
 	.4byte	.LASF147
 	.byte	0xc
-	.byte	0x73
+	.byte	0x6f
+	.4byte	0x53
+	.uleb128 0x3
+	.4byte	.LASF148
+	.byte	0xc
+	.byte	0x76
 	.4byte	0x9f
 	.uleb128 0xb
 	.byte	0x8
 	.byte	0xc
-	.byte	0x81
-	.4byte	0x9a6
-	.uleb128 0xc
-	.4byte	.LASF148
-	.byte	0xc
-	.byte	0x82
-	.4byte	0x9f
-	.byte	0
+	.byte	0x84
+	.4byte	0x9ad
 	.uleb128 0xc
 	.4byte	.LASF149
 	.byte	0xc
-	.byte	0x83
+	.byte	0x85
+	.4byte	0x9f
+	.byte	0
+	.uleb128 0xc
+	.4byte	.LASF150
+	.byte	0xc
+	.byte	0x86
 	.4byte	0x9f
 	.byte	0x4
 	.byte	0
 	.uleb128 0x3
-	.4byte	.LASF150
-	.byte	0xc
-	.byte	0x88
-	.4byte	0x985
-	.uleb128 0x2
-	.byte	0x1
-	.byte	0x2
 	.4byte	.LASF151
+	.byte	0xc
+	.byte	0x8b
+	.4byte	0x98c
 	.uleb128 0x3
 	.4byte	.LASF152
 	.byte	0xd
@@ -2573,9 +2573,9 @@ s_timers:
 	.4byte	.LASF161
 	.byte	0x1
 	.byte	0xe8
-	.4byte	0x9b1
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	0x96f
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xa42
@@ -2590,17 +2590,17 @@ s_timers:
 	.4byte	.LASF217
 	.byte	0x1
 	.2byte	0x134
-	.4byte	0x9b1
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	0x96f
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x1f
 	.4byte	.LASF159
 	.byte	0x1
 	.byte	0xed
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xa81
@@ -2619,8 +2619,8 @@ s_timers:
 	.4byte	.LASF160
 	.byte	0x1
 	.byte	0xf2
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xaaa
@@ -2640,8 +2640,8 @@ s_timers:
 	.byte	0x1
 	.byte	0xa1
 	.4byte	0x850
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xb49
@@ -2668,7 +2668,7 @@ s_timers:
 	.4byte	0xb59
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5011
+	.4byte	__func__$5115
 	.uleb128 0x25
 	.4byte	.LVL5
 	.4byte	0xa58
@@ -2693,7 +2693,7 @@ s_timers:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5011
+	.4byte	__func__$5115
 	.uleb128 0x21
 	.uleb128 0x1
 	.byte	0x5d
@@ -2722,8 +2722,8 @@ s_timers:
 	.byte	0x1
 	.byte	0xbe
 	.4byte	0x850
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xb99
@@ -2744,8 +2744,8 @@ s_timers:
 	.4byte	.LASF167
 	.byte	0x1
 	.2byte	0x128
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xbea
@@ -2783,8 +2783,8 @@ s_timers:
 	.4byte	.LASF168
 	.byte	0x1
 	.byte	0xf7
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xc8d
@@ -2850,8 +2850,8 @@ s_timers:
 	.4byte	.LASF170
 	.byte	0x1
 	.2byte	0x11f
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xd38
@@ -2867,7 +2867,7 @@ s_timers:
 	.4byte	0xd48
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5035
+	.4byte	__func__$5139
 	.uleb128 0x2c
 	.4byte	.LBB2
 	.4byte	.LBE2-.LBB2
@@ -2919,7 +2919,7 @@ s_timers:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5035
+	.4byte	__func__$5139
 	.uleb128 0x21
 	.uleb128 0x1
 	.byte	0x5d
@@ -2951,8 +2951,8 @@ s_timers:
 	.4byte	.LASF172
 	.byte	0x1
 	.2byte	0x176
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xdb6
@@ -3010,8 +3010,8 @@ s_timers:
 	.byte	0x1
 	.byte	0x58
 	.4byte	0x850
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xe25
@@ -3066,8 +3066,8 @@ s_timers:
 	.byte	0x1
 	.byte	0x8a
 	.4byte	0x850
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xe8c
@@ -3107,8 +3107,8 @@ s_timers:
 	.byte	0x1
 	.byte	0x92
 	.4byte	0x850
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xed9
@@ -3145,8 +3145,8 @@ s_timers:
 	.byte	0x1
 	.2byte	0x13a
 	.4byte	0x850
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xfa7
@@ -3251,8 +3251,8 @@ s_timers:
 	.byte	0x1
 	.2byte	0x159
 	.4byte	0x850
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xfe6
@@ -3274,8 +3274,8 @@ s_timers:
 	.byte	0x1
 	.2byte	0x188
 	.4byte	0x850
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x10dd
@@ -3401,8 +3401,8 @@ s_timers:
 	.byte	0x1
 	.2byte	0x1be
 	.4byte	0xaa
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1107
@@ -3415,8 +3415,8 @@ s_timers:
 	.byte	0x1
 	.byte	0x6f
 	.4byte	0x850
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1175
@@ -3465,8 +3465,8 @@ s_timers:
 	.byte	0x1
 	.byte	0x7c
 	.4byte	0x850
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x11f5
@@ -3553,7 +3553,7 @@ s_timers:
 	.4byte	.LASF194
 	.byte	0x1
 	.byte	0x54
-	.4byte	0x9a6
+	.4byte	0x9ad
 	.uleb128 0x5
 	.byte	0x3
 	.4byte	s_timer_lock
@@ -3561,12 +3561,12 @@ s_timers:
 	.4byte	.LASF195
 	.4byte	.LASF195
 	.byte	0xc
-	.byte	0xd9
+	.byte	0xdc
 	.uleb128 0x39
 	.4byte	.LASF196
 	.4byte	.LASF196
 	.byte	0xc
-	.byte	0xd8
+	.byte	0xdb
 	.uleb128 0x39
 	.4byte	.LASF197
 	.4byte	.LASF197
@@ -3586,7 +3586,7 @@ s_timers:
 	.4byte	.LASF200
 	.4byte	.LASF200
 	.byte	0xc
-	.2byte	0x11a
+	.2byte	0x129
 	.uleb128 0x39
 	.4byte	.LASF201
 	.4byte	.LASF201
@@ -4531,7 +4531,7 @@ s_timers:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL1
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4545,7 +4545,7 @@ s_timers:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL18
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4622,7 +4622,7 @@ s_timers:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL22
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4636,7 +4636,7 @@ s_timers:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL29
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4698,7 +4698,7 @@ s_timers:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL52
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4752,7 +4752,7 @@ s_timers:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL63
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4766,7 +4766,7 @@ s_timers:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL62
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -4799,7 +4799,7 @@ s_timers:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL72
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4835,7 +4835,7 @@ s_timers:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL80
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4864,7 +4864,7 @@ s_timers:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL94
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -4886,7 +4886,7 @@ s_timers:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL119
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4945,7 +4945,7 @@ s_timers:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL131
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4973,7 +4973,7 @@ s_timers:
 	.uleb128 0x25
 	.byte	0x9f
 	.4byte	.LVL128
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x6
 	.byte	0x54
 	.byte	0x93
@@ -5011,7 +5011,7 @@ s_timers:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL145
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -5048,7 +5048,7 @@ s_timers:
 	.byte	0x93
 	.uleb128 0x4
 	.4byte	.LVL142
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x6
 	.byte	0x54
 	.byte	0x93
@@ -5066,92 +5066,92 @@ s_timers:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
 	.4byte	.LFB20
 	.4byte	.LFE20-.LFB20
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.4byte	.LFB25
 	.4byte	.LFE25-.LFB25
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
 	.4byte	.LFB23
 	.4byte	.LFE23-.LFB23
 	.4byte	.LFB24
 	.4byte	.LFE24-.LFB24
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.4byte	.LFB27
 	.4byte	.LFE27-.LFB27
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB16
-	.4byte	.LFE16
-	.4byte	.LFB22
-	.4byte	.LFE22
-	.4byte	.LFB17
-	.4byte	.LFE17
-	.4byte	.LFB18
-	.4byte	.LFE18
-	.4byte	.LFB14
-	.4byte	.LFE14
-	.4byte	.LFB15
-	.4byte	.LFE15
-	.4byte	.LFB21
-	.4byte	.LFE21
-	.4byte	.LFB19
-	.4byte	.LFE19
 	.4byte	.LFB20
 	.4byte	.LFE20
+	.4byte	.LFB26
+	.4byte	.LFE26
+	.4byte	.LFB21
+	.4byte	.LFE21
+	.4byte	.LFB22
+	.4byte	.LFE22
+	.4byte	.LFB18
+	.4byte	.LFE18
+	.4byte	.LFB19
+	.4byte	.LFE19
 	.4byte	.LFB25
 	.4byte	.LFE25
-	.4byte	.LFB9
-	.4byte	.LFE9
-	.4byte	.LFB12
-	.4byte	.LFE12
-	.4byte	.LFB13
-	.4byte	.LFE13
 	.4byte	.LFB23
 	.4byte	.LFE23
 	.4byte	.LFB24
 	.4byte	.LFE24
-	.4byte	.LFB26
-	.4byte	.LFE26
+	.4byte	.LFB29
+	.4byte	.LFE29
+	.4byte	.LFB13
+	.4byte	.LFE13
+	.4byte	.LFB16
+	.4byte	.LFE16
+	.4byte	.LFB17
+	.4byte	.LFE17
 	.4byte	.LFB27
 	.4byte	.LFE27
-	.4byte	.LFB10
-	.4byte	.LFE10
-	.4byte	.LFB11
-	.4byte	.LFE11
+	.4byte	.LFB28
+	.4byte	.LFE28
+	.4byte	.LFB30
+	.4byte	.LFE30
+	.4byte	.LFB31
+	.4byte	.LFE31
+	.4byte	.LFB14
+	.4byte	.LFE14
+	.4byte	.LFB15
+	.4byte	.LFE15
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF149:
+.LASF150:
 	.string	"count"
 .LASF117:
 	.string	"_mbtowc_state"
@@ -5253,13 +5253,13 @@ s_timers:
 	.string	"long long int"
 .LASF133:
 	.string	"esp_timer_cb_t"
-.LASF146:
+.LASF147:
 	.string	"BaseType_t"
 .LASF71:
 	.string	"_cvtbuf"
 .LASF162:
 	.string	"timer_insert"
-.LASF150:
+.LASF151:
 	.string	"portMUX_TYPE"
 .LASF120:
 	.string	"_mbrlen_state"
@@ -5275,8 +5275,8 @@ s_timers:
 	.string	"_sign"
 .LASF62:
 	.string	"_stderr"
-.LASF35:
-	.string	"_Bigint"
+.LASF216:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF202:
 	.string	"xQueueGenericReceive"
 .LASF93:
@@ -5399,7 +5399,7 @@ s_timers:
 	.string	"lh_first"
 .LASF40:
 	.string	"__tm_mday"
-.LASF151:
+.LASF146:
 	.string	"_Bool"
 .LASF12:
 	.string	"int32_t"
@@ -5447,8 +5447,8 @@ s_timers:
 	.string	"__cleanup"
 .LASF192:
 	.string	"s_timer_task"
-.LASF216:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
+.LASF32:
+	.string	"_maxwds"
 .LASF58:
 	.string	"_reent"
 .LASF104:
@@ -5461,7 +5461,7 @@ s_timers:
 	.string	"__value"
 .LASF89:
 	.string	"_seek"
-.LASF148:
+.LASF149:
 	.string	"owner"
 .LASF20:
 	.string	"_fpos_t"
@@ -5531,6 +5531,8 @@ s_timers:
 	.string	"ESP_LOG_WARN"
 .LASF160:
 	.string	"timer_list_unlock"
+.LASF215:
+	.string	"C:/esp/esp-idf/components/esp32/esp_timer.c"
 .LASF126:
 	.string	"esp_err_t"
 .LASF180:
@@ -5547,20 +5549,18 @@ s_timers:
 	.string	"s_timer_semaphore"
 .LASF118:
 	.string	"_l64a_buf"
-.LASF215:
-	.string	"C:/esp/esp-idf/components/esp32/esp_timer.c"
+.LASF35:
+	.string	"_Bigint"
 .LASF75:
 	.string	"_sig_func"
 .LASF163:
 	.string	"timer"
-.LASF147:
+.LASF148:
 	.string	"TickType_t"
 .LASF166:
 	.string	"need_yield"
 .LASF212:
 	.string	"fputs"
-.LASF32:
-	.string	"_maxwds"
 .LASF92:
 	.string	"_nbuf"
 .LASF177:
@@ -5589,4 +5589,4 @@ s_timers:
 	.string	"result"
 .LASF128:
 	.string	"esp_timer"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

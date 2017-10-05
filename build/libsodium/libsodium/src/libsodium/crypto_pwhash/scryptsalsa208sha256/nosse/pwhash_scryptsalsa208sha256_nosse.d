@@ -32,7 +32,7 @@ libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/nosse/pwhash_scryptsa
  C:/esp/esp-idf/components/libsodium/port_include/sodium/crypto_hash_sha256.h \
  C:/esp/esp-idf/components/mbedtls/include/mbedtls/sha256.h \
  C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/mbedtls/include/mbedtls/check_config.h \
  C:/esp/esp-idf/components/mbedtls/port/include/sha256_alt.h \
  C:/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/export.h \
@@ -105,7 +105,7 @@ C:/esp/esp-idf/components/mbedtls/include/mbedtls/sha256.h:
 
 C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/mbedtls/include/mbedtls/check_config.h:
 

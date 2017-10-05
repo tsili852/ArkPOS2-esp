@@ -2,7 +2,7 @@ port/chardata.o: C:/esp/esp-idf/components/expat/port/chardata.c \
  C:/esp/esp-idf/components/expat/include/expat/expat_config.h \
  C:/esp/esp-idf/components/expat/port/include/minicheck.h \
  C:/esp/esp-idf/components/newlib/platform_include/assert.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/newlib/include/stdlib.h \
  C:/esp/esp-idf/components/newlib/include/machine/ieeefp.h \
  C:/esp/esp-idf/components/newlib/include/_ansi.h \
@@ -37,7 +37,7 @@ C:/esp/esp-idf/components/expat/port/include/minicheck.h:
 
 C:/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/newlib/include/stdlib.h:
 

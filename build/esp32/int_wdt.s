@@ -8,7 +8,7 @@
 	.align	4
 	.type	tick_hook, @function
 tick_hook:
-.LFB9:
+.LFB13:
 	.file 1 "C:/esp/esp-idf/components/esp32/int_wdt.c"
 	.loc 1 62 0
 	entry	sp, 32
@@ -52,7 +52,7 @@ tick_hook:
 	s32i	a9, a8, 100
 .L1:
 	retw.n
-.LFE9:
+.LFE13:
 	.size	tick_hook, .-tick_hook
 	.section	.text.esp_int_wdt_init,"ax",@progbits
 	.literal_position
@@ -73,7 +73,7 @@ tick_hook:
 	.global	esp_int_wdt_init
 	.type	esp_int_wdt_init, @function
 esp_int_wdt_init:
-.LFB10:
+.LFB14:
 	.loc 1 73 0
 	entry	sp, 32
 .LCFI1:
@@ -189,7 +189,7 @@ esp_int_wdt_init:
 	call8	xt_ints_on
 .LVL6:
 	retw.n
-.LFE10:
+.LFE14:
 	.size	esp_int_wdt_init, .-esp_int_wdt_init
 	.section	.debug_frame,"",@progbits
 .Lframe0:
@@ -210,10 +210,10 @@ esp_int_wdt_init:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x4
-	.4byte	.LCFI0-.LFB9
+	.4byte	.LCFI0-.LFB13
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -222,10 +222,10 @@ esp_int_wdt_init:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI1-.LFB10
+	.4byte	.LCFI1-.LFB14
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1551,8 +1551,8 @@ esp_int_wdt_init:
 	.4byte	.LASF110
 	.byte	0x1
 	.byte	0x3e
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x969
@@ -1575,8 +1575,8 @@ esp_int_wdt_init:
 	.4byte	.LASF111
 	.byte	0x1
 	.byte	0x49
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xa0d
@@ -2155,18 +2155,18 @@ esp_int_wdt_init:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB9
-	.4byte	.LFE9
-	.4byte	.LFB10
-	.4byte	.LFE10
+	.4byte	.LFB13
+	.4byte	.LFE13
+	.4byte	.LFB14
+	.4byte	.LFE14
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -2186,8 +2186,8 @@ esp_int_wdt_init:
 	.string	"stg1"
 .LASF19:
 	.string	"autoreload"
-.LASF76:
-	.string	"reserved_a8"
+.LASF108:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF15:
 	.string	"alarm_en"
 .LASF84:
@@ -2208,8 +2208,8 @@ esp_int_wdt_init:
 	.string	"wdt_config0"
 .LASF53:
 	.string	"wdt_config1"
-.LASF6:
-	.string	"long long unsigned int"
+.LASF54:
+	.string	"wdt_config2"
 .LASF55:
 	.string	"wdt_config3"
 .LASF56:
@@ -2266,8 +2266,8 @@ esp_int_wdt_init:
 	.string	"reserved_d4"
 .LASF17:
 	.string	"edge_int_en"
-.LASF108:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
+.LASF6:
+	.string	"long long unsigned int"
 .LASF62:
 	.string	"lactconfig"
 .LASF88:
@@ -2290,8 +2290,6 @@ esp_int_wdt_init:
 	.string	"C:/esp/esp-idf/components/esp32/int_wdt.c"
 .LASF32:
 	.string	"sys_reset_length"
-.LASF54:
-	.string	"wdt_config2"
 .LASF31:
 	.string	"flashboot_mod_en"
 .LASF58:
@@ -2320,8 +2318,8 @@ esp_int_wdt_init:
 	.string	"uint32_t"
 .LASF4:
 	.string	"unsigned int"
-.LASF90:
-	.string	"reserved_e0"
+.LASF76:
+	.string	"reserved_a8"
 .LASF91:
 	.string	"reserved_e4"
 .LASF98:
@@ -2344,6 +2342,8 @@ esp_int_wdt_init:
 	.string	"esp_int_wdt_init"
 .LASF13:
 	.string	"_Bool"
+.LASF90:
+	.string	"reserved_e0"
 .LASF67:
 	.string	"lactalarmlo"
 .LASF77:
@@ -2398,4 +2398,4 @@ esp_int_wdt_init:
 	.string	"divider"
 .LASF65:
 	.string	"lacthi"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

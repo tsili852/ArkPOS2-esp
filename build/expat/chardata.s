@@ -2182,6 +2182,8 @@ __func__$3554:
 	.string	"short unsigned int"
 .LASF18:
 	.string	"CharData_AppendString"
+.LASF32:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\expat"
 .LASF25:
 	.string	"__assert_func"
 .LASF14:
@@ -2202,8 +2204,6 @@ __func__$3554:
 	.string	"long long int"
 .LASF0:
 	.string	"char"
-.LASF32:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\expat"
 .LASF34:
 	.string	"memcpy"
 .LASF5:
@@ -2220,4 +2220,4 @@ __func__$3554:
 	.string	"storage"
 .LASF27:
 	.string	"sprintf"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

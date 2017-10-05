@@ -20,7 +20,7 @@
 	.section	.text.next_option_safe,"ax",@progbits
 	.literal_position
 	.literal .LC1, .LC0
-	.literal .LC2, __func__$5955
+	.literal .LC2, __func__$6059
 	.literal .LC4, .LC3
 	.literal .LC6, .LC5
 	.literal .LC8, .LC7
@@ -28,7 +28,7 @@
 	.align	4
 	.type	next_option_safe, @function
 next_option_safe:
-.LFB28:
+.LFB32:
 	.file 1 "C:/esp/esp-idf/components/coap/libcoap/src/pdu.c"
 	.loc 1 325 0
 .LVL0:
@@ -97,7 +97,7 @@ next_option_safe:
 	.loc 1 341 0
 	mov.n	a2, a10
 	retw.n
-.LFE28:
+.LFE32:
 	.size	next_option_safe, .-next_option_safe
 	.section	.rodata.str1.4
 	.align	4
@@ -106,13 +106,13 @@ next_option_safe:
 	.section	.text.coap_pdu_clear,"ax",@progbits
 	.literal_position
 	.literal .LC12, .LC11
-	.literal .LC13, __func__$5886
+	.literal .LC13, __func__$5990
 	.literal .LC14, .LC3
 	.align	4
 	.global	coap_pdu_clear
 	.type	coap_pdu_clear, @function
 coap_pdu_clear:
-.LFB18:
+.LFB22:
 	.loc 1 29 0
 .LVL8:
 	entry	sp, 32
@@ -154,7 +154,7 @@ coap_pdu_clear:
 	movi.n	a3, 4
 	s16i	a3, a2, 10
 	retw.n
-.LFE18:
+.LFE22:
 	.size	coap_pdu_clear, .-coap_pdu_clear
 	.section	.rodata.str1.4
 	.align	4
@@ -163,13 +163,13 @@ coap_pdu_clear:
 	.section	.text.coap_pdu_init,"ax",@progbits
 	.literal_position
 	.literal .LC16, .LC15
-	.literal .LC17, __func__$5894
+	.literal .LC17, __func__$5998
 	.literal .LC18, .LC3
 	.align	4
 	.global	coap_pdu_init
 	.type	coap_pdu_init, @function
 coap_pdu_init:
-.LFB19:
+.LFB23:
 	.loc 1 76 0
 .LVL13:
 	entry	sp, 32
@@ -258,7 +258,7 @@ coap_pdu_init:
 .L11:
 	.loc 1 116 0
 	retw.n
-.LFE19:
+.LFE23:
 	.size	coap_pdu_init, .-coap_pdu_init
 	.section	.rodata.str1.4
 	.align	4
@@ -272,7 +272,7 @@ coap_pdu_init:
 	.global	coap_new_pdu
 	.type	coap_new_pdu, @function
 coap_new_pdu:
-.LFB20:
+.LFB24:
 	.loc 1 119 0
 	entry	sp, 32
 .LCFI3:
@@ -298,14 +298,14 @@ coap_new_pdu:
 .L17:
 	.loc 1 133 0
 	retw.n
-.LFE20:
+.LFE24:
 	.size	coap_new_pdu, .-coap_new_pdu
 	.section	.text.coap_delete_pdu,"ax",@progbits
 	.align	4
 	.global	coap_delete_pdu
 	.type	coap_delete_pdu, @function
 coap_delete_pdu:
-.LFB21:
+.LFB25:
 	.loc 1 136 0
 .LVL32:
 	entry	sp, 32
@@ -327,14 +327,14 @@ coap_delete_pdu:
 .LVL34:
 .L18:
 	retw.n
-.LFE21:
+.LFE25:
 	.size	coap_delete_pdu, .-coap_delete_pdu
 	.section	.text.coap_add_token,"ax",@progbits
 	.align	4
 	.global	coap_add_token
 	.type	coap_add_token, @function
 coap_add_token:
-.LFB22:
+.LFB26:
 	.loc 1 153 0
 .LVL35:
 	entry	sp, 32
@@ -400,7 +400,7 @@ coap_add_token:
 .LVL43:
 	.loc 1 167 0
 	retw.n
-.LFE22:
+.LFE26:
 	.size	coap_add_token, .-coap_add_token
 	.section	.rodata.str1.4
 	.align	4
@@ -412,7 +412,7 @@ coap_add_token:
 	.section	.text.coap_add_option,"ax",@progbits
 	.literal_position
 	.literal .LC22, .LC11
-	.literal .LC23, __func__$5916
+	.literal .LC23, __func__$6020
 	.literal .LC24, .LC3
 	.literal .LC26, .LC25
 	.literal .LC28, .LC27
@@ -420,7 +420,7 @@ coap_add_token:
 	.global	coap_add_option
 	.type	coap_add_option, @function
 coap_add_option:
-.LFB23:
+.LFB27:
 	.loc 1 171 0
 .LVL44:
 	entry	sp, 32
@@ -494,12 +494,12 @@ coap_add_option:
 .LVL57:
 	.loc 1 199 0
 	retw.n
-.LFE23:
+.LFE27:
 	.size	coap_add_option, .-coap_add_option
 	.section	.text.coap_add_option_later,"ax",@progbits
 	.literal_position
 	.literal .LC29, .LC11
-	.literal .LC30, __func__$5924
+	.literal .LC30, __func__$6028
 	.literal .LC31, .LC3
 	.literal .LC32, .LC25
 	.literal .LC33, .LC27
@@ -507,7 +507,7 @@ coap_add_option:
 	.global	coap_add_option_later
 	.type	coap_add_option_later, @function
 coap_add_option_later:
-.LFB24:
+.LFB28:
 	.loc 1 203 0
 .LVL58:
 	entry	sp, 32
@@ -583,7 +583,7 @@ coap_add_option_later:
 .LVL71:
 	.loc 1 231 0
 	retw.n
-.LFE24:
+.LFE28:
 	.size	coap_add_option_later, .-coap_add_option_later
 	.section	.rodata.str1.4
 	.align	4
@@ -595,7 +595,7 @@ coap_add_option_later:
 	.section	.text.coap_add_data,"ax",@progbits
 	.literal_position
 	.literal .LC34, .LC11
-	.literal .LC35, __func__$5930
+	.literal .LC35, __func__$6034
 	.literal .LC36, .LC3
 	.literal .LC38, .LC37
 	.literal .LC40, .LC39
@@ -603,7 +603,7 @@ coap_add_option_later:
 	.global	coap_add_data
 	.type	coap_add_data, @function
 coap_add_data:
-.LFB25:
+.LFB29:
 	.loc 1 234 0
 .LVL72:
 	entry	sp, 32
@@ -693,7 +693,7 @@ coap_add_data:
 	movi.n	a2, 0
 	.loc 1 254 0
 	retw.n
-.LFE25:
+.LFE29:
 	.size	coap_add_data, .-coap_add_data
 	.section	.rodata.str1.4
 	.align	4
@@ -705,7 +705,7 @@ coap_add_data:
 	.section	.text.coap_get_data,"ax",@progbits
 	.literal_position
 	.literal .LC41, .LC11
-	.literal .LC42, __func__$5936
+	.literal .LC42, __func__$6040
 	.literal .LC43, .LC3
 	.literal .LC45, .LC44
 	.literal .LC47, .LC46
@@ -713,7 +713,7 @@ coap_add_data:
 	.global	coap_get_data
 	.type	coap_get_data, @function
 coap_get_data:
-.LFB26:
+.LFB30:
 	.loc 1 257 0
 .LVL83:
 	entry	sp, 32
@@ -780,7 +780,7 @@ coap_get_data:
 	movnez	a2, a3, a4
 	.loc 1 271 0
 	retw.n
-.LFE26:
+.LFE30:
 	.size	coap_get_data, .-coap_get_data
 	.section	.text.coap_response_phrase,"ax",@progbits
 	.literal_position
@@ -789,7 +789,7 @@ coap_get_data:
 	.global	coap_response_phrase
 	.type	coap_response_phrase, @function
 coap_response_phrase:
-.LFB27:
+.LFB31:
 	.loc 1 309 0
 .LVL92:
 	entry	sp, 32
@@ -825,7 +825,7 @@ coap_response_phrase:
 	movi.n	a2, 0
 	.loc 1 316 0
 	retw.n
-.LFE27:
+.LFE31:
 	.size	coap_response_phrase, .-coap_response_phrase
 	.section	.rodata.str1.4
 	.align	4
@@ -855,7 +855,7 @@ coap_response_phrase:
 	.section	.text.coap_pdu_parse,"ax",@progbits
 	.literal_position
 	.literal .LC49, .LC46
-	.literal .LC50, __func__$5962
+	.literal .LC50, __func__$6066
 	.literal .LC51, .LC3
 	.literal .LC52, .LC11
 	.literal .LC54, .LC53
@@ -870,7 +870,7 @@ coap_response_phrase:
 	.global	coap_pdu_parse
 	.type	coap_pdu_parse, @function
 coap_pdu_parse:
-.LFB29:
+.LFB33:
 	.loc 1 344 0
 .LVL99:
 	entry	sp, 64
@@ -1111,55 +1111,55 @@ coap_pdu_parse:
 	movi.n	a2, 1
 	.loc 1 433 0
 	retw.n
-.LFE29:
+.LFE33:
 	.size	coap_pdu_parse, .-coap_pdu_parse
-	.section	.rodata.__func__$5955,"a",@progbits
+	.section	.rodata.__func__$6059,"a",@progbits
 	.align	4
-	.type	__func__$5955, @object
-	.size	__func__$5955, 17
-__func__$5955:
+	.type	__func__$6059, @object
+	.size	__func__$6059, 17
+__func__$6059:
 	.string	"next_option_safe"
-	.section	.rodata.__func__$5962,"a",@progbits
+	.section	.rodata.__func__$6066,"a",@progbits
 	.align	4
-	.type	__func__$5962, @object
-	.size	__func__$5962, 15
-__func__$5962:
+	.type	__func__$6066, @object
+	.size	__func__$6066, 15
+__func__$6066:
 	.string	"coap_pdu_parse"
-	.section	.rodata.__func__$5936,"a",@progbits
+	.section	.rodata.__func__$6040,"a",@progbits
 	.align	4
-	.type	__func__$5936, @object
-	.size	__func__$5936, 14
-__func__$5936:
+	.type	__func__$6040, @object
+	.size	__func__$6040, 14
+__func__$6040:
 	.string	"coap_get_data"
-	.section	.rodata.__func__$5930,"a",@progbits
+	.section	.rodata.__func__$6034,"a",@progbits
 	.align	4
-	.type	__func__$5930, @object
-	.size	__func__$5930, 14
-__func__$5930:
+	.type	__func__$6034, @object
+	.size	__func__$6034, 14
+__func__$6034:
 	.string	"coap_add_data"
-	.section	.rodata.__func__$5924,"a",@progbits
+	.section	.rodata.__func__$6028,"a",@progbits
 	.align	4
-	.type	__func__$5924, @object
-	.size	__func__$5924, 22
-__func__$5924:
+	.type	__func__$6028, @object
+	.size	__func__$6028, 22
+__func__$6028:
 	.string	"coap_add_option_later"
-	.section	.rodata.__func__$5916,"a",@progbits
+	.section	.rodata.__func__$6020,"a",@progbits
 	.align	4
-	.type	__func__$5916, @object
-	.size	__func__$5916, 16
-__func__$5916:
+	.type	__func__$6020, @object
+	.size	__func__$6020, 16
+__func__$6020:
 	.string	"coap_add_option"
-	.section	.rodata.__func__$5894,"a",@progbits
+	.section	.rodata.__func__$5998,"a",@progbits
 	.align	4
-	.type	__func__$5894, @object
-	.size	__func__$5894, 14
-__func__$5894:
+	.type	__func__$5998, @object
+	.size	__func__$5998, 14
+__func__$5998:
 	.string	"coap_pdu_init"
-	.section	.rodata.__func__$5886,"a",@progbits
+	.section	.rodata.__func__$5990,"a",@progbits
 	.align	4
-	.type	__func__$5886, @object
-	.size	__func__$5886, 15
-__func__$5886:
+	.type	__func__$5990, @object
+	.size	__func__$5990, 15
+__func__$5990:
 	.string	"coap_pdu_clear"
 	.global	coap_error
 	.section	.rodata.str1.4
@@ -1328,10 +1328,10 @@ coap_error:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.byte	0x4
-	.4byte	.LCFI0-.LFB28
+	.4byte	.LCFI0-.LFB32
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1340,10 +1340,10 @@ coap_error:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI1-.LFB18
+	.4byte	.LCFI1-.LFB22
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1352,10 +1352,10 @@ coap_error:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI2-.LFB19
+	.4byte	.LCFI2-.LFB23
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1364,10 +1364,10 @@ coap_error:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.byte	0x4
-	.4byte	.LCFI3-.LFB20
+	.4byte	.LCFI3-.LFB24
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1376,10 +1376,10 @@ coap_error:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.byte	0x4
-	.4byte	.LCFI4-.LFB21
+	.4byte	.LCFI4-.LFB25
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1388,10 +1388,10 @@ coap_error:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI5-.LFB22
+	.4byte	.LCFI5-.LFB26
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1400,10 +1400,10 @@ coap_error:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI6-.LFB23
+	.4byte	.LCFI6-.LFB27
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1412,10 +1412,10 @@ coap_error:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI7-.LFB24
+	.4byte	.LCFI7-.LFB28
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1424,10 +1424,10 @@ coap_error:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI8-.LFB25
+	.4byte	.LCFI8-.LFB29
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1436,10 +1436,10 @@ coap_error:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI9-.LFB26
+	.4byte	.LCFI9-.LFB30
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1448,10 +1448,10 @@ coap_error:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.byte	0x4
-	.4byte	.LCFI10-.LFB27
+	.4byte	.LCFI10-.LFB31
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1460,10 +1460,10 @@ coap_error:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.byte	0x4
-	.4byte	.LCFI11-.LFB29
+	.4byte	.LCFI11-.LFB33
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -1806,8 +1806,8 @@ coap_error:
 	.byte	0x1
 	.2byte	0x145
 	.4byte	0x25
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3af
@@ -1843,7 +1843,7 @@ coap_error:
 	.4byte	0x3cb
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5955
+	.4byte	__func__$6059
 	.uleb128 0x18
 	.4byte	.LVL1
 	.4byte	0xd1e
@@ -1865,7 +1865,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5955
+	.4byte	__func__$6059
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -1894,7 +1894,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5955
+	.4byte	__func__$6059
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -1923,7 +1923,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5955
+	.4byte	__func__$6059
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -1962,7 +1962,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5955
+	.4byte	__func__$6059
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -1990,8 +1990,8 @@ coap_error:
 	.4byte	.LASF56
 	.byte	0x1
 	.byte	0x1d
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x454
@@ -2013,7 +2013,7 @@ coap_error:
 	.4byte	0x46a
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5886
+	.4byte	__func__$5990
 	.uleb128 0x18
 	.4byte	.LVL9
 	.4byte	0xd1e
@@ -2034,7 +2034,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5886
+	.4byte	__func__$5990
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -2075,8 +2075,8 @@ coap_error:
 	.byte	0x1
 	.byte	0x4b
 	.4byte	0x454
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x56f
@@ -2116,7 +2116,7 @@ coap_error:
 	.4byte	0x56f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5894
+	.4byte	__func__$5998
 	.uleb128 0x18
 	.4byte	.LVL15
 	.4byte	0xd1e
@@ -2138,7 +2138,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5894
+	.4byte	__func__$5998
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -2217,8 +2217,8 @@ coap_error:
 	.byte	0x1
 	.byte	0x77
 	.4byte	0x454
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5e7
@@ -2281,8 +2281,8 @@ coap_error:
 	.4byte	.LASF57
 	.byte	0x1
 	.byte	0x88
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x632
@@ -2324,8 +2324,8 @@ coap_error:
 	.byte	0x1
 	.byte	0x99
 	.4byte	0x3e
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x69a
@@ -2384,8 +2384,8 @@ coap_error:
 	.byte	0x1
 	.byte	0xab
 	.4byte	0x25
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x7a6
@@ -2432,7 +2432,7 @@ coap_error:
 	.4byte	0x7b6
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5916
+	.4byte	__func__$6020
 	.uleb128 0x18
 	.4byte	.LVL45
 	.4byte	0xd1e
@@ -2454,7 +2454,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5916
+	.4byte	__func__$6020
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -2525,8 +2525,8 @@ coap_error:
 	.byte	0x1
 	.byte	0xcb
 	.4byte	0x7d
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x8ad
@@ -2567,7 +2567,7 @@ coap_error:
 	.4byte	0x8bd
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5924
+	.4byte	__func__$6028
 	.uleb128 0x18
 	.4byte	.LVL59
 	.4byte	0xd1e
@@ -2589,7 +2589,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5924
+	.4byte	__func__$6028
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -2665,8 +2665,8 @@ coap_error:
 	.byte	0x1
 	.byte	0xea
 	.4byte	0x3e
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x9d5
@@ -2694,7 +2694,7 @@ coap_error:
 	.4byte	0x9d5
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5930
+	.4byte	__func__$6034
 	.uleb128 0x18
 	.4byte	.LVL73
 	.4byte	0xd1e
@@ -2716,7 +2716,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5930
+	.4byte	__func__$6034
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -2745,7 +2745,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5930
+	.4byte	__func__$6034
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -2790,7 +2790,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5930
+	.4byte	__func__$6034
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -2822,8 +2822,8 @@ coap_error:
 	.byte	0x1
 	.2byte	0x101
 	.4byte	0x3e
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xac0
@@ -2850,7 +2850,7 @@ coap_error:
 	.4byte	0xac6
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5936
+	.4byte	__func__$6040
 	.uleb128 0x18
 	.4byte	.LVL84
 	.4byte	0xd1e
@@ -2872,7 +2872,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5936
+	.4byte	__func__$6040
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -2901,7 +2901,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5936
+	.4byte	__func__$6040
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -2929,7 +2929,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5936
+	.4byte	__func__$6040
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -2948,8 +2948,8 @@ coap_error:
 	.byte	0x1
 	.2byte	0x135
 	.4byte	0x83
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xb04
@@ -2971,8 +2971,8 @@ coap_error:
 	.byte	0x1
 	.2byte	0x158
 	.4byte	0x3e
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xcf7
@@ -3008,7 +3008,7 @@ coap_error:
 	.4byte	0xcf7
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5962
+	.4byte	__func__$6066
 	.uleb128 0x2b
 	.4byte	.LASF79
 	.byte	0x1
@@ -3034,7 +3034,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5962
+	.4byte	__func__$6066
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -3063,7 +3063,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5962
+	.4byte	__func__$6066
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -3206,7 +3206,7 @@ coap_error:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5962
+	.4byte	__func__$6066
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -4001,7 +4001,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL7
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4015,7 +4015,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL6
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -4031,7 +4031,7 @@ coap_error:
 	.byte	0x72
 	.sleb128 0
 	.4byte	.LVL12
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4049,7 +4049,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x56
 	.4byte	.LVL23
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4063,7 +4063,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL24
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4084,7 +4084,7 @@ coap_error:
 	.byte	0x55
 	.byte	0x9f
 	.4byte	.LVL25
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x1
 	.byte	0x55
 	.4byte	0
@@ -4137,7 +4137,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL43
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4157,7 +4157,7 @@ coap_error:
 	.sleb128 -4
 	.byte	0x9f
 	.4byte	.LVL40
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -4190,7 +4190,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL57
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4204,7 +4204,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL56
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4218,7 +4218,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL55
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -4267,7 +4267,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL71
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4281,7 +4281,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL69
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4328,7 +4328,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL82
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4349,7 +4349,7 @@ coap_error:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL81
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -4371,7 +4371,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL89
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4385,7 +4385,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL91
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4399,7 +4399,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL90
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4413,7 +4413,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL95
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4432,7 +4432,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x59
 	.4byte	.LVL97
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x1
 	.byte	0x59
 	.4byte	0
@@ -4476,7 +4476,7 @@ coap_error:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL114
-	.4byte	.LFE29
+	.4byte	.LFE33
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4500,7 +4500,7 @@ coap_error:
 	.byte	0x7b
 	.sleb128 0
 	.4byte	.LVL116-1
-	.4byte	.LFE29
+	.4byte	.LFE33
 	.2byte	0x2
 	.byte	0x91
 	.sleb128 -48
@@ -4514,16 +4514,8 @@ coap_error:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.4byte	.LFB22
 	.4byte	.LFE22-.LFB22
 	.4byte	.LFB23
@@ -4536,22 +4528,22 @@ coap_error:
 	.4byte	.LFE26-.LFB26
 	.4byte	.LFB27
 	.4byte	.LFE27-.LFB27
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.4byte	.LFB29
 	.4byte	.LFE29-.LFB29
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB28
-	.4byte	.LFE28
-	.4byte	.LFB18
-	.4byte	.LFE18
-	.4byte	.LFB19
-	.4byte	.LFE19
-	.4byte	.LFB20
-	.4byte	.LFE20
-	.4byte	.LFB21
-	.4byte	.LFE21
+	.4byte	.LFB32
+	.4byte	.LFE32
 	.4byte	.LFB22
 	.4byte	.LFE22
 	.4byte	.LFB23
@@ -4564,8 +4556,16 @@ coap_error:
 	.4byte	.LFE26
 	.4byte	.LFB27
 	.4byte	.LFE27
+	.4byte	.LFB28
+	.4byte	.LFE28
 	.4byte	.LFB29
 	.4byte	.LFE29
+	.4byte	.LFB30
+	.4byte	.LFE30
+	.4byte	.LFB31
+	.4byte	.LFE31
+	.4byte	.LFB33
+	.4byte	.LFE33
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -4621,6 +4621,8 @@ coap_error:
 	.string	"coap_error"
 .LASF50:
 	.string	"option"
+.LASF77:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\coap"
 .LASF5:
 	.string	"long long int"
 .LASF37:
@@ -4631,8 +4633,6 @@ coap_error:
 	.string	"long int"
 .LASF41:
 	.string	"COAP_CONTEXT"
-.LASF77:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\coap"
 .LASF26:
 	.string	"coap_hdr_t"
 .LASF19:
@@ -4733,4 +4733,4 @@ coap_error:
 	.string	"coap_pdu_parse"
 .LASF78:
 	.string	"next_option_safe"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

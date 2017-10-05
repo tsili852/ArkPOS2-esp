@@ -322,4 +322,4 @@ sodium_library_minimal:
 	.string	"sodium_library_minimal"
 .LASF2:
 	.string	"char"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

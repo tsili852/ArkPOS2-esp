@@ -1619,8 +1619,6 @@ emac_set_clk_rmii:
 	.string	"emac_set_clk_mii"
 .LASF16:
 	.string	"ESP_LOG_WARN"
-.LASF39:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\ethernet"
 .LASF41:
 	.string	"emac_read_mac_version"
 .LASF22:
@@ -1673,6 +1671,8 @@ emac_set_clk_rmii:
 	.string	"char"
 .LASF25:
 	.string	"emac_disable_dma_tx"
+.LASF39:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\ethernet"
 .LASF2:
 	.string	"short int"
 .LASF14:
@@ -1699,4 +1699,4 @@ emac_set_clk_rmii:
 	.string	"_Bool"
 .LASF19:
 	.string	"ESP_LOG_VERBOSE"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

@@ -1925,4 +1925,4 @@ DOM2PREFIX$2611:
 	.string	"smlen_p"
 .LASF39:
 	.string	"crypto_hash_sha512_init"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

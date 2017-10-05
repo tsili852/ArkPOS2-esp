@@ -21,7 +21,7 @@ libsodium/src/libsodium/crypto_hash/sha512/hash_sha512.o: \
  C:/esp/esp-idf/components/newlib/include/alloca.h \
  C:/esp/esp-idf/components/mbedtls/include/mbedtls/sha512.h \
  C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/mbedtls/include/mbedtls/check_config.h \
  C:/esp/esp-idf/components/newlib/include/limits.h \
  C:/esp/esp-idf/components/mbedtls/port/include/sha512_alt.h \
@@ -69,7 +69,7 @@ C:/esp/esp-idf/components/mbedtls/include/mbedtls/sha512.h:
 
 C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/mbedtls/include/mbedtls/check_config.h:
 

@@ -485,8 +485,8 @@ esp_adc_cal_table_atten_0:
 	.string	"bit_shift"
 .LASF4:
 	.string	"unsigned int"
-.LASF27:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp_adc_cal"
+.LASF14:
+	.string	"gain_m"
 .LASF7:
 	.string	"__uint32_t"
 .LASF25:
@@ -499,8 +499,6 @@ esp_adc_cal_table_atten_0:
 	.string	"long unsigned int"
 .LASF6:
 	.string	"long long unsigned int"
-.LASF3:
-	.string	"short unsigned int"
 .LASF21:
 	.string	"esp_adc_cal_table_atten_0"
 .LASF22:
@@ -521,18 +519,20 @@ esp_adc_cal_table_atten_0:
 	.string	"short int"
 .LASF13:
 	.string	"_Bool"
-.LASF14:
-	.string	"gain_m"
+.LASF10:
+	.string	"sizetype"
+.LASF3:
+	.string	"short unsigned int"
 .LASF20:
 	.string	"esp_adc_cal_lookup_table_t"
 .LASF17:
 	.string	"offset_c"
-.LASF10:
-	.string	"sizetype"
+.LASF27:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp_adc_cal"
 .LASF26:
 	.string	"C:/esp/esp-idf/components/esp_adc_cal/esp_adc_cal_lookup_tables.c"
 .LASF19:
 	.string	"voltage"
 .LASF15:
 	.string	"gain_c"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

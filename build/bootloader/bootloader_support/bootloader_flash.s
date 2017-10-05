@@ -3688,164 +3688,164 @@ mapped:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF46:
+	.string	"word"
+.LASF64:
+	.string	"mapped"
+.LASF32:
+	.string	"paddr"
+.LASF26:
+	.string	"ESP_ROM_SPIFLASH_RESULT_OK"
+.LASF59:
+	.string	"dest_addr"
+.LASF74:
+	.string	"esp_rom_spiflash_erase_sector"
+.LASF51:
+	.string	"src_addr_aligned"
+.LASF24:
+	.string	"ESP_LOG_VERBOSE"
+.LASF4:
+	.string	"short int"
+.LASF5:
+	.string	"size_t"
+.LASF13:
+	.string	"intptr_t"
+.LASF7:
+	.string	"__uint32_t"
+.LASF43:
+	.string	"dest"
+.LASF34:
+	.string	"Cache_Flush"
+.LASF73:
+	.string	"esp_rom_spiflash_write"
+.LASF47:
+	.string	"word_src"
+.LASF10:
+	.string	"__intptr_t"
+.LASF29:
+	.string	"esp_rom_spiflash_result_t"
+.LASF75:
+	.string	"GNU C99 5.2.0 -mlongcalls -ggdb -ggdb -Og -Og -std=gnu99 -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields"
+.LASF72:
+	.string	"esp_rom_spiflash_write_encrypted"
+.LASF70:
+	.string	"mmu_init"
+.LASF63:
+	.string	"sector"
+.LASF38:
+	.string	"Cache_Read_Enable"
+.LASF45:
+	.string	"dest_words"
+.LASF77:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\bootloader_support"
+.LASF8:
+	.string	"long long int"
+.LASF36:
+	.string	"Cache_Flush_rom"
+.LASF14:
+	.string	"long int"
+.LASF15:
+	.string	"sizetype"
+.LASF22:
+	.string	"ESP_LOG_INFO"
+.LASF39:
+	.string	"Cache_Read_Enable_rom"
+.LASF42:
+	.string	"src_addr"
+.LASF53:
+	.string	"mapping"
+.LASF27:
+	.string	"ESP_ROM_SPIFLASH_RESULT_ERR"
+.LASF65:
+	.string	"current_read_mapping"
+.LASF61:
+	.string	"alignment"
+.LASF55:
+	.string	"bootloader_flash_read"
+.LASF66:
+	.string	"cache_flash_mmu_set_rom"
+.LASF3:
+	.string	"unsigned char"
+.LASF50:
+	.string	"bootloader_flash_read_no_decrypt"
+.LASF2:
+	.string	"signed char"
+.LASF9:
+	.string	"long long unsigned int"
+.LASF12:
+	.string	"uint32_t"
+.LASF30:
+	.string	"cpu_no"
+.LASF0:
+	.string	"unsigned int"
+.LASF35:
+	.string	"Cache_Read_Disable"
+.LASF68:
+	.string	"ets_printf"
+.LASF57:
+	.string	"_Bool"
+.LASF1:
+	.string	"short unsigned int"
+.LASF62:
+	.string	"bootloader_flash_erase_sector"
+.LASF79:
+	.string	"bootloader_munmap"
+.LASF17:
+	.string	"char"
+.LASF37:
+	.string	"Cache_Read_Disable_rom"
+.LASF31:
+	.string	"vaddr"
+.LASF23:
+	.string	"ESP_LOG_DEBUG"
+.LASF11:
+	.string	"int32_t"
+.LASF19:
+	.string	"ESP_LOG_NONE"
+.LASF48:
+	.string	"map_at"
+.LASF25:
+	.string	"esp_log_level_t"
+.LASF21:
+	.string	"ESP_LOG_WARN"
+.LASF58:
+	.string	"bootloader_flash_write"
+.LASF71:
+	.string	"esp_rom_spiflash_unlock"
+.LASF16:
+	.string	"long unsigned int"
+.LASF78:
+	.string	"cache_flash_mmu_set"
+.LASF44:
+	.string	"size"
+.LASF41:
+	.string	"bootloader_flash_read_allow_decrypt"
 .LASF52:
 	.string	"count"
 .LASF60:
 	.string	"write_encrypted"
-.LASF5:
-	.string	"size_t"
-.LASF51:
-	.string	"src_addr_aligned"
-.LASF41:
-	.string	"bootloader_flash_read_allow_decrypt"
-.LASF9:
-	.string	"long long unsigned int"
-.LASF54:
-	.string	"bootloader_mmap"
-.LASF49:
-	.string	"map_ptr"
-.LASF48:
-	.string	"map_at"
-.LASF23:
-	.string	"ESP_LOG_DEBUG"
-.LASF8:
-	.string	"long long int"
-.LASF2:
-	.string	"signed char"
-.LASF72:
-	.string	"esp_rom_spiflash_write_encrypted"
-.LASF76:
-	.string	"C:/esp/esp-idf/components/bootloader_support/src/bootloader_flash.c"
-.LASF14:
-	.string	"long int"
-.LASF35:
-	.string	"Cache_Read_Disable"
-.LASF50:
-	.string	"bootloader_flash_read_no_decrypt"
-.LASF78:
-	.string	"cache_flash_mmu_set"
-.LASF39:
-	.string	"Cache_Read_Enable_rom"
-.LASF7:
-	.string	"__uint32_t"
-.LASF34:
-	.string	"Cache_Flush"
-.LASF10:
-	.string	"__intptr_t"
-.LASF36:
-	.string	"Cache_Flush_rom"
-.LASF0:
-	.string	"unsigned int"
-.LASF63:
-	.string	"sector"
-.LASF16:
-	.string	"long unsigned int"
-.LASF71:
-	.string	"esp_rom_spiflash_unlock"
-.LASF28:
-	.string	"ESP_ROM_SPIFLASH_RESULT_TIMEOUT"
-.LASF62:
-	.string	"bootloader_flash_erase_sector"
-.LASF44:
-	.string	"size"
-.LASF1:
-	.string	"short unsigned int"
-.LASF77:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\bootloader_support"
-.LASF13:
-	.string	"intptr_t"
-.LASF58:
-	.string	"bootloader_flash_write"
-.LASF33:
-	.string	"psize"
-.LASF32:
-	.string	"paddr"
-.LASF22:
-	.string	"ESP_LOG_INFO"
-.LASF29:
-	.string	"esp_rom_spiflash_result_t"
-.LASF45:
-	.string	"dest_words"
-.LASF15:
-	.string	"sizetype"
-.LASF38:
-	.string	"Cache_Read_Enable"
-.LASF73:
-	.string	"esp_rom_spiflash_write"
-.LASF68:
-	.string	"ets_printf"
-.LASF64:
-	.string	"mapped"
-.LASF31:
-	.string	"vaddr"
-.LASF25:
-	.string	"esp_log_level_t"
-.LASF69:
-	.string	"esp_rom_spiflash_read"
-.LASF43:
-	.string	"dest"
-.LASF30:
-	.string	"cpu_no"
-.LASF74:
-	.string	"esp_rom_spiflash_erase_sector"
-.LASF66:
-	.string	"cache_flash_mmu_set_rom"
-.LASF75:
-	.string	"GNU C99 5.2.0 -mlongcalls -ggdb -ggdb -Og -Og -std=gnu99 -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields"
-.LASF61:
-	.string	"alignment"
-.LASF57:
-	.string	"_Bool"
-.LASF11:
-	.string	"int32_t"
-.LASF3:
-	.string	"unsigned char"
-.LASF4:
-	.string	"short int"
-.LASF67:
-	.string	"esp_log_timestamp"
-.LASF20:
-	.string	"ESP_LOG_ERROR"
-.LASF53:
-	.string	"mapping"
-.LASF70:
-	.string	"mmu_init"
-.LASF37:
-	.string	"Cache_Read_Disable_rom"
-.LASF12:
-	.string	"uint32_t"
-.LASF56:
-	.string	"allow_decrypt"
-.LASF65:
-	.string	"current_read_mapping"
-.LASF17:
-	.string	"char"
-.LASF24:
-	.string	"ESP_LOG_VERBOSE"
-.LASF26:
-	.string	"ESP_ROM_SPIFLASH_RESULT_OK"
-.LASF42:
-	.string	"src_addr"
-.LASF19:
-	.string	"ESP_LOG_NONE"
 .LASF6:
 	.string	"__int32_t"
-.LASF46:
-	.string	"word"
-.LASF47:
-	.string	"word_src"
-.LASF27:
-	.string	"ESP_ROM_SPIFLASH_RESULT_ERR"
-.LASF59:
-	.string	"dest_addr"
-.LASF21:
-	.string	"ESP_LOG_WARN"
-.LASF18:
-	.string	"esp_err_t"
+.LASF49:
+	.string	"map_ptr"
+.LASF67:
+	.string	"esp_log_timestamp"
+.LASF76:
+	.string	"C:/esp/esp-idf/components/bootloader_support/src/bootloader_flash.c"
+.LASF28:
+	.string	"ESP_ROM_SPIFLASH_RESULT_TIMEOUT"
+.LASF33:
+	.string	"psize"
+.LASF69:
+	.string	"esp_rom_spiflash_read"
+.LASF20:
+	.string	"ESP_LOG_ERROR"
 .LASF40:
 	.string	"spi_to_esp_err"
-.LASF79:
-	.string	"bootloader_munmap"
-.LASF55:
-	.string	"bootloader_flash_read"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+.LASF56:
+	.string	"allow_decrypt"
+.LASF18:
+	.string	"esp_err_t"
+.LASF54:
+	.string	"bootloader_mmap"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

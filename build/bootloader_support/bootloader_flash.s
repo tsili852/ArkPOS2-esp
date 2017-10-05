@@ -1551,7 +1551,7 @@ map:
 .LASF49:
 	.string	"spi_flash_munmap"
 .LASF57:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bootloader_support"
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bootloader_support"
 .LASF42:
 	.string	"dest_addr"
 .LASF24:
@@ -1568,4 +1568,4 @@ map:
 	.string	"result"
 .LASF38:
 	.string	"bootloader_flash_read"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

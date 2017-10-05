@@ -22,7 +22,7 @@
 	.string	"PCNT CTRL MODE ERROR"
 	.section	.text.pcnt_set_mode,"ax",@progbits
 	.literal_position
-	.literal .LC0, __FUNCTION__$5021
+	.literal .LC0, __FUNCTION__$5125
 	.literal .LC2, .LC1
 	.literal .LC4, .LC3
 	.literal .LC6, .LC5
@@ -42,7 +42,7 @@
 	.global	pcnt_set_mode
 	.type	pcnt_set_mode, @function
 pcnt_set_mode:
-.LFB12:
+.LFB16:
 	.file 1 "C:/esp/esp-idf/components/driver/pcnt.c"
 	.loc 1 73 0
 .LVL0:
@@ -278,7 +278,7 @@ pcnt_set_mode:
 	movi.n	a2, 0
 	.loc 1 91 0
 	retw.n
-.LFE12:
+.LFE16:
 	.size	pcnt_set_mode, .-pcnt_set_mode
 	.section	.rodata.str1.4
 	.align	4
@@ -286,7 +286,7 @@ pcnt_set_mode:
 	.string	"PCNT GPIO NUM ERROR"
 	.section	.text.pcnt_set_pin,"ax",@progbits
 	.literal_position
-	.literal .LC22, __FUNCTION__$5028
+	.literal .LC22, __FUNCTION__$5132
 	.literal .LC23, .LC1
 	.literal .LC24, .LC3
 	.literal .LC25, .LC5
@@ -299,7 +299,7 @@ pcnt_set_mode:
 	.global	pcnt_set_pin
 	.type	pcnt_set_pin, @function
 pcnt_set_pin:
-.LFB13:
+.LFB17:
 	.loc 1 94 0
 .LVL30:
 	entry	sp, 48
@@ -521,7 +521,7 @@ pcnt_set_pin:
 .LVL68:
 	.loc 1 122 0
 	retw.n
-.LFE13:
+.LFE17:
 	.size	pcnt_set_pin, .-pcnt_set_pin
 	.section	.rodata.str1.4
 	.align	4
@@ -529,7 +529,7 @@ pcnt_set_pin:
 	.string	"PCNT ADDRESS ERROR"
 	.section	.text.pcnt_get_counter_value,"ax",@progbits
 	.literal_position
-	.literal .LC32, __FUNCTION__$5037
+	.literal .LC32, __FUNCTION__$5141
 	.literal .LC33, .LC1
 	.literal .LC34, .LC3
 	.literal .LC35, .LC5
@@ -539,7 +539,7 @@ pcnt_set_pin:
 	.global	pcnt_get_counter_value
 	.type	pcnt_get_counter_value, @function
 pcnt_get_counter_value:
-.LFB14:
+.LFB18:
 	.loc 1 125 0
 .LVL69:
 	entry	sp, 48
@@ -601,11 +601,11 @@ pcnt_get_counter_value:
 	movi.n	a2, 0
 	.loc 1 130 0
 	retw.n
-.LFE14:
+.LFE18:
 	.size	pcnt_get_counter_value, .-pcnt_get_counter_value
 	.section	.text.pcnt_counter_pause,"ax",@progbits
 	.literal_position
-	.literal .LC39, __FUNCTION__$5041
+	.literal .LC39, __FUNCTION__$5145
 	.literal .LC40, .LC1
 	.literal .LC41, .LC3
 	.literal .LC42, .LC5
@@ -615,7 +615,7 @@ pcnt_get_counter_value:
 	.global	pcnt_counter_pause
 	.type	pcnt_counter_pause, @function
 pcnt_counter_pause:
-.LFB15:
+.LFB19:
 	.loc 1 133 0
 .LVL80:
 	entry	sp, 48
@@ -668,11 +668,11 @@ pcnt_counter_pause:
 	movi.n	a2, 0
 	.loc 1 139 0
 	retw.n
-.LFE15:
+.LFE19:
 	.size	pcnt_counter_pause, .-pcnt_counter_pause
 	.section	.text.pcnt_counter_resume,"ax",@progbits
 	.literal_position
-	.literal .LC45, __FUNCTION__$5045
+	.literal .LC45, __FUNCTION__$5149
 	.literal .LC46, .LC1
 	.literal .LC47, .LC3
 	.literal .LC48, .LC5
@@ -682,7 +682,7 @@ pcnt_counter_pause:
 	.global	pcnt_counter_resume
 	.type	pcnt_counter_resume, @function
 pcnt_counter_resume:
-.LFB16:
+.LFB20:
 	.loc 1 142 0
 .LVL88:
 	entry	sp, 48
@@ -737,11 +737,11 @@ pcnt_counter_resume:
 	movi.n	a2, 0
 	.loc 1 148 0
 	retw.n
-.LFE16:
+.LFE20:
 	.size	pcnt_counter_resume, .-pcnt_counter_resume
 	.section	.text.pcnt_counter_clear,"ax",@progbits
 	.literal_position
-	.literal .LC51, __FUNCTION__$5049
+	.literal .LC51, __FUNCTION__$5153
 	.literal .LC52, .LC1
 	.literal .LC53, .LC3
 	.literal .LC54, .LC5
@@ -751,7 +751,7 @@ pcnt_counter_resume:
 	.global	pcnt_counter_clear
 	.type	pcnt_counter_clear, @function
 pcnt_counter_clear:
-.LFB17:
+.LFB21:
 	.loc 1 151 0
 .LVL96:
 	entry	sp, 48
@@ -814,11 +814,11 @@ pcnt_counter_clear:
 	movi.n	a2, 0
 	.loc 1 159 0
 	retw.n
-.LFE17:
+.LFE21:
 	.size	pcnt_counter_clear, .-pcnt_counter_clear
 	.section	.text.pcnt_intr_enable,"ax",@progbits
 	.literal_position
-	.literal .LC57, __FUNCTION__$5054
+	.literal .LC57, __FUNCTION__$5158
 	.literal .LC58, .LC1
 	.literal .LC59, .LC3
 	.literal .LC60, .LC5
@@ -828,7 +828,7 @@ pcnt_counter_clear:
 	.global	pcnt_intr_enable
 	.type	pcnt_intr_enable, @function
 pcnt_intr_enable:
-.LFB18:
+.LFB22:
 	.loc 1 162 0
 .LVL106:
 	entry	sp, 48
@@ -879,11 +879,11 @@ pcnt_intr_enable:
 	movi.n	a2, 0
 	.loc 1 168 0
 	retw.n
-.LFE18:
+.LFE22:
 	.size	pcnt_intr_enable, .-pcnt_intr_enable
 	.section	.text.pcnt_intr_disable,"ax",@progbits
 	.literal_position
-	.literal .LC63, __FUNCTION__$5058
+	.literal .LC63, __FUNCTION__$5162
 	.literal .LC64, .LC1
 	.literal .LC65, .LC3
 	.literal .LC66, .LC5
@@ -893,7 +893,7 @@ pcnt_intr_enable:
 	.global	pcnt_intr_disable
 	.type	pcnt_intr_disable, @function
 pcnt_intr_disable:
-.LFB19:
+.LFB23:
 	.loc 1 171 0
 .LVL114:
 	entry	sp, 48
@@ -946,7 +946,7 @@ pcnt_intr_disable:
 	movi.n	a2, 0
 	.loc 1 177 0
 	retw.n
-.LFE19:
+.LFE23:
 	.size	pcnt_intr_disable, .-pcnt_intr_disable
 	.section	.rodata.str1.4
 	.align	4
@@ -954,7 +954,7 @@ pcnt_intr_disable:
 	.string	"PCNT value type error"
 	.section	.text.pcnt_event_enable,"ax",@progbits
 	.literal_position
-	.literal .LC69, __FUNCTION__$5063
+	.literal .LC69, __FUNCTION__$5167
 	.literal .LC70, .LC1
 	.literal .LC71, .LC3
 	.literal .LC72, .LC5
@@ -969,7 +969,7 @@ pcnt_intr_disable:
 	.global	pcnt_event_enable
 	.type	pcnt_event_enable, @function
 pcnt_event_enable:
-.LFB20:
+.LFB24:
 	.loc 1 180 0
 .LVL122:
 	entry	sp, 48
@@ -1122,11 +1122,11 @@ pcnt_event_enable:
 .LVL146:
 	.loc 1 195 0
 	retw.n
-.LFE20:
+.LFE24:
 	.size	pcnt_event_enable, .-pcnt_event_enable
 	.section	.text.pcnt_event_disable,"ax",@progbits
 	.literal_position
-	.literal .LC81, __FUNCTION__$5068
+	.literal .LC81, __FUNCTION__$5172
 	.literal .LC82, .LC1
 	.literal .LC83, .LC3
 	.literal .LC84, .LC5
@@ -1141,7 +1141,7 @@ pcnt_event_enable:
 	.global	pcnt_event_disable
 	.type	pcnt_event_disable, @function
 pcnt_event_disable:
-.LFB21:
+.LFB25:
 	.loc 1 198 0
 .LVL147:
 	entry	sp, 48
@@ -1294,11 +1294,11 @@ pcnt_event_disable:
 .LVL171:
 	.loc 1 213 0
 	retw.n
-.LFE21:
+.LFE25:
 	.size	pcnt_event_disable, .-pcnt_event_disable
 	.section	.text.pcnt_set_event_value,"ax",@progbits
 	.literal_position
-	.literal .LC92, __FUNCTION__$5074
+	.literal .LC92, __FUNCTION__$5178
 	.literal .LC93, .LC1
 	.literal .LC94, .LC3
 	.literal .LC95, .LC5
@@ -1309,7 +1309,7 @@ pcnt_event_disable:
 	.global	pcnt_set_event_value
 	.type	pcnt_set_event_value, @function
 pcnt_set_event_value:
-.LFB22:
+.LFB26:
 	.loc 1 216 0
 .LVL172:
 	entry	sp, 48
@@ -1452,11 +1452,11 @@ pcnt_set_event_value:
 .LVL194:
 	.loc 1 229 0
 	retw.n
-.LFE22:
+.LFE26:
 	.size	pcnt_set_event_value, .-pcnt_set_event_value
 	.section	.text.pcnt_get_event_value,"ax",@progbits
 	.literal_position
-	.literal .LC99, __FUNCTION__$5080
+	.literal .LC99, __FUNCTION__$5184
 	.literal .LC100, .LC1
 	.literal .LC101, .LC3
 	.literal .LC102, .LC5
@@ -1467,7 +1467,7 @@ pcnt_set_event_value:
 	.global	pcnt_get_event_value
 	.type	pcnt_get_event_value, @function
 pcnt_get_event_value:
-.LFB23:
+.LFB27:
 	.loc 1 232 0
 .LVL195:
 	entry	sp, 48
@@ -1616,7 +1616,7 @@ pcnt_get_event_value:
 	movi.n	a2, 0
 	.loc 1 249 0
 	retw.n
-.LFE23:
+.LFE27:
 	.size	pcnt_get_event_value, .-pcnt_get_event_value
 	.section	.rodata.str1.4
 	.align	4
@@ -1624,7 +1624,7 @@ pcnt_get_event_value:
 	.string	"PCNT PARAM ERROR"
 	.section	.text.pcnt_set_filter_value,"ax",@progbits
 	.literal_position
-	.literal .LC106, __FUNCTION__$5085
+	.literal .LC106, __FUNCTION__$5189
 	.literal .LC107, .LC1
 	.literal .LC108, .LC3
 	.literal .LC109, .LC5
@@ -1634,7 +1634,7 @@ pcnt_get_event_value:
 	.global	pcnt_set_filter_value
 	.type	pcnt_set_filter_value, @function
 pcnt_set_filter_value:
-.LFB24:
+.LFB28:
 	.loc 1 252 0
 .LVL221:
 	entry	sp, 48
@@ -1704,11 +1704,11 @@ pcnt_set_filter_value:
 	movi.n	a2, 0
 	.loc 1 257 0
 	retw.n
-.LFE24:
+.LFE28:
 	.size	pcnt_set_filter_value, .-pcnt_set_filter_value
 	.section	.text.pcnt_get_filter_value,"ax",@progbits
 	.literal_position
-	.literal .LC113, __FUNCTION__$5090
+	.literal .LC113, __FUNCTION__$5194
 	.literal .LC114, .LC1
 	.literal .LC115, .LC3
 	.literal .LC116, .LC5
@@ -1718,7 +1718,7 @@ pcnt_set_filter_value:
 	.global	pcnt_get_filter_value
 	.type	pcnt_get_filter_value, @function
 pcnt_get_filter_value:
-.LFB25:
+.LFB29:
 	.loc 1 260 0
 .LVL232:
 	entry	sp, 48
@@ -1781,11 +1781,11 @@ pcnt_get_filter_value:
 	movi.n	a2, 0
 	.loc 1 266 0
 	retw.n
-.LFE25:
+.LFE29:
 	.size	pcnt_get_filter_value, .-pcnt_get_filter_value
 	.section	.text.pcnt_filter_enable,"ax",@progbits
 	.literal_position
-	.literal .LC119, __FUNCTION__$5094
+	.literal .LC119, __FUNCTION__$5198
 	.literal .LC120, .LC1
 	.literal .LC121, .LC3
 	.literal .LC122, .LC5
@@ -1794,7 +1794,7 @@ pcnt_get_filter_value:
 	.global	pcnt_filter_enable
 	.type	pcnt_filter_enable, @function
 pcnt_filter_enable:
-.LFB26:
+.LFB30:
 	.loc 1 269 0
 .LVL242:
 	entry	sp, 48
@@ -1837,11 +1837,11 @@ pcnt_filter_enable:
 	movi.n	a2, 0
 	.loc 1 273 0
 	retw.n
-.LFE26:
+.LFE30:
 	.size	pcnt_filter_enable, .-pcnt_filter_enable
 	.section	.text.pcnt_filter_disable,"ax",@progbits
 	.literal_position
-	.literal .LC124, __FUNCTION__$5098
+	.literal .LC124, __FUNCTION__$5202
 	.literal .LC125, .LC1
 	.literal .LC126, .LC3
 	.literal .LC127, .LC5
@@ -1850,7 +1850,7 @@ pcnt_filter_enable:
 	.global	pcnt_filter_disable
 	.type	pcnt_filter_disable, @function
 pcnt_filter_disable:
-.LFB27:
+.LFB31:
 	.loc 1 276 0
 .LVL248:
 	entry	sp, 48
@@ -1893,7 +1893,7 @@ pcnt_filter_disable:
 	movi.n	a2, 0
 	.loc 1 280 0
 	retw.n
-.LFE27:
+.LFE31:
 	.size	pcnt_filter_disable, .-pcnt_filter_disable
 	.section	.rodata.str1.4
 	.align	4
@@ -1904,7 +1904,7 @@ pcnt_filter_disable:
 	.string	"PCNT ctrl io error"
 	.section	.text.pcnt_unit_config,"ax",@progbits
 	.literal_position
-	.literal .LC129, __FUNCTION__$5012
+	.literal .LC129, __FUNCTION__$5116
 	.literal .LC130, .LC1
 	.literal .LC131, .LC3
 	.literal .LC132, .LC5
@@ -1918,7 +1918,7 @@ pcnt_filter_disable:
 	.global	pcnt_unit_config
 	.type	pcnt_unit_config, @function
 pcnt_unit_config:
-.LFB11:
+.LFB15:
 	.loc 1 43 0
 .LVL254:
 	entry	sp, 48
@@ -2159,11 +2159,11 @@ pcnt_unit_config:
 .LVL294:
 	.loc 1 70 0
 	retw.n
-.LFE11:
+.LFE15:
 	.size	pcnt_unit_config, .-pcnt_unit_config
 	.section	.text.pcnt_isr_register,"ax",@progbits
 	.literal_position
-	.literal .LC141, __FUNCTION__$5106
+	.literal .LC141, __FUNCTION__$5210
 	.literal .LC142, .LC1
 	.literal .LC143, .LC3
 	.literal .LC144, .LC36
@@ -2171,7 +2171,7 @@ pcnt_unit_config:
 	.global	pcnt_isr_register
 	.type	pcnt_isr_register, @function
 pcnt_isr_register:
-.LFB28:
+.LFB32:
 	.loc 1 283 0
 .LVL295:
 	entry	sp, 48
@@ -2210,115 +2210,115 @@ pcnt_isr_register:
 .LVL301:
 	.loc 1 286 0
 	retw.n
-.LFE28:
+.LFE32:
 	.size	pcnt_isr_register, .-pcnt_isr_register
-	.section	.rodata.__FUNCTION__$5106,"a",@progbits
+	.section	.rodata.__FUNCTION__$5210,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5106, @object
-	.size	__FUNCTION__$5106, 18
-__FUNCTION__$5106:
+	.type	__FUNCTION__$5210, @object
+	.size	__FUNCTION__$5210, 18
+__FUNCTION__$5210:
 	.string	"pcnt_isr_register"
-	.section	.rodata.__FUNCTION__$5098,"a",@progbits
+	.section	.rodata.__FUNCTION__$5202,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5098, @object
-	.size	__FUNCTION__$5098, 20
-__FUNCTION__$5098:
+	.type	__FUNCTION__$5202, @object
+	.size	__FUNCTION__$5202, 20
+__FUNCTION__$5202:
 	.string	"pcnt_filter_disable"
-	.section	.rodata.__FUNCTION__$5094,"a",@progbits
+	.section	.rodata.__FUNCTION__$5198,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5094, @object
-	.size	__FUNCTION__$5094, 19
-__FUNCTION__$5094:
+	.type	__FUNCTION__$5198, @object
+	.size	__FUNCTION__$5198, 19
+__FUNCTION__$5198:
 	.string	"pcnt_filter_enable"
-	.section	.rodata.__FUNCTION__$5090,"a",@progbits
+	.section	.rodata.__FUNCTION__$5194,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5090, @object
-	.size	__FUNCTION__$5090, 22
-__FUNCTION__$5090:
+	.type	__FUNCTION__$5194, @object
+	.size	__FUNCTION__$5194, 22
+__FUNCTION__$5194:
 	.string	"pcnt_get_filter_value"
-	.section	.rodata.__FUNCTION__$5085,"a",@progbits
+	.section	.rodata.__FUNCTION__$5189,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5085, @object
-	.size	__FUNCTION__$5085, 22
-__FUNCTION__$5085:
+	.type	__FUNCTION__$5189, @object
+	.size	__FUNCTION__$5189, 22
+__FUNCTION__$5189:
 	.string	"pcnt_set_filter_value"
-	.section	.rodata.__FUNCTION__$5080,"a",@progbits
+	.section	.rodata.__FUNCTION__$5184,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5080, @object
-	.size	__FUNCTION__$5080, 21
-__FUNCTION__$5080:
+	.type	__FUNCTION__$5184, @object
+	.size	__FUNCTION__$5184, 21
+__FUNCTION__$5184:
 	.string	"pcnt_get_event_value"
-	.section	.rodata.__FUNCTION__$5074,"a",@progbits
+	.section	.rodata.__FUNCTION__$5178,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5074, @object
-	.size	__FUNCTION__$5074, 21
-__FUNCTION__$5074:
+	.type	__FUNCTION__$5178, @object
+	.size	__FUNCTION__$5178, 21
+__FUNCTION__$5178:
 	.string	"pcnt_set_event_value"
-	.section	.rodata.__FUNCTION__$5068,"a",@progbits
+	.section	.rodata.__FUNCTION__$5172,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5068, @object
-	.size	__FUNCTION__$5068, 19
-__FUNCTION__$5068:
+	.type	__FUNCTION__$5172, @object
+	.size	__FUNCTION__$5172, 19
+__FUNCTION__$5172:
 	.string	"pcnt_event_disable"
-	.section	.rodata.__FUNCTION__$5063,"a",@progbits
+	.section	.rodata.__FUNCTION__$5167,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5063, @object
-	.size	__FUNCTION__$5063, 18
-__FUNCTION__$5063:
+	.type	__FUNCTION__$5167, @object
+	.size	__FUNCTION__$5167, 18
+__FUNCTION__$5167:
 	.string	"pcnt_event_enable"
-	.section	.rodata.__FUNCTION__$5058,"a",@progbits
+	.section	.rodata.__FUNCTION__$5162,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5058, @object
-	.size	__FUNCTION__$5058, 18
-__FUNCTION__$5058:
+	.type	__FUNCTION__$5162, @object
+	.size	__FUNCTION__$5162, 18
+__FUNCTION__$5162:
 	.string	"pcnt_intr_disable"
-	.section	.rodata.__FUNCTION__$5054,"a",@progbits
+	.section	.rodata.__FUNCTION__$5158,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5054, @object
-	.size	__FUNCTION__$5054, 17
-__FUNCTION__$5054:
+	.type	__FUNCTION__$5158, @object
+	.size	__FUNCTION__$5158, 17
+__FUNCTION__$5158:
 	.string	"pcnt_intr_enable"
-	.section	.rodata.__FUNCTION__$5049,"a",@progbits
+	.section	.rodata.__FUNCTION__$5153,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5049, @object
-	.size	__FUNCTION__$5049, 19
-__FUNCTION__$5049:
+	.type	__FUNCTION__$5153, @object
+	.size	__FUNCTION__$5153, 19
+__FUNCTION__$5153:
 	.string	"pcnt_counter_clear"
-	.section	.rodata.__FUNCTION__$5045,"a",@progbits
+	.section	.rodata.__FUNCTION__$5149,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5045, @object
-	.size	__FUNCTION__$5045, 20
-__FUNCTION__$5045:
+	.type	__FUNCTION__$5149, @object
+	.size	__FUNCTION__$5149, 20
+__FUNCTION__$5149:
 	.string	"pcnt_counter_resume"
-	.section	.rodata.__FUNCTION__$5041,"a",@progbits
+	.section	.rodata.__FUNCTION__$5145,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5041, @object
-	.size	__FUNCTION__$5041, 19
-__FUNCTION__$5041:
+	.type	__FUNCTION__$5145, @object
+	.size	__FUNCTION__$5145, 19
+__FUNCTION__$5145:
 	.string	"pcnt_counter_pause"
-	.section	.rodata.__FUNCTION__$5037,"a",@progbits
+	.section	.rodata.__FUNCTION__$5141,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5037, @object
-	.size	__FUNCTION__$5037, 23
-__FUNCTION__$5037:
+	.type	__FUNCTION__$5141, @object
+	.size	__FUNCTION__$5141, 23
+__FUNCTION__$5141:
 	.string	"pcnt_get_counter_value"
-	.section	.rodata.__FUNCTION__$5028,"a",@progbits
+	.section	.rodata.__FUNCTION__$5132,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5028, @object
-	.size	__FUNCTION__$5028, 13
-__FUNCTION__$5028:
+	.type	__FUNCTION__$5132, @object
+	.size	__FUNCTION__$5132, 13
+__FUNCTION__$5132:
 	.string	"pcnt_set_pin"
-	.section	.rodata.__FUNCTION__$5021,"a",@progbits
+	.section	.rodata.__FUNCTION__$5125,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5021, @object
-	.size	__FUNCTION__$5021, 14
-__FUNCTION__$5021:
+	.type	__FUNCTION__$5125, @object
+	.size	__FUNCTION__$5125, 14
+__FUNCTION__$5125:
 	.string	"pcnt_set_mode"
-	.section	.rodata.__FUNCTION__$5012,"a",@progbits
+	.section	.rodata.__FUNCTION__$5116,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5012, @object
-	.size	__FUNCTION__$5012, 17
-__FUNCTION__$5012:
+	.type	__FUNCTION__$5116, @object
+	.size	__FUNCTION__$5116, 17
+__FUNCTION__$5116:
 	.string	"pcnt_unit_config"
 	.section	.data.pcnt_spinlock,"aw",@progbits
 	.align	4
@@ -2346,10 +2346,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI0-.LFB12
+	.4byte	.LCFI0-.LFB16
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2358,10 +2358,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI1-.LFB13
+	.4byte	.LCFI1-.LFB17
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2370,10 +2370,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI2-.LFB14
+	.4byte	.LCFI2-.LFB18
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2382,10 +2382,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI3-.LFB15
+	.4byte	.LCFI3-.LFB19
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2394,10 +2394,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI4-.LFB16
+	.4byte	.LCFI4-.LFB20
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2406,10 +2406,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI5-.LFB17
+	.4byte	.LCFI5-.LFB21
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2418,10 +2418,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI6-.LFB18
+	.4byte	.LCFI6-.LFB22
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2430,10 +2430,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI7-.LFB19
+	.4byte	.LCFI7-.LFB23
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2442,10 +2442,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.byte	0x4
-	.4byte	.LCFI8-.LFB20
+	.4byte	.LCFI8-.LFB24
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2454,10 +2454,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.byte	0x4
-	.4byte	.LCFI9-.LFB21
+	.4byte	.LCFI9-.LFB25
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2466,10 +2466,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI10-.LFB22
+	.4byte	.LCFI10-.LFB26
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2478,10 +2478,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI11-.LFB23
+	.4byte	.LCFI11-.LFB27
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2490,10 +2490,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE24-.LASFDE24
 .LASFDE24:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI12-.LFB24
+	.4byte	.LCFI12-.LFB28
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2502,10 +2502,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE26-.LASFDE26
 .LASFDE26:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI13-.LFB25
+	.4byte	.LCFI13-.LFB29
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2514,10 +2514,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE28-.LASFDE28
 .LASFDE28:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI14-.LFB26
+	.4byte	.LCFI14-.LFB30
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2526,10 +2526,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE30-.LASFDE30
 .LASFDE30:
 	.4byte	.Lframe0
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.byte	0x4
-	.4byte	.LCFI15-.LFB27
+	.4byte	.LCFI15-.LFB31
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2538,10 +2538,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE32-.LASFDE32
 .LASFDE32:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI16-.LFB11
+	.4byte	.LCFI16-.LFB15
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2550,10 +2550,10 @@ pcnt_spinlock:
 	.4byte	.LEFDE34-.LASFDE34
 .LASFDE34:
 	.4byte	.Lframe0
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.byte	0x4
-	.4byte	.LCFI17-.LFB28
+	.4byte	.LCFI17-.LFB32
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2748,33 +2748,33 @@ pcnt_spinlock:
 	.uleb128 0x6
 	.byte	0x4
 	.4byte	0x14c
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x2
+	.4byte	.LASF31
 	.uleb128 0xd
 	.byte	0x8
 	.byte	0x7
-	.byte	0x81
-	.4byte	0x18e
-	.uleb128 0xe
-	.4byte	.LASF31
-	.byte	0x7
-	.byte	0x82
-	.4byte	0xc0
-	.byte	0
+	.byte	0x84
+	.4byte	0x195
 	.uleb128 0xe
 	.4byte	.LASF32
 	.byte	0x7
-	.byte	0x83
+	.byte	0x85
+	.4byte	0xc0
+	.byte	0
+	.uleb128 0xe
+	.4byte	.LASF33
+	.byte	0x7
+	.byte	0x86
 	.4byte	0xc0
 	.byte	0x4
 	.byte	0
 	.uleb128 0x3
-	.4byte	.LASF33
-	.byte	0x7
-	.byte	0x88
-	.4byte	0x16d
-	.uleb128 0x2
-	.byte	0x1
-	.byte	0x2
 	.4byte	.LASF34
+	.byte	0x7
+	.byte	0x8b
+	.4byte	0x174
 	.uleb128 0xa
 	.byte	0x4
 	.4byte	0x7f
@@ -4268,8 +4268,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.byte	0x48
 	.4byte	0x141
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xde4
@@ -4314,7 +4314,7 @@ pcnt_spinlock:
 	.4byte	0xdf4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5021
+	.4byte	__FUNCTION__$5125
 	.uleb128 0x1a
 	.4byte	.LVL1
 	.4byte	0x20ff
@@ -4350,7 +4350,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5021
+	.4byte	__FUNCTION__$5125
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -4401,7 +4401,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5021
+	.4byte	__FUNCTION__$5125
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -4452,7 +4452,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5021
+	.4byte	__FUNCTION__$5125
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -4502,7 +4502,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5021
+	.4byte	__FUNCTION__$5125
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -4533,8 +4533,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.byte	0x5d
 	.4byte	0x141
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x107a
@@ -4568,7 +4568,7 @@ pcnt_spinlock:
 	.4byte	0x108a
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5028
+	.4byte	__FUNCTION__$5132
 	.uleb128 0x1f
 	.4byte	.LASF204
 	.byte	0x1
@@ -4628,7 +4628,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5028
+	.4byte	__FUNCTION__$5132
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -4679,7 +4679,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5028
+	.4byte	__FUNCTION__$5132
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -4730,7 +4730,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5028
+	.4byte	__FUNCTION__$5132
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -4781,7 +4781,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5028
+	.4byte	__FUNCTION__$5132
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -4919,8 +4919,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.byte	0x7c
 	.4byte	0x141
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1172
@@ -4931,7 +4931,7 @@ pcnt_spinlock:
 	.4byte	0xa70
 	.4byte	.LLST13
 	.uleb128 0x1e
-	.4byte	.LASF32
+	.4byte	.LASF33
 	.byte	0x1
 	.byte	0x7c
 	.4byte	0x1172
@@ -4942,7 +4942,7 @@ pcnt_spinlock:
 	.4byte	0x1188
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5037
+	.4byte	__FUNCTION__$5141
 	.uleb128 0x1a
 	.4byte	.LVL70
 	.4byte	0x20ff
@@ -4978,7 +4978,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5037
+	.4byte	__FUNCTION__$5141
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -5028,7 +5028,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5037
+	.4byte	__FUNCTION__$5141
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -5062,8 +5062,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.byte	0x84
 	.4byte	0x141
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x123a
@@ -5078,7 +5078,7 @@ pcnt_spinlock:
 	.4byte	0x124a
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5041
+	.4byte	__FUNCTION__$5145
 	.uleb128 0x1a
 	.4byte	.LVL81
 	.4byte	0x20ff
@@ -5114,7 +5114,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5041
+	.4byte	__FUNCTION__$5145
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -5166,8 +5166,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.byte	0x8d
 	.4byte	0x141
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x12fc
@@ -5182,7 +5182,7 @@ pcnt_spinlock:
 	.4byte	0x130c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5045
+	.4byte	__FUNCTION__$5149
 	.uleb128 0x1a
 	.4byte	.LVL89
 	.4byte	0x20ff
@@ -5218,7 +5218,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5045
+	.4byte	__FUNCTION__$5149
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -5270,8 +5270,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.byte	0x96
 	.4byte	0x141
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x13cd
@@ -5286,7 +5286,7 @@ pcnt_spinlock:
 	.4byte	0x13cd
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5049
+	.4byte	__FUNCTION__$5153
 	.uleb128 0x1f
 	.4byte	.LASF213
 	.byte	0x1
@@ -5328,7 +5328,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5049
+	.4byte	__FUNCTION__$5153
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -5373,8 +5373,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.byte	0xa1
 	.4byte	0x141
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x147f
@@ -5389,7 +5389,7 @@ pcnt_spinlock:
 	.4byte	0x148f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5054
+	.4byte	__FUNCTION__$5158
 	.uleb128 0x1a
 	.4byte	.LVL107
 	.4byte	0x20ff
@@ -5425,7 +5425,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5054
+	.4byte	__FUNCTION__$5158
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -5477,8 +5477,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.byte	0xaa
 	.4byte	0x141
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1541
@@ -5493,7 +5493,7 @@ pcnt_spinlock:
 	.4byte	0x1551
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5058
+	.4byte	__FUNCTION__$5162
 	.uleb128 0x1a
 	.4byte	.LVL115
 	.4byte	0x20ff
@@ -5529,7 +5529,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5058
+	.4byte	__FUNCTION__$5162
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -5581,8 +5581,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.byte	0xb3
 	.4byte	0x141
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x163b
@@ -5603,7 +5603,7 @@ pcnt_spinlock:
 	.4byte	0x163b
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5063
+	.4byte	__FUNCTION__$5167
 	.uleb128 0x1a
 	.4byte	.LVL123
 	.4byte	0x20ff
@@ -5639,7 +5639,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5063
+	.4byte	__FUNCTION__$5167
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -5689,7 +5689,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5063
+	.4byte	__FUNCTION__$5167
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -5713,8 +5713,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.byte	0xc5
 	.4byte	0x141
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1725
@@ -5735,7 +5735,7 @@ pcnt_spinlock:
 	.4byte	0x1725
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5068
+	.4byte	__FUNCTION__$5172
 	.uleb128 0x1a
 	.4byte	.LVL148
 	.4byte	0x20ff
@@ -5771,7 +5771,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5068
+	.4byte	__FUNCTION__$5172
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -5821,7 +5821,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5068
+	.4byte	__FUNCTION__$5172
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -5845,8 +5845,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.byte	0xd7
 	.4byte	0x141
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x181e
@@ -5873,7 +5873,7 @@ pcnt_spinlock:
 	.4byte	0x182e
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5074
+	.4byte	__FUNCTION__$5178
 	.uleb128 0x1a
 	.4byte	.LVL173
 	.4byte	0x20ff
@@ -5909,7 +5909,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5074
+	.4byte	__FUNCTION__$5178
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -5959,7 +5959,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5074
+	.4byte	__FUNCTION__$5178
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -5990,8 +5990,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.byte	0xe7
 	.4byte	0x141
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1976
@@ -6019,7 +6019,7 @@ pcnt_spinlock:
 	.4byte	0x1976
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5080
+	.4byte	__FUNCTION__$5184
 	.uleb128 0x1a
 	.4byte	.LVL196
 	.4byte	0x20ff
@@ -6055,7 +6055,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5080
+	.4byte	__FUNCTION__$5184
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -6106,7 +6106,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5080
+	.4byte	__FUNCTION__$5184
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -6156,7 +6156,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5080
+	.4byte	__FUNCTION__$5184
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -6180,8 +6180,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.byte	0xfb
 	.4byte	0x141
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1a60
@@ -6202,7 +6202,7 @@ pcnt_spinlock:
 	.4byte	0x1a70
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5085
+	.4byte	__FUNCTION__$5189
 	.uleb128 0x1a
 	.4byte	.LVL222
 	.4byte	0x20ff
@@ -6238,7 +6238,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5085
+	.4byte	__FUNCTION__$5189
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -6288,7 +6288,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5085
+	.4byte	__FUNCTION__$5189
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -6319,8 +6319,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.2byte	0x103
 	.4byte	0x141
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1b5b
@@ -6342,7 +6342,7 @@ pcnt_spinlock:
 	.4byte	0x1b61
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5090
+	.4byte	__FUNCTION__$5194
 	.uleb128 0x1a
 	.4byte	.LVL233
 	.4byte	0x20ff
@@ -6378,7 +6378,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5090
+	.4byte	__FUNCTION__$5194
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -6428,7 +6428,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5090
+	.4byte	__FUNCTION__$5194
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -6455,8 +6455,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.2byte	0x10c
 	.4byte	0x141
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1bed
@@ -6471,7 +6471,7 @@ pcnt_spinlock:
 	.4byte	0x1bed
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5094
+	.4byte	__FUNCTION__$5198
 	.uleb128 0x1a
 	.4byte	.LVL243
 	.4byte	0x20ff
@@ -6506,7 +6506,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5094
+	.4byte	__FUNCTION__$5198
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -6530,8 +6530,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.2byte	0x113
 	.4byte	0x141
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1c79
@@ -6546,7 +6546,7 @@ pcnt_spinlock:
 	.4byte	0x1c79
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5098
+	.4byte	__FUNCTION__$5202
 	.uleb128 0x1a
 	.4byte	.LVL249
 	.4byte	0x20ff
@@ -6581,7 +6581,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5098
+	.4byte	__FUNCTION__$5202
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -6605,8 +6605,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.byte	0x2a
 	.4byte	0x141
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1fb4
@@ -6647,7 +6647,7 @@ pcnt_spinlock:
 	.4byte	0x1fbf
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5012
+	.4byte	__FUNCTION__$5116
 	.uleb128 0x1a
 	.4byte	.LVL259
 	.4byte	0x20ff
@@ -6683,7 +6683,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5012
+	.4byte	__FUNCTION__$5116
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -6734,7 +6734,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5012
+	.4byte	__FUNCTION__$5116
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -6785,7 +6785,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5012
+	.4byte	__FUNCTION__$5116
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -6836,7 +6836,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5012
+	.4byte	__FUNCTION__$5116
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -6887,7 +6887,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5012
+	.4byte	__FUNCTION__$5116
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -6938,7 +6938,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5012
+	.4byte	__FUNCTION__$5116
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -7113,8 +7113,8 @@ pcnt_spinlock:
 	.byte	0x1
 	.2byte	0x11a
 	.4byte	0x141
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x20a1
@@ -7150,7 +7150,7 @@ pcnt_spinlock:
 	.4byte	0x20a7
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5106
+	.4byte	__FUNCTION__$5210
 	.uleb128 0x1a
 	.4byte	.LVL296
 	.4byte	0x20ff
@@ -7186,7 +7186,7 @@ pcnt_spinlock:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5106
+	.4byte	__FUNCTION__$5210
 	.uleb128 0x1c
 	.uleb128 0x2
 	.byte	0x71
@@ -7257,7 +7257,7 @@ pcnt_spinlock:
 	.4byte	.LASF234
 	.byte	0x1
 	.byte	0x23
-	.4byte	0x18e
+	.4byte	0x195
 	.uleb128 0x5
 	.byte	0x3
 	.4byte	pcnt_spinlock
@@ -7309,12 +7309,12 @@ pcnt_spinlock:
 	.4byte	.LASF242
 	.4byte	.LASF242
 	.byte	0x7
-	.byte	0xd9
+	.byte	0xdc
 	.uleb128 0x27
 	.4byte	.LASF243
 	.4byte	.LASF243
 	.byte	0x7
-	.byte	0xd8
+	.byte	0xdb
 	.uleb128 0x27
 	.4byte	.LASF244
 	.4byte	.LASF244
@@ -7914,7 +7914,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL29
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -7939,7 +7939,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL24
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -7964,7 +7964,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL25
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -7989,7 +7989,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x55
 	.4byte	.LVL26
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8014,7 +8014,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x56
 	.4byte	.LVL27
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8039,7 +8039,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x57
 	.4byte	.LVL28
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8097,7 +8097,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL53
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8122,7 +8122,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL50
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8143,7 +8143,7 @@ pcnt_spinlock:
 	.byte	0x54
 	.byte	0x9f
 	.4byte	.LVL67
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -8168,7 +8168,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x56
 	.4byte	.LVL67
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x1
 	.byte	0x56
 	.4byte	0
@@ -8218,7 +8218,7 @@ pcnt_spinlock:
 	.sleb128 -24
 	.byte	0x9f
 	.4byte	.LVL79
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8243,7 +8243,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL86
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8268,7 +8268,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL94
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8293,7 +8293,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL102
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8307,7 +8307,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL104
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x8
 	.byte	0x31
 	.byte	0xf3
@@ -8336,7 +8336,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL112
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8361,7 +8361,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL120
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8452,7 +8452,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL146
-	.4byte	.LFE20
+	.4byte	.LFE24
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8517,7 +8517,7 @@ pcnt_spinlock:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL145
-	.4byte	.LFE20
+	.4byte	.LFE24
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -8605,7 +8605,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL171
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8670,7 +8670,7 @@ pcnt_spinlock:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL170
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -8747,7 +8747,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL194
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8801,7 +8801,7 @@ pcnt_spinlock:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL193
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -8812,7 +8812,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL183
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8903,7 +8903,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL220
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -8957,7 +8957,7 @@ pcnt_spinlock:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL219
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -8990,7 +8990,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL230
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9004,7 +9004,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL231
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9040,7 +9040,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL241
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9065,7 +9065,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL247
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9090,7 +9090,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL253
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9170,7 +9170,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL294
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9209,7 +9209,7 @@ pcnt_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL301
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9225,14 +9225,6 @@ pcnt_spinlock:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
 	.4byte	.LFB16
 	.4byte	.LFE16-.LFB16
 	.4byte	.LFB17
@@ -9257,22 +9249,22 @@ pcnt_spinlock:
 	.4byte	.LFE26-.LFB26
 	.4byte	.LFB27
 	.4byte	.LFE27-.LFB27
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
 	.4byte	.LFB28
 	.4byte	.LFE28-.LFB28
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB12
-	.4byte	.LFE12
-	.4byte	.LFB13
-	.4byte	.LFE13
-	.4byte	.LFB14
-	.4byte	.LFE14
-	.4byte	.LFB15
-	.4byte	.LFE15
 	.4byte	.LFB16
 	.4byte	.LFE16
 	.4byte	.LFB17
@@ -9297,10 +9289,18 @@ pcnt_spinlock:
 	.4byte	.LFE26
 	.4byte	.LFB27
 	.4byte	.LFE27
-	.4byte	.LFB11
-	.4byte	.LFE11
 	.4byte	.LFB28
 	.4byte	.LFE28
+	.4byte	.LFB29
+	.4byte	.LFE29
+	.4byte	.LFB30
+	.4byte	.LFE30
+	.4byte	.LFB31
+	.4byte	.LFE31
+	.4byte	.LFB15
+	.4byte	.LFE15
+	.4byte	.LFB32
+	.4byte	.LFE32
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -9310,7 +9310,7 @@ pcnt_spinlock:
 	.string	"PCNT_UNIT_0"
 .LASF141:
 	.string	"PCNT_UNIT_1"
-.LASF32:
+.LASF33:
 	.string	"count"
 .LASF143:
 	.string	"PCNT_UNIT_3"
@@ -9328,8 +9328,6 @@ pcnt_spinlock:
 	.string	"PERIPH_VSPI_MODULE"
 .LASF217:
 	.string	"evt_type"
-.LASF248:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF84:
 	.string	"cnt_rst_u0"
 .LASF86:
@@ -9458,9 +9456,11 @@ pcnt_spinlock:
 	.string	"PCNT_UNIT_MAX"
 .LASF118:
 	.string	"reserved_d4"
+.LASF248:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF199:
 	.string	"pcnt_set_mode"
-.LASF33:
+.LASF34:
 	.string	"portMUX_TYPE"
 .LASF222:
 	.string	"pcnt_set_filter_value"
@@ -9620,7 +9620,7 @@ pcnt_spinlock:
 	.string	"gpio_matrix_in"
 .LASF150:
 	.string	"PCNT_CHANNEL_0"
-.LASF34:
+.LASF31:
 	.string	"_Bool"
 .LASF15:
 	.string	"int32_t"
@@ -9672,7 +9672,7 @@ pcnt_spinlock:
 	.string	"uint32_t"
 .LASF223:
 	.string	"filter_val"
-.LASF31:
+.LASF32:
 	.string	"owner"
 .LASF82:
 	.string	"zero_lat"
@@ -9804,4 +9804,4 @@ pcnt_spinlock:
 	.string	"GPIO_FLOATING"
 .LASF225:
 	.string	"pcnt_filter_enable"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

@@ -22,7 +22,7 @@ src/bootloader_sha.o: \
  C:/esp/esp-idf/components/newlib/include/string.h \
  C:/esp/esp-idf/components/newlib/include/sys/string.h \
  C:/esp/esp-idf/components/newlib/platform_include/assert.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/newlib/include/assert.h \
  C:/esp/esp-idf/components/newlib/include/sys/param.h \
  C:/esp/esp-idf/components/newlib/include/sys/syslimits.h \
@@ -78,7 +78,7 @@ C:/esp/esp-idf/components/newlib/include/sys/string.h:
 
 C:/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/newlib/include/assert.h:
 

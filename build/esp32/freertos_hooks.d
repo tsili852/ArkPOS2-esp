@@ -26,7 +26,7 @@ freertos_hooks.o: C:/esp/esp-idf/components/esp32/freertos_hooks.c \
  C:/esp/esp-idf/components/newlib/include/sys/sched.h \
  C:/esp/esp-idf/components/newlib/include/sys/stdio.h \
  C:/esp/esp-idf/components/newlib/platform_include/assert.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/newlib/include/assert.h
 
 C:/esp/esp-idf/components/newlib/include/stdint.h:
@@ -83,7 +83,7 @@ C:/esp/esp-idf/components/newlib/include/sys/stdio.h:
 
 C:/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/newlib/include/assert.h:
 /c/esp/esp-idf/components/esp32/./freertos_hooks.c:

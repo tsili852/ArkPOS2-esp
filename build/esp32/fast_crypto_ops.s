@@ -882,8 +882,8 @@ g_wifi_default_wpa_crypto_funcs:
 	.string	"sha256_vector"
 .LASF28:
 	.string	"crypto_hash"
-.LASF41:
-	.string	"esp_hmac_sha256_t"
+.LASF70:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF2:
 	.string	"short int"
 .LASF8:
@@ -898,6 +898,8 @@ g_wifi_default_wpa_crypto_funcs:
 	.string	"esp_sha256_vector_t"
 .LASF27:
 	.string	"esp_crypto_cipher_t"
+.LASF59:
+	.string	"crypto_hash_finish"
 .LASF16:
 	.string	"ESP_CRYPTO_HASH_ALG_SHA256"
 .LASF61:
@@ -916,8 +918,6 @@ g_wifi_default_wpa_crypto_funcs:
 	.string	"esp_crypto_cipher_deinit_t"
 .LASF5:
 	.string	"long long int"
-.LASF70:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF18:
 	.string	"ESP_CRYPTO_CIPHER_NULL"
 .LASF7:
@@ -972,8 +972,8 @@ g_wifi_default_wpa_crypto_funcs:
 	.string	"esp_crypto_hash_finish_t"
 .LASF11:
 	.string	"_Bool"
-.LASF59:
-	.string	"crypto_hash_finish"
+.LASF41:
+	.string	"esp_hmac_sha256_t"
 .LASF42:
 	.string	"esp_hmac_sha256_vector_t"
 .LASF14:
@@ -1016,4 +1016,4 @@ g_wifi_default_wpa_crypto_funcs:
 	.string	"crypto_mod_exp"
 .LASF24:
 	.string	"esp_crypto_hash_alg_t"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

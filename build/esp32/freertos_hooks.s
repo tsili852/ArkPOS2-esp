@@ -1116,8 +1116,6 @@ idle_cb:
 	.string	"old_idle_cb"
 .LASF13:
 	.string	"esp_err_t"
-.LASF32:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF4:
 	.string	"unsigned int"
 .LASF21:
@@ -1126,6 +1124,8 @@ idle_cb:
 	.string	"long long unsigned int"
 .LASF14:
 	.string	"esp_freertos_idle_cb_t"
+.LASF32:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF23:
 	.string	"new_tick_cb"
 .LASF8:
@@ -1148,4 +1148,4 @@ idle_cb:
 	.string	"signed char"
 .LASF15:
 	.string	"_Bool"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

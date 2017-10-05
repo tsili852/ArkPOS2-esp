@@ -18,7 +18,7 @@ heap_trace.o: C:/esp/esp-idf/components/heap/heap_trace.c \
  C:/esp/esp-idf/components/newlib/include/sys/syslimits.h \
  C:/esp/esp-idf/components/newlib/include/machine/endian.h \
  C:/esp/esp-idf/components/newlib/include/machine/param.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/heap/include/esp_heap_trace.h \
  C:/esp/esp-idf/components/newlib/include/stdint.h \
  C:/esp/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -60,6 +60,7 @@ heap_trace.o: C:/esp/esp-idf/components/heap/heap_trace.c \
  C:/esp/esp-idf/components/esp32/include/xtensa/config/specreg.h \
  C:/esp/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h \
  C:/esp/esp-idf/components/esp32/include/esp_crosscore_int.h \
+ C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h \
  C:/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h \
  C:/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  C:/esp/esp-idf/components/esp32/include/esp_system.h \
@@ -82,7 +83,6 @@ heap_trace.o: C:/esp/esp-idf/components/heap/heap_trace.c \
  C:/esp/esp-idf/components/freertos/include/freertos/task.h \
  C:/esp/esp-idf/components/newlib/include/limits.h \
  C:/esp/esp-idf/components/freertos/include/freertos/list.h \
- C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h \
  C:/esp/esp-idf/components/heap/heap_private.h \
  C:/esp/esp-idf/components/esp32/include/rom/queue.h
 
@@ -124,7 +124,7 @@ C:/esp/esp-idf/components/newlib/include/machine/endian.h:
 
 C:/esp/esp-idf/components/newlib/include/machine/param.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/heap/include/esp_heap_trace.h:
 
@@ -208,6 +208,8 @@ C:/esp/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h:
 
 C:/esp/esp-idf/components/esp32/include/esp_crosscore_int.h:
 
+C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h:
+
 C:/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h:
 
 C:/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h:
@@ -251,8 +253,6 @@ C:/esp/esp-idf/components/freertos/include/freertos/task.h:
 C:/esp/esp-idf/components/newlib/include/limits.h:
 
 C:/esp/esp-idf/components/freertos/include/freertos/list.h:
-
-C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h:
 
 C:/esp/esp-idf/components/heap/heap_private.h:
 

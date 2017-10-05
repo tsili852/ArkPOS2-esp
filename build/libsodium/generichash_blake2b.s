@@ -2442,4 +2442,4 @@ __func__$2270:
 	.string	"outlen"
 .LASF45:
 	.string	"crypto_generichash_blake2b__update"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/expat/port/minicheck.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\expat//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\expat//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/expat/port/minicheck.c"
@@ -1284,7 +1284,7 @@ int setjmp (jmp_buf __jmpb);
 # 1 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 1
 # 19 "C:/esp/esp-idf/components/newlib/platform_include/assert.h"
        
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/newlib/platform_include/assert.h" 2
 
 

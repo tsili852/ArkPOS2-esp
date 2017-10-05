@@ -9,7 +9,7 @@
 	.align	4
 	.type	sntp_retry, @function
 sntp_retry:
-.LFB11:
+.LFB15:
 	.file 1 "C:/esp/esp-idf/components/lwip/apps/sntp/sntp.c"
 	.loc 1 262 0
 .LVL0:
@@ -39,7 +39,7 @@ sntp_retry:
 .L1:
 	retw.n
 .LBE2:
-.LFE11:
+.LFE15:
 	.size	sntp_retry, .-sntp_retry
 	.section	.text.sntp_process,"ax",@progbits
 	.literal_position
@@ -48,7 +48,7 @@ sntp_retry:
 	.align	4
 	.type	sntp_process, @function
 sntp_process:
-.LFB9:
+.LFB13:
 	.loc 1 206 0
 .LVL4:
 	entry	sp, 48
@@ -81,7 +81,7 @@ sntp_process:
 .LVL11:
 	retw.n
 .LBE3:
-.LFE9:
+.LFE13:
 	.size	sntp_process, .-sntp_process
 	.section	.text.sntp_recv,"ax",@progbits
 	.literal_position
@@ -94,7 +94,7 @@ sntp_process:
 	.align	4
 	.type	sntp_recv, @function
 sntp_recv:
-.LFB12:
+.LFB16:
 	.loc 1 332 0
 .LVL12:
 	entry	sp, 48
@@ -229,13 +229,13 @@ sntp_recv:
 .LVL31:
 .L4:
 	retw.n
-.LFE12:
+.LFE16:
 	.size	sntp_recv, .-sntp_recv
 	.section	.text.sntp_initialize_request,"ax",@progbits
 	.align	4
 	.type	sntp_initialize_request, @function
 sntp_initialize_request:
-.LFB10:
+.LFB14:
 	.loc 1 237 0
 .LVL32:
 	entry	sp, 32
@@ -250,7 +250,7 @@ sntp_initialize_request:
 	movi.n	a8, 0x23
 	s8i	a8, a2, 0
 	retw.n
-.LFE10:
+.LFE14:
 	.size	sntp_initialize_request, .-sntp_initialize_request
 	.section	.text.sntp_send_request,"ax",@progbits
 	.literal_position
@@ -261,7 +261,7 @@ sntp_initialize_request:
 	.align	4
 	.type	sntp_send_request, @function
 sntp_send_request:
-.LFB13:
+.LFB17:
 	.loc 1 433 0
 .LVL34:
 	entry	sp, 32
@@ -312,7 +312,7 @@ sntp_send_request:
 	call8	sys_timeout
 .LVL44:
 	retw.n
-.LFE13:
+.LFE17:
 	.size	sntp_send_request, .-sntp_send_request
 	.section	.text.sntp_request,"ax",@progbits
 	.literal_position
@@ -323,7 +323,7 @@ sntp_send_request:
 	.align	4
 	.type	sntp_request, @function
 sntp_request:
-.LFB15:
+.LFB19:
 	.loc 1 488 0
 .LVL45:
 	entry	sp, 64
@@ -435,13 +435,13 @@ sntp_request:
 .LVL55:
 .L19:
 	retw.n
-.LFE15:
+.LFE19:
 	.size	sntp_request, .-sntp_request
 	.section	.text.sntp_dns_found,"ax",@progbits
 	.align	4
 	.type	sntp_dns_found, @function
 sntp_dns_found:
-.LFB14:
+.LFB18:
 	.loc 1 465 0
 .LVL56:
 	entry	sp, 32
@@ -459,7 +459,7 @@ sntp_dns_found:
 	call8	sntp_retry
 .LVL58:
 	retw.n
-.LFE14:
+.LFE18:
 	.size	sntp_dns_found, .-sntp_dns_found
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -472,7 +472,7 @@ sntp_dns_found:
 	.literal_position
 	.literal .LC19, sntp_pcb
 	.literal .LC21, .LC20
-	.literal .LC22, __func__$6059
+	.literal .LC22, __func__$6163
 	.literal .LC24, .LC23
 	.literal .LC25, sntp_recv
 	.literal .LC26, sntp_opmode
@@ -483,7 +483,7 @@ sntp_dns_found:
 	.global	sntp_init
 	.type	sntp_init, @function
 sntp_init:
-.LFB16:
+.LFB20:
 	.loc 1 532 0
 	entry	sp, 32
 .LCFI7:
@@ -544,7 +544,7 @@ sntp_init:
 .LVL63:
 .L37:
 	retw.n
-.LFE16:
+.LFE20:
 	.size	sntp_init, .-sntp_init
 	.section	.text.sntp_stop,"ax",@progbits
 	.literal_position
@@ -554,7 +554,7 @@ sntp_init:
 	.global	sntp_stop
 	.type	sntp_stop, @function
 sntp_stop:
-.LFB17:
+.LFB21:
 	.loc 1 567 0
 	entry	sp, 32
 .LCFI8:
@@ -577,7 +577,7 @@ sntp_stop:
 	s32i.n	a8, a2, 0
 .L41:
 	retw.n
-.LFE17:
+.LFE21:
 	.size	sntp_stop, .-sntp_stop
 	.section	.text.sntp_enabled,"ax",@progbits
 	.literal_position
@@ -586,7 +586,7 @@ sntp_stop:
 	.global	sntp_enabled
 	.type	sntp_enabled, @function
 sntp_enabled:
-.LFB18:
+.LFB22:
 	.loc 1 579 0
 	entry	sp, 32
 .LCFI9:
@@ -598,7 +598,7 @@ sntp_enabled:
 	movnez	a2, a9, a8
 	.loc 1 581 0
 	retw.n
-.LFE18:
+.LFE22:
 	.size	sntp_enabled, .-sntp_enabled
 	.section	.rodata.str1.4
 	.align	4
@@ -610,7 +610,7 @@ sntp_enabled:
 	.section	.text.sntp_setoperatingmode,"ax",@progbits
 	.literal_position
 	.literal .LC34, .LC33
-	.literal .LC35, __func__$6069
+	.literal .LC35, __func__$6173
 	.literal .LC36, .LC23
 	.literal .LC37, sntp_pcb
 	.literal .LC39, .LC38
@@ -619,7 +619,7 @@ sntp_enabled:
 	.global	sntp_setoperatingmode
 	.type	sntp_setoperatingmode, @function
 sntp_setoperatingmode:
-.LFB19:
+.LFB23:
 	.loc 1 589 0
 .LVL66:
 	entry	sp, 32
@@ -651,7 +651,7 @@ sntp_setoperatingmode:
 	l32r	a8, .LC40
 	s8i	a2, a8, 0
 	retw.n
-.LFE19:
+.LFE23:
 	.size	sntp_setoperatingmode, .-sntp_setoperatingmode
 	.section	.text.sntp_getoperatingmode,"ax",@progbits
 	.literal_position
@@ -660,7 +660,7 @@ sntp_setoperatingmode:
 	.global	sntp_getoperatingmode
 	.type	sntp_getoperatingmode, @function
 sntp_getoperatingmode:
-.LFB20:
+.LFB24:
 	.loc 1 600 0
 	entry	sp, 32
 .LCFI11:
@@ -668,7 +668,7 @@ sntp_getoperatingmode:
 	l32r	a8, .LC41
 	l8ui	a2, a8, 0
 	retw.n
-.LFE20:
+.LFE24:
 	.size	sntp_getoperatingmode, .-sntp_getoperatingmode
 	.section	.text.sntp_setserver,"ax",@progbits
 	.literal_position
@@ -677,7 +677,7 @@ sntp_getoperatingmode:
 	.global	sntp_setserver
 	.type	sntp_setserver, @function
 sntp_setserver:
-.LFB21:
+.LFB25:
 	.loc 1 627 0
 .LVL69:
 	entry	sp, 32
@@ -728,7 +728,7 @@ sntp_setserver:
 	s32i.n	a2, a8, 0
 .L48:
 	retw.n
-.LFE21:
+.LFE25:
 	.size	sntp_setserver, .-sntp_setserver
 	.section	.text.sntp_getserver,"ax",@progbits
 	.literal_position
@@ -738,7 +738,7 @@ sntp_setserver:
 	.global	sntp_getserver
 	.type	sntp_getserver, @function
 sntp_getserver:
-.LFB22:
+.LFB26:
 	.loc 1 676 0
 .LVL73:
 	entry	sp, 32
@@ -768,7 +768,7 @@ sntp_getserver:
 .LVL76:
 	.loc 1 681 0
 	retw.n
-.LFE22:
+.LFE26:
 	.size	sntp_getserver, .-sntp_getserver
 	.section	.text.sntp_setservername,"ax",@progbits
 	.literal_position
@@ -777,7 +777,7 @@ sntp_getserver:
 	.global	sntp_setservername
 	.type	sntp_setservername, @function
 sntp_setservername:
-.LFB23:
+.LFB27:
 	.loc 1 692 0
 .LVL77:
 	entry	sp, 32
@@ -794,7 +794,7 @@ sntp_setservername:
 	s32i.n	a3, a8, 0
 .L55:
 	retw.n
-.LFE23:
+.LFE27:
 	.size	sntp_setservername, .-sntp_setservername
 	.section	.text.sntp_getservername,"ax",@progbits
 	.literal_position
@@ -803,7 +803,7 @@ sntp_setservername:
 	.global	sntp_getservername
 	.type	sntp_getservername, @function
 sntp_getservername:
-.LFB24:
+.LFB28:
 	.loc 1 707 0
 .LVL79:
 	entry	sp, 32
@@ -824,19 +824,19 @@ sntp_getservername:
 	movi.n	a2, 0
 	.loc 1 712 0
 	retw.n
-.LFE24:
+.LFE28:
 	.size	sntp_getservername, .-sntp_getservername
-	.section	.rodata.__func__$6069,"a",@progbits
+	.section	.rodata.__func__$6173,"a",@progbits
 	.align	4
-	.type	__func__$6069, @object
-	.size	__func__$6069, 22
-__func__$6069:
+	.type	__func__$6173, @object
+	.size	__func__$6173, 22
+__func__$6173:
 	.string	"sntp_setoperatingmode"
-	.section	.rodata.__func__$6059,"a",@progbits
+	.section	.rodata.__func__$6163,"a",@progbits
 	.align	4
-	.type	__func__$6059, @object
-	.size	__func__$6059, 10
-__func__$6059:
+	.type	__func__$6163, @object
+	.size	__func__$6163, 10
+__func__$6163:
 	.string	"sntp_init"
 	.section	.bss.sntp_retry_timeout,"aw",@nobits
 	.align	4
@@ -880,10 +880,10 @@ sntp_opmode:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI0-.LFB11
+	.4byte	.LCFI0-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -892,10 +892,10 @@ sntp_opmode:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x4
-	.4byte	.LCFI1-.LFB9
+	.4byte	.LCFI1-.LFB13
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -904,10 +904,10 @@ sntp_opmode:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI2-.LFB12
+	.4byte	.LCFI2-.LFB16
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -916,10 +916,10 @@ sntp_opmode:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI3-.LFB10
+	.4byte	.LCFI3-.LFB14
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -928,10 +928,10 @@ sntp_opmode:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI4-.LFB13
+	.4byte	.LCFI4-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -940,10 +940,10 @@ sntp_opmode:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI5-.LFB15
+	.4byte	.LCFI5-.LFB19
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -952,10 +952,10 @@ sntp_opmode:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI6-.LFB14
+	.4byte	.LCFI6-.LFB18
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -964,10 +964,10 @@ sntp_opmode:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI7-.LFB16
+	.4byte	.LCFI7-.LFB20
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -976,10 +976,10 @@ sntp_opmode:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI8-.LFB17
+	.4byte	.LCFI8-.LFB21
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -988,10 +988,10 @@ sntp_opmode:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI9-.LFB18
+	.4byte	.LCFI9-.LFB22
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1000,10 +1000,10 @@ sntp_opmode:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI10-.LFB19
+	.4byte	.LCFI10-.LFB23
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1012,10 +1012,10 @@ sntp_opmode:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.byte	0x4
-	.4byte	.LCFI11-.LFB20
+	.4byte	.LCFI11-.LFB24
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1024,10 +1024,10 @@ sntp_opmode:
 	.4byte	.LEFDE24-.LASFDE24
 .LASFDE24:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.byte	0x4
-	.4byte	.LCFI12-.LFB21
+	.4byte	.LCFI12-.LFB25
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1036,10 +1036,10 @@ sntp_opmode:
 	.4byte	.LEFDE26-.LASFDE26
 .LASFDE26:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI13-.LFB22
+	.4byte	.LCFI13-.LFB26
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1048,10 +1048,10 @@ sntp_opmode:
 	.4byte	.LEFDE28-.LASFDE28
 .LASFDE28:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI14-.LFB23
+	.4byte	.LCFI14-.LFB27
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1060,10 +1060,10 @@ sntp_opmode:
 	.4byte	.LEFDE30-.LASFDE30
 .LASFDE30:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI15-.LFB24
+	.4byte	.LCFI15-.LFB28
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -2397,8 +2397,8 @@ sntp_opmode:
 	.4byte	.LASF167
 	.byte	0x1
 	.2byte	0x105
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xadc
@@ -2440,8 +2440,8 @@ sntp_opmode:
 	.4byte	.LASF168
 	.byte	0x1
 	.byte	0xcd
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xb87
@@ -2525,8 +2525,8 @@ sntp_opmode:
 	.4byte	.LASF172
 	.byte	0x1
 	.2byte	0x14b
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xd3d
@@ -2775,8 +2775,8 @@ sntp_opmode:
 	.4byte	.LASF175
 	.byte	0x1
 	.byte	0xec
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xd7b
@@ -2816,8 +2816,8 @@ sntp_opmode:
 	.4byte	.LASF176
 	.byte	0x1
 	.2byte	0x1b0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xe6c
@@ -2951,8 +2951,8 @@ sntp_opmode:
 	.4byte	.LASF179
 	.byte	0x1
 	.2byte	0x1e7
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xf48
@@ -3079,8 +3079,8 @@ sntp_opmode:
 	.4byte	.LASF181
 	.byte	0x1
 	.2byte	0x1d0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xfac
@@ -3130,8 +3130,8 @@ sntp_opmode:
 	.4byte	.LASF183
 	.byte	0x1
 	.2byte	0x213
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1055
@@ -3140,7 +3140,7 @@ sntp_opmode:
 	.4byte	0x1065
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6059
+	.4byte	__func__$6163
 	.uleb128 0x28
 	.4byte	.LVL59
 	.4byte	0x137a
@@ -3173,7 +3173,7 @@ sntp_opmode:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6059
+	.4byte	__func__$6163
 	.uleb128 0x1e
 	.uleb128 0x1
 	.byte	0x5d
@@ -3231,8 +3231,8 @@ sntp_opmode:
 	.4byte	.LASF184
 	.byte	0x1
 	.2byte	0x236
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x10a6
@@ -3261,16 +3261,16 @@ sntp_opmode:
 	.byte	0x1
 	.2byte	0x242
 	.4byte	0x155
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x2d
 	.4byte	.LASF185
 	.byte	0x1
 	.2byte	0x24c
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x114c
@@ -3286,7 +3286,7 @@ sntp_opmode:
 	.4byte	0x115c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6069
+	.4byte	__func__$6173
 	.uleb128 0x28
 	.4byte	.LVL67
 	.4byte	0x1385
@@ -3308,7 +3308,7 @@ sntp_opmode:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6069
+	.4byte	__func__$6173
 	.uleb128 0x1e
 	.uleb128 0x1
 	.byte	0x5d
@@ -3336,7 +3336,7 @@ sntp_opmode:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$6069
+	.4byte	__func__$6173
 	.uleb128 0x1e
 	.uleb128 0x1
 	.byte	0x5d
@@ -3359,16 +3359,16 @@ sntp_opmode:
 	.byte	0x1
 	.2byte	0x257
 	.4byte	0x155
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x2d
 	.4byte	.LASF190
 	.byte	0x1
 	.2byte	0x272
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x11d6
@@ -3421,8 +3421,8 @@ sntp_opmode:
 	.byte	0x1
 	.2byte	0x2a3
 	.4byte	0x24c
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x123b
@@ -3477,8 +3477,8 @@ sntp_opmode:
 	.4byte	.LASF192
 	.byte	0x1
 	.2byte	0x2b3
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1270
@@ -3501,8 +3501,8 @@ sntp_opmode:
 	.byte	0x1
 	.2byte	0x2c2
 	.4byte	0xb2
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x129b
@@ -4374,7 +4374,7 @@ sntp_opmode:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL1
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4388,7 +4388,7 @@ sntp_opmode:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL7
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0x7
 	.byte	0x73
 	.sleb128 -2085978496
@@ -4408,7 +4408,7 @@ sntp_opmode:
 	.byte	0x1a
 	.byte	0x9f
 	.4byte	.LVL7
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0xc
 	.byte	0x73
 	.sleb128 -2085978496
@@ -4445,7 +4445,7 @@ sntp_opmode:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL15
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4470,7 +4470,7 @@ sntp_opmode:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL28
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4523,7 +4523,7 @@ sntp_opmode:
 	.byte	0x52
 	.byte	0x9f
 	.4byte	.LVL43
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -4542,7 +4542,7 @@ sntp_opmode:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL46
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4571,7 +4571,7 @@ sntp_opmode:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL72
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4585,7 +4585,7 @@ sntp_opmode:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL71
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4599,7 +4599,7 @@ sntp_opmode:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL74
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4613,7 +4613,7 @@ sntp_opmode:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL78
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4627,7 +4627,7 @@ sntp_opmode:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL80
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4643,28 +4643,20 @@ sntp_opmode:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
 	.4byte	.LFB15
 	.4byte	.LFE15-.LFB15
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.4byte	.LFB16
 	.4byte	.LFE16-.LFB16
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.4byte	.LFB17
 	.4byte	.LFE17-.LFB17
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
 	.4byte	.LFB19
 	.4byte	.LFE19-.LFB19
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.4byte	.LFB20
 	.4byte	.LFE20-.LFB20
 	.4byte	.LFB21
@@ -4675,32 +4667,32 @@ sntp_opmode:
 	.4byte	.LFE23-.LFB23
 	.4byte	.LFB24
 	.4byte	.LFE24-.LFB24
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB9
-	.4byte	.LFE9
-	.4byte	.LFB12
-	.4byte	.LFE12
-	.4byte	.LFB10
-	.4byte	.LFE10
-	.4byte	.LFB13
-	.4byte	.LFE13
 	.4byte	.LFB15
 	.4byte	.LFE15
-	.4byte	.LFB14
-	.4byte	.LFE14
+	.4byte	.LFB13
+	.4byte	.LFE13
 	.4byte	.LFB16
 	.4byte	.LFE16
+	.4byte	.LFB14
+	.4byte	.LFE14
 	.4byte	.LFB17
 	.4byte	.LFE17
-	.4byte	.LFB18
-	.4byte	.LFE18
 	.4byte	.LFB19
 	.4byte	.LFE19
+	.4byte	.LFB18
+	.4byte	.LFE18
 	.4byte	.LFB20
 	.4byte	.LFE20
 	.4byte	.LFB21
@@ -4711,6 +4703,14 @@ sntp_opmode:
 	.4byte	.LFE23
 	.4byte	.LFB24
 	.4byte	.LFE24
+	.4byte	.LFB25
+	.4byte	.LFE25
+	.4byte	.LFB26
+	.4byte	.LFE26
+	.4byte	.LFB27
+	.4byte	.LFE27
+	.4byte	.LFB28
+	.4byte	.LFE28
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -4850,6 +4850,8 @@ sntp_opmode:
 	.string	"t1_renew_time"
 .LASF183:
 	.string	"sntp_init"
+.LASF219:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\lwip"
 .LASF178:
 	.string	"sntpmsg"
 .LASF179:
@@ -5076,8 +5078,6 @@ sntp_opmode:
 	.string	"ciaddr"
 .LASF194:
 	.string	"sntp_getservername"
-.LASF219:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\lwip"
 .LASF159:
 	.string	"root_delay"
 .LASF119:
@@ -5156,4 +5156,4 @@ sntp_opmode:
 	.string	"u8_t"
 .LASF90:
 	.string	"MEMP_TCPIP_MSG_INPKT"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

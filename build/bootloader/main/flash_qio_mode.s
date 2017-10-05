@@ -7557,8 +7557,8 @@ chip_data:
 	.string	"in_suc_eof"
 .LASF127:
 	.string	"cs1_dis"
-.LASF291:
-	.string	"dma_status"
+.LASF523:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\main"
 .LASF151:
 	.string	"last_state"
 .LASF343:
@@ -7763,8 +7763,6 @@ chip_data:
 	.string	"usr_din_hold"
 .LASF81:
 	.string	"miso_delay_num"
-.LASF523:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\main"
 .LASF334:
 	.string	"reserved_1b8"
 .LASF411:
@@ -8425,6 +8423,8 @@ chip_data:
 	.string	"chip_size"
 .LASF437:
 	.string	"reserved_354"
+.LASF291:
+	.string	"dma_status"
 .LASF438:
 	.string	"reserved_358"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

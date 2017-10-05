@@ -9,7 +9,7 @@
 	.align	4
 	.type	esp_crosscore_isr, @function
 esp_crosscore_isr:
-.LFB16:
+.LFB20:
 	.file 1 "C:/esp/esp-idf/components/esp32/crosscore_int.c"
 	.loc 1 47 0
 .LVL0:
@@ -71,7 +71,7 @@ esp_crosscore_isr:
 .LVL9:
 .L1:
 	retw.n
-.LFE16:
+.LFE20:
 	.size	esp_crosscore_isr, .-esp_crosscore_isr
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -86,13 +86,13 @@ esp_crosscore_isr:
 	.literal .LC4, reason
 	.literal .LC5, esp_crosscore_isr
 	.literal .LC7, .LC6
-	.literal .LC8, __func__$5236
+	.literal .LC8, __func__$5340
 	.literal .LC10, .LC9
 	.align	4
 	.global	esp_crosscore_int_init
 	.type	esp_crosscore_int_init, @function
 esp_crosscore_int_init:
-.LFB17:
+.LFB21:
 	.loc 1 72 0
 	entry	sp, 32
 .LCFI1:
@@ -182,7 +182,7 @@ esp_crosscore_int_init:
 .LVL18:
 .L5:
 	retw.n
-.LFE17:
+.LFE21:
 	.size	esp_crosscore_int_init, .-esp_crosscore_int_init
 	.section	.rodata.str1.4
 	.align	4
@@ -191,7 +191,7 @@ esp_crosscore_int_init:
 	.section	.iram1
 	.literal_position
 	.literal .LC12, .LC11
-	.literal .LC13, __func__$5240
+	.literal .LC13, __func__$5344
 	.literal .LC14, .LC9
 	.literal .LC15, reasonSpinlock
 	.literal .LC16, reason
@@ -201,7 +201,7 @@ esp_crosscore_int_init:
 	.global	esp_crosscore_int_send_yield
 	.type	esp_crosscore_int_send_yield, @function
 esp_crosscore_int_send_yield:
-.LFB18:
+.LFB22:
 	.loc 1 85 0 is_stmt 1
 .LVL19:
 	entry	sp, 32
@@ -252,19 +252,19 @@ esp_crosscore_int_send_yield:
 	memw
 	s32i.n	a3, a2, 0
 	retw.n
-.LFE18:
+.LFE22:
 	.size	esp_crosscore_int_send_yield, .-esp_crosscore_int_send_yield
-	.section	.rodata.__func__$5240,"a",@progbits
+	.section	.rodata.__func__$5344,"a",@progbits
 	.align	4
-	.type	__func__$5240, @object
-	.size	__func__$5240, 29
-__func__$5240:
+	.type	__func__$5344, @object
+	.size	__func__$5344, 29
+__func__$5344:
 	.string	"esp_crosscore_int_send_yield"
-	.section	.rodata.__func__$5236,"a",@progbits
+	.section	.rodata.__func__$5340,"a",@progbits
 	.align	4
-	.type	__func__$5236, @object
-	.size	__func__$5236, 23
-__func__$5236:
+	.type	__func__$5340, @object
+	.size	__func__$5340, 23
+__func__$5340:
 	.string	"esp_crosscore_int_init"
 	.section	.bss.reason,"aw",@nobits
 	.align	4
@@ -298,10 +298,10 @@ reasonSpinlock:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI0-.LFB16
+	.4byte	.LCFI0-.LFB20
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -310,10 +310,10 @@ reasonSpinlock:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI1-.LFB17
+	.4byte	.LCFI1-.LFB21
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -322,10 +322,10 @@ reasonSpinlock:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI2-.LFB18
+	.4byte	.LCFI2-.LFB22
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -427,33 +427,33 @@ reasonSpinlock:
 	.byte	0x5
 	.byte	0x18
 	.4byte	0x73
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x2
+	.4byte	.LASF16
 	.uleb128 0x6
 	.byte	0x8
 	.byte	0x6
-	.byte	0x81
-	.4byte	0xd3
-	.uleb128 0x7
-	.4byte	.LASF16
-	.byte	0x6
-	.byte	0x82
-	.4byte	0x7e
-	.byte	0
+	.byte	0x84
+	.4byte	0xda
 	.uleb128 0x7
 	.4byte	.LASF17
 	.byte	0x6
-	.byte	0x83
+	.byte	0x85
+	.4byte	0x7e
+	.byte	0
+	.uleb128 0x7
+	.4byte	.LASF18
+	.byte	0x6
+	.byte	0x86
 	.4byte	0x7e
 	.byte	0x4
 	.byte	0
 	.uleb128 0x3
-	.4byte	.LASF18
-	.byte	0x6
-	.byte	0x88
-	.4byte	0xb2
-	.uleb128 0x2
-	.byte	0x1
-	.byte	0x2
 	.4byte	.LASF19
+	.byte	0x6
+	.byte	0x8b
+	.4byte	0xb9
 	.uleb128 0x8
 	.4byte	0x7e
 	.uleb128 0x9
@@ -473,8 +473,8 @@ reasonSpinlock:
 	.4byte	.LASF35
 	.byte	0x1
 	.byte	0x2f
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x19a
@@ -547,8 +547,8 @@ reasonSpinlock:
 	.4byte	.LASF36
 	.byte	0x1
 	.byte	0x48
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2e0
@@ -563,7 +563,7 @@ reasonSpinlock:
 	.4byte	0x2f0
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5236
+	.4byte	__func__$5340
 	.uleb128 0xe
 	.4byte	0xea
 	.4byte	.LBB14
@@ -702,7 +702,7 @@ reasonSpinlock:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5236
+	.4byte	__func__$5340
 	.uleb128 0x12
 	.uleb128 0x1
 	.byte	0x5d
@@ -724,8 +724,8 @@ reasonSpinlock:
 	.4byte	.LASF37
 	.byte	0x1
 	.byte	0x55
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x37c
@@ -740,7 +740,7 @@ reasonSpinlock:
 	.4byte	0x38c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5240
+	.4byte	__func__$5344
 	.uleb128 0x11
 	.4byte	.LVL20
 	.4byte	0x3f5
@@ -762,7 +762,7 @@ reasonSpinlock:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5240
+	.4byte	__func__$5344
 	.uleb128 0x12
 	.uleb128 0x1
 	.byte	0x5d
@@ -805,7 +805,7 @@ reasonSpinlock:
 	.4byte	.LASF24
 	.byte	0x1
 	.byte	0x27
-	.4byte	0xd3
+	.4byte	0xda
 	.uleb128 0x5
 	.byte	0x3
 	.4byte	reasonSpinlock
@@ -830,17 +830,17 @@ reasonSpinlock:
 	.4byte	.LASF26
 	.4byte	.LASF26
 	.byte	0x6
-	.byte	0xd9
+	.byte	0xdc
 	.uleb128 0x1f
 	.4byte	.LASF27
 	.4byte	.LASF27
 	.byte	0x6
-	.byte	0xd8
+	.byte	0xdb
 	.uleb128 0x20
 	.4byte	.LASF28
 	.4byte	.LASF28
 	.byte	0x6
-	.2byte	0x11a
+	.2byte	0x129
 	.uleb128 0x1f
 	.4byte	.LASF29
 	.4byte	.LASF29
@@ -1296,7 +1296,7 @@ reasonSpinlock:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL18
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -1318,7 +1318,7 @@ reasonSpinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL25
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1334,22 +1334,22 @@ reasonSpinlock:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB16
-	.4byte	.LFE16
-	.4byte	.LFB17
-	.4byte	.LFE17
-	.4byte	.LFB18
-	.4byte	.LFE18
+	.4byte	.LFB20
+	.4byte	.LFE20
+	.4byte	.LFB21
+	.4byte	.LFE21
+	.4byte	.LFB22
+	.4byte	.LFE22
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -1361,7 +1361,7 @@ reasonSpinlock:
 	.string	"coreId"
 .LASF27:
 	.string	"vTaskExitCritical"
-.LASF18:
+.LASF19:
 	.string	"portMUX_TYPE"
 .LASF4:
 	.string	"__int32_t"
@@ -1391,13 +1391,11 @@ reasonSpinlock:
 	.string	"esp_err_t"
 .LASF5:
 	.string	"__uint32_t"
-.LASF33:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF26:
 	.string	"vTaskEnterCritical"
 .LASF30:
 	.string	"__assert_func"
-.LASF16:
+.LASF17:
 	.string	"owner"
 .LASF6:
 	.string	"unsigned int"
@@ -1405,6 +1403,8 @@ reasonSpinlock:
 	.string	"char"
 .LASF25:
 	.string	"reason"
+.LASF33:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF9:
 	.string	"int32_t"
 .LASF12:
@@ -1415,7 +1415,7 @@ reasonSpinlock:
 	.string	"myReasonVal"
 .LASF34:
 	.string	"xPortGetCoreID"
-.LASF17:
+.LASF18:
 	.string	"count"
 .LASF37:
 	.string	"esp_crosscore_int_send_yield"
@@ -1425,10 +1425,10 @@ reasonSpinlock:
 	.string	"long int"
 .LASF0:
 	.string	"signed char"
-.LASF19:
+.LASF16:
 	.string	"_Bool"
 .LASF29:
 	.string	"esp_intr_alloc"
 .LASF24:
 	.string	"reasonSpinlock"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

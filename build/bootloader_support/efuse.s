@@ -779,6 +779,8 @@ esp_efuse_disable_basic_rom_console:
 	.string	"esp_log_level_t"
 .LASF14:
 	.string	"ESP_LOG_ERROR"
+.LASF29:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bootloader_support"
 .LASF20:
 	.string	"block_start"
 .LASF22:
@@ -817,8 +819,6 @@ esp_efuse_disable_basic_rom_console:
 	.string	"long long int"
 .LASF12:
 	.string	"char"
-.LASF29:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bootloader_support"
 .LASF2:
 	.string	"short int"
 .LASF13:
@@ -835,4 +835,4 @@ esp_efuse_disable_basic_rom_console:
 	.string	"ESP_LOG_VERBOSE"
 .LASF15:
 	.string	"ESP_LOG_WARN"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

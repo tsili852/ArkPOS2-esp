@@ -5,7 +5,7 @@
 	.align	4
 	.type	sdspi_msg_crc7, @function
 sdspi_msg_crc7:
-.LFB10:
+.LFB14:
 	.file 1 "C:/esp/esp-idf/components/driver/sdspi_transaction.c"
 	.loc 1 33 0
 .LVL0:
@@ -21,7 +21,7 @@ sdspi_msg_crc7:
 	mov.n	a2, a10
 .LVL3:
 	retw.n
-.LFE10:
+.LFE14:
 	.size	sdspi_msg_crc7, .-sdspi_msg_crc7
 	.global	__bswapsi2
 	.section	.text.make_hw_cmd,"ax",@progbits
@@ -29,7 +29,7 @@ sdspi_msg_crc7:
 	.global	make_hw_cmd
 	.type	make_hw_cmd, @function
 make_hw_cmd:
-.LFB11:
+.LFB15:
 	.loc 1 40 0
 .LVL4:
 	entry	sp, 48
@@ -87,7 +87,7 @@ make_hw_cmd:
 	or	a10, a8, a10
 	s8i	a10, a4, 5
 	retw.n
-.LFE11:
+.LFE15:
 	.size	make_hw_cmd, .-make_hw_cmd
 	.section	.text.sdspi_host_do_transaction,"ax",@progbits
 	.literal_position
@@ -97,7 +97,7 @@ make_hw_cmd:
 	.global	sdspi_host_do_transaction
 	.type	sdspi_host_do_transaction, @function
 sdspi_host_do_transaction:
-.LFB12:
+.LFB16:
 	.loc 1 54 0
 .LVL10:
 	entry	sp, 64
@@ -267,7 +267,7 @@ sdspi_host_do_transaction:
 .LVL34:
 	.loc 1 122 0
 	retw.n
-.LFE12:
+.LFE16:
 	.size	sdspi_host_do_transaction, .-sdspi_host_do_transaction
 	.section	.bss.s_app_cmd,"aw",@nobits
 	.type	s_app_cmd, @object
@@ -299,10 +299,10 @@ s_lock:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI0-.LFB10
+	.4byte	.LCFI0-.LFB14
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -311,10 +311,10 @@ s_lock:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI1-.LFB11
+	.4byte	.LCFI1-.LFB15
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -323,10 +323,10 @@ s_lock:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI2-.LFB12
+	.4byte	.LCFI2-.LFB16
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -661,8 +661,8 @@ s_lock:
 	.byte	0x1
 	.byte	0x20
 	.4byte	0xbd
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2b0
@@ -703,8 +703,8 @@ s_lock:
 	.4byte	.LASF61
 	.byte	0x1
 	.byte	0x27
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x339
@@ -773,8 +773,8 @@ s_lock:
 	.byte	0x1
 	.byte	0x35
 	.4byte	0xde
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3fb
@@ -1383,7 +1383,7 @@ s_lock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL3
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1397,7 +1397,7 @@ s_lock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL5
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1411,7 +1411,7 @@ s_lock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL8
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1425,7 +1425,7 @@ s_lock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL20
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1450,7 +1450,7 @@ s_lock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL33
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1500,7 +1500,7 @@ s_lock:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL24
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -1513,22 +1513,22 @@ s_lock:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB10
-	.4byte	.LFE10
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB12
-	.4byte	.LFE12
+	.4byte	.LFB14
+	.4byte	.LFE14
+	.4byte	.LFB15
+	.4byte	.LFE15
+	.4byte	.LFB16
+	.4byte	.LFE16
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -1560,6 +1560,8 @@ s_lock:
 	.string	"uint8_t"
 .LASF28:
 	.string	"opcode"
+.LASF59:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF58:
 	.string	"C:/esp/esp-idf/components/driver/sdspi_transaction.c"
 .LASF36:
@@ -1610,8 +1612,6 @@ s_lock:
 	.string	"sdspi_hw_cmd_t"
 .LASF1:
 	.string	"short unsigned int"
-.LASF59:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF15:
 	.string	"char"
 .LASF24:
@@ -1660,4 +1660,4 @@ s_lock:
 	.string	"ESP_LOG_ERROR"
 .LASF19:
 	.string	"esp_err_t"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

@@ -7024,8 +7024,6 @@ crypto_onetimeauth_poly1305_donna_implementation:
 	.string	"long long int"
 .LASF3:
 	.string	"signed char"
-.LASF44:
-	.string	"crypto_verify_16"
 .LASF30:
 	.string	"poly1305_update"
 .LASF32:
@@ -7058,6 +7056,8 @@ crypto_onetimeauth_poly1305_donna_implementation:
 	.string	"short unsigned int"
 .LASF41:
 	.string	"crypto_onetimeauth_poly1305_donna_verify"
+.LASF47:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF22:
 	.string	"onetimeauth_final"
 .LASF15:
@@ -7104,6 +7104,6 @@ crypto_onetimeauth_poly1305_donna_implementation:
 	.string	"bytes"
 .LASF9:
 	.string	"uint8_t"
-.LASF47:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\libsodium"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+.LASF44:
+	.string	"crypto_verify_16"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

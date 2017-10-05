@@ -7,7 +7,7 @@
 	.align	4
 	.type	emac_setup_tx_desc, @function
 emac_setup_tx_desc:
-.LFB24:
+.LFB28:
 	.file 1 "C:/esp/esp-idf/components/ethernet/emac_main.c"
 	.loc 1 89 0
 .LVL0:
@@ -21,13 +21,13 @@ emac_setup_tx_desc:
 	l32r	a8, .LC1
 	s32i.n	a8, a2, 0
 	retw.n
-.LFE24:
+.LFE28:
 	.size	emac_setup_tx_desc, .-emac_setup_tx_desc
 	.section	.text.emac_clean_tx_desc,"ax",@progbits
 	.align	4
 	.type	emac_clean_tx_desc, @function
 emac_clean_tx_desc:
-.LFB25:
+.LFB29:
 	.loc 1 96 0
 .LVL2:
 	entry	sp, 32
@@ -38,7 +38,7 @@ emac_clean_tx_desc:
 	.loc 1 98 0
 	s32i.n	a8, a2, 0
 	retw.n
-.LFE25:
+.LFE29:
 	.size	emac_clean_tx_desc, .-emac_clean_tx_desc
 	.section	.text.emac_clean_rx_desc,"ax",@progbits
 	.literal_position
@@ -47,7 +47,7 @@ emac_clean_tx_desc:
 	.align	4
 	.type	emac_clean_rx_desc, @function
 emac_clean_rx_desc:
-.LFB26:
+.LFB30:
 	.loc 1 102 0
 .LVL3:
 	entry	sp, 32
@@ -65,7 +65,7 @@ emac_clean_rx_desc:
 	l32r	a3, .LC3
 	s32i.n	a3, a2, 0
 	retw.n
-.LFE26:
+.LFE30:
 	.size	emac_clean_rx_desc, .-emac_clean_rx_desc
 	.section	.text.emac_set_tx_base_reg,"ax",@progbits
 	.literal_position
@@ -74,7 +74,7 @@ emac_clean_rx_desc:
 	.align	4
 	.type	emac_set_tx_base_reg, @function
 emac_set_tx_base_reg:
-.LFB27:
+.LFB31:
 	.loc 1 111 0
 	entry	sp, 32
 .LCFI3:
@@ -85,7 +85,7 @@ emac_set_tx_base_reg:
 	memw
 	s32i.n	a9, a8, 0
 	retw.n
-.LFE27:
+.LFE31:
 	.size	emac_set_tx_base_reg, .-emac_set_tx_base_reg
 	.section	.text.emac_set_rx_base_reg,"ax",@progbits
 	.literal_position
@@ -94,7 +94,7 @@ emac_set_tx_base_reg:
 	.align	4
 	.type	emac_set_rx_base_reg, @function
 emac_set_rx_base_reg:
-.LFB28:
+.LFB32:
 	.loc 1 116 0
 	entry	sp, 32
 .LCFI4:
@@ -105,7 +105,7 @@ emac_set_rx_base_reg:
 	memw
 	s32i.n	a9, a8, 0
 	retw.n
-.LFE28:
+.LFE32:
 	.size	emac_set_rx_base_reg, .-emac_set_rx_base_reg
 	.section	.text.emac_reset_dma_chain,"ax",@progbits
 	.literal_position
@@ -113,7 +113,7 @@ emac_set_rx_base_reg:
 	.align	4
 	.type	emac_reset_dma_chain, @function
 emac_reset_dma_chain:
-.LFB29:
+.LFB33:
 	.loc 1 140 0
 	entry	sp, 32
 .LCFI5:
@@ -132,7 +132,7 @@ emac_reset_dma_chain:
 	.loc 1 147 0
 	s32i.n	a9, a8, 32
 	retw.n
-.LFE29:
+.LFE33:
 	.size	emac_reset_dma_chain, .-emac_reset_dma_chain
 	.section	.text.emac_init_dma_chain,"ax",@progbits
 	.literal_position
@@ -144,7 +144,7 @@ emac_reset_dma_chain:
 	.align	4
 	.type	emac_init_dma_chain, @function
 emac_init_dma_chain:
-.LFB30:
+.LFB34:
 	.loc 1 151 0
 	entry	sp, 32
 .LCFI6:
@@ -268,7 +268,7 @@ emac_init_dma_chain:
 	l32i.n	a2, a2, 24
 	s32i.n	a2, a3, 12
 	retw.n
-.LFE30:
+.LFE34:
 	.size	emac_init_dma_chain, .-emac_init_dma_chain
 	.section	.text.emac_set_user_config_data,"ax",@progbits
 	.literal_position
@@ -276,7 +276,7 @@ emac_init_dma_chain:
 	.align	4
 	.type	emac_set_user_config_data, @function
 emac_set_user_config_data:
-.LFB34:
+.LFB38:
 	.loc 1 248 0
 .LVL25:
 	entry	sp, 32
@@ -320,7 +320,7 @@ emac_set_user_config_data:
 .LVL26:
 	s32i	a2, a8, 96
 	retw.n
-.LFE34:
+.LFE38:
 	.size	emac_set_user_config_data, .-emac_set_user_config_data
 	.section	.text.emac_enable_intr,"ax",@progbits
 	.literal_position
@@ -329,7 +329,7 @@ emac_set_user_config_data:
 	.align	4
 	.type	emac_enable_intr, @function
 emac_enable_intr:
-.LFB35:
+.LFB39:
 	.loc 1 271 0
 	entry	sp, 32
 .LCFI8:
@@ -339,7 +339,7 @@ emac_enable_intr:
 	memw
 	s32i.n	a9, a8, 0
 	retw.n
-.LFE35:
+.LFE39:
 	.size	emac_enable_intr, .-emac_enable_intr
 	.section	.text.emac_disable_intr,"ax",@progbits
 	.literal_position
@@ -347,7 +347,7 @@ emac_enable_intr:
 	.align	4
 	.type	emac_disable_intr, @function
 emac_disable_intr:
-.LFB36:
+.LFB40:
 	.loc 1 276 0
 	entry	sp, 32
 .LCFI9:
@@ -357,7 +357,7 @@ emac_disable_intr:
 	memw
 	s32i.n	a9, a8, 0
 	retw.n
-.LFE36:
+.LFE40:
 	.size	emac_disable_intr, .-emac_disable_intr
 	.section	.iram1,"ax",@progbits
 	.literal_position
@@ -366,7 +366,7 @@ emac_disable_intr:
 	.align	4
 	.type	emac_get_rxbuf_count_in_intr, @function
 emac_get_rxbuf_count_in_intr:
-.LFB42:
+.LFB46:
 	.loc 1 401 0
 	entry	sp, 32
 .LCFI10:
@@ -400,7 +400,7 @@ emac_get_rxbuf_count_in_intr:
 	beq	a10, a9, .L18
 	.loc 1 411 0
 	retw.n
-.LFE42:
+.LFE46:
 	.size	emac_get_rxbuf_count_in_intr, .-emac_get_rxbuf_count_in_intr
 	.section	.text.emac_set_macaddr_reg,"ax",@progbits
 	.literal_position
@@ -411,7 +411,7 @@ emac_get_rxbuf_count_in_intr:
 	.align	4
 	.type	emac_set_macaddr_reg, @function
 emac_set_macaddr_reg:
-.LFB46:
+.LFB50:
 	.loc 1 573 0
 	entry	sp, 32
 .LCFI11:
@@ -444,13 +444,13 @@ emac_set_macaddr_reg:
 	memw
 	s32i.n	a8, a9, 0
 	retw.n
-.LFE46:
+.LFE50:
 	.size	emac_set_macaddr_reg, .-emac_set_macaddr_reg
 	.section	.text.emac_hw_init,"ax",@progbits
 	.align	4
 	.type	emac_hw_init, @function
 emac_hw_init:
-.LFB49:
+.LFB53:
 	.loc 1 638 0
 	entry	sp, 32
 .LCFI12:
@@ -458,7 +458,7 @@ emac_hw_init:
 	call8	emac_init_dma_chain
 .LVL32:
 	retw.n
-.LFE49:
+.LFE53:
 	.size	emac_hw_init, .-emac_hw_init
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -515,7 +515,7 @@ emac_hw_init:
 	.align	4
 	.type	emac_verify_args, @function
 emac_verify_args:
-.LFB37:
+.LFB41:
 	.loc 1 281 0
 	entry	sp, 32
 .LCFI13:
@@ -730,7 +730,7 @@ emac_verify_args:
 .L32:
 	.loc 1 340 0
 	retw.n
-.LFE37:
+.LFE41:
 	.size	emac_verify_args, .-emac_verify_args
 	.section	.rodata.str1.4
 	.align	4
@@ -752,7 +752,7 @@ emac_verify_args:
 	.align	4
 	.type	emac_process_rx, @function
 emac_process_rx:
-.LFB44:
+.LFB48:
 	.loc 1 491 0
 	entry	sp, 32
 .LCFI14:
@@ -940,7 +940,7 @@ emac_process_rx:
 .LVL84:
 .L34:
 	retw.n
-.LFE44:
+.LFE48:
 	.size	emac_process_rx, .-emac_process_rx
 	.section	.rodata.str1.4
 	.align	4
@@ -957,7 +957,7 @@ emac_process_rx:
 	.align	4
 	.type	emac_process_tx, @function
 emac_process_tx:
-.LFB40:
+.LFB44:
 	.loc 1 353 0
 	entry	sp, 32
 .LCFI15:
@@ -1040,7 +1040,7 @@ emac_process_tx:
 .LVL93:
 .L45:
 	retw.n
-.LFE40:
+.LFE44:
 	.size	emac_process_tx, .-emac_process_tx
 	.section	.rodata.str1.4
 	.align	4
@@ -1057,7 +1057,7 @@ emac_process_tx:
 	.align	4
 	.type	emac_process_rx_unavail, @function
 emac_process_rx_unavail:
-.LFB43:
+.LFB47:
 	.loc 1 464 0
 	entry	sp, 32
 .LCFI16:
@@ -1158,7 +1158,7 @@ emac_process_rx_unavail:
 .LVL101:
 .L50:
 	retw.n
-.LFE43:
+.LFE47:
 	.size	emac_process_rx_unavail, .-emac_process_rx_unavail
 	.section	.text.emac_check_phy_init,"ax",@progbits
 	.literal_position
@@ -1171,7 +1171,7 @@ emac_process_rx_unavail:
 	.align	4
 	.type	emac_check_phy_init, @function
 emac_check_phy_init:
-.LFB47:
+.LFB51:
 	.loc 1 579 0
 	entry	sp, 32
 .LCFI17:
@@ -1275,7 +1275,7 @@ emac_check_phy_init:
 	call8	emac_mac_enable_txrx
 .LVL110:
 	retw.n
-.LFE47:
+.LFE51:
 	.size	emac_check_phy_init, .-emac_check_phy_init
 	.section	.rodata.str1.4
 	.align	4
@@ -1293,7 +1293,7 @@ emac_check_phy_init:
 	.align	4
 	.type	emac_process_link_updown, @function
 emac_process_link_updown:
-.LFB48:
+.LFB52:
 	.loc 1 611 0
 .LVL111:
 	entry	sp, 80
@@ -1374,7 +1374,7 @@ emac_process_link_updown:
 	call8	esp_event_send
 .LVL131:
 	retw.n
-.LFE48:
+.LFE52:
 	.size	emac_process_link_updown, .-emac_process_link_updown
 	.section	.text.emac_macaddr_init,"ax",@progbits
 	.literal_position
@@ -1382,7 +1382,7 @@ emac_process_link_updown:
 	.align	4
 	.type	emac_macaddr_init, @function
 emac_macaddr_init:
-.LFB22:
+.LFB26:
 	.loc 1 79 0
 	entry	sp, 32
 .LCFI19:
@@ -1392,7 +1392,7 @@ emac_macaddr_init:
 	call8	esp_read_mac
 .LVL132:
 	retw.n
-.LFE22:
+.LFE26:
 	.size	emac_macaddr_init, .-emac_macaddr_init
 	.section	.rodata.str1.4
 	.align	4
@@ -1406,7 +1406,7 @@ emac_macaddr_init:
 	.align	4
 	.type	emac_link_check_timer_init, @function
 emac_link_check_timer_init:
-.LFB54:
+.LFB58:
 	.loc 1 708 0
 	entry	sp, 32
 .LCFI20:
@@ -1433,7 +1433,7 @@ emac_link_check_timer_init:
 	movi.n	a2, 1
 	.loc 1 716 0
 	retw.n
-.LFE54:
+.LFE58:
 	.size	emac_link_check_timer_init, .-emac_link_check_timer_init
 	.section	.text.emac_link_check_timer_start,"ax",@progbits
 	.literal_position
@@ -1441,7 +1441,7 @@ emac_link_check_timer_init:
 	.align	4
 	.type	emac_link_check_timer_start, @function
 emac_link_check_timer_start:
-.LFB55:
+.LFB59:
 	.loc 1 719 0
 	entry	sp, 32
 .LCFI21:
@@ -1466,7 +1466,7 @@ emac_link_check_timer_start:
 	movi.n	a2, 1
 	.loc 1 725 0
 	retw.n
-.LFE55:
+.LFE59:
 	.size	emac_link_check_timer_start, .-emac_link_check_timer_start
 	.section	.text.emac_link_check_timer_delete,"ax",@progbits
 	.literal_position
@@ -1474,7 +1474,7 @@ emac_link_check_timer_start:
 	.align	4
 	.type	emac_link_check_timer_delete, @function
 emac_link_check_timer_delete:
-.LFB57:
+.LFB61:
 	.loc 1 737 0
 	entry	sp, 32
 .LCFI22:
@@ -1493,7 +1493,7 @@ emac_link_check_timer_delete:
 	.loc 1 741 0
 	movi.n	a2, 1
 	retw.n
-.LFE57:
+.LFE61:
 	.size	emac_link_check_timer_delete, .-emac_link_check_timer_delete
 	.section	.rodata.str1.4
 	.align	4
@@ -1512,7 +1512,7 @@ emac_link_check_timer_delete:
 	.align	4
 	.type	emac_start, @function
 emac_start:
-.LFB58:
+.LFB62:
 	.loc 1 744 0
 .LVL138:
 	entry	sp, 80
@@ -1618,7 +1618,7 @@ emac_start:
 	call8	esp_log_write
 .LVL159:
 	retw.n
-.LFE58:
+.LFE62:
 	.size	emac_start, .-emac_start
 	.section	.text.emac_link_check_timer_stop,"ax",@progbits
 	.literal_position
@@ -1626,7 +1626,7 @@ emac_start:
 	.align	4
 	.type	emac_link_check_timer_stop, @function
 emac_link_check_timer_stop:
-.LFB56:
+.LFB60:
 	.loc 1 728 0
 	entry	sp, 32
 .LCFI24:
@@ -1648,7 +1648,7 @@ emac_link_check_timer_stop:
 	movi.n	a2, 1
 	.loc 1 734 0
 	retw.n
-.LFE56:
+.LFE60:
 	.size	emac_link_check_timer_stop, .-emac_link_check_timer_stop
 	.section	.rodata.str1.4
 	.align	4
@@ -1667,7 +1667,7 @@ emac_link_check_timer_stop:
 	.align	4
 	.type	emac_stop, @function
 emac_stop:
-.LFB60:
+.LFB64:
 	.loc 1 818 0
 .LVL161:
 	entry	sp, 80
@@ -1741,7 +1741,7 @@ emac_stop:
 	call8	esp_log_write
 .LVL176:
 	retw.n
-.LFE60:
+.LFE64:
 	.size	emac_stop, .-emac_stop
 	.section	.text.emac_init_default_data,"ax",@progbits
 	.literal_position
@@ -1749,7 +1749,7 @@ emac_stop:
 	.align	4
 	.type	emac_init_default_data, @function
 emac_init_default_data:
-.LFB51:
+.LFB55:
 	.loc 1 680 0
 	entry	sp, 32
 .LCFI26:
@@ -1760,7 +1760,7 @@ emac_init_default_data:
 	call8	memset
 .LVL177:
 	retw.n
-.LFE51:
+.LFE55:
 	.size	emac_init_default_data, .-emac_init_default_data
 	.section	.text.esp_eth_get_mac,"ax",@progbits
 	.literal_position
@@ -1769,7 +1769,7 @@ emac_init_default_data:
 	.global	esp_eth_get_mac
 	.type	esp_eth_get_mac, @function
 esp_eth_get_mac:
-.LFB23:
+.LFB27:
 	.loc 1 84 0
 .LVL178:
 	entry	sp, 32
@@ -1781,7 +1781,7 @@ esp_eth_get_mac:
 	call8	memcpy
 .LVL179:
 	retw.n
-.LFE23:
+.LFE27:
 	.size	esp_eth_get_mac, .-esp_eth_get_mac
 	.section	.text.esp_eth_smi_write,"ax",@progbits
 	.literal_position
@@ -1792,7 +1792,7 @@ esp_eth_get_mac:
 	.global	esp_eth_smi_write
 	.type	esp_eth_smi_write, @function
 esp_eth_smi_write:
-.LFB31:
+.LFB35:
 	.loc 1 199 0
 .LVL180:
 	entry	sp, 32
@@ -1832,7 +1832,7 @@ esp_eth_smi_write:
 	bbsi	a8, 0, .L89
 	.loc 1 210 0
 	retw.n
-.LFE31:
+.LFE35:
 	.size	esp_eth_smi_write, .-esp_eth_smi_write
 	.section	.text.esp_eth_smi_read,"ax",@progbits
 	.literal_position
@@ -1843,7 +1843,7 @@ esp_eth_smi_write:
 	.global	esp_eth_smi_read
 	.type	esp_eth_smi_read, @function
 esp_eth_smi_read:
-.LFB32:
+.LFB36:
 	.loc 1 213 0
 .LVL183:
 	entry	sp, 32
@@ -1885,7 +1885,7 @@ esp_eth_smi_read:
 	extui	a2, a2, 0, 16
 .LVL187:
 	retw.n
-.LFE32:
+.LFE36:
 	.size	esp_eth_smi_read, .-esp_eth_smi_read
 	.section	.rodata.str1.4
 	.align	4
@@ -1900,7 +1900,7 @@ esp_eth_smi_read:
 	.global	esp_eth_smi_wait_value
 	.type	esp_eth_smi_wait_value, @function
 esp_eth_smi_wait_value:
-.LFB33:
+.LFB37:
 	.loc 1 229 0
 .LVL188:
 	entry	sp, 48
@@ -1972,32 +1972,32 @@ esp_eth_smi_wait_value:
 .LVL203:
 	.loc 1 244 0
 	retw.n
-.LFE33:
+.LFE37:
 	.size	esp_eth_smi_wait_value, .-esp_eth_smi_wait_value
 	.section	.text.emac_set_mac_addr,"ax",@progbits
 	.align	4
 	.global	emac_set_mac_addr
 	.type	emac_set_mac_addr, @function
 emac_set_mac_addr:
-.LFB38:
+.LFB42:
 	.loc 1 344 0
 	entry	sp, 32
 .LCFI31:
 	retw.n
-.LFE38:
+.LFE42:
 	.size	emac_set_mac_addr, .-emac_set_mac_addr
 	.section	.text.emac_check_mac_addr,"ax",@progbits
 	.align	4
 	.global	emac_check_mac_addr
 	.type	emac_check_mac_addr, @function
 emac_check_mac_addr:
-.LFB39:
+.LFB43:
 	.loc 1 349 0
 	.loc 1 349 0
 	entry	sp, 32
 .LCFI32:
 	retw.n
-.LFE39:
+.LFE43:
 	.size	emac_check_mac_addr, .-emac_check_mac_addr
 	.section	.text.esp_eth_free_rx_buf,"ax",@progbits
 	.literal_position
@@ -2014,7 +2014,7 @@ emac_check_mac_addr:
 	.global	esp_eth_free_rx_buf
 	.type	esp_eth_free_rx_buf, @function
 esp_eth_free_rx_buf:
-.LFB41:
+.LFB45:
 	.loc 1 377 0
 .LVL204:
 	.loc 1 377 0
@@ -2116,7 +2116,7 @@ esp_eth_free_rx_buf:
 .LVL212:
 .L100:
 	retw.n
-.LFE41:
+.LFE45:
 	.size	esp_eth_free_rx_buf, .-esp_eth_free_rx_buf
 	.section	.rodata.str1.4
 	.align	4
@@ -2134,7 +2134,7 @@ esp_eth_free_rx_buf:
 	.global	esp_eth_tx
 	.type	esp_eth_tx, @function
 esp_eth_tx:
-.LFB50:
+.LFB54:
 	.loc 1 648 0
 .LVL213:
 	entry	sp, 32
@@ -2232,7 +2232,7 @@ esp_eth_tx:
 .LVL226:
 	.loc 1 677 0
 	retw.n
-.LFE50:
+.LFE54:
 	.size	esp_eth_tx, .-esp_eth_tx
 	.section	.text.emac_process_link_check,"ax",@progbits
 	.literal_position
@@ -2241,7 +2241,7 @@ esp_eth_tx:
 	.global	emac_process_link_check
 	.type	emac_process_link_check, @function
 emac_process_link_check:
-.LFB52:
+.LFB56:
 	.loc 1 685 0
 	entry	sp, 32
 .LCFI35:
@@ -2275,7 +2275,7 @@ emac_process_link_check:
 .LVL229:
 .L109:
 	retw.n
-.LFE52:
+.LFE56:
 	.size	emac_process_link_check, .-emac_process_link_check
 	.section	.rodata.str1.4
 	.align	4
@@ -2293,7 +2293,7 @@ emac_process_link_check:
 	.global	emac_task
 	.type	emac_task, @function
 emac_task:
-.LFB63:
+.LFB67:
 	.loc 1 908 0
 .LVL230:
 	entry	sp, 48
@@ -2395,7 +2395,7 @@ emac_task:
 .LVL242:
 	.loc 1 937 0 discriminator 1
 	j	.L114
-.LFE63:
+.LFE67:
 	.size	emac_task, .-emac_task
 	.section	.iram1
 	.literal_position
@@ -2406,7 +2406,7 @@ emac_task:
 	.global	emac_post
 	.type	emac_post, @function
 emac_post:
-.LFB64:
+.LFB68:
 	.loc 1 944 0
 .LVL243:
 	entry	sp, 48
@@ -2509,14 +2509,14 @@ emac_post:
 .LVL258:
 	.loc 1 980 0
 	retw.n
-.LFE64:
+.LFE68:
 	.size	emac_post, .-emac_post
 	.section	.text.emac_link_check_func,"ax",@progbits
 	.align	4
 	.global	emac_link_check_func
 	.type	emac_link_check_func, @function
 emac_link_check_func:
-.LFB53:
+.LFB57:
 	.loc 1 703 0
 .LVL259:
 	entry	sp, 32
@@ -2527,7 +2527,7 @@ emac_link_check_func:
 	call8	emac_post
 .LVL260:
 	retw.n
-.LFE53:
+.LFE57:
 	.size	emac_link_check_func, .-emac_link_check_func
 	.section	.text.emac_ioctl,"ax",@progbits
 	.literal_position
@@ -2538,7 +2538,7 @@ emac_link_check_func:
 	.align	4
 	.type	emac_ioctl, @function
 emac_ioctl:
-.LFB62:
+.LFB66:
 	.loc 1 868 0
 .LVL261:
 	entry	sp, 32
@@ -2653,7 +2653,7 @@ emac_ioctl:
 	movi.n	a2, -1
 	.loc 1 905 0
 	retw.n
-.LFE62:
+.LFE66:
 	.size	emac_ioctl, .-emac_ioctl
 	.section	.text.esp_eth_enable,"ax",@progbits
 	.literal_position
@@ -2662,7 +2662,7 @@ emac_ioctl:
 	.global	esp_eth_enable
 	.type	esp_eth_enable, @function
 esp_eth_enable:
-.LFB59:
+.LFB63:
 	.loc 1 795 0
 	entry	sp, 48
 .LCFI40:
@@ -2702,7 +2702,7 @@ esp_eth_enable:
 	movi.n	a2, 0
 	.loc 1 815 0
 	retw.n
-.LFE59:
+.LFE63:
 	.size	esp_eth_enable, .-esp_eth_enable
 	.section	.text.esp_eth_disable,"ax",@progbits
 	.literal_position
@@ -2711,7 +2711,7 @@ esp_eth_enable:
 	.global	esp_eth_disable
 	.type	esp_eth_disable, @function
 esp_eth_disable:
-.LFB61:
+.LFB65:
 	.loc 1 845 0
 	entry	sp, 48
 .LCFI41:
@@ -2751,7 +2751,7 @@ esp_eth_disable:
 	movi.n	a2, 0
 	.loc 1 865 0
 	retw.n
-.LFE61:
+.LFE65:
 	.size	esp_eth_disable, .-esp_eth_disable
 	.section	.iram1
 	.literal_position
@@ -2763,7 +2763,7 @@ esp_eth_disable:
 	.align	4
 	.type	emac_process_intr, @function
 emac_process_intr:
-.LFB45:
+.LFB49:
 	.loc 1 544 0
 .LVL289:
 	entry	sp, 32
@@ -2854,7 +2854,7 @@ emac_process_intr:
 .LVL294:
 .L152:
 	retw.n
-.LFE45:
+.LFE49:
 	.size	emac_process_intr, .-emac_process_intr
 	.section	.rodata.str1.4
 	.align	4
@@ -2885,7 +2885,7 @@ emac_process_intr:
 	.global	esp_eth_init_internal
 	.type	esp_eth_init_internal, @function
 esp_eth_init_internal:
-.LFB66:
+.LFB70:
 	.loc 1 989 0
 .LVL295:
 	entry	sp, 48
@@ -3036,14 +3036,14 @@ esp_eth_init_internal:
 .L158:
 	.loc 1 1042 0
 	retw.n
-.LFE66:
+.LFE70:
 	.size	esp_eth_init_internal, .-esp_eth_init_internal
 	.section	.text.esp_eth_init,"ax",@progbits
 	.align	4
 	.global	esp_eth_init
 	.type	esp_eth_init, @function
 esp_eth_init:
-.LFB65:
+.LFB69:
 	.loc 1 983 0
 .LVL321:
 	entry	sp, 32
@@ -3059,7 +3059,7 @@ esp_eth_init:
 	mov.n	a2, a10
 .LVL324:
 	retw.n
-.LFE65:
+.LFE69:
 	.size	esp_eth_init, .-esp_eth_init
 	.section	.bss.pause_send,"aw",@nobits
 	.type	pause_send, @object
@@ -3164,10 +3164,10 @@ emac_config:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI0-.LFB24
+	.4byte	.LCFI0-.LFB28
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3176,10 +3176,10 @@ emac_config:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI1-.LFB25
+	.4byte	.LCFI1-.LFB29
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3188,10 +3188,10 @@ emac_config:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI2-.LFB26
+	.4byte	.LCFI2-.LFB30
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3200,10 +3200,10 @@ emac_config:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.byte	0x4
-	.4byte	.LCFI3-.LFB27
+	.4byte	.LCFI3-.LFB31
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3212,10 +3212,10 @@ emac_config:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.byte	0x4
-	.4byte	.LCFI4-.LFB28
+	.4byte	.LCFI4-.LFB32
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3224,10 +3224,10 @@ emac_config:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.byte	0x4
-	.4byte	.LCFI5-.LFB29
+	.4byte	.LCFI5-.LFB33
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3236,10 +3236,10 @@ emac_config:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.byte	0x4
-	.4byte	.LCFI6-.LFB30
+	.4byte	.LCFI6-.LFB34
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3248,10 +3248,10 @@ emac_config:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.byte	0x4
-	.4byte	.LCFI7-.LFB34
+	.4byte	.LCFI7-.LFB38
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3260,10 +3260,10 @@ emac_config:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.byte	0x4
-	.4byte	.LCFI8-.LFB35
+	.4byte	.LCFI8-.LFB39
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3272,10 +3272,10 @@ emac_config:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
 	.byte	0x4
-	.4byte	.LCFI9-.LFB36
+	.4byte	.LCFI9-.LFB40
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3284,10 +3284,10 @@ emac_config:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB42
-	.4byte	.LFE42-.LFB42
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
 	.byte	0x4
-	.4byte	.LCFI10-.LFB42
+	.4byte	.LCFI10-.LFB46
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3296,10 +3296,10 @@ emac_config:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB46
-	.4byte	.LFE46-.LFB46
+	.4byte	.LFB50
+	.4byte	.LFE50-.LFB50
 	.byte	0x4
-	.4byte	.LCFI11-.LFB46
+	.4byte	.LCFI11-.LFB50
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3308,10 +3308,10 @@ emac_config:
 	.4byte	.LEFDE24-.LASFDE24
 .LASFDE24:
 	.4byte	.Lframe0
-	.4byte	.LFB49
-	.4byte	.LFE49-.LFB49
+	.4byte	.LFB53
+	.4byte	.LFE53-.LFB53
 	.byte	0x4
-	.4byte	.LCFI12-.LFB49
+	.4byte	.LCFI12-.LFB53
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3320,10 +3320,10 @@ emac_config:
 	.4byte	.LEFDE26-.LASFDE26
 .LASFDE26:
 	.4byte	.Lframe0
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
 	.byte	0x4
-	.4byte	.LCFI13-.LFB37
+	.4byte	.LCFI13-.LFB41
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3332,10 +3332,10 @@ emac_config:
 	.4byte	.LEFDE28-.LASFDE28
 .LASFDE28:
 	.4byte	.Lframe0
-	.4byte	.LFB44
-	.4byte	.LFE44-.LFB44
+	.4byte	.LFB48
+	.4byte	.LFE48-.LFB48
 	.byte	0x4
-	.4byte	.LCFI14-.LFB44
+	.4byte	.LCFI14-.LFB48
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3344,10 +3344,10 @@ emac_config:
 	.4byte	.LEFDE30-.LASFDE30
 .LASFDE30:
 	.4byte	.Lframe0
-	.4byte	.LFB40
-	.4byte	.LFE40-.LFB40
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
 	.byte	0x4
-	.4byte	.LCFI15-.LFB40
+	.4byte	.LCFI15-.LFB44
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3356,10 +3356,10 @@ emac_config:
 	.4byte	.LEFDE32-.LASFDE32
 .LASFDE32:
 	.4byte	.Lframe0
-	.4byte	.LFB43
-	.4byte	.LFE43-.LFB43
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
 	.byte	0x4
-	.4byte	.LCFI16-.LFB43
+	.4byte	.LCFI16-.LFB47
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3368,10 +3368,10 @@ emac_config:
 	.4byte	.LEFDE34-.LASFDE34
 .LASFDE34:
 	.4byte	.Lframe0
-	.4byte	.LFB47
-	.4byte	.LFE47-.LFB47
+	.4byte	.LFB51
+	.4byte	.LFE51-.LFB51
 	.byte	0x4
-	.4byte	.LCFI17-.LFB47
+	.4byte	.LCFI17-.LFB51
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3380,10 +3380,10 @@ emac_config:
 	.4byte	.LEFDE36-.LASFDE36
 .LASFDE36:
 	.4byte	.Lframe0
-	.4byte	.LFB48
-	.4byte	.LFE48-.LFB48
+	.4byte	.LFB52
+	.4byte	.LFE52-.LFB52
 	.byte	0x4
-	.4byte	.LCFI18-.LFB48
+	.4byte	.LCFI18-.LFB52
 	.byte	0xe
 	.uleb128 0x50
 	.align	4
@@ -3392,10 +3392,10 @@ emac_config:
 	.4byte	.LEFDE38-.LASFDE38
 .LASFDE38:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI19-.LFB22
+	.4byte	.LCFI19-.LFB26
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3404,10 +3404,10 @@ emac_config:
 	.4byte	.LEFDE40-.LASFDE40
 .LASFDE40:
 	.4byte	.Lframe0
-	.4byte	.LFB54
-	.4byte	.LFE54-.LFB54
+	.4byte	.LFB58
+	.4byte	.LFE58-.LFB58
 	.byte	0x4
-	.4byte	.LCFI20-.LFB54
+	.4byte	.LCFI20-.LFB58
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3416,10 +3416,10 @@ emac_config:
 	.4byte	.LEFDE42-.LASFDE42
 .LASFDE42:
 	.4byte	.Lframe0
-	.4byte	.LFB55
-	.4byte	.LFE55-.LFB55
+	.4byte	.LFB59
+	.4byte	.LFE59-.LFB59
 	.byte	0x4
-	.4byte	.LCFI21-.LFB55
+	.4byte	.LCFI21-.LFB59
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3428,10 +3428,10 @@ emac_config:
 	.4byte	.LEFDE44-.LASFDE44
 .LASFDE44:
 	.4byte	.Lframe0
-	.4byte	.LFB57
-	.4byte	.LFE57-.LFB57
+	.4byte	.LFB61
+	.4byte	.LFE61-.LFB61
 	.byte	0x4
-	.4byte	.LCFI22-.LFB57
+	.4byte	.LCFI22-.LFB61
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3440,10 +3440,10 @@ emac_config:
 	.4byte	.LEFDE46-.LASFDE46
 .LASFDE46:
 	.4byte	.Lframe0
-	.4byte	.LFB58
-	.4byte	.LFE58-.LFB58
+	.4byte	.LFB62
+	.4byte	.LFE62-.LFB62
 	.byte	0x4
-	.4byte	.LCFI23-.LFB58
+	.4byte	.LCFI23-.LFB62
 	.byte	0xe
 	.uleb128 0x50
 	.align	4
@@ -3452,10 +3452,10 @@ emac_config:
 	.4byte	.LEFDE48-.LASFDE48
 .LASFDE48:
 	.4byte	.Lframe0
-	.4byte	.LFB56
-	.4byte	.LFE56-.LFB56
+	.4byte	.LFB60
+	.4byte	.LFE60-.LFB60
 	.byte	0x4
-	.4byte	.LCFI24-.LFB56
+	.4byte	.LCFI24-.LFB60
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3464,10 +3464,10 @@ emac_config:
 	.4byte	.LEFDE50-.LASFDE50
 .LASFDE50:
 	.4byte	.Lframe0
-	.4byte	.LFB60
-	.4byte	.LFE60-.LFB60
+	.4byte	.LFB64
+	.4byte	.LFE64-.LFB64
 	.byte	0x4
-	.4byte	.LCFI25-.LFB60
+	.4byte	.LCFI25-.LFB64
 	.byte	0xe
 	.uleb128 0x50
 	.align	4
@@ -3476,10 +3476,10 @@ emac_config:
 	.4byte	.LEFDE52-.LASFDE52
 .LASFDE52:
 	.4byte	.Lframe0
-	.4byte	.LFB51
-	.4byte	.LFE51-.LFB51
+	.4byte	.LFB55
+	.4byte	.LFE55-.LFB55
 	.byte	0x4
-	.4byte	.LCFI26-.LFB51
+	.4byte	.LCFI26-.LFB55
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3488,10 +3488,10 @@ emac_config:
 	.4byte	.LEFDE54-.LASFDE54
 .LASFDE54:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI27-.LFB23
+	.4byte	.LCFI27-.LFB27
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3500,10 +3500,10 @@ emac_config:
 	.4byte	.LEFDE56-.LASFDE56
 .LASFDE56:
 	.4byte	.Lframe0
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.byte	0x4
-	.4byte	.LCFI28-.LFB31
+	.4byte	.LCFI28-.LFB35
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3512,10 +3512,10 @@ emac_config:
 	.4byte	.LEFDE58-.LASFDE58
 .LASFDE58:
 	.4byte	.Lframe0
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.byte	0x4
-	.4byte	.LCFI29-.LFB32
+	.4byte	.LCFI29-.LFB36
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3524,10 +3524,10 @@ emac_config:
 	.4byte	.LEFDE60-.LASFDE60
 .LASFDE60:
 	.4byte	.Lframe0
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.byte	0x4
-	.4byte	.LCFI30-.LFB33
+	.4byte	.LCFI30-.LFB37
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -3536,10 +3536,10 @@ emac_config:
 	.4byte	.LEFDE62-.LASFDE62
 .LASFDE62:
 	.4byte	.Lframe0
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
 	.byte	0x4
-	.4byte	.LCFI31-.LFB38
+	.4byte	.LCFI31-.LFB42
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3548,10 +3548,10 @@ emac_config:
 	.4byte	.LEFDE64-.LASFDE64
 .LASFDE64:
 	.4byte	.Lframe0
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.byte	0x4
-	.4byte	.LCFI32-.LFB39
+	.4byte	.LCFI32-.LFB43
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3560,10 +3560,10 @@ emac_config:
 	.4byte	.LEFDE66-.LASFDE66
 .LASFDE66:
 	.4byte	.Lframe0
-	.4byte	.LFB41
-	.4byte	.LFE41-.LFB41
+	.4byte	.LFB45
+	.4byte	.LFE45-.LFB45
 	.byte	0x4
-	.4byte	.LCFI33-.LFB41
+	.4byte	.LCFI33-.LFB45
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3572,10 +3572,10 @@ emac_config:
 	.4byte	.LEFDE68-.LASFDE68
 .LASFDE68:
 	.4byte	.Lframe0
-	.4byte	.LFB50
-	.4byte	.LFE50-.LFB50
+	.4byte	.LFB54
+	.4byte	.LFE54-.LFB54
 	.byte	0x4
-	.4byte	.LCFI34-.LFB50
+	.4byte	.LCFI34-.LFB54
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3584,10 +3584,10 @@ emac_config:
 	.4byte	.LEFDE70-.LASFDE70
 .LASFDE70:
 	.4byte	.Lframe0
-	.4byte	.LFB52
-	.4byte	.LFE52-.LFB52
+	.4byte	.LFB56
+	.4byte	.LFE56-.LFB56
 	.byte	0x4
-	.4byte	.LCFI35-.LFB52
+	.4byte	.LCFI35-.LFB56
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3596,10 +3596,10 @@ emac_config:
 	.4byte	.LEFDE72-.LASFDE72
 .LASFDE72:
 	.4byte	.Lframe0
-	.4byte	.LFB63
-	.4byte	.LFE63-.LFB63
+	.4byte	.LFB67
+	.4byte	.LFE67-.LFB67
 	.byte	0x4
-	.4byte	.LCFI36-.LFB63
+	.4byte	.LCFI36-.LFB67
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -3608,10 +3608,10 @@ emac_config:
 	.4byte	.LEFDE74-.LASFDE74
 .LASFDE74:
 	.4byte	.Lframe0
-	.4byte	.LFB64
-	.4byte	.LFE64-.LFB64
+	.4byte	.LFB68
+	.4byte	.LFE68-.LFB68
 	.byte	0x4
-	.4byte	.LCFI37-.LFB64
+	.4byte	.LCFI37-.LFB68
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -3620,10 +3620,10 @@ emac_config:
 	.4byte	.LEFDE76-.LASFDE76
 .LASFDE76:
 	.4byte	.Lframe0
-	.4byte	.LFB53
-	.4byte	.LFE53-.LFB53
+	.4byte	.LFB57
+	.4byte	.LFE57-.LFB57
 	.byte	0x4
-	.4byte	.LCFI38-.LFB53
+	.4byte	.LCFI38-.LFB57
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3632,10 +3632,10 @@ emac_config:
 	.4byte	.LEFDE78-.LASFDE78
 .LASFDE78:
 	.4byte	.Lframe0
-	.4byte	.LFB62
-	.4byte	.LFE62-.LFB62
+	.4byte	.LFB66
+	.4byte	.LFE66-.LFB66
 	.byte	0x4
-	.4byte	.LCFI39-.LFB62
+	.4byte	.LCFI39-.LFB66
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3644,10 +3644,10 @@ emac_config:
 	.4byte	.LEFDE80-.LASFDE80
 .LASFDE80:
 	.4byte	.Lframe0
-	.4byte	.LFB59
-	.4byte	.LFE59-.LFB59
+	.4byte	.LFB63
+	.4byte	.LFE63-.LFB63
 	.byte	0x4
-	.4byte	.LCFI40-.LFB59
+	.4byte	.LCFI40-.LFB63
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -3656,10 +3656,10 @@ emac_config:
 	.4byte	.LEFDE82-.LASFDE82
 .LASFDE82:
 	.4byte	.Lframe0
-	.4byte	.LFB61
-	.4byte	.LFE61-.LFB61
+	.4byte	.LFB65
+	.4byte	.LFE65-.LFB65
 	.byte	0x4
-	.4byte	.LCFI41-.LFB61
+	.4byte	.LCFI41-.LFB65
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -3668,10 +3668,10 @@ emac_config:
 	.4byte	.LEFDE84-.LASFDE84
 .LASFDE84:
 	.4byte	.Lframe0
-	.4byte	.LFB45
-	.4byte	.LFE45-.LFB45
+	.4byte	.LFB49
+	.4byte	.LFE49-.LFB49
 	.byte	0x4
-	.4byte	.LCFI42-.LFB45
+	.4byte	.LCFI42-.LFB49
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3680,10 +3680,10 @@ emac_config:
 	.4byte	.LEFDE86-.LASFDE86
 .LASFDE86:
 	.4byte	.Lframe0
-	.4byte	.LFB66
-	.4byte	.LFE66-.LFB66
+	.4byte	.LFB70
+	.4byte	.LFE70-.LFB70
 	.byte	0x4
-	.4byte	.LCFI43-.LFB66
+	.4byte	.LCFI43-.LFB70
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -3692,10 +3692,10 @@ emac_config:
 	.4byte	.LEFDE88-.LASFDE88
 .LASFDE88:
 	.4byte	.Lframe0
-	.4byte	.LFB65
-	.4byte	.LFE65-.LFB65
+	.4byte	.LFB69
+	.4byte	.LFE69-.LFB69
 	.byte	0x4
-	.4byte	.LCFI44-.LFB65
+	.4byte	.LCFI44-.LFB69
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -3859,7 +3859,7 @@ emac_config:
 	.byte	0x4
 	.4byte	0x7f
 	.byte	0x6
-	.byte	0x32
+	.byte	0x36
 	.4byte	0x144
 	.uleb128 0xa
 	.4byte	.LASF23
@@ -3886,7 +3886,7 @@ emac_config:
 	.uleb128 0x2
 	.4byte	.LASF30
 	.byte	0x6
-	.byte	0x3a
+	.byte	0x3e
 	.4byte	0x10d
 	.uleb128 0x6
 	.byte	0x4
@@ -3927,40 +3927,40 @@ emac_config:
 	.uleb128 0x2
 	.4byte	.LASF35
 	.byte	0x8
-	.byte	0x6c
+	.byte	0x6f
 	.4byte	0x6d
 	.uleb128 0x2
 	.4byte	.LASF36
 	.byte	0x8
-	.byte	0x6d
+	.byte	0x70
 	.4byte	0x7f
 	.uleb128 0x2
 	.4byte	.LASF37
 	.byte	0x8
-	.byte	0x73
+	.byte	0x76
 	.4byte	0xf0
 	.uleb128 0xd
 	.byte	0x8
 	.byte	0x8
-	.byte	0x81
+	.byte	0x84
 	.4byte	0x1dc
 	.uleb128 0xe
 	.4byte	.LASF38
 	.byte	0x8
-	.byte	0x82
+	.byte	0x85
 	.4byte	0xf0
 	.byte	0
 	.uleb128 0xe
 	.4byte	.LASF39
 	.byte	0x8
-	.byte	0x83
+	.byte	0x86
 	.4byte	0xf0
 	.byte	0x4
 	.byte	0
 	.uleb128 0x2
 	.4byte	.LASF40
 	.byte	0x8
-	.byte	0x88
+	.byte	0x8b
 	.4byte	0x1bb
 	.uleb128 0x2
 	.4byte	.LASF41
@@ -5401,8 +5401,8 @@ emac_config:
 	.4byte	.LASF290
 	.byte	0x1
 	.byte	0x58
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xd3f
@@ -5424,8 +5424,8 @@ emac_config:
 	.4byte	.LASF291
 	.byte	0x1
 	.byte	0x5f
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xd62
@@ -5441,8 +5441,8 @@ emac_config:
 	.4byte	.LASF292
 	.byte	0x1
 	.byte	0x65
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xd94
@@ -5464,32 +5464,32 @@ emac_config:
 	.4byte	.LASF295
 	.byte	0x1
 	.byte	0x6e
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x1d
 	.4byte	.LASF296
 	.byte	0x1
 	.byte	0x73
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x1d
 	.4byte	.LASF297
 	.byte	0x1
 	.byte	0x8b
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x1a
 	.4byte	.LASF298
 	.byte	0x1
 	.byte	0x96
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xe7b
@@ -5594,8 +5594,8 @@ emac_config:
 	.4byte	.LASF300
 	.byte	0x1
 	.byte	0xf7
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xea0
@@ -5613,16 +5613,16 @@ emac_config:
 	.4byte	.LASF302
 	.byte	0x1
 	.2byte	0x10e
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x23
 	.4byte	.LASF303
 	.byte	0x1
 	.2byte	0x113
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x24
@@ -5630,8 +5630,8 @@ emac_config:
 	.byte	0x1
 	.2byte	0x190
 	.4byte	0xf0
-	.4byte	.LFB42
-	.4byte	.LFE42-.LFB42
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xf1f
@@ -5664,16 +5664,16 @@ emac_config:
 	.4byte	.LASF305
 	.byte	0x1
 	.2byte	0x23c
-	.4byte	.LFB46
-	.4byte	.LFE46-.LFB46
+	.4byte	.LFB50
+	.4byte	.LFE50-.LFB50
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x2a
 	.4byte	.LASF306
 	.byte	0x1
 	.2byte	0x27d
-	.4byte	.LFB49
-	.4byte	.LFE49-.LFB49
+	.4byte	.LFB53
+	.4byte	.LFE53-.LFB53
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xf51
@@ -5686,8 +5686,8 @@ emac_config:
 	.byte	0x1
 	.2byte	0x118
 	.4byte	0x102
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x11d5
@@ -6042,8 +6042,8 @@ emac_config:
 	.4byte	.LASF309
 	.byte	0x1
 	.2byte	0x1ea
-	.4byte	.LFB44
-	.4byte	.LFE44-.LFB44
+	.4byte	.LFB48
+	.4byte	.LFE48-.LFB48
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x130c
@@ -6193,8 +6193,8 @@ emac_config:
 	.4byte	.LASF312
 	.byte	0x1
 	.2byte	0x160
-	.4byte	.LFB40
-	.4byte	.LFE40-.LFB40
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x13b0
@@ -6269,8 +6269,8 @@ emac_config:
 	.4byte	.LASF314
 	.byte	0x1
 	.2byte	0x1cf
-	.4byte	.LFB43
-	.4byte	.LFE43-.LFB43
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1464
@@ -6355,8 +6355,8 @@ emac_config:
 	.4byte	.LASF315
 	.byte	0x1
 	.2byte	0x242
-	.4byte	.LFB47
-	.4byte	.LFE47-.LFB47
+	.4byte	.LFB51
+	.4byte	.LFE51-.LFB51
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x149f
@@ -6377,8 +6377,8 @@ emac_config:
 	.4byte	.LASF316
 	.byte	0x1
 	.2byte	0x262
-	.4byte	.LFB48
-	.4byte	.LFE48-.LFB48
+	.4byte	.LFB52
+	.4byte	.LFE52-.LFB52
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1599
@@ -6497,8 +6497,8 @@ emac_config:
 	.4byte	.LASF318
 	.byte	0x1
 	.byte	0x4e
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x15c7
@@ -6523,8 +6523,8 @@ emac_config:
 	.byte	0x1
 	.2byte	0x2c3
 	.4byte	0xfb
-	.4byte	.LFB54
-	.4byte	.LFE54-.LFB54
+	.4byte	.LFB58
+	.4byte	.LFE58-.LFB58
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1612
@@ -6564,8 +6564,8 @@ emac_config:
 	.byte	0x1
 	.2byte	0x2ce
 	.4byte	0xfb
-	.4byte	.LFB55
-	.4byte	.LFE55-.LFB55
+	.4byte	.LFB59
+	.4byte	.LFE59-.LFB59
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1656
@@ -6604,8 +6604,8 @@ emac_config:
 	.byte	0x1
 	.2byte	0x2e0
 	.4byte	0xfb
-	.4byte	.LFB57
-	.4byte	.LFE57-.LFB57
+	.4byte	.LFB61
+	.4byte	.LFE61-.LFB61
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1690
@@ -6639,8 +6639,8 @@ emac_config:
 	.4byte	.LASF322
 	.byte	0x1
 	.2byte	0x2e7
-	.4byte	.LFB58
-	.4byte	.LFE58-.LFB58
+	.4byte	.LFB62
+	.4byte	.LFE62-.LFB62
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x17ee
@@ -6815,8 +6815,8 @@ emac_config:
 	.byte	0x1
 	.2byte	0x2d7
 	.4byte	0xfb
-	.4byte	.LFB56
-	.4byte	.LFE56-.LFB56
+	.4byte	.LFB60
+	.4byte	.LFE60-.LFB60
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1834
@@ -6850,8 +6850,8 @@ emac_config:
 	.4byte	.LASF326
 	.byte	0x1
 	.2byte	0x331
-	.4byte	.LFB60
-	.4byte	.LFE60-.LFB60
+	.4byte	.LFB64
+	.4byte	.LFE64-.LFB64
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x196a
@@ -7007,8 +7007,8 @@ emac_config:
 	.4byte	.LASF327
 	.byte	0x1
 	.2byte	0x2a7
-	.4byte	.LFB51
-	.4byte	.LFE51-.LFB51
+	.4byte	.LFB55
+	.4byte	.LFE55-.LFB55
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x199f
@@ -7038,8 +7038,8 @@ emac_config:
 	.4byte	.LASF328
 	.byte	0x1
 	.byte	0x53
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x19e0
@@ -7076,8 +7076,8 @@ emac_config:
 	.4byte	.LASF329
 	.byte	0x1
 	.byte	0xc6
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1a1f
@@ -7107,8 +7107,8 @@ emac_config:
 	.byte	0x1
 	.byte	0xd4
 	.4byte	0xda
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1a64
@@ -7137,8 +7137,8 @@ emac_config:
 	.byte	0x1
 	.byte	0xe4
 	.4byte	0x102
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1b66
@@ -7277,24 +7277,24 @@ emac_config:
 	.4byte	.LASF340
 	.byte	0x1
 	.2byte	0x157
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x37
 	.4byte	.LASF341
 	.byte	0x1
 	.2byte	0x15c
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x38
 	.4byte	.LASF342
 	.byte	0x1
 	.2byte	0x178
-	.4byte	.LFB41
-	.4byte	.LFE41-.LFB41
+	.4byte	.LFB45
+	.4byte	.LFE45-.LFB45
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1c63
@@ -7399,8 +7399,8 @@ emac_config:
 	.byte	0x1
 	.2byte	0x287
 	.4byte	0x102
-	.4byte	.LFB50
-	.4byte	.LFE50-.LFB50
+	.4byte	.LFB54
+	.4byte	.LFE54-.LFB54
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1d4c
@@ -7511,8 +7511,8 @@ emac_config:
 	.4byte	.LASF344
 	.byte	0x1
 	.2byte	0x2ac
-	.4byte	.LFB52
-	.4byte	.LFE52-.LFB52
+	.4byte	.LFB56
+	.4byte	.LFE56-.LFB56
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1d85
@@ -7540,8 +7540,8 @@ emac_config:
 	.4byte	.LASF345
 	.byte	0x1
 	.2byte	0x38b
-	.4byte	.LFB63
-	.4byte	.LFE63-.LFB63
+	.4byte	.LFB67
+	.4byte	.LFE67-.LFB67
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1e68
@@ -7657,8 +7657,8 @@ emac_config:
 	.byte	0x1
 	.2byte	0x3af
 	.4byte	0x102
-	.4byte	.LFB64
-	.4byte	.LFE64-.LFB64
+	.4byte	.LFB68
+	.4byte	.LFE68-.LFB68
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1f5e
@@ -7784,8 +7784,8 @@ emac_config:
 	.4byte	.LASF347
 	.byte	0x1
 	.2byte	0x2be
-	.4byte	.LFB53
-	.4byte	.LFE53-.LFB53
+	.4byte	.LFB57
+	.4byte	.LFE57-.LFB57
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1f97
@@ -7816,8 +7816,8 @@ emac_config:
 	.byte	0x1
 	.2byte	0x363
 	.4byte	0x102
-	.4byte	.LFB62
-	.4byte	.LFE62-.LFB62
+	.4byte	.LFB66
+	.4byte	.LFE66-.LFB66
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x20b3
@@ -7962,8 +7962,8 @@ emac_config:
 	.byte	0x1
 	.2byte	0x31a
 	.4byte	0x102
-	.4byte	.LFB59
-	.4byte	.LFE59-.LFB59
+	.4byte	.LFB63
+	.4byte	.LFE63-.LFB63
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2101
@@ -8004,8 +8004,8 @@ emac_config:
 	.byte	0x1
 	.2byte	0x34c
 	.4byte	0x102
-	.4byte	.LFB61
-	.4byte	.LFE61-.LFB61
+	.4byte	.LFB65
+	.4byte	.LFE65-.LFB65
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x214f
@@ -8045,8 +8045,8 @@ emac_config:
 	.4byte	.LASF355
 	.byte	0x1
 	.2byte	0x21f
-	.4byte	.LFB45
-	.4byte	.LFE45-.LFB45
+	.4byte	.LFB49
+	.4byte	.LFE49-.LFB49
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2201
@@ -8134,8 +8134,8 @@ emac_config:
 	.byte	0x1
 	.2byte	0x3dc
 	.4byte	0x102
-	.4byte	.LFB66
-	.4byte	.LFE66-.LFB66
+	.4byte	.LFB70
+	.4byte	.LFE70-.LFB70
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x23f8
@@ -8416,8 +8416,8 @@ emac_config:
 	.byte	0x1
 	.2byte	0x3d6
 	.4byte	0x102
-	.4byte	.LFB65
-	.4byte	.LFE65-.LFB65
+	.4byte	.LFB69
+	.4byte	.LFE69-.LFB69
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x243c
@@ -8703,12 +8703,12 @@ emac_config:
 	.4byte	.LASF398
 	.4byte	.LASF398
 	.byte	0x8
-	.byte	0xd9
+	.byte	0xdc
 	.uleb128 0x45
 	.4byte	.LASF399
 	.4byte	.LASF399
 	.byte	0x8
-	.byte	0xd8
+	.byte	0xdb
 	.uleb128 0x46
 	.4byte	.LASF400
 	.4byte	.LASF400
@@ -8723,7 +8723,7 @@ emac_config:
 	.4byte	.LASF402
 	.4byte	.LASF402
 	.byte	0x8
-	.2byte	0x11a
+	.2byte	0x129
 	.uleb128 0x46
 	.4byte	.LASF403
 	.4byte	.LASF403
@@ -9838,7 +9838,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL1
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9852,7 +9852,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL4
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9923,7 +9923,7 @@ emac_config:
 	.4byte	emac_dma_rx_chain_buf
 	.byte	0x9f
 	.4byte	.LVL17
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -9934,7 +9934,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL26
-	.4byte	.LFE34
+	.4byte	.LFE38
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9949,7 +9949,7 @@ emac_config:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL29
-	.4byte	.LFE42
+	.4byte	.LFE46
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -10072,7 +10072,7 @@ emac_config:
 	.byte	0xff
 	.byte	0x9f
 	.4byte	.LVL67
-	.4byte	.LFE37
+	.4byte	.LFE41
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -10151,7 +10151,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL129
-	.4byte	.LFE48
+	.4byte	.LFE52
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10192,7 +10192,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL156
-	.4byte	.LFE58
+	.4byte	.LFE62
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10206,7 +10206,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL156
-	.4byte	.LFE58
+	.4byte	.LFE62
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10220,7 +10220,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL173
-	.4byte	.LFE60
+	.4byte	.LFE64
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10234,7 +10234,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL173
-	.4byte	.LFE60
+	.4byte	.LFE64
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10248,7 +10248,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL182
-	.4byte	.LFE31
+	.4byte	.LFE35
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10262,7 +10262,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL185
-	.4byte	.LFE32
+	.4byte	.LFE36
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10299,7 +10299,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL203
-	.4byte	.LFE33
+	.4byte	.LFE37
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10319,7 +10319,7 @@ emac_config:
 	.sleb128 -9
 	.byte	0x9f
 	.4byte	.LVL193
-	.4byte	.LFE33
+	.4byte	.LFE37
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10334,7 +10334,7 @@ emac_config:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL194
-	.4byte	.LFE33
+	.4byte	.LFE37
 	.2byte	0x1
 	.byte	0x55
 	.4byte	0
@@ -10345,7 +10345,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL211
-	.4byte	.LFE41
+	.4byte	.LFE45
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10381,7 +10381,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL225
-	.4byte	.LFE50
+	.4byte	.LFE54
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10395,7 +10395,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL223
-	.4byte	.LFE50
+	.4byte	.LFE54
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10421,7 +10421,7 @@ emac_config:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL225
-	.4byte	.LFE50
+	.4byte	.LFE54
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -10432,7 +10432,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL231
-	.4byte	.LFE63
+	.4byte	.LFE67
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10478,7 +10478,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL258
-	.4byte	.LFE64
+	.4byte	.LFE68
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10499,7 +10499,7 @@ emac_config:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL252
-	.4byte	.LFE64
+	.4byte	.LFE68
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -10576,7 +10576,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL286
-	.4byte	.LFE62
+	.4byte	.LFE66
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10597,7 +10597,7 @@ emac_config:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL269
-	.4byte	.LFE62
+	.4byte	.LFE66
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -10615,7 +10615,7 @@ emac_config:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL269
-	.4byte	.LFE62
+	.4byte	.LFE66
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -10653,7 +10653,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL290
-	.4byte	.LFE45
+	.4byte	.LFE49
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10678,7 +10678,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL320
-	.4byte	.LFE66
+	.4byte	.LFE70
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10702,7 +10702,7 @@ emac_config:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL320
-	.4byte	.LFE66
+	.4byte	.LFE70
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -10713,7 +10713,7 @@ emac_config:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL324
-	.4byte	.LFE65
+	.4byte	.LFE69
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10729,96 +10729,96 @@ emac_config:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
 	.4byte	.LFB28
 	.4byte	.LFE28-.LFB28
 	.4byte	.LFB29
 	.4byte	.LFE29-.LFB29
 	.4byte	.LFB30
 	.4byte	.LFE30-.LFB30
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
-	.4byte	.LFB42
-	.4byte	.LFE42-.LFB42
-	.4byte	.LFB46
-	.4byte	.LFE46-.LFB46
-	.4byte	.LFB49
-	.4byte	.LFE49-.LFB49
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
-	.4byte	.LFB44
-	.4byte	.LFE44-.LFB44
-	.4byte	.LFB40
-	.4byte	.LFE40-.LFB40
-	.4byte	.LFB43
-	.4byte	.LFE43-.LFB43
-	.4byte	.LFB47
-	.4byte	.LFE47-.LFB47
-	.4byte	.LFB48
-	.4byte	.LFE48-.LFB48
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
-	.4byte	.LFB54
-	.4byte	.LFE54-.LFB54
-	.4byte	.LFB55
-	.4byte	.LFE55-.LFB55
-	.4byte	.LFB57
-	.4byte	.LFE57-.LFB57
-	.4byte	.LFB58
-	.4byte	.LFE58-.LFB58
-	.4byte	.LFB56
-	.4byte	.LFE56-.LFB56
-	.4byte	.LFB60
-	.4byte	.LFE60-.LFB60
-	.4byte	.LFB51
-	.4byte	.LFE51-.LFB51
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
 	.4byte	.LFB31
 	.4byte	.LFE31-.LFB31
 	.4byte	.LFB32
 	.4byte	.LFE32-.LFB32
 	.4byte	.LFB33
 	.4byte	.LFE33-.LFB33
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.4byte	.LFB38
 	.4byte	.LFE38-.LFB38
 	.4byte	.LFB39
 	.4byte	.LFE39-.LFB39
-	.4byte	.LFB41
-	.4byte	.LFE41-.LFB41
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
 	.4byte	.LFB50
 	.4byte	.LFE50-.LFB50
-	.4byte	.LFB52
-	.4byte	.LFE52-.LFB52
-	.4byte	.LFB63
-	.4byte	.LFE63-.LFB63
-	.4byte	.LFB64
-	.4byte	.LFE64-.LFB64
 	.4byte	.LFB53
 	.4byte	.LFE53-.LFB53
-	.4byte	.LFB62
-	.4byte	.LFE62-.LFB62
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
+	.4byte	.LFB48
+	.4byte	.LFE48-.LFB48
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
+	.4byte	.LFB51
+	.4byte	.LFE51-.LFB51
+	.4byte	.LFB52
+	.4byte	.LFE52-.LFB52
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
+	.4byte	.LFB58
+	.4byte	.LFE58-.LFB58
 	.4byte	.LFB59
 	.4byte	.LFE59-.LFB59
 	.4byte	.LFB61
 	.4byte	.LFE61-.LFB61
+	.4byte	.LFB62
+	.4byte	.LFE62-.LFB62
+	.4byte	.LFB60
+	.4byte	.LFE60-.LFB60
+	.4byte	.LFB64
+	.4byte	.LFE64-.LFB64
+	.4byte	.LFB55
+	.4byte	.LFE55-.LFB55
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.4byte	.LFB45
 	.4byte	.LFE45-.LFB45
+	.4byte	.LFB54
+	.4byte	.LFE54-.LFB54
+	.4byte	.LFB56
+	.4byte	.LFE56-.LFB56
+	.4byte	.LFB67
+	.4byte	.LFE67-.LFB67
+	.4byte	.LFB68
+	.4byte	.LFE68-.LFB68
+	.4byte	.LFB57
+	.4byte	.LFE57-.LFB57
 	.4byte	.LFB66
 	.4byte	.LFE66-.LFB66
+	.4byte	.LFB63
+	.4byte	.LFE63-.LFB63
 	.4byte	.LFB65
 	.4byte	.LFE65-.LFB65
+	.4byte	.LFB49
+	.4byte	.LFE49-.LFB49
+	.4byte	.LFB70
+	.4byte	.LFE70-.LFB70
+	.4byte	.LFB69
+	.4byte	.LFE69-.LFB69
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
@@ -10829,96 +10829,96 @@ emac_config:
 	.4byte	.LBE60
 	.4byte	0
 	.4byte	0
-	.4byte	.LFB24
-	.4byte	.LFE24
-	.4byte	.LFB25
-	.4byte	.LFE25
-	.4byte	.LFB26
-	.4byte	.LFE26
-	.4byte	.LFB27
-	.4byte	.LFE27
 	.4byte	.LFB28
 	.4byte	.LFE28
 	.4byte	.LFB29
 	.4byte	.LFE29
 	.4byte	.LFB30
 	.4byte	.LFE30
-	.4byte	.LFB34
-	.4byte	.LFE34
-	.4byte	.LFB35
-	.4byte	.LFE35
-	.4byte	.LFB36
-	.4byte	.LFE36
-	.4byte	.LFB42
-	.4byte	.LFE42
-	.4byte	.LFB46
-	.4byte	.LFE46
-	.4byte	.LFB49
-	.4byte	.LFE49
-	.4byte	.LFB37
-	.4byte	.LFE37
-	.4byte	.LFB44
-	.4byte	.LFE44
-	.4byte	.LFB40
-	.4byte	.LFE40
-	.4byte	.LFB43
-	.4byte	.LFE43
-	.4byte	.LFB47
-	.4byte	.LFE47
-	.4byte	.LFB48
-	.4byte	.LFE48
-	.4byte	.LFB22
-	.4byte	.LFE22
-	.4byte	.LFB54
-	.4byte	.LFE54
-	.4byte	.LFB55
-	.4byte	.LFE55
-	.4byte	.LFB57
-	.4byte	.LFE57
-	.4byte	.LFB58
-	.4byte	.LFE58
-	.4byte	.LFB56
-	.4byte	.LFE56
-	.4byte	.LFB60
-	.4byte	.LFE60
-	.4byte	.LFB51
-	.4byte	.LFE51
-	.4byte	.LFB23
-	.4byte	.LFE23
 	.4byte	.LFB31
 	.4byte	.LFE31
 	.4byte	.LFB32
 	.4byte	.LFE32
 	.4byte	.LFB33
 	.4byte	.LFE33
+	.4byte	.LFB34
+	.4byte	.LFE34
 	.4byte	.LFB38
 	.4byte	.LFE38
 	.4byte	.LFB39
 	.4byte	.LFE39
-	.4byte	.LFB41
-	.4byte	.LFE41
+	.4byte	.LFB40
+	.4byte	.LFE40
+	.4byte	.LFB46
+	.4byte	.LFE46
 	.4byte	.LFB50
 	.4byte	.LFE50
-	.4byte	.LFB52
-	.4byte	.LFE52
-	.4byte	.LFB63
-	.4byte	.LFE63
-	.4byte	.LFB64
-	.4byte	.LFE64
 	.4byte	.LFB53
 	.4byte	.LFE53
-	.4byte	.LFB62
-	.4byte	.LFE62
+	.4byte	.LFB41
+	.4byte	.LFE41
+	.4byte	.LFB48
+	.4byte	.LFE48
+	.4byte	.LFB44
+	.4byte	.LFE44
+	.4byte	.LFB47
+	.4byte	.LFE47
+	.4byte	.LFB51
+	.4byte	.LFE51
+	.4byte	.LFB52
+	.4byte	.LFE52
+	.4byte	.LFB26
+	.4byte	.LFE26
+	.4byte	.LFB58
+	.4byte	.LFE58
 	.4byte	.LFB59
 	.4byte	.LFE59
 	.4byte	.LFB61
 	.4byte	.LFE61
+	.4byte	.LFB62
+	.4byte	.LFE62
+	.4byte	.LFB60
+	.4byte	.LFE60
+	.4byte	.LFB64
+	.4byte	.LFE64
+	.4byte	.LFB55
+	.4byte	.LFE55
+	.4byte	.LFB27
+	.4byte	.LFE27
+	.4byte	.LFB35
+	.4byte	.LFE35
+	.4byte	.LFB36
+	.4byte	.LFE36
+	.4byte	.LFB37
+	.4byte	.LFE37
+	.4byte	.LFB42
+	.4byte	.LFE42
+	.4byte	.LFB43
+	.4byte	.LFE43
 	.4byte	.LFB45
 	.4byte	.LFE45
+	.4byte	.LFB54
+	.4byte	.LFE54
+	.4byte	.LFB56
+	.4byte	.LFE56
+	.4byte	.LFB67
+	.4byte	.LFE67
+	.4byte	.LFB68
+	.4byte	.LFE68
+	.4byte	.LFB57
+	.4byte	.LFE57
 	.4byte	.LFB66
 	.4byte	.LFE66
+	.4byte	.LFB63
+	.4byte	.LFE63
 	.4byte	.LFB65
 	.4byte	.LFE65
+	.4byte	.LFB49
+	.4byte	.LFE49
+	.4byte	.LFB70
+	.4byte	.LFE70
+	.4byte	.LFB69
+	.4byte	.LFE69
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -11324,8 +11324,6 @@ emac_config:
 	.string	"long long int"
 .LASF298:
 	.string	"emac_init_dma_chain"
-.LASF416:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\ethernet"
 .LASF388:
 	.string	"xTimerCreate"
 .LASF318:
@@ -11742,6 +11740,8 @@ emac_config:
 	.string	"post_cmd"
 .LASF109:
 	.string	"connected"
+.LASF416:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\ethernet"
 .LASF53:
 	.string	"SYSTEM_EVENT_WIFI_READY"
 .LASF27:
@@ -11758,4 +11758,4 @@ emac_config:
 	.string	"emac_enable_dma_tx"
 .LASF311:
 	.string	"tmp_dirty"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

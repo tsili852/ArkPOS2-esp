@@ -8,7 +8,7 @@
 	.global	ff_diskio_get_drive
 	.type	ff_diskio_get_drive, @function
 ff_diskio_get_drive:
-.LFB9:
+.LFB13:
 	.file 1 "C:/esp/esp-idf/components/fatfs/src/diskio.c"
 	.loc 1 28 0
 .LVL0:
@@ -46,7 +46,7 @@ ff_diskio_get_drive:
 .LVL7:
 	.loc 1 37 0
 	retw.n
-.LFE9:
+.LFE13:
 	.size	ff_diskio_get_drive, .-ff_diskio_get_drive
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -61,7 +61,7 @@ ff_diskio_get_drive:
 	.section	.text.ff_diskio_register,"ax",@progbits
 	.literal_position
 	.literal .LC2, .LC1
-	.literal .LC3, __func__$5278
+	.literal .LC3, __func__$5382
 	.literal .LC5, .LC4
 	.literal .LC6, s_impls
 	.literal .LC8, .LC7
@@ -69,7 +69,7 @@ ff_diskio_get_drive:
 	.global	ff_diskio_register
 	.type	ff_diskio_register, @function
 ff_diskio_register:
-.LFB10:
+.LFB14:
 	.loc 1 40 0
 .LVL8:
 	entry	sp, 32
@@ -133,7 +133,7 @@ ff_diskio_register:
 .LVL18:
 .L6:
 	retw.n
-.LFE10:
+.LFE14:
 	.size	ff_diskio_register, .-ff_diskio_register
 	.section	.text.ff_disk_initialize,"ax",@progbits
 	.literal_position
@@ -142,7 +142,7 @@ ff_diskio_register:
 	.global	ff_disk_initialize
 	.type	ff_disk_initialize, @function
 ff_disk_initialize:
-.LFB11:
+.LFB15:
 	.loc 1 60 0
 .LVL19:
 	entry	sp, 32
@@ -159,7 +159,7 @@ ff_disk_initialize:
 	mov.n	a2, a10
 .LVL21:
 	retw.n
-.LFE11:
+.LFE15:
 	.size	ff_disk_initialize, .-ff_disk_initialize
 	.section	.text.ff_disk_status,"ax",@progbits
 	.literal_position
@@ -168,7 +168,7 @@ ff_disk_initialize:
 	.global	ff_disk_status
 	.type	ff_disk_status, @function
 ff_disk_status:
-.LFB12:
+.LFB16:
 	.loc 1 64 0
 .LVL22:
 	entry	sp, 32
@@ -185,7 +185,7 @@ ff_disk_status:
 	mov.n	a2, a10
 .LVL24:
 	retw.n
-.LFE12:
+.LFE16:
 	.size	ff_disk_status, .-ff_disk_status
 	.section	.text.ff_disk_read,"ax",@progbits
 	.literal_position
@@ -194,7 +194,7 @@ ff_disk_status:
 	.global	ff_disk_read
 	.type	ff_disk_read, @function
 ff_disk_read:
-.LFB13:
+.LFB17:
 	.loc 1 68 0
 .LVL25:
 	entry	sp, 32
@@ -214,7 +214,7 @@ ff_disk_read:
 	mov.n	a2, a10
 .LVL27:
 	retw.n
-.LFE13:
+.LFE17:
 	.size	ff_disk_read, .-ff_disk_read
 	.section	.text.ff_disk_write,"ax",@progbits
 	.literal_position
@@ -223,7 +223,7 @@ ff_disk_read:
 	.global	ff_disk_write
 	.type	ff_disk_write, @function
 ff_disk_write:
-.LFB14:
+.LFB18:
 	.loc 1 72 0
 .LVL28:
 	entry	sp, 32
@@ -243,7 +243,7 @@ ff_disk_write:
 	mov.n	a2, a10
 .LVL30:
 	retw.n
-.LFE14:
+.LFE18:
 	.size	ff_disk_write, .-ff_disk_write
 	.section	.text.ff_disk_ioctl,"ax",@progbits
 	.literal_position
@@ -252,7 +252,7 @@ ff_disk_write:
 	.global	ff_disk_ioctl
 	.type	ff_disk_ioctl, @function
 ff_disk_ioctl:
-.LFB15:
+.LFB19:
 	.loc 1 76 0
 .LVL31:
 	entry	sp, 32
@@ -271,14 +271,14 @@ ff_disk_ioctl:
 	mov.n	a2, a10
 .LVL33:
 	retw.n
-.LFE15:
+.LFE19:
 	.size	ff_disk_ioctl, .-ff_disk_ioctl
 	.section	.text.get_fattime,"ax",@progbits
 	.align	4
 	.global	get_fattime
 	.type	get_fattime, @function
 get_fattime:
-.LFB16:
+.LFB20:
 	.loc 1 81 0
 	entry	sp, 48
 .LCFI7:
@@ -331,13 +331,13 @@ get_fattime:
 	.loc 1 91 0 discriminator 4
 	or	a2, a8, a2
 	retw.n
-.LFE16:
+.LFE20:
 	.size	get_fattime, .-get_fattime
-	.section	.rodata.__func__$5278,"a",@progbits
+	.section	.rodata.__func__$5382,"a",@progbits
 	.align	4
-	.type	__func__$5278, @object
-	.size	__func__$5278, 19
-__func__$5278:
+	.type	__func__$5382, @object
+	.size	__func__$5382, 19
+__func__$5382:
 	.string	"ff_diskio_register"
 	.global	VolToPart
 	.section	.data.VolToPart,"aw",@progbits
@@ -374,10 +374,10 @@ s_impls:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x4
-	.4byte	.LCFI0-.LFB9
+	.4byte	.LCFI0-.LFB13
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -386,10 +386,10 @@ s_impls:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI1-.LFB10
+	.4byte	.LCFI1-.LFB14
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -398,10 +398,10 @@ s_impls:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI2-.LFB11
+	.4byte	.LCFI2-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -410,10 +410,10 @@ s_impls:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI3-.LFB12
+	.4byte	.LCFI3-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -422,10 +422,10 @@ s_impls:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI4-.LFB13
+	.4byte	.LCFI4-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -434,10 +434,10 @@ s_impls:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI5-.LFB14
+	.4byte	.LCFI5-.LFB18
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -446,10 +446,10 @@ s_impls:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI6-.LFB15
+	.4byte	.LCFI6-.LFB19
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -458,10 +458,10 @@ s_impls:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI7-.LFB16
+	.4byte	.LCFI7-.LFB20
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -812,8 +812,8 @@ s_impls:
 	.byte	0x1
 	.byte	0x1b
 	.4byte	0x140
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2d7
@@ -834,8 +834,8 @@ s_impls:
 	.4byte	.LASF68
 	.byte	0x1
 	.byte	0x27
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3d4
@@ -856,7 +856,7 @@ s_impls:
 	.4byte	0x3ef
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5278
+	.4byte	__func__$5382
 	.uleb128 0x15
 	.4byte	.LASF47
 	.byte	0x1
@@ -898,7 +898,7 @@ s_impls:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5278
+	.4byte	__func__$5382
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -937,7 +937,7 @@ s_impls:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5278
+	.4byte	__func__$5382
 	.uleb128 0x19
 	.uleb128 0x1
 	.byte	0x5d
@@ -983,8 +983,8 @@ s_impls:
 	.byte	0x1
 	.byte	0x3b
 	.4byte	0x159
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x432
@@ -1012,8 +1012,8 @@ s_impls:
 	.byte	0x1
 	.byte	0x3f
 	.4byte	0x159
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x46a
@@ -1041,8 +1041,8 @@ s_impls:
 	.byte	0x1
 	.byte	0x43
 	.4byte	0x18f
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4db
@@ -1109,8 +1109,8 @@ s_impls:
 	.byte	0x1
 	.byte	0x47
 	.4byte	0x18f
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x54c
@@ -1177,8 +1177,8 @@ s_impls:
 	.byte	0x1
 	.byte	0x4b
 	.4byte	0x18f
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5ad
@@ -1235,8 +1235,8 @@ s_impls:
 	.byte	0x1
 	.byte	0x50
 	.4byte	0x12a
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x612
@@ -1834,7 +1834,7 @@ s_impls:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL7
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1859,7 +1859,7 @@ s_impls:
 	.sleb128 -1
 	.byte	0x9f
 	.4byte	.LVL6
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0x1
 	.byte	0x58
 	.4byte	0
@@ -1870,7 +1870,7 @@ s_impls:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL17
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1884,7 +1884,7 @@ s_impls:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL16
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1912,7 +1912,7 @@ s_impls:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL21
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1926,7 +1926,7 @@ s_impls:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL24
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1940,7 +1940,7 @@ s_impls:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL27
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1954,7 +1954,7 @@ s_impls:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL30
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1968,7 +1968,7 @@ s_impls:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL33
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1991,14 +1991,6 @@ s_impls:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
 	.4byte	.LFB13
 	.4byte	.LFE13-.LFB13
 	.4byte	.LFB14
@@ -2007,18 +1999,18 @@ s_impls:
 	.4byte	.LFE15-.LFB15
 	.4byte	.LFB16
 	.4byte	.LFE16-.LFB16
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB9
-	.4byte	.LFE9
-	.4byte	.LFB10
-	.4byte	.LFE10
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB12
-	.4byte	.LFE12
 	.4byte	.LFB13
 	.4byte	.LFE13
 	.4byte	.LFB14
@@ -2027,6 +2019,14 @@ s_impls:
 	.4byte	.LFE15
 	.4byte	.LFB16
 	.4byte	.LFE16
+	.4byte	.LFB17
+	.4byte	.LFE17
+	.4byte	.LFB18
+	.4byte	.LFE18
+	.4byte	.LFB19
+	.4byte	.LFE19
+	.4byte	.LFB20
+	.4byte	.LFE20
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -2052,14 +2052,16 @@ s_impls:
 	.string	"sizetype"
 .LASF59:
 	.string	"s_impls"
-.LASF71:
-	.string	"memcpy"
+.LASF67:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\fatfs"
 .LASF52:
 	.string	"buff"
 .LASF44:
 	.string	"out_pdrv"
 .LASF23:
 	.string	"BYTE"
+.LASF71:
+	.string	"memcpy"
 .LASF58:
 	.string	"year"
 .LASF43:
@@ -2100,8 +2102,6 @@ s_impls:
 	.string	"UINT"
 .LASF42:
 	.string	"ff_diskio_impl_t"
-.LASF67:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\fatfs"
 .LASF3:
 	.string	"unsigned char"
 .LASF25:
@@ -2176,4 +2176,4 @@ s_impls:
 	.string	"esp_err_t"
 .LASF55:
 	.string	"ff_disk_write"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

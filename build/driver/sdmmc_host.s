@@ -7,7 +7,7 @@
 	.align	4
 	.type	sdmmc_host_input_clk_disable, @function
 sdmmc_host_input_clk_disable:
-.LFB13:
+.LFB17:
 	.file 1 "C:/esp/esp-idf/components/driver/sdmmc_host.c"
 	.loc 1 136 0
 	entry	sp, 32
@@ -19,7 +19,7 @@ sdmmc_host_input_clk_disable:
 	memw
 	s32i.n	a9, a8, 0
 	retw.n
-.LFE13:
+.LFE17:
 	.size	sdmmc_host_input_clk_disable, .-sdmmc_host_input_clk_disable
 	.section	.text.sdmmc_host_dma_init,"ax",@progbits
 	.literal_position
@@ -27,7 +27,7 @@ sdmmc_host_input_clk_disable:
 	.align	4
 	.type	sdmmc_host_dma_init, @function
 sdmmc_host_dma_init:
-.LFB23:
+.LFB27:
 	.loc 1 417 0
 	entry	sp, 32
 .LCFI1:
@@ -71,7 +71,7 @@ sdmmc_host_dma_init:
 	memw
 	s32i	a9, a8, 144
 	retw.n
-.LFE23:
+.LFE27:
 	.size	sdmmc_host_dma_init, .-sdmmc_host_dma_init
 	.section	.text.sdmmc_isr,"ax",@progbits
 	.literal_position
@@ -79,7 +79,7 @@ sdmmc_host_dma_init:
 	.align	4
 	.type	sdmmc_isr, @function
 sdmmc_isr:
-.LFB27:
+.LFB31:
 	.loc 1 469 0
 .LVL0:
 	entry	sp, 48
@@ -125,7 +125,7 @@ sdmmc_isr:
 .LVL8:
 .L3:
 	retw.n
-.LFE27:
+.LFE31:
 	.size	sdmmc_isr, .-sdmmc_isr
 	.section	.text.sdmmc_host_input_clk_enable,"ax",@progbits
 	.literal_position
@@ -138,7 +138,7 @@ sdmmc_isr:
 	.align	4
 	.type	sdmmc_host_input_clk_enable, @function
 sdmmc_host_input_clk_enable:
-.LFB12:
+.LFB16:
 	.loc 1 122 0
 	entry	sp, 32
 .LCFI3:
@@ -201,7 +201,7 @@ sdmmc_host_input_clk_enable:
 	call8	ets_delay_us
 .LVL9:
 	retw.n
-.LFE12:
+.LFE16:
 	.size	sdmmc_host_input_clk_enable, .-sdmmc_host_input_clk_enable
 	.section	.text.sdmmc_host_reset,"ax",@progbits
 	.literal_position
@@ -210,7 +210,7 @@ sdmmc_host_input_clk_enable:
 	.global	sdmmc_host_reset
 	.type	sdmmc_host_reset, @function
 sdmmc_host_reset:
-.LFB11:
+.LFB15:
 	.loc 1 87 0
 	entry	sp, 32
 .LCFI4:
@@ -254,7 +254,7 @@ sdmmc_host_reset:
 	bbsi	a8, 2, .L7
 	.loc 1 96 0 is_stmt 1
 	retw.n
-.LFE11:
+.LFE15:
 	.size	sdmmc_host_reset, .-sdmmc_host_reset
 	.section	.text.sdmmc_host_start_command,"ax",@progbits
 	.literal_position
@@ -265,7 +265,7 @@ sdmmc_host_reset:
 	.global	sdmmc_host_start_command
 	.type	sdmmc_host_start_command, @function
 sdmmc_host_start_command:
-.LFB16:
+.LFB20:
 	.loc 1 220 0
 .LVL10:
 	entry	sp, 32
@@ -312,7 +312,7 @@ sdmmc_host_start_command:
 .LVL18:
 	.loc 1 232 0
 	retw.n
-.LFE16:
+.LFE20:
 	.size	sdmmc_host_start_command, .-sdmmc_host_start_command
 	.section	.text.sdmmc_host_clock_update_command,"ax",@progbits
 	.literal_position
@@ -323,7 +323,7 @@ sdmmc_host_start_command:
 	.align	4
 	.type	sdmmc_host_clock_update_command, @function
 sdmmc_host_clock_update_command:
-.LFB14:
+.LFB18:
 	.loc 1 141 0
 .LVL19:
 	entry	sp, 32
@@ -384,7 +384,7 @@ sdmmc_host_clock_update_command:
 	bnez.n	a4, .L19
 	.loc 1 167 0
 	retw.n
-.LFE14:
+.LFE18:
 	.size	sdmmc_host_clock_update_command, .-sdmmc_host_clock_update_command
 	.section	.text.sdmmc_host_set_card_clk,"ax",@progbits
 	.literal_position
@@ -398,7 +398,7 @@ sdmmc_host_clock_update_command:
 	.global	sdmmc_host_set_card_clk
 	.type	sdmmc_host_set_card_clk, @function
 sdmmc_host_set_card_clk:
-.LFB15:
+.LFB19:
 	.loc 1 170 0
 .LVL28:
 	entry	sp, 32
@@ -572,7 +572,7 @@ sdmmc_host_set_card_clk:
 .LVL44:
 	.loc 1 218 0
 	retw.n
-.LFE15:
+.LFE19:
 	.size	sdmmc_host_set_card_clk, .-sdmmc_host_set_card_clk
 	.section	.text.sdmmc_host_init,"ax",@progbits
 	.literal_position
@@ -585,7 +585,7 @@ sdmmc_host_set_card_clk:
 	.global	sdmmc_host_init
 	.type	sdmmc_host_init, @function
 sdmmc_host_init:
-.LFB17:
+.LFB21:
 	.loc 1 235 0
 	entry	sp, 32
 .LCFI8:
@@ -707,7 +707,7 @@ sdmmc_host_init:
 .LVL60:
 	.loc 1 291 0
 	retw.n
-.LFE17:
+.LFE21:
 	.size	sdmmc_host_init, .-sdmmc_host_init
 	.section	.text.sdmmc_host_deinit,"ax",@progbits
 	.literal_position
@@ -717,7 +717,7 @@ sdmmc_host_init:
 	.global	sdmmc_host_deinit
 	.type	sdmmc_host_deinit, @function
 sdmmc_host_deinit:
-.LFB20:
+.LFB24:
 	.loc 1 363 0
 	entry	sp, 32
 .LCFI9:
@@ -756,7 +756,7 @@ sdmmc_host_deinit:
 	movi	a2, 0x103
 	.loc 1 375 0
 	retw.n
-.LFE20:
+.LFE24:
 	.size	sdmmc_host_deinit, .-sdmmc_host_deinit
 	.section	.text.sdmmc_host_wait_for_event,"ax",@progbits
 	.literal_position
@@ -765,7 +765,7 @@ sdmmc_host_deinit:
 	.global	sdmmc_host_wait_for_event
 	.type	sdmmc_host_wait_for_event, @function
 sdmmc_host_wait_for_event:
-.LFB21:
+.LFB25:
 	.loc 1 378 0
 .LVL66:
 	entry	sp, 32
@@ -807,7 +807,7 @@ sdmmc_host_wait_for_event:
 .LVL74:
 	.loc 1 390 0
 	retw.n
-.LFE21:
+.LFE25:
 	.size	sdmmc_host_wait_for_event, .-sdmmc_host_wait_for_event
 	.section	.text.sdmmc_host_set_bus_width,"ax",@progbits
 	.literal_position
@@ -818,7 +818,7 @@ sdmmc_host_wait_for_event:
 	.global	sdmmc_host_set_bus_width
 	.type	sdmmc_host_set_bus_width, @function
 sdmmc_host_set_bus_width:
-.LFB22:
+.LFB26:
 	.loc 1 393 0
 .LVL75:
 	entry	sp, 32
@@ -953,7 +953,7 @@ sdmmc_host_set_bus_width:
 .LVL91:
 	.loc 1 414 0
 	retw.n
-.LFE22:
+.LFE26:
 	.size	sdmmc_host_set_bus_width, .-sdmmc_host_set_bus_width
 	.section	.text.sdmmc_host_init_slot,"ax",@progbits
 	.literal_position
@@ -966,7 +966,7 @@ sdmmc_host_set_bus_width:
 	.global	sdmmc_host_init_slot
 	.type	sdmmc_host_init_slot, @function
 sdmmc_host_init_slot:
-.LFB19:
+.LFB23:
 	.loc 1 304 0
 .LVL92:
 	entry	sp, 32
@@ -1424,7 +1424,7 @@ sdmmc_host_init_slot:
 .LVL150:
 	.loc 1 360 0
 	retw.n
-.LFE19:
+.LFE23:
 	.size	sdmmc_host_init_slot, .-sdmmc_host_init_slot
 	.section	.text.sdmmc_host_dma_stop,"ax",@progbits
 	.literal_position
@@ -1434,7 +1434,7 @@ sdmmc_host_init_slot:
 	.global	sdmmc_host_dma_stop
 	.type	sdmmc_host_dma_stop, @function
 sdmmc_host_dma_stop:
-.LFB24:
+.LFB28:
 	.loc 1 428 0
 	entry	sp, 32
 .LCFI13:
@@ -1468,7 +1468,7 @@ sdmmc_host_dma_stop:
 	memw
 	s32i	a9, a8, 128
 	retw.n
-.LFE24:
+.LFE28:
 	.size	sdmmc_host_dma_stop, .-sdmmc_host_dma_stop
 	.section	.text.sdmmc_host_dma_resume,"ax",@progbits
 	.literal_position
@@ -1477,7 +1477,7 @@ sdmmc_host_dma_stop:
 	.global	sdmmc_host_dma_resume
 	.type	sdmmc_host_dma_resume, @function
 sdmmc_host_dma_resume:
-.LFB26:
+.LFB30:
 	.loc 1 451 0
 	entry	sp, 32
 .LCFI14:
@@ -1487,7 +1487,7 @@ sdmmc_host_dma_resume:
 	memw
 	s32i	a9, a8, 132
 	retw.n
-.LFE26:
+.LFE30:
 	.size	sdmmc_host_dma_resume, .-sdmmc_host_dma_resume
 	.section	.text.sdmmc_host_dma_prepare,"ax",@progbits
 	.literal_position
@@ -1498,7 +1498,7 @@ sdmmc_host_dma_resume:
 	.global	sdmmc_host_dma_prepare
 	.type	sdmmc_host_dma_prepare, @function
 sdmmc_host_dma_prepare:
-.LFB25:
+.LFB29:
 	.loc 1 436 0
 .LVL151:
 	entry	sp, 32
@@ -1553,7 +1553,7 @@ sdmmc_host_dma_prepare:
 	call8	sdmmc_host_dma_resume
 .LVL153:
 	retw.n
-.LFE25:
+.LFE29:
 	.size	sdmmc_host_dma_prepare, .-sdmmc_host_dma_prepare
 	.section	.bss.s_event_queue,"aw",@nobits
 	.align	4
@@ -1616,10 +1616,10 @@ s_slot_info:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI0-.LFB13
+	.4byte	.LCFI0-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1628,10 +1628,10 @@ s_slot_info:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI1-.LFB23
+	.4byte	.LCFI1-.LFB27
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1640,10 +1640,10 @@ s_slot_info:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.byte	0x4
-	.4byte	.LCFI2-.LFB27
+	.4byte	.LCFI2-.LFB31
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1652,10 +1652,10 @@ s_slot_info:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI3-.LFB12
+	.4byte	.LCFI3-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1664,10 +1664,10 @@ s_slot_info:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI4-.LFB11
+	.4byte	.LCFI4-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1676,10 +1676,10 @@ s_slot_info:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI5-.LFB16
+	.4byte	.LCFI5-.LFB20
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1688,10 +1688,10 @@ s_slot_info:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI6-.LFB14
+	.4byte	.LCFI6-.LFB18
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1700,10 +1700,10 @@ s_slot_info:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI7-.LFB15
+	.4byte	.LCFI7-.LFB19
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1712,10 +1712,10 @@ s_slot_info:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI8-.LFB17
+	.4byte	.LCFI8-.LFB21
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1724,10 +1724,10 @@ s_slot_info:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.byte	0x4
-	.4byte	.LCFI9-.LFB20
+	.4byte	.LCFI9-.LFB24
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1736,10 +1736,10 @@ s_slot_info:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.byte	0x4
-	.4byte	.LCFI10-.LFB21
+	.4byte	.LCFI10-.LFB25
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1748,10 +1748,10 @@ s_slot_info:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI11-.LFB22
+	.4byte	.LCFI11-.LFB26
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1760,10 +1760,10 @@ s_slot_info:
 	.4byte	.LEFDE24-.LASFDE24
 .LASFDE24:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI12-.LFB19
+	.4byte	.LCFI12-.LFB23
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1772,10 +1772,10 @@ s_slot_info:
 	.4byte	.LEFDE26-.LASFDE26
 .LASFDE26:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI13-.LFB24
+	.4byte	.LCFI13-.LFB28
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1784,10 +1784,10 @@ s_slot_info:
 	.4byte	.LEFDE28-.LASFDE28
 .LASFDE28:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI14-.LFB26
+	.4byte	.LCFI14-.LFB30
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1796,10 +1796,10 @@ s_slot_info:
 	.4byte	.LEFDE30-.LASFDE30
 .LASFDE30:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI15-.LFB25
+	.4byte	.LCFI15-.LFB29
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -4544,7 +4544,7 @@ s_slot_info:
 	.uleb128 0x3
 	.4byte	.LASF250
 	.byte	0xc
-	.byte	0x6c
+	.byte	0x6f
 	.4byte	0x25
 	.uleb128 0x3
 	.4byte	.LASF251
@@ -4691,24 +4691,24 @@ s_slot_info:
 	.4byte	.LASF260
 	.byte	0x1
 	.byte	0x87
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x27
 	.4byte	.LASF261
 	.byte	0x1
 	.2byte	0x1a0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x28
 	.4byte	.LASF268
 	.byte	0x1
 	.2byte	0x1d5
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x151f
@@ -4790,8 +4790,8 @@ s_slot_info:
 	.4byte	.LASF319
 	.byte	0x1
 	.byte	0x79
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1544
@@ -4809,8 +4809,8 @@ s_slot_info:
 	.4byte	.LASF290
 	.byte	0x1
 	.byte	0x56
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x32
@@ -4818,8 +4818,8 @@ s_slot_info:
 	.byte	0x1
 	.byte	0xdc
 	.4byte	0x125
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x159c
@@ -4846,8 +4846,8 @@ s_slot_info:
 	.4byte	.LASF269
 	.byte	0x1
 	.byte	0x8c
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x15f8
@@ -4897,8 +4897,8 @@ s_slot_info:
 	.byte	0x1
 	.byte	0xa9
 	.4byte	0x125
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x16b3
@@ -4984,8 +4984,8 @@ s_slot_info:
 	.byte	0x1
 	.byte	0xea
 	.4byte	0x125
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x177d
@@ -5081,8 +5081,8 @@ s_slot_info:
 	.byte	0x1
 	.2byte	0x16a
 	.4byte	0x125
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x17cb
@@ -5113,8 +5113,8 @@ s_slot_info:
 	.byte	0x1
 	.2byte	0x179
 	.4byte	0x125
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x182f
@@ -5167,8 +5167,8 @@ s_slot_info:
 	.byte	0x1
 	.2byte	0x188
 	.4byte	0x125
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1880
@@ -5198,8 +5198,8 @@ s_slot_info:
 	.byte	0x1
 	.2byte	0x12f
 	.4byte	0x125
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1bfe
@@ -5588,24 +5588,24 @@ s_slot_info:
 	.4byte	.LASF291
 	.byte	0x1
 	.2byte	0x1ab
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x43
 	.4byte	.LASF292
 	.byte	0x1
 	.2byte	0x1c2
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x44
 	.4byte	.LASF293
 	.byte	0x1
 	.2byte	0x1b3
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1c84
@@ -5689,7 +5689,7 @@ s_slot_info:
 	.4byte	.LASF301
 	.4byte	.LASF301
 	.byte	0xc
-	.2byte	0x11a
+	.2byte	0x129
 	.uleb128 0x48
 	.4byte	.LASF302
 	.4byte	.LASF302
@@ -6914,7 +6914,7 @@ s_slot_info:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL18
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6928,7 +6928,7 @@ s_slot_info:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL14
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -6951,7 +6951,7 @@ s_slot_info:
 	.byte	0x54
 	.byte	0x9f
 	.4byte	.LVL17
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -6962,7 +6962,7 @@ s_slot_info:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL23
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -6983,7 +6983,7 @@ s_slot_info:
 	.byte	0x31
 	.byte	0x9f
 	.4byte	.LVL26
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -7005,7 +7005,7 @@ s_slot_info:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL44
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -7026,7 +7026,7 @@ s_slot_info:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL43
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -7108,7 +7108,7 @@ s_slot_info:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL60
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -7152,7 +7152,7 @@ s_slot_info:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL74
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -7166,7 +7166,7 @@ s_slot_info:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL73
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -7199,7 +7199,7 @@ s_slot_info:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL89
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -7242,7 +7242,7 @@ s_slot_info:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL86
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -7282,7 +7282,7 @@ s_slot_info:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL91
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x1
 	.byte	0x58
 	.4byte	0
@@ -7359,7 +7359,7 @@ s_slot_info:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL150
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -7395,7 +7395,7 @@ s_slot_info:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL145
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -7420,7 +7420,7 @@ s_slot_info:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL145
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -7544,7 +7544,7 @@ s_slot_info:
 	.byte	0x22
 	.byte	0x9f
 	.4byte	.LVL150
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0xd
 	.byte	0xf3
 	.uleb128 0x1
@@ -7568,7 +7568,7 @@ s_slot_info:
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	.LVL147
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -7928,7 +7928,7 @@ s_slot_info:
 	.4byte	s_slot_info
 	.byte	0x22
 	.4byte	.LVL150
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x17
 	.byte	0xf3
 	.uleb128 0x1
@@ -7959,7 +7959,7 @@ s_slot_info:
 	.byte	0x33
 	.byte	0x9f
 	.4byte	.LVL147
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x2
 	.byte	0x33
 	.byte	0x9f
@@ -8323,7 +8323,7 @@ s_slot_info:
 	.4byte	s_slot_info+4
 	.byte	0x22
 	.4byte	.LVL150
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x17
 	.byte	0xf3
 	.uleb128 0x1
@@ -8354,7 +8354,7 @@ s_slot_info:
 	.byte	0x33
 	.byte	0x9f
 	.4byte	.LVL147
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x2
 	.byte	0x33
 	.byte	0x9f
@@ -8660,7 +8660,7 @@ s_slot_info:
 	.4byte	s_slot_info+8
 	.byte	0x22
 	.4byte	.LVL150
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x17
 	.byte	0xf3
 	.uleb128 0x1
@@ -8691,7 +8691,7 @@ s_slot_info:
 	.byte	0x33
 	.byte	0x9f
 	.4byte	.LVL147
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x2
 	.byte	0x33
 	.byte	0x9f
@@ -9128,7 +9128,7 @@ s_slot_info:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL152
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9144,81 +9144,79 @@ s_slot_info:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
 	.4byte	.LFB17
 	.4byte	.LFE17-.LFB17
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.4byte	.LFB20
 	.4byte	.LFE20-.LFB20
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.4byte	.LFB19
 	.4byte	.LFE19-.LFB19
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.4byte	.LFB24
 	.4byte	.LFE24-.LFB24
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
 	.4byte	.LFB25
 	.4byte	.LFE25-.LFB25
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB13
-	.4byte	.LFE13
-	.4byte	.LFB23
-	.4byte	.LFE23
-	.4byte	.LFB27
-	.4byte	.LFE27
-	.4byte	.LFB12
-	.4byte	.LFE12
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB16
-	.4byte	.LFE16
-	.4byte	.LFB14
-	.4byte	.LFE14
-	.4byte	.LFB15
-	.4byte	.LFE15
 	.4byte	.LFB17
 	.4byte	.LFE17
+	.4byte	.LFB27
+	.4byte	.LFE27
+	.4byte	.LFB31
+	.4byte	.LFE31
+	.4byte	.LFB16
+	.4byte	.LFE16
+	.4byte	.LFB15
+	.4byte	.LFE15
 	.4byte	.LFB20
 	.4byte	.LFE20
-	.4byte	.LFB21
-	.4byte	.LFE21
-	.4byte	.LFB22
-	.4byte	.LFE22
+	.4byte	.LFB18
+	.4byte	.LFE18
 	.4byte	.LFB19
 	.4byte	.LFE19
+	.4byte	.LFB21
+	.4byte	.LFE21
 	.4byte	.LFB24
 	.4byte	.LFE24
-	.4byte	.LFB26
-	.4byte	.LFE26
 	.4byte	.LFB25
 	.4byte	.LFE25
+	.4byte	.LFB26
+	.4byte	.LFE26
+	.4byte	.LFB23
+	.4byte	.LFE23
+	.4byte	.LFB28
+	.4byte	.LFE28
+	.4byte	.LFB30
+	.4byte	.LFE30
+	.4byte	.LFB29
+	.4byte	.LFE29
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF316:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF91:
 	.string	"response"
 .LASF3:
@@ -9849,6 +9847,8 @@ s_slot_info:
 	.string	"card_width_8"
 .LASF92:
 	.string	"data"
+.LASF316:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF303:
 	.string	"periph_module_enable"
 .LASF278:
@@ -9859,4 +9859,4 @@ s_slot_info:
 	.string	"dma_status"
 .LASF256:
 	.string	"write_protect"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

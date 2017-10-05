@@ -16,7 +16,7 @@ clk.o: C:/esp/esp-idf/components/esp32/clk.c \
  C:/esp/esp-idf/components/newlib/include/sys/lock.h \
  C:/esp/esp-idf/components/newlib/include/machine/types.h \
  C:/esp/esp-idf/components/newlib/include/sys/sched.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/esp32/include/esp_attr.h \
  C:/esp/esp-idf/components/log/include/esp_log.h \
  C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
@@ -42,7 +42,13 @@ clk.o: C:/esp/esp-idf/components/esp32/clk.c \
  C:/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  C:/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
  C:/esp/esp-idf/components/esp32/include/esp_dport_access.h \
- C:/esp/esp-idf/components/soc/esp32/include/soc/i2s_reg.h
+ C:/esp/esp-idf/components/soc/esp32/include/soc/i2s_reg.h \
+ C:/esp/esp-idf/components/esp32/include/xtensa/core-macros.h \
+ C:/esp/esp-idf/components/esp32/include/xtensa/config/core.h \
+ C:/esp/esp-idf/components/esp32/include/xtensa/hal.h \
+ C:/esp/esp-idf/components/esp32/include/xtensa/xtensa-versions.h \
+ C:/esp/esp-idf/components/esp32/include/xtensa/config/core-matmap.h \
+ C:/esp/esp-idf/components/esp32/include/xtensa/config/tie.h
 
 C:/esp/esp-idf/components/newlib/include/stdint.h:
 
@@ -78,7 +84,7 @@ C:/esp/esp-idf/components/newlib/include/machine/types.h:
 
 C:/esp/esp-idf/components/newlib/include/sys/sched.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/esp32/include/esp_attr.h:
 
@@ -131,4 +137,16 @@ C:/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h:
 C:/esp/esp-idf/components/esp32/include/esp_dport_access.h:
 
 C:/esp/esp-idf/components/soc/esp32/include/soc/i2s_reg.h:
+
+C:/esp/esp-idf/components/esp32/include/xtensa/core-macros.h:
+
+C:/esp/esp-idf/components/esp32/include/xtensa/config/core.h:
+
+C:/esp/esp-idf/components/esp32/include/xtensa/hal.h:
+
+C:/esp/esp-idf/components/esp32/include/xtensa/xtensa-versions.h:
+
+C:/esp/esp-idf/components/esp32/include/xtensa/config/core-matmap.h:
+
+C:/esp/esp-idf/components/esp32/include/xtensa/config/tie.h:
 /c/esp/esp-idf/components/esp32/./clk.c:

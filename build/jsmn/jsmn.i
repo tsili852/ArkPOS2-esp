@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/jsmn/src/jsmn.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\jsmn//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\jsmn//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/jsmn/src/jsmn.c"

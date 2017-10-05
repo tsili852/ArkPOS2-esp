@@ -10,7 +10,7 @@
 	.global	esp_aes_acquire_hardware
 	.type	esp_aes_acquire_hardware, @function
 esp_aes_acquire_hardware:
-.LFB15:
+.LFB19:
 	.file 1 "C:/esp/esp-idf/components/esp32/hwcrypto/aes.c"
 	.loc 1 52 0
 	entry	sp, 32
@@ -36,7 +36,7 @@ esp_aes_acquire_hardware:
 	memw
 	s32i.n	a8, a9, 0
 	retw.n
-.LFE15:
+.LFE19:
 	.size	esp_aes_acquire_hardware, .-esp_aes_acquire_hardware
 	.section	.text.esp_aes_release_hardware,"ax",@progbits
 	.literal_position
@@ -47,7 +47,7 @@ esp_aes_acquire_hardware:
 	.global	esp_aes_release_hardware
 	.type	esp_aes_release_hardware, @function
 esp_aes_release_hardware:
-.LFB16:
+.LFB20:
 	.loc 1 71 0
 	entry	sp, 32
 .LCFI1:
@@ -72,14 +72,14 @@ esp_aes_release_hardware:
 	call8	vTaskExitCritical
 .LVL1:
 	retw.n
-.LFE16:
+.LFE20:
 	.size	esp_aes_release_hardware, .-esp_aes_release_hardware
 	.section	.text.esp_aes_init,"ax",@progbits
 	.align	4
 	.global	esp_aes_init
 	.type	esp_aes_init, @function
 esp_aes_init:
-.LFB17:
+.LFB21:
 	.loc 1 86 0
 .LVL2:
 	entry	sp, 32
@@ -91,14 +91,14 @@ esp_aes_init:
 	call8	memset
 .LVL3:
 	retw.n
-.LFE17:
+.LFE21:
 	.size	esp_aes_init, .-esp_aes_init
 	.section	.text.esp_aes_free,"ax",@progbits
 	.align	4
 	.global	esp_aes_free
 	.type	esp_aes_free, @function
 esp_aes_free:
-.LFB18:
+.LFB22:
 	.loc 1 91 0
 .LVL4:
 	entry	sp, 32
@@ -113,14 +113,14 @@ esp_aes_free:
 .LVL5:
 .L4:
 	retw.n
-.LFE18:
+.LFE22:
 	.size	esp_aes_free, .-esp_aes_free
 	.section	.text.esp_aes_setkey,"ax",@progbits
 	.align	4
 	.global	esp_aes_setkey
 	.type	esp_aes_setkey, @function
 esp_aes_setkey:
-.LFB19:
+.LFB23:
 	.loc 1 105 0
 .LVL6:
 	entry	sp, 32
@@ -157,7 +157,7 @@ esp_aes_setkey:
 .LVL10:
 	.loc 1 112 0
 	retw.n
-.LFE19:
+.LFE23:
 	.size	esp_aes_setkey, .-esp_aes_setkey
 	.section	.text.esp_aes_encrypt,"ax",@progbits
 	.literal_position
@@ -170,7 +170,7 @@ esp_aes_setkey:
 	.global	esp_aes_encrypt
 	.type	esp_aes_encrypt, @function
 esp_aes_encrypt:
-.LFB22:
+.LFB26:
 	.loc 1 161 0
 .LVL11:
 	entry	sp, 32
@@ -254,7 +254,7 @@ esp_aes_encrypt:
 	call8	esp_aes_release_hardware
 .LVL21:
 	retw.n
-.LFE22:
+.LFE26:
 	.size	esp_aes_encrypt, .-esp_aes_encrypt
 	.section	.text.esp_aes_decrypt,"ax",@progbits
 	.literal_position
@@ -267,7 +267,7 @@ esp_aes_encrypt:
 	.global	esp_aes_decrypt
 	.type	esp_aes_decrypt, @function
 esp_aes_decrypt:
-.LFB23:
+.LFB27:
 	.loc 1 175 0
 .LVL22:
 	entry	sp, 32
@@ -351,7 +351,7 @@ esp_aes_decrypt:
 	call8	esp_aes_release_hardware
 .LVL32:
 	retw.n
-.LFE23:
+.LFE27:
 	.size	esp_aes_decrypt, .-esp_aes_decrypt
 	.section	.text.esp_aes_crypt_ecb,"ax",@progbits
 	.literal_position
@@ -364,7 +364,7 @@ esp_aes_decrypt:
 	.global	esp_aes_crypt_ecb
 	.type	esp_aes_crypt_ecb, @function
 esp_aes_crypt_ecb:
-.LFB24:
+.LFB28:
 	.loc 1 190 0
 .LVL33:
 	entry	sp, 32
@@ -460,7 +460,7 @@ esp_aes_crypt_ecb:
 	.loc 1 197 0
 	movi.n	a2, 0
 	retw.n
-.LFE24:
+.LFE28:
 	.size	esp_aes_crypt_ecb, .-esp_aes_crypt_ecb
 	.section	.text.esp_aes_crypt_cbc,"ax",@progbits
 	.literal_position
@@ -473,7 +473,7 @@ esp_aes_crypt_ecb:
 	.global	esp_aes_crypt_cbc
 	.type	esp_aes_crypt_cbc, @function
 esp_aes_crypt_cbc:
-.LFB25:
+.LFB29:
 	.loc 1 209 0
 .LVL46:
 	entry	sp, 64
@@ -726,7 +726,7 @@ esp_aes_crypt_cbc:
 .LVL82:
 	.loc 1 258 0
 	retw.n
-.LFE25:
+.LFE29:
 	.size	esp_aes_crypt_cbc, .-esp_aes_crypt_cbc
 	.section	.text.esp_aes_crypt_cfb128,"ax",@progbits
 	.literal_position
@@ -739,7 +739,7 @@ esp_aes_crypt_cbc:
 	.global	esp_aes_crypt_cfb128
 	.type	esp_aes_crypt_cfb128, @function
 esp_aes_crypt_cfb128:
-.LFB26:
+.LFB30:
 	.loc 1 270 0
 .LVL83:
 	entry	sp, 48
@@ -965,7 +965,7 @@ esp_aes_crypt_cfb128:
 	.loc 1 307 0
 	movi.n	a2, 0
 	retw.n
-.LFE26:
+.LFE30:
 	.size	esp_aes_crypt_cfb128, .-esp_aes_crypt_cfb128
 	.section	.text.esp_aes_crypt_cfb8,"ax",@progbits
 	.literal_position
@@ -978,7 +978,7 @@ esp_aes_crypt_cfb128:
 	.global	esp_aes_crypt_cfb8
 	.type	esp_aes_crypt_cfb8, @function
 esp_aes_crypt_cfb8:
-.LFB27:
+.LFB31:
 	.loc 1 318 0
 .LVL120:
 	entry	sp, 80
@@ -1117,7 +1117,7 @@ esp_aes_crypt_cfb8:
 	movi.n	a2, 0
 .LVL142:
 	retw.n
-.LFE27:
+.LFE31:
 	.size	esp_aes_crypt_cfb8, .-esp_aes_crypt_cfb8
 	.section	.text.esp_aes_crypt_ctr,"ax",@progbits
 	.literal_position
@@ -1130,7 +1130,7 @@ esp_aes_crypt_cfb8:
 	.global	esp_aes_crypt_ctr
 	.type	esp_aes_crypt_ctr, @function
 esp_aes_crypt_ctr:
-.LFB28:
+.LFB32:
 	.loc 1 358 0
 .LVL143:
 	entry	sp, 48
@@ -1284,7 +1284,7 @@ esp_aes_crypt_ctr:
 	movi.n	a2, 0
 .LVL167:
 	retw.n
-.LFE28:
+.LFE32:
 	.size	esp_aes_crypt_ctr, .-esp_aes_crypt_ctr
 	.section	.data.aes_spinlock,"aw",@progbits
 	.align	4
@@ -1312,10 +1312,10 @@ aes_spinlock:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI0-.LFB15
+	.4byte	.LCFI0-.LFB19
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1324,10 +1324,10 @@ aes_spinlock:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI1-.LFB16
+	.4byte	.LCFI1-.LFB20
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1336,10 +1336,10 @@ aes_spinlock:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI2-.LFB17
+	.4byte	.LCFI2-.LFB21
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1348,10 +1348,10 @@ aes_spinlock:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI3-.LFB18
+	.4byte	.LCFI3-.LFB22
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1360,10 +1360,10 @@ aes_spinlock:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI4-.LFB19
+	.4byte	.LCFI4-.LFB23
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1372,10 +1372,10 @@ aes_spinlock:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI5-.LFB22
+	.4byte	.LCFI5-.LFB26
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1384,10 +1384,10 @@ aes_spinlock:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI6-.LFB23
+	.4byte	.LCFI6-.LFB27
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1396,10 +1396,10 @@ aes_spinlock:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI7-.LFB24
+	.4byte	.LCFI7-.LFB28
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1408,10 +1408,10 @@ aes_spinlock:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI8-.LFB25
+	.4byte	.LCFI8-.LFB29
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -1420,10 +1420,10 @@ aes_spinlock:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI9-.LFB26
+	.4byte	.LCFI9-.LFB30
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1432,10 +1432,10 @@ aes_spinlock:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.byte	0x4
-	.4byte	.LCFI10-.LFB27
+	.4byte	.LCFI10-.LFB31
 	.byte	0xe
 	.uleb128 0x50
 	.align	4
@@ -1444,10 +1444,10 @@ aes_spinlock:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.byte	0x4
-	.4byte	.LCFI11-.LFB28
+	.4byte	.LCFI11-.LFB32
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1585,33 +1585,33 @@ aes_spinlock:
 	.byte	0x4
 	.4byte	0xfa
 	.uleb128 0xc
+	.uleb128 0x4
+	.byte	0x1
+	.byte	0x2
+	.4byte	.LASF18
 	.uleb128 0x7
 	.byte	0x8
 	.byte	0x6
-	.byte	0x81
-	.4byte	0x11c
-	.uleb128 0x8
-	.4byte	.LASF18
-	.byte	0x6
-	.byte	0x82
-	.4byte	0xad
-	.byte	0
+	.byte	0x84
+	.4byte	0x123
 	.uleb128 0x8
 	.4byte	.LASF19
 	.byte	0x6
-	.byte	0x83
+	.byte	0x85
+	.4byte	0xad
+	.byte	0
+	.uleb128 0x8
+	.4byte	.LASF20
+	.byte	0x6
+	.byte	0x86
 	.4byte	0xad
 	.byte	0x4
 	.byte	0
 	.uleb128 0x3
-	.4byte	.LASF20
-	.byte	0x6
-	.byte	0x88
-	.4byte	0xfb
-	.uleb128 0x4
-	.byte	0x1
-	.byte	0x2
 	.4byte	.LASF21
+	.byte	0x6
+	.byte	0x8b
+	.4byte	0x102
 	.uleb128 0xd
 	.4byte	.LASF30
 	.byte	0x1
@@ -1648,8 +1648,8 @@ aes_spinlock:
 	.4byte	.LASF25
 	.byte	0x1
 	.byte	0x33
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x19b
@@ -1668,8 +1668,8 @@ aes_spinlock:
 	.4byte	.LASF26
 	.byte	0x1
 	.byte	0x46
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1c4
@@ -1688,8 +1688,8 @@ aes_spinlock:
 	.4byte	.LASF27
 	.byte	0x1
 	.byte	0x55
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x202
@@ -1726,8 +1726,8 @@ aes_spinlock:
 	.4byte	.LASF28
 	.byte	0x1
 	.byte	0x5a
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x240
@@ -1765,8 +1765,8 @@ aes_spinlock:
 	.byte	0x1
 	.byte	0x67
 	.4byte	0x25
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2a5
@@ -1881,8 +1881,8 @@ aes_spinlock:
 	.4byte	.LASF37
 	.byte	0x1
 	.byte	0x9e
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x430
@@ -2000,8 +2000,8 @@ aes_spinlock:
 	.4byte	.LASF38
 	.byte	0x1
 	.byte	0xac
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x546
@@ -2120,8 +2120,8 @@ aes_spinlock:
 	.byte	0x1
 	.byte	0xba
 	.4byte	0x25
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x665
@@ -2239,8 +2239,8 @@ aes_spinlock:
 	.byte	0x1
 	.byte	0xcb
 	.4byte	0x25
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x8b8
@@ -2520,8 +2520,8 @@ aes_spinlock:
 	.byte	0x1
 	.2byte	0x107
 	.4byte	0x25
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xa95
@@ -2709,8 +2709,8 @@ aes_spinlock:
 	.byte	0x1
 	.2byte	0x138
 	.4byte	0x25
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xc49
@@ -2911,8 +2911,8 @@ aes_spinlock:
 	.byte	0x1
 	.2byte	0x15f
 	.4byte	0x25
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xdd4
@@ -3069,7 +3069,7 @@ aes_spinlock:
 	.4byte	.LASF52
 	.byte	0x1
 	.byte	0x31
-	.4byte	0x11c
+	.4byte	0x123
 	.uleb128 0x5
 	.byte	0x3
 	.4byte	aes_spinlock
@@ -3077,12 +3077,12 @@ aes_spinlock:
 	.4byte	.LASF53
 	.4byte	.LASF53
 	.byte	0x6
-	.byte	0xd9
+	.byte	0xdc
 	.uleb128 0x35
 	.4byte	.LASF54
 	.4byte	.LASF54
 	.byte	0x6
-	.byte	0xd8
+	.byte	0xdb
 	.uleb128 0x36
 	.4byte	.LASF55
 	.4byte	.LASF55
@@ -3794,7 +3794,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL10
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3808,7 +3808,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL14
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3822,7 +3822,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL18
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3836,7 +3836,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL14
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3850,7 +3850,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL18
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3864,7 +3864,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL18
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3897,7 +3897,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL25
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3911,7 +3911,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL29
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3925,7 +3925,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL25
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3939,7 +3939,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL29
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3953,7 +3953,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL29
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3986,7 +3986,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL39
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4011,7 +4011,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL37
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4025,7 +4025,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL43
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4050,7 +4050,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL37
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4064,7 +4064,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL39
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4110,7 +4110,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL82
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4131,7 +4131,7 @@ aes_spinlock:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL81
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -4142,7 +4142,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL65
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -4160,7 +4160,7 @@ aes_spinlock:
 	.byte	0x56
 	.byte	0x9f
 	.4byte	.LVL81
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x1
 	.byte	0x56
 	.4byte	0
@@ -4178,7 +4178,7 @@ aes_spinlock:
 	.byte	0x57
 	.byte	0x9f
 	.4byte	.LVL81
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x1
 	.byte	0x57
 	.4byte	0
@@ -4316,7 +4316,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL88
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4335,7 +4335,7 @@ aes_spinlock:
 	.byte	0x91
 	.sleb128 -44
 	.4byte	.LVL89
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4381,7 +4381,7 @@ aes_spinlock:
 	.byte	0x91
 	.sleb128 -48
 	.4byte	.LVL89
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4411,7 +4411,7 @@ aes_spinlock:
 	.sleb128 1
 	.byte	0x9f
 	.4byte	.LVL117
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x1
 	.byte	0x57
 	.4byte	0
@@ -4443,7 +4443,7 @@ aes_spinlock:
 	.sleb128 1
 	.byte	0x9f
 	.4byte	.LVL116
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x1
 	.byte	0x55
 	.4byte	0
@@ -4482,7 +4482,7 @@ aes_spinlock:
 	.sleb128 -1
 	.byte	0x9f
 	.4byte	.LVL115
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -4493,7 +4493,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL88
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4543,7 +4543,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL123
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4569,7 +4569,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL142
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x3
 	.byte	0x74
 	.sleb128 -1
@@ -4591,7 +4591,7 @@ aes_spinlock:
 	.byte	0x91
 	.sleb128 -44
 	.4byte	.LVL139
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x1
 	.byte	0x56
 	.4byte	0
@@ -4611,7 +4611,7 @@ aes_spinlock:
 	.byte	0x91
 	.sleb128 -48
 	.4byte	.LVL139
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x1
 	.byte	0x57
 	.4byte	0
@@ -4629,7 +4629,7 @@ aes_spinlock:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL123
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4683,7 +4683,7 @@ aes_spinlock:
 	.byte	0x91
 	.sleb128 -48
 	.4byte	.LVL148
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4721,7 +4721,7 @@ aes_spinlock:
 	.byte	0x91
 	.sleb128 -44
 	.4byte	.LVL148
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4741,7 +4741,7 @@ aes_spinlock:
 	.sleb128 1
 	.byte	0x9f
 	.4byte	.LVL164
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x1
 	.byte	0x57
 	.4byte	0
@@ -4763,7 +4763,7 @@ aes_spinlock:
 	.sleb128 1
 	.byte	0x9f
 	.4byte	.LVL163
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -4838,58 +4838,58 @@ aes_spinlock:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
 	.4byte	.LFB19
 	.4byte	.LFE19-.LFB19
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.4byte	.LFB22
 	.4byte	.LFE22-.LFB22
 	.4byte	.LFB23
 	.4byte	.LFE23-.LFB23
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
 	.4byte	.LFB26
 	.4byte	.LFE26-.LFB26
 	.4byte	.LFB27
 	.4byte	.LFE27-.LFB27
 	.4byte	.LFB28
 	.4byte	.LFE28-.LFB28
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB15
-	.4byte	.LFE15
-	.4byte	.LFB16
-	.4byte	.LFE16
-	.4byte	.LFB17
-	.4byte	.LFE17
-	.4byte	.LFB18
-	.4byte	.LFE18
 	.4byte	.LFB19
 	.4byte	.LFE19
+	.4byte	.LFB20
+	.4byte	.LFE20
+	.4byte	.LFB21
+	.4byte	.LFE21
 	.4byte	.LFB22
 	.4byte	.LFE22
 	.4byte	.LFB23
 	.4byte	.LFE23
-	.4byte	.LFB24
-	.4byte	.LFE24
-	.4byte	.LFB25
-	.4byte	.LFE25
 	.4byte	.LFB26
 	.4byte	.LFE26
 	.4byte	.LFB27
 	.4byte	.LFE27
 	.4byte	.LFB28
 	.4byte	.LFE28
+	.4byte	.LFB29
+	.4byte	.LFE29
+	.4byte	.LFB30
+	.4byte	.LFE30
+	.4byte	.LFB31
+	.4byte	.LFE31
+	.4byte	.LFB32
+	.4byte	.LFE32
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -4897,6 +4897,8 @@ aes_spinlock:
 	.section	.debug_str,"MS",@progbits,1
 .LASF41:
 	.string	"esp_aes_crypt_cbc"
+.LASF59:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF38:
 	.string	"esp_aes_decrypt"
 .LASF40:
@@ -4929,7 +4931,7 @@ aes_spinlock:
 	.string	"nc_off"
 .LASF53:
 	.string	"vTaskEnterCritical"
-.LASF20:
+.LASF21:
 	.string	"portMUX_TYPE"
 .LASF26:
 	.string	"esp_aes_release_hardware"
@@ -4941,8 +4943,6 @@ aes_spinlock:
 	.string	"C:/esp/esp-idf/components/esp32/hwcrypto/aes.c"
 .LASF8:
 	.string	"long long int"
-.LASF59:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF55:
 	.string	"memset"
 .LASF10:
@@ -4957,7 +4957,7 @@ aes_spinlock:
 	.string	"esp_aes_setkey_hardware"
 .LASF5:
 	.string	"unsigned char"
-.LASF18:
+.LASF19:
 	.string	"owner"
 .LASF2:
 	.string	"signed char"
@@ -4985,7 +4985,7 @@ aes_spinlock:
 	.string	"input_words"
 .LASF27:
 	.string	"esp_aes_init"
-.LASF21:
+.LASF18:
 	.string	"_Bool"
 .LASF24:
 	.string	"mode_reg_base"
@@ -4993,7 +4993,7 @@ aes_spinlock:
 	.string	"long unsigned int"
 .LASF17:
 	.string	"esp_aes_context"
-.LASF19:
+.LASF20:
 	.string	"count"
 .LASF14:
 	.string	"uint8_t"
@@ -5015,4 +5015,4 @@ aes_spinlock:
 	.string	"GNU C99 5.2.0 -mlongcalls -ggdb -Og -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields"
 .LASF29:
 	.string	"keybits"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

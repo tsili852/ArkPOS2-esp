@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/log/log.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\bootloader\\log//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\bootloader\\log//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/log/log.c"
@@ -1479,6 +1479,70 @@ typedef unsigned long timer_t;
 
 typedef unsigned long useconds_t;
 typedef long suseconds_t;
+# 299 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\sched.h" 1 3
+# 46 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\sched.h" 3
+struct sched_param {
+  int sched_priority;
+# 59 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\sched.h" 3
+};
+
+
+
+
+
+int sched_yield( void );
+# 300 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 2 3
+# 308 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+typedef __uint32_t pthread_t;
+# 341 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+typedef struct {
+  int is_initialized;
+  void *stackaddr;
+  int stacksize;
+  int contentionscope;
+  int inheritsched;
+  int schedpolicy;
+  struct sched_param schedparam;
+# 357 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+  int detachstate;
+
+
+
+
+
+} pthread_attr_t;
+# 442 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+typedef __uint32_t pthread_mutex_t;
+
+typedef struct {
+  int is_initialized;
+# 454 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+  int type;
+
+  int recursive;
+} pthread_mutexattr_t;
+
+
+
+
+typedef __uint32_t pthread_cond_t;
+
+typedef struct {
+  int is_initialized;
+
+
+
+} pthread_condattr_t;
+
+
+
+typedef __uint32_t pthread_key_t;
+
+typedef struct {
+  int is_initialized;
+  int init_executed;
+} pthread_once_t;
 # 49 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\stdio.h" 2 3
 
 
@@ -1913,7 +1977,7 @@ extern const char _ctype_[];
 
 # 1 "C:/esp/esp-idf/components/log/include/esp_log.h" 1
 # 20 "C:/esp/esp-idf/components/log/include/esp_log.h"
-# 1 "c:\\esp\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
+# 1 "c:\\esp\\esp32-arkpos2\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h" 1
 # 54 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h"
@@ -2088,19 +2152,31 @@ void esp_log_buffer_hexdump_internal( const char *tag, const void *buffer, uint1
 # 1 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 1
 # 14 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
        
-# 25 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+
+
+
+
+
+# 1 "c:\\esp\\esp32-arkpos2\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
+# 21 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 2
+
+
+
+
+
+
 typedef struct {
     const char *name;
     uint32_t caps[3];
     
-# 28 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+# 30 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
    _Bool 
-# 28 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+# 30 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
         aliased_iram;
     
-# 29 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+# 31 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
    _Bool 
-# 29 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+# 31 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
         startup_stack;
 } soc_memory_type_desc_t;
 
@@ -2134,19 +2210,19 @@ extern const soc_reserved_region_t soc_reserved_regions[];
 extern const size_t soc_reserved_region_count;
 
 inline static 
-# 61 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+# 63 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
              _Bool 
-# 61 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
-                  esp_ptr_dma_capable(const void *p)
+# 63 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_dma_capable(const void *p)
 {
     return (intptr_t)p >= 0x3FFAE000 && (intptr_t)p < 0x40000000;
 }
 
 inline static 
-# 66 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+# 68 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
              _Bool 
-# 66 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
-                  esp_ptr_executable(const void *p)
+# 68 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_executable(const void *p)
 {
     intptr_t ip = (intptr_t) p;
     return (ip >= 0x400D0000 && ip < 0x40400000)
@@ -2154,22 +2230,47 @@ inline static
         || (ip >= 0x400C0000 && ip < 0x400C2000);
 }
 
-inline 
-# 74 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
-      _Bool 
-# 74 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
-           esp_ptr_byte_accesible(const void *p)
+inline static 
+# 76 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 76 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_byte_accessible(const void *p)
 {
+    
+# 78 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 78 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        r;
+    r = ((intptr_t)p >= 0x3FFAE000 && (intptr_t)p < 0x40000000);
 
-    return (intptr_t)p >= 0x3FFAE000 && (intptr_t)p < 0x40000000;
+
+
+    return r;
+}
+
+inline static 
+# 86 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+             _Bool 
+# 86 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+                  __attribute__((section(".iram1"))) esp_ptr_internal(const void *p) {
+    
+# 87 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h" 3 4
+   _Bool 
+# 87 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
+        r;
+    r = ((intptr_t)p >= 0x3F400000 && (intptr_t)p < 0x400C2000);
+    r |= ((intptr_t)p >= 0x50000000 && (intptr_t)p < 0x50002000);
+    return r;
 }
 # 61 "C:/esp/esp-idf/components/log/log.c" 2
-# 314 "C:/esp/esp-idf/components/log/log.c"
+# 315 "C:/esp/esp-idf/components/log/log.c"
+extern uint32_t g_ticks_per_us_pro;
+
 uint32_t esp_log_early_timestamp()
 {
-    return xthal_get_ccount() / (( 26*1000000 ) / 1000);
+    return xthal_get_ccount() / (g_ticks_per_us_pro * 1000);
 }
-# 335 "C:/esp/esp-idf/components/log/log.c"
+# 338 "C:/esp/esp-idf/components/log/log.c"
 uint32_t esp_log_timestamp() __attribute__((alias("esp_log_early_timestamp")));
 
 
@@ -2189,7 +2290,7 @@ void esp_log_buffer_hex_internal(const char *tag, const void *buffer, uint16_t b
         } else {
             bytes_cur_line = buff_len;
         }
-        if ( !esp_ptr_byte_accesible(buffer) ) {
+        if ( !esp_ptr_byte_accessible(buffer) ) {
 
             memcpy( temp_buffer, buffer, (bytes_cur_line+3)/4*4 );
             ptr_line = temp_buffer;
@@ -2221,7 +2322,7 @@ void esp_log_buffer_char_internal(const char *tag, const void *buffer, uint16_t 
         } else {
             bytes_cur_line = buff_len;
         }
-        if ( !esp_ptr_byte_accesible(buffer) ) {
+        if ( !esp_ptr_byte_accessible(buffer) ) {
 
             memcpy( temp_buffer, buffer, (bytes_cur_line+3)/4*4 );
             ptr_line = temp_buffer;
@@ -2256,7 +2357,7 @@ void esp_log_buffer_hexdump_internal( const char *tag, const void *buffer, uint1
         } else {
             bytes_cur_line = buff_len;
         }
-        if ( !esp_ptr_byte_accesible(buffer) ) {
+        if ( !esp_ptr_byte_accessible(buffer) ) {
 
             memcpy( temp_buffer, buffer, (bytes_cur_line+3)/4*4 );
             ptr_line = temp_buffer;
@@ -2279,17 +2380,17 @@ void esp_log_buffer_hexdump_internal( const char *tag, const void *buffer, uint1
         ptr_hd += sprintf( ptr_hd, "  |" );
         for( int i = 0; i < bytes_cur_line; i ++ ) {
             if ( 
-# 443 "C:/esp/esp-idf/components/log/log.c" 3
+# 446 "C:/esp/esp-idf/components/log/log.c" 3
                 (((__ctype_ptr__+sizeof(""[
-# 443 "C:/esp/esp-idf/components/log/log.c"
+# 446 "C:/esp/esp-idf/components/log/log.c"
                 (int)ptr_line[i]
-# 443 "C:/esp/esp-idf/components/log/log.c" 3
+# 446 "C:/esp/esp-idf/components/log/log.c" 3
                 ]))[(int)(
-# 443 "C:/esp/esp-idf/components/log/log.c"
+# 446 "C:/esp/esp-idf/components/log/log.c"
                 (int)ptr_line[i]
-# 443 "C:/esp/esp-idf/components/log/log.c" 3
+# 446 "C:/esp/esp-idf/components/log/log.c" 3
                 )])&(020|01|02|04|0200)) 
-# 443 "C:/esp/esp-idf/components/log/log.c"
+# 446 "C:/esp/esp-idf/components/log/log.c"
                                           ) {
                 ptr_hd += sprintf( ptr_hd, "%c", ptr_line[i] );
             } else {

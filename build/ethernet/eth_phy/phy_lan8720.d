@@ -6,7 +6,7 @@ eth_phy/phy_lan8720.o: \
  C:/esp/esp-idf/components/newlib/include/machine/_default_types.h \
  C:/esp/esp-idf/components/newlib/include/sys/features.h \
  C:/esp/esp-idf/components/newlib/include/sys/_intsup.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  C:/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  C:/esp/esp-idf/components/esp32/include/esp_assert.h \
@@ -50,7 +50,7 @@ C:/esp/esp-idf/components/newlib/include/sys/features.h:
 
 C:/esp/esp-idf/components/newlib/include/sys/_intsup.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
 

@@ -7,7 +7,7 @@
 	.align	4
 	.type	timer_initialized, @function
 timer_initialized:
-.LFB9:
+.LFB13:
 	.file 1 "C:/esp/esp-idf/components/esp32/ets_timer_legacy.c"
 	.loc 1 47 0
 .LVL0:
@@ -23,7 +23,7 @@ timer_initialized:
 	moveqz	a2, a9, a8
 	.loc 1 49 0
 	retw.n
-.LFE9:
+.LFE13:
 	.size	timer_initialized, .-timer_initialized
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -40,13 +40,13 @@ timer_initialized:
 	.literal .LC1, 303174162
 	.literal .LC3, .LC2
 	.literal .LC5, .LC4
-	.literal .LC6, __func__$5130
+	.literal .LC6, __func__$5234
 	.literal .LC8, .LC7
 	.align	4
 	.global	ets_timer_setfn
 	.type	ets_timer_setfn, @function
 ets_timer_setfn:
-.LFB10:
+.LFB14:
 	.loc 1 52 0
 .LVL2:
 	entry	sp, 48
@@ -97,7 +97,7 @@ ets_timer_setfn:
 	retw.n
 .LBE3:
 .LBE2:
-.LFE10:
+.LFE14:
 	.size	ets_timer_setfn, .-ets_timer_setfn
 	.global	os_timer_setfn
 	.set	os_timer_setfn,ets_timer_setfn
@@ -114,7 +114,7 @@ ets_timer_setfn:
 	.section	.text.ets_timer_arm_us,"ax",@progbits
 	.literal_position
 	.literal .LC10, .LC9
-	.literal .LC11, __func__$5136
+	.literal .LC11, __func__$5240
 	.literal .LC12, .LC7
 	.literal .LC14, .LC13
 	.literal .LC16, .LC15
@@ -122,7 +122,7 @@ ets_timer_setfn:
 	.global	ets_timer_arm_us
 	.type	ets_timer_arm_us, @function
 ets_timer_arm_us:
-.LFB11:
+.LFB15:
 	.loc 1 72 0 is_stmt 1
 .LVL9:
 	entry	sp, 32
@@ -182,14 +182,14 @@ ets_timer_arm_us:
 .L6:
 	retw.n
 .LBE5:
-.LFE11:
+.LFE15:
 	.size	ets_timer_arm_us, .-ets_timer_arm_us
 	.global	os_timer_arm_us
 	.set	os_timer_arm_us,ets_timer_arm_us
 	.section	.text.ets_timer_arm,"ax",@progbits
 	.literal_position
 	.literal .LC17, .LC9
-	.literal .LC18, __func__$5145
+	.literal .LC18, __func__$5249
 	.literal .LC19, .LC7
 	.literal .LC20, .LC13
 	.literal .LC21, .LC15
@@ -197,7 +197,7 @@ ets_timer_arm_us:
 	.global	ets_timer_arm
 	.type	ets_timer_arm, @function
 ets_timer_arm:
-.LFB12:
+.LFB16:
 	.loc 1 83 0 is_stmt 1
 .LVL17:
 	entry	sp, 32
@@ -262,7 +262,7 @@ ets_timer_arm:
 .L10:
 	retw.n
 .LBE7:
-.LFE12:
+.LFE16:
 	.size	ets_timer_arm, .-ets_timer_arm
 	.global	os_timer_arm
 	.set	os_timer_arm,ets_timer_arm
@@ -271,7 +271,7 @@ ets_timer_arm:
 	.global	ets_timer_done
 	.type	ets_timer_done, @function
 ets_timer_done:
-.LFB13:
+.LFB17:
 	.loc 1 95 0 is_stmt 1
 .LVL26:
 	entry	sp, 32
@@ -292,7 +292,7 @@ ets_timer_done:
 	s32i.n	a8, a2, 4
 .L14:
 	retw.n
-.LFE13:
+.LFE17:
 	.size	ets_timer_done, .-ets_timer_done
 	.global	os_timer_done
 	.set	os_timer_done,ets_timer_done
@@ -301,7 +301,7 @@ ets_timer_done:
 	.global	ets_timer_disarm
 	.type	ets_timer_disarm, @function
 ets_timer_disarm:
-.LFB14:
+.LFB18:
 	.loc 1 104 0
 .LVL29:
 	entry	sp, 32
@@ -317,7 +317,7 @@ ets_timer_disarm:
 .LVL31:
 .L16:
 	retw.n
-.LFE14:
+.LFE18:
 	.size	ets_timer_disarm, .-ets_timer_disarm
 	.global	os_timer_disarm
 	.set	os_timer_disarm,ets_timer_disarm
@@ -326,43 +326,43 @@ ets_timer_disarm:
 	.global	ets_timer_init
 	.type	ets_timer_init, @function
 ets_timer_init:
-.LFB15:
+.LFB19:
 	.loc 1 112 0
 	entry	sp, 32
 .LCFI6:
 	retw.n
-.LFE15:
+.LFE19:
 	.size	ets_timer_init, .-ets_timer_init
 	.section	.text.ets_timer_deinit,"ax",@progbits
 	.align	4
 	.global	ets_timer_deinit
 	.type	ets_timer_deinit, @function
 ets_timer_deinit:
-.LFB16:
+.LFB20:
 	.loc 1 117 0
 	.loc 1 117 0
 	entry	sp, 32
 .LCFI7:
 	retw.n
-.LFE16:
+.LFE20:
 	.size	ets_timer_deinit, .-ets_timer_deinit
-	.section	.rodata.__func__$5145,"a",@progbits
+	.section	.rodata.__func__$5249,"a",@progbits
 	.align	4
-	.type	__func__$5145, @object
-	.size	__func__$5145, 14
-__func__$5145:
+	.type	__func__$5249, @object
+	.size	__func__$5249, 14
+__func__$5249:
 	.string	"ets_timer_arm"
-	.section	.rodata.__func__$5136,"a",@progbits
+	.section	.rodata.__func__$5240,"a",@progbits
 	.align	4
-	.type	__func__$5136, @object
-	.size	__func__$5136, 17
-__func__$5136:
+	.type	__func__$5240, @object
+	.size	__func__$5240, 17
+__func__$5240:
 	.string	"ets_timer_arm_us"
-	.section	.rodata.__func__$5130,"a",@progbits
+	.section	.rodata.__func__$5234,"a",@progbits
 	.align	4
-	.type	__func__$5130, @object
-	.size	__func__$5130, 16
-__func__$5130:
+	.type	__func__$5234, @object
+	.size	__func__$5234, 16
+__func__$5234:
 	.string	"ets_timer_setfn"
 	.section	.debug_frame,"",@progbits
 .Lframe0:
@@ -383,10 +383,10 @@ __func__$5130:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x4
-	.4byte	.LCFI0-.LFB9
+	.4byte	.LCFI0-.LFB13
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -395,10 +395,10 @@ __func__$5130:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI1-.LFB10
+	.4byte	.LCFI1-.LFB14
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -407,10 +407,10 @@ __func__$5130:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI2-.LFB11
+	.4byte	.LCFI2-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -419,10 +419,10 @@ __func__$5130:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI3-.LFB12
+	.4byte	.LCFI3-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -431,10 +431,10 @@ __func__$5130:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI4-.LFB13
+	.4byte	.LCFI4-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -443,10 +443,10 @@ __func__$5130:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI5-.LFB14
+	.4byte	.LCFI5-.LFB18
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -455,10 +455,10 @@ __func__$5130:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI6-.LFB15
+	.4byte	.LCFI6-.LFB19
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -467,10 +467,10 @@ __func__$5130:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI7-.LFB16
+	.4byte	.LCFI7-.LFB20
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -722,8 +722,8 @@ __func__$5130:
 	.byte	0x1
 	.byte	0x2e
 	.4byte	0x157
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x20a
@@ -741,8 +741,8 @@ __func__$5130:
 	.4byte	.LASF37
 	.byte	0x1
 	.byte	0x33
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x305
@@ -771,7 +771,7 @@ __func__$5130:
 	.4byte	0x315
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5130
+	.4byte	__func__$5234
 	.uleb128 0x18
 	.4byte	.LBB2
 	.4byte	.LBE2-.LBB2
@@ -830,7 +830,7 @@ __func__$5130:
 	.byte	0x5d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5130
+	.4byte	__func__$5234
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5e
@@ -887,8 +887,8 @@ __func__$5130:
 	.4byte	.LASF38
 	.byte	0x1
 	.byte	0x47
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x457
@@ -918,7 +918,7 @@ __func__$5130:
 	.4byte	0x467
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5136
+	.4byte	__func__$5240
 	.uleb128 0x18
 	.4byte	.LBB4
 	.4byte	.LBE4-.LBB4
@@ -952,7 +952,7 @@ __func__$5130:
 	.byte	0x5d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5136
+	.4byte	__func__$5240
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5e
@@ -994,7 +994,7 @@ __func__$5130:
 	.byte	0x5d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5136
+	.4byte	__func__$5240
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5e
@@ -1035,7 +1035,7 @@ __func__$5130:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5136
+	.4byte	__func__$5240
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -1060,8 +1060,8 @@ __func__$5130:
 	.4byte	.LASF42
 	.byte	0x1
 	.byte	0x52
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x5b8
@@ -1102,7 +1102,7 @@ __func__$5130:
 	.4byte	0x5c8
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5145
+	.4byte	__func__$5249
 	.uleb128 0x18
 	.4byte	.LBB6
 	.4byte	.LBE6-.LBB6
@@ -1136,7 +1136,7 @@ __func__$5130:
 	.byte	0x5d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5145
+	.4byte	__func__$5249
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5e
@@ -1178,7 +1178,7 @@ __func__$5130:
 	.byte	0x5d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5145
+	.4byte	__func__$5249
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5e
@@ -1219,7 +1219,7 @@ __func__$5130:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5145
+	.4byte	__func__$5249
 	.uleb128 0x1d
 	.uleb128 0x1
 	.byte	0x5d
@@ -1244,8 +1244,8 @@ __func__$5130:
 	.4byte	.LASF44
 	.byte	0x1
 	.byte	0x5e
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x60d
@@ -1275,8 +1275,8 @@ __func__$5130:
 	.4byte	.LASF45
 	.byte	0x1
 	.byte	0x67
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x64d
@@ -1306,16 +1306,16 @@ __func__$5130:
 	.4byte	.LASF46
 	.byte	0x1
 	.byte	0x6f
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x22
 	.4byte	.LASF47
 	.byte	0x1
 	.byte	0x74
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x23
@@ -1832,7 +1832,7 @@ __func__$5130:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL1
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1856,7 +1856,7 @@ __func__$5130:
 	.byte	0x7a
 	.sleb128 0
 	.4byte	.LVL7-1
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1891,7 +1891,7 @@ __func__$5130:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL18
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1921,14 +1921,6 @@ __func__$5130:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
 	.4byte	.LFB13
 	.4byte	.LFE13-.LFB13
 	.4byte	.LFB14
@@ -1937,18 +1929,18 @@ __func__$5130:
 	.4byte	.LFE15-.LFB15
 	.4byte	.LFB16
 	.4byte	.LFE16-.LFB16
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB9
-	.4byte	.LFE9
-	.4byte	.LFB10
-	.4byte	.LFE10
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB12
-	.4byte	.LFE12
 	.4byte	.LFB13
 	.4byte	.LFE13
 	.4byte	.LFB14
@@ -1957,6 +1949,14 @@ __func__$5130:
 	.4byte	.LFE15
 	.4byte	.LFB16
 	.4byte	.LFE16
+	.4byte	.LFB17
+	.4byte	.LFE17
+	.4byte	.LFB18
+	.4byte	.LFE18
+	.4byte	.LFB19
+	.4byte	.LFE19
+	.4byte	.LFB20
+	.4byte	.LFE20
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -1968,6 +1968,8 @@ __func__$5130:
 	.string	"timer_func"
 .LASF47:
 	.string	"ets_timer_deinit"
+.LASF57:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF59:
 	.string	"esp_timer"
 .LASF16:
@@ -1996,8 +1998,6 @@ __func__$5130:
 	.string	"repeat_flag"
 .LASF7:
 	.string	"long long int"
-.LASF57:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF62:
 	.string	"memset"
 .LASF10:
@@ -2088,4 +2088,4 @@ __func__$5130:
 	.string	"esp_err_t"
 .LASF29:
 	.string	"callback"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

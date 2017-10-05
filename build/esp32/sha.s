@@ -3711,6 +3711,8 @@ memory_block_lock:
 	.string	"SHA_CTX"
 .LASF6:
 	.string	"__uint32_t"
+.LASF71:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF0:
 	.string	"unsigned int"
 .LASF51:
@@ -3779,8 +3781,6 @@ memory_block_lock:
 	.string	"esp_sha_lock_memory_block"
 .LASF53:
 	.string	"input"
-.LASF71:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF65:
 	.string	"_lock_try_acquire"
 .LASF26:
@@ -3821,4 +3821,4 @@ memory_block_lock:
 	.string	"SHA1"
 .LASF25:
 	.string	"lock"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

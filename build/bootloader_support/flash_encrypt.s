@@ -4450,6 +4450,8 @@ esp_flash_encrypt_check_and_update:
 	.string	"index"
 .LASF92:
 	.string	"esp_efuse_burn_new_values"
+.LASF101:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bootloader_support"
 .LASF85:
 	.string	"esp_flash_encrypt_region"
 .LASF83:
@@ -4508,8 +4510,6 @@ esp_flash_encrypt_check_and_update:
 	.string	"uint32_t"
 .LASF0:
 	.string	"unsigned int"
-.LASF101:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bootloader_support"
 .LASF17:
 	.string	"uint16_t"
 .LASF66:
@@ -4614,4 +4614,4 @@ esp_flash_encrypt_check_and_update:
 	.string	"esp_partition_table_basic_verify"
 .LASF43:
 	.string	"esp_image_header_t"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

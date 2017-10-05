@@ -9,7 +9,7 @@
 	.global	gpio_intr_service
 	.type	gpio_intr_service, @function
 gpio_intr_service:
-.LFB25:
+.LFB29:
 	.file 1 "C:/esp/esp-idf/components/driver/gpio.c"
 	.loc 1 343 0
 .LVL0:
@@ -95,7 +95,7 @@ gpio_intr_service:
 .LVL9:
 .L1:
 	retw.n
-.LFE25:
+.LFE29:
 	.size	gpio_intr_service, .-gpio_intr_service
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -110,7 +110,7 @@ gpio_intr_service:
 	.section	.text.gpio_intr_enable_on_core,"ax",@progbits
 	.literal_position
 	.literal .LC2, GPIO_PIN_MUX_REG
-	.literal .LC3, __FUNCTION__$4653
+	.literal .LC3, __FUNCTION__$4757
 	.literal .LC5, .LC4
 	.literal .LC7, .LC6
 	.literal .LC9, .LC8
@@ -121,7 +121,7 @@ gpio_intr_service:
 	.align	4
 	.type	gpio_intr_enable_on_core, @function
 gpio_intr_enable_on_core:
-.LFB15:
+.LFB19:
 	.loc 1 137 0
 .LVL10:
 	entry	sp, 48
@@ -196,12 +196,12 @@ gpio_intr_enable_on_core:
 	movi.n	a2, 0
 	.loc 1 145 0
 	retw.n
-.LFE15:
+.LFE19:
 	.size	gpio_intr_enable_on_core, .-gpio_intr_enable_on_core
 	.section	.text.gpio_output_disable,"ax",@progbits
 	.literal_position
 	.literal .LC14, GPIO_PIN_MUX_REG
-	.literal .LC15, __FUNCTION__$4664
+	.literal .LC15, __FUNCTION__$4768
 	.literal .LC16, .LC4
 	.literal .LC17, .LC6
 	.literal .LC18, .LC8
@@ -210,7 +210,7 @@ gpio_intr_enable_on_core:
 	.align	4
 	.type	gpio_output_disable, @function
 gpio_output_disable:
-.LFB18:
+.LFB22:
 	.loc 1 160 0
 .LVL22:
 	entry	sp, 48
@@ -283,7 +283,7 @@ gpio_output_disable:
 	movi.n	a2, 0
 	.loc 1 173 0
 	retw.n
-.LFE18:
+.LFE22:
 	.size	gpio_output_disable, .-gpio_output_disable
 	.section	.rodata.str1.4
 	.align	4
@@ -292,7 +292,7 @@ gpio_output_disable:
 	.section	.text.gpio_output_enable,"ax",@progbits
 	.literal_position
 	.literal .LC21, GPIO_PIN_MUX_REG
-	.literal .LC22, __FUNCTION__$4668
+	.literal .LC22, __FUNCTION__$4772
 	.literal .LC23, .LC4
 	.literal .LC24, .LC6
 	.literal .LC26, .LC25
@@ -300,7 +300,7 @@ gpio_output_disable:
 	.align	4
 	.type	gpio_output_enable, @function
 gpio_output_enable:
-.LFB19:
+.LFB23:
 	.loc 1 176 0
 .LVL29:
 	entry	sp, 48
@@ -375,12 +375,12 @@ gpio_output_enable:
 .LVL35:
 	.loc 1 185 0
 	retw.n
-.LFE19:
+.LFE23:
 	.size	gpio_output_enable, .-gpio_output_enable
 	.section	.text.gpio_pullup_en,"ax",@progbits
 	.literal_position
 	.literal .LC28, GPIO_PIN_MUX_REG
-	.literal .LC29, __FUNCTION__$4631
+	.literal .LC29, __FUNCTION__$4735
 	.literal .LC30, .LC4
 	.literal .LC31, .LC6
 	.literal .LC32, .LC8
@@ -389,7 +389,7 @@ gpio_output_enable:
 	.global	gpio_pullup_en
 	.type	gpio_pullup_en, @function
 gpio_pullup_en:
-.LFB10:
+.LFB14:
 	.loc 1 85 0
 .LVL36:
 	entry	sp, 48
@@ -469,12 +469,12 @@ gpio_pullup_en:
 	movi.n	a2, 0
 	.loc 1 93 0
 	retw.n
-.LFE10:
+.LFE14:
 	.size	gpio_pullup_en, .-gpio_pullup_en
 	.section	.text.gpio_pullup_dis,"ax",@progbits
 	.literal_position
 	.literal .LC34, GPIO_PIN_MUX_REG
-	.literal .LC35, __FUNCTION__$4635
+	.literal .LC35, __FUNCTION__$4739
 	.literal .LC36, .LC4
 	.literal .LC37, .LC6
 	.literal .LC38, .LC8
@@ -483,7 +483,7 @@ gpio_pullup_en:
 	.global	gpio_pullup_dis
 	.type	gpio_pullup_dis, @function
 gpio_pullup_dis:
-.LFB11:
+.LFB15:
 	.loc 1 96 0
 .LVL45:
 	entry	sp, 48
@@ -562,12 +562,12 @@ gpio_pullup_dis:
 	movi.n	a2, 0
 	.loc 1 104 0
 	retw.n
-.LFE11:
+.LFE15:
 	.size	gpio_pullup_dis, .-gpio_pullup_dis
 	.section	.text.gpio_pulldown_en,"ax",@progbits
 	.literal_position
 	.literal .LC40, GPIO_PIN_MUX_REG
-	.literal .LC41, __FUNCTION__$4639
+	.literal .LC41, __FUNCTION__$4743
 	.literal .LC42, .LC4
 	.literal .LC43, .LC6
 	.literal .LC44, .LC8
@@ -576,7 +576,7 @@ gpio_pullup_dis:
 	.global	gpio_pulldown_en
 	.type	gpio_pulldown_en, @function
 gpio_pulldown_en:
-.LFB12:
+.LFB16:
 	.loc 1 107 0
 .LVL54:
 	entry	sp, 48
@@ -655,12 +655,12 @@ gpio_pulldown_en:
 	movi.n	a2, 0
 	.loc 1 115 0
 	retw.n
-.LFE12:
+.LFE16:
 	.size	gpio_pulldown_en, .-gpio_pulldown_en
 	.section	.text.gpio_pulldown_dis,"ax",@progbits
 	.literal_position
 	.literal .LC46, GPIO_PIN_MUX_REG
-	.literal .LC47, __FUNCTION__$4643
+	.literal .LC47, __FUNCTION__$4747
 	.literal .LC48, .LC4
 	.literal .LC49, .LC6
 	.literal .LC50, .LC8
@@ -669,7 +669,7 @@ gpio_pulldown_en:
 	.global	gpio_pulldown_dis
 	.type	gpio_pulldown_dis, @function
 gpio_pulldown_dis:
-.LFB13:
+.LFB17:
 	.loc 1 118 0
 .LVL63:
 	entry	sp, 48
@@ -748,7 +748,7 @@ gpio_pulldown_dis:
 	movi.n	a2, 0
 	.loc 1 126 0
 	retw.n
-.LFE13:
+.LFE17:
 	.size	gpio_pulldown_dis, .-gpio_pulldown_dis
 	.section	.rodata.str1.4
 	.align	4
@@ -757,7 +757,7 @@ gpio_pulldown_dis:
 	.section	.text.gpio_set_intr_type,"ax",@progbits
 	.literal_position
 	.literal .LC52, GPIO_PIN_MUX_REG
-	.literal .LC53, __FUNCTION__$4648
+	.literal .LC53, __FUNCTION__$4752
 	.literal .LC54, .LC4
 	.literal .LC55, .LC6
 	.literal .LC56, .LC8
@@ -767,7 +767,7 @@ gpio_pulldown_dis:
 	.global	gpio_set_intr_type
 	.type	gpio_set_intr_type, @function
 gpio_set_intr_type:
-.LFB14:
+.LFB18:
 	.loc 1 129 0
 .LVL72:
 	entry	sp, 48
@@ -843,14 +843,14 @@ gpio_set_intr_type:
 	movi.n	a2, 0
 	.loc 1 134 0
 	retw.n
-.LFE14:
+.LFE18:
 	.size	gpio_set_intr_type, .-gpio_set_intr_type
 	.section	.text.gpio_intr_enable,"ax",@progbits
 	.align	4
 	.global	gpio_intr_enable
 	.type	gpio_intr_enable, @function
 gpio_intr_enable:
-.LFB16:
+.LFB20:
 	.loc 1 148 0
 .LVL84:
 	entry	sp, 32
@@ -876,12 +876,12 @@ gpio_intr_enable:
 	mov.n	a2, a10
 .LVL87:
 	retw.n
-.LFE16:
+.LFE20:
 	.size	gpio_intr_enable, .-gpio_intr_enable
 	.section	.text.gpio_intr_disable,"ax",@progbits
 	.literal_position
 	.literal .LC60, GPIO_PIN_MUX_REG
-	.literal .LC61, __FUNCTION__$4660
+	.literal .LC61, __FUNCTION__$4764
 	.literal .LC62, .LC4
 	.literal .LC63, .LC6
 	.literal .LC64, .LC8
@@ -891,7 +891,7 @@ gpio_intr_enable:
 	.global	gpio_intr_disable
 	.type	gpio_intr_disable, @function
 gpio_intr_disable:
-.LFB17:
+.LFB21:
 	.loc 1 153 0
 .LVL88:
 	entry	sp, 48
@@ -941,12 +941,12 @@ gpio_intr_disable:
 	movi.n	a2, 0
 	.loc 1 157 0
 	retw.n
-.LFE17:
+.LFE21:
 	.size	gpio_intr_disable, .-gpio_intr_disable
 	.section	.text.gpio_set_level,"ax",@progbits
 	.literal_position
 	.literal .LC67, GPIO_PIN_MUX_REG
-	.literal .LC68, __FUNCTION__$4673
+	.literal .LC68, __FUNCTION__$4777
 	.literal .LC69, .LC4
 	.literal .LC70, .LC6
 	.literal .LC71, .LC25
@@ -955,7 +955,7 @@ gpio_intr_disable:
 	.global	gpio_set_level
 	.type	gpio_set_level, @function
 gpio_set_level:
-.LFB20:
+.LFB24:
 	.loc 1 188 0
 .LVL95:
 	entry	sp, 48
@@ -1065,7 +1065,7 @@ gpio_set_level:
 	movi.n	a2, 0
 	.loc 1 204 0
 	retw.n
-.LFE20:
+.LFE24:
 	.size	gpio_set_level, .-gpio_set_level
 	.section	.text.gpio_get_level,"ax",@progbits
 	.literal_position
@@ -1074,7 +1074,7 @@ gpio_set_level:
 	.global	gpio_get_level
 	.type	gpio_get_level, @function
 gpio_get_level:
-.LFB21:
+.LFB25:
 	.loc 1 207 0
 .LVL109:
 	entry	sp, 32
@@ -1104,7 +1104,7 @@ gpio_get_level:
 	extui	a2, a2, 0, 1
 	.loc 1 213 0
 	retw.n
-.LFE21:
+.LFE25:
 	.size	gpio_get_level, .-gpio_get_level
 	.section	.rodata.str1.4
 	.align	4
@@ -1116,7 +1116,7 @@ gpio_get_level:
 	.section	.text.gpio_set_pull_mode,"ax",@progbits
 	.literal_position
 	.literal .LC74, GPIO_PIN_MUX_REG
-	.literal .LC75, __FUNCTION__$4681
+	.literal .LC75, __FUNCTION__$4785
 	.literal .LC76, .LC4
 	.literal .LC77, .LC6
 	.literal .LC78, .LC8
@@ -1126,7 +1126,7 @@ gpio_get_level:
 	.global	gpio_set_pull_mode
 	.type	gpio_set_pull_mode, @function
 gpio_set_pull_mode:
-.LFB22:
+.LFB26:
 	.loc 1 216 0
 .LVL113:
 	entry	sp, 48
@@ -1266,7 +1266,7 @@ gpio_set_pull_mode:
 .LVL140:
 	.loc 1 243 0 discriminator 1
 	retw.n
-.LFE22:
+.LFE26:
 	.size	gpio_set_pull_mode, .-gpio_set_pull_mode
 	.section	.rodata.str1.4
 	.align	4
@@ -1275,7 +1275,7 @@ gpio_set_pull_mode:
 	.section	.text.gpio_set_direction,"ax",@progbits
 	.literal_position
 	.literal .LC83, GPIO_PIN_MUX_REG
-	.literal .LC84, __FUNCTION__$4693
+	.literal .LC84, __FUNCTION__$4797
 	.literal .LC85, .LC4
 	.literal .LC86, .LC6
 	.literal .LC87, .LC8
@@ -1285,7 +1285,7 @@ gpio_set_pull_mode:
 	.global	gpio_set_direction
 	.type	gpio_set_direction, @function
 gpio_set_direction:
-.LFB23:
+.LFB27:
 	.loc 1 246 0
 .LVL141:
 	entry	sp, 48
@@ -1410,7 +1410,7 @@ gpio_set_direction:
 	movi.n	a2, 0
 	.loc 1 269 0
 	retw.n
-.LFE23:
+.LFE27:
 	.size	gpio_set_direction, .-gpio_set_direction
 	.section	.rodata.str1.4
 	.align	4
@@ -1437,7 +1437,7 @@ gpio_set_direction:
 	.global	gpio_config
 	.type	gpio_config, @function
 gpio_config:
-.LFB24:
+.LFB28:
 	.loc 1 272 0
 .LVL159:
 	entry	sp, 80
@@ -1744,7 +1744,7 @@ gpio_config:
 .LVL199:
 	.loc 1 340 0
 	retw.n
-.LFE24:
+.LFE28:
 	.size	gpio_config, .-gpio_config
 	.section	.rodata.str1.4
 	.align	4
@@ -1753,7 +1753,7 @@ gpio_config:
 	.section	.text.gpio_isr_handler_add,"ax",@progbits
 	.literal_position
 	.literal .LC104, gpio_isr_func
-	.literal .LC105, __FUNCTION__$4721
+	.literal .LC105, __FUNCTION__$4825
 	.literal .LC106, .LC4
 	.literal .LC107, .LC6
 	.literal .LC109, .LC108
@@ -1765,7 +1765,7 @@ gpio_config:
 	.global	gpio_isr_handler_add
 	.type	gpio_isr_handler_add, @function
 gpio_isr_handler_add:
-.LFB26:
+.LFB30:
 	.loc 1 376 0
 .LVL200:
 	entry	sp, 48
@@ -1860,12 +1860,12 @@ gpio_isr_handler_add:
 .LVL215:
 	.loc 1 388 0
 	retw.n
-.LFE26:
+.LFE30:
 	.size	gpio_isr_handler_add, .-gpio_isr_handler_add
 	.section	.text.gpio_isr_handler_remove,"ax",@progbits
 	.literal_position
 	.literal .LC114, gpio_isr_func
-	.literal .LC115, __FUNCTION__$4725
+	.literal .LC115, __FUNCTION__$4829
 	.literal .LC116, .LC4
 	.literal .LC117, .LC6
 	.literal .LC118, .LC108
@@ -1876,7 +1876,7 @@ gpio_isr_handler_add:
 	.global	gpio_isr_handler_remove
 	.type	gpio_isr_handler_remove, @function
 gpio_isr_handler_remove:
-.LFB27:
+.LFB31:
 	.loc 1 391 0
 .LVL216:
 	entry	sp, 48
@@ -1962,7 +1962,7 @@ gpio_isr_handler_remove:
 	movi.n	a2, 0
 	.loc 1 402 0
 	retw.n
-.LFE27:
+.LFE31:
 	.size	gpio_isr_handler_remove, .-gpio_isr_handler_remove
 	.section	.text.gpio_uninstall_isr_service,"ax",@progbits
 	.literal_position
@@ -1973,7 +1973,7 @@ gpio_isr_handler_remove:
 	.global	gpio_uninstall_isr_service
 	.type	gpio_uninstall_isr_service, @function
 gpio_uninstall_isr_service:
-.LFB29:
+.LFB33:
 	.loc 1 420 0
 	entry	sp, 32
 .LCFI18:
@@ -2005,7 +2005,7 @@ gpio_uninstall_isr_service:
 .LVL232:
 .L138:
 	retw.n
-.LFE29:
+.LFE33:
 	.size	gpio_uninstall_isr_service, .-gpio_uninstall_isr_service
 	.section	.rodata.str1.4
 	.align	4
@@ -2013,7 +2013,7 @@ gpio_uninstall_isr_service:
 	.string	"GPIO ISR null"
 	.section	.text.gpio_isr_register,"ax",@progbits
 	.literal_position
-	.literal .LC125, __FUNCTION__$4740
+	.literal .LC125, __FUNCTION__$4844
 	.literal .LC126, .LC4
 	.literal .LC127, .LC6
 	.literal .LC129, .LC128
@@ -2021,7 +2021,7 @@ gpio_uninstall_isr_service:
 	.global	gpio_isr_register
 	.type	gpio_isr_register, @function
 gpio_isr_register:
-.LFB30:
+.LFB34:
 	.loc 1 433 0
 .LVL233:
 	entry	sp, 48
@@ -2060,7 +2060,7 @@ gpio_isr_register:
 .LVL239:
 	.loc 1 436 0
 	retw.n
-.LFE30:
+.LFE34:
 	.size	gpio_isr_register, .-gpio_isr_register
 	.section	.rodata.str1.4
 	.align	4
@@ -2069,7 +2069,7 @@ gpio_isr_register:
 	.section	.text.gpio_install_isr_service,"ax",@progbits
 	.literal_position
 	.literal .LC130, gpio_isr_func
-	.literal .LC131, __FUNCTION__$4729
+	.literal .LC131, __FUNCTION__$4833
 	.literal .LC132, .LC4
 	.literal .LC133, .LC6
 	.literal .LC135, .LC134
@@ -2080,7 +2080,7 @@ gpio_isr_register:
 	.global	gpio_install_isr_service
 	.type	gpio_install_isr_service, @function
 gpio_install_isr_service:
-.LFB28:
+.LFB32:
 	.loc 1 405 0
 .LVL240:
 	entry	sp, 48
@@ -2144,7 +2144,7 @@ gpio_install_isr_service:
 .LVL251:
 	.loc 1 417 0
 	retw.n
-.LFE28:
+.LFE32:
 	.size	gpio_install_isr_service, .-gpio_install_isr_service
 	.section	.rodata.str1.4
 	.align	4
@@ -2153,7 +2153,7 @@ gpio_install_isr_service:
 	.section	.text.gpio_wakeup_enable,"ax",@progbits
 	.literal_position
 	.literal .LC139, GPIO_PIN_MUX_REG
-	.literal .LC140, __FUNCTION__$4745
+	.literal .LC140, __FUNCTION__$4849
 	.literal .LC141, .LC4
 	.literal .LC142, .LC6
 	.literal .LC143, .LC8
@@ -2163,7 +2163,7 @@ gpio_install_isr_service:
 	.global	gpio_wakeup_enable
 	.type	gpio_wakeup_enable, @function
 gpio_wakeup_enable:
-.LFB31:
+.LFB35:
 	.loc 1 440 0
 .LVL252:
 	entry	sp, 48
@@ -2244,12 +2244,12 @@ gpio_wakeup_enable:
 .LVL263:
 	.loc 1 451 0 discriminator 1
 	retw.n
-.LFE31:
+.LFE35:
 	.size	gpio_wakeup_enable, .-gpio_wakeup_enable
 	.section	.text.gpio_wakeup_disable,"ax",@progbits
 	.literal_position
 	.literal .LC147, GPIO_PIN_MUX_REG
-	.literal .LC148, __FUNCTION__$4750
+	.literal .LC148, __FUNCTION__$4854
 	.literal .LC149, .LC4
 	.literal .LC150, .LC6
 	.literal .LC151, .LC8
@@ -2258,7 +2258,7 @@ gpio_wakeup_enable:
 	.global	gpio_wakeup_disable
 	.type	gpio_wakeup_disable, @function
 gpio_wakeup_disable:
-.LFB32:
+.LFB36:
 	.loc 1 454 0
 .LVL264:
 	entry	sp, 48
@@ -2308,7 +2308,7 @@ gpio_wakeup_disable:
 	movi.n	a2, 0
 	.loc 1 458 0
 	retw.n
-.LFE32:
+.LFE36:
 	.size	gpio_wakeup_disable, .-gpio_wakeup_disable
 	.section	.rodata.str1.4
 	.align	4
@@ -2317,7 +2317,7 @@ gpio_wakeup_disable:
 	.section	.text.gpio_set_drive_capability,"ax",@progbits
 	.literal_position
 	.literal .LC153, GPIO_PIN_MUX_REG
-	.literal .LC154, __FUNCTION__$4755
+	.literal .LC154, __FUNCTION__$4859
 	.literal .LC155, .LC4
 	.literal .LC156, .LC6
 	.literal .LC157, .LC8
@@ -2328,7 +2328,7 @@ gpio_wakeup_disable:
 	.global	gpio_set_drive_capability
 	.type	gpio_set_drive_capability, @function
 gpio_set_drive_capability:
-.LFB33:
+.LFB37:
 	.loc 1 461 0
 .LVL271:
 	entry	sp, 48
@@ -2437,7 +2437,7 @@ gpio_set_drive_capability:
 	movi.n	a2, 0
 	.loc 1 471 0
 	retw.n
-.LFE33:
+.LFE37:
 	.size	gpio_set_drive_capability, .-gpio_set_drive_capability
 	.section	.rodata.str1.4
 	.align	4
@@ -2446,7 +2446,7 @@ gpio_set_drive_capability:
 	.section	.text.gpio_get_drive_capability,"ax",@progbits
 	.literal_position
 	.literal .LC162, GPIO_PIN_MUX_REG
-	.literal .LC163, __FUNCTION__$4760
+	.literal .LC163, __FUNCTION__$4864
 	.literal .LC164, .LC4
 	.literal .LC165, .LC6
 	.literal .LC166, .LC8
@@ -2456,7 +2456,7 @@ gpio_set_drive_capability:
 	.global	gpio_get_drive_capability
 	.type	gpio_get_drive_capability, @function
 gpio_get_drive_capability:
-.LFB34:
+.LFB38:
 	.loc 1 474 0
 .LVL285:
 	entry	sp, 48
@@ -2558,127 +2558,127 @@ gpio_get_drive_capability:
 	movi.n	a2, 0
 	.loc 1 484 0
 	retw.n
-.LFE34:
+.LFE38:
 	.size	gpio_get_drive_capability, .-gpio_get_drive_capability
-	.section	.rodata.__FUNCTION__$4760,"a",@progbits
+	.section	.rodata.__FUNCTION__$4864,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4760, @object
-	.size	__FUNCTION__$4760, 26
-__FUNCTION__$4760:
+	.type	__FUNCTION__$4864, @object
+	.size	__FUNCTION__$4864, 26
+__FUNCTION__$4864:
 	.string	"gpio_get_drive_capability"
-	.section	.rodata.__FUNCTION__$4755,"a",@progbits
+	.section	.rodata.__FUNCTION__$4859,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4755, @object
-	.size	__FUNCTION__$4755, 26
-__FUNCTION__$4755:
+	.type	__FUNCTION__$4859, @object
+	.size	__FUNCTION__$4859, 26
+__FUNCTION__$4859:
 	.string	"gpio_set_drive_capability"
-	.section	.rodata.__FUNCTION__$4750,"a",@progbits
+	.section	.rodata.__FUNCTION__$4854,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4750, @object
-	.size	__FUNCTION__$4750, 20
-__FUNCTION__$4750:
+	.type	__FUNCTION__$4854, @object
+	.size	__FUNCTION__$4854, 20
+__FUNCTION__$4854:
 	.string	"gpio_wakeup_disable"
-	.section	.rodata.__FUNCTION__$4745,"a",@progbits
+	.section	.rodata.__FUNCTION__$4849,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4745, @object
-	.size	__FUNCTION__$4745, 19
-__FUNCTION__$4745:
+	.type	__FUNCTION__$4849, @object
+	.size	__FUNCTION__$4849, 19
+__FUNCTION__$4849:
 	.string	"gpio_wakeup_enable"
-	.section	.rodata.__FUNCTION__$4740,"a",@progbits
+	.section	.rodata.__FUNCTION__$4844,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4740, @object
-	.size	__FUNCTION__$4740, 18
-__FUNCTION__$4740:
+	.type	__FUNCTION__$4844, @object
+	.size	__FUNCTION__$4844, 18
+__FUNCTION__$4844:
 	.string	"gpio_isr_register"
-	.section	.rodata.__FUNCTION__$4729,"a",@progbits
+	.section	.rodata.__FUNCTION__$4833,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4729, @object
-	.size	__FUNCTION__$4729, 25
-__FUNCTION__$4729:
+	.type	__FUNCTION__$4833, @object
+	.size	__FUNCTION__$4833, 25
+__FUNCTION__$4833:
 	.string	"gpio_install_isr_service"
-	.section	.rodata.__FUNCTION__$4725,"a",@progbits
+	.section	.rodata.__FUNCTION__$4829,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4725, @object
-	.size	__FUNCTION__$4725, 24
-__FUNCTION__$4725:
+	.type	__FUNCTION__$4829, @object
+	.size	__FUNCTION__$4829, 24
+__FUNCTION__$4829:
 	.string	"gpio_isr_handler_remove"
-	.section	.rodata.__FUNCTION__$4721,"a",@progbits
+	.section	.rodata.__FUNCTION__$4825,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4721, @object
-	.size	__FUNCTION__$4721, 21
-__FUNCTION__$4721:
+	.type	__FUNCTION__$4825, @object
+	.size	__FUNCTION__$4825, 21
+__FUNCTION__$4825:
 	.string	"gpio_isr_handler_add"
-	.section	.rodata.__FUNCTION__$4664,"a",@progbits
+	.section	.rodata.__FUNCTION__$4768,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4664, @object
-	.size	__FUNCTION__$4664, 20
-__FUNCTION__$4664:
+	.type	__FUNCTION__$4768, @object
+	.size	__FUNCTION__$4768, 20
+__FUNCTION__$4768:
 	.string	"gpio_output_disable"
-	.section	.rodata.__FUNCTION__$4668,"a",@progbits
+	.section	.rodata.__FUNCTION__$4772,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4668, @object
-	.size	__FUNCTION__$4668, 19
-__FUNCTION__$4668:
+	.type	__FUNCTION__$4772, @object
+	.size	__FUNCTION__$4772, 19
+__FUNCTION__$4772:
 	.string	"gpio_output_enable"
-	.section	.rodata.__FUNCTION__$4693,"a",@progbits
+	.section	.rodata.__FUNCTION__$4797,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4693, @object
-	.size	__FUNCTION__$4693, 19
-__FUNCTION__$4693:
+	.type	__FUNCTION__$4797, @object
+	.size	__FUNCTION__$4797, 19
+__FUNCTION__$4797:
 	.string	"gpio_set_direction"
-	.section	.rodata.__FUNCTION__$4681,"a",@progbits
+	.section	.rodata.__FUNCTION__$4785,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4681, @object
-	.size	__FUNCTION__$4681, 19
-__FUNCTION__$4681:
+	.type	__FUNCTION__$4785, @object
+	.size	__FUNCTION__$4785, 19
+__FUNCTION__$4785:
 	.string	"gpio_set_pull_mode"
-	.section	.rodata.__FUNCTION__$4673,"a",@progbits
+	.section	.rodata.__FUNCTION__$4777,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4673, @object
-	.size	__FUNCTION__$4673, 15
-__FUNCTION__$4673:
+	.type	__FUNCTION__$4777, @object
+	.size	__FUNCTION__$4777, 15
+__FUNCTION__$4777:
 	.string	"gpio_set_level"
-	.section	.rodata.__FUNCTION__$4660,"a",@progbits
+	.section	.rodata.__FUNCTION__$4764,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4660, @object
-	.size	__FUNCTION__$4660, 18
-__FUNCTION__$4660:
+	.type	__FUNCTION__$4764, @object
+	.size	__FUNCTION__$4764, 18
+__FUNCTION__$4764:
 	.string	"gpio_intr_disable"
-	.section	.rodata.__FUNCTION__$4653,"a",@progbits
+	.section	.rodata.__FUNCTION__$4757,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4653, @object
-	.size	__FUNCTION__$4653, 25
-__FUNCTION__$4653:
+	.type	__FUNCTION__$4757, @object
+	.size	__FUNCTION__$4757, 25
+__FUNCTION__$4757:
 	.string	"gpio_intr_enable_on_core"
-	.section	.rodata.__FUNCTION__$4648,"a",@progbits
+	.section	.rodata.__FUNCTION__$4752,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4648, @object
-	.size	__FUNCTION__$4648, 19
-__FUNCTION__$4648:
+	.type	__FUNCTION__$4752, @object
+	.size	__FUNCTION__$4752, 19
+__FUNCTION__$4752:
 	.string	"gpio_set_intr_type"
-	.section	.rodata.__FUNCTION__$4643,"a",@progbits
+	.section	.rodata.__FUNCTION__$4747,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4643, @object
-	.size	__FUNCTION__$4643, 18
-__FUNCTION__$4643:
+	.type	__FUNCTION__$4747, @object
+	.size	__FUNCTION__$4747, 18
+__FUNCTION__$4747:
 	.string	"gpio_pulldown_dis"
-	.section	.rodata.__FUNCTION__$4639,"a",@progbits
+	.section	.rodata.__FUNCTION__$4743,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4639, @object
-	.size	__FUNCTION__$4639, 17
-__FUNCTION__$4639:
+	.type	__FUNCTION__$4743, @object
+	.size	__FUNCTION__$4743, 17
+__FUNCTION__$4743:
 	.string	"gpio_pulldown_en"
-	.section	.rodata.__FUNCTION__$4635,"a",@progbits
+	.section	.rodata.__FUNCTION__$4739,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4635, @object
-	.size	__FUNCTION__$4635, 16
-__FUNCTION__$4635:
+	.type	__FUNCTION__$4739, @object
+	.size	__FUNCTION__$4739, 16
+__FUNCTION__$4739:
 	.string	"gpio_pullup_dis"
-	.section	.rodata.__FUNCTION__$4631,"a",@progbits
+	.section	.rodata.__FUNCTION__$4735,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$4631, @object
-	.size	__FUNCTION__$4631, 15
-__FUNCTION__$4631:
+	.type	__FUNCTION__$4735, @object
+	.size	__FUNCTION__$4735, 15
+__FUNCTION__$4735:
 	.string	"gpio_pullup_en"
 	.section	.data.gpio_spinlock,"aw",@progbits
 	.align	4
@@ -2764,10 +2764,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI0-.LFB25
+	.4byte	.LCFI0-.LFB29
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -2776,10 +2776,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI1-.LFB15
+	.4byte	.LCFI1-.LFB19
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2788,10 +2788,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI2-.LFB18
+	.4byte	.LCFI2-.LFB22
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2800,10 +2800,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI3-.LFB19
+	.4byte	.LCFI3-.LFB23
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2812,10 +2812,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI4-.LFB10
+	.4byte	.LCFI4-.LFB14
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2824,10 +2824,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI5-.LFB11
+	.4byte	.LCFI5-.LFB15
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2836,10 +2836,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI6-.LFB12
+	.4byte	.LCFI6-.LFB16
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2848,10 +2848,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI7-.LFB13
+	.4byte	.LCFI7-.LFB17
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2860,10 +2860,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI8-.LFB14
+	.4byte	.LCFI8-.LFB18
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2872,10 +2872,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI9-.LFB16
+	.4byte	.LCFI9-.LFB20
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -2884,10 +2884,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI10-.LFB17
+	.4byte	.LCFI10-.LFB21
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2896,10 +2896,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.byte	0x4
-	.4byte	.LCFI11-.LFB20
+	.4byte	.LCFI11-.LFB24
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2908,10 +2908,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE24-.LASFDE24
 .LASFDE24:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.byte	0x4
-	.4byte	.LCFI12-.LFB21
+	.4byte	.LCFI12-.LFB25
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -2920,10 +2920,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE26-.LASFDE26
 .LASFDE26:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI13-.LFB22
+	.4byte	.LCFI13-.LFB26
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2932,10 +2932,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE28-.LASFDE28
 .LASFDE28:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI14-.LFB23
+	.4byte	.LCFI14-.LFB27
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2944,10 +2944,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE30-.LASFDE30
 .LASFDE30:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI15-.LFB24
+	.4byte	.LCFI15-.LFB28
 	.byte	0xe
 	.uleb128 0x50
 	.align	4
@@ -2956,10 +2956,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE32-.LASFDE32
 .LASFDE32:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI16-.LFB26
+	.4byte	.LCFI16-.LFB30
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2968,10 +2968,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE34-.LASFDE34
 .LASFDE34:
 	.4byte	.Lframe0
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.byte	0x4
-	.4byte	.LCFI17-.LFB27
+	.4byte	.LCFI17-.LFB31
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -2980,10 +2980,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE36-.LASFDE36
 .LASFDE36:
 	.4byte	.Lframe0
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.byte	0x4
-	.4byte	.LCFI18-.LFB29
+	.4byte	.LCFI18-.LFB33
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -2992,10 +2992,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE38-.LASFDE38
 .LASFDE38:
 	.4byte	.Lframe0
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.byte	0x4
-	.4byte	.LCFI19-.LFB30
+	.4byte	.LCFI19-.LFB34
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -3004,10 +3004,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE40-.LASFDE40
 .LASFDE40:
 	.4byte	.Lframe0
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.byte	0x4
-	.4byte	.LCFI20-.LFB28
+	.4byte	.LCFI20-.LFB32
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -3016,10 +3016,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE42-.LASFDE42
 .LASFDE42:
 	.4byte	.Lframe0
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.byte	0x4
-	.4byte	.LCFI21-.LFB31
+	.4byte	.LCFI21-.LFB35
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -3028,10 +3028,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE44-.LASFDE44
 .LASFDE44:
 	.4byte	.Lframe0
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.byte	0x4
-	.4byte	.LCFI22-.LFB32
+	.4byte	.LCFI22-.LFB36
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -3040,10 +3040,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE46-.LASFDE46
 .LASFDE46:
 	.4byte	.Lframe0
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.byte	0x4
-	.4byte	.LCFI23-.LFB33
+	.4byte	.LCFI23-.LFB37
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -3052,10 +3052,10 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LEFDE48-.LASFDE48
 .LASFDE48:
 	.4byte	.Lframe0
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.byte	0x4
-	.4byte	.LCFI24-.LFB34
+	.4byte	.LCFI24-.LFB38
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -3209,36 +3209,40 @@ GPIO_PIN_MUX_REG:
 	.uleb128 0x6
 	.byte	0x4
 	.4byte	0xfa
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x2
+	.4byte	.LASF22
 	.uleb128 0xb
 	.byte	0x8
 	.byte	0x8
-	.byte	0x81
-	.4byte	0x13c
-	.uleb128 0xc
-	.4byte	.LASF22
-	.byte	0x8
-	.byte	0x82
-	.4byte	0x9f
-	.byte	0
+	.byte	0x84
+	.4byte	0x143
 	.uleb128 0xc
 	.4byte	.LASF23
 	.byte	0x8
-	.byte	0x83
+	.byte	0x85
+	.4byte	0x9f
+	.byte	0
+	.uleb128 0xc
+	.4byte	.LASF24
+	.byte	0x8
+	.byte	0x86
 	.4byte	0x9f
 	.byte	0x4
 	.byte	0
 	.uleb128 0x3
-	.4byte	.LASF24
+	.4byte	.LASF25
 	.byte	0x8
-	.byte	0x88
-	.4byte	0x11b
+	.byte	0x8b
+	.4byte	0x122
 	.uleb128 0xb
 	.byte	0x4
 	.byte	0x9
 	.byte	0x1b
-	.4byte	0x16e
+	.4byte	0x175
 	.uleb128 0xd
-	.4byte	.LASF25
+	.4byte	.LASF26
 	.byte	0x9
 	.byte	0x1c
 	.4byte	0x9f
@@ -3247,7 +3251,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x1d
 	.4byte	0x9f
@@ -3260,9 +3264,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x1a
-	.4byte	0x187
+	.4byte	0x18e
 	.uleb128 0xf
-	.4byte	0x147
+	.4byte	0x14e
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3273,9 +3277,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x22
-	.4byte	0x1ae
+	.4byte	0x1b5
 	.uleb128 0xd
-	.4byte	.LASF25
+	.4byte	.LASF26
 	.byte	0x9
 	.byte	0x23
 	.4byte	0x9f
@@ -3284,7 +3288,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x24
 	.4byte	0x9f
@@ -3297,9 +3301,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x21
-	.4byte	0x1c7
+	.4byte	0x1ce
 	.uleb128 0xf
-	.4byte	0x187
+	.4byte	0x18e
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3310,9 +3314,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x29
-	.4byte	0x1ee
+	.4byte	0x1f5
 	.uleb128 0xd
-	.4byte	.LASF25
+	.4byte	.LASF26
 	.byte	0x9
 	.byte	0x2a
 	.4byte	0x9f
@@ -3321,7 +3325,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x2b
 	.4byte	0x9f
@@ -3334,9 +3338,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x28
-	.4byte	0x207
+	.4byte	0x20e
 	.uleb128 0xf
-	.4byte	0x1c7
+	.4byte	0x1ce
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3347,7 +3351,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x30
-	.4byte	0x22e
+	.4byte	0x235
 	.uleb128 0x11
 	.string	"sel"
 	.byte	0x9
@@ -3358,7 +3362,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x32
 	.4byte	0x9f
@@ -3371,9 +3375,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x2f
-	.4byte	0x247
+	.4byte	0x24e
 	.uleb128 0xf
-	.4byte	0x207
+	.4byte	0x20e
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3384,9 +3388,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x3a
-	.4byte	0x26e
+	.4byte	0x275
 	.uleb128 0xd
-	.4byte	.LASF25
+	.4byte	.LASF26
 	.byte	0x9
 	.byte	0x3b
 	.4byte	0x9f
@@ -3395,7 +3399,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x3c
 	.4byte	0x9f
@@ -3408,9 +3412,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x39
-	.4byte	0x287
+	.4byte	0x28e
 	.uleb128 0xf
-	.4byte	0x247
+	.4byte	0x24e
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3421,9 +3425,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x41
-	.4byte	0x2ae
+	.4byte	0x2b5
 	.uleb128 0xd
-	.4byte	.LASF25
+	.4byte	.LASF26
 	.byte	0x9
 	.byte	0x42
 	.4byte	0x9f
@@ -3432,7 +3436,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x43
 	.4byte	0x9f
@@ -3445,9 +3449,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x40
-	.4byte	0x2c7
+	.4byte	0x2ce
 	.uleb128 0xf
-	.4byte	0x287
+	.4byte	0x28e
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3458,9 +3462,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x48
-	.4byte	0x2ee
+	.4byte	0x2f5
 	.uleb128 0xd
-	.4byte	.LASF25
+	.4byte	.LASF26
 	.byte	0x9
 	.byte	0x49
 	.4byte	0x9f
@@ -3469,7 +3473,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x4a
 	.4byte	0x9f
@@ -3482,9 +3486,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x47
-	.4byte	0x307
+	.4byte	0x30e
 	.uleb128 0xf
-	.4byte	0x2c7
+	.4byte	0x2ce
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3495,9 +3499,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x4f
-	.4byte	0x32e
+	.4byte	0x335
 	.uleb128 0xd
-	.4byte	.LASF27
+	.4byte	.LASF28
 	.byte	0x9
 	.byte	0x50
 	.4byte	0x9f
@@ -3506,7 +3510,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x10
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF28
+	.4byte	.LASF29
 	.byte	0x9
 	.byte	0x51
 	.4byte	0x9f
@@ -3519,9 +3523,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x4e
-	.4byte	0x347
+	.4byte	0x34e
 	.uleb128 0xf
-	.4byte	0x307
+	.4byte	0x30e
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3532,9 +3536,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x57
-	.4byte	0x36e
+	.4byte	0x375
 	.uleb128 0xd
-	.4byte	.LASF25
+	.4byte	.LASF26
 	.byte	0x9
 	.byte	0x58
 	.4byte	0x9f
@@ -3543,7 +3547,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x59
 	.4byte	0x9f
@@ -3556,9 +3560,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x56
-	.4byte	0x387
+	.4byte	0x38e
 	.uleb128 0xf
-	.4byte	0x347
+	.4byte	0x34e
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3569,9 +3573,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x61
-	.4byte	0x3ae
+	.4byte	0x3b5
 	.uleb128 0xd
-	.4byte	.LASF29
+	.4byte	.LASF30
 	.byte	0x9
 	.byte	0x62
 	.4byte	0x9f
@@ -3580,7 +3584,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x63
 	.4byte	0x9f
@@ -3593,9 +3597,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x60
-	.4byte	0x3c7
+	.4byte	0x3ce
 	.uleb128 0xf
-	.4byte	0x387
+	.4byte	0x38e
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3606,9 +3610,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x68
-	.4byte	0x3ee
+	.4byte	0x3f5
 	.uleb128 0xd
-	.4byte	.LASF29
+	.4byte	.LASF30
 	.byte	0x9
 	.byte	0x69
 	.4byte	0x9f
@@ -3617,7 +3621,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x6a
 	.4byte	0x9f
@@ -3630,9 +3634,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x67
-	.4byte	0x407
+	.4byte	0x40e
 	.uleb128 0xf
-	.4byte	0x3c7
+	.4byte	0x3ce
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3643,9 +3647,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x6f
-	.4byte	0x42e
+	.4byte	0x435
 	.uleb128 0xd
-	.4byte	.LASF29
+	.4byte	.LASF30
 	.byte	0x9
 	.byte	0x70
 	.4byte	0x9f
@@ -3654,7 +3658,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x71
 	.4byte	0x9f
@@ -3667,9 +3671,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x6e
-	.4byte	0x447
+	.4byte	0x44e
 	.uleb128 0xf
-	.4byte	0x407
+	.4byte	0x40e
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3680,9 +3684,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x7c
-	.4byte	0x46e
+	.4byte	0x475
 	.uleb128 0xd
-	.4byte	.LASF30
+	.4byte	.LASF31
 	.byte	0x9
 	.byte	0x7d
 	.4byte	0x9f
@@ -3691,7 +3695,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x7e
 	.4byte	0x9f
@@ -3704,9 +3708,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x7b
-	.4byte	0x487
+	.4byte	0x48e
 	.uleb128 0xf
-	.4byte	0x447
+	.4byte	0x44e
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3717,9 +3721,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x83
-	.4byte	0x4ae
+	.4byte	0x4b5
 	.uleb128 0xd
-	.4byte	.LASF30
+	.4byte	.LASF31
 	.byte	0x9
 	.byte	0x84
 	.4byte	0x9f
@@ -3728,7 +3732,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x85
 	.4byte	0x9f
@@ -3741,9 +3745,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x82
-	.4byte	0x4c7
+	.4byte	0x4ce
 	.uleb128 0xf
-	.4byte	0x487
+	.4byte	0x48e
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3754,9 +3758,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x8a
-	.4byte	0x4ee
+	.4byte	0x4f5
 	.uleb128 0xd
-	.4byte	.LASF30
+	.4byte	.LASF31
 	.byte	0x9
 	.byte	0x8b
 	.4byte	0x9f
@@ -3765,7 +3769,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x8c
 	.4byte	0x9f
@@ -3778,9 +3782,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x89
-	.4byte	0x507
+	.4byte	0x50e
 	.uleb128 0xf
-	.4byte	0x4c7
+	.4byte	0x4ce
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3791,9 +3795,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x91
-	.4byte	0x52e
+	.4byte	0x535
 	.uleb128 0xd
-	.4byte	.LASF30
+	.4byte	.LASF31
 	.byte	0x9
 	.byte	0x92
 	.4byte	0x9f
@@ -3802,7 +3806,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x93
 	.4byte	0x9f
@@ -3815,9 +3819,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x90
-	.4byte	0x547
+	.4byte	0x54e
 	.uleb128 0xf
-	.4byte	0x507
+	.4byte	0x50e
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3828,9 +3832,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x98
-	.4byte	0x56e
+	.4byte	0x575
 	.uleb128 0xd
-	.4byte	.LASF30
+	.4byte	.LASF31
 	.byte	0x9
 	.byte	0x99
 	.4byte	0x9f
@@ -3839,7 +3843,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0x9a
 	.4byte	0x9f
@@ -3852,9 +3856,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x97
-	.4byte	0x587
+	.4byte	0x58e
 	.uleb128 0xf
-	.4byte	0x547
+	.4byte	0x54e
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3865,9 +3869,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x9f
-	.4byte	0x608
+	.4byte	0x60f
 	.uleb128 0xd
-	.4byte	.LASF31
+	.4byte	.LASF32
 	.byte	0x9
 	.byte	0xa0
 	.4byte	0x9f
@@ -3876,7 +3880,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1e
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF32
+	.4byte	.LASF33
 	.byte	0x9
 	.byte	0xa1
 	.4byte	0x9f
@@ -3885,7 +3889,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1d
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF33
+	.4byte	.LASF34
 	.byte	0x9
 	.byte	0xa2
 	.4byte	0x9f
@@ -3894,7 +3898,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x19
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF34
+	.4byte	.LASF35
 	.byte	0x9
 	.byte	0xa3
 	.4byte	0x9f
@@ -3903,7 +3907,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x16
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF35
+	.4byte	.LASF36
 	.byte	0x9
 	.byte	0xa4
 	.4byte	0x9f
@@ -3912,7 +3916,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x15
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF36
+	.4byte	.LASF37
 	.byte	0x9
 	.byte	0xa5
 	.4byte	0x9f
@@ -3921,7 +3925,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x13
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF37
+	.4byte	.LASF38
 	.byte	0x9
 	.byte	0xa6
 	.4byte	0x9f
@@ -3930,7 +3934,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0xe
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF38
+	.4byte	.LASF39
 	.byte	0x9
 	.byte	0xa7
 	.4byte	0x9f
@@ -3943,9 +3947,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0x9e
-	.4byte	0x621
+	.4byte	0x628
 	.uleb128 0xf
-	.4byte	0x587
+	.4byte	0x58e
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -3956,9 +3960,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0xac
-	.4byte	0x657
+	.4byte	0x65e
 	.uleb128 0xd
-	.4byte	.LASF39
+	.4byte	.LASF40
 	.byte	0x9
 	.byte	0xad
 	.4byte	0x9f
@@ -3967,7 +3971,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x16
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF40
+	.4byte	.LASF41
 	.byte	0x9
 	.byte	0xae
 	.4byte	0x9f
@@ -3976,7 +3980,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF41
+	.4byte	.LASF42
 	.byte	0x9
 	.byte	0xaf
 	.4byte	0x9f
@@ -3989,9 +3993,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0xab
-	.4byte	0x670
+	.4byte	0x677
 	.uleb128 0xf
-	.4byte	0x621
+	.4byte	0x628
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -4002,9 +4006,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0xb4
-	.4byte	0x6b5
+	.4byte	0x6bc
 	.uleb128 0xd
-	.4byte	.LASF42
+	.4byte	.LASF43
 	.byte	0x9
 	.byte	0xb5
 	.4byte	0x9f
@@ -4013,7 +4017,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0xc
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF43
+	.4byte	.LASF44
 	.byte	0x9
 	.byte	0xb6
 	.4byte	0x9f
@@ -4022,7 +4026,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x2
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF44
+	.4byte	.LASF45
 	.byte	0x9
 	.byte	0xb7
 	.4byte	0x9f
@@ -4031,7 +4035,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF45
+	.4byte	.LASF46
 	.byte	0x9
 	.byte	0xb8
 	.4byte	0x9f
@@ -4044,9 +4048,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0xb3
-	.4byte	0x6ce
+	.4byte	0x6d5
 	.uleb128 0xf
-	.4byte	0x670
+	.4byte	0x677
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -4057,9 +4061,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0xbd
-	.4byte	0x713
+	.4byte	0x71a
 	.uleb128 0xd
-	.4byte	.LASF46
+	.4byte	.LASF47
 	.byte	0x9
 	.byte	0xbe
 	.4byte	0x9f
@@ -4068,7 +4072,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1a
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF47
+	.4byte	.LASF48
 	.byte	0x9
 	.byte	0xbf
 	.4byte	0x9f
@@ -4077,7 +4081,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x19
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF48
+	.4byte	.LASF49
 	.byte	0x9
 	.byte	0xc0
 	.4byte	0x9f
@@ -4086,7 +4090,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF26
+	.4byte	.LASF27
 	.byte	0x9
 	.byte	0xc1
 	.4byte	0x9f
@@ -4099,9 +4103,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0xbc
-	.4byte	0x72c
+	.4byte	0x733
 	.uleb128 0xf
-	.4byte	0x6ce
+	.4byte	0x6d5
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -4112,9 +4116,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0xc6
-	.4byte	0x780
+	.4byte	0x787
 	.uleb128 0xd
-	.4byte	.LASF46
+	.4byte	.LASF47
 	.byte	0x9
 	.byte	0xc7
 	.4byte	0x9f
@@ -4123,7 +4127,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x17
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF49
+	.4byte	.LASF50
 	.byte	0x9
 	.byte	0xc8
 	.4byte	0x9f
@@ -4132,7 +4136,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x16
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF50
+	.4byte	.LASF51
 	.byte	0x9
 	.byte	0xc9
 	.4byte	0x9f
@@ -4141,7 +4145,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x15
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF51
+	.4byte	.LASF52
 	.byte	0x9
 	.byte	0xca
 	.4byte	0x9f
@@ -4150,7 +4154,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x14
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF52
+	.4byte	.LASF53
 	.byte	0x9
 	.byte	0xcb
 	.4byte	0x9f
@@ -4163,9 +4167,9 @@ GPIO_PIN_MUX_REG:
 	.byte	0x4
 	.byte	0x9
 	.byte	0xc5
-	.4byte	0x799
+	.4byte	0x7a0
 	.uleb128 0xf
-	.4byte	0x72c
+	.4byte	0x733
 	.uleb128 0x10
 	.string	"val"
 	.byte	0x9
@@ -4176,9 +4180,9 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x5d0
 	.byte	0x9
 	.byte	0x15
-	.4byte	0x97a
+	.4byte	0x981
 	.uleb128 0xc
-	.4byte	.LASF53
+	.4byte	.LASF54
 	.byte	0x9
 	.byte	0x16
 	.4byte	0x9f
@@ -4190,82 +4194,82 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x9f
 	.byte	0x4
 	.uleb128 0xc
-	.4byte	.LASF54
+	.4byte	.LASF55
 	.byte	0x9
 	.byte	0x18
 	.4byte	0x9f
 	.byte	0x8
 	.uleb128 0xc
-	.4byte	.LASF55
+	.4byte	.LASF56
 	.byte	0x9
 	.byte	0x19
 	.4byte	0x9f
 	.byte	0xc
 	.uleb128 0xc
-	.4byte	.LASF56
-	.byte	0x9
-	.byte	0x20
-	.4byte	0x16e
-	.byte	0x10
-	.uleb128 0xc
 	.4byte	.LASF57
 	.byte	0x9
-	.byte	0x27
-	.4byte	0x1ae
-	.byte	0x14
+	.byte	0x20
+	.4byte	0x175
+	.byte	0x10
 	.uleb128 0xc
 	.4byte	.LASF58
 	.byte	0x9
-	.byte	0x2e
-	.4byte	0x1ee
-	.byte	0x18
+	.byte	0x27
+	.4byte	0x1b5
+	.byte	0x14
 	.uleb128 0xc
 	.4byte	.LASF59
 	.byte	0x9
-	.byte	0x35
-	.4byte	0x22e
-	.byte	0x1c
+	.byte	0x2e
+	.4byte	0x1f5
+	.byte	0x18
 	.uleb128 0xc
 	.4byte	.LASF60
+	.byte	0x9
+	.byte	0x35
+	.4byte	0x235
+	.byte	0x1c
+	.uleb128 0xc
+	.4byte	.LASF61
 	.byte	0x9
 	.byte	0x36
 	.4byte	0x9f
 	.byte	0x20
 	.uleb128 0xc
-	.4byte	.LASF61
+	.4byte	.LASF62
 	.byte	0x9
 	.byte	0x37
 	.4byte	0x9f
 	.byte	0x24
 	.uleb128 0xc
-	.4byte	.LASF62
+	.4byte	.LASF63
 	.byte	0x9
 	.byte	0x38
 	.4byte	0x9f
 	.byte	0x28
 	.uleb128 0xc
-	.4byte	.LASF63
-	.byte	0x9
-	.byte	0x3f
-	.4byte	0x26e
-	.byte	0x2c
-	.uleb128 0xc
 	.4byte	.LASF64
 	.byte	0x9
-	.byte	0x46
-	.4byte	0x2ae
-	.byte	0x30
+	.byte	0x3f
+	.4byte	0x275
+	.byte	0x2c
 	.uleb128 0xc
 	.4byte	.LASF65
 	.byte	0x9
-	.byte	0x4d
-	.4byte	0x2ee
-	.byte	0x34
+	.byte	0x46
+	.4byte	0x2b5
+	.byte	0x30
 	.uleb128 0xc
 	.4byte	.LASF66
 	.byte	0x9
+	.byte	0x4d
+	.4byte	0x2f5
+	.byte	0x34
+	.uleb128 0xc
+	.4byte	.LASF67
+	.byte	0x9
 	.byte	0x54
-	.4byte	0x32e
+	.4byte	0x335
 	.byte	0x38
 	.uleb128 0x13
 	.string	"in"
@@ -4277,173 +4281,169 @@ GPIO_PIN_MUX_REG:
 	.string	"in1"
 	.byte	0x9
 	.byte	0x5c
-	.4byte	0x36e
+	.4byte	0x375
 	.byte	0x40
 	.uleb128 0xc
-	.4byte	.LASF67
+	.4byte	.LASF68
 	.byte	0x9
 	.byte	0x5d
 	.4byte	0x9f
 	.byte	0x44
 	.uleb128 0xc
-	.4byte	.LASF68
+	.4byte	.LASF69
 	.byte	0x9
 	.byte	0x5e
 	.4byte	0x9f
 	.byte	0x48
 	.uleb128 0xc
-	.4byte	.LASF69
+	.4byte	.LASF70
 	.byte	0x9
 	.byte	0x5f
 	.4byte	0x9f
 	.byte	0x4c
 	.uleb128 0xc
-	.4byte	.LASF70
-	.byte	0x9
-	.byte	0x66
-	.4byte	0x3ae
-	.byte	0x50
-	.uleb128 0xc
 	.4byte	.LASF71
 	.byte	0x9
-	.byte	0x6d
-	.4byte	0x3ee
-	.byte	0x54
+	.byte	0x66
+	.4byte	0x3b5
+	.byte	0x50
 	.uleb128 0xc
 	.4byte	.LASF72
 	.byte	0x9
-	.byte	0x74
-	.4byte	0x42e
-	.byte	0x58
+	.byte	0x6d
+	.4byte	0x3f5
+	.byte	0x54
 	.uleb128 0xc
 	.4byte	.LASF73
+	.byte	0x9
+	.byte	0x74
+	.4byte	0x435
+	.byte	0x58
+	.uleb128 0xc
+	.4byte	.LASF74
 	.byte	0x9
 	.byte	0x75
 	.4byte	0x9f
 	.byte	0x5c
 	.uleb128 0xc
-	.4byte	.LASF74
+	.4byte	.LASF75
 	.byte	0x9
 	.byte	0x76
 	.4byte	0x9f
 	.byte	0x60
 	.uleb128 0xc
-	.4byte	.LASF75
+	.4byte	.LASF76
 	.byte	0x9
 	.byte	0x77
 	.4byte	0x9f
 	.byte	0x64
 	.uleb128 0xc
-	.4byte	.LASF76
+	.4byte	.LASF77
 	.byte	0x9
 	.byte	0x78
 	.4byte	0x9f
 	.byte	0x68
 	.uleb128 0xc
-	.4byte	.LASF77
+	.4byte	.LASF78
 	.byte	0x9
 	.byte	0x79
 	.4byte	0x9f
 	.byte	0x6c
 	.uleb128 0xc
-	.4byte	.LASF78
+	.4byte	.LASF79
 	.byte	0x9
 	.byte	0x7a
 	.4byte	0x9f
 	.byte	0x70
 	.uleb128 0xc
-	.4byte	.LASF79
-	.byte	0x9
-	.byte	0x81
-	.4byte	0x46e
-	.byte	0x74
-	.uleb128 0xc
 	.4byte	.LASF80
 	.byte	0x9
-	.byte	0x88
-	.4byte	0x4ae
-	.byte	0x78
+	.byte	0x81
+	.4byte	0x475
+	.byte	0x74
 	.uleb128 0xc
 	.4byte	.LASF81
 	.byte	0x9
-	.byte	0x8f
-	.4byte	0x4ee
-	.byte	0x7c
+	.byte	0x88
+	.4byte	0x4b5
+	.byte	0x78
 	.uleb128 0xc
 	.4byte	.LASF82
 	.byte	0x9
-	.byte	0x96
-	.4byte	0x52e
-	.byte	0x80
+	.byte	0x8f
+	.4byte	0x4f5
+	.byte	0x7c
 	.uleb128 0xc
 	.4byte	.LASF83
 	.byte	0x9
+	.byte	0x96
+	.4byte	0x535
+	.byte	0x80
+	.uleb128 0xc
+	.4byte	.LASF84
+	.byte	0x9
 	.byte	0x9d
-	.4byte	0x56e
+	.4byte	0x575
 	.byte	0x84
 	.uleb128 0x13
 	.string	"pin"
 	.byte	0x9
 	.byte	0xaa
-	.4byte	0x97a
+	.4byte	0x981
 	.byte	0x88
-	.uleb128 0x14
-	.4byte	.LASF84
-	.byte	0x9
-	.byte	0xb2
-	.4byte	0x657
-	.2byte	0x128
 	.uleb128 0x14
 	.4byte	.LASF85
 	.byte	0x9
-	.byte	0xbb
-	.4byte	0x6b5
-	.2byte	0x12c
+	.byte	0xb2
+	.4byte	0x65e
+	.2byte	0x128
 	.uleb128 0x14
 	.4byte	.LASF86
 	.byte	0x9
-	.byte	0xc4
-	.4byte	0x98a
-	.2byte	0x130
+	.byte	0xbb
+	.4byte	0x6bc
+	.2byte	0x12c
 	.uleb128 0x14
 	.4byte	.LASF87
 	.byte	0x9
+	.byte	0xc4
+	.4byte	0x991
+	.2byte	0x130
+	.uleb128 0x14
+	.4byte	.LASF88
+	.byte	0x9
 	.byte	0xce
-	.4byte	0x99a
+	.4byte	0x9a1
 	.2byte	0x530
 	.byte	0
 	.uleb128 0x15
-	.4byte	0x608
-	.4byte	0x98a
+	.4byte	0x60f
+	.4byte	0x991
 	.uleb128 0x16
 	.4byte	0xbe
 	.byte	0x27
 	.byte	0
 	.uleb128 0x15
-	.4byte	0x713
-	.4byte	0x99a
+	.4byte	0x71a
+	.4byte	0x9a1
 	.uleb128 0x16
 	.4byte	0xbe
 	.byte	0xff
 	.byte	0
 	.uleb128 0x15
-	.4byte	0x780
-	.4byte	0x9aa
+	.4byte	0x787
+	.4byte	0x9b1
 	.uleb128 0x16
 	.4byte	0xbe
 	.byte	0x27
 	.byte	0
 	.uleb128 0x3
-	.4byte	.LASF88
+	.4byte	.LASF89
 	.byte	0x9
 	.byte	0xcf
-	.4byte	0x9b5
+	.4byte	0x9bc
 	.uleb128 0x17
-	.4byte	0x799
-	.uleb128 0x2
-	.byte	0x1
-	.byte	0x2
-	.4byte	.LASF89
+	.4byte	0x7a0
 	.uleb128 0x18
 	.byte	0x4
 	.4byte	0x69
@@ -4908,7 +4908,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LASF256
 	.byte	0x2
 	.byte	0x47
-	.4byte	0x9ba
+	.4byte	0x11b
 	.byte	0x3
 	.4byte	0xd6f
 	.uleb128 0x1b
@@ -4934,8 +4934,8 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LASF258
 	.byte	0x1
 	.2byte	0x156
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xddd
@@ -4971,8 +4971,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0x88
 	.4byte	0xde
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xe71
@@ -4993,7 +4993,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0xe81
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4653
+	.4byte	__FUNCTION__$4757
 	.uleb128 0x25
 	.4byte	.LVL11
 	.4byte	0x2441
@@ -5028,7 +5028,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4653
+	.4byte	__FUNCTION__$4757
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -5059,8 +5059,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0x9f
 	.4byte	0xde
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xf0b
@@ -5075,7 +5075,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0xf1b
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4664
+	.4byte	__FUNCTION__$4768
 	.uleb128 0x25
 	.4byte	.LVL23
 	.4byte	0x2441
@@ -5110,7 +5110,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4664
+	.4byte	__FUNCTION__$4768
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -5141,8 +5141,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0xaf
 	.4byte	0xde
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xfca
@@ -5157,7 +5157,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0xfda
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4668
+	.4byte	__FUNCTION__$4772
 	.uleb128 0x25
 	.4byte	.LVL30
 	.4byte	0x2441
@@ -5193,7 +5193,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4668
+	.4byte	__FUNCTION__$4772
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -5250,8 +5250,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0x54
 	.4byte	0xde
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1095
@@ -5266,7 +5266,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x10a5
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4631
+	.4byte	__FUNCTION__$4735
 	.uleb128 0x2a
 	.4byte	0xd53
 	.4byte	.LBB18
@@ -5313,7 +5313,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4631
+	.4byte	__FUNCTION__$4735
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -5354,8 +5354,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0x5f
 	.4byte	0xde
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1160
@@ -5370,7 +5370,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x1170
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4635
+	.4byte	__FUNCTION__$4739
 	.uleb128 0x2a
 	.4byte	0xd53
 	.4byte	.LBB20
@@ -5417,7 +5417,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4635
+	.4byte	__FUNCTION__$4739
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -5458,8 +5458,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0x6a
 	.4byte	0xde
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x122b
@@ -5474,7 +5474,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x123b
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4639
+	.4byte	__FUNCTION__$4743
 	.uleb128 0x2a
 	.4byte	0xd53
 	.4byte	.LBB22
@@ -5521,7 +5521,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4639
+	.4byte	__FUNCTION__$4743
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -5562,8 +5562,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0x75
 	.4byte	0xde
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x12f6
@@ -5578,7 +5578,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x1306
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4643
+	.4byte	__FUNCTION__$4747
 	.uleb128 0x2a
 	.4byte	0xd53
 	.4byte	.LBB24
@@ -5625,7 +5625,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4643
+	.4byte	__FUNCTION__$4747
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -5666,8 +5666,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0x80
 	.4byte	0xde
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x13f0
@@ -5688,7 +5688,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x13f0
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4648
+	.4byte	__FUNCTION__$4752
 	.uleb128 0x25
 	.4byte	.LVL73
 	.4byte	0x2441
@@ -5724,7 +5724,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4648
+	.4byte	__FUNCTION__$4752
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -5774,7 +5774,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4648
+	.4byte	__FUNCTION__$4752
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -5798,8 +5798,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0x93
 	.4byte	0xde
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1455
@@ -5840,8 +5840,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0x98
 	.4byte	0xde
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x14da
@@ -5856,7 +5856,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x14da
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4660
+	.4byte	__FUNCTION__$4764
 	.uleb128 0x25
 	.4byte	.LVL89
 	.4byte	0x2441
@@ -5891,7 +5891,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4660
+	.4byte	__FUNCTION__$4764
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -5915,8 +5915,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0xbb
 	.4byte	0xde
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1573
@@ -5937,7 +5937,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x1573
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4673
+	.4byte	__FUNCTION__$4777
 	.uleb128 0x25
 	.4byte	.LVL96
 	.4byte	0x2441
@@ -5972,7 +5972,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4673
+	.4byte	__FUNCTION__$4777
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -5996,8 +5996,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0xce
 	.4byte	0x57
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x15a1
@@ -6013,8 +6013,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0xd7
 	.4byte	0xde
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1777
@@ -6036,7 +6036,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x1777
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4681
+	.4byte	__FUNCTION__$4785
 	.uleb128 0x2f
 	.string	"ret"
 	.byte	0x1
@@ -6078,7 +6078,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4681
+	.4byte	__FUNCTION__$4785
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -6129,7 +6129,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4681
+	.4byte	__FUNCTION__$4785
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -6284,8 +6284,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.byte	0xf5
 	.4byte	0xde
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1881
@@ -6306,7 +6306,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x1881
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4693
+	.4byte	__FUNCTION__$4797
 	.uleb128 0x30
 	.string	"ret"
 	.byte	0x1
@@ -6348,7 +6348,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4693
+	.4byte	__FUNCTION__$4797
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -6430,8 +6430,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.2byte	0x10f
 	.4byte	0xde
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1ae8
@@ -6764,8 +6764,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.2byte	0x177
 	.4byte	0xde
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1c48
@@ -6793,7 +6793,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x1c58
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4721
+	.4byte	__FUNCTION__$4825
 	.uleb128 0x25
 	.4byte	.LVL201
 	.4byte	0x2441
@@ -6829,7 +6829,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4721
+	.4byte	__FUNCTION__$4825
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -6880,7 +6880,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4721
+	.4byte	__FUNCTION__$4825
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -6957,8 +6957,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.2byte	0x186
 	.4byte	0xde
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1d77
@@ -6973,7 +6973,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x1d87
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4725
+	.4byte	__FUNCTION__$4829
 	.uleb128 0x25
 	.4byte	.LVL217
 	.4byte	0x2441
@@ -7009,7 +7009,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4725
+	.4byte	__FUNCTION__$4829
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -7060,7 +7060,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4725
+	.4byte	__FUNCTION__$4829
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -7122,8 +7122,8 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LASF259
 	.byte	0x1
 	.2byte	0x1a3
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1dd9
@@ -7160,8 +7160,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.2byte	0x1b0
 	.4byte	0xde
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1eb4
@@ -7197,7 +7197,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x1eba
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4740
+	.4byte	__FUNCTION__$4844
 	.uleb128 0x25
 	.4byte	.LVL234
 	.4byte	0x2441
@@ -7233,7 +7233,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4740
+	.4byte	__FUNCTION__$4844
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -7293,8 +7293,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.2byte	0x194
 	.4byte	0xde
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1fc8
@@ -7309,7 +7309,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x1fc8
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4729
+	.4byte	__FUNCTION__$4833
 	.uleb128 0x37
 	.string	"ret"
 	.byte	0x1
@@ -7351,7 +7351,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4729
+	.4byte	__FUNCTION__$4833
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -7440,8 +7440,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.2byte	0x1b7
 	.4byte	0xde
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x20b1
@@ -7462,7 +7462,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x20b1
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4745
+	.4byte	__FUNCTION__$4849
 	.uleb128 0x37
 	.string	"ret"
 	.byte	0x1
@@ -7504,7 +7504,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4745
+	.4byte	__FUNCTION__$4849
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -7564,8 +7564,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.2byte	0x1c5
 	.4byte	0xde
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x213d
@@ -7580,7 +7580,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x213d
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4750
+	.4byte	__FUNCTION__$4854
 	.uleb128 0x25
 	.4byte	.LVL265
 	.4byte	0x2441
@@ -7615,7 +7615,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4750
+	.4byte	__FUNCTION__$4854
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -7639,8 +7639,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.2byte	0x1cc
 	.4byte	0xde
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2262
@@ -7661,7 +7661,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x2272
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4755
+	.4byte	__FUNCTION__$4859
 	.uleb128 0x33
 	.4byte	0xd53
 	.4byte	.LBB30
@@ -7708,7 +7708,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4755
+	.4byte	__FUNCTION__$4859
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -7759,7 +7759,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4755
+	.4byte	__FUNCTION__$4859
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -7806,8 +7806,8 @@ GPIO_PIN_MUX_REG:
 	.byte	0x1
 	.2byte	0x1d9
 	.4byte	0xde
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2395
@@ -7829,7 +7829,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	0x239b
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4760
+	.4byte	__FUNCTION__$4864
 	.uleb128 0x33
 	.4byte	0xd53
 	.4byte	.LBB32
@@ -7876,7 +7876,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4760
+	.4byte	__FUNCTION__$4864
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -7927,7 +7927,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x5f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$4760
+	.4byte	__FUNCTION__$4864
 	.uleb128 0x27
 	.uleb128 0x2
 	.byte	0x71
@@ -7999,7 +7999,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LASF232
 	.byte	0x1
 	.byte	0x52
-	.4byte	0x13c
+	.4byte	0x143
 	.uleb128 0x5
 	.byte	0x3
 	.4byte	gpio_spinlock
@@ -8007,7 +8007,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LASF233
 	.byte	0x9
 	.byte	0xd0
-	.4byte	0x9aa
+	.4byte	0x9b1
 	.uleb128 0x15
 	.4byte	0x9f
 	.4byte	0x240b
@@ -8083,7 +8083,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LASF244
 	.4byte	.LASF244
 	.byte	0x8
-	.byte	0xd9
+	.byte	0xdc
 	.uleb128 0x3b
 	.4byte	.LASF245
 	.4byte	.LASF245
@@ -8093,7 +8093,7 @@ GPIO_PIN_MUX_REG:
 	.4byte	.LASF246
 	.4byte	.LASF246
 	.byte	0x8
-	.byte	0xd8
+	.byte	0xdb
 	.uleb128 0x3b
 	.4byte	.LASF247
 	.4byte	.LASF247
@@ -8982,7 +8982,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL2
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9042,7 +9042,7 @@ GPIO_PIN_MUX_REG:
 	.sleb128 -32
 	.byte	0x9f
 	.4byte	.LVL21
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9067,7 +9067,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL20
-	.4byte	.LFE15
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9098,7 +9098,7 @@ GPIO_PIN_MUX_REG:
 	.sleb128 -268243276
 	.byte	0x9f
 	.4byte	.LVL28
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9123,7 +9123,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL35
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9159,7 +9159,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL44
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9184,7 +9184,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL44
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9220,7 +9220,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL53
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9245,7 +9245,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL53
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9281,7 +9281,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL62
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9306,7 +9306,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL62
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9342,7 +9342,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL71
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9367,7 +9367,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL71
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9409,7 +9409,7 @@ GPIO_PIN_MUX_REG:
 	.sleb128 -32
 	.byte	0x9f
 	.4byte	.LVL82
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9423,7 +9423,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL83
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9437,7 +9437,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL87
-	.4byte	.LFE16
+	.4byte	.LFE20
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9475,7 +9475,7 @@ GPIO_PIN_MUX_REG:
 	.sleb128 -32
 	.byte	0x9f
 	.4byte	.LVL94
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9533,7 +9533,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL108
-	.4byte	.LFE20
+	.4byte	.LFE24
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9558,7 +9558,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL105
-	.4byte	.LFE20
+	.4byte	.LFE24
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9583,7 +9583,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL112
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9663,7 +9663,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL140
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9678,7 +9678,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL139
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xa
 	.2byte	0x102
@@ -9736,7 +9736,7 @@ GPIO_PIN_MUX_REG:
 	.sleb128 -32
 	.byte	0x9f
 	.4byte	.LVL158
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9761,7 +9761,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL157
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9797,7 +9797,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL199
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -9816,7 +9816,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL198
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0xa
 	.byte	0x73
 	.sleb128 -1
@@ -9834,7 +9834,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL169
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -9856,7 +9856,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x31
 	.byte	0x9f
 	.4byte	.LVL174
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x2
 	.byte	0x91
 	.sleb128 -48
@@ -9879,7 +9879,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x31
 	.byte	0x9f
 	.4byte	.LVL181
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x2
 	.byte	0x91
 	.sleb128 -44
@@ -9902,7 +9902,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x31
 	.byte	0x9f
 	.4byte	.LVL177
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x2
 	.byte	0x91
 	.sleb128 -40
@@ -9925,7 +9925,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x31
 	.byte	0x9f
 	.4byte	.LVL185
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x2
 	.byte	0x91
 	.sleb128 -36
@@ -9947,7 +9947,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x31
 	.byte	0x9f
 	.4byte	.LVL189
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x1
 	.byte	0x57
 	.4byte	0
@@ -9987,7 +9987,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL215
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10001,7 +10001,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL211
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10037,7 +10037,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL227
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10062,7 +10062,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL239
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10098,7 +10098,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL250
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10112,7 +10112,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL250
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -10151,7 +10151,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL263
-	.4byte	.LFE31
+	.4byte	.LFE35
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10172,7 +10172,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL260
-	.4byte	.LFE31
+	.4byte	.LFE35
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -10184,7 +10184,7 @@ GPIO_PIN_MUX_REG:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL262
-	.4byte	.LFE31
+	.4byte	.LFE35
 	.2byte	0x4
 	.byte	0xa
 	.2byte	0x102
@@ -10214,7 +10214,7 @@ GPIO_PIN_MUX_REG:
 	.sleb128 -32
 	.byte	0x9f
 	.4byte	.LVL270
-	.4byte	.LFE32
+	.4byte	.LFE36
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10261,7 +10261,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL283
-	.4byte	.LFE33
+	.4byte	.LFE37
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10275,7 +10275,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL284
-	.4byte	.LFE33
+	.4byte	.LFE37
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10300,7 +10300,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL283
-	.4byte	.LFE33
+	.4byte	.LFE37
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10347,7 +10347,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL297
-	.4byte	.LFE34
+	.4byte	.LFE38
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10372,7 +10372,7 @@ GPIO_PIN_MUX_REG:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL297
-	.4byte	.LFE34
+	.4byte	.LFE38
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10388,110 +10388,110 @@ GPIO_PIN_MUX_REG:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.4byte	.LFB19
 	.4byte	.LFE19-.LFB19
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
 	.4byte	.LFB22
 	.4byte	.LFE22-.LFB22
 	.4byte	.LFB23
 	.4byte	.LFE23-.LFB23
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.4byte	.LFB24
 	.4byte	.LFE24-.LFB24
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.4byte	.LFB26
 	.4byte	.LFE26-.LFB26
 	.4byte	.LFB27
 	.4byte	.LFE27-.LFB27
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
 	.4byte	.LFB28
 	.4byte	.LFE28-.LFB28
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.4byte	.LFB31
 	.4byte	.LFE31-.LFB31
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
 	.4byte	.LFB33
 	.4byte	.LFE33-.LFB33
 	.4byte	.LFB34
 	.4byte	.LFE34-.LFB34
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB25
-	.4byte	.LFE25
-	.4byte	.LFB15
-	.4byte	.LFE15
-	.4byte	.LFB18
-	.4byte	.LFE18
+	.4byte	.LFB29
+	.4byte	.LFE29
 	.4byte	.LFB19
 	.4byte	.LFE19
-	.4byte	.LFB10
-	.4byte	.LFE10
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB12
-	.4byte	.LFE12
-	.4byte	.LFB13
-	.4byte	.LFE13
-	.4byte	.LFB14
-	.4byte	.LFE14
-	.4byte	.LFB16
-	.4byte	.LFE16
-	.4byte	.LFB17
-	.4byte	.LFE17
-	.4byte	.LFB20
-	.4byte	.LFE20
-	.4byte	.LFB21
-	.4byte	.LFE21
 	.4byte	.LFB22
 	.4byte	.LFE22
 	.4byte	.LFB23
 	.4byte	.LFE23
+	.4byte	.LFB14
+	.4byte	.LFE14
+	.4byte	.LFB15
+	.4byte	.LFE15
+	.4byte	.LFB16
+	.4byte	.LFE16
+	.4byte	.LFB17
+	.4byte	.LFE17
+	.4byte	.LFB18
+	.4byte	.LFE18
+	.4byte	.LFB20
+	.4byte	.LFE20
+	.4byte	.LFB21
+	.4byte	.LFE21
 	.4byte	.LFB24
 	.4byte	.LFE24
+	.4byte	.LFB25
+	.4byte	.LFE25
 	.4byte	.LFB26
 	.4byte	.LFE26
 	.4byte	.LFB27
 	.4byte	.LFE27
-	.4byte	.LFB29
-	.4byte	.LFE29
-	.4byte	.LFB30
-	.4byte	.LFE30
 	.4byte	.LFB28
 	.4byte	.LFE28
+	.4byte	.LFB30
+	.4byte	.LFE30
 	.4byte	.LFB31
 	.4byte	.LFE31
-	.4byte	.LFB32
-	.4byte	.LFE32
 	.4byte	.LFB33
 	.4byte	.LFE33
 	.4byte	.LFB34
 	.4byte	.LFE34
+	.4byte	.LFB32
+	.4byte	.LFE32
+	.4byte	.LFB35
+	.4byte	.LFE35
+	.4byte	.LFB36
+	.4byte	.LFE36
+	.4byte	.LFB37
+	.4byte	.LFE37
+	.4byte	.LFB38
+	.4byte	.LFE38
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -10499,23 +10499,21 @@ GPIO_PIN_MUX_REG:
 	.section	.debug_str,"MS",@progbits,1
 .LASF202:
 	.string	"level"
-.LASF255:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF216:
 	.string	"pd_en"
 .LASF235:
 	.string	"rtc_gpio_desc"
 .LASF16:
 	.string	"sizetype"
-.LASF41:
+.LASF42:
 	.string	"start"
 .LASF152:
 	.string	"GPIO_PULLUP_ONLY"
-.LASF85:
+.LASF86:
 	.string	"cali_data"
-.LASF22:
+.LASF23:
 	.string	"owner"
-.LASF37:
+.LASF38:
 	.string	"int_ena"
 .LASF143:
 	.string	"GPIO_PULLDOWN_DISABLE"
@@ -10531,25 +10529,25 @@ GPIO_PIN_MUX_REG:
 	.string	"GPIO_INTR_POSEDGE"
 .LASF256:
 	.string	"rtc_gpio_is_valid_gpio"
-.LASF59:
+.LASF60:
 	.string	"sdio_select"
 .LASF245:
 	.string	"esp_intr_get_cpu"
-.LASF53:
+.LASF54:
 	.string	"bt_select"
 .LASF153:
 	.string	"GPIO_PULLDOWN_ONLY"
 .LASF209:
 	.string	"gpio_pin_mask"
-.LASF36:
+.LASF37:
 	.string	"config"
-.LASF73:
+.LASF74:
 	.string	"reserved_5c"
 .LASF186:
 	.string	"gpio_num"
 .LASF258:
 	.string	"gpio_intr_service"
-.LASF65:
+.LASF66:
 	.string	"enable1_w1tc"
 .LASF4:
 	.string	"__uint8_t"
@@ -10557,13 +10555,13 @@ GPIO_PIN_MUX_REG:
 	.string	"gpio_intr_enable"
 .LASF210:
 	.string	"io_reg"
-.LASF64:
+.LASF65:
 	.string	"enable1_w1ts"
-.LASF30:
+.LASF31:
 	.string	"intr"
 .LASF128:
 	.string	"GPIO_INTR_NEGEDGE"
-.LASF84:
+.LASF85:
 	.string	"cali_conf"
 .LASF254:
 	.string	"C:/esp/esp-idf/components/driver/gpio.c"
@@ -10573,15 +10571,15 @@ GPIO_PIN_MUX_REG:
 	.string	"gpio_output_enable"
 .LASF252:
 	.string	"rtc_gpio_get_drive_capability"
-.LASF34:
+.LASF35:
 	.string	"int_type"
-.LASF81:
+.LASF82:
 	.string	"pcpu_int1"
 .LASF196:
 	.string	"gpio_pulldown_en"
 .LASF194:
 	.string	"gpio_pullup_en"
-.LASF75:
+.LASF76:
 	.string	"acpu_nmi_int"
 .LASF188:
 	.string	"gpio_intr_status_h"
@@ -10591,7 +10589,7 @@ GPIO_PIN_MUX_REG:
 	.string	"gpio_output_disable"
 .LASF0:
 	.string	"signed char"
-.LASF42:
+.LASF43:
 	.string	"value_sync2"
 .LASF11:
 	.string	"uint8_t"
@@ -10633,13 +10631,13 @@ GPIO_PIN_MUX_REG:
 	.string	"GPIO_MODE_OUTPUT"
 .LASF190:
 	.string	"__FUNCTION__"
-.LASF49:
+.LASF50:
 	.string	"inv_sel"
 .LASF177:
 	.string	"ESP_LOG_NONE"
 .LASF220:
 	.string	"gpio_isr_register"
-.LASF89:
+.LASF22:
 	.string	"_Bool"
 .LASF229:
 	.string	"GPIO_TAG"
@@ -10655,13 +10653,13 @@ GPIO_PIN_MUX_REG:
 	.string	"core_id"
 .LASF178:
 	.string	"ESP_LOG_ERROR"
-.LASF44:
+.LASF45:
 	.string	"rdy_real"
 .LASF162:
 	.string	"GPIO_DRIVE_CAP_MAX"
 .LASF165:
 	.string	"gpio_isr_handle_t"
-.LASF87:
+.LASF88:
 	.string	"func_out_sel_cfg"
 .LASF246:
 	.string	"vTaskExitCritical"
@@ -10679,15 +10677,15 @@ GPIO_PIN_MUX_REG:
 	.string	"GPIO_NUM_25"
 .LASF223:
 	.string	"gpio_install_isr_service"
-.LASF63:
+.LASF64:
 	.string	"enable1"
-.LASF82:
+.LASF83:
 	.string	"pcpu_nmi_int1"
-.LASF58:
+.LASF59:
 	.string	"out1_w1tc"
 .LASF174:
 	.string	"drv_s"
-.LASF57:
+.LASF58:
 	.string	"out1_w1ts"
 .LASF144:
 	.string	"GPIO_PULLDOWN_ENABLE"
@@ -10705,7 +10703,7 @@ GPIO_PIN_MUX_REG:
 	.string	"gpio_uninstall_isr_service"
 .LASF234:
 	.string	"GPIO_PIN_MUX_REG"
-.LASF67:
+.LASF68:
 	.string	"status"
 .LASF213:
 	.string	"output_en"
@@ -10713,13 +10711,13 @@ GPIO_PIN_MUX_REG:
 	.string	"hold_force"
 .LASF117:
 	.string	"GPIO_NUM_33"
-.LASF48:
+.LASF49:
 	.string	"sig_in_sel"
 .LASF125:
 	.string	"gpio_num_t"
 .LASF227:
 	.string	"strength"
-.LASF46:
+.LASF47:
 	.string	"func_sel"
 .LASF184:
 	.string	"args"
@@ -10727,7 +10725,7 @@ GPIO_PIN_MUX_REG:
 	.string	"GPIO_PULLUP_ENABLE"
 .LASF6:
 	.string	"__uint32_t"
-.LASF80:
+.LASF81:
 	.string	"acpu_nmi_int1"
 .LASF133:
 	.string	"gpio_int_type_t"
@@ -10737,7 +10735,7 @@ GPIO_PIN_MUX_REG:
 	.string	"rtc_num"
 .LASF221:
 	.string	"intr_alloc_flags"
-.LASF60:
+.LASF61:
 	.string	"enable"
 .LASF20:
 	.string	"intr_handle_data_t"
@@ -10781,19 +10779,19 @@ GPIO_PIN_MUX_REG:
 	.string	"GPIO_DRIVE_CAP_2"
 .LASF161:
 	.string	"GPIO_DRIVE_CAP_3"
-.LASF40:
+.LASF41:
 	.string	"reserved10"
-.LASF56:
+.LASF57:
 	.string	"out1"
-.LASF52:
+.LASF53:
 	.string	"reserved12"
-.LASF28:
+.LASF29:
 	.string	"reserved16"
-.LASF38:
+.LASF39:
 	.string	"reserved18"
-.LASF23:
+.LASF24:
 	.string	"count"
-.LASF69:
+.LASF70:
 	.string	"status_w1tc"
 .LASF225:
 	.string	"gpio_wakeup_disable"
@@ -10807,7 +10805,7 @@ GPIO_PIN_MUX_REG:
 	.string	"GPIO_NUM_22"
 .LASF112:
 	.string	"GPIO_NUM_23"
-.LASF68:
+.LASF69:
 	.string	"status_w1ts"
 .LASF114:
 	.string	"GPIO_NUM_26"
@@ -10817,11 +10815,11 @@ GPIO_PIN_MUX_REG:
 	.string	"esp_log_level_t"
 .LASF231:
 	.string	"gpio_isr_handle"
-.LASF43:
+.LASF44:
 	.string	"reserved20"
 .LASF156:
 	.string	"gpio_pull_mode_t"
-.LASF29:
+.LASF30:
 	.string	"intr_st"
 .LASF179:
 	.string	"ESP_LOG_WARN"
@@ -10829,7 +10827,7 @@ GPIO_PIN_MUX_REG:
 	.string	"GPIO_FLOATING"
 .LASF116:
 	.string	"GPIO_NUM_32"
-.LASF50:
+.LASF51:
 	.string	"oen_sel"
 .LASF118:
 	.string	"GPIO_NUM_34"
@@ -10849,35 +10847,35 @@ GPIO_PIN_MUX_REG:
 	.string	"drv_v"
 .LASF185:
 	.string	"gpio_isr_func_t"
-.LASF32:
+.LASF33:
 	.string	"pad_driver"
 .LASF21:
 	.string	"intr_handle_t"
 .LASF182:
 	.string	"ESP_LOG_VERBOSE"
-.LASF45:
+.LASF46:
 	.string	"rdy_sync2"
 .LASF250:
 	.string	"calloc"
-.LASF39:
+.LASF40:
 	.string	"rtc_max"
 .LASF197:
 	.string	"gpio_pulldown_dis"
 .LASF222:
 	.string	"handle"
-.LASF83:
+.LASF84:
 	.string	"cpusdio_int1"
 .LASF236:
 	.string	"esp_log_timestamp"
-.LASF51:
+.LASF52:
 	.string	"oen_inv_sel"
 .LASF10:
 	.string	"long long unsigned int"
 .LASF170:
 	.string	"slpie"
-.LASF77:
+.LASF78:
 	.string	"pcpu_nmi_int"
-.LASF35:
+.LASF36:
 	.string	"wakeup_enable"
 .LASF243:
 	.string	"rtc_gpio_deinit"
@@ -10885,17 +10883,17 @@ GPIO_PIN_MUX_REG:
 	.string	"gpio_spinlock"
 .LASF251:
 	.string	"rtc_gpio_set_drive_capability"
-.LASF47:
+.LASF48:
 	.string	"sig_in_inv"
 .LASF238:
 	.string	"gpio_matrix_out"
-.LASF88:
+.LASF89:
 	.string	"gpio_dev_t"
-.LASF24:
+.LASF25:
 	.string	"portMUX_TYPE"
 .LASF180:
 	.string	"ESP_LOG_INFO"
-.LASF86:
+.LASF87:
 	.string	"func_in_sel_cfg"
 .LASF204:
 	.string	"gpio_set_pull_mode"
@@ -10909,19 +10907,19 @@ GPIO_PIN_MUX_REG:
 	.string	"gpio_wakeup_enable"
 .LASF139:
 	.string	"gpio_mode_t"
-.LASF72:
+.LASF73:
 	.string	"status1_w1tc"
 .LASF217:
 	.string	"gpio_isr_handler_add"
-.LASF71:
+.LASF72:
 	.string	"status1_w1ts"
-.LASF70:
+.LASF71:
 	.string	"status1"
-.LASF55:
+.LASF56:
 	.string	"out_w1tc"
-.LASF74:
+.LASF75:
 	.string	"acpu_int"
-.LASF54:
+.LASF55:
 	.string	"out_w1ts"
 .LASF154:
 	.string	"GPIO_PULLUP_PULLDOWN"
@@ -10949,21 +10947,21 @@ GPIO_PIN_MUX_REG:
 	.string	"pull_down_en"
 .LASF168:
 	.string	"pulldown"
-.LASF62:
+.LASF63:
 	.string	"enable_w1tc"
 .LASF211:
 	.string	"io_num"
-.LASF61:
+.LASF62:
 	.string	"enable_w1ts"
-.LASF31:
+.LASF32:
 	.string	"reserved0"
-.LASF33:
+.LASF34:
 	.string	"reserved3"
-.LASF26:
-	.string	"reserved8"
-.LASF79:
-	.string	"acpu_int1"
 .LASF27:
+	.string	"reserved8"
+.LASF80:
+	.string	"acpu_int1"
+.LASF28:
 	.string	"strapping"
 .LASF181:
 	.string	"ESP_LOG_DEBUG"
@@ -10971,7 +10969,7 @@ GPIO_PIN_MUX_REG:
 	.string	"GPIO_PULLUP_DISABLE"
 .LASF241:
 	.string	"rtc_gpio_pulldown_en"
-.LASF66:
+.LASF67:
 	.string	"strap"
 .LASF195:
 	.string	"gpio_pullup_dis"
@@ -11005,16 +11003,18 @@ GPIO_PIN_MUX_REG:
 	.string	"rtc_gpio_pulldown_dis"
 .LASF150:
 	.string	"intr_type"
-.LASF78:
+.LASF79:
 	.string	"cpusdio_int"
 .LASF237:
 	.string	"esp_log_write"
 .LASF191:
 	.string	"gpio_intr_enable_on_core"
-.LASF25:
+.LASF26:
 	.string	"data"
-.LASF76:
+.LASF255:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\driver"
+.LASF77:
 	.string	"pcpu_int"
 .LASF208:
 	.string	"pGPIOConfig"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

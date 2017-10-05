@@ -24,7 +24,7 @@ task_wdt.o: C:/esp/esp-idf/components/esp32/task_wdt.c \
  C:/esp/esp-idf/components/newlib/include/alloca.h \
  C:/esp/esp-idf/components/newlib/include/string.h \
  C:/esp/esp-idf/components/newlib/include/sys/string.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  C:/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -51,8 +51,11 @@ task_wdt.o: C:/esp/esp-idf/components/esp32/task_wdt.c \
  C:/esp/esp-idf/components/esp32/include/xtensa/config/specreg.h \
  C:/esp/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h \
  C:/esp/esp-idf/components/esp32/include/esp_crosscore_int.h \
- C:/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h \
+ C:/esp/esp-idf/components/heap/include/esp_heap_caps.h \
+ C:/esp/esp-idf/components/heap/include/multi_heap.h \
+ C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h \
  C:/esp/esp-idf/components/esp32/include/esp_attr.h \
+ C:/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h \
  C:/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  C:/esp/esp-idf/components/esp32/include/esp_system.h \
  C:/esp/esp-idf/components/esp32/include/esp_err.h \
@@ -136,7 +139,7 @@ C:/esp/esp-idf/components/newlib/include/string.h:
 
 C:/esp/esp-idf/components/newlib/include/sys/string.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
@@ -190,9 +193,15 @@ C:/esp/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h:
 
 C:/esp/esp-idf/components/esp32/include/esp_crosscore_int.h:
 
-C:/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h:
+C:/esp/esp-idf/components/heap/include/esp_heap_caps.h:
+
+C:/esp/esp-idf/components/heap/include/multi_heap.h:
+
+C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h:
 
 C:/esp/esp-idf/components/esp32/include/esp_attr.h:
+
+C:/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h:
 
 C:/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h:
 

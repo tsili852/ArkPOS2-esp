@@ -1,7 +1,7 @@
 libsodium/src/libsodium/randombytes/randombytes.o: \
  C:/esp/esp-idf/components/libsodium/libsodium/src/libsodium/randombytes/randombytes.c \
  C:/esp/esp-idf/components/newlib/platform_include/assert.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/newlib/include/stdlib.h \
  C:/esp/esp-idf/components/newlib/include/machine/ieeefp.h \
  C:/esp/esp-idf/components/newlib/include/_ansi.h \
@@ -36,7 +36,7 @@ libsodium/src/libsodium/randombytes/randombytes.o: \
 
 C:/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/newlib/include/stdlib.h:
 

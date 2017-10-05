@@ -32,7 +32,7 @@
 	.global	esp_vfs_fat_sdmmc_mount
 	.type	esp_vfs_fat_sdmmc_mount, @function
 esp_vfs_fat_sdmmc_mount:
-.LFB11:
+.LFB15:
 	.file 1 "C:/esp/esp-idf/components/fatfs/src/vfs_fat_sdmmc.c"
 	.loc 1 35 0
 .LVL0:
@@ -373,7 +373,7 @@ esp_vfs_fat_sdmmc_mount:
 .L2:
 	.loc 1 152 0
 	retw.n
-.LFE11:
+.LFE15:
 	.size	esp_vfs_fat_sdmmc_mount, .-esp_vfs_fat_sdmmc_mount
 	.section	.text.esp_vfs_fat_sdmmc_unmount,"ax",@progbits
 	.literal_position
@@ -384,7 +384,7 @@ esp_vfs_fat_sdmmc_mount:
 	.global	esp_vfs_fat_sdmmc_unmount
 	.type	esp_vfs_fat_sdmmc_unmount, @function
 esp_vfs_fat_sdmmc_unmount:
-.LFB12:
+.LFB16:
 	.loc 1 155 0
 	entry	sp, 48
 .LCFI1:
@@ -444,7 +444,7 @@ esp_vfs_fat_sdmmc_unmount:
 	movi	a2, 0x103
 	.loc 1 171 0
 	retw.n
-.LFE12:
+.LFE16:
 	.size	esp_vfs_fat_sdmmc_unmount, .-esp_vfs_fat_sdmmc_unmount
 	.section	.bss.s_base_path,"aw",@nobits
 	.align	4
@@ -482,10 +482,10 @@ s_card:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI0-.LFB11
+	.4byte	.LCFI0-.LFB15
 	.byte	0xe
 	.uleb128 0x50
 	.align	4
@@ -494,10 +494,10 @@ s_card:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI1-.LFB12
+	.4byte	.LCFI1-.LFB16
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1505,8 +1505,8 @@ s_card:
 	.byte	0x1
 	.byte	0x1e
 	.4byte	0x142
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xb25
@@ -2024,8 +2024,8 @@ s_card:
 	.byte	0x1
 	.byte	0x9a
 	.4byte	0x142
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xbf8
@@ -2686,7 +2686,7 @@ s_card:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL2
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x1
 	.byte	0x57
 	.4byte	0
@@ -2752,7 +2752,7 @@ s_card:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL63
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2788,7 +2788,7 @@ s_card:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL63
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2825,7 +2825,7 @@ s_card:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL62
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -2941,10 +2941,10 @@ s_card:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
@@ -2955,10 +2955,10 @@ s_card:
 	.4byte	.LBE3
 	.4byte	0
 	.4byte	0
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB12
-	.4byte	.LFE12
+	.4byte	.LFB15
+	.4byte	.LFE15
+	.4byte	.LFB16
+	.4byte	.LFE16
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -2984,6 +2984,8 @@ s_card:
 	.string	"sdspi_slot_config_t"
 .LASF125:
 	.string	"ssize"
+.LASF192:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\fatfs"
 .LASF3:
 	.string	"size_t"
 .LASF119:
@@ -3056,8 +3058,6 @@ s_card:
 	.string	"sdmmc_csd_t"
 .LASF177:
 	.string	"f_mkfs"
-.LASF6:
-	.string	"short int"
 .LASF64:
 	.string	"gpio_num_t"
 .LASF150:
@@ -3138,8 +3138,8 @@ s_card:
 	.string	"FR_DISK_ERR"
 .LASF135:
 	.string	"winsect"
-.LASF192:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\fatfs"
+.LASF6:
+	.string	"short int"
 .LASF117:
 	.string	"WORD"
 .LASF182:
@@ -3356,4 +3356,4 @@ s_card:
 	.string	"opcode"
 .LASF195:
 	.string	"esp_vfs_fat_sdmmc_unmount"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

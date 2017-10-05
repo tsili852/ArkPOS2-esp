@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/soc/esp32/cpu_util.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\bootloader\\soc//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\bootloader\\soc//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/soc/esp32/cpu_util.c"
@@ -238,7 +238,7 @@ void __assert_func (const char *, int, const char *, const char *) __attribute__
 # 1 "C:/esp/esp-idf/components/soc/esp32/include/soc/soc.h" 1
 # 22 "C:/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h" 2
 # 19 "C:/esp/esp-idf/components/soc/esp32/cpu_util.c" 2
-# 1 "c:\\esp\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
+# 1 "c:\\esp\\esp32-arkpos2\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
 # 20 "C:/esp/esp-idf/components/soc/esp32/cpu_util.c" 2
 
 

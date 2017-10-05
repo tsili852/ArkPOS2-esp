@@ -1,5 +1,5 @@
 spiram_psram.o: C:/esp/esp-idf/components/esp32/spiram_psram.c \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/newlib/include/string.h \
  C:/esp/esp-idf/components/newlib/include/_ansi.h \
  C:/esp/esp-idf/components/newlib/include/newlib.h \
@@ -55,7 +55,7 @@ spiram_psram.o: C:/esp/esp-idf/components/esp32/spiram_psram.c \
  C:/esp/esp-idf/components/esp32/include/rom/lldesc.h \
  C:/esp/esp-idf/components/esp32/include/rom/queue.h
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/newlib/include/string.h:
 

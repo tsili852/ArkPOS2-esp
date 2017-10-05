@@ -69,6 +69,7 @@ static void update_ota_update_time(int update_time);
 static void evaluate_touched_pads(int touch_counter);
 static void init_ota();
 static void ble_process();
+static void send_https_packet();
 static esp_err_t app_event_handler(void *ctx, system_event_t *event);
 static void gatts_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param);
 static void gap_event_handler(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param);
@@ -216,6 +217,8 @@ static prepare_type_env_t b_prepare_write_env;
 
 void example_write_event_env(esp_gatt_if_t gatts_if, prepare_type_env_t *prepare_write_env, esp_ble_gatts_cb_param_t *param);
 void example_exec_write_event_env(prepare_type_env_t *prepare_write_env, esp_ble_gatts_cb_param_t *param);
+
+static http_request_t http_touch_test_request;
 
 int32_t touch1_thresh;
 int32_t touch2_thresh;
@@ -718,6 +721,8 @@ static void evaluate_touched_pads(int touch_counter) {
     else if (touch_counter == 1)
     {
         ESP_LOGI(TAG, "One button touched");
+
+        send_https_packet();
     }
     else if (touch_counter == 2)
     {
@@ -793,6 +798,33 @@ static void evaluate_touched_pads(int touch_counter) {
         ESP_LOGI(TAG, "More than two buttons touched");
     }
     vTaskDelay(1000 / portTICK_PERIOD_MS);
+}
+
+static void send_https_packet()
+{
+    esp_event_loop_init(&app_event_handler, NULL);
+
+    init_wifi();
+
+    xEventGroupWaitBits(wifi_sta_get_event_group(), WIFI_STA_EVENT_GROUP_CONNECTED_FLAG, pdFALSE, pdFALSE, portMAX_DELAY);
+
+    init_ota();
+
+    if (!wifi_sta_is_connected())
+    {
+        ESP_LOGE(TAG, "Wifi was not connected. Please reboot the device\n");
+        //TODO Add the Blufi example here
+    }
+
+    if (iap_https_has_update())
+    {
+        ESP_LOGI(TAG, "We need to update");
+        iap_https_download_image();
+    }
+    else
+    {
+        ESP_LOGI(TAG, "Firmaware is up-to-date");
+    }
 }
 
 static void check_for_updates() {

@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/bootloader_support/src/esp_image_format.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\bootloader\\bootloader_support//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\bootloader\\bootloader_support//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/bootloader_support/src/esp_image_format.c"
@@ -1065,6 +1065,70 @@ typedef unsigned long timer_t;
 
 typedef unsigned long useconds_t;
 typedef long suseconds_t;
+# 299 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+# 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\sched.h" 1 3
+# 46 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\sched.h" 3
+struct sched_param {
+  int sched_priority;
+# 59 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\sched.h" 3
+};
+
+
+
+
+
+int sched_yield( void );
+# 300 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 2 3
+# 308 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+typedef __uint32_t pthread_t;
+# 341 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+typedef struct {
+  int is_initialized;
+  void *stackaddr;
+  int stacksize;
+  int contentionscope;
+  int inheritsched;
+  int schedpolicy;
+  struct sched_param schedparam;
+# 357 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+  int detachstate;
+
+
+
+
+
+} pthread_attr_t;
+# 442 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+typedef __uint32_t pthread_mutex_t;
+
+typedef struct {
+  int is_initialized;
+# 454 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\sys\\types.h" 3
+  int type;
+
+  int recursive;
+} pthread_mutexattr_t;
+
+
+
+
+typedef __uint32_t pthread_cond_t;
+
+typedef struct {
+  int is_initialized;
+
+
+
+} pthread_condattr_t;
+
+
+
+typedef __uint32_t pthread_key_t;
+
+typedef struct {
+  int is_initialized;
+  int init_executed;
+} pthread_once_t;
 # 49 "c:\\msys32\\opt\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\stdio.h" 2 3
 
 
@@ -1646,7 +1710,7 @@ typedef struct {
 # 98 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stdarg.h" 3 4
 typedef __gnuc_va_list va_list;
 # 20 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
-# 1 "c:\\esp\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
+# 1 "c:\\esp\\esp32-arkpos2\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
 # 21 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
 # 1 "C:/esp/esp-idf/components/esp32/include/rom/ets_sys.h" 1
 # 22 "C:/esp/esp-idf/components/log/include/esp_log.h" 2
@@ -1693,7 +1757,7 @@ void esp_log_buffer_hexdump_internal( const char *tag, const void *buffer, uint1
 # 1 "c:\\msys32\\opt\\xtensa-esp32-elf\\lib\\gcc\\xtensa-esp32-elf\\5.2.0\\include\\stddef.h" 1 3 4
 # 21 "C:/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h" 2
 
-# 1 "c:\\esp\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
+# 1 "c:\\esp\\esp32-arkpos2\\arkpos2-esp\\build\\include\\sdkconfig.h" 1
 # 23 "C:/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h" 2
 # 45 "C:/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h"
 void spi_flash_init();

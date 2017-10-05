@@ -268,4 +268,4 @@ _xt_tick_divisor:
 	.string	"_xt_tick_divisor"
 .LASF1:
 	.string	"sizetype"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

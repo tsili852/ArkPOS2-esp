@@ -8,7 +8,7 @@
 	.align	4
 	.type	sc_ack_send_get_errno, @function
 sc_ack_send_get_errno:
-.LFB9:
+.LFB13:
 	.file 1 "C:/esp/esp-idf/components/esp32/smartconfig.c"
 	.loc 1 36 0
 .LVL0:
@@ -32,7 +32,7 @@ sc_ack_send_get_errno:
 	l32i.n	a2, sp, 0
 .LVL2:
 	retw.n
-.LFE9:
+.LFE13:
 	.size	sc_ack_send_get_errno, .-sc_ack_send_get_errno
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -56,7 +56,7 @@ sc_ack_send_get_errno:
 	.align	4
 	.type	sc_ack_send_task, @function
 sc_ack_send_task:
-.LFB10:
+.LFB14:
 	.loc 1 46 0
 .LVL3:
 	entry	sp, 64
@@ -309,7 +309,7 @@ sc_ack_send_task:
 	call8	vTaskDelete
 .LVL47:
 	retw.n
-.LFE10:
+.LFE14:
 	.size	sc_ack_send_task, .-sc_ack_send_task
 	.section	.rodata.str1.4
 	.align	4
@@ -335,7 +335,7 @@ sc_ack_send_task:
 	.global	sc_ack_send
 	.type	sc_ack_send, @function
 sc_ack_send:
-.LFB11:
+.LFB15:
 	.loc 1 131 0
 .LVL48:
 	entry	sp, 48
@@ -399,7 +399,7 @@ sc_ack_send:
 	call8	xTaskCreatePinnedToCore
 .LVL58:
 	retw.n
-.LFE11:
+.LFE15:
 	.size	sc_ack_send, .-sc_ack_send
 	.section	.text.sc_ack_send_stop,"ax",@progbits
 	.literal_position
@@ -408,7 +408,7 @@ sc_ack_send:
 	.global	sc_ack_send_stop
 	.type	sc_ack_send_stop, @function
 sc_ack_send_stop:
-.LFB12:
+.LFB16:
 	.loc 1 152 0
 	entry	sp, 32
 .LCFI3:
@@ -417,7 +417,7 @@ sc_ack_send_stop:
 	l32r	a8, .LC23
 	s8i	a9, a8, 0
 	retw.n
-.LFE12:
+.LFE16:
 	.size	sc_ack_send_stop, .-sc_ack_send_stop
 	.section	.bss.s_sc_ack_send,"aw",@nobits
 	.type	s_sc_ack_send, @object
@@ -443,10 +443,10 @@ s_sc_ack_send:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x4
-	.4byte	.LCFI0-.LFB9
+	.4byte	.LCFI0-.LFB13
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -455,10 +455,10 @@ s_sc_ack_send:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI1-.LFB10
+	.4byte	.LCFI1-.LFB14
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -467,10 +467,10 @@ s_sc_ack_send:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI2-.LFB11
+	.4byte	.LCFI2-.LFB15
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -479,10 +479,10 @@ s_sc_ack_send:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI3-.LFB12
+	.4byte	.LCFI3-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -611,15 +611,15 @@ s_sc_ack_send:
 	.byte	0x3
 	.byte	0x2d
 	.4byte	0x65
-	.uleb128 0x4
-	.4byte	.LASF17
-	.byte	0x4
-	.byte	0x73
-	.4byte	0xcd
 	.uleb128 0x3
 	.byte	0x1
 	.byte	0x2
+	.4byte	.LASF17
+	.uleb128 0x4
 	.4byte	.LASF18
+	.byte	0x4
+	.byte	0x76
+	.4byte	0xcd
 	.uleb128 0x7
 	.4byte	0x9c
 	.uleb128 0x4
@@ -996,8 +996,8 @@ s_sc_ack_send:
 	.byte	0x1
 	.byte	0x23
 	.4byte	0x25
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x441
@@ -1062,8 +1062,8 @@ s_sc_ack_send:
 	.4byte	.LASF108
 	.byte	0x1
 	.byte	0x2d
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x78c
@@ -1552,8 +1552,8 @@ s_sc_ack_send:
 	.4byte	.LASF109
 	.byte	0x1
 	.byte	0x82
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x89a
@@ -1707,8 +1707,8 @@ s_sc_ack_send:
 	.4byte	.LASF110
 	.byte	0x1
 	.byte	0x97
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x19
@@ -1724,7 +1724,7 @@ s_sc_ack_send:
 	.4byte	.LASF87
 	.byte	0x1
 	.byte	0x21
-	.4byte	0xe3
+	.4byte	0xd8
 	.uleb128 0x5
 	.byte	0x3
 	.4byte	s_sc_ack_send
@@ -1747,7 +1747,7 @@ s_sc_ack_send:
 	.4byte	.LASF91
 	.4byte	.LASF91
 	.byte	0xf
-	.2byte	0x243
+	.2byte	0x24f
 	.uleb128 0x23
 	.4byte	.LASF92
 	.4byte	.LASF92
@@ -2328,7 +2328,7 @@ s_sc_ack_send:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL2
-	.4byte	.LFE9
+	.4byte	.LFE13
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2385,7 +2385,7 @@ s_sc_ack_send:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL42
-	.4byte	.LFE10
+	.4byte	.LFE14
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -2418,7 +2418,7 @@ s_sc_ack_send:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL57
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2433,7 +2433,7 @@ s_sc_ack_send:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL53
-	.4byte	.LFE11
+	.4byte	.LFE15
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -2446,26 +2446,26 @@ s_sc_ack_send:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB9
-	.4byte	.LFE9-.LFB9
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB9
-	.4byte	.LFE9
-	.4byte	.LFB10
-	.4byte	.LFE10
-	.4byte	.LFB11
-	.4byte	.LFE11
-	.4byte	.LFB12
-	.4byte	.LFE12
+	.4byte	.LFB13
+	.4byte	.LFE13
+	.4byte	.LFB14
+	.4byte	.LFE14
+	.4byte	.LFB15
+	.4byte	.LFE15
+	.4byte	.LFB16
+	.4byte	.LFE16
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -2479,6 +2479,8 @@ s_sc_ack_send:
 	.string	"token"
 .LASF49:
 	.string	"TCPIP_ADAPTER_IF_ETH"
+.LASF106:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF108:
 	.string	"sc_ack_send_task"
 .LASF82:
@@ -2515,12 +2517,10 @@ s_sc_ack_send:
 	.string	"smartconfig_status_t"
 .LASF6:
 	.string	"__uint16_t"
-.LASF22:
-	.string	"ip4_addr_t"
-.LASF65:
-	.string	"SC_ACK_TYPE_ESPTOUCH"
 .LASF111:
 	.string	"memcpy"
+.LASF65:
+	.string	"SC_ACK_TYPE_ESPTOUCH"
 .LASF46:
 	.string	"tcpip_adapter_ip_info_t"
 .LASF14:
@@ -2547,8 +2547,8 @@ s_sc_ack_send:
 	.string	"local_ip"
 .LASF8:
 	.string	"long long int"
-.LASF106:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
+.LASF22:
+	.string	"ip4_addr_t"
 .LASF80:
 	.string	"sin_size"
 .LASF107:
@@ -2573,7 +2573,7 @@ s_sc_ack_send:
 	.string	"sin_addr"
 .LASF72:
 	.string	"sc_ack_t"
-.LASF17:
+.LASF18:
 	.string	"TickType_t"
 .LASF28:
 	.string	"sa_family_t"
@@ -2625,7 +2625,7 @@ s_sc_ack_send:
 	.string	"ESP_LOG_NONE"
 .LASF98:
 	.string	"vTaskDelete"
-.LASF18:
+.LASF17:
 	.string	"_Bool"
 .LASF23:
 	.string	"in_addr_t"
@@ -2695,4 +2695,4 @@ s_sc_ack_send:
 	.string	"sockaddr_in"
 .LASF36:
 	.string	"sockaddr"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

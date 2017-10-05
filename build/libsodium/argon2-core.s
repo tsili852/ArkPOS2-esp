@@ -6313,8 +6313,6 @@ fill_segment:
 	.string	"pwdlen"
 .LASF138:
 	.string	"validate_inputs"
-.LASF156:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF25:
 	.string	"ARGON2_OUTPUT_TOO_SHORT"
 .LASF117:
@@ -6473,6 +6471,8 @@ fill_segment:
 	.string	"ARGON2_INCORRECT_PARAMETER"
 .LASF82:
 	.string	"ARGON2_ADDRESSES_IN_BLOCK"
+.LASF156:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\libsodium"
 .LASF83:
 	.string	"ARGON2_PREHASH_DIGEST_LENGTH"
 .LASF99:
@@ -6585,4 +6585,4 @@ fill_segment:
 	.string	"secret"
 .LASF101:
 	.string	"Argon2_position_t"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

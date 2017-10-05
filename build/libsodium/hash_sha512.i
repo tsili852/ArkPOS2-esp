@@ -1,5 +1,5 @@
 # 1 "C:/esp/esp-idf/components/libsodium/libsodium/src/libsodium/crypto_hash/sha512/hash_sha512.c"
-# 1 "C:\\esp\\ArkPOS2-esp\\build\\libsodium//"
+# 1 "C:\\esp\\esp32-ArkPOS2\\ArkPOS2-esp\\build\\libsodium//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "C:/esp/esp-idf/components/libsodium/libsodium/src/libsodium/crypto_hash/sha512/hash_sha512.c"
@@ -748,7 +748,7 @@ extern long double strtold (const char *restrict, char **restrict);
 # 29 "C:/esp/esp-idf/components/mbedtls/include/mbedtls/sha512.h"
 # 1 "C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h" 1
 # 30 "C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h"
-# 1 "C:/esp/ArkPOS2-esp/build/include/sdkconfig.h" 1
+# 1 "C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h" 1
 # 31 "C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h" 2
 # 2665 "C:/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h"
 # 1 "C:/esp/esp-idf/components/mbedtls/include/mbedtls/check_config.h" 1

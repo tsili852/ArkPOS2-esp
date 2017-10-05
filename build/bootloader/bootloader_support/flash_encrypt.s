@@ -4117,8 +4117,8 @@ esp_flash_encrypt_check_and_update:
 	.string	"bootloader_flash_read"
 .LASF35:
 	.string	"spi_mode"
-.LASF2:
-	.string	"signed char"
+.LASF61:
+	.string	"ESP_LOG_VERBOSE"
 .LASF75:
 	.string	"num_partitions"
 .LASF70:
@@ -4149,8 +4149,6 @@ esp_flash_encrypt_check_and_update:
 	.string	"spi_size"
 .LASF50:
 	.string	"segment_data"
-.LASF102:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\bootloader_support"
 .LASF77:
 	.string	"index"
 .LASF93:
@@ -4285,14 +4283,16 @@ esp_flash_encrypt_check_and_update:
 	.string	"size"
 .LASF83:
 	.string	"flash_crypt_wr_dis"
-.LASF61:
-	.string	"ESP_LOG_VERBOSE"
+.LASF102:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\bootloader\\\\bootloader_support"
 .LASF8:
 	.string	"__int32_t"
 .LASF80:
 	.string	"data_ignored"
 .LASF26:
 	.string	"subtype"
+.LASF2:
+	.string	"signed char"
 .LASF16:
 	.string	"uint8_t"
 .LASF90:
@@ -4319,4 +4319,4 @@ esp_flash_encrypt_check_and_update:
 	.string	"esp_partition_table_basic_verify"
 .LASF43:
 	.string	"esp_image_header_t"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

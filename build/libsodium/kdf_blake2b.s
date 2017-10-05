@@ -1049,4 +1049,4 @@ crypto_kdf_blake2b_derive_from_key:
 	.string	"subkey_len"
 .LASF28:
 	.string	"C:/esp/esp-idf/components/libsodium/libsodium/src/libsodium/crypto_kdf/blake2b/kdf_blake2b.c"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

@@ -11264,6 +11264,8 @@ completionCallback:
 	.string	"linenoiseBeep"
 .LASF32:
 	.string	"__tm_hour"
+.LASF254:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\console"
 .LASF171:
 	.string	"hint"
 .LASF180:
@@ -11472,8 +11474,6 @@ completionCallback:
 	.string	"failed"
 .LASF157:
 	.string	"start"
-.LASF254:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\console"
 .LASF187:
 	.string	"linenoiseEditMoveRight"
 .LASF151:
@@ -11696,4 +11696,4 @@ completionCallback:
 	.string	"completeLine"
 .LASF231:
 	.string	"fputc"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

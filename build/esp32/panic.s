@@ -8,7 +8,7 @@
 	.align	4
 	.type	panicPutChar, @function
 panicPutChar:
-.LFB21:
+.LFB25:
 	.file 1 "C:/esp/esp-idf/components/esp32/panic.c"
 	.loc 1 65 0
 .LVL0:
@@ -27,13 +27,13 @@ panicPutChar:
 	memw
 	s32i.n	a2, a8, 0
 	retw.n
-.LFE21:
+.LFE25:
 	.size	panicPutChar, .-panicPutChar
 	.section	.text.panicPutStr,"ax",@progbits
 	.align	4
 	.type	panicPutStr, @function
 panicPutStr:
-.LFB22:
+.LFB26:
 	.loc 1 71 0
 .LVL1:
 	entry	sp, 32
@@ -58,13 +58,13 @@ panicPutStr:
 	bnez.n	a10, .L5
 	.loc 1 77 0
 	retw.n
-.LFE22:
+.LFE26:
 	.size	panicPutStr, .-panicPutStr
 	.section	.text.panicPutHex,"ax",@progbits
 	.align	4
 	.type	panicPutHex, @function
 panicPutHex:
-.LFB23:
+.LFB27:
 	.loc 1 80 0
 .LVL6:
 	entry	sp, 32
@@ -106,7 +106,7 @@ panicPutHex:
 	blti	a3, 8, .L10
 	.loc 1 92 0 is_stmt 1
 	retw.n
-.LFE23:
+.LFE27:
 	.size	panicPutHex, .-panicPutHex
 	.section	.text.panicPutDec,"ax",@progbits
 	.literal_position
@@ -114,7 +114,7 @@ panicPutHex:
 	.align	4
 	.type	panicPutDec, @function
 panicPutDec:
-.LFB24:
+.LFB28:
 	.loc 1 95 0
 .LVL17:
 	entry	sp, 32
@@ -151,13 +151,13 @@ panicPutDec:
 	call8	panicPutChar
 .LVL22:
 	retw.n
-.LFE24:
+.LFE28:
 	.size	panicPutDec, .-panicPutDec
 	.section	.text.setFirstBreakpoint,"ax",@progbits
 	.align	4
 	.type	setFirstBreakpoint, @function
 setFirstBreakpoint:
-.LFB29:
+.LFB33:
 	.loc 1 178 0
 .LVL23:
 	entry	sp, 32
@@ -174,7 +174,7 @@ wsr.ibreakenable a4
 # 0 "" 2
 #NO_APP
 	retw.n
-.LFE29:
+.LFE33:
 	.size	setFirstBreakpoint, .-setFirstBreakpoint
 	.section	.text.reconfigureAllWdts,"ax",@progbits
 	.literal_position
@@ -190,7 +190,7 @@ wsr.ibreakenable a4
 	.align	4
 	.type	reconfigureAllWdts, @function
 reconfigureAllWdts:
-.LFB32:
+.LFB36:
 	.loc 1 309 0
 	entry	sp, 32
 .LCFI5:
@@ -262,7 +262,7 @@ reconfigureAllWdts:
 	memw
 	s32i	a10, a8, 100
 	retw.n
-.LFE32:
+.LFE36:
 	.size	reconfigureAllWdts, .-reconfigureAllWdts
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	4
@@ -280,7 +280,7 @@ reconfigureAllWdts:
 	.align	4
 	.type	putEntry, @function
 putEntry:
-.LFB37:
+.LFB41:
 	.loc 1 381 0
 .LVL24:
 	entry	sp, 32
@@ -312,7 +312,7 @@ putEntry:
 	call8	panicPutHex
 .LVL30:
 	retw.n
-.LFE37:
+.LFE41:
 	.size	putEntry, .-putEntry
 	.section	.rodata.str1.4
 	.align	4
@@ -331,7 +331,7 @@ putEntry:
 	.align	4
 	.type	doBacktrace, @function
 doBacktrace:
-.LFB38:
+.LFB42:
 	.loc 1 392 0
 .LVL31:
 	entry	sp, 32
@@ -426,7 +426,7 @@ doBacktrace:
 	call8	panicPutStr
 .LVL51:
 	retw.n
-.LFE38:
+.LFE42:
 	.size	doBacktrace, .-doBacktrace
 	.section	.text.invoke_abort,"ax",@progbits
 	.literal_position
@@ -434,7 +434,7 @@ doBacktrace:
 	.align	4
 	.type	invoke_abort, @function
 invoke_abort:
-.LFB26:
+.LFB30:
 	.loc 1 125 0
 	entry	sp, 32
 .LCFI8:
@@ -459,13 +459,13 @@ invoke_abort:
 	s32i.n	a8, a8, 0
 	.loc 1 140 0
 	j	.L27
-.LFE26:
+.LFE30:
 	.size	invoke_abort, .-invoke_abort
 	.section	.text.haltOtherCore,"ax",@progbits
 	.align	4
 	.type	haltOtherCore, @function
 haltOtherCore:
-.LFB28:
+.LFB32:
 	.loc 1 172 0
 	entry	sp, 32
 .LCFI9:
@@ -489,7 +489,7 @@ haltOtherCore:
 	call8	esp_cpu_stall
 .LVL54:
 	retw.n
-.LFE28:
+.LFE32:
 	.size	haltOtherCore, .-haltOtherCore
 	.section	.text.esp_panic_wdt_start,"ax",@progbits
 	.literal_position
@@ -506,7 +506,7 @@ haltOtherCore:
 	.align	4
 	.type	esp_panic_wdt_start, @function
 esp_panic_wdt_start:
-.LFB34:
+.LFB38:
 	.loc 1 339 0
 	entry	sp, 32
 .LCFI10:
@@ -569,7 +569,7 @@ esp_panic_wdt_start:
 	s32i.n	a2, a3, 0
 .L29:
 	retw.n
-.LFE34:
+.LFE38:
 	.size	esp_panic_wdt_start, .-esp_panic_wdt_start
 	.section	.text.esp_panic_dig_reset,"ax",@progbits
 	.literal_position
@@ -579,7 +579,7 @@ esp_panic_wdt_start:
 	.align	4
 	.type	esp_panic_dig_reset, @function
 esp_panic_dig_reset:
-.LFB36:
+.LFB40:
 	.loc 1 367 0
 	entry	sp, 32
 .LCFI11:
@@ -613,7 +613,7 @@ esp_panic_dig_reset:
 	s32i.n	a8, a9, 0
 .L33:
 	j	.L33
-.LFE36:
+.LFE40:
 	.size	esp_panic_dig_reset, .-esp_panic_dig_reset
 	.section	.rodata.str1.4
 	.align	4
@@ -627,7 +627,7 @@ esp_panic_dig_reset:
 	.global	abort
 	.type	abort, @function
 abort:
-.LFB27:
+.LFB31:
 	.loc 1 144 0
 	entry	sp, 32
 .LCFI12:
@@ -659,7 +659,7 @@ abort:
 	.loc 1 148 0
 	call8	invoke_abort
 .LVL60:
-.LFE27:
+.LFE31:
 	.size	abort, .-abort
 	.section	.rodata.str1.4
 	.align	4
@@ -676,7 +676,7 @@ abort:
 	.weak	vApplicationStackOverflowHook
 	.type	vApplicationStackOverflowHook, @function
 vApplicationStackOverflowHook:
-.LFB25:
+.LFB29:
 	.loc 1 115 0
 .LVL61:
 	entry	sp, 32
@@ -696,7 +696,7 @@ vApplicationStackOverflowHook:
 	.loc 1 119 0
 	call8	abort
 .LVL65:
-.LFE25:
+.LFE29:
 	.size	vApplicationStackOverflowHook, .-vApplicationStackOverflowHook
 	.section	.text.esp_panic_wdt_stop,"ax",@progbits
 	.literal_position
@@ -710,7 +710,7 @@ vApplicationStackOverflowHook:
 	.global	esp_panic_wdt_stop
 	.type	esp_panic_wdt_stop, @function
 esp_panic_wdt_stop:
-.LFB35:
+.LFB39:
 	.loc 1 356 0
 	entry	sp, 32
 .LCFI14:
@@ -744,7 +744,7 @@ esp_panic_wdt_stop:
 	memw
 	s32i.n	a8, a10, 0
 	retw.n
-.LFE35:
+.LFE39:
 	.size	esp_panic_wdt_stop, .-esp_panic_wdt_stop
 	.section	.rodata.str1.4
 	.align	4
@@ -873,7 +873,7 @@ esp_panic_wdt_stop:
 	.align	4
 	.type	commonErrorHandler, @function
 commonErrorHandler:
-.LFB39:
+.LFB43:
 	.loc 1 418 0
 .LVL66:
 	entry	sp, 128
@@ -974,7 +974,7 @@ commonErrorHandler:
 	.loc 1 496 0
 	call8	esp_panic_dig_reset
 .LVL88:
-.LFE39:
+.LFE43:
 	.size	commonErrorHandler, .-commonErrorHandler
 	.section	.rodata.str1.4
 	.align	4
@@ -1065,7 +1065,7 @@ commonErrorHandler:
 	.global	panicHandler
 	.type	panicHandler, @function
 panicHandler:
-.LFB30:
+.LFB34:
 	.loc 1 190 0
 .LVL89:
 	entry	sp, 64
@@ -1224,7 +1224,7 @@ panicHandler:
 .LVL116:
 .L46:
 	retw.n
-.LFE30:
+.LFE34:
 	.size	panicHandler, .-panicHandler
 	.section	.rodata.str1.4
 	.align	4
@@ -1259,7 +1259,7 @@ panicHandler:
 	.global	xt_unhandled_exception
 	.type	xt_unhandled_exception, @function
 xt_unhandled_exception:
-.LFB31:
+.LFB35:
 	.loc 1 265 0
 .LVL117:
 	entry	sp, 32
@@ -1352,14 +1352,14 @@ xt_unhandled_exception:
 	mov.n	a10, a2
 	call8	commonErrorHandler
 .LVL135:
-.LFE31:
+.LFE35:
 	.size	xt_unhandled_exception, .-xt_unhandled_exception
 	.section	.text.esp_set_breakpoint_if_jtag,"ax",@progbits
 	.align	4
 	.global	esp_set_breakpoint_if_jtag
 	.type	esp_set_breakpoint_if_jtag, @function
 esp_set_breakpoint_if_jtag:
-.LFB40:
+.LFB44:
 	.loc 1 508 0
 .LVL136:
 	entry	sp, 32
@@ -1374,7 +1374,7 @@ esp_set_breakpoint_if_jtag:
 .LVL138:
 .L66:
 	retw.n
-.LFE40:
+.LFE44:
 	.size	esp_set_breakpoint_if_jtag, .-esp_set_breakpoint_if_jtag
 	.section	.text.esp_set_watchpoint,"ax",@progbits
 	.literal_position
@@ -1383,7 +1383,7 @@ esp_set_breakpoint_if_jtag:
 	.global	esp_set_watchpoint
 	.type	esp_set_watchpoint, @function
 esp_set_watchpoint:
-.LFB41:
+.LFB45:
 	.loc 1 516 0
 .LVL139:
 	entry	sp, 32
@@ -1463,14 +1463,14 @@ wsr.dbreakc1 a5
 .LVL151:
 	.loc 1 542 0
 	retw.n
-.LFE41:
+.LFE45:
 	.size	esp_set_watchpoint, .-esp_set_watchpoint
 	.section	.text.esp_clear_watchpoint,"ax",@progbits
 	.align	4
 	.global	esp_clear_watchpoint
 	.type	esp_clear_watchpoint, @function
 esp_clear_watchpoint:
-.LFB42:
+.LFB46:
 	.loc 1 545 0
 .LVL152:
 	entry	sp, 32
@@ -1497,7 +1497,7 @@ esp_clear_watchpoint:
 # 0 "" 2
 #NO_APP
 	retw.n
-.LFE42:
+.LFE46:
 	.size	esp_clear_watchpoint, .-esp_clear_watchpoint
 	.section	.rodata.str1.4
 	.align	4
@@ -1515,7 +1515,7 @@ esp_clear_watchpoint:
 	.global	_esp_error_check_failed
 	.type	_esp_error_check_failed, @function
 _esp_error_check_failed:
-.LFB43:
+.LFB47:
 	.loc 1 560 0
 .LVL154:
 	entry	sp, 32
@@ -1549,7 +1549,7 @@ _esp_error_check_failed:
 	.loc 1 565 0
 	call8	invoke_abort
 .LVL158:
-.LFE43:
+.LFE47:
 	.size	_esp_error_check_failed, .-_esp_error_check_failed
 	.section	.rodata.str1.4
 	.align	4
@@ -1717,10 +1717,10 @@ abort_called:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.byte	0x4
-	.4byte	.LCFI0-.LFB21
+	.4byte	.LCFI0-.LFB25
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1729,10 +1729,10 @@ abort_called:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI1-.LFB22
+	.4byte	.LCFI1-.LFB26
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1741,10 +1741,10 @@ abort_called:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI2-.LFB23
+	.4byte	.LCFI2-.LFB27
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1753,10 +1753,10 @@ abort_called:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI3-.LFB24
+	.4byte	.LCFI3-.LFB28
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1765,10 +1765,10 @@ abort_called:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.byte	0x4
-	.4byte	.LCFI4-.LFB29
+	.4byte	.LCFI4-.LFB33
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1777,10 +1777,10 @@ abort_called:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.byte	0x4
-	.4byte	.LCFI5-.LFB32
+	.4byte	.LCFI5-.LFB36
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1789,10 +1789,10 @@ abort_called:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
 	.byte	0x4
-	.4byte	.LCFI6-.LFB37
+	.4byte	.LCFI6-.LFB41
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1801,10 +1801,10 @@ abort_called:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
 	.byte	0x4
-	.4byte	.LCFI7-.LFB38
+	.4byte	.LCFI7-.LFB42
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1813,10 +1813,10 @@ abort_called:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI8-.LFB26
+	.4byte	.LCFI8-.LFB30
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1825,10 +1825,10 @@ abort_called:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.byte	0x4
-	.4byte	.LCFI9-.LFB28
+	.4byte	.LCFI9-.LFB32
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1837,10 +1837,10 @@ abort_called:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.byte	0x4
-	.4byte	.LCFI10-.LFB34
+	.4byte	.LCFI10-.LFB38
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1849,10 +1849,10 @@ abort_called:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
 	.byte	0x4
-	.4byte	.LCFI11-.LFB36
+	.4byte	.LCFI11-.LFB40
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1861,10 +1861,10 @@ abort_called:
 	.4byte	.LEFDE24-.LASFDE24
 .LASFDE24:
 	.4byte	.Lframe0
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.byte	0x4
-	.4byte	.LCFI12-.LFB27
+	.4byte	.LCFI12-.LFB31
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1873,10 +1873,10 @@ abort_called:
 	.4byte	.LEFDE26-.LASFDE26
 .LASFDE26:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI13-.LFB25
+	.4byte	.LCFI13-.LFB29
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1885,10 +1885,10 @@ abort_called:
 	.4byte	.LEFDE28-.LASFDE28
 .LASFDE28:
 	.4byte	.Lframe0
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.byte	0x4
-	.4byte	.LCFI14-.LFB35
+	.4byte	.LCFI14-.LFB39
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1897,10 +1897,10 @@ abort_called:
 	.4byte	.LEFDE30-.LASFDE30
 .LASFDE30:
 	.4byte	.Lframe0
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.byte	0x4
-	.4byte	.LCFI15-.LFB39
+	.4byte	.LCFI15-.LFB43
 	.byte	0xe
 	.uleb128 0x80
 	.align	4
@@ -1909,10 +1909,10 @@ abort_called:
 	.4byte	.LEFDE32-.LASFDE32
 .LASFDE32:
 	.4byte	.Lframe0
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.byte	0x4
-	.4byte	.LCFI16-.LFB30
+	.4byte	.LCFI16-.LFB34
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -1921,10 +1921,10 @@ abort_called:
 	.4byte	.LEFDE34-.LASFDE34
 .LASFDE34:
 	.4byte	.Lframe0
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.byte	0x4
-	.4byte	.LCFI17-.LFB31
+	.4byte	.LCFI17-.LFB35
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1933,10 +1933,10 @@ abort_called:
 	.4byte	.LEFDE36-.LASFDE36
 .LASFDE36:
 	.4byte	.Lframe0
-	.4byte	.LFB40
-	.4byte	.LFE40-.LFB40
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
 	.byte	0x4
-	.4byte	.LCFI18-.LFB40
+	.4byte	.LCFI18-.LFB44
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1945,10 +1945,10 @@ abort_called:
 	.4byte	.LEFDE38-.LASFDE38
 .LASFDE38:
 	.4byte	.Lframe0
-	.4byte	.LFB41
-	.4byte	.LFE41-.LFB41
+	.4byte	.LFB45
+	.4byte	.LFE45-.LFB45
 	.byte	0x4
-	.4byte	.LCFI19-.LFB41
+	.4byte	.LCFI19-.LFB45
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1957,10 +1957,10 @@ abort_called:
 	.4byte	.LEFDE40-.LASFDE40
 .LASFDE40:
 	.4byte	.Lframe0
-	.4byte	.LFB42
-	.4byte	.LFE42-.LFB42
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
 	.byte	0x4
-	.4byte	.LCFI20-.LFB42
+	.4byte	.LCFI20-.LFB46
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1969,10 +1969,10 @@ abort_called:
 	.4byte	.LEFDE42-.LASFDE42
 .LASFDE42:
 	.4byte	.Lframe0
-	.4byte	.LFB43
-	.4byte	.LFE43-.LFB43
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
 	.byte	0x4
-	.4byte	.LCFI21-.LFB43
+	.4byte	.LCFI21-.LFB47
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -2349,15 +2349,15 @@ abort_called:
 	.byte	0x8
 	.byte	0x91
 	.4byte	0x167
-	.uleb128 0x4
-	.4byte	.LASF47
-	.byte	0x9
-	.byte	0x18
-	.4byte	0xbd
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x2
+	.4byte	.LASF47
+	.uleb128 0x4
 	.4byte	.LASF48
+	.byte	0x9
+	.byte	0x18
+	.4byte	0xbd
 	.uleb128 0x6
 	.byte	0x4
 	.4byte	0x2b4
@@ -3595,7 +3595,7 @@ abort_called:
 	.4byte	.LASF194
 	.byte	0x2
 	.byte	0x49
-	.4byte	0x2ca
+	.4byte	0x2bf
 	.byte	0x3
 	.4byte	0xb88
 	.uleb128 0x18
@@ -3633,8 +3633,8 @@ abort_called:
 	.4byte	.LASF142
 	.byte	0x1
 	.byte	0x40
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xbde
@@ -3650,8 +3650,8 @@ abort_called:
 	.4byte	.LASF143
 	.byte	0x1
 	.byte	0x46
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xc15
@@ -3676,8 +3676,8 @@ abort_called:
 	.4byte	.LASF144
 	.byte	0x1
 	.byte	0x4f
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xc7e
@@ -3733,8 +3733,8 @@ abort_called:
 	.4byte	.LASF145
 	.byte	0x1
 	.byte	0x5e
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xd13
@@ -3826,8 +3826,8 @@ abort_called:
 	.4byte	.LASF146
 	.byte	0x1
 	.byte	0xb1
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xd35
@@ -3843,16 +3843,16 @@ abort_called:
 	.4byte	.LASF195
 	.byte	0x1
 	.2byte	0x134
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x27
 	.4byte	.LASF147
 	.byte	0x1
 	.2byte	0x17c
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xdcc
@@ -3917,8 +3917,8 @@ abort_called:
 	.4byte	.LASF148
 	.byte	0x1
 	.2byte	0x187
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xeaf
@@ -4021,8 +4021,8 @@ abort_called:
 	.4byte	.LASF150
 	.byte	0x1
 	.byte	0x7c
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xece
@@ -4034,8 +4034,8 @@ abort_called:
 	.4byte	.LASF151
 	.byte	0x1
 	.byte	0xab
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xf14
@@ -4062,8 +4062,8 @@ abort_called:
 	.4byte	.LASF152
 	.byte	0x1
 	.2byte	0x152
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xf34
@@ -4075,8 +4075,8 @@ abort_called:
 	.4byte	.LASF153
 	.byte	0x1
 	.2byte	0x16e
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xf87
@@ -4114,8 +4114,8 @@ abort_called:
 	.4byte	.LASF166
 	.byte	0x1
 	.byte	0x8f
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0xfe4
@@ -4153,8 +4153,8 @@ abort_called:
 	.4byte	.LASF158
 	.byte	0x1
 	.byte	0x72
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x105f
@@ -4216,16 +4216,16 @@ abort_called:
 	.4byte	.LASF196
 	.byte	0x1
 	.2byte	0x163
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x3b
 	.4byte	.LASF197
 	.byte	0x1
 	.2byte	0x1a1
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x11c4
@@ -4386,8 +4386,8 @@ abort_called:
 	.4byte	.LASF159
 	.byte	0x1
 	.byte	0xbd
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1405
@@ -4657,8 +4657,8 @@ abort_called:
 	.4byte	.LASF164
 	.byte	0x1
 	.2byte	0x108
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1555
@@ -4796,8 +4796,8 @@ abort_called:
 	.4byte	.LASF165
 	.byte	0x1
 	.2byte	0x1fb
-	.4byte	.LFB40
-	.4byte	.LFE40-.LFB40
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1592
@@ -4826,9 +4826,9 @@ abort_called:
 	.4byte	.LASF167
 	.byte	0x1
 	.2byte	0x203
-	.4byte	0x2bf
-	.4byte	.LFB41
-	.4byte	.LFE41-.LFB41
+	.4byte	0x2c6
+	.4byte	.LFB45
+	.4byte	.LFE45-.LFB45
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1606
@@ -4875,8 +4875,8 @@ abort_called:
 	.4byte	.LASF171
 	.byte	0x1
 	.2byte	0x220
-	.4byte	.LFB42
-	.4byte	.LFE42-.LFB42
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1637
@@ -4898,8 +4898,8 @@ abort_called:
 	.4byte	.LASF172
 	.byte	0x1
 	.2byte	0x22f
-	.4byte	.LFB43
-	.4byte	.LFE43-.LFB43
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x16f1
@@ -4907,7 +4907,7 @@ abort_called:
 	.string	"rc"
 	.byte	0x1
 	.2byte	0x22f
-	.4byte	0x2bf
+	.4byte	0x2c6
 	.uleb128 0x1
 	.byte	0x52
 	.uleb128 0x41
@@ -5001,7 +5001,7 @@ abort_called:
 	.4byte	.LASF177
 	.byte	0x1
 	.byte	0x7a
-	.4byte	0x2ca
+	.4byte	0x2bf
 	.uleb128 0x5
 	.byte	0x3
 	.4byte	abort_called
@@ -6194,7 +6194,7 @@ abort_called:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL3
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -6205,7 +6205,7 @@ abort_called:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL15
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -6217,7 +6217,7 @@ abort_called:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL8
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -6300,7 +6300,7 @@ abort_called:
 	.2byte	0x1
 	.byte	0x58
 	.4byte	.LVL21-1
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x1d
 	.byte	0x72
 	.sleb128 0
@@ -6343,7 +6343,7 @@ abort_called:
 	.byte	0x52
 	.byte	0x9f
 	.4byte	.LVL26
-	.4byte	.LFE37
+	.4byte	.LFE41
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -6354,7 +6354,7 @@ abort_called:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL38
-	.4byte	.LFE38
+	.4byte	.LFE42
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6451,7 +6451,7 @@ abort_called:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL86
-	.4byte	.LFE39
+	.4byte	.LFE43
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6465,7 +6465,7 @@ abort_called:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL86
-	.4byte	.LFE39
+	.4byte	.LFE43
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6502,7 +6502,7 @@ abort_called:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL116
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -6525,7 +6525,7 @@ abort_called:
 	.4byte	.LC0
 	.byte	0x9f
 	.4byte	.LVL94
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -6599,7 +6599,7 @@ abort_called:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL151
-	.4byte	.LFE41
+	.4byte	.LFE45
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6620,7 +6620,7 @@ abort_called:
 	.byte	0x55
 	.byte	0x9f
 	.4byte	.LVL146
-	.4byte	.LFE41
+	.4byte	.LFE45
 	.2byte	0x1
 	.byte	0x55
 	.4byte	0
@@ -6631,7 +6631,7 @@ abort_called:
 	.2byte	0x1
 	.byte	0x58
 	.4byte	.LVL150
-	.4byte	.LFE41
+	.4byte	.LFE45
 	.2byte	0x1
 	.byte	0x58
 	.4byte	0
@@ -6646,7 +6646,7 @@ abort_called:
 	.2byte	0x1
 	.byte	0x55
 	.4byte	.LVL150
-	.4byte	.LFE41
+	.4byte	.LFE45
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -6659,98 +6659,98 @@ abort_called:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
 	.4byte	.LFB25
 	.4byte	.LFE25-.LFB25
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
-	.4byte	.LFB40
-	.4byte	.LFE40-.LFB40
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.4byte	.LFB41
 	.4byte	.LFE41-.LFB41
 	.4byte	.LFB42
 	.4byte	.LFE42-.LFB42
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.4byte	.LFB43
 	.4byte	.LFE43-.LFB43
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
+	.4byte	.LFB44
+	.4byte	.LFE44-.LFB44
+	.4byte	.LFB45
+	.4byte	.LFE45-.LFB45
+	.4byte	.LFB46
+	.4byte	.LFE46-.LFB46
+	.4byte	.LFB47
+	.4byte	.LFE47-.LFB47
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB21
-	.4byte	.LFE21
-	.4byte	.LFB22
-	.4byte	.LFE22
-	.4byte	.LFB23
-	.4byte	.LFE23
-	.4byte	.LFB24
-	.4byte	.LFE24
-	.4byte	.LFB29
-	.4byte	.LFE29
-	.4byte	.LFB32
-	.4byte	.LFE32
-	.4byte	.LFB37
-	.4byte	.LFE37
-	.4byte	.LFB38
-	.4byte	.LFE38
-	.4byte	.LFB26
-	.4byte	.LFE26
-	.4byte	.LFB28
-	.4byte	.LFE28
-	.4byte	.LFB34
-	.4byte	.LFE34
-	.4byte	.LFB36
-	.4byte	.LFE36
-	.4byte	.LFB27
-	.4byte	.LFE27
 	.4byte	.LFB25
 	.4byte	.LFE25
-	.4byte	.LFB35
-	.4byte	.LFE35
-	.4byte	.LFB39
-	.4byte	.LFE39
-	.4byte	.LFB30
-	.4byte	.LFE30
-	.4byte	.LFB31
-	.4byte	.LFE31
-	.4byte	.LFB40
-	.4byte	.LFE40
+	.4byte	.LFB26
+	.4byte	.LFE26
+	.4byte	.LFB27
+	.4byte	.LFE27
+	.4byte	.LFB28
+	.4byte	.LFE28
+	.4byte	.LFB33
+	.4byte	.LFE33
+	.4byte	.LFB36
+	.4byte	.LFE36
 	.4byte	.LFB41
 	.4byte	.LFE41
 	.4byte	.LFB42
 	.4byte	.LFE42
+	.4byte	.LFB30
+	.4byte	.LFE30
+	.4byte	.LFB32
+	.4byte	.LFE32
+	.4byte	.LFB38
+	.4byte	.LFE38
+	.4byte	.LFB40
+	.4byte	.LFE40
+	.4byte	.LFB31
+	.4byte	.LFE31
+	.4byte	.LFB29
+	.4byte	.LFE29
+	.4byte	.LFB39
+	.4byte	.LFE39
 	.4byte	.LFB43
 	.4byte	.LFE43
+	.4byte	.LFB34
+	.4byte	.LFE34
+	.4byte	.LFB35
+	.4byte	.LFE35
+	.4byte	.LFB44
+	.4byte	.LFE44
+	.4byte	.LFB45
+	.4byte	.LFE45
+	.4byte	.LFB46
+	.4byte	.LFE46
+	.4byte	.LFB47
+	.4byte	.LFE47
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -6882,6 +6882,8 @@ abort_called:
 	.string	"debugRsn"
 .LASF129:
 	.string	"reserved_ec"
+.LASF193:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF104:
 	.string	"lactalarmhi"
 .LASF83:
@@ -6998,7 +7000,7 @@ abort_called:
 	.string	"panicPutHex"
 .LASF34:
 	.string	"SDIO_IDLE_INT"
-.LASF48:
+.LASF47:
 	.string	"_Bool"
 .LASF16:
 	.string	"int32_t"
@@ -7032,8 +7034,6 @@ abort_called:
 	.string	"int_clr_timers"
 .LASF95:
 	.string	"wdt_wprotect"
-.LASF193:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\esp32"
 .LASF67:
 	.string	"flashboot_mod_en"
 .LASF32:
@@ -7112,7 +7112,7 @@ abort_called:
 	.string	"invoke_abort"
 .LASF69:
 	.string	"cpu_reset_length"
-.LASF47:
+.LASF48:
 	.string	"esp_err_t"
 .LASF117:
 	.string	"reserved_bc"
@@ -7154,4 +7154,4 @@ abort_called:
 	.string	"esp_panic_wdt_start"
 .LASF41:
 	.string	"lend"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

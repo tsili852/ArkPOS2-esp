@@ -17,12 +17,12 @@
 	.literal .LC9, 4096
 	.literal .LC10, 536870912
 	.literal .LC12, .LC11
-	.literal .LC13, __func__$5393
+	.literal .LC13, __func__$5465
 	.literal .LC15, .LC14
 	.align	4
 	.type	make_hw_cmd, @function
 make_hw_cmd:
-.LFB19:
+.LFB20:
 	.file 1 "C:/esp/esp-idf/components/driver/sdmmc_transaction.c"
 	.loc 1 223 0
 .LVL0:
@@ -138,7 +138,7 @@ make_hw_cmd:
 	.loc 1 261 0
 	mov.n	a2, a8
 	retw.n
-.LFE19:
+.LFE20:
 	.size	make_hw_cmd, .-make_hw_cmd
 	.section	.rodata.str1.4
 	.align	4
@@ -150,14 +150,14 @@ make_hw_cmd:
 	.literal .LC17, s_dma_desc
 	.literal .LC18, -2147483648
 	.literal .LC20, .LC19
-	.literal .LC21, __func__$5371
+	.literal .LC21, __func__$5443
 	.literal .LC22, .LC14
 	.literal .LC23, 4096
 	.literal .LC24, -8192
 	.align	4
 	.type	fill_dma_descriptors, @function
 fill_dma_descriptors:
-.LFB16:
+.LFB17:
 	.loc 1 156 0
 .LVL22:
 	entry	sp, 32
@@ -275,7 +275,7 @@ fill_dma_descriptors:
 .L11:
 	retw.n
 .LBE14:
-.LFE16:
+.LFE17:
 	.size	fill_dma_descriptors, .-fill_dma_descriptors
 	.section	.rodata.str1.4
 	.align	4
@@ -291,7 +291,7 @@ fill_dma_descriptors:
 	.align	4
 	.type	handle_idle_state_events, @function
 handle_idle_state_events:
-.LFB17:
+.LFB18:
 	.loc 1 185 0 is_stmt 1
 	entry	sp, 64
 .LCFI2:
@@ -336,7 +336,7 @@ handle_idle_state_events:
 	.loc 1 203 0
 	movi.n	a2, 0
 	retw.n
-.LFE17:
+.LFE18:
 	.size	handle_idle_state_events, .-handle_idle_state_events
 	.section	.text.process_data_status,"ax",@progbits
 	.literal_position
@@ -345,7 +345,7 @@ handle_idle_state_events:
 	.align	4
 	.type	process_data_status, @function
 process_data_status:
-.LFB21:
+.LFB22:
 	.loc 1 296 0
 .LVL41:
 	entry	sp, 32
@@ -407,7 +407,7 @@ process_data_status:
 .LVL47:
 .L24:
 	retw.n
-.LFE21:
+.LFE22:
 	.size	process_data_status, .-process_data_status
 	.section	.text.process_command_response,"ax",@progbits
 	.literal_position
@@ -416,7 +416,7 @@ process_data_status:
 	.align	4
 	.type	process_command_response, @function
 process_command_response:
-.LFB20:
+.LFB21:
 	.loc 1 264 0
 .LVL48:
 	entry	sp, 32
@@ -493,7 +493,7 @@ process_command_response:
 .LVL55:
 .L31:
 	retw.n
-.LFE20:
+.LFE21:
 	.size	process_command_response, .-process_command_response
 	.section	.text.process_events,"ax",@progbits
 	.literal_position
@@ -504,7 +504,7 @@ process_command_response:
 	.align	4
 	.type	process_events, @function
 process_events:
-.LFB23:
+.LFB24:
 	.loc 1 326 0
 .LVL56:
 	entry	sp, 64
@@ -728,7 +728,7 @@ process_events:
 	movi.n	a2, 0
 .LVL87:
 	retw.n
-.LFE23:
+.LFE24:
 	.size	process_events, .-process_events
 	.section	.rodata.str1.4
 	.align	4
@@ -741,7 +741,7 @@ process_events:
 	.align	4
 	.type	handle_event, @function
 handle_event:
-.LFB18:
+.LFB19:
 	.loc 1 207 0
 .LVL88:
 	entry	sp, 48
@@ -794,7 +794,7 @@ handle_event:
 	mov.n	a2, a4
 	.loc 1 220 0
 	retw.n
-.LFE18:
+.LFE19:
 	.size	handle_event, .-handle_event
 	.section	.rodata.str1.4
 	.align	4
@@ -804,14 +804,14 @@ handle_event:
 	.literal_position
 	.literal .LC42, s_request_mutex
 	.literal .LC44, .LC43
-	.literal .LC45, __func__$5350
+	.literal .LC45, __func__$5422
 	.literal .LC46, .LC14
 	.literal .LC47, s_is_app_cmd
 	.align	4
 	.global	sdmmc_host_transaction_handler_init
 	.type	sdmmc_host_transaction_handler_init, @function
 sdmmc_host_transaction_handler_init:
-.LFB13:
+.LFB14:
 	.loc 1 86 0
 	entry	sp, 32
 .LCFI7:
@@ -848,7 +848,7 @@ sdmmc_host_transaction_handler_init:
 	movi	a2, 0x101
 	.loc 1 94 0
 	retw.n
-.LFE13:
+.LFE14:
 	.size	sdmmc_host_transaction_handler_init, .-sdmmc_host_transaction_handler_init
 	.section	.rodata.str1.4
 	.align	4
@@ -858,13 +858,13 @@ sdmmc_host_transaction_handler_init:
 	.literal_position
 	.literal .LC48, s_request_mutex
 	.literal .LC50, .LC49
-	.literal .LC51, __func__$5353
+	.literal .LC51, __func__$5425
 	.literal .LC52, .LC14
 	.align	4
 	.global	sdmmc_host_transaction_handler_deinit
 	.type	sdmmc_host_transaction_handler_deinit, @function
 sdmmc_host_transaction_handler_deinit:
-.LFB14:
+.LFB15:
 	.loc 1 97 0
 	entry	sp, 32
 .LCFI8:
@@ -888,7 +888,7 @@ sdmmc_host_transaction_handler_deinit:
 	l32r	a8, .LC48
 	s32i.n	a9, a8, 0
 	retw.n
-.LFE14:
+.LFE15:
 	.size	sdmmc_host_transaction_handler_deinit, .-sdmmc_host_transaction_handler_deinit
 	.section	.text.sdmmc_host_do_transaction,"ax",@progbits
 	.literal_position
@@ -903,7 +903,7 @@ sdmmc_host_transaction_handler_deinit:
 	.global	sdmmc_host_do_transaction
 	.type	sdmmc_host_do_transaction, @function
 sdmmc_host_do_transaction:
-.LFB15:
+.LFB16:
 	.loc 1 104 0
 .LVL102:
 	entry	sp, 48
@@ -942,7 +942,7 @@ sdmmc_host_do_transaction:
 .LBB26:
 .LBB27:
 	.file 2 "C:/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h"
-	.loc 2 63 0 discriminator 1
+	.loc 2 65 0 discriminator 1
 	l32r	a9, .LC54
 	add.n	a8, a8, a9
 .LVL108:
@@ -1089,31 +1089,31 @@ sdmmc_host_do_transaction:
 .LVL132:
 	.loc 1 153 0
 	retw.n
-.LFE15:
+.LFE16:
 	.size	sdmmc_host_do_transaction, .-sdmmc_host_do_transaction
-	.section	.rodata.__func__$5371,"a",@progbits
+	.section	.rodata.__func__$5443,"a",@progbits
 	.align	4
-	.type	__func__$5371, @object
-	.size	__func__$5371, 21
-__func__$5371:
+	.type	__func__$5443, @object
+	.size	__func__$5443, 21
+__func__$5443:
 	.string	"fill_dma_descriptors"
-	.section	.rodata.__func__$5393,"a",@progbits
+	.section	.rodata.__func__$5465,"a",@progbits
 	.align	4
-	.type	__func__$5393, @object
-	.size	__func__$5393, 12
-__func__$5393:
+	.type	__func__$5465, @object
+	.size	__func__$5465, 12
+__func__$5465:
 	.string	"make_hw_cmd"
-	.section	.rodata.__func__$5353,"a",@progbits
+	.section	.rodata.__func__$5425,"a",@progbits
 	.align	4
-	.type	__func__$5353, @object
-	.size	__func__$5353, 38
-__func__$5353:
+	.type	__func__$5425, @object
+	.size	__func__$5425, 38
+__func__$5425:
 	.string	"sdmmc_host_transaction_handler_deinit"
-	.section	.rodata.__func__$5350,"a",@progbits
+	.section	.rodata.__func__$5422,"a",@progbits
 	.align	4
-	.type	__func__$5350, @object
-	.size	__func__$5350, 36
-__func__$5350:
+	.type	__func__$5422, @object
+	.size	__func__$5422, 36
+__func__$5422:
 	.string	"sdmmc_host_transaction_handler_init"
 	.section	.bss.s_is_app_cmd,"aw",@nobits
 	.type	s_is_app_cmd, @object
@@ -1178,10 +1178,10 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.byte	0x4
-	.4byte	.LCFI0-.LFB19
+	.4byte	.LCFI0-.LFB20
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1190,10 +1190,10 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI1-.LFB16
+	.4byte	.LCFI1-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1202,10 +1202,10 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI2-.LFB17
+	.4byte	.LCFI2-.LFB18
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -1214,10 +1214,10 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI3-.LFB21
+	.4byte	.LCFI3-.LFB22
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1226,10 +1226,10 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI4-.LFB20
+	.4byte	.LCFI4-.LFB21
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1238,10 +1238,10 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.byte	0x4
-	.4byte	.LCFI5-.LFB23
+	.4byte	.LCFI5-.LFB24
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -1250,10 +1250,10 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.byte	0x4
-	.4byte	.LCFI6-.LFB18
+	.4byte	.LCFI6-.LFB19
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1262,10 +1262,10 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.byte	0x4
-	.4byte	.LCFI7-.LFB13
+	.4byte	.LCFI7-.LFB14
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1274,10 +1274,10 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.byte	0x4
-	.4byte	.LCFI8-.LFB14
+	.4byte	.LCFI8-.LFB15
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -1286,10 +1286,10 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI9-.LFB15
+	.4byte	.LCFI9-.LFB16
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -1460,20 +1460,20 @@ SDMMC_DATA_ERR_MASK:
 	.byte	0x7
 	.byte	0x26
 	.4byte	0xfb
-	.uleb128 0x3
-	.4byte	.LASF28
-	.byte	0x8
-	.byte	0x6c
-	.4byte	0x25
-	.uleb128 0x3
-	.4byte	.LASF29
-	.byte	0x8
-	.byte	0x73
-	.4byte	0xd3
 	.uleb128 0x4
 	.byte	0x1
 	.byte	0x2
+	.4byte	.LASF28
+	.uleb128 0x3
+	.4byte	.LASF29
+	.byte	0x8
+	.byte	0x6f
+	.4byte	0x25
+	.uleb128 0x3
 	.4byte	.LASF30
+	.byte	0x8
+	.byte	0x76
+	.4byte	0xd3
 	.uleb128 0x3
 	.4byte	.LASF31
 	.byte	0x9
@@ -3934,7 +3934,7 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LASF201
 	.byte	0x1
 	.2byte	0x13f
-	.4byte	0x14d
+	.4byte	0x137
 	.byte	0x3
 	.4byte	0x12ae
 	.uleb128 0x24
@@ -3951,7 +3951,7 @@ SDMMC_DATA_ERR_MASK:
 	.string	"ret"
 	.byte	0x1
 	.2byte	0x140
-	.4byte	0x14d
+	.4byte	0x137
 	.byte	0
 	.uleb128 0x6
 	.byte	0x4
@@ -3959,14 +3959,14 @@ SDMMC_DATA_ERR_MASK:
 	.uleb128 0x26
 	.4byte	.LASF202
 	.byte	0x2
-	.byte	0x3d
-	.4byte	0x14d
+	.byte	0x3f
+	.4byte	0x137
 	.byte	0x3
 	.4byte	0x12ce
 	.uleb128 0x27
 	.string	"p"
 	.byte	0x2
-	.byte	0x3d
+	.byte	0x3f
 	.4byte	0xe9
 	.byte	0
 	.uleb128 0x28
@@ -3974,8 +3974,8 @@ SDMMC_DATA_ERR_MASK:
 	.byte	0x1
 	.byte	0xde
 	.4byte	0x3b9
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB20
+	.4byte	.LFE20-.LFB20
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1340
@@ -3996,7 +3996,7 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	0x1350
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5393
+	.4byte	__func__$5465
 	.uleb128 0x2c
 	.4byte	.LVL19
 	.4byte	0x1bc5
@@ -4017,7 +4017,7 @@ SDMMC_DATA_ERR_MASK:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5393
+	.4byte	__func__$5465
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x5d
@@ -4039,8 +4039,8 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LASF209
 	.byte	0x1
 	.byte	0x9b
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x140f
@@ -4056,7 +4056,7 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	0x141f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5371
+	.4byte	__func__$5443
 	.uleb128 0x30
 	.4byte	.LBB14
 	.4byte	.LBE14-.LBB14
@@ -4091,7 +4091,7 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LASF208
 	.byte	0x1
 	.byte	0xa7
-	.4byte	0x14d
+	.4byte	0x137
 	.4byte	.LLST6
 	.uleb128 0x2c
 	.4byte	.LVL29
@@ -4113,7 +4113,7 @@ SDMMC_DATA_ERR_MASK:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5371
+	.4byte	__func__$5443
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x5d
@@ -4140,8 +4140,8 @@ SDMMC_DATA_ERR_MASK:
 	.byte	0x1
 	.byte	0xb8
 	.4byte	0xf0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x149d
@@ -4204,8 +4204,8 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LASF211
 	.byte	0x1
 	.2byte	0x127
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x14e4
@@ -4242,8 +4242,8 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LASF212
 	.byte	0x1
 	.2byte	0x107
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1559
@@ -4297,8 +4297,8 @@ SDMMC_DATA_ERR_MASK:
 	.byte	0x1
 	.2byte	0x145
 	.4byte	0xf0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x17a7
@@ -4571,8 +4571,8 @@ SDMMC_DATA_ERR_MASK:
 	.byte	0x1
 	.byte	0xce
 	.4byte	0xf0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x189e
@@ -4683,8 +4683,8 @@ SDMMC_DATA_ERR_MASK:
 	.byte	0x1
 	.byte	0x55
 	.4byte	0xf0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB14
+	.4byte	.LFE14-.LFB14
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1905
@@ -4693,7 +4693,7 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	0x1915
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5350
+	.4byte	__func__$5422
 	.uleb128 0x35
 	.4byte	.LVL98
 	.4byte	0x1bc5
@@ -4715,7 +4715,7 @@ SDMMC_DATA_ERR_MASK:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5350
+	.4byte	__func__$5422
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x5d
@@ -4746,8 +4746,8 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LASF249
 	.byte	0x1
 	.byte	0x60
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB15
+	.4byte	.LFE15-.LFB15
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1977
@@ -4756,7 +4756,7 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	0x1987
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5353
+	.4byte	__func__$5425
 	.uleb128 0x35
 	.4byte	.LVL100
 	.4byte	0x1bc5
@@ -4778,7 +4778,7 @@ SDMMC_DATA_ERR_MASK:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5353
+	.4byte	__func__$5425
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x5d
@@ -4804,8 +4804,8 @@ SDMMC_DATA_ERR_MASK:
 	.byte	0x1
 	.byte	0x67
 	.4byte	0xf0
-	.4byte	.LFB15
-	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1b01
@@ -5062,7 +5062,7 @@ SDMMC_DATA_ERR_MASK:
 	.4byte	.LASF226
 	.byte	0x1
 	.byte	0x4c
-	.4byte	0x14d
+	.4byte	0x137
 	.uleb128 0x5
 	.byte	0x3
 	.4byte	s_is_app_cmd
@@ -6275,7 +6275,7 @@ SDMMC_DATA_ERR_MASK:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL18
-	.4byte	.LFE19
+	.4byte	.LFE20
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6317,7 +6317,7 @@ SDMMC_DATA_ERR_MASK:
 	.2byte	0x1
 	.byte	0x58
 	.4byte	.LVL20
-	.4byte	.LFE19
+	.4byte	.LFE20
 	.2byte	0x1
 	.byte	0x58
 	.4byte	0
@@ -6333,7 +6333,7 @@ SDMMC_DATA_ERR_MASK:
 	.2byte	0x1
 	.byte	0x5e
 	.4byte	.LVL29
-	.4byte	.LFE16
+	.4byte	.LFE17
 	.2byte	0x1
 	.byte	0x5e
 	.4byte	0
@@ -6471,7 +6471,7 @@ SDMMC_DATA_ERR_MASK:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL46
-	.4byte	.LFE21
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6507,7 +6507,7 @@ SDMMC_DATA_ERR_MASK:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL54
-	.4byte	.LFE20
+	.4byte	.LFE21
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6563,7 +6563,7 @@ SDMMC_DATA_ERR_MASK:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL86
-	.4byte	.LFE23
+	.4byte	.LFE24
 	.2byte	0x1
 	.byte	0x58
 	.4byte	0
@@ -6820,7 +6820,7 @@ SDMMC_DATA_ERR_MASK:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL97
-	.4byte	.LFE18
+	.4byte	.LFE19
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6878,7 +6878,7 @@ SDMMC_DATA_ERR_MASK:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL132
-	.4byte	.LFE15
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6921,7 +6921,7 @@ SDMMC_DATA_ERR_MASK:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL125
-	.4byte	.LFE15
+	.4byte	.LFE16
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -6951,7 +6951,7 @@ SDMMC_DATA_ERR_MASK:
 	.byte	0x73
 	.sleb128 24
 	.4byte	.LVL131
-	.4byte	.LFE15
+	.4byte	.LFE16
 	.2byte	0x2
 	.byte	0x73
 	.sleb128 24
@@ -6965,50 +6965,50 @@ SDMMC_DATA_ERR_MASK:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
-	.4byte	.LFB16
-	.4byte	.LFE16-.LFB16
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
 	.4byte	.LFB20
 	.4byte	.LFE20-.LFB20
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.4byte	.LFB18
 	.4byte	.LFE18-.LFB18
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
+	.4byte	.LFB19
+	.4byte	.LFE19-.LFB19
 	.4byte	.LFB14
 	.4byte	.LFE14-.LFB14
 	.4byte	.LFB15
 	.4byte	.LFE15-.LFB15
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB19
-	.4byte	.LFE19
-	.4byte	.LFB16
-	.4byte	.LFE16
-	.4byte	.LFB17
-	.4byte	.LFE17
-	.4byte	.LFB21
-	.4byte	.LFE21
 	.4byte	.LFB20
 	.4byte	.LFE20
-	.4byte	.LFB23
-	.4byte	.LFE23
+	.4byte	.LFB17
+	.4byte	.LFE17
 	.4byte	.LFB18
 	.4byte	.LFE18
-	.4byte	.LFB13
-	.4byte	.LFE13
+	.4byte	.LFB22
+	.4byte	.LFE22
+	.4byte	.LFB21
+	.4byte	.LFE21
+	.4byte	.LFB24
+	.4byte	.LFE24
+	.4byte	.LFB19
+	.4byte	.LFE19
 	.4byte	.LFB14
 	.4byte	.LFE14
 	.4byte	.LFB15
 	.4byte	.LFE15
+	.4byte	.LFB16
+	.4byte	.LFE16
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -7016,8 +7016,6 @@ SDMMC_DATA_ERR_MASK:
 	.section	.debug_str,"MS",@progbits,1
 .LASF197:
 	.string	"desc_remaining"
-.LASF247:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF93:
 	.string	"response"
 .LASF3:
@@ -7042,7 +7040,7 @@ SDMMC_DATA_ERR_MASK:
 	.string	"process_events"
 .LASF203:
 	.string	"__func__"
-.LASF28:
+.LASF29:
 	.string	"BaseType_t"
 .LASF36:
 	.string	"last_descriptor"
@@ -7138,7 +7136,7 @@ SDMMC_DATA_ERR_MASK:
 	.string	"hcon"
 .LASF138:
 	.string	"tmout"
-.LASF30:
+.LASF28:
 	.string	"_Bool"
 .LASF190:
 	.string	"SDMMC_IDLE"
@@ -7388,7 +7386,7 @@ SDMMC_DATA_ERR_MASK:
 	.string	"C:/esp/esp-idf/components/driver/sdmmc_transaction.c"
 .LASF21:
 	.string	"ESP_LOG_NONE"
-.LASF29:
+.LASF30:
 	.string	"TickType_t"
 .LASF46:
 	.string	"sdmmc_desc_t"
@@ -7508,6 +7506,8 @@ SDMMC_DATA_ERR_MASK:
 	.string	"next"
 .LASF94:
 	.string	"data"
+.LASF247:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF191:
 	.string	"SDMMC_SENDING_CMD"
 .LASF48:
@@ -7516,4 +7516,4 @@ SDMMC_DATA_ERR_MASK:
 	.string	"last"
 .LASF188:
 	.string	"dma_status"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

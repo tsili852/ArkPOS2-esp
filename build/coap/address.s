@@ -14,14 +14,14 @@
 	.section	.text.coap_address_equals,"ax",@progbits
 	.literal_position
 	.literal .LC1, .LC0
-	.literal .LC2, __func__$5633
+	.literal .LC2, __func__$5737
 	.literal .LC4, .LC3
 	.literal .LC6, .LC5
 	.align	4
 	.global	coap_address_equals
 	.type	coap_address_equals, @function
 coap_address_equals:
-.LFB12:
+.LFB16:
 	.file 1 "C:/esp/esp-idf/components/coap/libcoap/src/address.c"
 	.loc 1 18 0
 .LVL0:
@@ -134,7 +134,7 @@ coap_address_equals:
 .LVL21:
 	.loc 1 39 0
 	retw.n
-.LFE12:
+.LFE16:
 	.size	coap_address_equals, .-coap_address_equals
 	.section	.text.coap_is_mcast,"ax",@progbits
 	.literal_position
@@ -144,7 +144,7 @@ coap_address_equals:
 	.global	coap_is_mcast
 	.type	coap_is_mcast, @function
 coap_is_mcast:
-.LFB13:
+.LFB17:
 	.loc 1 41 0
 .LVL22:
 	entry	sp, 32
@@ -199,13 +199,13 @@ coap_is_mcast:
 .LVL31:
 	.loc 1 54 0
 	retw.n
-.LFE13:
+.LFE17:
 	.size	coap_is_mcast, .-coap_is_mcast
-	.section	.rodata.__func__$5633,"a",@progbits
+	.section	.rodata.__func__$5737,"a",@progbits
 	.align	4
-	.type	__func__$5633, @object
-	.size	__func__$5633, 20
-__func__$5633:
+	.type	__func__$5737, @object
+	.size	__func__$5737, 20
+__func__$5737:
 	.string	"coap_address_equals"
 	.section	.debug_frame,"",@progbits
 .Lframe0:
@@ -226,10 +226,10 @@ __func__$5633:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.byte	0x4
-	.4byte	.LCFI0-.LFB12
+	.4byte	.LCFI0-.LFB16
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -238,10 +238,10 @@ __func__$5633:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.byte	0x4
-	.4byte	.LCFI1-.LFB13
+	.4byte	.LCFI1-.LFB17
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -669,8 +669,8 @@ __func__$5633:
 	.byte	0x1
 	.byte	0x12
 	.4byte	0x33
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x411
@@ -692,7 +692,7 @@ __func__$5633:
 	.4byte	0x42c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5633
+	.4byte	__func__$5737
 	.uleb128 0x11
 	.4byte	.LVL1
 	.4byte	0x471
@@ -713,7 +713,7 @@ __func__$5633:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5633
+	.4byte	__func__$5737
 	.uleb128 0x12
 	.uleb128 0x1
 	.byte	0x5d
@@ -741,7 +741,7 @@ __func__$5633:
 	.byte	0x5c
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__func__$5633
+	.4byte	__func__$5737
 	.uleb128 0x12
 	.uleb128 0x1
 	.byte	0x5d
@@ -812,8 +812,8 @@ __func__$5633:
 	.byte	0x1
 	.byte	0x29
 	.4byte	0x33
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x461
@@ -1263,7 +1263,7 @@ __func__$5633:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL21
-	.4byte	.LFE12
+	.4byte	.LFE16
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1316,7 +1316,7 @@ __func__$5633:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL31
-	.4byte	.LFE13
+	.4byte	.LFE17
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -1332,25 +1332,23 @@ __func__$5633:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
+	.4byte	.LFB16
+	.4byte	.LFE16-.LFB16
+	.4byte	.LFB17
+	.4byte	.LFE17-.LFB17
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.4byte	.LFB12
-	.4byte	.LFE12
-	.4byte	.LFB13
-	.4byte	.LFE13
+	.4byte	.LFB16
+	.4byte	.LFE16
+	.4byte	.LFB17
+	.4byte	.LFE17
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF56:
-	.string	"addr"
 .LASF48:
 	.string	"ss_family"
 .LASF50:
@@ -1389,14 +1387,14 @@ __func__$5633:
 	.string	"sin_len"
 .LASF38:
 	.string	"sin6_port"
-.LASF60:
-	.string	"memcmp"
+.LASF64:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\coap"
 .LASF8:
 	.string	"long long int"
 .LASF10:
 	.string	"long int"
-.LASF64:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\coap"
+.LASF56:
+	.string	"addr"
 .LASF5:
 	.string	"__uint8_t"
 .LASF53:
@@ -1409,6 +1407,8 @@ __func__$5633:
 	.string	"sin6_family"
 .LASF65:
 	.string	"__func__"
+.LASF60:
+	.string	"memcmp"
 .LASF54:
 	.string	"coap_address_t"
 .LASF52:
@@ -1483,4 +1483,4 @@ __func__$5633:
 	.string	"sockaddr_in"
 .LASF63:
 	.string	"C:/esp/esp-idf/components/coap/libcoap/src/address.c"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

@@ -7782,6 +7782,8 @@ cJSONUtils_GenerateMergePatch:
 	.string	"strcmp"
 .LASF64:
 	.string	"sprintf"
+.LASF87:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\json"
 .LASF18:
 	.string	"string"
 .LASF89:
@@ -7880,8 +7882,6 @@ cJSONUtils_GenerateMergePatch:
 	.string	"cJSONUtils_PatchDetach"
 .LASF8:
 	.string	"sizetype"
-.LASF87:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\json"
 .LASF49:
 	.string	"cJSONUtils_Compare"
 .LASF23:
@@ -7954,4 +7954,4 @@ cJSONUtils_GenerateMergePatch:
 	.string	"cJSONUtils_SortObject"
 .LASF52:
 	.string	"opcode"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

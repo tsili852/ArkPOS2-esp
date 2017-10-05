@@ -20,13 +20,13 @@
 	.literal .LC3, .LC2
 	.literal .LC5, .LC4
 	.literal .LC7, .LC6
-	.literal .LC8, __FUNCTION__$5661
+	.literal .LC8, __FUNCTION__$5765
 	.literal .LC9, i2s_spinlock
 	.literal .LC10, I2S
 	.align	4
 	.type	i2s_reset_fifo, @function
 i2s_reset_fifo:
-.LFB14:
+.LFB18:
 	.file 1 "C:/esp/esp-idf/components/driver/i2s.c"
 	.loc 1 89 0
 .LVL0:
@@ -102,7 +102,7 @@ i2s_reset_fifo:
 	movi.n	a2, 0
 	.loc 1 98 0
 	retw.n
-.LFE14:
+.LFE18:
 	.size	i2s_reset_fifo, .-i2s_reset_fifo
 	.section	.rodata.str1.4
 	.align	4
@@ -116,7 +116,7 @@ i2s_reset_fifo:
 	.align	4
 	.type	i2s_destroy_dma_queue, @function
 i2s_destroy_dma_queue:
-.LFB25:
+.LFB29:
 	.loc 1 399 0
 .LVL8:
 	entry	sp, 32
@@ -217,7 +217,7 @@ i2s_destroy_dma_queue:
 .LVL24:
 	.loc 1 422 0
 	retw.n
-.LFE25:
+.LFE29:
 	.size	i2s_destroy_dma_queue, .-i2s_destroy_dma_queue
 	.section	.rodata.str1.4
 	.align	4
@@ -257,7 +257,7 @@ i2s_destroy_dma_queue:
 	.align	4
 	.type	i2s_create_dma_queue, @function
 i2s_create_dma_queue:
-.LFB26:
+.LFB30:
 	.loc 1 425 0
 .LVL25:
 	entry	sp, 64
@@ -603,7 +603,7 @@ i2s_create_dma_queue:
 .LVL69:
 	.loc 1 486 0
 	retw.n
-.LFE26:
+.LFE30:
 	.size	i2s_create_dma_queue, .-i2s_create_dma_queue
 	.section	.rodata.str1.4
 	.align	4
@@ -615,7 +615,7 @@ i2s_create_dma_queue:
 	.literal .LC36, .LC2
 	.literal .LC37, .LC4
 	.literal .LC38, .LC6
-	.literal .LC39, __FUNCTION__$5787
+	.literal .LC39, __FUNCTION__$5891
 	.literal .LC41, .LC40
 	.literal .LC42, I2S
 	.literal .LC43, -4097
@@ -641,7 +641,7 @@ i2s_create_dma_queue:
 	.align	4
 	.type	i2s_param_config, @function
 i2s_param_config:
-.LFB32:
+.LFB36:
 	.loc 1 673 0
 .LVL70:
 	entry	sp, 48
@@ -1354,7 +1354,7 @@ i2s_param_config:
 .LVL85:
 	.loc 1 817 0
 	retw.n
-.LFE32:
+.LFE36:
 	.size	i2s_param_config, .-i2s_param_config
 	.section	.iram1,"ax",@progbits
 	.literal_position
@@ -1362,7 +1362,7 @@ i2s_param_config:
 	.align	4
 	.type	i2s_intr_handler_default, @function
 i2s_intr_handler_default:
-.LFB24:
+.LFB28:
 	.loc 1 338 0
 .LVL86:
 	entry	sp, 48
@@ -1547,13 +1547,13 @@ i2s_intr_handler_default:
 	memw
 	s32i.n	a2, a3, 24
 	retw.n
-.LFE24:
+.LFE28:
 	.size	i2s_intr_handler_default, .-i2s_intr_handler_default
 	.section	.text.i2s_isr_register,"ax",@progbits
 	.align	4
 	.type	i2s_isr_register, @function
 i2s_isr_register:
-.LFB22:
+.LFB26:
 	.loc 1 165 0
 .LVL111:
 	entry	sp, 32
@@ -1570,7 +1570,7 @@ i2s_isr_register:
 	mov.n	a2, a10
 .LVL113:
 	retw.n
-.LFE22:
+.LFE26:
 	.size	i2s_isr_register, .-i2s_isr_register
 	.section	.text.i2s_clear_intr_status,"ax",@progbits
 	.literal_position
@@ -1578,13 +1578,13 @@ i2s_isr_register:
 	.literal .LC65, .LC2
 	.literal .LC66, .LC4
 	.literal .LC67, .LC6
-	.literal .LC68, __FUNCTION__$5677
+	.literal .LC68, __FUNCTION__$5781
 	.literal .LC69, I2S
 	.align	4
 	.global	i2s_clear_intr_status
 	.type	i2s_clear_intr_status, @function
 i2s_clear_intr_status:
-.LFB17:
+.LFB21:
 	.loc 1 121 0
 .LVL114:
 	entry	sp, 48
@@ -1624,7 +1624,7 @@ i2s_clear_intr_status:
 	movi.n	a2, 0
 	.loc 1 125 0
 	retw.n
-.LFE17:
+.LFE21:
 	.size	i2s_clear_intr_status, .-i2s_clear_intr_status
 	.section	.text.i2s_enable_rx_intr,"ax",@progbits
 	.literal_position
@@ -1635,7 +1635,7 @@ i2s_clear_intr_status:
 	.global	i2s_enable_rx_intr
 	.type	i2s_enable_rx_intr, @function
 i2s_enable_rx_intr:
-.LFB18:
+.LFB22:
 	.loc 1 128 0
 .LVL120:
 	entry	sp, 32
@@ -1671,7 +1671,7 @@ i2s_enable_rx_intr:
 	.loc 1 135 0
 	movi.n	a2, 0
 	retw.n
-.LFE18:
+.LFE22:
 	.size	i2s_enable_rx_intr, .-i2s_enable_rx_intr
 	.section	.text.i2s_disable_rx_intr,"ax",@progbits
 	.literal_position
@@ -1682,7 +1682,7 @@ i2s_enable_rx_intr:
 	.global	i2s_disable_rx_intr
 	.type	i2s_disable_rx_intr, @function
 i2s_disable_rx_intr:
-.LFB19:
+.LFB23:
 	.loc 1 138 0
 .LVL124:
 	entry	sp, 32
@@ -1718,7 +1718,7 @@ i2s_disable_rx_intr:
 	.loc 1 144 0
 	movi.n	a2, 0
 	retw.n
-.LFE19:
+.LFE23:
 	.size	i2s_disable_rx_intr, .-i2s_disable_rx_intr
 	.section	.text.i2s_disable_tx_intr,"ax",@progbits
 	.literal_position
@@ -1730,7 +1730,7 @@ i2s_disable_rx_intr:
 	.global	i2s_disable_tx_intr
 	.type	i2s_disable_tx_intr, @function
 i2s_disable_tx_intr:
-.LFB20:
+.LFB24:
 	.loc 1 147 0
 .LVL128:
 	entry	sp, 32
@@ -1766,7 +1766,7 @@ i2s_disable_tx_intr:
 	.loc 1 153 0
 	movi.n	a2, 0
 	retw.n
-.LFE20:
+.LFE24:
 	.size	i2s_disable_tx_intr, .-i2s_disable_tx_intr
 	.section	.text.i2s_enable_tx_intr,"ax",@progbits
 	.literal_position
@@ -1778,7 +1778,7 @@ i2s_disable_tx_intr:
 	.global	i2s_enable_tx_intr
 	.type	i2s_enable_tx_intr, @function
 i2s_enable_tx_intr:
-.LFB21:
+.LFB25:
 	.loc 1 156 0
 .LVL132:
 	entry	sp, 32
@@ -1814,7 +1814,7 @@ i2s_enable_tx_intr:
 	.loc 1 162 0
 	movi.n	a2, 0
 	retw.n
-.LFE21:
+.LFE25:
 	.size	i2s_enable_tx_intr, .-i2s_enable_tx_intr
 	.section	.text.i2s_start,"ax",@progbits
 	.literal_position
@@ -1826,7 +1826,7 @@ i2s_enable_tx_intr:
 	.global	i2s_start
 	.type	i2s_start, @function
 i2s_start:
-.LFB27:
+.LFB31:
 	.loc 1 490 0
 .LVL136:
 	entry	sp, 32
@@ -1921,7 +1921,7 @@ i2s_start:
 	.loc 1 508 0
 	movi.n	a2, 0
 	retw.n
-.LFE27:
+.LFE31:
 	.size	i2s_start, .-i2s_start
 	.section	.text.i2s_stop,"ax",@progbits
 	.literal_position
@@ -1933,7 +1933,7 @@ i2s_start:
 	.global	i2s_stop
 	.type	i2s_stop, @function
 i2s_stop:
-.LFB28:
+.LFB32:
 	.loc 1 511 0
 .LVL144:
 	entry	sp, 32
@@ -2053,7 +2053,7 @@ i2s_stop:
 	.loc 1 533 0
 	movi.n	a2, 0
 	retw.n
-.LFE28:
+.LFE32:
 	.size	i2s_stop, .-i2s_stop
 	.section	.rodata.str1.4
 	.align	4
@@ -2065,12 +2065,12 @@ i2s_stop:
 	.literal .LC93, .LC2
 	.literal .LC94, .LC4
 	.literal .LC96, .LC95
-	.literal .LC97, __FUNCTION__$5768
+	.literal .LC97, __FUNCTION__$5872
 	.align	4
 	.global	i2s_set_dac_mode
 	.type	i2s_set_dac_mode, @function
 i2s_set_dac_mode:
-.LFB29:
+.LFB33:
 	.loc 1 536 0
 .LVL152:
 	entry	sp, 48
@@ -2141,7 +2141,7 @@ i2s_set_dac_mode:
 .LVL165:
 	.loc 1 555 0
 	retw.n
-.LFE29:
+.LFE33:
 	.size	i2s_set_dac_mode, .-i2s_set_dac_mode
 	.section	.rodata.str1.4
 	.align	4
@@ -2162,7 +2162,7 @@ i2s_set_dac_mode:
 	.literal .LC99, .LC2
 	.literal .LC100, .LC4
 	.literal .LC101, .LC6
-	.literal .LC102, __FUNCTION__$5773
+	.literal .LC102, __FUNCTION__$5877
 	.literal .LC103, GPIO_PIN_MUX_REG
 	.literal .LC105, .LC104
 	.literal .LC107, .LC106
@@ -2175,7 +2175,7 @@ i2s_set_dac_mode:
 	.global	i2s_set_pin
 	.type	i2s_set_pin, @function
 i2s_set_pin:
-.LFB30:
+.LFB34:
 	.loc 1 558 0
 .LVL166:
 	entry	sp, 64
@@ -2732,7 +2732,7 @@ i2s_set_pin:
 .LVL243:
 	.loc 1 664 0
 	retw.n
-.LFE30:
+.LFE34:
 	.size	i2s_set_pin, .-i2s_set_pin
 	.section	.text.i2s_zero_dma_buffer,"ax",@progbits
 	.literal_position
@@ -2740,13 +2740,13 @@ i2s_set_pin:
 	.literal .LC116, .LC2
 	.literal .LC117, .LC4
 	.literal .LC118, .LC6
-	.literal .LC119, __FUNCTION__$5791
+	.literal .LC119, __FUNCTION__$5895
 	.literal .LC120, p_i2s_obj
 	.align	4
 	.global	i2s_zero_dma_buffer
 	.type	i2s_zero_dma_buffer, @function
 i2s_zero_dma_buffer:
-.LFB33:
+.LFB37:
 	.loc 1 820 0
 .LVL244:
 	entry	sp, 48
@@ -2879,7 +2879,7 @@ i2s_zero_dma_buffer:
 	.loc 1 833 0
 	mov.n	a2, a3
 	retw.n
-.LFE33:
+.LFE37:
 	.size	i2s_zero_dma_buffer, .-i2s_zero_dma_buffer
 	.section	.rodata.str1.4
 	.align	4
@@ -2891,14 +2891,14 @@ i2s_zero_dma_buffer:
 	.literal .LC122, .LC2
 	.literal .LC123, .LC4
 	.literal .LC124, .LC6
-	.literal .LC125, __FUNCTION__$5811
+	.literal .LC125, __FUNCTION__$5915
 	.literal .LC126, p_i2s_obj
 	.literal .LC128, .LC127
 	.align	4
 	.global	i2s_driver_uninstall
 	.type	i2s_driver_uninstall, @function
 i2s_driver_uninstall:
-.LFB35:
+.LFB39:
 	.loc 1 894 0
 .LVL262:
 	entry	sp, 48
@@ -3050,7 +3050,7 @@ i2s_driver_uninstall:
 .LVL283:
 	.loc 1 926 0
 	retw.n
-.LFE35:
+.LFE39:
 	.size	i2s_driver_uninstall, .-i2s_driver_uninstall
 	.section	.rodata.str1.4
 	.align	4
@@ -3082,7 +3082,7 @@ i2s_driver_uninstall:
 	.literal .LC130, .LC2
 	.literal .LC131, .LC4
 	.literal .LC132, .LC6
-	.literal .LC133, __FUNCTION__$5712
+	.literal .LC133, __FUNCTION__$5816
 	.literal .LC135, .LC134
 	.literal .LC136, p_i2s_obj
 	.literal .LC137, .LC13
@@ -3111,7 +3111,7 @@ i2s_driver_uninstall:
 	.global	i2s_set_clk
 	.type	i2s_set_clk, @function
 i2s_set_clk:
-.LFB23:
+.LFB27:
 	.loc 1 170 0
 .LVL284:
 	entry	sp, 112
@@ -4015,7 +4015,7 @@ i2s_set_clk:
 	movi.n	a2, 0
 	.loc 1 335 0
 	retw.n
-.LFE23:
+.LFE27:
 	.size	i2s_set_clk, .-i2s_set_clk
 	.section	.rodata.str1.4
 	.align	4
@@ -4027,14 +4027,14 @@ i2s_set_clk:
 	.literal .LC164, .LC2
 	.literal .LC165, .LC4
 	.literal .LC166, .LC6
-	.literal .LC167, __FUNCTION__$5782
+	.literal .LC167, __FUNCTION__$5886
 	.literal .LC168, p_i2s_obj
 	.literal .LC170, .LC169
 	.align	4
 	.global	i2s_set_sample_rates
 	.type	i2s_set_sample_rates, @function
 i2s_set_sample_rates:
-.LFB31:
+.LFB35:
 	.loc 1 667 0
 .LVL407:
 	entry	sp, 48
@@ -4102,7 +4102,7 @@ i2s_set_sample_rates:
 .LVL417:
 	.loc 1 671 0
 	retw.n
-.LFE31:
+.LFE35:
 	.size	i2s_set_sample_rates, .-i2s_set_sample_rates
 	.section	.rodata.str1.4
 	.align	4
@@ -4132,7 +4132,7 @@ i2s_set_sample_rates:
 	.literal .LC172, .LC2
 	.literal .LC173, .LC4
 	.literal .LC174, .LC6
-	.literal .LC175, __FUNCTION__$5807
+	.literal .LC175, __FUNCTION__$5911
 	.literal .LC177, .LC176
 	.literal .LC179, .LC178
 	.literal .LC181, .LC180
@@ -4146,7 +4146,7 @@ i2s_set_sample_rates:
 	.global	i2s_driver_install
 	.type	i2s_driver_install, @function
 i2s_driver_install:
-.LFB34:
+.LFB38:
 	.loc 1 836 0
 .LVL418:
 	entry	sp, 48
@@ -4459,7 +4459,7 @@ i2s_driver_install:
 .LVL469:
 	.loc 1 891 0 discriminator 1
 	retw.n
-.LFE34:
+.LFE38:
 	.size	i2s_driver_install, .-i2s_driver_install
 	.section	.text.i2s_write_bytes,"ax",@progbits
 	.literal_position
@@ -4467,13 +4467,13 @@ i2s_driver_install:
 	.literal .LC193, .LC2
 	.literal .LC194, .LC4
 	.literal .LC195, .LC6
-	.literal .LC196, __FUNCTION__$5821
+	.literal .LC196, __FUNCTION__$5925
 	.literal .LC197, p_i2s_obj
 	.align	4
 	.global	i2s_write_bytes
 	.type	i2s_write_bytes, @function
 i2s_write_bytes:
-.LFB36:
+.LFB40:
 	.loc 1 929 0
 .LVL470:
 	entry	sp, 48
@@ -4620,7 +4620,7 @@ i2s_write_bytes:
 .LVL491:
 	.loc 1 959 0
 	retw.n
-.LFE36:
+.LFE40:
 	.size	i2s_write_bytes, .-i2s_write_bytes
 	.section	.text.i2s_read_bytes,"ax",@progbits
 	.literal_position
@@ -4628,13 +4628,13 @@ i2s_write_bytes:
 	.literal .LC199, .LC2
 	.literal .LC200, .LC4
 	.literal .LC201, .LC6
-	.literal .LC202, __FUNCTION__$5834
+	.literal .LC202, __FUNCTION__$5938
 	.literal .LC203, p_i2s_obj
 	.align	4
 	.global	i2s_read_bytes
 	.type	i2s_read_bytes, @function
 i2s_read_bytes:
-.LFB37:
+.LFB41:
 	.loc 1 962 0
 .LVL492:
 	entry	sp, 48
@@ -4781,7 +4781,7 @@ i2s_read_bytes:
 .LVL513:
 	.loc 1 991 0
 	retw.n
-.LFE37:
+.LFE41:
 	.size	i2s_read_bytes, .-i2s_read_bytes
 	.section	.text.i2s_push_sample,"ax",@progbits
 	.literal_position
@@ -4789,13 +4789,13 @@ i2s_read_bytes:
 	.literal .LC205, .LC2
 	.literal .LC206, .LC4
 	.literal .LC207, .LC6
-	.literal .LC208, __FUNCTION__$5846
+	.literal .LC208, __FUNCTION__$5950
 	.literal .LC209, p_i2s_obj
 	.align	4
 	.global	i2s_push_sample
 	.type	i2s_push_sample, @function
 i2s_push_sample:
-.LFB38:
+.LFB42:
 	.loc 1 993 0
 .LVL514:
 	entry	sp, 48
@@ -4908,7 +4908,7 @@ i2s_push_sample:
 .L218:
 	.loc 1 1012 0
 	retw.n
-.LFE38:
+.LFE42:
 	.size	i2s_push_sample, .-i2s_push_sample
 	.section	.text.i2s_pop_sample,"ax",@progbits
 	.literal_position
@@ -4916,13 +4916,13 @@ i2s_push_sample:
 	.literal .LC211, .LC2
 	.literal .LC212, .LC4
 	.literal .LC213, .LC6
-	.literal .LC214, __FUNCTION__$5858
+	.literal .LC214, __FUNCTION__$5962
 	.literal .LC215, p_i2s_obj
 	.align	4
 	.global	i2s_pop_sample
 	.type	i2s_pop_sample, @function
 i2s_pop_sample:
-.LFB39:
+.LFB43:
 	.loc 1 1015 0
 .LVL532:
 	entry	sp, 48
@@ -5072,91 +5072,91 @@ i2s_pop_sample:
 .L225:
 	.loc 1 1040 0
 	retw.n
-.LFE39:
+.LFE43:
 	.size	i2s_pop_sample, .-i2s_pop_sample
-	.section	.rodata.__FUNCTION__$5858,"a",@progbits
+	.section	.rodata.__FUNCTION__$5962,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5858, @object
-	.size	__FUNCTION__$5858, 15
-__FUNCTION__$5858:
+	.type	__FUNCTION__$5962, @object
+	.size	__FUNCTION__$5962, 15
+__FUNCTION__$5962:
 	.string	"i2s_pop_sample"
-	.section	.rodata.__FUNCTION__$5846,"a",@progbits
+	.section	.rodata.__FUNCTION__$5950,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5846, @object
-	.size	__FUNCTION__$5846, 16
-__FUNCTION__$5846:
+	.type	__FUNCTION__$5950, @object
+	.size	__FUNCTION__$5950, 16
+__FUNCTION__$5950:
 	.string	"i2s_push_sample"
-	.section	.rodata.__FUNCTION__$5834,"a",@progbits
+	.section	.rodata.__FUNCTION__$5938,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5834, @object
-	.size	__FUNCTION__$5834, 15
-__FUNCTION__$5834:
+	.type	__FUNCTION__$5938, @object
+	.size	__FUNCTION__$5938, 15
+__FUNCTION__$5938:
 	.string	"i2s_read_bytes"
-	.section	.rodata.__FUNCTION__$5821,"a",@progbits
+	.section	.rodata.__FUNCTION__$5925,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5821, @object
-	.size	__FUNCTION__$5821, 16
-__FUNCTION__$5821:
+	.type	__FUNCTION__$5925, @object
+	.size	__FUNCTION__$5925, 16
+__FUNCTION__$5925:
 	.string	"i2s_write_bytes"
-	.section	.rodata.__FUNCTION__$5811,"a",@progbits
+	.section	.rodata.__FUNCTION__$5915,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5811, @object
-	.size	__FUNCTION__$5811, 21
-__FUNCTION__$5811:
+	.type	__FUNCTION__$5915, @object
+	.size	__FUNCTION__$5915, 21
+__FUNCTION__$5915:
 	.string	"i2s_driver_uninstall"
-	.section	.rodata.__FUNCTION__$5787,"a",@progbits
+	.section	.rodata.__FUNCTION__$5891,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5787, @object
-	.size	__FUNCTION__$5787, 17
-__FUNCTION__$5787:
+	.type	__FUNCTION__$5891, @object
+	.size	__FUNCTION__$5891, 17
+__FUNCTION__$5891:
 	.string	"i2s_param_config"
-	.section	.rodata.__FUNCTION__$5807,"a",@progbits
+	.section	.rodata.__FUNCTION__$5911,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5807, @object
-	.size	__FUNCTION__$5807, 19
-__FUNCTION__$5807:
+	.type	__FUNCTION__$5911, @object
+	.size	__FUNCTION__$5911, 19
+__FUNCTION__$5911:
 	.string	"i2s_driver_install"
-	.section	.rodata.__FUNCTION__$5791,"a",@progbits
+	.section	.rodata.__FUNCTION__$5895,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5791, @object
-	.size	__FUNCTION__$5791, 20
-__FUNCTION__$5791:
+	.type	__FUNCTION__$5895, @object
+	.size	__FUNCTION__$5895, 20
+__FUNCTION__$5895:
 	.string	"i2s_zero_dma_buffer"
-	.section	.rodata.__FUNCTION__$5782,"a",@progbits
+	.section	.rodata.__FUNCTION__$5886,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5782, @object
-	.size	__FUNCTION__$5782, 21
-__FUNCTION__$5782:
+	.type	__FUNCTION__$5886, @object
+	.size	__FUNCTION__$5886, 21
+__FUNCTION__$5886:
 	.string	"i2s_set_sample_rates"
-	.section	.rodata.__FUNCTION__$5773,"a",@progbits
+	.section	.rodata.__FUNCTION__$5877,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5773, @object
-	.size	__FUNCTION__$5773, 12
-__FUNCTION__$5773:
+	.type	__FUNCTION__$5877, @object
+	.size	__FUNCTION__$5877, 12
+__FUNCTION__$5877:
 	.string	"i2s_set_pin"
-	.section	.rodata.__FUNCTION__$5768,"a",@progbits
+	.section	.rodata.__FUNCTION__$5872,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5768, @object
-	.size	__FUNCTION__$5768, 17
-__FUNCTION__$5768:
+	.type	__FUNCTION__$5872, @object
+	.size	__FUNCTION__$5872, 17
+__FUNCTION__$5872:
 	.string	"i2s_set_dac_mode"
-	.section	.rodata.__FUNCTION__$5661,"a",@progbits
+	.section	.rodata.__FUNCTION__$5765,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5661, @object
-	.size	__FUNCTION__$5661, 15
-__FUNCTION__$5661:
+	.type	__FUNCTION__$5765, @object
+	.size	__FUNCTION__$5765, 15
+__FUNCTION__$5765:
 	.string	"i2s_reset_fifo"
-	.section	.rodata.__FUNCTION__$5712,"a",@progbits
+	.section	.rodata.__FUNCTION__$5816,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5712, @object
-	.size	__FUNCTION__$5712, 12
-__FUNCTION__$5712:
+	.type	__FUNCTION__$5816, @object
+	.size	__FUNCTION__$5816, 12
+__FUNCTION__$5816:
 	.string	"i2s_set_clk"
-	.section	.rodata.__FUNCTION__$5677,"a",@progbits
+	.section	.rodata.__FUNCTION__$5781,"a",@progbits
 	.align	4
-	.type	__FUNCTION__$5677, @object
-	.size	__FUNCTION__$5677, 22
-__FUNCTION__$5677:
+	.type	__FUNCTION__$5781, @object
+	.size	__FUNCTION__$5781, 22
+__FUNCTION__$5781:
 	.string	"i2s_clear_intr_status"
 	.section	.data.i2s_spinlock,"aw",@progbits
 	.align	4
@@ -5199,10 +5199,10 @@ p_i2s_obj:
 	.4byte	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.4byte	.Lframe0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.byte	0x4
-	.4byte	.LCFI0-.LFB14
+	.4byte	.LCFI0-.LFB18
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5211,10 +5211,10 @@ p_i2s_obj:
 	.4byte	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.4byte	.Lframe0
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.byte	0x4
-	.4byte	.LCFI1-.LFB25
+	.4byte	.LCFI1-.LFB29
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -5223,10 +5223,10 @@ p_i2s_obj:
 	.4byte	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.4byte	.Lframe0
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.byte	0x4
-	.4byte	.LCFI2-.LFB26
+	.4byte	.LCFI2-.LFB30
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -5235,10 +5235,10 @@ p_i2s_obj:
 	.4byte	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.4byte	.Lframe0
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.byte	0x4
-	.4byte	.LCFI3-.LFB32
+	.4byte	.LCFI3-.LFB36
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5247,10 +5247,10 @@ p_i2s_obj:
 	.4byte	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.4byte	.Lframe0
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.byte	0x4
-	.4byte	.LCFI4-.LFB24
+	.4byte	.LCFI4-.LFB28
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5259,10 +5259,10 @@ p_i2s_obj:
 	.4byte	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.4byte	.Lframe0
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.byte	0x4
-	.4byte	.LCFI5-.LFB22
+	.4byte	.LCFI5-.LFB26
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -5271,10 +5271,10 @@ p_i2s_obj:
 	.4byte	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.4byte	.Lframe0
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.byte	0x4
-	.4byte	.LCFI6-.LFB17
+	.4byte	.LCFI6-.LFB21
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5283,10 +5283,10 @@ p_i2s_obj:
 	.4byte	.LEFDE14-.LASFDE14
 .LASFDE14:
 	.4byte	.Lframe0
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.byte	0x4
-	.4byte	.LCFI7-.LFB18
+	.4byte	.LCFI7-.LFB22
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -5295,10 +5295,10 @@ p_i2s_obj:
 	.4byte	.LEFDE16-.LASFDE16
 .LASFDE16:
 	.4byte	.Lframe0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.byte	0x4
-	.4byte	.LCFI8-.LFB19
+	.4byte	.LCFI8-.LFB23
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -5307,10 +5307,10 @@ p_i2s_obj:
 	.4byte	.LEFDE18-.LASFDE18
 .LASFDE18:
 	.4byte	.Lframe0
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.byte	0x4
-	.4byte	.LCFI9-.LFB20
+	.4byte	.LCFI9-.LFB24
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -5319,10 +5319,10 @@ p_i2s_obj:
 	.4byte	.LEFDE20-.LASFDE20
 .LASFDE20:
 	.4byte	.Lframe0
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.byte	0x4
-	.4byte	.LCFI10-.LFB21
+	.4byte	.LCFI10-.LFB25
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -5331,10 +5331,10 @@ p_i2s_obj:
 	.4byte	.LEFDE22-.LASFDE22
 .LASFDE22:
 	.4byte	.Lframe0
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.byte	0x4
-	.4byte	.LCFI11-.LFB27
+	.4byte	.LCFI11-.LFB31
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -5343,10 +5343,10 @@ p_i2s_obj:
 	.4byte	.LEFDE24-.LASFDE24
 .LASFDE24:
 	.4byte	.Lframe0
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.byte	0x4
-	.4byte	.LCFI12-.LFB28
+	.4byte	.LCFI12-.LFB32
 	.byte	0xe
 	.uleb128 0x20
 	.align	4
@@ -5355,10 +5355,10 @@ p_i2s_obj:
 	.4byte	.LEFDE26-.LASFDE26
 .LASFDE26:
 	.4byte	.Lframe0
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.byte	0x4
-	.4byte	.LCFI13-.LFB29
+	.4byte	.LCFI13-.LFB33
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5367,10 +5367,10 @@ p_i2s_obj:
 	.4byte	.LEFDE28-.LASFDE28
 .LASFDE28:
 	.4byte	.Lframe0
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.byte	0x4
-	.4byte	.LCFI14-.LFB30
+	.4byte	.LCFI14-.LFB34
 	.byte	0xe
 	.uleb128 0x40
 	.align	4
@@ -5379,10 +5379,10 @@ p_i2s_obj:
 	.4byte	.LEFDE30-.LASFDE30
 .LASFDE30:
 	.4byte	.Lframe0
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.byte	0x4
-	.4byte	.LCFI15-.LFB33
+	.4byte	.LCFI15-.LFB37
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5391,10 +5391,10 @@ p_i2s_obj:
 	.4byte	.LEFDE32-.LASFDE32
 .LASFDE32:
 	.4byte	.Lframe0
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.byte	0x4
-	.4byte	.LCFI16-.LFB35
+	.4byte	.LCFI16-.LFB39
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5403,10 +5403,10 @@ p_i2s_obj:
 	.4byte	.LEFDE34-.LASFDE34
 .LASFDE34:
 	.4byte	.Lframe0
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.byte	0x4
-	.4byte	.LCFI17-.LFB23
+	.4byte	.LCFI17-.LFB27
 	.byte	0xe
 	.uleb128 0x70
 	.align	4
@@ -5415,10 +5415,10 @@ p_i2s_obj:
 	.4byte	.LEFDE36-.LASFDE36
 .LASFDE36:
 	.4byte	.Lframe0
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.byte	0x4
-	.4byte	.LCFI18-.LFB31
+	.4byte	.LCFI18-.LFB35
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5427,10 +5427,10 @@ p_i2s_obj:
 	.4byte	.LEFDE38-.LASFDE38
 .LASFDE38:
 	.4byte	.Lframe0
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.byte	0x4
-	.4byte	.LCFI19-.LFB34
+	.4byte	.LCFI19-.LFB38
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5439,10 +5439,10 @@ p_i2s_obj:
 	.4byte	.LEFDE40-.LASFDE40
 .LASFDE40:
 	.4byte	.Lframe0
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
 	.byte	0x4
-	.4byte	.LCFI20-.LFB36
+	.4byte	.LCFI20-.LFB40
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5451,10 +5451,10 @@ p_i2s_obj:
 	.4byte	.LEFDE42-.LASFDE42
 .LASFDE42:
 	.4byte	.Lframe0
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
 	.byte	0x4
-	.4byte	.LCFI21-.LFB37
+	.4byte	.LCFI21-.LFB41
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5463,10 +5463,10 @@ p_i2s_obj:
 	.4byte	.LEFDE44-.LASFDE44
 .LASFDE44:
 	.4byte	.Lframe0
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
 	.byte	0x4
-	.4byte	.LCFI22-.LFB38
+	.4byte	.LCFI22-.LFB42
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5475,10 +5475,10 @@ p_i2s_obj:
 	.4byte	.LEFDE46-.LASFDE46
 .LASFDE46:
 	.4byte	.Lframe0
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.byte	0x4
-	.4byte	.LCFI23-.LFB39
+	.4byte	.LCFI23-.LFB43
 	.byte	0xe
 	.uleb128 0x30
 	.align	4
@@ -5618,48 +5618,48 @@ p_i2s_obj:
 	.uleb128 0x9
 	.4byte	0x97
 	.byte	0
-	.uleb128 0x3
+	.uleb128 0x4
+	.byte	0x1
+	.byte	0x2
 	.4byte	.LASF18
-	.byte	0x5
-	.byte	0x6c
-	.4byte	0x25
 	.uleb128 0x3
 	.4byte	.LASF19
 	.byte	0x5
-	.byte	0x73
+	.byte	0x6f
+	.4byte	0x25
+	.uleb128 0x3
+	.4byte	.LASF20
+	.byte	0x5
+	.byte	0x76
 	.4byte	0xce
 	.uleb128 0xa
 	.byte	0x8
 	.byte	0x5
-	.byte	0x81
-	.4byte	0x121
-	.uleb128 0xb
-	.4byte	.LASF20
-	.byte	0x5
-	.byte	0x82
-	.4byte	0xce
-	.byte	0
+	.byte	0x84
+	.4byte	0x128
 	.uleb128 0xb
 	.4byte	.LASF21
 	.byte	0x5
-	.byte	0x83
+	.byte	0x85
+	.4byte	0xce
+	.byte	0
+	.uleb128 0xb
+	.4byte	.LASF22
+	.byte	0x5
+	.byte	0x86
 	.4byte	0xce
 	.byte	0x4
 	.byte	0
 	.uleb128 0x3
-	.4byte	.LASF22
-	.byte	0x5
-	.byte	0x88
-	.4byte	0x100
-	.uleb128 0x3
 	.4byte	.LASF23
+	.byte	0x5
+	.byte	0x8b
+	.4byte	0x107
+	.uleb128 0x3
+	.4byte	.LASF24
 	.byte	0x6
 	.byte	0x18
 	.4byte	0xc3
-	.uleb128 0x4
-	.byte	0x1
-	.byte	0x2
-	.4byte	.LASF24
 	.uleb128 0x3
 	.4byte	.LASF25
 	.byte	0x7
@@ -5746,7 +5746,7 @@ p_i2s_obj:
 	.byte	0x1
 	.byte	0
 	.uleb128 0xf
-	.4byte	.LASF20
+	.4byte	.LASF21
 	.byte	0x9
 	.byte	0x49
 	.4byte	0x15f
@@ -9747,9 +9747,9 @@ p_i2s_obj:
 	.4byte	.LASF404
 	.byte	0x1
 	.byte	0x58
-	.4byte	0x12c
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
+	.4byte	0x133
+	.4byte	.LFB18
+	.4byte	.LFE18-.LFB18
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1f07
@@ -9764,7 +9764,7 @@ p_i2s_obj:
 	.4byte	0x1f17
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5661
+	.4byte	__FUNCTION__$5765
 	.uleb128 0x24
 	.4byte	.LVL1
 	.4byte	0x4117
@@ -9814,7 +9814,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5661
+	.4byte	__FUNCTION__$5765
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -9858,9 +9858,9 @@ p_i2s_obj:
 	.4byte	.LASF405
 	.byte	0x1
 	.2byte	0x18e
-	.4byte	0x12c
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
+	.4byte	0x133
+	.4byte	.LFB29
+	.4byte	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x1fe2
@@ -9948,8 +9948,8 @@ p_i2s_obj:
 	.byte	0x1
 	.2byte	0x1a8
 	.4byte	0x1e3f
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
+	.4byte	.LFB30
+	.4byte	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x22f2
@@ -10391,9 +10391,9 @@ p_i2s_obj:
 	.4byte	.LASF409
 	.byte	0x1
 	.2byte	0x2a0
-	.4byte	0x12c
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
+	.4byte	0x133
+	.4byte	.LFB36
+	.4byte	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2428
@@ -10414,7 +10414,7 @@ p_i2s_obj:
 	.4byte	0x2443
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5787
+	.4byte	__FUNCTION__$5891
 	.uleb128 0x24
 	.4byte	.LVL71
 	.4byte	0x4117
@@ -10464,7 +10464,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5787
+	.4byte	__FUNCTION__$5891
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -10522,7 +10522,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5787
+	.4byte	__FUNCTION__$5891
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -10580,8 +10580,8 @@ p_i2s_obj:
 	.4byte	.LASF519
 	.byte	0x1
 	.2byte	0x151
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x262d
@@ -10864,9 +10864,9 @@ p_i2s_obj:
 	.4byte	.LASF418
 	.byte	0x1
 	.byte	0xa4
-	.4byte	0x12c
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
+	.4byte	0x133
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x26bd
@@ -10946,9 +10946,9 @@ p_i2s_obj:
 	.4byte	.LASF421
 	.byte	0x1
 	.byte	0x78
-	.4byte	0x12c
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
+	.4byte	0x133
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x275f
@@ -10970,7 +10970,7 @@ p_i2s_obj:
 	.4byte	0x276f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5677
+	.4byte	__FUNCTION__$5781
 	.uleb128 0x24
 	.4byte	.LVL115
 	.4byte	0x4117
@@ -11019,7 +11019,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5677
+	.4byte	__FUNCTION__$5781
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -11042,9 +11042,9 @@ p_i2s_obj:
 	.4byte	.LASF422
 	.byte	0x1
 	.byte	0x7f
-	.4byte	0x12c
-	.4byte	.LFB18
-	.4byte	.LFE18-.LFB18
+	.4byte	0x133
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x27c1
@@ -11080,9 +11080,9 @@ p_i2s_obj:
 	.4byte	.LASF423
 	.byte	0x1
 	.byte	0x89
-	.4byte	0x12c
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
+	.4byte	0x133
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x280e
@@ -11118,9 +11118,9 @@ p_i2s_obj:
 	.4byte	.LASF424
 	.byte	0x1
 	.byte	0x92
-	.4byte	0x12c
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
+	.4byte	0x133
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x285b
@@ -11156,9 +11156,9 @@ p_i2s_obj:
 	.4byte	.LASF425
 	.byte	0x1
 	.byte	0x9b
-	.4byte	0x12c
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
+	.4byte	0x133
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x28a8
@@ -11194,9 +11194,9 @@ p_i2s_obj:
 	.4byte	.LASF426
 	.byte	0x1
 	.2byte	0x1e9
-	.4byte	0x12c
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
+	.4byte	0x133
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2931
@@ -11260,9 +11260,9 @@ p_i2s_obj:
 	.4byte	.LASF427
 	.byte	0x1
 	.2byte	0x1fe
-	.4byte	0x12c
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
+	.4byte	0x133
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x29c5
@@ -11334,9 +11334,9 @@ p_i2s_obj:
 	.4byte	.LASF428
 	.byte	0x1
 	.2byte	0x217
-	.4byte	0x12c
-	.4byte	.LFB29
-	.4byte	.LFE29-.LFB29
+	.4byte	0x133
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2ab4
@@ -11351,7 +11351,7 @@ p_i2s_obj:
 	.4byte	0x2ab4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5768
+	.4byte	__FUNCTION__$5872
 	.uleb128 0x24
 	.4byte	.LVL153
 	.4byte	0x4117
@@ -11401,7 +11401,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5768
+	.4byte	__FUNCTION__$5872
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -11478,7 +11478,7 @@ p_i2s_obj:
 	.string	"inv"
 	.byte	0x1
 	.byte	0x6d
-	.4byte	0x137
+	.4byte	0xea
 	.byte	0
 	.uleb128 0x37
 	.4byte	.LASF433
@@ -11500,20 +11500,20 @@ p_i2s_obj:
 	.4byte	.LASF434
 	.byte	0x1
 	.byte	0x64
-	.4byte	0x137
+	.4byte	0xea
 	.uleb128 0x38
 	.4byte	.LASF435
 	.byte	0x1
 	.byte	0x64
-	.4byte	0x137
+	.4byte	0xea
 	.byte	0
 	.uleb128 0x36
 	.4byte	.LASF436
 	.byte	0x1
 	.2byte	0x22d
-	.4byte	0x12c
-	.4byte	.LFB30
-	.4byte	.LFE30-.LFB30
+	.4byte	0x133
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x2f69
@@ -11534,7 +11534,7 @@ p_i2s_obj:
 	.4byte	0x2f84
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5773
+	.4byte	__FUNCTION__$5877
 	.uleb128 0x2d
 	.4byte	.LASF437
 	.byte	0x1
@@ -11959,7 +11959,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5773
+	.4byte	__FUNCTION__$5877
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -12120,9 +12120,9 @@ p_i2s_obj:
 	.4byte	.LASF441
 	.byte	0x1
 	.2byte	0x333
-	.4byte	0x12c
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
+	.4byte	0x133
+	.4byte	.LFB37
+	.4byte	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3068
@@ -12137,7 +12137,7 @@ p_i2s_obj:
 	.4byte	0x3078
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5791
+	.4byte	__FUNCTION__$5895
 	.uleb128 0x3e
 	.4byte	.Ldebug_ranges0+0
 	.4byte	0x2fe9
@@ -12224,7 +12224,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5791
+	.4byte	__FUNCTION__$5895
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -12247,9 +12247,9 @@ p_i2s_obj:
 	.4byte	.LASF442
 	.byte	0x1
 	.2byte	0x37d
-	.4byte	0x12c
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
+	.4byte	0x133
+	.4byte	.LFB39
+	.4byte	.LFE39-.LFB39
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x31c2
@@ -12264,7 +12264,7 @@ p_i2s_obj:
 	.4byte	0x31d2
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5811
+	.4byte	__FUNCTION__$5915
 	.uleb128 0x24
 	.4byte	.LVL263
 	.4byte	0x4117
@@ -12314,7 +12314,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5811
+	.4byte	__FUNCTION__$5915
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -12429,9 +12429,9 @@ p_i2s_obj:
 	.4byte	.LASF443
 	.byte	0x1
 	.byte	0xa9
-	.4byte	0x12c
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
+	.4byte	0x133
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3674
@@ -12515,7 +12515,7 @@ p_i2s_obj:
 	.4byte	0x367b
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5712
+	.4byte	__FUNCTION__$5816
 	.uleb128 0x41
 	.4byte	.LASF453
 	.byte	0x1
@@ -12789,7 +12789,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5712
+	.4byte	__FUNCTION__$5816
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -13071,9 +13071,9 @@ p_i2s_obj:
 	.4byte	.LASF461
 	.byte	0x1
 	.2byte	0x29a
-	.4byte	0x12c
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
+	.4byte	0x133
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3794
@@ -13095,7 +13095,7 @@ p_i2s_obj:
 	.4byte	0x3794
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5782
+	.4byte	__FUNCTION__$5886
 	.uleb128 0x24
 	.4byte	.LVL408
 	.4byte	0x4117
@@ -13145,7 +13145,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5782
+	.4byte	__FUNCTION__$5886
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -13203,7 +13203,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5782
+	.4byte	__FUNCTION__$5886
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -13235,9 +13235,9 @@ p_i2s_obj:
 	.4byte	.LASF462
 	.byte	0x1
 	.2byte	0x343
-	.4byte	0x12c
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
+	.4byte	0x133
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3b3f
@@ -13269,14 +13269,14 @@ p_i2s_obj:
 	.string	"err"
 	.byte	0x1
 	.2byte	0x345
-	.4byte	0x12c
+	.4byte	0x133
 	.4byte	.LLST75
 	.uleb128 0x23
 	.4byte	.LASF411
 	.4byte	0x3b4f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5807
+	.4byte	__FUNCTION__$5911
 	.uleb128 0x24
 	.4byte	.LVL419
 	.4byte	0x4117
@@ -13326,7 +13326,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5807
+	.4byte	__FUNCTION__$5911
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -13384,7 +13384,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5807
+	.4byte	__FUNCTION__$5911
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -13442,7 +13442,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5807
+	.4byte	__FUNCTION__$5911
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -13500,7 +13500,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5807
+	.4byte	__FUNCTION__$5911
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -13783,8 +13783,8 @@ p_i2s_obj:
 	.byte	0x1
 	.2byte	0x3a0
 	.4byte	0x25
-	.4byte	.LFB36
-	.4byte	.LFE36-.LFB36
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3cb7
@@ -13810,7 +13810,7 @@ p_i2s_obj:
 	.4byte	.LASF464
 	.byte	0x1
 	.2byte	0x3a0
-	.4byte	0xf5
+	.4byte	0xfc
 	.uleb128 0x1
 	.byte	0x55
 	.uleb128 0x2d
@@ -13836,7 +13836,7 @@ p_i2s_obj:
 	.4byte	0x3cc7
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5821
+	.4byte	__FUNCTION__$5925
 	.uleb128 0x24
 	.4byte	.LVL472
 	.4byte	0x4117
@@ -13886,7 +13886,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5821
+	.4byte	__FUNCTION__$5925
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -13989,8 +13989,8 @@ p_i2s_obj:
 	.byte	0x1
 	.2byte	0x3c1
 	.4byte	0x25
-	.4byte	.LFB37
-	.4byte	.LFE37-.LFB37
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3e2f
@@ -14016,7 +14016,7 @@ p_i2s_obj:
 	.4byte	.LASF464
 	.byte	0x1
 	.2byte	0x3c1
-	.4byte	0xf5
+	.4byte	0xfc
 	.uleb128 0x1
 	.byte	0x55
 	.uleb128 0x2d
@@ -14042,7 +14042,7 @@ p_i2s_obj:
 	.4byte	0x3e2f
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5834
+	.4byte	__FUNCTION__$5938
 	.uleb128 0x24
 	.4byte	.LVL494
 	.4byte	0x4117
@@ -14092,7 +14092,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5834
+	.4byte	__FUNCTION__$5938
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -14188,8 +14188,8 @@ p_i2s_obj:
 	.byte	0x1
 	.2byte	0x3e0
 	.4byte	0x25
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x3f32
@@ -14209,7 +14209,7 @@ p_i2s_obj:
 	.4byte	.LASF464
 	.byte	0x1
 	.2byte	0x3e0
-	.4byte	0xf5
+	.4byte	0xfc
 	.4byte	.LLST90
 	.uleb128 0x2f
 	.string	"i"
@@ -14234,7 +14234,7 @@ p_i2s_obj:
 	.4byte	0x3f32
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5846
+	.4byte	__FUNCTION__$5950
 	.uleb128 0x24
 	.4byte	.LVL516
 	.4byte	0x4117
@@ -14284,7 +14284,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5846
+	.4byte	__FUNCTION__$5950
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -14322,8 +14322,8 @@ p_i2s_obj:
 	.byte	0x1
 	.2byte	0x3f6
 	.4byte	0x25
-	.4byte	.LFB39
-	.4byte	.LFE39-.LFB39
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.uleb128 0x1
 	.byte	0x9c
 	.4byte	0x4035
@@ -14343,7 +14343,7 @@ p_i2s_obj:
 	.4byte	.LASF464
 	.byte	0x1
 	.2byte	0x3f6
-	.4byte	0xf5
+	.4byte	0xfc
 	.4byte	.LLST96
 	.uleb128 0x2f
 	.string	"i"
@@ -14368,7 +14368,7 @@ p_i2s_obj:
 	.4byte	0x4035
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5858
+	.4byte	__FUNCTION__$5962
 	.uleb128 0x24
 	.4byte	.LVL534
 	.4byte	0x4117
@@ -14418,7 +14418,7 @@ p_i2s_obj:
 	.sleb128 4
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	__FUNCTION__$5858
+	.4byte	__FUNCTION__$5962
 	.uleb128 0x26
 	.uleb128 0x2
 	.byte	0x71
@@ -14498,7 +14498,7 @@ p_i2s_obj:
 	.uleb128 0x7
 	.4byte	0x4072
 	.uleb128 0x28
-	.4byte	0x121
+	.4byte	0x128
 	.4byte	0x40ae
 	.uleb128 0x29
 	.4byte	0x90
@@ -14564,12 +14564,12 @@ p_i2s_obj:
 	.4byte	.LASF486
 	.4byte	.LASF486
 	.byte	0x5
-	.byte	0xd9
+	.byte	0xdc
 	.uleb128 0x4b
 	.4byte	.LASF487
 	.4byte	.LASF487
 	.byte	0x5
-	.byte	0xd8
+	.byte	0xdb
 	.uleb128 0x4b
 	.4byte	.LASF488
 	.4byte	.LASF488
@@ -14622,7 +14622,7 @@ p_i2s_obj:
 	.4byte	.LASF497
 	.4byte	.LASF497
 	.byte	0x5
-	.2byte	0x11a
+	.2byte	0x129
 	.uleb128 0x4b
 	.4byte	.LASF498
 	.4byte	.LASF498
@@ -15809,7 +15809,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL6
-	.4byte	.LFE14
+	.4byte	.LFE18
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15845,7 +15845,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL24
-	.4byte	.LFE25
+	.4byte	.LFE29
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15871,7 +15871,7 @@ p_i2s_obj:
 	.byte	0x91
 	.sleb128 -36
 	.4byte	.LVL64
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15890,7 +15890,7 @@ p_i2s_obj:
 	.byte	0x91
 	.sleb128 -44
 	.4byte	.LVL64
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -15909,7 +15909,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x55
 	.4byte	.LVL64
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x1
 	.byte	0x57
 	.4byte	0
@@ -15944,7 +15944,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL61
-	.4byte	.LFE26
+	.4byte	.LFE30
 	.2byte	0x1
 	.byte	0x52
 	.4byte	0
@@ -15988,7 +15988,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL85
-	.4byte	.LFE32
+	.4byte	.LFE36
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16002,7 +16002,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL82
-	.4byte	.LFE32
+	.4byte	.LFE36
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16016,7 +16016,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL108
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16030,7 +16030,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL108
-	.4byte	.LFE24
+	.4byte	.LFE28
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16067,7 +16067,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL113
-	.4byte	.LFE22
+	.4byte	.LFE26
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16092,7 +16092,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL119
-	.4byte	.LFE17
+	.4byte	.LFE21
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16106,7 +16106,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL122
-	.4byte	.LFE18
+	.4byte	.LFE22
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16120,7 +16120,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL126
-	.4byte	.LFE19
+	.4byte	.LFE23
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16134,7 +16134,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL130
-	.4byte	.LFE20
+	.4byte	.LFE24
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16148,7 +16148,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL134
-	.4byte	.LFE21
+	.4byte	.LFE25
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16162,7 +16162,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL141
-	.4byte	.LFE27
+	.4byte	.LFE31
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16176,7 +16176,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL150
-	.4byte	.LFE28
+	.4byte	.LFE32
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16212,7 +16212,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL165
-	.4byte	.LFE29
+	.4byte	.LFE33
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16292,7 +16292,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL221
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16324,7 +16324,7 @@ p_i2s_obj:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL239
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -16365,7 +16365,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x56
 	.4byte	.LVL211
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x1
 	.byte	0x56
 	.4byte	0
@@ -16410,7 +16410,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x57
 	.4byte	.LVL213
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x1
 	.byte	0x57
 	.4byte	0
@@ -16436,7 +16436,7 @@ p_i2s_obj:
 	.byte	0xff
 	.byte	0x9f
 	.4byte	.LVL202
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x2
 	.byte	0x91
 	.sleb128 -48
@@ -16541,7 +16541,7 @@ p_i2s_obj:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL242
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -16553,7 +16553,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x57
 	.4byte	.LVL242
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x1
 	.byte	0x57
 	.4byte	0
@@ -16572,7 +16572,7 @@ p_i2s_obj:
 	.byte	0x30
 	.byte	0x9f
 	.4byte	.LVL242
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -16584,7 +16584,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x56
 	.4byte	.LVL242
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x1
 	.byte	0x56
 	.4byte	0
@@ -16599,7 +16599,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL243
-	.4byte	.LFE30
+	.4byte	.LFE34
 	.2byte	0x2
 	.byte	0x73
 	.sleb128 0
@@ -16622,7 +16622,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL261
-	.4byte	.LFE33
+	.4byte	.LFE37
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16702,7 +16702,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL283
-	.4byte	.LFE35
+	.4byte	.LFE39
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16716,7 +16716,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL285
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x1
 	.byte	0x56
 	.4byte	0
@@ -16732,7 +16732,7 @@ p_i2s_obj:
 	.byte	0x91
 	.sleb128 -64
 	.4byte	.LVL310
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -16752,7 +16752,7 @@ p_i2s_obj:
 	.sleb128 2
 	.byte	0x9f
 	.4byte	.LVL312
-	.4byte	.LFE23
+	.4byte	.LFE27
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17184,7 +17184,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL417
-	.4byte	.LFE31
+	.4byte	.LFE35
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17275,7 +17275,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL469
-	.4byte	.LFE34
+	.4byte	.LFE38
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17296,7 +17296,7 @@ p_i2s_obj:
 	.byte	0x53
 	.byte	0x9f
 	.4byte	.LVL450
-	.4byte	.LFE34
+	.4byte	.LFE38
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -17325,7 +17325,7 @@ p_i2s_obj:
 	.byte	0x54
 	.byte	0x9f
 	.4byte	.LVL466
-	.4byte	.LFE34
+	.4byte	.LFE38
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -17354,7 +17354,7 @@ p_i2s_obj:
 	.byte	0x55
 	.byte	0x9f
 	.4byte	.LVL466
-	.4byte	.LFE34
+	.4byte	.LFE38
 	.2byte	0x1
 	.byte	0x55
 	.4byte	0
@@ -17398,7 +17398,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL491
-	.4byte	.LFE36
+	.4byte	.LFE40
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17416,7 +17416,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL490
-	.4byte	.LFE36
+	.4byte	.LFE40
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -17427,7 +17427,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL484
-	.4byte	.LFE36
+	.4byte	.LFE40
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -17457,7 +17457,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x57
 	.4byte	.LVL490
-	.4byte	.LFE36
+	.4byte	.LFE40
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -17491,7 +17491,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL513
-	.4byte	.LFE37
+	.4byte	.LFE41
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17509,7 +17509,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x53
 	.4byte	.LVL512
-	.4byte	.LFE37
+	.4byte	.LFE41
 	.2byte	0x1
 	.byte	0x53
 	.4byte	0
@@ -17520,7 +17520,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL506
-	.4byte	.LFE37
+	.4byte	.LFE41
 	.2byte	0x1
 	.byte	0x54
 	.4byte	0
@@ -17550,7 +17550,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x57
 	.4byte	.LVL512
-	.4byte	.LFE37
+	.4byte	.LFE41
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -17570,7 +17570,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x52
 	.4byte	.LVL520
-	.4byte	.LFE38
+	.4byte	.LFE42
 	.2byte	0x1
 	.byte	0x55
 	.4byte	0
@@ -17598,7 +17598,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL522
-	.4byte	.LFE38
+	.4byte	.LFE42
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17665,7 +17665,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x55
 	.4byte	.LVL555
-	.4byte	.LFE39
+	.4byte	.LFE43
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17706,7 +17706,7 @@ p_i2s_obj:
 	.2byte	0x1
 	.byte	0x54
 	.4byte	.LVL540
-	.4byte	.LFE39
+	.4byte	.LFE43
 	.2byte	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -17773,54 +17773,54 @@ p_i2s_obj:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.4byte	.LFB14
-	.4byte	.LFE14-.LFB14
-	.4byte	.LFB25
-	.4byte	.LFE25-.LFB25
-	.4byte	.LFB26
-	.4byte	.LFE26-.LFB26
-	.4byte	.LFB32
-	.4byte	.LFE32-.LFB32
-	.4byte	.LFB24
-	.4byte	.LFE24-.LFB24
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
-	.4byte	.LFB17
-	.4byte	.LFE17-.LFB17
 	.4byte	.LFB18
 	.4byte	.LFE18-.LFB18
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
-	.4byte	.LFB27
-	.4byte	.LFE27-.LFB27
-	.4byte	.LFB28
-	.4byte	.LFE28-.LFB28
 	.4byte	.LFB29
 	.4byte	.LFE29-.LFB29
 	.4byte	.LFB30
 	.4byte	.LFE30-.LFB30
-	.4byte	.LFB33
-	.4byte	.LFE33-.LFB33
-	.4byte	.LFB35
-	.4byte	.LFE35-.LFB35
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
-	.4byte	.LFB31
-	.4byte	.LFE31-.LFB31
-	.4byte	.LFB34
-	.4byte	.LFE34-.LFB34
 	.4byte	.LFB36
 	.4byte	.LFE36-.LFB36
+	.4byte	.LFB28
+	.4byte	.LFE28-.LFB28
+	.4byte	.LFB26
+	.4byte	.LFE26-.LFB26
+	.4byte	.LFB21
+	.4byte	.LFE21-.LFB21
+	.4byte	.LFB22
+	.4byte	.LFE22-.LFB22
+	.4byte	.LFB23
+	.4byte	.LFE23-.LFB23
+	.4byte	.LFB24
+	.4byte	.LFE24-.LFB24
+	.4byte	.LFB25
+	.4byte	.LFE25-.LFB25
+	.4byte	.LFB31
+	.4byte	.LFE31-.LFB31
+	.4byte	.LFB32
+	.4byte	.LFE32-.LFB32
+	.4byte	.LFB33
+	.4byte	.LFE33-.LFB33
+	.4byte	.LFB34
+	.4byte	.LFE34-.LFB34
 	.4byte	.LFB37
 	.4byte	.LFE37-.LFB37
-	.4byte	.LFB38
-	.4byte	.LFE38-.LFB38
 	.4byte	.LFB39
 	.4byte	.LFE39-.LFB39
+	.4byte	.LFB27
+	.4byte	.LFE27-.LFB27
+	.4byte	.LFB35
+	.4byte	.LFE35-.LFB35
+	.4byte	.LFB38
+	.4byte	.LFE38-.LFB38
+	.4byte	.LFB40
+	.4byte	.LFE40-.LFB40
+	.4byte	.LFB41
+	.4byte	.LFE41-.LFB41
+	.4byte	.LFB42
+	.4byte	.LFE42-.LFB42
+	.4byte	.LFB43
+	.4byte	.LFE43-.LFB43
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
@@ -17839,54 +17839,54 @@ p_i2s_obj:
 	.4byte	.LBE30
 	.4byte	0
 	.4byte	0
-	.4byte	.LFB14
-	.4byte	.LFE14
-	.4byte	.LFB25
-	.4byte	.LFE25
-	.4byte	.LFB26
-	.4byte	.LFE26
-	.4byte	.LFB32
-	.4byte	.LFE32
-	.4byte	.LFB24
-	.4byte	.LFE24
-	.4byte	.LFB22
-	.4byte	.LFE22
-	.4byte	.LFB17
-	.4byte	.LFE17
 	.4byte	.LFB18
 	.4byte	.LFE18
-	.4byte	.LFB19
-	.4byte	.LFE19
-	.4byte	.LFB20
-	.4byte	.LFE20
-	.4byte	.LFB21
-	.4byte	.LFE21
-	.4byte	.LFB27
-	.4byte	.LFE27
-	.4byte	.LFB28
-	.4byte	.LFE28
 	.4byte	.LFB29
 	.4byte	.LFE29
 	.4byte	.LFB30
 	.4byte	.LFE30
-	.4byte	.LFB33
-	.4byte	.LFE33
-	.4byte	.LFB35
-	.4byte	.LFE35
-	.4byte	.LFB23
-	.4byte	.LFE23
-	.4byte	.LFB31
-	.4byte	.LFE31
-	.4byte	.LFB34
-	.4byte	.LFE34
 	.4byte	.LFB36
 	.4byte	.LFE36
+	.4byte	.LFB28
+	.4byte	.LFE28
+	.4byte	.LFB26
+	.4byte	.LFE26
+	.4byte	.LFB21
+	.4byte	.LFE21
+	.4byte	.LFB22
+	.4byte	.LFE22
+	.4byte	.LFB23
+	.4byte	.LFE23
+	.4byte	.LFB24
+	.4byte	.LFE24
+	.4byte	.LFB25
+	.4byte	.LFE25
+	.4byte	.LFB31
+	.4byte	.LFE31
+	.4byte	.LFB32
+	.4byte	.LFE32
+	.4byte	.LFB33
+	.4byte	.LFE33
+	.4byte	.LFB34
+	.4byte	.LFE34
 	.4byte	.LFB37
 	.4byte	.LFE37
-	.4byte	.LFB38
-	.4byte	.LFE38
 	.4byte	.LFB39
 	.4byte	.LFE39
+	.4byte	.LFB27
+	.4byte	.LFE27
+	.4byte	.LFB35
+	.4byte	.LFE35
+	.4byte	.LFB38
+	.4byte	.LFE38
+	.4byte	.LFB40
+	.4byte	.LFE40
+	.4byte	.LFB41
+	.4byte	.LFE41
+	.4byte	.LFB42
+	.4byte	.LFE42
+	.4byte	.LFB43
+	.4byte	.LFE43
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -17894,8 +17894,6 @@ p_i2s_obj:
 	.section	.debug_str,"MS",@progbits,1
 .LASF283:
 	.string	"i2s_dev_t"
-.LASF517:
-	.string	"C:\\\\esp\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF121:
 	.string	"out_data_burst_en"
 .LASF3:
@@ -17914,7 +17912,7 @@ p_i2s_obj:
 	.string	"i2s_pop_sample"
 .LASF295:
 	.string	"PERIPH_PWM1_MODULE"
-.LASF20:
+.LASF21:
 	.string	"owner"
 .LASF224:
 	.string	"int_ena"
@@ -17940,7 +17938,7 @@ p_i2s_obj:
 	.string	"tx_hung"
 .LASF220:
 	.string	"reserved_4"
-.LASF18:
+.LASF19:
 	.string	"BaseType_t"
 .LASF301:
 	.string	"PERIPH_PCNT_MODULE"
@@ -18054,6 +18052,8 @@ p_i2s_obj:
 	.string	"PERIPH_CAN_MODULE"
 .LASF467:
 	.string	"bytes_writen"
+.LASF282:
+	.string	"date"
 .LASF496:
 	.string	"xQueueGenericSendFromISR"
 .LASF235:
@@ -18130,7 +18130,7 @@ p_i2s_obj:
 	.string	"ahbm_fifo_rst"
 .LASF60:
 	.string	"tx_rempty"
-.LASF24:
+.LASF18:
 	.string	"_Bool"
 .LASF456:
 	.string	"real_rate"
@@ -18404,7 +18404,7 @@ p_i2s_obj:
 	.string	"tx_put_data"
 .LASF307:
 	.string	"PERIPH_SDIO_SLAVE_MODULE"
-.LASF23:
+.LASF24:
 	.string	"esp_err_t"
 .LASF223:
 	.string	"int_st"
@@ -18432,7 +18432,7 @@ p_i2s_obj:
 	.string	"reserved17"
 .LASF54:
 	.string	"reserved19"
-.LASF21:
+.LASF22:
 	.string	"count"
 .LASF103:
 	.string	"stop"
@@ -18646,7 +18646,7 @@ p_i2s_obj:
 	.string	"queue"
 .LASF384:
 	.string	"ESP_LOG_NONE"
-.LASF19:
+.LASF20:
 	.string	"TickType_t"
 .LASF481:
 	.string	"I2S0"
@@ -18658,7 +18658,7 @@ p_i2s_obj:
 	.string	"in_link_dscr_bf1"
 .LASF136:
 	.string	"sigma_min"
-.LASF22:
+.LASF23:
 	.string	"portMUX_TYPE"
 .LASF162:
 	.string	"plc_en"
@@ -18916,8 +18916,8 @@ p_i2s_obj:
 	.string	"rx_start"
 .LASF106:
 	.string	"park"
-.LASF282:
-	.string	"date"
+.LASF517:
+	.string	"C:\\\\esp\\\\esp32-ArkPOS2\\\\ArkPOS2-esp\\\\build\\\\driver"
 .LASF246:
 	.string	"lc_state0"
 .LASF247:
@@ -18932,4 +18932,4 @@ p_i2s_obj:
 	.string	"tx_bits_mod"
 .LASF339:
 	.string	"I2S_MODE_RX"
-	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-61-gab8375a) 5.2.0"
+	.ident	"GCC: (crosstool-NG crosstool-ng-1.22.0-73-ge28a011) 5.2.0"

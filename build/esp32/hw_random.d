@@ -21,7 +21,7 @@ hw_random.o: C:/esp/esp-idf/components/esp32/hw_random.c \
  C:/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  C:/esp/esp-idf/components/esp32/include/esp_assert.h \
  C:/esp/esp-idf/components/newlib/platform_include/assert.h \
- C:/esp/ArkPOS2-esp/build/include/sdkconfig.h \
+ C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h \
  C:/esp/esp-idf/components/newlib/include/stdlib.h \
  C:/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  C:/esp/esp-idf/components/newlib/include/alloca.h \
@@ -85,7 +85,7 @@ C:/esp/esp-idf/components/esp32/include/esp_assert.h:
 
 C:/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-C:/esp/ArkPOS2-esp/build/include/sdkconfig.h:
+C:/esp/esp32-ArkPOS2/ArkPOS2-esp/build/include/sdkconfig.h:
 
 C:/esp/esp-idf/components/newlib/include/stdlib.h:
 
